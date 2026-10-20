@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { motion, useScroll, useSpring } from "motion/react";
+import { AnimatePresence, motion, useScroll, useSpring } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { navItems, allProblemIds } from "@/content/nav";
 import { useDone } from "@/lib/progress";
@@ -38,6 +38,66 @@ function ThemeToggle() {
   );
 }
 
+// Study tools live in a menu so the bar never runs out of room.
+const TOOLS: Record<string, string> = {
+  "quick-quiz": "10 fast questions with instant feedback",
+  generate: "Unlimited new problems, and check your own",
+  "memory-tricks": "Learn the formulas, with a flashcard drill",
+  "cheat-sheet": "Every rule on one page",
+};
+const mainItems = navItems.filter((n) => !(n.slug in TOOLS));
+const toolItems = navItems.filter((n) => n.slug in TOOLS);
+
+function ToolsMenu({ path }: { path: string }) {
+  const [open, setOpen] = useState(false);
+  const wrap = useRef<HTMLDivElement>(null);
+  const current = toolItems.find((t) => path.endsWith("/" + t.slug));
+
+  useEffect(() => setOpen(false), [path]);
+  useEffect(() => {
+    if (!open) return;
+    const onDown = (e: PointerEvent) => { if (!wrap.current?.contains(e.target as Node)) setOpen(false); };
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setOpen(false); };
+    document.addEventListener("pointerdown", onDown);
+    window.addEventListener("keydown", onKey);
+    return () => { document.removeEventListener("pointerdown", onDown); window.removeEventListener("keydown", onKey); };
+  }, [open]);
+
+  return (
+    <div className="tools" ref={wrap}>
+      <button type="button" className={"navlink tools-btn" + (current ? " active" : "")} aria-expanded={open} aria-haspopup="menu" onClick={() => setOpen(!open)}>
+        {current && <motion.span layoutId="nav-pill" className="pill" transition={{ type: "spring", stiffness: 420, damping: 34 }} />}
+        <span>{current ? current.label : "Study tools"}</span>
+        <motion.svg width="12" height="12" viewBox="0 0 12 12" aria-hidden animate={{ rotate: open ? 180 : 0 }}>
+          <path d="M2.5 4.5L6 8l3.5-3.5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+        </motion.svg>
+      </button>
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            className="tools-menu"
+            role="menu"
+            initial={{ opacity: 0, y: -6, scale: 0.97 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -6, scale: 0.97 }}
+            transition={{ duration: 0.16 }}
+          >
+            {toolItems.map((t) => {
+              const active = current?.slug === t.slug;
+              return (
+                <Link key={t.slug} href={`/${t.slug}/`} role="menuitem" className={"tools-item" + (active ? " on" : "")} aria-current={active ? "page" : undefined}>
+                  <b>{t.label}</b>
+                  <span>{TOOLS[t.slug]}</span>
+                </Link>
+              );
+            })}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
 export default function Nav() {
   const path = usePathname().replace(/\/$/, "");
   const done = useDone();
@@ -61,7 +121,7 @@ export default function Nav() {
             <span className="brand-name">Field Guide</span>
           </Link>
           <nav className="navlinks" ref={listRef} aria-label="Sections">
-            {navItems.map((n) => {
+            {mainItems.map((n) => {
               const active = path.endsWith("/" + n.slug);
               return (
                 <Link key={n.slug} href={`/${n.slug}/`} className={"navlink" + (active ? " active" : "")} title={n.title} aria-current={active ? "page" : undefined}>
@@ -71,9 +131,12 @@ export default function Nav() {
               );
             })}
           </nav>
+          <ToolsMenu path={path} />
           <div className="navtools">
-            <motion.span key={count} className="count" initial={{ y: -6, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
-              {count} / {allProblemIds.length}
+            <motion.span key={count} className="count" title={`${count} of ${allProblemIds.length} problems marked “I can do this”`}
+              initial={{ y: -6, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
+              <svg width="12" height="12" viewBox="0 0 16 16" aria-hidden><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              {count}/{allProblemIds.length}
             </motion.span>
             <AccountButton />
             <ThemeToggle />

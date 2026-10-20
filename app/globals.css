@@ -425,3 +425,52 @@ h3[id] { scroll-margin-top: 80px; }
 .acct-links { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
 .acct-links button { background: none; border: 0; padding: 4px 0; color: var(--accent); font: 600 13px var(--font-mono); cursor: pointer; }
 @media (pointer: fine) { .acct-signin, .acct-avatar, .acct-google, .acct-links button { cursor: var(--cur-pointer) !important; } }
+
+/* Nav: study tools menu, counter pill, edge fade */
+.navlinks { mask-image: linear-gradient(90deg, transparent 0, #000 10px, #000 calc(100% - 18px), transparent 100%); -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 10px, #000 calc(100% - 18px), transparent 100%); padding-inline: 8px; }
+.tools { position: relative; flex: none; }
+.tools-btn { display: inline-flex; align-items: center; gap: 6px; background: none; border: 1px solid var(--line); cursor: pointer; }
+.tools-btn.active { border-color: transparent; }
+.tools-btn svg { position: relative; }
+.tools-menu {
+  position: absolute; right: 0; top: calc(100% + 10px); z-index: 30; width: min(320px, calc(100vw - 32px));
+  display: grid; gap: 2px; padding: 6px; border-radius: 14px; background: var(--surface); border: 1px solid var(--line);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, .18); transform-origin: top right;
+}
+.tools-item { display: grid; gap: 2px; padding: 10px 12px; border-radius: 10px; text-decoration: none; color: var(--ink); }
+.tools-item b { font: 700 15px var(--font-display); }
+.tools-item span { font-size: 13px; color: var(--muted); line-height: 1.35; }
+.tools-item:hover, .tools-item:focus-visible { background: var(--bg); outline: none; }
+.tools-item.on { background: var(--accent-soft); }
+.tools-item.on b { color: var(--accent); }
+.count { display: inline-flex; align-items: center; gap: 4px; padding: 5px 9px; border-radius: 999px; background: var(--good-soft); color: var(--good); }
+.navtools { gap: 8px; }
+@media (max-width: 900px) { .count { display: none; } }
+@media (max-width: 640px) { .tools-btn { padding-inline: 9px; } }
+@media (pointer: fine) { .tools-btn, .tools-btn *, .tools-item, .tools-item * { cursor: var(--cur-pointer) !important; } }
+
+/* Cheat sheet: keep the trig table inside its card */
+.sheet { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+.sheet-card .math-display .katex { font-size: .92em; }
+/* Phone: two rows — brand + tools + account on top, section links full width below */
+@media (max-width: 760px) {
+  .topbar-inner { flex-wrap: wrap; row-gap: 8px; }
+  .tools { margin-left: auto; }
+  .navlinks { order: 10; flex: 1 0 100%; margin-inline: -8px; }
+}
+@media (max-width: 760px) {
+  /* the bar's backdrop-filter makes it the containing block, so this spans the bar's width */
+  .tools-menu { position: fixed; left: max(16px, env(safe-area-inset-left, 0px)); right: max(16px, env(safe-area-inset-right, 0px)); top: calc(100% + 6px); width: auto; transform-origin: top center; }
+}
+/* Very narrow screens: the tools button shrinks before anything wraps */
+.navtools { flex: none; }
+@media (max-width: 760px) {
+  .tools { flex: 0 1 auto; min-width: 0; }
+  .tools-btn { max-width: 100%; }
+  .tools-btn > span:not(.pill) { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+  .topbar-inner { gap: 8px; }
+}
+@media (max-width: 380px) {
+  .acct-signin { padding: 7px 9px; font-size: 12px; }
+  .iconbtn { width: 32px; height: 32px; }
+}
