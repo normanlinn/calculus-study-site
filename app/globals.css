@@ -15,9 +15,9 @@
   --good-soft: #e1f2e8;
   --bad: #b3261e;
   --bad-soft: #fbe4e2;
-  --font-display: var(--ff-display), "Bricolage Grotesque", "Avenir Next", "Segoe UI", sans-serif;
-  --font-body: var(--ff-body), "Source Serif 4", Georgia, "Times New Roman", serif;
-  --font-mono: var(--ff-mono), "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --font-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", sans-serif;
+  --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
   --r: 10px;
 }
 @media (prefers-color-scheme: dark) {
