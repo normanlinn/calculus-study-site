@@ -1,0 +1,36 @@
+// Lesson content is stored as HTML with TeX between \( \) and \[ \]; lib/tex.ts renders the math at build time.
+
+export type Block =
+  | { type: "heading"; text: string }
+  | { type: "prose"; html: string }
+  | { type: "lab"; id: LabId; html: string }
+  | { type: "rules"; items: { key: boolean; html: string }[] }
+  | { type: "examples"; items: { label: string; html: string }[] }
+  | { type: "practice"; items: Problem[] }
+  | { type: "traps"; items: { title: string; html: string }[] }
+  | { type: "quiz"; items: QuizItem[] };
+
+export interface Problem {
+  id: string;
+  source: string;
+  href: string | null;
+  question: string;
+  reveals: { label: string; html: string }[];
+}
+
+export interface QuizItem {
+  question: string;
+  options: { html: string; correct: boolean }[];
+  explain: string;
+}
+
+export type LabId = "lab-secant" | "lab-trace" | "lab-exp" | "lab-prod" | "lab-sin" | "lab-circ" | "lab-chain" | "lab-imp";
+
+export interface Section {
+  id: string;
+  slug: string;
+  num: string;
+  title: string;
+  lede: string;
+  blocks: Block[];
+}
