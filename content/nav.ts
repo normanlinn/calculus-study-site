@@ -10,6 +10,7 @@ const SHORT: Record<string, string> = {
   "3-4": "3.4",
   "3-5": "3.5",
   "quick-quiz": "Quick quiz",
+  "memory-tricks": "Memorize",
   "cheat-sheet": "Cheat sheet",
 };
 

@@ -1058,6 +1058,10 @@ export const sections: Section[] = [
     ]
    },
    {
+    "type": "prose",
+    "html": "<p class=\"callout\">Trouble remembering these six? See <a href=\"/memory-tricks/\">Memory tricks</a>: learn 3, get the other 3 with the “co” rule, then drill them with flashcards.</p>"
+   },
+   {
     "type": "lab",
     "id": "lab-sin",
     "html": "<div class=\"lab-head\"><h4>The slope of sin x is cos x</h4><span class=\"tag\">Lab 5a · drag on the graph</span></div>\n<canvas aria-label=\"Graph of sin x with a tangent line\" class=\"short\" id=\"sin-top\"></canvas>\n<canvas aria-label=\"Slopes of sin x traced, compared with cos x\" class=\"short\" id=\"sin-bot\"></canvas>\n<div class=\"controls\">\n<label for=\"sin-x\">x <input id=\"sin-x\" max=\"6.28\" min=\"-6.28\" step=\"0.01\" type=\"range\" value=\"-5\"/></label>\n<label for=\"sin-cos\"><input id=\"sin-cos\" type=\"checkbox\"/> overlay cos x</label>\n<button id=\"sin-anim\" type=\"button\">Sweep</button>\n</div>\n<div class=\"readout\">\n<div>x (radians)<b id=\"sin-xv\">–</b></div>\n<div>slope of sin at x<b class=\"c-d\" id=\"sin-m\">–</b></div>\n<div>cos x<b id=\"sin-c\">–</b></div>\n</div>"
@@ -1865,6 +1869,208 @@ export const sections: Section[] = [
        }
       ],
       "explain": "\\((a^x)'=a^x\\ln a\\). Only base e has no extra factor."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mem",
+  "slug": "memory-tricks",
+  "num": "Memorize",
+  "title": "Memory tricks",
+  "lede": "How to remember every derivative and rule for the exam, plus a flashcard drill to practice them.",
+  "blocks": [
+   {
+    "type": "heading",
+    "text": "Trig derivatives: learn 3, get 6"
+   },
+   {
+    "type": "prose",
+    "html": "<p>Don't memorize six separate facts. Learn the three “plain” ones, then use one rule to get the other three for free.</p><p><strong>Step 1. Learn these three:</strong></p><div class=\"compare\"><table><thead><tr><th>Function</th><th>Derivative</th></tr></thead><tbody><tr><th>\\(\\sin x\\)</th><td>\\(\\cos x\\)</td></tr><tr><th>\\(\\tan x\\)</th><td>\\(\\sec^2 x\\)</td></tr><tr><th>\\(\\sec x\\)</th><td>\\(\\sec x\\tan x\\)</td></tr></tbody></table></div>"
+   },
+   {
+    "type": "prose",
+    "html": "<p><strong>Step 2. The “co-” rule:</strong> put <strong>co</strong> in front of every function, then add a <strong>minus sign</strong>.</p><div class=\"compare\"><table><thead><tr><th>Plain</th><th>Add “co” + minus</th></tr></thead><tbody><tr><th>\\((\\sin x)'=\\cos x\\)</th><td>\\((\\cos x)'=-\\sin x\\)</td></tr><tr><th>\\((\\tan x)'=\\sec^2x\\)</th><td>\\((\\cot x)'=-\\csc^2x\\)</td></tr><tr><th>\\((\\sec x)'=\\sec x\\tan x\\)</th><td>\\((\\csc x)'=-\\csc x\\cot x\\)</td></tr></tbody></table></div><p class=\"note\">Adding “co” to cos gives “co-cos”, which is just sin. So in the first row, “cos x” becomes “sin x” and picks up the minus: \\((\\cos x)'=-\\sin x\\).</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">The one sentence</span><p><strong>“Co” functions get a minus.</strong> cos, cot and csc have negative derivatives. sin, tan and sec don't.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Partners</span><p><strong>tan goes with sec, cot goes with csc.</strong> \\(\\tan\\to\\sec^2\\), \\(\\sec\\to\\sec\\tan\\). \\(\\cot\\to-\\csc^2\\), \\(\\csc\\to-\\csc\\cot\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Keep yourself</span><p>sec and csc keep themselves: \\(\\sec\\to\\boldsymbol{\\sec}\\cdot\\tan\\), \\(\\csc\\to-\\boldsymbol{\\csc}\\cdot\\cot\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">The circle</span><p>sin and cos cycle every 4 derivatives: \\(\\sin\\to\\cos\\to-\\sin\\to-\\cos\\to\\sin\\). One quarter turn per derivative.</p>"
+     }
+    ]
+   },
+   {
+    "type": "examples",
+    "items": [
+     {
+      "label": "Blanked on the exam? Rebuild tan in 20 seconds",
+      "html": "<p>You only need sin, cos and the quotient rule. Write \\(\\tan x=\\dfrac{\\sin x}{\\cos x}\\):</p><ol class=\"steps\"><li>Low d-high minus high d-low: \\(\\dfrac{\\cos x\\cdot\\cos x-\\sin x\\cdot(-\\sin x)}{\\cos^2x}\\)</li><li>Top: \\(\\cos^2x+\\sin^2x=1\\).</li><li>So \\((\\tan x)'=\\dfrac{1}{\\cos^2x}=\\sec^2x\\).</li><li class=\"why\">Same idea for sec: \\(\\sec x=\\dfrac1{\\cos x}\\) gives \\(\\dfrac{\\sin x}{\\cos^2x}=\\sec x\\tan x\\).</li></ol>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Every rule as a phrase you can say"
+   },
+   {
+    "type": "prose",
+    "html": "<div class=\"compare\"><table><thead><tr><th>Rule</th><th>Formula</th><th>Say it as</th></tr></thead><tbody><tr><th>Power</th><td>\\((x^n)'=nx^{n-1}\\)</td><td>“Bring the power down, subtract one.”</td></tr><tr><th>Constant</th><td>\\((c)'=0\\)</td><td>“Flat line, zero slope.”</td></tr><tr><th>\\(e^x\\)</th><td>\\((e^x)'=e^x\\)</td><td>“e to the x is lazy: it stays the same.”</td></tr><tr><th>\\(a^x\\)</th><td>\\((a^x)'=a^x\\ln a\\)</td><td>“Same as e to the x, times ln a.”</td></tr><tr><th>Product</th><td>\\((fg)'=fg'+gf'\\)</td><td>“First d-second, plus second d-first.”</td></tr><tr><th>Quotient</th><td>\\(\\left(\\frac fg\\right)'=\\frac{gf'-fg'}{g^2}\\)</td><td>“Low d-high minus high d-low, over the square of what's below.”</td></tr><tr><th>Chain</th><td>\\(f'(g(x))\\,g'(x)\\)</td><td>“Outside derivative, inside left alone, times inside derivative.” Peel the onion.</td></tr><tr><th>Implicit</th><td>\\((y^n)'=ny^{n-1}y'\\)</td><td>“Every y gets a y′.”</td></tr></tbody></table></div><p class=\"note\">Why “low” goes first in the quotient rule: the minus sign makes order matter. Start with the bottom and you'll get the sign right.</p>"
+   },
+   {
+    "type": "heading",
+    "text": "Flashcard drill"
+   },
+   {
+    "type": "prose",
+    "html": "<p>Tap a card to flip it. Mark <strong>Got it</strong> or <strong>Again</strong>. Cards you miss come back at the end of the round. Switch the direction to practice going from the answer back to the question.</p>"
+   },
+   {
+    "type": "flashcards",
+    "items": [
+     {
+      "front": "\\(\\dfrac{d}{dx}\\sin x\\)",
+      "back": "\\(\\cos x\\)",
+      "tag": "Trig"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\cos x\\)",
+      "back": "\\(-\\sin x\\)",
+      "tag": "Trig"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\tan x\\)",
+      "back": "\\(\\sec^2 x\\)",
+      "tag": "Trig"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\cot x\\)",
+      "back": "\\(-\\csc^2 x\\)",
+      "tag": "Trig"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\sec x\\)",
+      "back": "\\(\\sec x\\tan x\\)",
+      "tag": "Trig"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\csc x\\)",
+      "back": "\\(-\\csc x\\cot x\\)",
+      "tag": "Trig"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\sin(kx)\\)",
+      "back": "\\(k\\cos(kx)\\)",
+      "tag": "Trig + chain"
+     },
+     {
+      "front": "\\(\\displaystyle\\lim_{\\theta\\to0}\\frac{\\sin\\theta}{\\theta}\\)",
+      "back": "\\(1\\)",
+      "tag": "Trig limit"
+     },
+     {
+      "front": "\\(\\displaystyle\\lim_{\\theta\\to0}\\frac{\\cos\\theta-1}{\\theta}\\)",
+      "back": "\\(0\\)",
+      "tag": "Trig limit"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\,c\\) (a constant)",
+      "back": "\\(0\\)",
+      "tag": "Basic"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}x^n\\)",
+      "back": "\\(n\\,x^{n-1}\\)",
+      "tag": "Basic"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}e^x\\)",
+      "back": "\\(e^x\\)",
+      "tag": "Basic"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}a^x\\)",
+      "back": "\\(a^x\\ln a\\)",
+      "tag": "Basic"
+     },
+     {
+      "front": "Product rule: \\((fg)'\\)",
+      "back": "\\(f\\,g'+g\\,f'\\)",
+      "tag": "Rule"
+     },
+     {
+      "front": "Quotient rule: \\(\\left(\\dfrac fg\\right)'\\)",
+      "back": "\\(\\dfrac{g\\,f'-f\\,g'}{g^2}\\)",
+      "tag": "Rule"
+     },
+     {
+      "front": "Chain rule: \\(\\big(f(g(x))\\big)'\\)",
+      "back": "\\(f'(g(x))\\cdot g'(x)\\)",
+      "tag": "Rule"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}[g(x)]^n\\)",
+      "back": "\\(n[g(x)]^{n-1}\\,g'(x)\\)",
+      "tag": "Rule"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}e^{g(x)}\\)",
+      "back": "\\(e^{g(x)}\\,g'(x)\\)",
+      "tag": "Rule"
+     },
+     {
+      "front": "Implicit: \\(\\dfrac{d}{dx}\\,y^n\\)",
+      "back": "\\(n\\,y^{n-1}\\,y'\\)",
+      "tag": "Implicit"
+     },
+     {
+      "front": "Implicit: \\(\\dfrac{d}{dx}(xy)\\)",
+      "back": "\\(y+x\\,y'\\)",
+      "tag": "Implicit"
+     },
+     {
+      "front": "Definition: \\(f'(x)=\\)",
+      "back": "\\(\\displaystyle\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}\\)",
+      "tag": "Definition"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "How to make it stick"
+   },
+   {
+    "type": "prose",
+    "html": "<ol class=\"steps\"><li><strong>Blank-page recall.</strong> Once a day, write every formula from memory on an empty sheet. Then check it against the <a href=\"/cheat-sheet/\">cheat sheet</a>. Recalling works much better than rereading.</li><li><strong>Say the phrases out loud.</strong> They're written to be spoken. Rhythm helps memory.</li><li><strong>Drill both directions.</strong> Use the flashcards above both ways: “\\(\\tan x\\to\\) ?” and “\\(\\sec^2x\\) is the derivative of ?”.</li><li><strong>Short and spread out.</strong> Ten minutes a day for several days beats one long night. Mix in a few problems from <a href=\"/3-3/\">§3.3</a> and the <a href=\"/quick-quiz/\">Quick quiz</a>.</li><li><strong>When stuck, derive it.</strong> Rebuilding tan from sin/cos also practices the quotient rule.</li></ol>"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Mixing up sec² and sec tan",
+      "html": "<p>tan's derivative is \\(\\sec^2x\\). sec's derivative is \\(\\sec x\\tan x\\). Remember: sec keeps itself.</p>"
+     },
+     {
+      "title": "Dropping the minus on cos",
+      "html": "<p>\\((\\cos x)'=-\\sin x\\). “Co” gets a minus, every time.</p>"
+     },
+     {
+      "title": "Power rule on aˣ or eˣ",
+      "html": "<p>\\((2^x)'\\ne x\\,2^{x-1}\\). The power rule needs the variable in the base, not the exponent.</p>"
      }
     ]
    }

@@ -2,6 +2,7 @@ import type { Block } from "@/content/types";
 import Lab from "./Lab";
 import Problem from "./Problem";
 import Quiz from "./Quiz";
+import Flashcards from "./Flashcards";
 import Reveal, { Stagger } from "./Reveal";
 
 const H = ({ html, className }: { html: string; className?: string }) => <div className={className} dangerouslySetInnerHTML={{ __html: html }} />;
@@ -32,6 +33,8 @@ function BlockView({ b }: { b: Block }) {
       return <Stagger className="traps">{b.items.map((t, i) => <div key={i} className="trap"><b>{t.title}</b><H html={t.html} /></div>)}</Stagger>;
     case "quiz":
       return <Quiz items={b.items} />;
+    case "flashcards":
+      return <Flashcards items={b.items} />;
   }
 }
 

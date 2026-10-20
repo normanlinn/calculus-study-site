@@ -251,3 +251,38 @@ h3[id] { scroll-margin-top: 80px; }
 .compare tr:last-child th, .compare tr:last-child td { border-bottom: 0; }
 .compare thead th { font: 600 12px var(--font-mono); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); background: var(--bg); }
 .compare tbody th { font: 600 13px var(--font-mono); color: var(--muted); white-space: nowrap; }
+
+/* Flashcards */
+.flashdeck { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px; display: grid; gap: 14px; min-width: 0; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.controls .seg button { border: 0; border-radius: 0; background: var(--bg); }
+.controls .seg button + button { border-left: 1px solid var(--line); }
+.controls .seg button.on { background: var(--ink); color: var(--bg); }
+.fc-progress { display: flex; align-items: center; gap: 12px; font: 13px var(--font-mono); color: var(--muted); flex-wrap: wrap; }
+.fc-progress .bar { flex: 1 1 160px; max-width: 280px; height: 6px; border-radius: 6px; background: var(--grid); overflow: hidden; }
+.fc-progress .bar > div { height: 100%; background: var(--good); transform-origin: 0 50%; }
+.fc-stage { perspective: 1200px; min-height: 240px; display: grid; }
+.fc-slot { display: grid; }
+.fc-card { all: unset; display: block; cursor: pointer; border-radius: 16px; }
+.fc-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.fc-inner { position: relative; display: grid; transform-style: preserve-3d; min-height: 240px; }
+.fc-face {
+  grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden;
+  border-radius: 16px; padding: 20px; display: grid; gap: 10px; align-content: center; justify-items: center; text-align: center;
+  border: 1px solid var(--line); background: var(--bg); min-width: 0;
+}
+.fc-front { background: linear-gradient(160deg, var(--accent-soft), var(--bg)); }
+.fc-back { transform: rotateY(180deg); background: var(--good-soft); border-color: var(--good); }
+.fc-tag { font: 600 11px var(--font-mono); letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
+.fc-math { font-size: clamp(22px, 5vw, 32px); max-width: 100%; overflow-x: auto; overflow-y: hidden; padding-block: 6px; }
+.fc-small { font-size: 15px; color: var(--muted); max-width: 100%; overflow-x: auto; }
+.fc-hint { font: 12px var(--font-mono); color: var(--muted); }
+.fc-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.fc-actions button { font: 700 15px var(--font-display); padding: 14px; border-radius: 12px; cursor: pointer; border: 1px solid var(--line); color: var(--ink); }
+.fc-actions button:disabled { opacity: .45; cursor: not-allowed; }
+.fc-again { background: var(--bad-soft); border-color: var(--bad) !important; }
+.fc-got { background: var(--good-soft); border-color: var(--good) !important; }
+.fc-done { display: grid; gap: 10px; justify-items: center; text-align: center; align-content: center; padding: 24px; border-radius: 16px; background: var(--good-soft); border: 1px solid var(--good); }
+.fc-star { font-size: 40px; color: var(--good); }
+.compare tbody th:has(.katex) { font: inherit; color: var(--ink); white-space: normal; }
+.fc-small { overflow-y: hidden; padding-block: 4px; }

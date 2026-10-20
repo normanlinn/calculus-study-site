@@ -39,6 +39,8 @@ function renderBlock(b: Block): Block {
         ...b,
         items: b.items.map((p) => ({ ...p, question: tex(p.question), reveals: p.reveals.map((r) => ({ ...r, html: tex(r.html) })) })),
       };
+    case "flashcards":
+      return { ...b, items: b.items.map((c) => ({ ...c, front: tex(c.front), back: tex(c.back) })) };
     case "quiz":
       return {
         ...b,

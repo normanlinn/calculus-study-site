@@ -8,7 +8,8 @@ export type Block =
   | { type: "examples"; items: { label: string; html: string }[] }
   | { type: "practice"; items: Problem[] }
   | { type: "traps"; items: { title: string; html: string }[] }
-  | { type: "quiz"; items: QuizItem[] };
+  | { type: "quiz"; items: QuizItem[] }
+  | { type: "flashcards"; items: Flashcard[] };
 
 export interface Problem {
   id: string;
@@ -16,6 +17,12 @@ export interface Problem {
   href: string | null;
   question: string;
   reveals: { label: string; html: string }[];
+}
+
+export interface Flashcard {
+  front: string;
+  back: string;
+  tag: string;
 }
 
 export interface QuizItem {
