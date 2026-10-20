@@ -5,6 +5,7 @@ import { motion, useScroll, useSpring } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { navItems, allProblemIds } from "@/content/nav";
 import { useDone } from "@/lib/progress";
+import AccountButton from "./AccountButton";
 
 const THEME_KEY = "deriv-guide-theme";
 
@@ -74,6 +75,7 @@ export default function Nav() {
             <motion.span key={count} className="count" initial={{ y: -6, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
               {count} / {allProblemIds.length}
             </motion.span>
+            <AccountButton />
             <ThemeToggle />
           </div>
         </div>

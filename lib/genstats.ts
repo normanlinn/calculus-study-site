@@ -26,5 +26,5 @@ export function recordGen(section: string, right: boolean) {
   writeGen({ ...cur, [section]: { tried: s.tried + 1, right: s.right + (right ? 1 : 0) } });
 }
 
-const subscribe = (l: () => void) => { listeners.add(l); return () => listeners.delete(l); };
-export const useGenStats = () => useSyncExternalStore(subscribe, readGen, () => EMPTY);
+export const subscribeGen = (l: () => void) => { listeners.add(l); return () => listeners.delete(l); };
+export const useGenStats = () => useSyncExternalStore(subscribeGen, readGen, () => EMPTY);

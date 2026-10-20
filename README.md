@@ -33,6 +33,10 @@ This builds the static site into `out/` and pushes it to the `gh-pages` branch, 
 
 Before deploying, add a line at the top of `content/updates.json` describing the change. Anyone who has the site open sees an "updated" banner within about a minute, showing that line, with a Refresh button.
 
+## Accounts
+
+Optional email + Google sign-in syncs progress across devices through Firebase. Setup steps: [docs/ACCOUNTS-SETUP.md](docs/ACCOUNTS-SETUP.md). Until `lib/firebase-config.ts` is filled in, sign-in stays hidden.
+
 ## Where things are
 
 - `content/sections.ts` – all lesson text, problems and solutions (TeX inside `\( \)` and `\[ \]`)
