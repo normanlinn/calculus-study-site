@@ -2097,34 +2097,52 @@ export const sections: Section[] = [
   "slug": "cheat-sheet",
   "num": "Review",
   "title": "One-page cheat sheet",
-  "lede": "Everything you need to memorize, in one place.",
+  "lede": "Everything you need to memorize, in one place. Tap a card to open the full explanation with examples.",
   "blocks": [
    {
-    "type": "rules",
+    "type": "sheet",
     "items": [
      {
-      "key": false,
-      "html": "<h4>Definition (2.8)</h4>\\[f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}\\]<p class=\"note\">Tangent line: \\(y-f(a)=f'(a)(x-a)\\). Normal slope: \\(-1/f'(a)\\).</p>"
+      "title": "Definition (2.8)",
+      "html": "\\[f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}\\]<p class=\"note\">Tangent line: \\(y-f(a)=f'(a)(x-a)\\). Normal slope: \\(-1/f'(a)\\).</p>",
+      "details": "<p><strong>What it means.</strong> \\(f'(x)\\) is the slope of the tangent line at \\(x\\). The fraction \\(\\frac{f(x+h)-f(x)}{h}\\) is the slope of a secant line through two points a distance \\(h\\) apart. As \\(h\\to0\\) the secant turns into the tangent.</p>\n<div>\\[ f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h} \\]</div>\n<p><strong>How to use it, every time:</strong></p>\n<ol class=\"steps\"><li>Write \\(f(x+h)\\) and expand it.</li><li>Subtract \\(f(x)\\). Everything without an \\(h\\) cancels.</li><li>Factor out \\(h\\) and cancel it with the denominator.</li><li>Only now set \\(h=0\\).</li></ol>\n<p><strong>Example.</strong> \\(f(x)=x^2\\): \\(\\dfrac{(x+h)^2-x^2}{h}=\\dfrac{2xh+h^2}{h}=2x+h\\to 2x\\).</p>\n<p><strong>Tricks:</strong> square roots → multiply by the conjugate. Fractions → combine over a common denominator.</p>\n<p><strong>Tangent line</strong> at \\(a\\): \\(y-f(a)=f'(a)(x-a)\\). <strong>Normal line</strong>: same point, slope \\(-\\dfrac{1}{f'(a)}\\).</p>\n<p><strong>Not differentiable</strong> at a corner (like \\(|x|\\) at 0), a jump or hole, or a vertical tangent (like \\(\\sqrt[3]{x}\\) at 0). Differentiable ⇒ continuous, but not the other way around.</p>",
+      "href": "/2-8/",
+      "linkLabel": "Open §2.8"
      },
      {
-      "key": false,
-      "html": "<h4>Basic rules (3.1)</h4>\\[(x^n)'=nx^{n-1},\\ \\ (e^x)'=e^x,\\ \\ (c)'=0\\]<p class=\"note\">\\((cf)'=cf'\\), \\((f\\pm g)'=f'\\pm g'\\)</p>"
+      "title": "Basic rules (3.1)",
+      "html": "\\[(x^n)'=nx^{n-1},\\ \\ (e^x)'=e^x,\\ \\ (c)'=0\\]<p class=\"note\">\\((cf)'=cf'\\), \\((f\\pm g)'=f'\\pm g'\\)</p>",
+      "details": "<div>\\[ (c)'=0 \\qquad (x^n)'=n\\,x^{n-1} \\qquad (cf)'=c\\,f' \\qquad (f\\pm g)'=f'\\pm g' \\]</div>\n<p><strong>Power rule works for any exponent</strong>, including negatives and fractions. Rewrite first:</p>\n<ul class=\"steps\"><li>\\(\\sqrt{x}=x^{1/2}\\to\\tfrac12x^{-1/2}=\\dfrac{1}{2\\sqrt x}\\)</li><li>\\(\\dfrac{1}{x^3}=x^{-3}\\to-3x^{-4}\\)</li><li>\\(\\dfrac{4}{\\sqrt[3]{x}}=4x^{-1/3}\\to-\\tfrac43x^{-4/3}\\)</li></ul>\n<p><strong>Exponentials:</strong></p>\n<div>\\[ (e^x)'=e^x \\qquad (a^x)'=a^x\\ln a \\]</div>\n<p class=\"why\">\\(e\\) is the one base whose slope at \\(x=0\\) is exactly 1. Any other base picks up the factor \\(\\ln a\\).</p>\n<p><strong>Fraction with one term on the bottom?</strong> Split it instead of using the quotient rule: \\(\\dfrac{3x^2+x^3}{x}=3x+x^2\\).</p>\n<p><strong>Watch out:</strong> \\((e^x)'\\ne x e^{x-1}\\) and \\((2^x)'\\ne x2^{x-1}\\). The power rule needs the variable in the base. Constants like \\(e^2\\) or \\(\\pi^3\\) have derivative 0.</p>",
+      "href": "/3-1/",
+      "linkLabel": "Open §3.1"
      },
      {
-      "key": false,
-      "html": "<h4>Product / Quotient (3.2)</h4>\\[(fg)'=fg'+gf'\\]\\[\\left(\\tfrac fg\\right)'=\\tfrac{gf'-fg'}{g^2}\\]"
+      "title": "Product / Quotient (3.2)",
+      "html": "\\[(fg)'=fg'+gf'\\]\\[\\left(\\tfrac fg\\right)'=\\tfrac{gf'-fg'}{g^2}\\]",
+      "details": "<p><strong>Product rule:</strong> “first d-second plus second d-first”.</p>\n<div>\\[ (fg)'=f\\,g'+g\\,f' \\]</div>\n<p><strong>Example.</strong> \\((x^2e^x)'=x^2e^x+e^x\\cdot2x=e^x(x^2+2x)\\).</p>\n<p><strong>Quotient rule:</strong> “low d-high minus high d-low, over the square of what's below”.</p>\n<div>\\[ \\left(\\frac fg\\right)'=\\frac{g\\,f'-f\\,g'}{g^2} \\]</div>\n<p><strong>Example.</strong> \\(\\left(\\dfrac{x^2+3}{x-1}\\right)'=\\dfrac{(x-1)(2x)-(x^2+3)(1)}{(x-1)^2}=\\dfrac{x^2-2x-3}{(x-1)^2}\\).</p>\n<ul class=\"steps\"><li><strong>Order matters</strong> in the quotient rule because of the minus. Start with the bottom (“low”).</li><li><strong>Distribute the minus</strong> over the whole second product.</li><li><strong>Leave the bottom squared.</strong> Don't expand it.</li><li><strong>\\((fg)'\\ne f'g'\\).</strong> Check with \\(x\\cdot x\\).</li></ul>\n<p><strong>Table questions:</strong> plug the given values straight into the formula, e.g. \\((fg)'(5)=f(5)g'(5)+g(5)f'(5)\\).</p>",
+      "href": "/3-2/",
+      "linkLabel": "Open §3.2"
      },
      {
-      "key": false,
-      "html": "<h4>Trig (3.3)</h4>\\[\\begin{aligned}(\\sin x)'&amp;=\\cos x &amp; (\\cos x)'&amp;=-\\sin x\\\\(\\tan x)'&amp;=\\sec^2x &amp; (\\cot x)'&amp;=-\\csc^2x\\\\(\\sec x)'&amp;=\\sec x\\tan x &amp; (\\csc x)'&amp;=-\\csc x\\cot x\\end{aligned}\\]<p class=\"note\">\\(\\lim\\frac{\\sin\\theta}{\\theta}=1\\), \\(\\lim\\frac{\\cos\\theta-1}{\\theta}=0\\)</p>"
+      "title": "Trig (3.3)",
+      "html": "\\[\\begin{aligned}(\\sin x)'&amp;=\\cos x &amp; (\\cos x)'&amp;=-\\sin x\\\\(\\tan x)'&amp;=\\sec^2x &amp; (\\cot x)'&amp;=-\\csc^2x\\\\(\\sec x)'&amp;=\\sec x\\tan x &amp; (\\csc x)'&amp;=-\\csc x\\cot x\\end{aligned}\\]<p class=\"note\">\\(\\lim\\frac{\\sin\\theta}{\\theta}=1\\), \\(\\lim\\frac{\\cos\\theta-1}{\\theta}=0\\)</p>",
+      "details": "<div>\\[ \\begin{aligned}(\\sin x)'&=\\cos x & (\\cos x)'&=-\\sin x\\\\(\\tan x)'&=\\sec^2x & (\\cot x)'&=-\\csc^2x\\\\(\\sec x)'&=\\sec x\\tan x & (\\csc x)'&=-\\csc x\\cot x\\end{aligned} \\]</div>\n<p><strong>Learn 3, get 6.</strong> Learn sin, tan, sec. For the “co” versions, add “co” to every function and add a minus sign.</p>\n<p><strong>Special limits</strong> (θ in radians):</p>\n<div>\\[ \\lim_{\\theta\\to0}\\frac{\\sin\\theta}{\\theta}=1 \\qquad \\lim_{\\theta\\to0}\\frac{\\cos\\theta-1}{\\theta}=0 \\]</div>\n<p>Make the denominator match the angle: \\(\\dfrac{\\sin7x}{4x}=\\dfrac74\\cdot\\dfrac{\\sin7x}{7x}\\to\\dfrac74\\).</p>\n<p><strong>The 4-cycle:</strong> \\(\\sin\\to\\cos\\to-\\sin\\to-\\cos\\to\\sin\\). For the \\(n\\)-th derivative, divide \\(n\\) by 4 and use the remainder. Example: \\(\\frac{d^{99}}{dx^{99}}\\sin x=-\\cos x\\) since \\(99=4\\cdot24+3\\).</p>\n<p><strong>Simplify with</strong> \\(\\sin^2x+\\cos^2x=1\\) after the quotient rule: \\(\\left(\\dfrac{\\sin x}{1+\\cos x}\\right)'=\\dfrac{1}{1+\\cos x}\\).</p>\n<p class=\"why\">Drill these with flashcards on the <a href=\"/memory-tricks/\">Memorize</a> page.</p>",
+      "href": "/3-3/",
+      "linkLabel": "Open §3.3"
      },
      {
-      "key": false,
-      "html": "<h4>Chain (3.4)</h4>\\[\\big(f(g(x))\\big)'=f'(g(x))\\,g'(x)\\]<p class=\"note\">\\((g^n)'=ng^{n-1}g'\\), \\((e^{g})'=e^{g}g'\\), \\((a^x)'=a^x\\ln a\\)</p>"
+      "title": "Chain (3.4)",
+      "html": "\\[\\big(f(g(x))\\big)'=f'(g(x))\\,g'(x)\\]<p class=\"note\">\\((g^n)'=ng^{n-1}g'\\), \\((e^{g})'=e^{g}g'\\), \\((a^x)'=a^x\\ln a\\)</p>",
+      "details": "<div>\\[ \\big(f(g(x))\\big)'=f'(g(x))\\cdot g'(x) \\qquad \\frac{dy}{dx}=\\frac{dy}{du}\\cdot\\frac{du}{dx} \\]</div>\n<p>“Derivative of the outside, leave the inside alone, times the derivative of the inside.”</p>\n<p><strong>Find inside vs. outside:</strong> imagine plugging in a number. What you compute <em>last</em> is the outside.</p>\n<p><strong>Patterns</strong> (□ is the inside):</p>\n<ul class=\"steps\"><li>\\((\\square^n)'=n\\,\\square^{n-1}\\cdot\\square'\\). Example: \\(((3x^2-1)^5)'=30x(3x^2-1)^4\\).</li><li>\\((e^{\\square})'=e^{\\square}\\cdot\\square'\\). Example: \\((e^{4x^2-3x})'=(8x-3)e^{4x^2-3x}\\).</li><li>\\((\\sin\\square)'=\\cos\\square\\cdot\\square'\\). Example: \\((\\sin(x^3+2x))'=(3x^2+2)\\cos(x^3+2x)\\).</li><li>\\((\\sqrt{\\square})'=\\dfrac{\\square'}{2\\sqrt{\\square}}\\). Example: \\((\\sqrt{1+x^3})'=\\dfrac{3x^2}{2\\sqrt{1+x^3}}\\).</li><li>\\((a^{\\square})'=a^{\\square}\\ln a\\cdot\\square'\\).</li></ul>\n<p><strong>Layers multiply:</strong> \\(\\sin^2(x^2+1)\\to2\\sin(x^2+1)\\cdot\\cos(x^2+1)\\cdot2x\\).</p>\n<p><strong>Watch out:</strong> keep the inside unchanged inside the outer function, \\(\\cos(x^2)\\to-\\sin(x^2)\\cdot2x\\), not \\(-\\sin(2x)\\). In table problems, evaluate \\(f'\\) at \\(g(a)\\).</p>",
+      "href": "/3-4/",
+      "linkLabel": "Open §3.4"
      },
      {
-      "key": false,
-      "html": "<h4>Implicit (3.5)</h4><p>Differentiate both sides; every \\(y\\)-term gets a \\(y'\\); collect, factor, solve.</p><p class=\"note\">\\((y^n)'=ny^{n-1}y'\\), \\((xy)'=y+xy'\\)</p>"
+      "title": "Implicit (3.5)",
+      "html": "<p>Differentiate both sides; every \\(y\\)-term gets a \\(y'\\); collect, factor, solve.</p><p class=\"note\">\\((y^n)'=ny^{n-1}y'\\), \\((xy)'=y+xy'\\)</p>",
+      "details": "<p><strong>When:</strong> the equation mixes \\(x\\) and \\(y\\) and is hard to solve for \\(y\\), like \\(x^2+y^2=25\\) or \\(x^3+y^3=6xy\\).</p>\n<p><strong>Recipe:</strong></p>\n<ol class=\"steps\"><li>Differentiate both sides with respect to \\(x\\). <strong>Every \\(y\\)-term gets a \\(y'\\)</strong> (chain rule).</li><li>Move all \\(y'\\) terms to one side, everything else to the other.</li><li>Factor out \\(y'\\) and divide.</li></ol>\n<p><strong>Building blocks:</strong></p>\n<ul class=\"steps\"><li>\\((y^n)'=n\\,y^{n-1}\\,y'\\)</li><li>\\((xy)'=y+x\\,y'\\) (product rule)</li><li>\\((x^2y)'=2xy+x^2y'\\)</li><li>\\((\\sin y)'=\\cos y\\cdot y'\\), \\((e^y)'=e^y\\,y'\\)</li><li>A constant on either side → 0.</li></ul>\n<p><strong>Example.</strong> \\(x^2+y^2=25\\): \\(2x+2yy'=0\\Rightarrow y'=-\\dfrac{x}{y}\\). At \\((3,4)\\) the slope is \\(-\\tfrac34\\).</p>\n<p><strong>Slope at a point, fast:</strong> plug in \\(x\\) and \\(y\\) right after differentiating, then solve for \\(y'\\). For \\(x^2+xy+y^2=7\\) at \\((1,2)\\): \\(2+2+y'+4y'=0\\Rightarrow y'=-\\tfrac45\\).</p>\n<p><strong>Horizontal tangent:</strong> numerator of \\(y'\\) is 0. <strong>Vertical tangent:</strong> denominator is 0.</p>",
+      "href": "/3-5/",
+      "linkLabel": "Open §3.5"
      }
     ]
    }

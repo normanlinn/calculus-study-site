@@ -115,18 +115,32 @@ export default function Flashcards({ items }: { items: Flashcard[] }) {
                 onClick={() => setFlipped((f) => !f)}
                 aria-label={flipped ? "Showing the answer. Tap to see the question." : "Showing the question. Tap to see the answer."}
               >
-                <motion.div className="fc-inner" animate={{ rotateY: flipped ? 180 : 0 }} transition={{ type: "spring", stiffness: 260, damping: 24 }}>
-                  <div className="fc-face fc-front">
-                    <span className="fc-tag">{card.tag} · {reverse ? "what was differentiated?" : "what is it?"}</span>
-                    <div className="fc-math" dangerouslySetInnerHTML={{ __html: front }} />
-                    <span className="fc-hint">Tap to flip</span>
-                  </div>
-                  <div className="fc-face fc-back">
-                    <span className="fc-tag">Answer</span>
-                    <div className="fc-math" dangerouslySetInnerHTML={{ __html: back }} />
-                    <div className="fc-small" dangerouslySetInnerHTML={{ __html: front }} />
-                  </div>
-                </motion.div>
+                {/* Only one side is ever in the page: it turns edge-on, swaps, and turns back.
+                    Stacking two faces with backface-visibility lets KaTeX text bleed through mirrored in Safari. */}
+                <AnimatePresence mode="wait" initial={false}>
+                  <motion.div
+                    key={flipped ? "back" : "front"}
+                    className={"fc-face " + (flipped ? "fc-back" : "fc-front")}
+                    initial={{ rotateY: -90, opacity: 0.6 }}
+                    animate={{ rotateY: 0, opacity: 1 }}
+                    exit={{ rotateY: 90, opacity: 0.6 }}
+                    transition={{ duration: 0.16, ease: "easeInOut" }}
+                  >
+                    {flipped ? (
+                      <>
+                        <span className="fc-tag">Answer</span>
+                        <div className="fc-math" dangerouslySetInnerHTML={{ __html: back }} />
+                        <div className="fc-small" dangerouslySetInnerHTML={{ __html: front }} />
+                      </>
+                    ) : (
+                      <>
+                        <span className="fc-tag">{card.tag} · {reverse ? "what was differentiated?" : "what is it?"}</span>
+                        <div className="fc-math" dangerouslySetInnerHTML={{ __html: front }} />
+                        <span className="fc-hint">Tap to flip</span>
+                      </>
+                    )}
+                  </motion.div>
+                </AnimatePresence>
               </button>
             </motion.div>
           ) : (

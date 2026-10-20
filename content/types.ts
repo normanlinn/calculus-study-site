@@ -9,7 +9,8 @@ export type Block =
   | { type: "practice"; items: Problem[] }
   | { type: "traps"; items: { title: string; html: string }[] }
   | { type: "quiz"; items: QuizItem[] }
-  | { type: "flashcards"; items: Flashcard[] };
+  | { type: "flashcards"; items: Flashcard[] }
+  | { type: "sheet"; items: SheetCard[] };
 
 export interface Problem {
   id: string;
@@ -17,6 +18,15 @@ export interface Problem {
   href: string | null;
   question: string;
   reveals: { label: string; html: string }[];
+}
+
+/** A cheat sheet card: a short summary that opens a pop-up with the full explanation. */
+export interface SheetCard {
+  title: string;
+  html: string;
+  details: string;
+  href: string;
+  linkLabel: string;
 }
 
 export interface Flashcard {

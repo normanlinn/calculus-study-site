@@ -1,6 +1,10 @@
 [
   {
     "date": "2026-10-20",
+    "text": "Cheat sheet cards now open a pop-up with the full explanation and examples. Also fixed the flashcard flip in Safari."
+  },
+  {
+    "date": "2026-10-20",
     "text": "New math cursors (∫, Σ, ∂, Δ) and a site logo for your browser tab, home screen and shared links."
   },
   {

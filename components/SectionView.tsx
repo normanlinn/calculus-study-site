@@ -3,6 +3,7 @@ import Lab from "./Lab";
 import Problem from "./Problem";
 import Quiz from "./Quiz";
 import Flashcards from "./Flashcards";
+import SheetCards from "./SheetCards";
 import Reveal, { Stagger } from "./Reveal";
 
 const H = ({ html, className }: { html: string; className?: string }) => <div className={className} dangerouslySetInnerHTML={{ __html: html }} />;
@@ -35,6 +36,8 @@ function BlockView({ b }: { b: Block }) {
       return <Quiz items={b.items} />;
     case "flashcards":
       return <Flashcards items={b.items} />;
+    case "sheet":
+      return <SheetCards items={b.items} />;
   }
 }
 
