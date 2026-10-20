@@ -499,3 +499,6 @@ export function initLab(id: LabId, root: HTMLElement): () => void {
   draw();
   return () => { ac.abort(); ro.disconnect(); mo.disconnect(); cancelAnimationFrame(raf); };
 }
+
+// shared with the function checker on the Generate page
+export { Plot, curve, css };

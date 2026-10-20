@@ -10,7 +10,9 @@ export type Block =
   | { type: "traps"; items: { title: string; html: string }[] }
   | { type: "quiz"; items: QuizItem[] }
   | { type: "flashcards"; items: Flashcard[] }
-  | { type: "sheet"; items: SheetCard[] };
+  | { type: "sheet"; items: SheetCard[] }
+  | { type: "generator" }
+  | { type: "checker" };
 
 export interface Problem {
   id: string;

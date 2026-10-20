@@ -4,6 +4,7 @@ import Problem from "./Problem";
 import Quiz from "./Quiz";
 import Flashcards from "./Flashcards";
 import SheetCards from "./SheetCards";
+import { LazyChecker, LazyGenerator } from "./GenerateTools";
 import Reveal, { Stagger } from "./Reveal";
 
 const H = ({ html, className }: { html: string; className?: string }) => <div className={className} dangerouslySetInnerHTML={{ __html: html }} />;
@@ -38,6 +39,10 @@ function BlockView({ b }: { b: Block }) {
       return <Flashcards items={b.items} />;
     case "sheet":
       return <SheetCards items={b.items} />;
+    case "generator":
+      return <LazyGenerator />;
+    case "checker":
+      return <LazyChecker />;
   }
 }
 

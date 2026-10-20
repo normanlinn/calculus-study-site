@@ -1891,6 +1891,37 @@ export const sections: Section[] = [
   ]
  },
  {
+  "id": "gen",
+  "slug": "generate",
+  "num": "Practice",
+  "title": "Problem generator",
+  "lede": "Unlimited new practice problems with step-by-step solutions, plus a checker for any derivative you make up yourself.",
+  "blocks": [
+   {
+    "type": "heading",
+    "text": "Generate a new problem"
+   },
+   {
+    "type": "prose",
+    "html": "<p>Pick a section, or <strong>Mixed</strong> for exam-style variety. Every problem is new: the numbers are random, but the steps are the same ones you'll use on the quiz. Number answers are checked for you. For the others, open the solution and mark whether you got it.</p>"
+   },
+   {
+    "type": "generator"
+   },
+   {
+    "type": "heading",
+    "text": "Make your own problem"
+   },
+   {
+    "type": "prose",
+    "html": "<p>Type any function, work out its derivative on paper, and type your answer. The page compares your answer with the real slope of the function at many points, and graphs both so you can see where they differ.</p>"
+   },
+   {
+    "type": "checker"
+   }
+  ]
+ },
+ {
   "id": "mem",
   "slug": "memory-tricks",
   "num": "Memorize",

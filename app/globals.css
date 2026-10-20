@@ -370,3 +370,34 @@ h3[id] { scroll-margin-top: 80px; }
 .modal-body { grid-auto-rows: max-content; align-content: start; }
 .modal-body p { padding-block: .4em; margin-block: -.2em; }
 .steps { padding-block: .3em; }
+
+/* Generate page */
+.gen { display: grid; gap: 14px; min-width: 0; }
+.gen-stats { font: 12px var(--font-mono); color: var(--muted); }
+.gen-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px; display: grid; gap: 12px; min-width: 0; }
+.gen-tag { font: 600 11px var(--font-mono); letter-spacing: .07em; text-transform: uppercase; color: var(--tangent); }
+.gen-q { font-size: 19px; overflow-x: auto; overflow-y: hidden; padding-block: .3em; }
+.gen-answer { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font: 600 13px var(--font-mono); }
+.gen-answer input, .checker-form input {
+  font: 16px var(--font-mono); color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px; min-width: 0;
+}
+.gen-answer input { width: 170px; }
+.gen-answer input:focus, .checker-form input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.gen-verdict { font-weight: 600; padding: 8px 12px; border-radius: 10px; }
+.gen-verdict.right { background: var(--good-soft); color: var(--good); }
+.gen-verdict.wrong { background: var(--bad-soft); color: var(--bad); }
+.gen-buttons { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.gen-buttons .btn { font-size: 13px; }
+.gen-next { margin-left: auto; padding: 10px 16px; border: 0; cursor: pointer; font-size: 14px; }
+.gen-hint, .gen-sol { overflow: hidden; }
+.gen-hint > div { background: var(--accent-soft); border-radius: 10px; padding: 10px 14px; }
+.gen-steps { display: grid; gap: 8px; grid-template-columns: minmax(0, 1fr); padding-top: 4px; }
+.gen-steps > * { overflow-x: auto; overflow-y: hidden; padding-block: .25em; }
+.gen-self { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding-top: 10px; font-size: 15px; }
+.gen-self button { font: 700 14px var(--font-display); padding: 9px 14px; border-radius: 10px; border: 1px solid var(--line); cursor: pointer; color: var(--ink); }
+.gen-loading { padding: 40px; text-align: center; color: var(--muted); font: 13px var(--font-mono); border: 1px dashed var(--line); border-radius: 14px; }
+.checker-presets { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font: 12px var(--font-mono); color: var(--muted); }
+.checker-presets .btn { font-size: 12px; padding: 5px 9px; }
+.checker-form { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 10px 12px; align-items: center; font: 600 14px var(--font-mono); }
+.checker-form .cta { grid-column: 1 / -1; justify-self: start; border: 0; cursor: pointer; }
+@media (max-width: 520px) { .checker-form { grid-template-columns: minmax(0, 1fr); } .gen-next { margin-left: 0; } }
