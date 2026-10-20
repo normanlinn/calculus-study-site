@@ -286,3 +286,22 @@ h3[id] { scroll-margin-top: 80px; }
 .fc-star { font-size: 40px; color: var(--good); }
 .compare tbody th:has(.katex) { font: inherit; color: var(--ink); white-space: normal; }
 .fc-small { overflow-y: hidden; padding-block: 4px; }
+
+/* Update notice */
+.update-toast {
+  position: fixed; z-index: 40;
+  left: max(16px, env(safe-area-inset-left, 0px)); right: max(16px, env(safe-area-inset-right, 0px));
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  margin: 0 auto; max-width: 560px;
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  padding: 14px 16px; border-radius: 14px;
+  background: var(--ink); color: var(--bg);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, .28);
+}
+.update-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--good); flex: none; }
+.update-text { flex: 1 1 200px; min-width: 0; display: grid; gap: 2px; font-size: 15px; line-height: 1.4; }
+.update-text span { opacity: .8; font-size: 14px; }
+.update-actions { display: flex; gap: 8px; margin-left: auto; }
+.update-actions button { font: 700 14px var(--font-display); border-radius: 10px; padding: 9px 14px; cursor: pointer; border: 1px solid color-mix(in srgb, var(--bg) 35%, transparent); }
+.update-later { background: transparent; color: var(--bg); }
+.update-go { background: var(--bg); color: var(--ink); }

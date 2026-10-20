@@ -3,6 +3,7 @@ import "katex/dist/katex.min.css";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Providers from "@/components/Providers";
+import UpdateNotice from "@/components/UpdateNotice";
 
 // Fonts load in the browser from Google Fonts, so the build never needs to download them.
 const FONTS =
@@ -35,7 +36,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <footer className="wrap">
             Practice problems follow the exercise numbering in Stewart, Clegg &amp; Watson, <em>Calculus: Early Transcendentals</em>, 9th ed.
             Your “I can do this” ticks are saved in this browser only.
+            <br />
+            Last updated{" "}
+            {new Date(process.env.NEXT_PUBLIC_BUILD_TIME ?? Date.now()).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "America/Los_Angeles" })}.
+            This page tells you when a newer version is published.
           </footer>
+          <UpdateNotice />
         </Providers>
       </body>
     </html>
