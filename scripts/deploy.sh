@@ -4,6 +4,8 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 PAGES_BASE_PATH=/calculus-study-site NEXT_TELEMETRY_DISABLED=1 npx next build
 touch out/.nojekyll
+# keep Vercel from trying to build this branch
+cp vercel.json out/vercel.json
 tmp=$(mktemp -d)
 cp -R out/. "$tmp"
 cd "$tmp"
