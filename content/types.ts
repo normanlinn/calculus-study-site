@@ -1,7 +1,7 @@
 // Lesson content is stored as HTML with TeX between \( \) and \[ \]; lib/tex.ts renders the math at build time.
 
 export type Block =
-  | { type: "heading"; text: string }
+  | { type: "heading"; text: string; id?: string }
   | { type: "prose"; html: string }
   | { type: "lab"; id: LabId; html: string }
   | { type: "rules"; items: { key: boolean; html: string }[] }

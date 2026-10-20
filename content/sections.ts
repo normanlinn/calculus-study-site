@@ -65,7 +65,7 @@ export const sections: Section[] = [
       "reveals": [
        {
         "label": "Step-by-step solution",
-        "html": "<p>The tangent slope is \\(f'(3)\\). \\(f'(x)=2x-4\\) (by the definition, or the power rule).</p>\n<p class=\"ans\">\\(f'(3)=6-4=2\\)</p>"
+        "html": "<p>The tangent slope is \\(f'(3)\\). \\(f'(x)=2x-4\\) (by the definition, or the power rule).</p>\n<p class=\"ans\">\\(f'(3)=6-4=2\\)</p><p class=\"why\">Slope or full line? See <a href=\"/3-1/#slope-vs-line\">slope of the tangent vs. the tangent line</a> on the 3.1 page.</p>"
        }
       ]
      },
@@ -121,7 +121,7 @@ export const sections: Section[] = [
       "reveals": [
        {
         "label": "Step-by-step solution",
-        "html": "<p>Point: \\(y(1)=1-2=-1\\), so \\((1,-1)\\).</p>\n<p>Slope: \\(y'=3x^2-2\\), so \\(y'(1)=1\\).</p>\n<p>\\(y-(-1)=1(x-1)\\)</p>\n<p class=\"ans\">\\(y=x-2\\)</p>"
+        "html": "<p>Point: \\(y(1)=1-2=-1\\), so \\((1,-1)\\).</p>\n<p>Slope: \\(y'=3x^2-2\\), so \\(y'(1)=1\\).</p>\n<p>\\(y-(-1)=1(x-1)\\)</p>\n<p class=\"ans\">\\(y=x-2\\)</p><p class=\"why\">Slope or full line? See <a href=\"/3-1/#slope-vs-line\">slope of the tangent vs. the tangent line</a> on the 3.1 page.</p>"
        }
       ]
      },
@@ -585,6 +585,66 @@ export const sections: Section[] = [
    {
     "type": "prose",
     "html": "<p>The tangent line at \\((a,f(a))\\) is \\(y-f(a)=f'(a)(x-a)\\). The <strong>normal line</strong> is perpendicular to the tangent, so its slope is \\(-\\dfrac{1}{f'(a)}\\).</p>\n<p>A <strong>horizontal tangent</strong> happens where \\(f'(x)=0\\). Set the derivative to zero and solve.</p>"
+   },
+   {
+    "type": "heading",
+    "id": "slope-vs-line",
+    "text": "Slope of the tangent vs. the tangent line"
+   },
+   {
+    "type": "prose",
+    "html": "<p>These sound alike but ask for different things. The <strong>slope</strong> is one number. The <strong>tangent line</strong> is a whole equation, and the slope is just one of its two ingredients.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">“Slope of the tangent line” → a number</span><p>One step: plug \\(a\\) into the <strong>derivative</strong>.</p><div>\\[ m = f'(a) \\]</div><p class=\"note\">Same answer for “rate of change at \\(a\\)” or “find \\(f'(a)\\)”.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">“Tangent line” → an equation</span><p>Three steps: a point, a slope, then point-slope form.</p><div>\\[ y - f(a) = f'(a)\\,(x - a) \\]</div><p class=\"note\">The point comes from \\(f\\). The slope comes from \\(f'\\).</p>"
+     }
+    ]
+   },
+   {
+    "type": "examples",
+    "items": [
+     {
+      "label": "Slope only · practice quiz Q2",
+      "html": "<p>Find the <strong>slope</strong> of the tangent line to \\(f(x)=x^2-4x\\) at \\(x=3\\).</p><ol class=\"steps\"><li>Differentiate: \\(f'(x)=2x-4\\).</li><li>Plug in 3: \\(f'(3)=6-4=2\\).</li><li>Answer: <strong>2</strong>. It's a number, so you're done.</li></ol>"
+     },
+     {
+      "label": "Full line · practice quiz Q6",
+      "html": "<p>Find the <strong>tangent line</strong> to \\(y=x^3-2x\\) at \\(x=1\\).</p><ol class=\"steps\"><li><strong>Point</strong> (use \\(y\\)): \\(y(1)=1-2=-1\\), so \\((1,-1)\\).</li><li><strong>Slope</strong> (use \\(y'\\)): \\(y'=3x^2-2\\), so \\(y'(1)=1\\).</li><li><strong>Equation</strong>: \\(y-(-1)=1(x-1)\\), so <strong>\\(y=x-2\\)</strong>.</li></ol>"
+     },
+     {
+      "label": "Same function, both questions",
+      "html": "<p>Turn Q2 into a tangent-line question: find the tangent line to \\(f(x)=x^2-4x\\) at \\(x=3\\).</p><ol class=\"steps\"><li>Point: \\(f(3)=9-12=-3\\), so \\((3,-3)\\).</li><li>Slope: \\(f'(3)=2\\) (the Q2 answer).</li><li>Line: \\(y-(-3)=2(x-3)\\), so \\(y=2x-9\\).</li><li class=\"why\">Q2's answer (2) is the slope of this line.</li></ol>"
+     }
+    ]
+   },
+   {
+    "type": "prose",
+    "html": "<div class=\"compare\"><table><thead><tr><th></th><th>Slope of the tangent</th><th>Tangent line</th></tr></thead><tbody><tr><th>Answer is</th><td>a number</td><td>an equation \\(y=\\dots\\)</td></tr><tr><th>Uses \\(f(a)\\)?</th><td>No</td><td>Yes, for the point</td></tr><tr><th>Uses \\(f'(a)\\)?</th><td>Yes</td><td>Yes, for the slope</td></tr><tr><th>Q2 / Q6 answer</th><td>\\(2\\)</td><td>\\(y=x-2\\)</td></tr></tbody></table></div><p><strong>Read the wording:</strong> “slope”, “rate of change” or “\\(f'(a)\\)” → give a number. “Tangent line” or “equation of the tangent line” → give \\(y=\\dots\\). “Normal line” → same point, slope \\(-\\dfrac{1}{f'(a)}\\).</p>"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Getting the point from f′",
+      "html": "<p>The y-coordinate of the point is \\(f(a)\\), never \\(f'(a)\\). In Q6, \\(y(1)=-1\\) is the point and \\(y'(1)=1\\) is the slope.</p>"
+     },
+     {
+      "title": "Stopping at the slope",
+      "html": "<p>If the question says “tangent line”, the number \\(f'(a)\\) alone gets partial credit at best. Finish with \\(y=\\dots\\).</p>"
+     },
+     {
+      "title": "Writing a line for a slope question",
+      "html": "<p>If it only asks for the slope, give the number. An equation answers a different question.</p>"
+     }
+    ]
    },
    {
     "type": "heading",

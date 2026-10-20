@@ -9,7 +9,7 @@ const H = ({ html, className }: { html: string; className?: string }) => <div cl
 function BlockView({ b }: { b: Block }) {
   switch (b.type) {
     case "heading":
-      return <Reveal><h3>{b.text}</h3></Reveal>;
+      return <Reveal><h3 id={b.id}>{b.text}</h3></Reveal>;
     case "prose":
       return <Reveal><H className="prose" html={b.html} /></Reveal>;
     case "lab":
