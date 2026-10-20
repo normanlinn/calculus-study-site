@@ -1,0 +1,1500 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Derivatives Field Guide</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] },
+  svg: { fontCache: 'global' },
+  options: { enableMenu: false }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js" async></script>
+<style>
+/* Layout: an engineer's graph pad. One long scroll, a sticky section bar, each section = idea → rules → lab → worked examples → practice → traps. */
+:root {
+  --bg: #eef2f6;
+  --surface: #fbfcfe;
+  --ink: #18212e;
+  --muted: #566274;
+  --grid: #dde5ee;
+  --axis: #8d9aab;
+  --line: #c9d3df;
+  --accent: #1f55d0;      /* f(x) curves, links */
+  --accent-soft: #e2eafb;
+  --deriv: #b8236f;       /* f'(x) curves */
+  --tangent: #c65a06;     /* tangent / secant lines */
+  --good: #1b7a46;
+  --good-soft: #e1f2e8;
+  --bad: #b3261e;
+  --bad-soft: #fbe4e2;
+  --font-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", sans-serif;
+  --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --r: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d131c; --surface: #141c28; --ink: #e4eaf3; --muted: #9aa7b8; --grid: #1f2a39; --axis: #4f5d70; --line: #2a3647;
+    --accent: #7aa2ff; --accent-soft: #1a2741; --deriv: #ff78b9; --tangent: #ffa04d;
+    --good: #5fd08f; --good-soft: #13291d; --bad: #ff8a80; --bad-soft: #2f1716; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d131c; --surface: #141c28; --ink: #e4eaf3; --muted: #9aa7b8; --grid: #1f2a39; --axis: #4f5d70; --line: #2a3647;
+  --accent: #7aa2ff; --accent-soft: #1a2741; --deriv: #ff78b9; --tangent: #ffa04d;
+  --good: #5fd08f; --good-soft: #13291d; --bad: #ff8a80; --bad-soft: #2f1716; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink);
+  font: 17px/1.6 var(--font-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 64px;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.wrap { max-width: 980px; margin: 0 auto; }
+h1, h2, h3, h4 { font-family: var(--font-display); text-wrap: balance; line-height: 1.15; margin: 0; }
+p { margin: 0; }
+a { color: var(--accent); }
+.mono { font-family: var(--font-mono); font-size: .85em; }
+mjx-container { max-width: 100%; overflow-x: auto; overflow-y: hidden; }
+mjx-container[display="true"] { margin: .6em 0 !important; }
+
+/* Header */
+header.hero { padding-block: 40px 20px; display: grid; gap: 14px; }
+.eyebrow { font: 600 12px/1 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.hero h1 { font-size: clamp(34px, 6vw, 58px); font-weight: 800; letter-spacing: -.02em; }
+.hero h1 .prime { color: var(--deriv); }
+.hero p.lede { max-width: 62ch; color: var(--muted); font-size: 18px; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 18px; font: 13px var(--font-mono); color: var(--muted); }
+.legend span::before { content: ""; display: inline-block; width: 18px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 6px; background: currentColor; }
+.legend .lf { color: var(--accent); } .legend .ld { color: var(--deriv); } .legend .lt { color: var(--tangent); }
+
+/* Sticky nav */
+nav.bar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+  margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px)));
+  padding: 10px max(16px, env(safe-area-inset-left, 0px));
+}
+nav.bar .inner { max-width: 980px; margin: 0 auto; display: flex; gap: 8px; align-items: center; overflow-x: auto; scrollbar-width: none; }
+nav.bar a {
+  flex: none; text-decoration: none; color: var(--ink);
+  font: 600 13px/1 var(--font-mono); padding: 8px 11px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface);
+}
+nav.bar a:hover, nav.bar a:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+nav.bar .prog { margin-left: auto; flex: none; font: 12px var(--font-mono); color: var(--muted); padding-left: 8px; }
+
+/* Sections */
+section.topic { padding-block: 56px 8px; display: grid; gap: 22px; scroll-margin-top: 60px; }
+.topic-head { display: grid; gap: 6px; border-top: 3px solid var(--ink); padding-top: 14px; }
+.topic-head .num { font: 700 14px var(--font-mono); color: var(--accent); }
+.topic-head h2 { font-size: clamp(28px, 4.4vw, 40px); font-weight: 700; letter-spacing: -.01em; }
+.topic-head p { color: var(--muted); max-width: 64ch; }
+h3 { font-size: 21px; font-weight: 700; margin-top: 8px; }
+.prose { display: grid; gap: 12px; max-width: 68ch; }
+
+.rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.rule { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; min-width: 0; display: grid; gap: 4px; align-content: start; }
+.rule .tag { font: 600 11px var(--font-mono); letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
+.rule.key { border: 2px solid var(--accent); }
+
+/* Labs */
+.lab { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px; display: grid; gap: 12px; min-width: 0; }
+.lab-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; align-items: baseline; }
+.lab-head h4 { font-size: 17px; }
+.lab-head .tag { font: 600 11px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--tangent); }
+.lab canvas { width: 100%; display: block; border-radius: 8px; touch-action: none; }
+.lab .tall { aspect-ratio: 16 / 9; }
+.lab .short { aspect-ratio: 16 / 6; }
+.lab .square { aspect-ratio: 1 / 1; max-width: 520px; margin: 0 auto; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: center; font: 13px var(--font-mono); }
+.controls label { display: flex; align-items: center; gap: 8px; }
+.controls input[type=range] { width: 170px; accent-color: var(--accent); }
+.controls select, .controls button, .btn {
+  font: 600 13px var(--font-mono); color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; cursor: pointer;
+}
+.controls button:hover, .btn:hover { border-color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.readout { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 8px; }
+.readout div { background: var(--bg); border-radius: 8px; padding: 8px 10px; font: 13px/1.4 var(--font-mono); font-variant-numeric: tabular-nums; min-width: 0; }
+.readout b { display: block; font-size: 17px; color: var(--ink); }
+.readout .c-f { color: var(--accent); } .readout .c-d { color: var(--deriv); } .readout .c-t { color: var(--tangent); }
+.note { font-size: 15px; color: var(--muted); }
+.callout { border-left: 4px solid var(--tangent); padding: 4px 0 4px 14px; font-size: 16px; }
+
+/* Worked examples + practice */
+.examples { display: grid; gap: 12px; }
+.ex { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 16px; display: grid; gap: 8px; min-width: 0; }
+.ex .label { font: 600 12px var(--font-mono); color: var(--muted); letter-spacing: .05em; text-transform: uppercase; }
+.steps { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; }
+.steps li::marker { font-family: var(--font-mono); color: var(--accent); font-size: .85em; }
+.why { color: var(--muted); font-style: italic; }
+
+.practice { display: grid; gap: 10px; }
+.prob { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; display: grid; gap: 8px; min-width: 0; }
+.prob.done { border-color: var(--good); background: linear-gradient(var(--good-soft), var(--good-soft)) padding-box; }
+.prob-top { display: flex; gap: 12px; align-items: flex-start; justify-content: space-between; }
+.prob-top .q { min-width: 0; }
+.src { font: 600 11px var(--font-mono); color: var(--muted); letter-spacing: .05em; display: block; margin-bottom: 2px; }
+a.src { color: var(--accent); text-decoration: none; width: fit-content; }
+.got { flex: none; font: 600 12px var(--font-mono); display: flex; gap: 6px; align-items: center; color: var(--muted); cursor: pointer; white-space: nowrap; }
+.got input { accent-color: var(--good); width: 16px; height: 16px; }
+details { border-top: 1px dashed var(--line); padding-top: 6px; }
+details summary { cursor: pointer; font: 600 13px var(--font-mono); color: var(--accent); list-style: none; }
+details summary::-webkit-details-marker { display: none; }
+details summary::before { content: "+ "; }
+details[open] summary::before { content: "− "; }
+details > div { padding: 8px 0 4px; display: grid; gap: 6px; }
+.ans { background: var(--accent-soft); border-radius: 8px; padding: 6px 10px; }
+
+.traps { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; }
+.trap { border-radius: var(--r); padding: 12px 14px; background: var(--bad-soft); display: grid; gap: 4px; min-width: 0; }
+.trap b { font-family: var(--font-display); color: var(--bad); }
+
+/* Quiz */
+.quiz { display: grid; gap: 12px; }
+.qq { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; display: grid; gap: 10px; min-width: 0; }
+.opts { display: flex; flex-wrap: wrap; gap: 8px; }
+.opts button { font: 15px var(--font-body); color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 6px 12px; cursor: pointer; min-width: 0; }
+.opts button.right { background: var(--good-soft); border-color: var(--good); }
+.opts button.wrong { background: var(--bad-soft); border-color: var(--bad); }
+.fb { font-size: 15px; color: var(--muted); }
+.score { font: 600 14px var(--font-mono); }
+
+/* Cheat sheet */
+.sheet { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+.sheet .rule h4 { font-size: 15px; }
+footer { padding-top: 48px; color: var(--muted); font-size: 14px; }
+@media (max-width: 520px) {
+  body { font-size: 16px; }
+  .controls input[type=range] { width: 130px; }
+  .lab .short { aspect-ratio: 16 / 8; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+html { scroll-behavior: smooth; }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <span class="eyebrow">Stewart · Calculus: Early Transcendentals 9e · Exam prep</span>
+  <h1>The derivative, from <span class="prime">f′</span> to implicit curves</h1>
+  <p class="lede">Sections 2.8, 3.1, 3.2, 3.3, 3.4 and 3.5. Each section explains the idea, gives you a graph you can drag, works examples step by step, then gives you textbook practice problems with hidden hints and full solutions. Tick “I can do this” as you go.</p>
+  <div class="legend"><span class="lf">f(x), the function</span><span class="ld">f′(x), its derivative</span><span class="lt">tangent / secant lines</span></div>
+</header>
+</div>
+
+<nav class="bar" aria-label="Sections">
+  <div class="inner">
+    <a href="#mq">Practice quiz</a>
+    <a href="#s28">2.8 f′ as a function</a>
+    <a href="#s31">3.1 Power &amp; eˣ</a>
+    <a href="#s32">3.2 Product/Quotient</a>
+    <a href="#s33">3.3 Trig</a>
+    <a href="#s34">3.4 Chain</a>
+    <a href="#s35">3.5 Implicit</a>
+    <a href="#quiz">Quick quiz</a>
+    <a href="#sheet">Cheat sheet</a>
+    <span class="prog" id="prog">0 / 0 mastered</span>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<!-- ================= Math 190 practice quiz ================= -->
+<section class="topic" id="mq">
+  <div class="topic-head">
+    <span class="num">Math 190 · your packet</span>
+    <h2>Practice quiz, solved step by step</h2>
+    <p>All 18 questions from your study packet. Time target: 50–60 minutes. Try each one on paper first, then open the steps. The tag on each question links to the lesson below that teaches it.</p>
+  </div>
+
+  <div class="rules">
+    <div class="rule"><span class="tag">2.8 priority</span><p>1, 3, 7, 11, 21, 25, 29, 31</p></div>
+    <div class="rule"><span class="tag">3.1 priority</span><p>3, 9, 15, 23, 31, 39, 59, 65, 71</p></div>
+    <div class="rule"><span class="tag">3.2 priority</span><p>3, 9, 15, 21, 29, 37, 43</p></div>
+    <div class="rule"><span class="tag">3.3 priority</span><p>1, 7, 13, 19, 27, 35, 45, 53, 59</p></div>
+    <div class="rule"><span class="tag">3.4 priority</span><p>1, 9, 17, 25, 33, 41, 49, 57, 61</p></div>
+    <div class="rule"><span class="tag">3.5 priority</span><p>1, 5, 11, 17, 23, 29, 35, 53, 55</p></div>
+  </div>
+
+  <div class="practice" data-sec="quiz">
+    <div class="prob" id="mq-1"><div class="prob-top"><div class="q"><a class="src" href="#s28">Q1 · §2.8</a>Use the limit definition to find \(f'(x)\) for \(f(x)=x^2+3x\).</div></div>
+      <details><summary>Hint</summary><div><p>Expand \(f(x+h)=(x+h)^2+3(x+h)\). After subtracting \(f(x)\), every term left has an \(h\).</p></div></details>
+      <details><summary>Step-by-step solution</summary><div>
+        <p>\(f(x+h)=x^2+2xh+h^2+3x+3h\)</p>
+        <p>\(f(x+h)-f(x)=2xh+h^2+3h=h(2x+h+3)\)</p>
+        <p>\(\dfrac{f(x+h)-f(x)}{h}=2x+h+3\xrightarrow{h\to0}2x+3\)</p>
+        <p class="ans">\(f'(x)=2x+3\)</p></div></details></div>
+
+    <div class="prob" id="mq-2"><div class="prob-top"><div class="q"><a class="src" href="#s28">Q2 · §2.8</a>Find the slope of the tangent line to \(f(x)=x^2-4x\) at \(x=3\).</div></div>
+      <details><summary>Step-by-step solution</summary><div>
+        <p>The tangent slope is \(f'(3)\). \(f'(x)=2x-4\) (by the definition, or the power rule).</p>
+        <p class="ans">\(f'(3)=6-4=2\)</p></div></details></div>
+
+    <div class="prob" id="mq-3"><div class="prob-top"><div class="q"><a class="src" href="#s28">Q3 · §2.8</a>At what value is \(f(x)=|x-2|\) not differentiable? Explain.</div></div>
+      <details><summary>Step-by-step solution</summary><div>
+        <p>For \(x\gt 2\), \(f(x)=x-2\) has slope \(+1\). For \(x\lt 2\), \(f(x)=-(x-2)\) has slope \(-1\).</p>
+        <p>At \(x=2\) the one-sided slopes disagree, so the graph has a corner and \(\lim_{h\to0}\frac{f(2+h)-f(2)}{h}=\lim\frac{|h|}{h}\) does not exist.</p>
+        <p class="ans">Not differentiable at \(x=2\) (corner: left slope −1, right slope +1). It is still continuous there. See Lab 2 with “|x|”.</p></div></details></div>
+
+    <div class="prob" id="mq-4"><div class="prob-top"><div class="q"><a class="src" href="#s31">Q4 · §3.1</a>Differentiate \(y=7x^5-4x^3+6x-9\).</div></div>
+      <details><summary>Step-by-step solution</summary><div>
+        <p>Power rule term by term: \(7\cdot5x^4\), \(-4\cdot3x^2\), \(6\cdot1\), and the constant \(-9\) becomes 0.</p>
+        <p class="ans">\(y'=35x^4-12x^2+6\)</p></div></details></div>
+
+    <div class="prob" id="mq-5"><div class="prob-top"><div class="q"><a class="src" href="#s31">Q5 · §3.1</a>Differentiate \(y=5e^x+3(2^x)-\dfrac{8}{x^2}\).</div></div>
+      <details><summary>Hint</summary><div><p>Three different rules: \(e^x\to e^x\); \(2^x\to2^x\ln2\); rewrite \(\frac8{x^2}=8x^{-2}\).</p></div></details>
+      <details><summary>Step-by-step solution</summary><div>
+        <p>\((5e^x)'=5e^x\)</p>
+        <p>\((3\cdot2^x)'=3\cdot2^x\ln2\)</p>
+        <p>\((-8x^{-2})'=-8\cdot(-2)x^{-3}=16x^{-3}\)</p>
+        <p class="ans">\(y'=5e^x+3\cdot2^x\ln2+\dfrac{16}{x^3}\)</p></div></details></div>
+
+    <div class="prob" id="mq-6"><div class="prob-top"><div class="q"><a class="src" href="#s31">Q6 · §3.1</a>Find the tangent line to \(y=x^3-2x\) at \(x=1\).</div></div>
+      <details><summary>Step-by-step solution</summary><div>
+        <p>Point: \(y(1)=1-2=-1\), so \((1,-1)\).</p>
+        <p>Slope: \(y'=3x^2-2\), so \(y'(1)=1\).</p>
+        <p>\(y-(-1)=1(x-1)\)</p>
+        <p class="ans">\(y=x-2\)</p></div></details></div>
+
+    <div class="prob" id="mq-7"><div class="prob-top"><div class="q"><a class="src" href="#s32">Q7 · §3.2</a>Differentiate \(y=(x^2+1)(x^3-2x)\).</div></div>
+      <details><summary>Step-by-step solution</summary><div>
+        <p>Product rule: first \(=x^2+1\) (derivative \(2x\)), second \(=x^3-2x\) (derivative \(3x^2-2\)).</p>
+        <p>\(y'=2x(x^3-2x)+(x^2+1)(3x^2-2)\)</p>
+        <p>Simplified: \(2x^4-4x^2+3x^4-2x^2+3x^2-2\)</p>
+        <p class="ans">\(y'=2x(x^3-2x)+(x^2+1)(3x^2-2)=5x^4-3x^2-2\)</p>
+        <p class="why">Check by expanding first: \(y=x^5-x^3-2x\), so \(y'=5x^4-3x^2-2\). ✓</p></div></details></div>
+
+    <div class="prob" id="mq-8"><div class="prob-top"><div class="q"><a class="src" href="#s32">Q8 · §3.2</a>Differentiate \(y=\dfrac{x^2+3}{x-1}\).</div></div>
+      <details><summary>Step-by-step solution</summary><div>
+        <p>High \(=x^2+3\), d-high \(=2x\). Low \(=x-1\), d-low \(=1\).</p>
+        <p>\(y'=\dfrac{(x-1)(2x)-(x^2+3)(1)}{(x-1)^2}=\dfrac{2x^2-2x-x^2-3}{(x-1)^2}\)</p>
+        <p class="ans">\(y'=\dfrac{x^2-2x-3}{(x-1)^2}=\dfrac{(x-3)(x+1)}{(x-1)^2}\)</p></div></details></div>
+
+    <div class="prob" id="mq-9"><div class="prob-top"><div class="q"><a class="src" href="#s32">Q9 · §3.2</a>Differentiate \(y=x^2e^x\).</div></div>
+      <details><summary>Step-by-step solution</summary><div>
+        <p>\(y'=2x\cdot e^x+x^2\cdot e^x\)</p>
+        <p class="ans">\(y'=e^x(x^2+2x)=xe^x(x+2)\)</p></div></details></div>
+
+    <div class="prob" id="mq-10"><div class="prob-top"><div class="q"><a class="src" href="#s33">Q10 · §3.3</a>Differentiate \(y=3\sin x-2\cos x+\tan x\).</div></div>
+      <details><summary>Step-by-step solution</summary><div>
+        <p>\((3\sin x)'=3\cos x\); \((-2\cos x)'=-2(-\sin x)=2\sin x\); \((\tan x)'=\sec^2x\).</p>
+        <p class="ans">\(y'=3\cos x+2\sin x+\sec^2x\)</p></div></details></div>
+
+    <div class="prob" id="mq-11"><div class="prob-top"><div class="q"><a class="src" href="#s33">Q11 · §3.3</a>Differentiate \(y=x\sin x\).</div></div>
+      <details><summary>Step-by-step solution</summary><div>
+        <p>Product rule: \(1\cdot\sin x+x\cdot\cos x\).</p>
+        <p class="ans">\(y'=\sin x+x\cos x\)</p></div></details></div>
+
+    <div class="prob" id="mq-12"><div class="prob-top"><div class="q"><a class="src" href="#s33">Q12 · §3.3</a>Find \(y'(0)\) if \(y=\dfrac{\sin x}{1+\cos x}\).</div></div>
+      <details><summary>Step-by-step solution</summary><div>
+        <p>\(y'=\dfrac{(1+\cos x)\cos x-\sin x(-\sin x)}{(1+\cos x)^2}=\dfrac{\cos x+\cos^2x+\sin^2x}{(1+\cos x)^2}\)</p>
+        <p>Since \(\sin^2x+\cos^2x=1\), the top is \(1+\cos x\), so \(y'=\dfrac{1}{1+\cos x}\).</p>
+        <p class="ans">\(y'(0)=\dfrac{1}{1+1}=\dfrac12\)</p></div></details></div>
+
+    <div class="prob" id="mq-13"><div class="prob-top"><div class="q"><a class="src" href="#s34">Q13 · §3.4</a>Differentiate \(y=(3x^2-1)^5\).</div></div>
+      <details><summary>Step-by-step solution</summary><div>
+        <p>Outer \(u^5\), inner \(u=3x^2-1\) with \(u'=6x\).</p>
+        <p>\(y'=5(3x^2-1)^4\cdot6x\)</p>
+        <p class="ans">\(y'=30x(3x^2-1)^4\)</p></div></details></div>
+
+    <div class="prob" id="mq-14"><div class="prob-top"><div class="q"><a class="src" href="#s34">Q14 · §3.4</a>Differentiate \(y=\sin(x^3+2x)\).</div></div>
+      <details><summary>Step-by-step solution</summary><div>
+        <p>Outer \(\sin u\), inner \(u=x^3+2x\). Keep the inside unchanged in the cos.</p>
+        <p class="ans">\(y'=(3x^2+2)\cos(x^3+2x)\)</p></div></details></div>
+
+    <div class="prob" id="mq-15"><div class="prob-top"><div class="q"><a class="src" href="#s34">Q15 · §3.4</a>Differentiate \(y=e^{4x^2-3x}\).</div></div>
+      <details><summary>Step-by-step solution</summary><div>
+        <p>\((e^u)'=e^u\cdot u'\) with \(u=4x^2-3x\), \(u'=8x-3\).</p>
+        <p class="ans">\(y'=(8x-3)e^{4x^2-3x}\)</p></div></details></div>
+
+    <div class="prob" id="mq-16"><div class="prob-top"><div class="q"><a class="src" href="#s35">Q16 · §3.5</a>Find \(dy/dx\) if \(x^2+y^2=25\).</div></div>
+      <details><summary>Step-by-step solution</summary><div>
+        <p>\(2x+2y\,y'=0\)</p>
+        <p class="ans">\(\dfrac{dy}{dx}=-\dfrac{x}{y}\), for \(y\ne0\). (Drag the point in Lab 7 to see it.)</p></div></details></div>
+
+    <div class="prob" id="mq-17"><div class="prob-top"><div class="q"><a class="src" href="#s35">Q17 · §3.5</a>Find \(dy/dx\) if \(x^2y+y^3=7\).</div></div>
+      <details><summary>Hint</summary><div><p>\(x^2y\) is a product: \((x^2y)'=2xy+x^2y'\).</p></div></details>
+      <details><summary>Step-by-step solution</summary><div>
+        <p>\(2xy+x^2y'+3y^2y'=0\)</p>
+        <p>\(y'(x^2+3y^2)=-2xy\)</p>
+        <p class="ans">\(\dfrac{dy}{dx}=-\dfrac{2xy}{x^2+3y^2}\)</p></div></details></div>
+
+    <div class="prob" id="mq-18"><div class="prob-top"><div class="q"><a class="src" href="#s35">Q18 · §3.5</a>Find the slope of the tangent line to \(x^2+xy+y^2=7\) at \((1,2)\).</div></div>
+      <details><summary>Step-by-step solution</summary><div>
+        <p>Check the point: \(1+2+4=7\). ✓</p>
+        <p>\(2x+(y+xy')+2yy'=0\Rightarrow y'(x+2y)=-(2x+y)\Rightarrow y'=-\dfrac{2x+y}{x+2y}\)</p>
+        <p>At \((1,2)\): \(-\dfrac{2+2}{1+4}\).</p>
+        <p class="ans">Slope \(=-\dfrac45\). Tangent line: \(y-2=-\tfrac45(x-1)\).</p></div></details></div>
+  </div>
+</section>
+
+<!-- ================= 2.8 ================= -->
+<section class="topic" id="s28">
+  <div class="topic-head">
+    <span class="num">§2.8</span>
+    <h2>The Derivative as a Function</h2>
+    <p>The slope of the tangent line at every point, collected into a brand-new function.</p>
+  </div>
+
+  <div class="prose">
+    <p>In §2.7 you found the slope at <em>one</em> point \(a\). Now let the point move. For every \(x\), the slope of the tangent line to \(y=f(x)\) is a number, so the slopes themselves form a function, written \(f'\):</p>
+    \[ f'(x) = \lim_{h\to 0} \frac{f(x+h)-f(x)}{h} \]
+    <p>The fraction is the slope of a <strong>secant line</strong> through two points on the curve, a horizontal distance \(h\) apart. As \(h\to 0\), the second point slides into the first and the secant becomes the <strong>tangent</strong>. Try it in the first lab.</p>
+  </div>
+
+  <div class="lab" id="lab-secant">
+    <div class="lab-head"><h4>Secant → tangent</h4><span class="tag">Lab 1 · drag the sliders</span></div>
+    <canvas class="tall" aria-label="Graph of f(x) = 0.25x³ − x + 1 with a secant line and the tangent line"></canvas>
+    <div class="controls">
+      <label for="sec-a">point a <input id="sec-a" type="range" min="-3" max="3" step="0.01" value="1"></label>
+      <label for="sec-h">gap h <input id="sec-h" type="range" min="-2" max="2" step="0.01" value="1.5"></label>
+      <button type="button" id="sec-anim">Animate h → 0</button>
+    </div>
+    <div class="readout">
+      <div>f(x) = 0.25x³ − x + 1<b class="c-f" id="sec-pt">a = 1</b></div>
+      <div>secant slope [f(a+h) − f(a)] / h<b class="c-t" id="sec-m">–</b></div>
+      <div>true slope f′(a) = 0.75a² − 1<b class="c-d" id="sec-d">–</b></div>
+    </div>
+    <p class="note">Watch the secant slope approach f′(a) as h shrinks, from either side (h &gt; 0 or h &lt; 0). That limit is the derivative.</p>
+  </div>
+
+  <h3>Reading f′ off the graph of f</h3>
+  <div class="prose">
+    <p>Exercises 1–14 ask you to sketch \(f'\) from a picture of \(f\). You never need a formula. Just ask, at each \(x\): <em>how steep is \(f\), and is it going up or down?</em></p>
+    <ul class="steps">
+      <li>Where \(f\) has a <strong>peak or valley</strong> (horizontal tangent), \(f'=0\): the \(f'\) graph crosses the x-axis.</li>
+      <li>Where \(f\) is <strong>increasing</strong>, \(f'>0\) (above the axis). Where \(f\) is <strong>decreasing</strong>, \(f'\lt 0\) (below).</li>
+      <li>Where \(f\) is <strong>steepest</strong>, \(|f'|\) is largest.</li>
+      <li>Where \(f\) is a straight line, \(f'\) is a constant (a flat segment).</li>
+    </ul>
+  </div>
+
+  <div class="lab" id="lab-trace">
+    <div class="lab-head"><h4>Build f′ point by point</h4><span class="tag">Lab 2 · drag on the top graph</span></div>
+    <div class="controls">
+      <label for="tr-fn">function
+        <select id="tr-fn">
+          <option value="cubic">x³ − 3x</option>
+          <option value="sin">sin x</option>
+          <option value="abs">|x| (corner)</option>
+          <option value="cbrt">∛x (vertical tangent)</option>
+          <option value="jump">jump (discontinuous)</option>
+        </select>
+      </label>
+      <label for="tr-x">x <input id="tr-x" type="range" min="-3" max="3" step="0.01" value="-2"></label>
+      <button type="button" id="tr-anim">Sweep</button>
+    </div>
+    <canvas class="short" id="tr-top" aria-label="Graph of f with tangent line at x"></canvas>
+    <canvas class="short" id="tr-bot" aria-label="Graph of f prime traced up to x"></canvas>
+    <div class="readout">
+      <div>x<b id="tr-xv">–</b></div>
+      <div>slope of tangent = f′(x)<b class="c-d" id="tr-m">–</b></div>
+      <div>differentiable here?<b id="tr-ok">–</b></div>
+    </div>
+    <p class="note" id="tr-note"></p>
+  </div>
+
+  <h3>When is f not differentiable?</h3>
+  <div class="rules">
+    <div class="rule"><span class="tag">Corner</span><p>Left slope ≠ right slope. Example: \(|x|\) at 0 (slopes −1 and +1).</p></div>
+    <div class="rule"><span class="tag">Discontinuity</span><p>A jump or hole. <strong>Theorem 4:</strong> differentiable ⇒ continuous, so not continuous ⇒ not differentiable.</p></div>
+    <div class="rule"><span class="tag">Vertical tangent</span><p>The slope blows up: \(|f'(x)|\to\infty\). Example: \(\sqrt[3]{x}\) at 0.</p></div>
+    <div class="rule key"><span class="tag">Careful</span><p>Continuous does <strong>not</strong> imply differentiable. \(|x|\) is continuous at 0 but has a corner.</p></div>
+  </div>
+
+  <h3>Notation and higher derivatives</h3>
+  <div class="rules">
+    <div class="rule"><span class="tag">Same thing, many names</span><p>\(f'(x) = y' = \dfrac{dy}{dx} = \dfrac{df}{dx} = \dfrac{d}{dx}f(x) = Df(x)\)</p></div>
+    <div class="rule"><span class="tag">Second derivative</span><p>\(f''=(f')'\), \(\dfrac{d^2y}{dx^2}\). If \(s(t)\) is position: \(v=s'\), \(a=v'=s''\), jerk \(j=s'''\).</p></div>
+    <div class="rule"><span class="tag">Domain of f′</span><p>\(f'\) can have a <em>smaller</em> domain than \(f\). \(\sqrt{x}\): domain \([0,\infty)\), but \(f'(x)=\frac1{2\sqrt x}\) only on \((0,\infty)\).</p></div>
+  </div>
+
+  <h3>Worked examples</h3>
+  <div class="examples">
+    <div class="ex">
+      <span class="label">Example · definition with a square root (Stewart Ex. 3 style)</span>
+      <p>Find \(f'(x)\) for \(f(x)=\sqrt{x}\) using the definition. State the domain of \(f'\).</p>
+      <ol class="steps">
+        <li>Write the difference quotient: \(\dfrac{\sqrt{x+h}-\sqrt{x}}{h}\).</li>
+        <li>Plugging in \(h=0\) gives \(\frac00\). <span class="why">For square roots, multiply by the conjugate.</span><br>\(\dfrac{\sqrt{x+h}-\sqrt{x}}{h}\cdot\dfrac{\sqrt{x+h}+\sqrt{x}}{\sqrt{x+h}+\sqrt{x}} = \dfrac{(x+h)-x}{h(\sqrt{x+h}+\sqrt{x})}\)</li>
+        <li>The \(x\)'s cancel, leaving \(\dfrac{h}{h(\sqrt{x+h}+\sqrt x)} = \dfrac{1}{\sqrt{x+h}+\sqrt x}\). The \(h\) cancels.</li>
+        <li>Now let \(h\to0\): \(f'(x)=\dfrac{1}{2\sqrt x}\).</li>
+        <li>Domain of \(f'\): \((0,\infty)\). At \(x=0\) we would divide by zero (vertical tangent).</li>
+      </ol>
+    </div>
+    <div class="ex">
+      <span class="label">Example · definition with a fraction (Stewart Ex. 4 style)</span>
+      <p>Find \(f'(x)\) for \(f(x)=\dfrac{1-x}{2+x}\).</p>
+      <ol class="steps">
+        <li>\(\dfrac{f(x+h)-f(x)}{h} = \dfrac{1}{h}\left[\dfrac{1-x-h}{2+x+h}-\dfrac{1-x}{2+x}\right]\)</li>
+        <li><span class="why">Fractions: combine over a common denominator.</span> Numerator: \((1-x-h)(2+x)-(1-x)(2+x+h)\).</li>
+        <li>Expand: \((2 - x - 2h - x^2 - xh) - (2 - x + h - x^2 - xh) = -3h\).</li>
+        <li>So the quotient is \(\dfrac{-3h}{h(2+x+h)(2+x)} = \dfrac{-3}{(2+x+h)(2+x)}\).</li>
+        <li>Let \(h\to0\): \(f'(x) = \dfrac{-3}{(2+x)^2}\). Domain: \(x\neq-2\).</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3>Practice</h3>
+  <div class="practice" data-sec="2.8">
+    <div class="prob" id="p28-1"><div class="prob-top"><div class="q"><span class="src">§2.8 #21</span>Use the definition to find \(f'(x)\) for \(f(x)=3x-8\). State the domains of \(f\) and \(f'\).</div></div>
+      <details><summary>Hint</summary><div><p>\(f(x+h)=3(x+h)-8\). Subtract \(f(x)\) and see what survives.</p></div></details>
+      <details><summary>Full solution</summary><div><p>\(\dfrac{[3(x+h)-8]-[3x-8]}{h}=\dfrac{3h}{h}=3\), so \(f'(x)=3\).</p><p class="ans">\(f'(x)=3\); both domains are \(\mathbb{R}\). A line has the same slope everywhere.</p></div></details></div>
+
+    <div class="prob" id="p28-2"><div class="prob-top"><div class="q"><span class="src">§2.8 #23</span>Use the definition to find \(f'(t)\) for \(f(t)=2.5t^2+6t\).</div></div>
+      <details><summary>Hint</summary><div><p>Expand \((t+h)^2=t^2+2th+h^2\). After subtracting, every surviving term has an \(h\) you can factor out.</p></div></details>
+      <details><summary>Full solution</summary><div>
+        <p>\(f(t+h)=2.5(t^2+2th+h^2)+6t+6h = 2.5t^2+5th+2.5h^2+6t+6h\)</p>
+        <p>\(f(t+h)-f(t)=5th+2.5h^2+6h = h(5t+2.5h+6)\)</p>
+        <p>Divide by \(h\): \(5t+2.5h+6\). Let \(h\to0\).</p>
+        <p class="ans">\(f'(t)=5t+6\). Domains: all real numbers.</p></div></details></div>
+
+    <div class="prob" id="p28-3"><div class="prob-top"><div class="q"><span class="src">§2.8 #28</span>Use the definition to find \(F'(v)\) for \(F(v)=\dfrac{v}{v+2}\). State domains.</div></div>
+      <details><summary>Hint</summary><div><p>Common denominator \((v+h+2)(v+2)\). The numerator collapses to a multiple of \(h\).</p></div></details>
+      <details><summary>Full solution</summary><div>
+        <p>\(\dfrac{v+h}{v+h+2}-\dfrac{v}{v+2} = \dfrac{(v+h)(v+2)-v(v+h+2)}{(v+h+2)(v+2)}\)</p>
+        <p>Numerator: \(v^2+2v+hv+2h - v^2-vh-2v = 2h\).</p>
+        <p>Quotient: \(\dfrac{2h}{h(v+h+2)(v+2)}=\dfrac{2}{(v+h+2)(v+2)}\xrightarrow{h\to0}\dfrac{2}{(v+2)^2}\).</p>
+        <p class="ans">\(F'(v)=\dfrac{2}{(v+2)^2}\). Domain of \(F\) and \(F'\): \(v\neq-2\).</p></div></details></div>
+
+    <div class="prob" id="p28-4"><div class="prob-top"><div class="q"><span class="src">§2.8 #29</span>Use the definition to find \(g'(u)\) for \(g(u)=\dfrac{u+1}{4u-1}\).</div></div>
+      <details><summary>Hint</summary><div><p>Same fraction strategy. After expanding, \(u^2\) and \(u\) terms cancel and you get \(-5h\).</p></div></details>
+      <details><summary>Full solution</summary><div>
+        <p>Numerator of the combined fraction: \((u+h+1)(4u-1)-(u+1)(4u+4h-1)\).</p>
+        <p>\(=(4u^2-u+4uh-h+4u-1)-(4u^2+4uh-u+4u+4h-1) = -5h\).</p>
+        <p>So \(\dfrac{g(u+h)-g(u)}{h}=\dfrac{-5}{(4u+4h-1)(4u-1)}\to\dfrac{-5}{(4u-1)^2}\).</p>
+        <p class="ans">\(g'(u)=\dfrac{-5}{(4u-1)^2}\), domain \(u\neq\tfrac14\).</p></div></details></div>
+
+    <div class="prob" id="p28-5"><div class="prob-top"><div class="q"><span class="src">§2.8 #31</span>Use the definition to find \(f'(x)\) for \(f(x)=\dfrac{1}{\sqrt{1+x}}\). State domains.</div></div>
+      <details><summary>Hint</summary><div><p>Combine the fractions first: \(\dfrac{\sqrt{1+x}-\sqrt{1+x+h}}{\sqrt{1+x+h}\,\sqrt{1+x}}\). Then multiply the top and bottom by the conjugate \(\sqrt{1+x}+\sqrt{1+x+h}\).</p></div></details>
+      <details><summary>Full solution</summary><div>
+        <p>\(\dfrac{f(x+h)-f(x)}{h}=\dfrac{\sqrt{1+x}-\sqrt{1+x+h}}{h\sqrt{1+x+h}\sqrt{1+x}}\)</p>
+        <p>Multiply by the conjugate. The numerator becomes \((1+x)-(1+x+h)=-h\):</p>
+        <p>\(=\dfrac{-h}{h\sqrt{1+x+h}\sqrt{1+x}\,(\sqrt{1+x}+\sqrt{1+x+h})}\)</p>
+        <p>Cancel \(h\), let \(h\to0\): \(\dfrac{-1}{\sqrt{1+x}\sqrt{1+x}\cdot2\sqrt{1+x}}=\dfrac{-1}{2(1+x)^{3/2}}\).</p>
+        <p class="ans">\(f'(x)=-\dfrac{1}{2(1+x)^{3/2}}\). Domain of \(f\) and \(f'\): \((-1,\infty)\).</p></div></details></div>
+
+    <div class="prob" id="p28-6"><div class="prob-top"><div class="q"><span class="src">§2.8 #33(c)</span>For \(f(x)=1+\sqrt{x+3}\), use the definition to find \(f'(x)\). What are the domains of \(f\) and \(f'\)?</div></div>
+      <details><summary>Hint</summary><div><p>The 1 cancels immediately. What remains is the \(\sqrt{\ }\) conjugate trick.</p></div></details>
+      <details><summary>Full solution</summary><div>
+        <p>\(\dfrac{\sqrt{x+h+3}-\sqrt{x+3}}{h}\cdot\dfrac{\sqrt{x+h+3}+\sqrt{x+3}}{\sqrt{x+h+3}+\sqrt{x+3}}=\dfrac{1}{\sqrt{x+h+3}+\sqrt{x+3}}\)</p>
+        <p class="ans">\(f'(x)=\dfrac{1}{2\sqrt{x+3}}\). Domain of \(f\): \([-3,\infty)\). Domain of \(f'\): \((-3,\infty)\).</p></div></details></div>
+
+    <div class="prob" id="p28-7"><div class="prob-top"><div class="q"><span class="src">§2.8 #30</span>Use the definition to show \(\dfrac{d}{dx}x^4=4x^3\).</div></div>
+      <details><summary>Hint</summary><div><p>\((x+h)^4=x^4+4x^3h+6x^2h^2+4xh^3+h^4\) (Pascal's row 1 4 6 4 1).</p></div></details>
+      <details><summary>Full solution</summary><div>
+        <p>\(\dfrac{(x+h)^4-x^4}{h}=\dfrac{4x^3h+6x^2h^2+4xh^3+h^4}{h}=4x^3+6x^2h+4xh^2+h^3\)</p>
+        <p class="ans">As \(h\to0\), every term with \(h\) vanishes: \(f'(x)=4x^3\). This is the Power Rule you'll use in 3.1.</p></div></details></div>
+
+    <div class="prob" id="p28-8"><div class="prob-top"><div class="q"><span class="src">Concept · §2.8 #41–46 style</span>Where is \(f(x)=|x-2|+\begin{cases}0&x\lt 5\\ 1 & x\ge5\end{cases}\) not differentiable, and why?</div></div>
+      <details><summary>Full solution</summary><div>
+        <p>At \(x=2\): a <strong>corner</strong>. Slope is −1 on the left and +1 on the right.</p>
+        <p>At \(x=5\): a <strong>jump</strong>, so it is not continuous, so it is not differentiable.</p>
+        <p class="ans">Not differentiable at \(x=2\) (corner) and \(x=5\) (discontinuity).</p></div></details></div>
+
+    <div class="prob" id="p28-9"><div class="prob-top"><div class="q"><span class="src">§2.8 · higher derivatives</span>If \(f(x)=x^3-x\), find \(f'\), \(f''\), \(f'''\), \(f^{(4)}\).</div></div>
+      <details><summary>Full solution</summary><div><p class="ans">\(f'=3x^2-1\), \(f''=6x\), \(f'''=6\), \(f^{(4)}=0\).</p><p>Each derivative of a polynomial lowers the degree by one, so a cubic hits 0 at the 4th derivative.</p></div></details></div>
+  </div>
+
+  <h3>Traps</h3>
+  <div class="traps">
+    <div class="trap"><b>Plugging in h = 0 too early</b><p>You always get 0/0 at first. Simplify until the \(h\) in the denominator cancels, <em>then</em> set \(h=0\).</p></div>
+    <div class="trap"><b>Forgetting to distribute the minus</b><p>\(f(x+h)-f(x)\): put \(f(x)\) in brackets. Most definition errors are sign errors here.</p></div>
+    <div class="trap"><b>Domain of f′ = domain of f</b><p>Not always. Check for division by zero in \(f'\) (e.g. \(\sqrt{x}\) at 0).</p></div>
+  </div>
+</section>
+
+<!-- ================= 3.1 ================= -->
+<section class="topic" id="s31">
+  <div class="topic-head">
+    <span class="num">§3.1</span>
+    <h2>Derivatives of Polynomials and Exponential Functions</h2>
+    <p>The shortcuts that replace the limit definition.</p>
+  </div>
+
+  <div class="rules">
+    <div class="rule"><span class="tag">Constant</span>\[\frac{d}{dx}(c)=0\]<p class="note">A horizontal line has slope 0.</p></div>
+    <div class="rule key"><span class="tag">Power Rule (any real n)</span>\[\frac{d}{dx}x^n = n\,x^{n-1}\]<p class="note">Bring the power down, subtract one.</p></div>
+    <div class="rule"><span class="tag">Constant multiple</span>\[\frac{d}{dx}[c\,f]=c\,f'\]</div>
+    <div class="rule"><span class="tag">Sum / Difference</span>\[(f\pm g)'=f'\pm g'\]</div>
+    <div class="rule key"><span class="tag">Natural exponential</span>\[\frac{d}{dx}e^x=e^x\]<p class="note">e is the one base whose slope at 0 is exactly 1.</p></div>
+  </div>
+
+  <div class="prose">
+    <p><strong>Rewrite before you differentiate.</strong> The Power Rule needs the form \(x^n\). Convert roots and fractions first:</p>
+    \[\sqrt{x}=x^{1/2},\quad \sqrt[3]{x^2}=x^{2/3},\quad \frac{1}{x^3}=x^{-3},\quad \frac{4}{\sqrt[3]{x}}=4x^{-1/3}\]
+    <p>If a fraction has a single term on the bottom, split it: \(\dfrac{3x^2+x^3}{x}=3x+x^2\). No quotient rule needed.</p>
+  </div>
+
+  <div class="lab" id="lab-exp">
+    <div class="lab-head"><h4>Why e is special</h4><span class="tag">Lab 3 · slide the base</span></div>
+    <canvas class="tall" aria-label="Graph of a to the x and its derivative"></canvas>
+    <div class="controls">
+      <label for="exp-a">base a <input id="exp-a" type="range" min="1.3" max="4" step="0.001" value="2"></label>
+      <button type="button" id="exp-e">Snap to e ≈ 2.718</button>
+    </div>
+    <div class="readout">
+      <div>f(x) = aˣ<b class="c-f" id="exp-av">a = 2</b></div>
+      <div>slope at x = 0, lim (aʰ − 1)/h<b class="c-t" id="exp-m">–</b></div>
+      <div>so f′(x) = (that slope) · aˣ<b class="c-d" id="exp-k">–</b></div>
+    </div>
+    <p class="note">For any base, the derivative of aˣ is aˣ times a constant (its slope at 0). When a = e that constant is exactly 1, and the pink derivative curve lands right on top of the blue curve.</p>
+  </div>
+
+  <h3>Tangent and normal lines</h3>
+  <div class="prose">
+    <p>The tangent line at \((a,f(a))\) is \(y-f(a)=f'(a)(x-a)\). The <strong>normal line</strong> is perpendicular to the tangent, so its slope is \(-\dfrac{1}{f'(a)}\).</p>
+    <p>A <strong>horizontal tangent</strong> happens where \(f'(x)=0\). Set the derivative to zero and solve.</p>
+  </div>
+
+  <h3>Worked examples</h3>
+  <div class="examples">
+    <div class="ex">
+      <span class="label">Example · rewrite, then differentiate</span>
+      <p>Differentiate \(y=\dfrac{\sqrt{x}+x}{x^2}\).</p>
+      <ol class="steps">
+        <li>Split: \(y=\dfrac{x^{1/2}}{x^2}+\dfrac{x}{x^2}=x^{-3/2}+x^{-1}\).</li>
+        <li>Power rule on each: \(y'=-\tfrac32x^{-5/2}-x^{-2}\).</li>
+        <li>Optional cleanup: \(y'=-\dfrac{3}{2x^{5/2}}-\dfrac1{x^2}\).</li>
+      </ol>
+    </div>
+    <div class="ex">
+      <span class="label">Example · horizontal tangents (Stewart Ex. 7)</span>
+      <p>Find the points on \(y=x^4-6x^2+4\) where the tangent line is horizontal.</p>
+      <ol class="steps">
+        <li>\(y'=4x^3-12x=4x(x^2-3)\).</li>
+        <li>Set \(y'=0\): \(x=0\) or \(x=\pm\sqrt3\).</li>
+        <li>Plug back into \(y\) (not \(y'\)): \(y(0)=4\), \(y(\pm\sqrt3)=9-18+4=-5\).</li>
+        <li>Points: \((0,4)\), \((\sqrt3,-5)\), \((-\sqrt3,-5)\).</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3>Practice</h3>
+  <div class="practice" data-sec="3.1">
+    <div class="prob" id="p31-1"><div class="prob-top"><div class="q"><span class="src">§3.1 #18</span>Differentiate \(W(t)=\sqrt t-2e^t\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(\sqrt t=t^{1/2}\to\tfrac12t^{-1/2}\); \(2e^t\to2e^t\).</p><p class="ans">\(W'(t)=\dfrac{1}{2\sqrt t}-2e^t\)</p></div></details></div>
+    <div class="prob" id="p31-2"><div class="prob-top"><div class="q"><span class="src">§3.1 #21</span>Differentiate \(y=3e^x+\dfrac{4}{\sqrt[3]{x}}\).</div></div>
+      <details><summary>Hint</summary><div><p>\(\dfrac4{\sqrt[3]x}=4x^{-1/3}\).</p></div></details>
+      <details><summary>Full solution</summary><div><p>\(\dfrac{d}{dx}4x^{-1/3}=4\cdot(-\tfrac13)x^{-4/3}\).</p><p class="ans">\(y'=3e^x-\dfrac43x^{-4/3}\)</p></div></details></div>
+    <div class="prob" id="p31-3"><div class="prob-top"><div class="q"><span class="src">§3.1 #23</span>Differentiate \(f(x)=\dfrac{3x^2+x^3}{x}\).</div></div>
+      <details><summary>Full solution</summary><div><p>Simplify first: \(f(x)=3x+x^2\) (for \(x\ne0\)).</p><p class="ans">\(f'(x)=3+2x\)</p></div></details></div>
+    <div class="prob" id="p31-4"><div class="prob-top"><div class="q"><span class="src">§3.1 #25</span>Differentiate \(G(r)=\dfrac{3r^{3/2}+r^{5/2}}{r}\).</div></div>
+      <details><summary>Full solution</summary><div><p>Divide each term by \(r=r^1\): \(G=3r^{1/2}+r^{3/2}\).</p><p class="ans">\(G'(r)=\tfrac32r^{-1/2}+\tfrac32r^{1/2}=\dfrac{3}{2\sqrt r}+\dfrac32\sqrt r\)</p></div></details></div>
+    <div class="prob" id="p31-5"><div class="prob-top"><div class="q"><span class="src">§3.1 #28</span>Differentiate \(k(r)=e^r+r^e\).</div></div>
+      <details><summary>Hint</summary><div><p>\(e^r\): variable in the exponent → exponential rule. \(r^e\): variable in the base, constant power → power rule.</p></div></details>
+      <details><summary>Full solution</summary><div><p class="ans">\(k'(r)=e^r+e\,r^{e-1}\)</p></div></details></div>
+    <div class="prob" id="p31-6"><div class="prob-top"><div class="q"><span class="src">§3.1 #30</span>Differentiate \(G(q)=(1+q^{-1})^2\).</div></div>
+      <details><summary>Full solution</summary><div><p>Expand (no chain rule yet): \(G=1+2q^{-1}+q^{-2}\).</p><p class="ans">\(G'(q)=-2q^{-2}-2q^{-3}\)</p></div></details></div>
+    <div class="prob" id="p31-7"><div class="prob-top"><div class="q"><span class="src">§3.1 #37</span>Find the tangent line to \(y=2x^3-x^2+2\) at \((1,3)\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(y'=6x^2-2x\), so the slope at 1 is \(6-2=4\).</p><p>\(y-3=4(x-1)\)</p><p class="ans">\(y=4x-1\)</p></div></details></div>
+    <div class="prob" id="p31-8"><div class="prob-top"><div class="q"><span class="src">§3.1 #41</span>Find the tangent and normal lines to \(y=x^4+2e^x\) at \((0,2)\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(y'=4x^3+2e^x\); at 0: \(0+2=2\).</p><p>Tangent: \(y-2=2x\Rightarrow y=2x+2\).</p><p>Normal slope \(=-\tfrac12\): \(y=-\tfrac12x+2\).</p><p class="ans">Tangent \(y=2x+2\); normal \(y=-\tfrac12x+2\).</p></div></details></div>
+    <div class="prob" id="p31-9"><div class="prob-top"><div class="q"><span class="src">§3.1 #49</span>Find \(f'\) and \(f''\) for \(f(x)=0.001x^5-0.02x^3\).</div></div>
+      <details><summary>Full solution</summary><div><p class="ans">\(f'(x)=0.005x^4-0.06x^2\), \(f''(x)=0.02x^3-0.12x\)</p></div></details></div>
+    <div class="prob" id="p31-10"><div class="prob-top"><div class="q"><span class="src">§3.1 · motion</span>A particle moves by \(s=t^3-6t^2+9t\) (meters, seconds). When is it at rest? What is its acceleration then?</div></div>
+      <details><summary>Full solution</summary><div><p>\(v=s'=3t^2-12t+9=3(t-1)(t-3)\). At rest when \(v=0\): \(t=1\) and \(t=3\).</p><p>\(a=v'=6t-12\): \(a(1)=-6\), \(a(3)=6\) m/s².</p><p class="ans">At rest at t = 1 s (a = −6 m/s²) and t = 3 s (a = 6 m/s²).</p></div></details></div>
+  </div>
+
+  <h3>Traps</h3>
+  <div class="traps">
+    <div class="trap"><b>Power rule on eˣ</b><p>\(\frac{d}{dx}e^x\neq xe^{x-1}\). The power rule is for variable base, constant exponent.</p></div>
+    <div class="trap"><b>Derivative of a constant like e² or π³</b><p>These are numbers. Their derivative is 0.</p></div>
+    <div class="trap"><b>Negative exponents</b><p>\(\frac{d}{dx}x^{-3}=-3x^{-4}\), not \(-3x^{-2}\). Subtracting 1 makes it more negative.</p></div>
+  </div>
+</section>
+
+<!-- ================= 3.2 ================= -->
+<section class="topic" id="s32">
+  <div class="topic-head">
+    <span class="num">§3.2</span>
+    <h2>The Product and Quotient Rules</h2>
+    <p>The derivative of a product is not the product of the derivatives.</p>
+  </div>
+
+  <div class="rules">
+    <div class="rule key"><span class="tag">Product Rule</span>\[(fg)' = f\,g' + g\,f'\]<p class="note">“first · d(second) + second · d(first)”</p></div>
+    <div class="rule key"><span class="tag">Quotient Rule</span>\[\left(\frac fg\right)' = \frac{g\,f' - f\,g'}{g^2}\]<p class="note">“low d-high minus high d-low, over low squared”. The order matters because of the minus.</p></div>
+  </div>
+
+  <div class="lab" id="lab-prod">
+    <div class="lab-head"><h4>The product rule is an area picture</h4><span class="tag">Lab 4 · grow the rectangle</span></div>
+    <canvas class="tall" aria-label="Rectangle of width u and height v with growth strips"></canvas>
+    <div class="controls">
+      <label for="pr-x">x <input id="pr-x" type="range" min="0.6" max="2" step="0.01" value="1.4"></label>
+      <label for="pr-dx">Δx <input id="pr-dx" type="range" min="0" max="0.6" step="0.005" value="0.35"></label>
+    </div>
+    <div class="readout">
+      <div>u = x (width), v = x² (height)<b id="pr-uv">–</b></div>
+      <div class="c-f">u·Δv (top strip)<b id="pr-a">–</b></div>
+      <div class="c-d">v·Δu (side strip)<b id="pr-b">–</b></div>
+      <div class="c-t">Δu·Δv (corner)<b id="pr-c">–</b></div>
+      <div>Δ(uv) / Δx<b id="pr-q">–</b></div>
+      <div>u v′ + v u′ = x·2x + x²·1<b id="pr-d">–</b></div>
+    </div>
+    <p class="note">The area uv grows by two strips plus a tiny corner: Δ(uv) = u·Δv + v·Δu + Δu·Δv. Divide by Δx and let Δx → 0. The corner is a product of two small numbers, so it disappears, leaving (uv)′ = u v′ + v u′. Drag Δx toward 0 and watch the two bottom numbers meet.</p>
+  </div>
+
+  <h3>Worked examples</h3>
+  <div class="examples">
+    <div class="ex">
+      <span class="label">Example · product rule with eˣ</span>
+      <p>Differentiate \(f(x)=xe^x\), then find \(f''\).</p>
+      <ol class="steps">
+        <li>First \(=x\), second \(=e^x\). \(f'=x\cdot e^x+e^x\cdot1=(x+1)e^x\).</li>
+        <li>Again: \(f''=(x+1)e^x+e^x\cdot1=(x+2)e^x\).</li>
+        <li class="why">Pattern: the n-th derivative is \((x+n)e^x\).</li>
+      </ol>
+    </div>
+    <div class="ex">
+      <span class="label">Example · quotient rule</span>
+      <p>Differentiate \(y=\dfrac{x^2+x-2}{x^3+6}\).</p>
+      <ol class="steps">
+        <li>High \(=x^2+x-2\), d-high \(=2x+1\). Low \(=x^3+6\), d-low \(=3x^2\).</li>
+        <li>\(y'=\dfrac{(x^3+6)(2x+1)-(x^2+x-2)(3x^2)}{(x^3+6)^2}\)</li>
+        <li>Expand: \((2x^4+x^3+12x+6)-(3x^4+3x^3-6x^2)\)</li>
+        <li>\(y'=\dfrac{-x^4-2x^3+6x^2+12x+6}{(x^3+6)^2}\)</li>
+      </ol>
+    </div>
+    <div class="ex">
+      <span class="label">Example · from a table (very common exam question)</span>
+      <p>Given \(f(5)=1,\ f'(5)=6,\ g(5)=-3,\ g'(5)=2\). Find \((fg)'(5)\), \((f/g)'(5)\), \((g/f)'(5)\).</p>
+      <ol class="steps">
+        <li>\((fg)'(5)=f(5)g'(5)+g(5)f'(5)=1(2)+(-3)(6)=-16\).</li>
+        <li>\((f/g)'(5)=\dfrac{g f'-f g'}{g^2}=\dfrac{(-3)(6)-(1)(2)}{9}=-\dfrac{20}{9}\).</li>
+        <li>\((g/f)'(5)=\dfrac{f g'-g f'}{f^2}=\dfrac{(1)(2)-(-3)(6)}{1}=20\).</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3>Practice</h3>
+  <div class="practice" data-sec="3.2">
+    <div class="prob" id="p32-1"><div class="prob-top"><div class="q"><span class="src">§3.2 #1</span>Differentiate \(f(x)=(1+2x^2)(x-x^2)\) two ways: Product Rule, and multiplying out first. Do they agree?</div></div>
+      <details><summary>Full solution</summary><div>
+        <p>Product: \(4x(x-x^2)+(1+2x^2)(1-2x)=4x^2-4x^3+1-2x+2x^2-4x^3\)</p>
+        <p>Multiply first: \(f=x-x^2+2x^3-2x^4\Rightarrow f'=1-2x+6x^2-8x^3\).</p>
+        <p class="ans">Both give \(f'(x)=1-2x+6x^2-8x^3\).</p></div></details></div>
+    <div class="prob" id="p32-2"><div class="prob-top"><div class="q"><span class="src">§3.2 #5</span>Differentiate \(y=x^3e^x\).</div></div>
+      <details><summary>Full solution</summary><div><p class="ans">\(y'=x^3e^x+3x^2e^x=x^2e^x(x+3)\)</p></div></details></div>
+    <div class="prob" id="p32-3"><div class="prob-top"><div class="q"><span class="src">§3.2 #9</span>Differentiate \(y=\dfrac{x}{e^x}\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(y'=\dfrac{e^x\cdot1-x\cdot e^x}{(e^x)^2}=\dfrac{e^x(1-x)}{e^{2x}}\)</p><p class="ans">\(y'=\dfrac{1-x}{e^x}\)</p></div></details></div>
+    <div class="prob" id="p32-4"><div class="prob-top"><div class="q"><span class="src">§3.2 #11</span>Differentiate \(g(t)=\dfrac{3-2t}{5t+1}\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(g'=\dfrac{(5t+1)(-2)-(3-2t)(5)}{(5t+1)^2}=\dfrac{-10t-2-15+10t}{(5t+1)^2}\)</p><p class="ans">\(g'(t)=\dfrac{-17}{(5t+1)^2}\)</p></div></details></div>
+    <div class="prob" id="p32-5"><div class="prob-top"><div class="q"><span class="src">§3.2 #13</span>Differentiate \(f(t)=\dfrac{5t}{t^3-t-1}\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(f'=\dfrac{(t^3-t-1)(5)-5t(3t^2-1)}{(t^3-t-1)^2}=\dfrac{5t^3-5t-5-15t^3+5t}{(t^3-t-1)^2}\)</p><p class="ans">\(f'(t)=\dfrac{-10t^3-5}{(t^3-t-1)^2}\)</p></div></details></div>
+    <div class="prob" id="p32-6"><div class="prob-top"><div class="q"><span class="src">§3.2 #27</span>Differentiate \(f(x)=\dfrac{x^2e^x}{x^2+e^x}\).</div></div>
+      <details><summary>Hint</summary><div><p>The top \(x^2e^x\) needs the Product Rule inside the Quotient Rule: \((x^2e^x)'=e^x(x^2+2x)\).</p></div></details>
+      <details><summary>Full solution</summary><div>
+        <p>\(f'=\dfrac{(x^2+e^x)\,e^x(x^2+2x)-x^2e^x(2x+e^x)}{(x^2+e^x)^2}\)</p>
+        <p>Factor \(e^x\) from the numerator: \(e^x[x^4+2x^3+x^2e^x+2xe^x-2x^3-x^2e^x]=e^x(x^4+2xe^x)\).</p>
+        <p class="ans">\(f'(x)=\dfrac{xe^x(x^3+2e^x)}{(x^2+e^x)^2}\)</p></div></details></div>
+    <div class="prob" id="p32-7"><div class="prob-top"><div class="q"><span class="src">§3.2 #31</span>Find \(f'\) and \(f''\) for \(f(x)=x^2e^x\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(f'=e^x(x^2+2x)\). Then \(f''=e^x(x^2+2x)+e^x(2x+2)\).</p><p class="ans">\(f'=e^x(x^2+2x)\), \(f''=e^x(x^2+4x+2)\)</p></div></details></div>
+    <div class="prob" id="p32-8"><div class="prob-top"><div class="q"><span class="src">§3.2 #35</span>Find the tangent line to \(y=\dfrac{x^2}{1+x}\) at \(\left(1,\tfrac12\right)\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(y'=\dfrac{(1+x)(2x)-x^2}{(1+x)^2}=\dfrac{x^2+2x}{(1+x)^2}\); at 1: \(\tfrac34\).</p><p>\(y-\tfrac12=\tfrac34(x-1)\)</p><p class="ans">\(y=\tfrac34x-\tfrac14\)</p></div></details></div>
+    <div class="prob" id="p32-9"><div class="prob-top"><div class="q"><span class="src">§3.2 #39</span>Find the tangent line to the witch of Agnesi \(y=\dfrac{1}{1+x^2}\) at \(\left(-1,\tfrac12\right)\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(y'=\dfrac{(1+x^2)(0)-1(2x)}{(1+x^2)^2}=\dfrac{-2x}{(1+x^2)^2}\); at \(-1\): \(\dfrac{2}{4}=\tfrac12\).</p><p class="ans">\(y=\tfrac12x+1\)</p></div></details></div>
+    <div class="prob" id="p32-10"><div class="prob-top"><div class="q"><span class="src">§3.2 · table style</span>If \(h(x)=\dfrac{f(x)}{x}\), \(f(2)=-3\), \(f'(2)=4\), find \(h'(2)\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(h'=\dfrac{x f'(x)-f(x)\cdot1}{x^2}=\dfrac{2(4)-(-3)}{4}\)</p><p class="ans">\(h'(2)=\dfrac{11}{4}\)</p></div></details></div>
+  </div>
+
+  <h3>Traps</h3>
+  <div class="traps">
+    <div class="trap"><b>(fg)′ = f′g′</b><p>False. Check with \(x\cdot x=x^2\): \(f'g'=1\), but \((x^2)'=2x\).</p></div>
+    <div class="trap"><b>Flipping the quotient numerator</b><p>It's \(g f' - f g'\), bottom first. Swapping them flips the sign of your answer.</p></div>
+    <div class="trap"><b>Using quotient rule when you don't need to</b><p>\(\dfrac{x^3+1}{x}\) or \(\dfrac{\sin x}{5}\): simplify or pull out the constant instead.</p></div>
+  </div>
+</section>
+
+<!-- ================= 3.3 ================= -->
+<section class="topic" id="s33">
+  <div class="topic-head">
+    <span class="num">§3.3</span>
+    <h2>Derivatives of Trigonometric Functions</h2>
+    <p>Six formulas, two limits, and a cycle of four.</p>
+  </div>
+
+  <div class="rules">
+    <div class="rule key"><span class="tag">sin and cos</span>\[(\sin x)'=\cos x\]\[(\cos x)'=-\sin x\]</div>
+    <div class="rule"><span class="tag">tan and cot</span>\[(\tan x)'=\sec^2x\]\[(\cot x)'=-\csc^2x\]</div>
+    <div class="rule"><span class="tag">sec and csc</span>\[(\sec x)'=\sec x\tan x\]\[(\csc x)'=-\csc x\cot x\]</div>
+    <div class="rule"><span class="tag">Memory trick</span><p>Every “co-” function (cos, cot, csc) gets a <strong>minus sign</strong>. tan ↔ sec² and cot ↔ csc² pair up; sec and csc reproduce themselves.</p></div>
+  </div>
+
+  <div class="lab" id="lab-sin">
+    <div class="lab-head"><h4>The slope of sin x is cos x</h4><span class="tag">Lab 5a · drag on the graph</span></div>
+    <canvas class="short" id="sin-top" aria-label="Graph of sin x with a tangent line"></canvas>
+    <canvas class="short" id="sin-bot" aria-label="Slopes of sin x traced, compared with cos x"></canvas>
+    <div class="controls">
+      <label for="sin-x">x <input id="sin-x" type="range" min="-6.28" max="6.28" step="0.01" value="-5"></label>
+      <label for="sin-cos"><input id="sin-cos" type="checkbox"> overlay cos x</label>
+      <button type="button" id="sin-anim">Sweep</button>
+    </div>
+    <div class="readout">
+      <div>x (radians)<b id="sin-xv">–</b></div>
+      <div>slope of sin at x<b class="c-d" id="sin-m">–</b></div>
+      <div>cos x<b id="sin-c">–</b></div>
+    </div>
+  </div>
+
+  <h3>The two special limits</h3>
+  <div class="rules">
+    <div class="rule key"><span class="tag">Limit 1</span>\[\lim_{\theta\to0}\frac{\sin\theta}{\theta}=1\]<p class="note">θ must be in radians. The argument of sin must match the denominator.</p></div>
+    <div class="rule key"><span class="tag">Limit 2</span>\[\lim_{\theta\to0}\frac{\cos\theta-1}{\theta}=0\]</div>
+  </div>
+
+  <div class="lab" id="lab-circ">
+    <div class="lab-head"><h4>Why sin θ / θ → 1</h4><span class="tag">Lab 5b · shrink the angle</span></div>
+    <canvas class="square" aria-label="Unit circle comparing arc length theta with sin theta"></canvas>
+    <div class="controls">
+      <label for="circ-t">θ <input id="circ-t" type="range" min="0.02" max="1.5" step="0.005" value="1.1"></label>
+    </div>
+    <div class="readout">
+      <div class="c-f">arc length θ<b id="circ-a">–</b></div>
+      <div class="c-d">vertical side sin θ<b id="circ-s">–</b></div>
+      <div class="c-t">sin θ / θ<b id="circ-r">–</b></div>
+    </div>
+    <p class="note">On a unit circle the arc has length θ and the pink segment has length sin θ. As θ shrinks, the arc straightens out and the two lengths become equal, so their ratio → 1.</p>
+  </div>
+
+  <div class="prose">
+    <p><strong>Using the limit:</strong> make the denominator match the angle. Multiply and divide by what you need:</p>
+    \[\lim_{x\to0}\frac{\sin 7x}{4x}=\frac74\lim_{x\to0}\frac{\sin7x}{7x}=\frac74\cdot1=\frac74\]
+    <p><strong>Higher derivatives of sin cycle every 4:</strong> \(\sin\to\cos\to-\sin\to-\cos\to\sin\). To find \(\frac{d^{n}}{dx^{n}}\sin x\), divide \(n\) by 4 and use the remainder.</p>
+  </div>
+
+  <h3>Worked examples</h3>
+  <div class="examples">
+    <div class="ex">
+      <span class="label">Example · simplify after the quotient rule</span>
+      <p>Differentiate \(f(\theta)=\dfrac{\sin\theta}{1+\cos\theta}\). <span class="mono">§3.3 #13</span></p>
+      <ol class="steps">
+        <li>\(f'=\dfrac{(1+\cos\theta)\cos\theta-\sin\theta(-\sin\theta)}{(1+\cos\theta)^2}=\dfrac{\cos\theta+\cos^2\theta+\sin^2\theta}{(1+\cos\theta)^2}\)</li>
+        <li><span class="why">Use \(\sin^2+\cos^2=1\).</span> Numerator \(=\cos\theta+1\).</li>
+        <li>\(f'(\theta)=\dfrac{1+\cos\theta}{(1+\cos\theta)^2}=\dfrac{1}{1+\cos\theta}\)</li>
+      </ol>
+    </div>
+    <div class="ex">
+      <span class="label">Example · the 4-cycle</span>
+      <p>Find \(\dfrac{d^{27}}{dx^{27}}\cos x\).</p>
+      <ol class="steps">
+        <li>cos cycle: \(\cos\to-\sin\to-\cos\to\sin\to\cos\) (period 4).</li>
+        <li>\(27=4\cdot6+3\), so it equals the 3rd derivative.</li>
+        <li>Answer: \(\sin x\).</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3>Practice</h3>
+  <div class="practice" data-sec="3.3">
+    <div class="prob" id="p33-1"><div class="prob-top"><div class="q"><span class="src">§3.3 #1</span>Differentiate \(f(x)=3\sin x-2\cos x\).</div></div>
+      <details><summary>Full solution</summary><div><p class="ans">\(f'(x)=3\cos x+2\sin x\)</p><p class="why">The minus from \(-2\) and the minus from \((\cos x)'=-\sin x\) cancel.</p></div></details></div>
+    <div class="prob" id="p33-2"><div class="prob-top"><div class="q"><span class="src">§3.3 #5</span>Differentiate \(h(\theta)=\theta^2\sin\theta\).</div></div>
+      <details><summary>Full solution</summary><div><p class="ans">\(h'(\theta)=2\theta\sin\theta+\theta^2\cos\theta\)</p></div></details></div>
+    <div class="prob" id="p33-3"><div class="prob-top"><div class="q"><span class="src">§3.3 #7</span>Differentiate \(y=\sec\theta\tan\theta\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(y'=\sec\theta\cdot\sec^2\theta+\tan\theta\cdot\sec\theta\tan\theta\)</p><p class="ans">\(y'=\sec^3\theta+\sec\theta\tan^2\theta=\sec\theta(\sec^2\theta+\tan^2\theta)\)</p></div></details></div>
+    <div class="prob" id="p33-4"><div class="prob-top"><div class="q"><span class="src">§3.3 #14</span>Differentiate \(y=\dfrac{\cos x}{1-\sin x}\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(y'=\dfrac{(1-\sin x)(-\sin x)-\cos x(-\cos x)}{(1-\sin x)^2}=\dfrac{-\sin x+\sin^2x+\cos^2x}{(1-\sin x)^2}\)</p><p class="ans">\(y'=\dfrac{1-\sin x}{(1-\sin x)^2}=\dfrac{1}{1-\sin x}\)</p></div></details></div>
+    <div class="prob" id="p33-5"><div class="prob-top"><div class="q"><span class="src">§3.3 #27</span>Find the tangent line to \(y=\sin x+\cos x\) at \((0,1)\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(y'=\cos x-\sin x\); at 0: \(1\).</p><p class="ans">\(y=x+1\)</p></div></details></div>
+    <div class="prob" id="p33-6"><div class="prob-top"><div class="q"><span class="src">§3.3 #39</span>For what \(x\) does \(f(x)=x+2\sin x\) have a horizontal tangent?</div></div>
+      <details><summary>Full solution</summary><div><p>\(f'(x)=1+2\cos x=0\Rightarrow\cos x=-\tfrac12\).</p><p class="ans">\(x=\dfrac{2\pi}{3}+2n\pi\) or \(x=\dfrac{4\pi}{3}+2n\pi\), \(n\) any integer.</p></div></details></div>
+    <div class="prob" id="p33-7"><div class="prob-top"><div class="q"><span class="src">§3.3 #41</span>A mass on a spring has position \(x(t)=8\sin t\) cm. Find velocity and acceleration, and the state at \(t=2\pi/3\). Which way is it moving?</div></div>
+      <details><summary>Full solution</summary><div><p>\(v=8\cos t\), \(a=-8\sin t\).</p><p>At \(t=\frac{2\pi}3\): \(x=8\cdot\frac{\sqrt3}2=4\sqrt3\), \(v=8(-\tfrac12)=-4\), \(a=-4\sqrt3\).</p><p class="ans">\(x=4\sqrt3\) cm, \(v=-4\) cm/s, \(a=-4\sqrt3\) cm/s². Moving left (v &lt; 0).</p></div></details></div>
+    <div class="prob" id="p33-8"><div class="prob-top"><div class="q"><span class="src">§3.3 · limits</span>Find \(\displaystyle\lim_{t\to0}\frac{\tan6t}{\sin2t}\).</div></div>
+      <details><summary>Hint</summary><div><p>\(\tan6t=\dfrac{\sin6t}{\cos6t}\). Then build \(\frac{\sin6t}{6t}\) and \(\frac{2t}{\sin2t}\).</p></div></details>
+      <details><summary>Full solution</summary><div><p>\(\dfrac{\sin6t}{\cos6t\,\sin2t}=\dfrac{\sin6t}{6t}\cdot\dfrac{2t}{\sin2t}\cdot\dfrac{6t}{2t}\cdot\dfrac1{\cos6t}\to1\cdot1\cdot3\cdot1\)</p><p class="ans">3</p></div></details></div>
+    <div class="prob" id="p33-9"><div class="prob-top"><div class="q"><span class="src">§3.3 · limits</span>Find \(\displaystyle\lim_{x\to0}\frac{\sin3x}{5x^3-4x}\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(\dfrac{\sin3x}{x(5x^2-4)}=3\cdot\dfrac{\sin3x}{3x}\cdot\dfrac{1}{5x^2-4}\to3\cdot1\cdot\left(-\tfrac14\right)\)</p><p class="ans">\(-\dfrac34\)</p></div></details></div>
+    <div class="prob" id="p33-10"><div class="prob-top"><div class="q"><span class="src">§3.3 · 4-cycle</span>Find \(\dfrac{d^{99}}{dx^{99}}\sin x\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(99=4\cdot24+3\) → same as the 3rd derivative of sin.</p><p class="ans">\(-\cos x\)</p></div></details></div>
+  </div>
+
+  <h3>Traps</h3>
+  <div class="traps">
+    <div class="trap"><b>Degrees</b><p>All these formulas need radians. In degrees, \((\sin x)'=\frac{\pi}{180}\cos x\).</p></div>
+    <div class="trap"><b>sin 7x / 4x → 7/4, not 1</b><p>The limit is 1 only when the angle and the denominator are identical.</p></div>
+    <div class="trap"><b>Missing minus signs</b><p>cos, cot, csc all give negatives. Say “co- means minus” as you write.</p></div>
+  </div>
+</section>
+
+<!-- ================= 3.4 ================= -->
+<section class="topic" id="s34">
+  <div class="topic-head">
+    <span class="num">§3.4</span>
+    <h2>The Chain Rule</h2>
+    <p>Derivatives of functions inside functions. Rates multiply.</p>
+  </div>
+
+  <div class="rules">
+    <div class="rule key"><span class="tag">Chain Rule</span>\[\big(f(g(x))\big)'=f'(g(x))\cdot g'(x)\]<p class="note">Derivative of the outside (leave the inside alone) × derivative of the inside.</p></div>
+    <div class="rule key"><span class="tag">Leibniz form</span>\[\frac{dy}{dx}=\frac{dy}{du}\cdot\frac{du}{dx}\]<p class="note">If u changes 3× as fast as x, and y changes 2× as fast as u, y changes 6× as fast as x.</p></div>
+    <div class="rule"><span class="tag">Power + chain</span>\[\frac{d}{dx}[g(x)]^n=n[g(x)]^{n-1}g'(x)\]</div>
+    <div class="rule"><span class="tag">Exponential + chain</span>\[\frac{d}{dx}e^{g(x)}=e^{g(x)}g'(x)\]\[\frac{d}{dx}a^x=a^x\ln a\]</div>
+  </div>
+
+  <div class="lab" id="lab-chain">
+    <div class="lab-head"><h4>A nudge travels down the chain</h4><span class="tag">Lab 6 · y = sin(x²)</span></div>
+    <canvas class="tall" aria-label="Three number lines x, u equals x squared, y equals sin u, showing how a small change is magnified"></canvas>
+    <div class="controls">
+      <label for="ch-x">x <input id="ch-x" type="range" min="0.2" max="2.2" step="0.01" value="1.1"></label>
+      <label for="ch-dx">Δx <input id="ch-dx" type="range" min="0.005" max="0.3" step="0.005" value="0.15"></label>
+    </div>
+    <div class="readout">
+      <div>Δu / Δx ≈ du/dx = 2x<b class="c-f" id="ch-1">–</b></div>
+      <div>Δy / Δu ≈ dy/du = cos u<b class="c-d" id="ch-2">–</b></div>
+      <div>product of the two<b class="c-t" id="ch-3">–</b></div>
+      <div>exact dy/dx = 2x·cos(x²)<b id="ch-4">–</b></div>
+    </div>
+    <p class="note">The inner function u = x² stretches the nudge by a factor of 2x. The outer function y = sin u stretches it again by cos u. Total stretch = the product. That is the chain rule.</p>
+  </div>
+
+  <h3>How to spot inside vs. outside</h3>
+  <div class="prose">
+    <p>Ask: <em>if I plugged in a number, what would I compute <strong>last</strong>?</em> That's the outer function.</p>
+    <ul class="steps">
+      <li>\(\sqrt{x^3+1}\): last step is the square root. Outer \(\sqrt u\), inner \(u=x^3+1\).</li>
+      <li>\(\sin^2x=(\sin x)^2\): last step is squaring. Outer \(u^2\), inner \(\sin x\).</li>
+      <li>\(\sin(x^2)\): last step is sin. Outer \(\sin u\), inner \(x^2\).</li>
+      <li>Long chains peel like an onion: \(\big(f(g(h(x)))\big)'=f'(g(h(x)))\cdot g'(h(x))\cdot h'(x)\).</li>
+    </ul>
+  </div>
+
+  <h3>Worked examples</h3>
+  <div class="examples">
+    <div class="ex">
+      <span class="label">Example · three layers</span>
+      <p>Differentiate \(y=e^{\sec 3\theta}\).</p>
+      <ol class="steps">
+        <li>Layers: \(e^{(\ )}\) → \(\sec(\ )\) → \(3\theta\).</li>
+        <li>Peel: \(e^{\sec3\theta}\cdot\sec3\theta\tan3\theta\cdot3\).</li>
+        <li>\(y'=3e^{\sec3\theta}\sec3\theta\tan3\theta\)</li>
+      </ol>
+    </div>
+    <div class="ex">
+      <span class="label">Example · chain inside a product (§3.4 #21)</span>
+      <p>Differentiate \(F(x)=(4x+5)^3(x^2-2x+5)^4\).</p>
+      <ol class="steps">
+        <li>Product Rule, and each factor needs the Chain Rule:<br>\(F'=3(4x+5)^2(4)\cdot(x^2-2x+5)^4+(4x+5)^3\cdot4(x^2-2x+5)^3(2x-2)\)</li>
+        <li><span class="why">Factor out the lowest powers:</span> \(4(4x+5)^2(x^2-2x+5)^3\big[3(x^2-2x+5)+(4x+5)(2x-2)\big]\)</li>
+        <li>Bracket: \(3x^2-6x+15+8x^2+2x-10=11x^2-4x+5\).</li>
+        <li>\(F'(x)=4(4x+5)^2(x^2-2x+5)^3(11x^2-4x+5)\)</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3>Practice</h3>
+  <div class="practice" data-sec="3.4">
+    <div class="prob" id="p34-1"><div class="prob-top"><div class="q"><span class="src">§3.4 #1</span>Write \(y=(5-x^4)^3\) as \(f(g(x))\) and find \(dy/dx\).</div></div>
+      <details><summary>Full solution</summary><div><p>Inner \(u=5-x^4\), outer \(y=u^3\).</p><p class="ans">\(y'=3(5-x^4)^2(-4x^3)=-12x^3(5-x^4)^2\)</p></div></details></div>
+    <div class="prob" id="p34-2"><div class="prob-top"><div class="q"><span class="src">§3.4 #3</span>Differentiate \(y=\sin(\cos x)\).</div></div>
+      <details><summary>Full solution</summary><div><p class="ans">\(y'=\cos(\cos x)\cdot(-\sin x)=-\sin x\cos(\cos x)\)</p></div></details></div>
+    <div class="prob" id="p34-3"><div class="prob-top"><div class="q"><span class="src">§3.4 #13 &amp; #14</span>Differentiate \(f(\theta)=\cos(\theta^2)\) and \(g(\theta)=\cos^2\theta\). Why are they different?</div></div>
+      <details><summary>Full solution</summary><div><p>\(\cos(\theta^2)\): outer cos, inner \(\theta^2\) → \(-\sin(\theta^2)\cdot2\theta\).</p><p>\(\cos^2\theta=(\cos\theta)^2\): outer square, inner cos → \(2\cos\theta(-\sin\theta)\).</p><p class="ans">\(f'=-2\theta\sin(\theta^2)\); \(g'=-2\sin\theta\cos\theta=-\sin2\theta\)</p></div></details></div>
+    <div class="prob" id="p34-4"><div class="prob-top"><div class="q"><span class="src">§3.4 #17</span>Differentiate \(y=x^2e^{-3x}\).</div></div>
+      <details><summary>Full solution</summary><div><p>Product rule, with \((e^{-3x})'=-3e^{-3x}\).</p><p class="ans">\(y'=2xe^{-3x}-3x^2e^{-3x}=xe^{-3x}(2-3x)\)</p></div></details></div>
+    <div class="prob" id="p34-5"><div class="prob-top"><div class="q"><span class="src">§3.4 #19</span>Differentiate \(f(t)=e^{at}\sin bt\).</div></div>
+      <details><summary>Full solution</summary><div><p class="ans">\(f'(t)=ae^{at}\sin bt+be^{at}\cos bt=e^{at}(a\sin bt+b\cos bt)\)</p></div></details></div>
+    <div class="prob" id="p34-6"><div class="prob-top"><div class="q"><span class="src">§3.4 #23</span>Differentiate \(y=\sqrt{\dfrac{x}{x+1}}\).</div></div>
+      <details><summary>Hint</summary><div><p>Outer \(\sqrt u\), inner is a quotient: \(\left(\frac{x}{x+1}\right)'=\frac{1}{(x+1)^2}\).</p></div></details>
+      <details><summary>Full solution</summary><div><p>\(y'=\dfrac12\left(\dfrac{x}{x+1}\right)^{-1/2}\cdot\dfrac{1}{(x+1)^2}=\dfrac12\cdot\dfrac{\sqrt{x+1}}{\sqrt x}\cdot\dfrac1{(x+1)^2}\)</p><p class="ans">\(y'=\dfrac{1}{2\sqrt x\,(x+1)^{3/2}}\)</p></div></details></div>
+    <div class="prob" id="p34-7"><div class="prob-top"><div class="q"><span class="src">§3.4 #29</span>Differentiate \(r(t)=10^{2\sqrt t}\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(\dfrac{d}{dt}a^{u}=a^{u}\ln a\cdot u'\), with \(u=2\sqrt t\), \(u'=\dfrac1{\sqrt t}\).</p><p class="ans">\(r'(t)=\dfrac{10^{2\sqrt t}\ln10}{\sqrt t}\)</p></div></details></div>
+    <div class="prob" id="p34-8"><div class="prob-top"><div class="q"><span class="src">§3.4 #41</span>Differentiate \(y=\sin^2(x^2+1)\).</div></div>
+      <details><summary>Full solution</summary><div><p>Three layers: square → sin → \(x^2+1\).</p><p>\(y'=2\sin(x^2+1)\cdot\cos(x^2+1)\cdot2x\)</p><p class="ans">\(y'=4x\sin(x^2+1)\cos(x^2+1)=2x\sin\big(2(x^2+1)\big)\)</p></div></details></div>
+    <div class="prob" id="p34-9"><div class="prob-top"><div class="q"><span class="src">§3.4 #58</span>Find the tangent line to \(y=\sqrt{1+x^3}\) at \((2,3)\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(y'=\dfrac{3x^2}{2\sqrt{1+x^3}}\); at 2: \(\dfrac{12}{2\cdot3}=2\).</p><p class="ans">\(y=2x-1\)</p></div></details></div>
+    <div class="prob" id="p34-10"><div class="prob-top"><div class="q"><span class="src">§3.4 · table style</span>\(h(x)=f(g(x))\). Given \(g(1)=3\), \(g'(1)=4\), \(f(3)=7\), \(f'(3)=-2\), \(f'(1)=5\). Find \(h'(1)\).</div></div>
+      <details><summary>Hint</summary><div><p>\(f'\) is evaluated at \(g(1)\), not at 1. One of the given numbers is a decoy.</p></div></details>
+      <details><summary>Full solution</summary><div><p>\(h'(1)=f'(g(1))\cdot g'(1)=f'(3)\cdot4=(-2)(4)\)</p><p class="ans">\(h'(1)=-8\). (\(f'(1)=5\) is not used.)</p></div></details></div>
+  </div>
+
+  <h3>Traps</h3>
+  <div class="traps">
+    <div class="trap"><b>Forgetting the inside derivative</b><p>\((\sin3x)'=3\cos3x\), not \(\cos3x\). Every layer contributes a factor.</p></div>
+    <div class="trap"><b>Changing the inside</b><p>\((\cos(x^2))'\) is \(-\sin(x^2)\cdot2x\). The inside stays \(x^2\); don't write \(-\sin(2x)\).</p></div>
+    <div class="trap"><b>f′(g(x)) vs f′(x)</b><p>In table problems, evaluate the outer derivative at the inner value.</p></div>
+  </div>
+</section>
+
+<!-- ================= 3.5 ================= -->
+<section class="topic" id="s35">
+  <div class="topic-head">
+    <span class="num">§3.5</span>
+    <h2>Implicit Differentiation</h2>
+    <p>Finding slopes on curves you can't (or don't want to) solve for y.</p>
+  </div>
+
+  <div class="prose">
+    <p>A curve like \(x^3+y^3=6xy\) isn't a function \(y=f(x)\), but near most points it <em>looks</em> like one. So treat \(y\) as an unknown function of \(x\) and differentiate both sides with respect to \(x\).</p>
+    <p class="callout"><strong>The one rule:</strong> every time you differentiate something with \(y\) in it, the chain rule attaches a factor of \(y'\). So \(\frac{d}{dx}(y^3)=3y^2\,y'\), \(\frac{d}{dx}(\sin y)=\cos y\,y'\), and \(\frac{d}{dx}(xy)=y+x\,y'\) (product rule).</p>
+    <p><strong>Recipe:</strong></p>
+    <ol class="steps">
+      <li>Differentiate both sides with respect to \(x\). Attach \(y'\) to every \(y\)-term.</li>
+      <li>Move all \(y'\) terms to one side, everything else to the other.</li>
+      <li>Factor out \(y'\) and divide.</li>
+    </ol>
+  </div>
+
+  <div class="lab" id="lab-imp">
+    <div class="lab-head"><h4>Tangent lines on implicit curves</h4><span class="tag">Lab 7 · drag the point along the curve</span></div>
+    <div class="controls">
+      <label for="imp-c">curve
+        <select id="imp-c">
+          <option value="circle">circle x² + y² = 25</option>
+          <option value="folium">folium x³ + y³ = 6xy</option>
+          <option value="ellipse">ellipse x² − xy + y² = 3</option>
+          <option value="kampyle">kampyle y² = 5x⁴ − x²</option>
+          <option value="wild">sin(x + y) = y² cos x</option>
+        </select>
+      </label>
+    </div>
+    <canvas class="square" aria-label="Implicitly defined curve with draggable tangent line"></canvas>
+    <div class="readout">
+      <div>point (x, y)<b class="c-f" id="imp-p">–</b></div>
+      <div>dy/dx formula<b id="imp-f" style="font-size:14px">–</b></div>
+      <div>slope here<b class="c-t" id="imp-m">–</b></div>
+    </div>
+    <p class="note">When the denominator of dy/dx is 0, the tangent is vertical. When the numerator is 0, it is horizontal.</p>
+  </div>
+
+  <h3>Worked examples</h3>
+  <div class="examples">
+    <div class="ex">
+      <span class="label">Example · folium of Descartes (Stewart Ex. 2)</span>
+      <p>Find \(y'\) for \(x^3+y^3=6xy\) and the tangent line at \((3,3)\).</p>
+      <ol class="steps">
+        <li>Differentiate: \(3x^2+3y^2y'=6y+6xy'\). <span class="why">Right side used the product rule on \(6xy\).</span></li>
+        <li>Collect \(y'\): \(3y^2y'-6xy'=6y-3x^2\).</li>
+        <li>Factor and divide (and cancel 3): \(y'=\dfrac{2y-x^2}{y^2-2x}\).</li>
+        <li>At \((3,3)\): \(y'=\dfrac{6-9}{9-6}=-1\). Tangent: \(y-3=-(x-3)\Rightarrow x+y=6\).</li>
+      </ol>
+    </div>
+    <div class="ex">
+      <span class="label">Example · second derivative (§3.5 #39)</span>
+      <p>Find \(y''\) for \(x^2+4y^2=4\).</p>
+      <ol class="steps">
+        <li>\(2x+8yy'=0\Rightarrow y'=-\dfrac{x}{4y}\).</li>
+        <li>Quotient rule on \(y'\), remembering \(y\) is a function: \(y''=-\dfrac{4y\cdot1-x\cdot4y'}{16y^2}\).</li>
+        <li>Substitute \(y'=-\frac{x}{4y}\): \(y''=-\dfrac{4y+\frac{x^2}{y}}{16y^2}=-\dfrac{4y^2+x^2}{16y^3}\).</li>
+        <li><span class="why">Use the original equation: \(x^2+4y^2=4\).</span> \(y''=-\dfrac{4}{16y^3}=-\dfrac{1}{4y^3}\).</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3>Practice</h3>
+  <div class="practice" data-sec="3.5">
+    <div class="prob" id="p35-1"><div class="prob-top"><div class="q"><span class="src">§3.5 #1</span>Find \(y'\) for \(5x^2-y^3=7\) implicitly.</div></div>
+      <details><summary>Full solution</summary><div><p>\(10x-3y^2y'=0\)</p><p class="ans">\(y'=\dfrac{10x}{3y^2}\)</p></div></details></div>
+    <div class="prob" id="p35-2"><div class="prob-top"><div class="q"><span class="src">§3.5 #5</span>Find \(dy/dx\) for \(x^2-4xy+y^2=4\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(2x-4(y+xy')+2yy'=0\)</p><p>\(y'(2y-4x)=4y-2x\)</p><p class="ans">\(y'=\dfrac{2y-x}{y-2x}\)</p></div></details></div>
+    <div class="prob" id="p35-3"><div class="prob-top"><div class="q"><span class="src">§3.5 #7</span>Find \(dy/dx\) for \(x^4+x^2y^2+y^3=5\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(4x^3+(2xy^2+x^2\cdot2yy')+3y^2y'=0\)</p><p class="ans">\(y'=-\dfrac{4x^3+2xy^2}{2x^2y+3y^2}\)</p></div></details></div>
+    <div class="prob" id="p35-4"><div class="prob-top"><div class="q"><span class="src">§3.5 #10</span>Find \(dy/dx\) for \(xe^y=x-y\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(e^y+xe^yy'=1-y'\)</p><p>\(y'(xe^y+1)=1-e^y\)</p><p class="ans">\(y'=\dfrac{1-e^y}{1+xe^y}\)</p></div></details></div>
+    <div class="prob" id="p35-5"><div class="prob-top"><div class="q"><span class="src">§3.5 #11</span>Find \(dy/dx\) for \(\sin x+\cos y=2x-3y\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(\cos x-\sin y\,y'=2-3y'\)</p><p>\(y'(3-\sin y)=2-\cos x\)</p><p class="ans">\(y'=\dfrac{2-\cos x}{3-\sin y}\)</p></div></details></div>
+    <div class="prob" id="p35-6"><div class="prob-top"><div class="q"><span class="src">§3.5 #15</span>Find \(dy/dx\) for \(y\cos x=x^2+y^2\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(y'\cos x-y\sin x=2x+2yy'\)</p><p>\(y'(\cos x-2y)=2x+y\sin x\)</p><p class="ans">\(y'=\dfrac{2x+y\sin x}{\cos x-2y}\)</p></div></details></div>
+    <div class="prob" id="p35-7"><div class="prob-top"><div class="q"><span class="src">§3.5 #23</span>If \(f(x)+x^2[f(x)]^3=10\) and \(f(1)=2\), find \(f'(1)\).</div></div>
+      <details><summary>Hint</summary><div><p>Differentiate, then plug in \(x=1\), \(f(1)=2\) <em>before</em> solving. It's just a linear equation in \(f'(1)\).</p></div></details>
+      <details><summary>Full solution</summary><div><p>\(f'(x)+2x[f(x)]^3+3x^2[f(x)]^2f'(x)=0\)</p><p>At \(x=1\): \(f'(1)+2(8)+3(4)f'(1)=0\Rightarrow13f'(1)=-16\)</p><p class="ans">\(f'(1)=-\dfrac{16}{13}\)</p></div></details></div>
+    <div class="prob" id="p35-8"><div class="prob-top"><div class="q"><span class="src">§3.5 #37</span>Find the tangent line to the kampyle \(y^2=5x^4-x^2\) at \((1,2)\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(2yy'=20x^3-2x\Rightarrow y'=\dfrac{10x^3-x}{y}\); at \((1,2)\): \(\dfrac{9}{2}\).</p><p class="ans">\(y=\tfrac92x-\tfrac52\)</p></div></details></div>
+    <div class="prob" id="p35-9"><div class="prob-top"><div class="q"><span class="src">§3.5 · circle</span>Find the tangent line to \(x^2+y^2=25\) at \((3,4)\).</div></div>
+      <details><summary>Full solution</summary><div><p>\(2x+2yy'=0\Rightarrow y'=-\dfrac xy=-\dfrac34\).</p><p class="ans">\(y=-\tfrac34x+\tfrac{25}{4}\)</p></div></details></div>
+    <div class="prob" id="p35-10"><div class="prob-top"><div class="q"><span class="src">§3.5 · horizontal tangents</span>Where does \(x^2-xy+y^2=3\) have horizontal tangents?</div></div>
+      <details><summary>Full solution</summary><div><p>\(2x-y-xy'+2yy'=0\Rightarrow y'=\dfrac{y-2x}{2y-x}\).</p><p>Horizontal: numerator 0 → \(y=2x\). Substitute: \(x^2-2x^2+4x^2=3\Rightarrow x^2=1\).</p><p class="ans">\((1,2)\) and \((-1,-2)\). (Check the denominator \(2y-x\ne0\) there: \(3\) and \(-3\). ✓)</p></div></details></div>
+  </div>
+
+  <h3>Traps</h3>
+  <div class="traps">
+    <div class="trap"><b>Forgetting y′ on y-terms</b><p>\(\frac{d}{dx}y^2=2y\,y'\), not \(2y\). This is the #1 mistake.</p></div>
+    <div class="trap"><b>xy is a product</b><p>\(\frac{d}{dx}(xy)=y+xy'\). Don't write just \(y'\) or \(1\cdot y'\).</p></div>
+    <div class="trap"><b>Constant on the right</b><p>The derivative of the 25 in \(x^2+y^2=25\) is 0. Don't drop the whole right side when it has variables.</p></div>
+  </div>
+</section>
+
+<!-- ================= Quiz ================= -->
+<section class="topic" id="quiz">
+  <div class="topic-head">
+    <span class="num">Mixed</span>
+    <h2>Quick quiz</h2>
+    <p>Ten fast questions from all six sections. Pick an answer for instant feedback. <span class="score" id="qscore">Score: 0 / 10</span></p>
+  </div>
+  <div class="quiz">
+    <div class="qq"><p><b>1.</b> \(\dfrac{d}{dx}\left(\dfrac{1}{x^2}\right)\) =</p><div class="opts"><button type="button">\(\frac{1}{2x}\)</button><button type="button" data-ok>\(-\frac{2}{x^3}\)</button><button type="button">\(-\frac{2}{x}\)</button><button type="button">\(-\frac{1}{x^3}\)</button></div><p class="fb" hidden>\(x^{-2}\to-2x^{-3}\).</p></div>
+    <div class="qq"><p><b>2.</b> \(f(x)=|x|\) at \(x=0\) is…</p><div class="opts"><button type="button">differentiable, f′(0) = 0</button><button type="button" data-ok>continuous but not differentiable</button><button type="button">not continuous</button></div><p class="fb" hidden>It has a corner: left slope −1, right slope +1.</p></div>
+    <div class="qq"><p><b>3.</b> \(\dfrac{d}{dx}(e^x\cos x)\) =</p><div class="opts"><button type="button">\(-e^x\sin x\)</button><button type="button" data-ok>\(e^x(\cos x-\sin x)\)</button><button type="button">\(e^x(\cos x+\sin x)\)</button></div><p class="fb" hidden>Product rule: \(e^x\cos x+e^x(-\sin x)\).</p></div>
+    <div class="qq"><p><b>4.</b> \(\displaystyle\lim_{x\to0}\frac{\sin 5x}{x}\) =</p><div class="opts"><button type="button">1</button><button type="button">1/5</button><button type="button" data-ok>5</button><button type="button">0</button></div><p class="fb" hidden>\(5\cdot\frac{\sin5x}{5x}\to5\).</p></div>
+    <div class="qq"><p><b>5.</b> \(\dfrac{d}{dx}\tan(4x)\) =</p><div class="opts"><button type="button">\(\sec^2(4x)\)</button><button type="button" data-ok>\(4\sec^2(4x)\)</button><button type="button">\(4\sec(4x)\tan(4x)\)</button></div><p class="fb" hidden>Chain rule: outer tan → sec², inner 4x → 4.</p></div>
+    <div class="qq"><p><b>6.</b> \(\dfrac{d}{dx}\left(\dfrac{x}{x+1}\right)\) =</p><div class="opts"><button type="button" data-ok>\(\frac{1}{(x+1)^2}\)</button><button type="button">\(\frac{-1}{(x+1)^2}\)</button><button type="button">\(1\)</button></div><p class="fb" hidden>\(\frac{(x+1)\cdot1-x\cdot1}{(x+1)^2}\).</p></div>
+    <div class="qq"><p><b>7.</b> For \(x^2+y^2=25\), \(dy/dx\) =</p><div class="opts"><button type="button">\(-\frac{y}{x}\)</button><button type="button" data-ok>\(-\frac{x}{y}\)</button><button type="button">\(2x+2y\)</button></div><p class="fb" hidden>\(2x+2yy'=0\).</p></div>
+    <div class="qq"><p><b>8.</b> \(\dfrac{d}{dx}\,e^{x^2}\) =</p><div class="opts"><button type="button">\(e^{x^2}\)</button><button type="button">\(x^2e^{x^2-1}\)</button><button type="button" data-ok>\(2xe^{x^2}\)</button></div><p class="fb" hidden>\(e^u\cdot u'\) with \(u=x^2\).</p></div>
+    <div class="qq"><p><b>9.</b> \(\dfrac{d}{dx}\left(\csc x\right)\) =</p><div class="opts"><button type="button">\(\csc x\cot x\)</button><button type="button" data-ok>\(-\csc x\cot x\)</button><button type="button">\(-\csc^2x\)</button></div><p class="fb" hidden>“co-” function → minus sign.</p></div>
+    <div class="qq"><p><b>10.</b> \(\dfrac{d}{dx}\,2^x\) =</p><div class="opts"><button type="button">\(x\,2^{x-1}\)</button><button type="button">\(2^x\)</button><button type="button" data-ok>\(2^x\ln2\)</button></div><p class="fb" hidden>\((a^x)'=a^x\ln a\). Only base e has no extra factor.</p></div>
+  </div>
+</section>
+
+<!-- ================= Sheet ================= -->
+<section class="topic" id="sheet">
+  <div class="topic-head">
+    <span class="num">Review</span>
+    <h2>One-page cheat sheet</h2>
+    <p>Everything you need to memorize, in one place.</p>
+  </div>
+  <div class="sheet">
+    <div class="rule"><h4>Definition (2.8)</h4>\[f'(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}\]<p class="note">Tangent line: \(y-f(a)=f'(a)(x-a)\). Normal slope: \(-1/f'(a)\).</p></div>
+    <div class="rule"><h4>Basic rules (3.1)</h4>\[(x^n)'=nx^{n-1},\ \ (e^x)'=e^x,\ \ (c)'=0\]<p class="note">\((cf)'=cf'\), \((f\pm g)'=f'\pm g'\)</p></div>
+    <div class="rule"><h4>Product / Quotient (3.2)</h4>\[(fg)'=fg'+gf'\]\[\left(\tfrac fg\right)'=\tfrac{gf'-fg'}{g^2}\]</div>
+    <div class="rule"><h4>Trig (3.3)</h4>\[\begin{aligned}(\sin x)'&=\cos x & (\cos x)'&=-\sin x\\(\tan x)'&=\sec^2x & (\cot x)'&=-\csc^2x\\(\sec x)'&=\sec x\tan x & (\csc x)'&=-\csc x\cot x\end{aligned}\]<p class="note">\(\lim\frac{\sin\theta}{\theta}=1\), \(\lim\frac{\cos\theta-1}{\theta}=0\)</p></div>
+    <div class="rule"><h4>Chain (3.4)</h4>\[\big(f(g(x))\big)'=f'(g(x))\,g'(x)\]<p class="note">\((g^n)'=ng^{n-1}g'\), \((e^{g})'=e^{g}g'\), \((a^x)'=a^x\ln a\)</p></div>
+    <div class="rule"><h4>Implicit (3.5)</h4><p>Differentiate both sides; every \(y\)-term gets a \(y'\); collect, factor, solve.</p><p class="note">\((y^n)'=ny^{n-1}y'\), \((xy)'=y+xy'\)</p></div>
+  </div>
+</section>
+
+<footer>Practice problems follow the exercise numbering in Stewart, Clegg &amp; Watson, <em>Calculus: Early Transcendentals</em>, 9th ed. Solutions written out step by step for this guide. Your “I can do this” ticks are saved in this browser only.</footer>
+</main>
+
+<script>
+(() => {
+  const root = document.documentElement;
+  const css = n => getComputedStyle(root).getPropertyValue(n).trim();
+  const fmt = (v, d = 3) => (Math.abs(v) > 1e6 || !isFinite(v)) ? (v > 0 ? "∞" : v < 0 ? "−∞" : "undefined") : v.toFixed(d).replace("-", "−");
+  const redrawers = [];
+
+  /* ---------- plotting helpers ---------- */
+  function setup(cv) {
+    const r = cv.getBoundingClientRect();
+    const d = window.devicePixelRatio || 1;
+    cv.width = Math.max(1, Math.round(r.width * d));
+    cv.height = Math.max(1, Math.round(r.height * d));
+    const c = cv.getContext("2d");
+    c.setTransform(d, 0, 0, d, 0, 0);
+    return { c, w: r.width, h: r.height };
+  }
+  function niceStep(range) {
+    const raw = range / 8, p = Math.pow(10, Math.floor(Math.log10(raw))), m = raw / p;
+    return (m < 1.5 ? 1 : m < 3 ? 2 : m < 7 ? 5 : 10) * p;
+  }
+  function Plot(cv, xmin, xmax, ymin, ymax, opt = {}) {
+    const { c, w, h } = setup(cv);
+    const P = {
+      c, w, h, xmin, xmax, ymin, ymax,
+      X: x => (x - xmin) / (xmax - xmin) * w,
+      Y: y => h - (y - ymin) / (ymax - ymin) * h,
+      ix: px => xmin + px / w * (xmax - xmin),
+      iy: py => ymin + (h - py) / h * (ymax - ymin)
+    };
+    c.fillStyle = css("--surface"); c.fillRect(0, 0, w, h);
+    const sx = opt.xstep || niceStep(xmax - xmin), sy = opt.ystep || niceStep(ymax - ymin);
+    c.lineWidth = 1; c.strokeStyle = css("--grid");
+    for (let x = Math.ceil(xmin / sx) * sx; x <= xmax; x += sx) { const px = Math.round(P.X(x)) + .5; c.beginPath(); c.moveTo(px, 0); c.lineTo(px, h); c.stroke(); }
+    for (let y = Math.ceil(ymin / sy) * sy; y <= ymax; y += sy) { const py = Math.round(P.Y(y)) + .5; c.beginPath(); c.moveTo(0, py); c.lineTo(w, py); c.stroke(); }
+    c.strokeStyle = css("--axis"); c.lineWidth = 1.2;
+    if (ymin < 0 && ymax > 0) { c.beginPath(); c.moveTo(0, P.Y(0)); c.lineTo(w, P.Y(0)); c.stroke(); }
+    if (xmin < 0 && xmax > 0) { c.beginPath(); c.moveTo(P.X(0), 0); c.lineTo(P.X(0), h); c.stroke(); }
+    c.fillStyle = css("--muted"); c.font = "11px " + css("--font-mono");
+    const y0 = Math.min(Math.max(P.Y(0) + 13, 13), h - 4), x0 = Math.min(Math.max(P.X(0) + 4, 4), w - 24);
+    if (!opt.noLabels) {
+      for (let x = Math.ceil(xmin / sx) * sx; x <= xmax; x += sx) { if (Math.abs(x) < 1e-9) continue; c.fillText(opt.xfmt ? opt.xfmt(x) : +x.toFixed(2), P.X(x) + 3, y0); }
+      for (let y = Math.ceil(ymin / sy) * sy; y <= ymax; y += sy) { if (Math.abs(y) < 1e-9) continue; c.fillText(+y.toFixed(2), x0, P.Y(y) - 3); }
+    }
+    return P;
+  }
+  function curve(P, f, color, width = 2.5, from = P.xmin, to = P.xmax, dash) {
+    const { c } = P;
+    c.save(); c.strokeStyle = color; c.lineWidth = width; c.lineJoin = "round"; if (dash) c.setLineDash(dash);
+    c.beginPath();
+    let pen = false, prevY = null;
+    const a = Math.max(0, P.X(from)), b = Math.min(P.w, P.X(to));
+    for (let px = a; px <= b; px += 0.75) {
+      const x = P.ix(px), y = f(x);
+      if (!isFinite(y)) { pen = false; prevY = null; continue; }
+      const py = P.Y(y);
+      if (py < -2000 || py > P.h + 2000 || (prevY !== null && Math.abs(py - prevY) > P.h)) { pen = false; prevY = py; continue; }
+      if (!pen) { c.moveTo(px, py); pen = true; } else c.lineTo(px, py);
+      prevY = py;
+    }
+    c.stroke(); c.restore();
+  }
+  function line(P, x0, y0, m, color, width = 2, dash) {
+    const { c } = P; c.save(); c.strokeStyle = color; c.lineWidth = width; if (dash) c.setLineDash(dash);
+    c.beginPath();
+    if (!isFinite(m)) { c.moveTo(P.X(x0), 0); c.lineTo(P.X(x0), P.h); }
+    else { c.moveTo(0, P.Y(y0 + m * (P.xmin - x0))); c.lineTo(P.w, P.Y(y0 + m * (P.xmax - x0))); }
+    c.stroke(); c.restore();
+  }
+  function dot(P, x, y, color, r = 5, hollow) {
+    const { c } = P; c.save(); c.beginPath(); c.arc(P.X(x), P.Y(y), r, 0, Math.PI * 2);
+    if (hollow) { c.fillStyle = css("--surface"); c.fill(); c.strokeStyle = color; c.lineWidth = 2; c.stroke(); }
+    else { c.fillStyle = color; c.fill(); }
+    c.restore();
+  }
+  function label(P, text, x, y, color, dx = 8, dy = -8) {
+    const { c } = P; c.save(); c.fillStyle = color; c.font = "600 12px " + css("--font-mono"); c.fillText(text, P.X(x) + dx, P.Y(y) + dy); c.restore();
+  }
+  function animate(input, from, to, ms, onDone) {
+    const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) { input.value = to; input.dispatchEvent(new Event("input")); onDone && onDone(); return; }
+    const t0 = performance.now();
+    const step = t => {
+      const k = Math.min(1, (t - t0) / ms), e = k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+      input.value = from + (to - from) * e; input.dispatchEvent(new Event("input"));
+      if (k < 1) requestAnimationFrame(step); else onDone && onDone();
+    };
+    requestAnimationFrame(step);
+  }
+  function dragX(cv, getP, input) {
+    let down = false;
+    const move = e => { const P = getP(); if (!P) return; const r = cv.getBoundingClientRect(); const x = P.ix(e.clientX - r.left); input.value = Math.min(+input.max, Math.max(+input.min, x)); input.dispatchEvent(new Event("input")); };
+    cv.addEventListener("pointerdown", e => { down = true; cv.setPointerCapture(e.pointerId); move(e); });
+    cv.addEventListener("pointermove", e => { if (down) move(e); });
+    cv.addEventListener("pointerup", () => down = false);
+    cv.addEventListener("pointercancel", () => down = false);
+  }
+
+  /* ---------- Lab 1: secant → tangent ---------- */
+  (() => {
+    const lab = document.getElementById("lab-secant"), cv = lab.querySelector("canvas");
+    const A = document.getElementById("sec-a"), H = document.getElementById("sec-h");
+    const f = x => 0.25 * x ** 3 - x + 1, fp = x => 0.75 * x * x - 1;
+    function draw() {
+      const a = +A.value; let h = +H.value; if (Math.abs(h) < 0.001) h = h < 0 ? -0.001 : 0.001;
+      const P = Plot(cv, -3.6, 3.6, -2.5, 4.5);
+      const m = (f(a + h) - f(a)) / h;
+      line(P, a, f(a), fp(a), css("--deriv"), 1.8, [6, 5]);
+      line(P, a, f(a), m, css("--tangent"), 2.2);
+      curve(P, f, css("--accent"), 3);
+      // rise/run triangle
+      const c = P.c; c.save(); c.strokeStyle = css("--muted"); c.setLineDash([3, 3]); c.lineWidth = 1.2;
+      c.beginPath(); c.moveTo(P.X(a), P.Y(f(a))); c.lineTo(P.X(a + h), P.Y(f(a))); c.lineTo(P.X(a + h), P.Y(f(a + h))); c.stroke(); c.restore();
+      label(P, "h", a + h / 2, f(a), css("--muted"), -4, f(a + h) > f(a) ? 16 : -6);
+      dot(P, a, f(a), css("--accent"), 6);
+      dot(P, a + h, f(a + h), css("--tangent"), 6, true);
+      label(P, "P", a, f(a), css("--ink"), -18, -8);
+      label(P, "Q", a + h, f(a + h), css("--tangent"));
+      document.getElementById("sec-pt").textContent = `a = ${fmt(a, 2)}, h = ${fmt(h, 3)}`;
+      document.getElementById("sec-m").textContent = fmt(m, 4);
+      document.getElementById("sec-d").textContent = fmt(fp(a), 4);
+    }
+    A.addEventListener("input", draw); H.addEventListener("input", draw);
+    document.getElementById("sec-anim").addEventListener("click", () => { H.value = 1.8; animate(H, 1.8, 0.001, 2600); });
+    redrawers.push(draw);
+  })();
+
+  /* ---------- Lab 2: trace f' ---------- */
+  (() => {
+    const top = document.getElementById("tr-top"), bot = document.getElementById("tr-bot");
+    const sel = document.getElementById("tr-fn"), X = document.getElementById("tr-x");
+    const FN = {
+      cubic: { f: x => x ** 3 - 3 * x, fp: x => 3 * x * x - 3, y: [-4, 4], yd: [-4, 10], note: "Peaks and valleys of f (x = ±1) are exactly where f′ crosses zero. Where f rises, f′ is above the axis.", bad: () => false },
+      sin: { f: Math.sin, fp: Math.cos, y: [-1.6, 1.6], yd: [-1.6, 1.6], note: "The slope of sin x traces out cos x. You will prove this in §3.3.", bad: () => false },
+      abs: { f: Math.abs, fp: x => x > 0 ? 1 : x < 0 ? -1 : NaN, y: [-1, 3], yd: [-2, 2], note: "Slope is −1 on the left and +1 on the right. At the corner x = 0 the two don't agree, so f′(0) does not exist. f′ has a jump there.", bad: x => Math.abs(x) < 0.03 },
+      cbrt: { f: Math.cbrt, fp: x => 1 / (3 * Math.cbrt(x * x)), y: [-1.8, 1.8], yd: [-0.5, 4], note: "Near x = 0 the tangent becomes vertical and f′ shoots to infinity. f is continuous at 0 but not differentiable.", bad: x => Math.abs(x) < 0.03 },
+      jump: { f: x => x < 1 ? 0.5 * x : 0.5 * x + 1.2, fp: x => Math.abs(x - 1) < 1e-9 ? NaN : 0.5, y: [-2.2, 3.2], yd: [-1, 1.5], note: "At x = 1 the graph jumps, so it is not continuous there, and therefore not differentiable. The slope is 0.5 everywhere else.", bad: x => Math.abs(x - 1) < 0.03 }
+    };
+    let Ptop = null;
+    function draw() {
+      const F = FN[sel.value], x = +X.value;
+      Ptop = Plot(top, -3.2, 3.2, F.y[0], F.y[1]);
+      const m = F.fp(x), bad = F.bad(x) || !isFinite(m) || Math.abs(m) > 50;
+      if (!bad) line(Ptop, x, F.f(x), m, css("--tangent"), 2);
+      if (sel.value === "jump") { curve(Ptop, F.f, css("--accent"), 3, -3.2, 0.999); curve(Ptop, F.f, css("--accent"), 3, 1, 3.2); dot(Ptop, 1, 0.5, css("--accent"), 5, true); dot(Ptop, 1, 1.7, css("--accent"), 5); }
+      else curve(Ptop, F.f, css("--accent"), 3);
+      dot(Ptop, x, F.f(x), css("--tangent"), 6);
+      label(Ptop, "f", 2.7, F.f(2.7), css("--accent"), 6, -8);
+      const Pb = Plot(bot, -3.2, 3.2, F.yd[0], F.yd[1]);
+      curve(Pb, F.fp, css("--deriv"), 3, -3.2, x);
+      if (!bad) dot(Pb, x, m, css("--deriv"), 6);
+      label(Pb, "f′ traced so far", -3.1, F.yd[1], css("--deriv"), 4, 16);
+      // vertical guide
+      for (const [P, yy] of [[Ptop, 0], [Pb, 0]]) { const c = P.c; c.save(); c.strokeStyle = css("--muted"); c.setLineDash([2, 4]); c.beginPath(); c.moveTo(P.X(x), 0); c.lineTo(P.X(x), P.h); c.stroke(); c.restore(); }
+      document.getElementById("tr-xv").textContent = fmt(x, 2);
+      document.getElementById("tr-m").textContent = bad ? "does not exist" : fmt(m, 3);
+      const ok = document.getElementById("tr-ok");
+      ok.textContent = bad ? "No" : "Yes"; ok.style.color = bad ? css("--bad") : css("--good");
+      document.getElementById("tr-note").textContent = F.note;
+    }
+    sel.addEventListener("change", () => { X.value = -2.8; draw(); });
+    X.addEventListener("input", draw);
+    dragX(top, () => Ptop, X);
+    document.getElementById("tr-anim").addEventListener("click", () => animate(X, -3, 3, 4000));
+    redrawers.push(draw);
+  })();
+
+  /* ---------- Lab 3: e ---------- */
+  (() => {
+    const lab = document.getElementById("lab-exp"), cv = lab.querySelector("canvas"), A = document.getElementById("exp-a");
+    function draw() {
+      const a = +A.value, k = Math.log(a);
+      const P = Plot(cv, -2.5, 2.5, -1, 5.5);
+      line(P, 0, 1, k, css("--tangent"), 2);
+      curve(P, x => k * a ** x, css("--deriv"), 3, undefined, undefined, [7, 5]);
+      curve(P, x => a ** x, css("--accent"), 3);
+      dot(P, 0, 1, css("--tangent"), 6);
+      label(P, "aˣ", 1.6, a ** 1.6, css("--accent"), 8, 4);
+      label(P, "(aˣ)′", 1.2, k * a ** 1.2, css("--deriv"), 10, 14);
+      const near = Math.abs(a - Math.E) < 0.01;
+      document.getElementById("exp-av").textContent = `a = ${a.toFixed(3)}${near ? "  ≈ e" : ""}`;
+      document.getElementById("exp-m").textContent = k.toFixed(4) + (near ? " ≈ 1" : "");
+      document.getElementById("exp-k").textContent = `${k.toFixed(3)} · ${a.toFixed(2)}ˣ`;
+    }
+    A.addEventListener("input", draw);
+    document.getElementById("exp-e").addEventListener("click", () => animate(A, +A.value, Math.E, 900));
+    redrawers.push(draw);
+  })();
+
+  /* ---------- Lab 4: product rule rectangle ---------- */
+  (() => {
+    const lab = document.getElementById("lab-prod"), cv = lab.querySelector("canvas");
+    const X = document.getElementById("pr-x"), D = document.getElementById("pr-dx");
+    function draw() {
+      const x = +X.value, dx = +D.value;
+      const u = x, v = x * x, du = dx, dv = (x + dx) ** 2 - x * x;
+      const { c, w, h } = setup(cv);
+      c.fillStyle = css("--surface"); c.fillRect(0, 0, w, h);
+      const pad = 34, maxU = 2.6, maxV = 6.8;
+      const sx = (w - pad * 2) / maxU, sy = (h - pad * 2) / maxV;
+      const ox = pad, oy = h - pad;
+      const rect = (x0, y0, ww, hh, fill, stroke) => { c.fillStyle = fill; c.fillRect(ox + x0 * sx, oy - (y0 + hh) * sy, ww * sx, hh * sy); if (stroke) { c.strokeStyle = stroke; c.lineWidth = 1.5; c.strokeRect(ox + x0 * sx, oy - (y0 + hh) * sy, ww * sx, hh * sy); } };
+      const mix = (v, p) => `color-mix(in srgb, ${css(v)} ${p}%, ${css("--surface")})`;
+      rect(0, 0, u, v, mix("--axis", 22), css("--axis"));
+      rect(0, v, u, dv, mix("--accent", 45), css("--accent"));
+      rect(u, 0, du, v, mix("--deriv", 45), css("--deriv"));
+      rect(u, v, du, dv, mix("--tangent", 60), css("--tangent"));
+      c.fillStyle = css("--ink"); c.font = "600 13px " + css("--font-mono");
+      c.fillText("u·v", ox + u * sx / 2 - 12, oy - v * sy / 2);
+      c.fillText("u = " + u.toFixed(2), ox + u * sx / 2 - 30, oy + 20);
+      c.save(); c.translate(ox - 12, oy - v * sy / 2 + 30); c.rotate(-Math.PI / 2); c.fillText("v = " + v.toFixed(2), 0, 0); c.restore();
+      if (dv * sy > 16) { c.fillStyle = css("--accent"); c.fillText("u·Δv", ox + u * sx / 2 - 16, oy - (v + dv / 2) * sy + 5); }
+      if (du * sx > 34) { c.fillStyle = css("--deriv"); c.fillText("v·Δu", ox + (u + du / 2) * sx - 16, oy - v * sy / 2); }
+      document.getElementById("pr-uv").textContent = `u = ${u.toFixed(2)}, v = ${v.toFixed(2)}`;
+      document.getElementById("pr-a").textContent = (u * dv).toFixed(4);
+      document.getElementById("pr-b").textContent = (v * du).toFixed(4);
+      document.getElementById("pr-c").textContent = (du * dv).toFixed(4);
+      document.getElementById("pr-q").textContent = dx > 0 ? (((u + du) * (v + dv) - u * v) / dx).toFixed(4) : "Δx = 0";
+      document.getElementById("pr-d").textContent = (3 * x * x).toFixed(4);
+    }
+    X.addEventListener("input", draw); D.addEventListener("input", draw);
+    redrawers.push(draw);
+  })();
+
+  /* ---------- Lab 5a: sin slope ---------- */
+  (() => {
+    const top = document.getElementById("sin-top"), bot = document.getElementById("sin-bot");
+    const X = document.getElementById("sin-x"), C = document.getElementById("sin-cos");
+    const pif = x => { const k = Math.round(x / (Math.PI / 2)); return k === 0 ? "0" : (k % 2 === 0 ? (k / 2 === 1 ? "π" : k / 2 === -1 ? "−π" : (k / 2) + "π") : (k + "π/2")).replace("-", "−"); };
+    let Ptop = null;
+    function draw() {
+      const x = +X.value;
+      Ptop = Plot(top, -6.6, 6.6, -1.6, 1.6, { xstep: Math.PI / 2, ystep: 0.5, xfmt: pif });
+      line(Ptop, x, Math.sin(x), Math.cos(x), css("--tangent"), 2);
+      curve(Ptop, Math.sin, css("--accent"), 3);
+      dot(Ptop, x, Math.sin(x), css("--tangent"), 6);
+      label(Ptop, "sin x", 5.0, 1.25, css("--accent"), 0, 0);
+      const Pb = Plot(bot, -6.6, 6.6, -1.6, 1.6, { xstep: Math.PI / 2, ystep: 0.5, xfmt: pif });
+      if (C.checked) curve(Pb, Math.cos, css("--axis"), 6);
+      curve(Pb, Math.cos, css("--deriv"), 3, -6.6, x);
+      dot(Pb, x, Math.cos(x), css("--deriv"), 6);
+      label(Pb, "slope of sin", -6.5, 1.6, css("--deriv"), 4, 16);
+      document.getElementById("sin-xv").textContent = fmt(x, 2);
+      document.getElementById("sin-m").textContent = fmt(Math.cos(x), 3);
+      document.getElementById("sin-c").textContent = fmt(Math.cos(x), 3);
+    }
+    X.addEventListener("input", draw); C.addEventListener("change", draw);
+    dragX(top, () => Ptop, X);
+    document.getElementById("sin-anim").addEventListener("click", () => animate(X, -6.28, 6.28, 5000, () => { C.checked = true; draw(); }));
+    redrawers.push(draw);
+  })();
+
+  /* ---------- Lab 5b: unit circle ---------- */
+  (() => {
+    const lab = document.getElementById("lab-circ"), cv = lab.querySelector("canvas"), T = document.getElementById("circ-t");
+    function draw() {
+      const t = +T.value;
+      const P = Plot(cv, -0.25, 1.25, -0.25, 1.25, { xstep: 0.25, ystep: 0.25 });
+      const c = P.c, R = P.X(1) - P.X(0);
+      c.save(); c.strokeStyle = css("--axis"); c.lineWidth = 1.5; c.beginPath(); c.arc(P.X(0), P.Y(0), R, -Math.PI / 2 - 0.3, 0.3, false); c.stroke();
+      c.strokeStyle = css("--ink"); c.lineWidth = 1.5; c.beginPath(); c.moveTo(P.X(0), P.Y(0)); c.lineTo(P.X(Math.cos(t)), P.Y(Math.sin(t))); c.stroke();
+      c.strokeStyle = css("--accent"); c.lineWidth = 5; c.beginPath(); c.arc(P.X(0), P.Y(0), R, 0, -t, true); c.stroke();
+      c.strokeStyle = css("--deriv"); c.lineWidth = 4; c.beginPath(); c.moveTo(P.X(Math.cos(t)), P.Y(0)); c.lineTo(P.X(Math.cos(t)), P.Y(Math.sin(t))); c.stroke();
+      c.restore();
+      dot(P, Math.cos(t), Math.sin(t), css("--ink"), 4);
+      label(P, "θ", 0.12 * Math.cos(t / 2), 0.12 * Math.sin(t / 2), css("--ink"), 2, 4);
+      label(P, "sin θ", Math.cos(t), Math.sin(t) / 2, css("--deriv"), 8, 4);
+      document.getElementById("circ-a").textContent = t.toFixed(4);
+      document.getElementById("circ-s").textContent = Math.sin(t).toFixed(4);
+      document.getElementById("circ-r").textContent = (Math.sin(t) / t).toFixed(5);
+    }
+    T.addEventListener("input", draw);
+    redrawers.push(draw);
+  })();
+
+  /* ---------- Lab 6: chain rule number lines ---------- */
+  (() => {
+    const lab = document.getElementById("lab-chain"), cv = lab.querySelector("canvas");
+    const X = document.getElementById("ch-x"), D = document.getElementById("ch-dx");
+    function draw() {
+      const x = +X.value, dx = +D.value, u = x * x, u2 = (x + dx) ** 2, y = Math.sin(u), y2 = Math.sin(u2);
+      const { c, w, h } = setup(cv);
+      c.fillStyle = css("--surface"); c.fillRect(0, 0, w, h);
+      const L = 70, Rr = w - 24;
+      const rows = [
+        { name: "x", lo: 0, hi: 2.6, a: x, b: x + dx, col: css("--ink"), y: h * 0.18 },
+        { name: "u = x²", lo: 0, hi: 6.8, a: u, b: u2, col: css("--accent"), y: h * 0.5 },
+        { name: "y = sin u", lo: -1.1, hi: 1.1, a: y, b: y2, col: css("--deriv"), y: h * 0.82 }
+      ];
+      const px = (r, v) => L + (v - r.lo) / (r.hi - r.lo) * (Rr - L);
+      // connectors
+      for (let i = 0; i < 2; i++) {
+        const r1 = rows[i], r2 = rows[i + 1];
+        c.fillStyle = `color-mix(in srgb, ${r2.col} 14%, transparent)`;
+        c.beginPath(); c.moveTo(px(r1, r1.a), r1.y + 8); c.lineTo(px(r1, r1.b), r1.y + 8); c.lineTo(px(r2, r2.b), r2.y - 8); c.lineTo(px(r2, r2.a), r2.y - 8); c.closePath(); c.fill();
+      }
+      c.font = "11px " + css("--font-mono");
+      for (const r of rows) {
+        c.strokeStyle = css("--axis"); c.lineWidth = 1.5; c.beginPath(); c.moveTo(L, r.y); c.lineTo(Rr, r.y); c.stroke();
+        c.fillStyle = css("--muted");
+        const st = niceStep(r.hi - r.lo) * 1.5;
+        for (let v = Math.ceil(r.lo / st) * st; v <= r.hi + 1e-9; v += st) { const p = px(r, v); c.beginPath(); c.moveTo(p, r.y - 4); c.lineTo(p, r.y + 4); c.stroke(); c.fillText(+v.toFixed(1), p - 6, r.y + 18); }
+        c.fillStyle = r.col; c.font = "600 13px " + css("--font-mono"); c.fillText(r.name, 4, r.y - 10); c.font = "11px " + css("--font-mono");
+        const a = px(r, Math.min(r.a, r.b)), b = px(r, Math.max(r.a, r.b));
+        c.fillStyle = r.col; c.fillRect(a, r.y - 5, Math.max(2, b - a), 10);
+        c.beginPath(); c.arc(px(r, r.a), r.y, 5, 0, Math.PI * 2); c.fill();
+      }
+      document.getElementById("ch-1").textContent = `${((u2 - u) / dx).toFixed(3)}  (2x = ${(2 * x).toFixed(3)})`;
+      const dydu = Math.abs(u2 - u) > 1e-12 ? (y2 - y) / (u2 - u) : Math.cos(u);
+      document.getElementById("ch-2").textContent = `${dydu.toFixed(3)}  (cos u = ${Math.cos(u).toFixed(3)})`;
+      document.getElementById("ch-3").textContent = (((u2 - u) / dx) * dydu).toFixed(4);
+      document.getElementById("ch-4").textContent = (2 * x * Math.cos(u)).toFixed(4);
+    }
+    X.addEventListener("input", draw); D.addEventListener("input", draw);
+    redrawers.push(draw);
+  })();
+
+  /* ---------- Lab 7: implicit curves ---------- */
+  (() => {
+    const lab = document.getElementById("lab-imp"), cv = lab.querySelector("canvas"), sel = document.getElementById("imp-c");
+    const CUR = {
+      circle: { F: (x, y) => x * x + y * y - 25, Fx: (x, y) => 2 * x, Fy: (x, y) => 2 * y, v: 7, p: [3, 4], f: "−x / y" },
+      folium: { F: (x, y) => x ** 3 + y ** 3 - 6 * x * y, Fx: (x, y) => 3 * x * x - 6 * y, Fy: (x, y) => 3 * y * y - 6 * x, v: 5, p: [3, 3], f: "(2y − x²) / (y² − 2x)" },
+      ellipse: { F: (x, y) => x * x - x * y + y * y - 3, Fx: (x, y) => 2 * x - y, Fy: (x, y) => 2 * y - x, v: 3, p: [-1, 1], f: "(y − 2x) / (2y − x)" },
+      kampyle: { F: (x, y) => y * y - 5 * x ** 4 + x * x, Fx: (x, y) => -20 * x ** 3 + 2 * x, Fy: (x, y) => 2 * y, v: 3, p: [1, 2], f: "(10x³ − x) / y" },
+      wild: { F: (x, y) => Math.sin(x + y) - y * y * Math.cos(x), Fx: (x, y) => Math.cos(x + y) + y * y * Math.sin(x), Fy: (x, y) => Math.cos(x + y) - 2 * y * Math.cos(x), v: 6, p: [0, 0], f: "(y² sin x + cos(x+y)) / (2y cos x − cos(x+y))" }
+    };
+    let pt = null, P = null;
+    function project(C, x, y) {
+      for (let i = 0; i < 40; i++) {
+        const F = C.F(x, y), gx = C.Fx(x, y), gy = C.Fy(x, y), g2 = gx * gx + gy * gy;
+        if (g2 < 1e-12) break;
+        x -= F * gx / g2; y -= F * gy / g2;
+        if (Math.abs(F) < 1e-10) break;
+      }
+      return [x, y];
+    }
+    function draw() {
+      const C = CUR[sel.value];
+      if (!pt) pt = C.p.slice();
+      P = Plot(cv, -C.v, C.v, -C.v, C.v);
+      // marching squares
+      const N = 220, step = (2 * C.v) / N, c = P.c;
+      const val = new Float64Array((N + 1) * (N + 1));
+      for (let j = 0; j <= N; j++) for (let i = 0; i <= N; i++) val[j * (N + 1) + i] = C.F(-C.v + i * step, -C.v + j * step);
+      c.save(); c.strokeStyle = css("--accent"); c.lineWidth = 2.6; c.lineCap = "round"; c.beginPath();
+      const interp = (x1, y1, v1, x2, y2, v2) => { const t = v1 / (v1 - v2); return [x1 + t * (x2 - x1), y1 + t * (y2 - y1)]; };
+      for (let j = 0; j < N; j++) for (let i = 0; i < N; i++) {
+        const x0 = -C.v + i * step, y0 = -C.v + j * step, x1 = x0 + step, y1 = y0 + step;
+        const a = val[j * (N + 1) + i], b = val[j * (N + 1) + i + 1], d = val[(j + 1) * (N + 1) + i], e = val[(j + 1) * (N + 1) + i + 1];
+        const pts = [];
+        if ((a < 0) !== (b < 0)) pts.push(interp(x0, y0, a, x1, y0, b));
+        if ((b < 0) !== (e < 0)) pts.push(interp(x1, y0, b, x1, y1, e));
+        if ((e < 0) !== (d < 0)) pts.push(interp(x1, y1, e, x0, y1, d));
+        if ((d < 0) !== (a < 0)) pts.push(interp(x0, y1, d, x0, y0, a));
+        for (let k = 0; k + 1 < pts.length; k += 2) { c.moveTo(P.X(pts[k][0]), P.Y(pts[k][1])); c.lineTo(P.X(pts[k + 1][0]), P.Y(pts[k + 1][1])); }
+      }
+      c.stroke(); c.restore();
+      const [x, y] = pt, gx = C.Fx(x, y), gy = C.Fy(x, y);
+      const vertical = Math.abs(gy) < 1e-6 * Math.max(1, Math.abs(gx));
+      const m = vertical ? Infinity : -gx / gy;
+      line(P, x, y, m, css("--tangent"), 2.2);
+      dot(P, x, y, css("--tangent"), 7);
+      document.getElementById("imp-p").textContent = `(${fmt(x, 3)}, ${fmt(y, 3)})`;
+      document.getElementById("imp-f").textContent = "dy/dx = " + C.f;
+      document.getElementById("imp-m").textContent = vertical ? "vertical tangent" : Math.abs(m) < 5e-4 ? "0 (horizontal)" : fmt(m, 3);
+    }
+    let down = false;
+    const move = e => { if (!P) return; const r = cv.getBoundingClientRect(); const C = CUR[sel.value]; pt = project(C, P.ix(e.clientX - r.left), P.iy(e.clientY - r.top)); draw(); };
+    cv.addEventListener("pointerdown", e => { down = true; cv.setPointerCapture(e.pointerId); move(e); });
+    cv.addEventListener("pointermove", e => { if (down) move(e); });
+    cv.addEventListener("pointerup", () => down = false);
+    cv.addEventListener("pointercancel", () => down = false);
+    sel.addEventListener("change", () => { pt = null; draw(); });
+    redrawers.push(draw);
+  })();
+
+  /* ---------- redraw on resize / theme ---------- */
+  const redrawAll = () => redrawers.forEach(fn => fn());
+  let raf = 0;
+  const schedule = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(redrawAll); };
+  new ResizeObserver(schedule).observe(document.body);
+  matchMedia("(prefers-color-scheme: dark)").addEventListener("change", schedule);
+  new MutationObserver(schedule).observe(root, { attributes: true, attributeFilter: ["data-theme"] });
+  if (document.fonts) document.fonts.ready.then(schedule);
+  redrawAll();
+
+  /* ---------- practice: "I can do this" ---------- */
+  const KEY = "deriv-guide-done";
+  let done = {};
+  try { done = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { done = {}; }
+  const probs = [...document.querySelectorAll(".prob")];
+  const prog = document.getElementById("prog");
+  const updateProg = () => { prog.textContent = `${probs.filter(p => done[p.id]).length} / ${probs.length} mastered`; };
+  probs.forEach(p => {
+    const lab = document.createElement("label"); lab.className = "got";
+    const cb = document.createElement("input"); cb.type = "checkbox"; cb.id = "got-" + p.id; cb.checked = !!done[p.id];
+    lab.append(cb, document.createTextNode("I can do this"));
+    p.querySelector(".prob-top").append(lab);
+    p.classList.toggle("done", cb.checked);
+    cb.addEventListener("change", () => {
+      done[p.id] = cb.checked; p.classList.toggle("done", cb.checked); updateProg();
+      try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) {}
+    });
+  });
+  updateProg();
+
+  /* ---------- quiz ---------- */
+  let score = 0;
+  document.querySelectorAll(".qq").forEach(q => {
+    const btns = [...q.querySelectorAll(".opts button")];
+    btns.forEach(b => b.addEventListener("click", () => {
+      if (q.dataset.answered) return;
+      q.dataset.answered = "1";
+      const ok = b.hasAttribute("data-ok");
+      b.classList.add(ok ? "right" : "wrong");
+      btns.forEach(x => { if (x.hasAttribute("data-ok")) x.classList.add("right"); });
+      if (ok) score++;
+      q.querySelector(".fb").hidden = false;
+      document.getElementById("qscore").textContent = `Score: ${score} / 10`;
+    }));
+  });
+})();
+</script>
+
+</body>
+</html>
