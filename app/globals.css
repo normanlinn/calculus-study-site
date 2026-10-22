@@ -556,3 +556,11 @@ h3[id] { scroll-margin-top: 80px; }
 .gc-letter.l-C { color: var(--tangent); }
 .gc-letter.l-D, .gc-letter.l-F { color: var(--bad); }
 .linkish { background: none; border: 0; padding: 0; color: var(--accent); text-decoration: underline; cursor: pointer; font: inherit; }
+
+/* Inverse trig step-builder */
+.itb .controls { display: grid; gap: 8px; }
+.itb .seg { flex-wrap: wrap; }
+.itb .seg button .katex { font-size: 1em; }
+.itb-q { font-size: 19px; overflow-x: auto; }
+.itb-steps { display: grid; gap: 8px; grid-template-columns: minmax(0, 1fr); }
+.itb-steps > div { overflow-x: auto; overflow-y: hidden; padding-block: .3em; }

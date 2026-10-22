@@ -1088,6 +1088,138 @@ export const sections: Section[] = [
    },
    {
     "type": "heading",
+    "text": "Proving the trig derivatives",
+    "id": "proofs"
+   },
+   {
+    "type": "prose",
+    "html": "<p>Quizzes often ask you to <strong>show</strong> a formula, like \\(\\frac{d}{dx}\\cot x=-\\csc^2x\\). Every one of these proofs uses the same four moves:</p><ol class=\"steps\"><li><strong>Rewrite</strong> the function using only \\(\\sin\\) and \\(\\cos\\): \\(\\cot x=\\frac{\\cos x}{\\sin x}\\), \\(\\sec x=\\frac1{\\cos x}\\), \\(\\csc x=\\frac1{\\sin x}\\), \\(\\tan x=\\frac{\\sin x}{\\cos x}\\).</li><li><strong>Quotient rule</strong> (low d-high minus high d-low, over low squared).</li><li><strong>Simplify the top</strong> with \\(\\sin^2x+\\cos^2x=1\\).</li><li><strong>Rewrite back</strong> into the target form, splitting a fraction if needed: \\(\\frac{\\sin x}{\\cos^2x}=\\frac1{\\cos x}\\cdot\\frac{\\sin x}{\\cos x}\\).</li></ol><p class=\"callout\">Write it as a chain of equals signs starting from \\(\\frac{d}{dx}(\\dots)\\) and ending at the formula. Never start from the answer and work backward.</p>"
+   },
+   {
+    "type": "examples",
+    "items": [
+     {
+      "label": "Prove (cot x)′ = −csc²x (§3.3 #25)",
+      "html": "<ol class=\"steps\"><li><strong>Rewrite:</strong> \\(\\dfrac{d}{dx}\\cot x=\\dfrac{d}{dx}\\left(\\dfrac{\\cos x}{\\sin x}\\right)\\).</li><li><strong>Quotient rule:</strong> high \\(=\\cos x\\), d-high \\(=-\\sin x\\); low \\(=\\sin x\\), d-low \\(=\\cos x\\).<br>\\(=\\dfrac{\\sin x\\cdot(-\\sin x)-\\cos x\\cdot\\cos x}{\\sin^2x}\\)</li><li><strong>Simplify the top:</strong> \\(=\\dfrac{-\\sin^2x-\\cos^2x}{\\sin^2x}=\\dfrac{-(\\sin^2x+\\cos^2x)}{\\sin^2x}=\\dfrac{-1}{\\sin^2x}\\).</li><li><strong>Rewrite:</strong> \\(\\dfrac{1}{\\sin x}=\\csc x\\), so \\(\\dfrac{-1}{\\sin^2x}=-\\csc^2x\\). ✓</li></ol><p class='ans'>\\(\\dfrac{d}{dx}\\cot x=-\\csc^2x\\)</p>"
+     },
+     {
+      "label": "Prove (sec x)′ = sec x tan x (§3.3 #24)",
+      "html": "<ol class=\"steps\"><li>\\(\\dfrac{d}{dx}\\sec x=\\dfrac{d}{dx}\\left(\\dfrac{1}{\\cos x}\\right)=\\dfrac{\\cos x\\cdot0-1\\cdot(-\\sin x)}{\\cos^2x}=\\dfrac{\\sin x}{\\cos^2x}\\)</li><li><strong>Split:</strong> \\(\\dfrac{\\sin x}{\\cos^2x}=\\dfrac{1}{\\cos x}\\cdot\\dfrac{\\sin x}{\\cos x}=\\sec x\\tan x\\). ✓</li></ol>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Proof practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p33p-23",
+      "source": "§3.3 #23",
+      "href": null,
+      "question": "Show that \\(\\dfrac{d}{dx}\\csc x=-\\csc x\\cot x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Write \\(\\csc x=\\frac{1}{\\sin x}\\) and use the quotient rule; the derivative of the constant 1 is 0.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\dfrac{d}{dx}\\left(\\dfrac1{\\sin x}\\right)=\\dfrac{\\sin x\\cdot0-1\\cdot\\cos x}{\\sin^2x}=\\dfrac{-\\cos x}{\\sin^2x}\\).</p><p>Split: \\(-\\dfrac{1}{\\sin x}\\cdot\\dfrac{\\cos x}{\\sin x}=-\\csc x\\cot x\\).</p><p class=\"ans\">\\(\\dfrac{d}{dx}\\csc x=-\\csc x\\cot x\\) ✓</p>"
+       }
+      ]
+     },
+     {
+      "id": "p33p-24",
+      "source": "§3.3 #24",
+      "href": null,
+      "question": "Show that \\(\\dfrac{d}{dx}\\sec x=\\sec x\\tan x\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\dfrac{d}{dx}\\left(\\dfrac1{\\cos x}\\right)=\\dfrac{0-1\\cdot(-\\sin x)}{\\cos^2x}=\\dfrac{\\sin x}{\\cos^2x}\\).</p><p>Split: \\(\\dfrac{1}{\\cos x}\\cdot\\dfrac{\\sin x}{\\cos x}=\\sec x\\tan x\\).</p><p class=\"ans\">\\(\\dfrac{d}{dx}\\sec x=\\sec x\\tan x\\) ✓</p>"
+       }
+      ]
+     },
+     {
+      "id": "p33p-25",
+      "source": "§3.3 #25",
+      "href": null,
+      "question": "Show that \\(\\dfrac{d}{dx}\\cot x=-\\csc^2x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\cot x=\\frac{\\cos x}{\\sin x}\\). After the quotient rule, factor out a minus and use \\(\\sin^2x+\\cos^2x=1\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\dfrac{d}{dx}\\left(\\dfrac{\\cos x}{\\sin x}\\right)=\\dfrac{\\sin x(-\\sin x)-\\cos x\\cos x}{\\sin^2x}\\).</p><p>Top: \\(-(\\sin^2x+\\cos^2x)=-1\\). So it equals \\(\\dfrac{-1}{\\sin^2x}=-\\csc^2x\\).</p><p class=\"ans\">\\(\\dfrac{d}{dx}\\cot x=-\\csc^2x\\) ✓</p>"
+       }
+      ]
+     },
+     {
+      "id": "p33p-tan",
+      "source": "Proof",
+      "href": null,
+      "question": "Show that \\(\\dfrac{d}{dx}\\tan x=\\sec^2x\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\dfrac{d}{dx}\\left(\\dfrac{\\sin x}{\\cos x}\\right)=\\dfrac{\\cos x\\cos x-\\sin x(-\\sin x)}{\\cos^2x}=\\dfrac{\\cos^2x+\\sin^2x}{\\cos^2x}\\).</p><p>Top \\(=1\\): \\(\\dfrac{1}{\\cos^2x}=\\sec^2x\\).</p><p class=\"ans\">\\(\\dfrac{d}{dx}\\tan x=\\sec^2x\\) ✓</p>"
+       }
+      ]
+     },
+     {
+      "id": "p33p-26",
+      "source": "§3.3 #26",
+      "href": null,
+      "question": "Prove, using the definition of a derivative, that if \\(f(x)=\\cos x\\) then \\(f'(x)=-\\sin x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Expand \\(\\cos(x+h)\\) with the addition formula, then group the terms with \\(\\cos x\\) and with \\(\\sin x\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'(x)=\\displaystyle\\lim_{h\\to0}\\frac{\\cos(x+h)-\\cos x}{h}\\).</p><p>Addition formula: \\(\\cos(x+h)=\\cos x\\cos h-\\sin x\\sin h\\).</p><p>Regroup: \\(\\displaystyle\\lim_{h\\to0}\\left[\\cos x\\cdot\\frac{\\cos h-1}{h}-\\sin x\\cdot\\frac{\\sin h}{h}\\right]\\).</p><p>Use the special limits \\(\\frac{\\cos h-1}{h}\\to0\\) and \\(\\frac{\\sin h}{h}\\to1\\): \\(\\cos x\\cdot0-\\sin x\\cdot1\\).</p><p class=\"ans\">\\(f'(x)=-\\sin x\\) ✓</p>"
+       }
+      ]
+     },
+     {
+      "id": "p33p-identity",
+      "source": "§3.3 #37 style",
+      "href": null,
+      "question": "Differentiate \\(f(x)=\\dfrac{\\tan x-1}{\\sec x}\\) two ways and show the answers agree.",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<strong>Simplify first:</strong> \\(f=\\dfrac{\\frac{\\sin x}{\\cos x}-1}{\\frac1{\\cos x}}=\\sin x-\\cos x\\), so \\(f'=\\cos x+\\sin x\\).<strong>Quotient rule:</strong> \\(f'=\\dfrac{\\sec x\\cdot\\sec^2x-(\\tan x-1)\\sec x\\tan x}{\\sec^2x}=\\dfrac{\\sec^2x-\\tan^2x+\\tan x}{\\sec x}\\).<p>Use \\(\\sec^2x-\\tan^2x=1\\): \\(f'=\\dfrac{1+\\tan x}{\\sec x}=\\cos x+\\sin x\\). Same answer.</p><p class=\"ans\">\\(f'(x)=\\cos x+\\sin x\\) both ways ✓</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Starting from the answer",
+      "html": "<p>A proof starts at \\(\\frac{d}{dx}\\cot x\\) and ends at \\(-\\csc^2x\\). Don't write \\(-\\csc^2x=\\dots\\) and work backward.</p>"
+     },
+     {
+      "title": "Losing the minus",
+      "html": "<p>In the cot proof both terms are negative: \\(-\\sin^2x-\\cos^2x=-(\\sin^2x+\\cos^2x)\\).</p>"
+     },
+     {
+      "title": "Derivative of 1",
+      "html": "<p>In \\(\\frac{1}{\\cos x}\\), d-high is \\(0\\), not 1.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
     "text": "The two special limits"
    },
    {
@@ -1720,7 +1852,7 @@ export const sections: Section[] = [
     "items": [
      {
       "key": false,
-      "html": "<span class=\"tag\">§3.6 · assigned 1–59 odd</span><p><strong><a href=\"/3-6/\">Derivatives of Logarithmic and Inverse Trig Functions</a></strong></p><p class=\"note\">Solved step by step on the site: <a href=\"/3-6/#p36-5\">#5</a>, <a href=\"/3-6/#p36-9\">#9</a>, <a href=\"/3-6/#p36-13\">#13</a>, <a href=\"/3-6/#p36-15\">#15</a>, <a href=\"/3-6/#p36-17\">#17</a>, <a href=\"/3-6/#p36-19\">#19</a>, <a href=\"/3-6/#p36-21\">#21</a>, <a href=\"/3-6/#p36-29\">#29</a>, <a href=\"/3-6/#p36-35\">#35</a>, <a href=\"/3-6/#p36-39\">#39</a>, <a href=\"/3-6/#p36-43\">#43</a>, <a href=\"/3-6/#p36-45\">#45</a>, <a href=\"/3-6/#p36-51\">#51</a>, <a href=\"/3-6/#p36-55\">#55</a>, <a href=\"/3-6/#p36-57\">#57</a>, <a href=\"/3-6/#p36-59\">#59</a></p>"
+      "html": "<span class=\"tag\">§3.6 · assigned 1–59 odd</span><p><strong><a href=\"/3-6/\">Derivatives of Logarithmic and Inverse Trig Functions</a></strong></p><p class=\"note\">Solved step by step on the site: <a href=\"/3-6/#p36-5\">#5</a>, <a href=\"/3-6/#p36-9\">#9</a>, <a href=\"/3-6/#p36-13\">#13</a>, <a href=\"/3-6/#p36-15\">#15</a>, <a href=\"/3-6/#p36-17\">#17</a>, <a href=\"/3-6/#p36-19\">#19</a>, <a href=\"/3-6/#p36-21\">#21</a>, <a href=\"/3-6/#p36-29\">#29</a>, <a href=\"/3-6/#p36-35\">#35</a>, <a href=\"/3-6/#p36-39\">#39</a>, <a href=\"/3-6/#p36-43\">#43</a>, <a href=\"/3-6/#p36-45\">#45</a>, <a href=\"/3-6/#p36-51\">#51</a>, <a href=\"/3-6/#p36-55\">#55</a>, <a href=\"/3-6/#p36-57\">#57</a>, <a href=\"/3-6/#p36-59\">#59</a></p><p class=\"note\"><a href=\"/3-6/#inverse-trig\">Inverse trig + chain rule, like tan⁻¹(eˣ)</a>: 20 solved problems and a step-builder.</p>"
      },
      {
       "key": false,
@@ -1785,7 +1917,7 @@ export const sections: Section[] = [
   "slug": "3-6",
   "num": "§3.6",
   "title": "Derivatives of Logarithmic and Inverse Trig Functions",
-  "lede": "ln, other logs, logarithmic differentiation, and the inverse trig family.",
+  "lede": "ln, other logs, logarithmic differentiation, and inverse trig with the chain rule (like tan⁻¹(eˣ)).",
   "blocks": [
    {
     "type": "prose",
@@ -1847,6 +1979,345 @@ export const sections: Section[] = [
      {
       "key": false,
       "html": "<span class=\"tag\">Pattern</span><p>Same “co gets a minus” rule as in §3.3. With an inside \\(u\\), multiply by \\(u'\\): \\(\\frac{d}{dx}\\tan^{-1}(x^2)=\\frac{2x}{1+x^4}\\).</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Inverse trig + chain rule, step by step",
+    "id": "inverse-trig"
+   },
+   {
+    "type": "prose",
+    "html": "<p>Almost every inverse trig problem on a quiz has an <em>inside</em> function, like \\(\\tan^{-1}(e^x)\\) or \\(\\sin^{-1}(x^2)\\). The rule is the plain formula with \\(u\\) in place of \\(x\\), times \\(u'\\):</p>\n<div>\\[\\frac{d}{dx}\\tan^{-1}u=\\frac{u'}{1+u^2}\\qquad\\frac{d}{dx}\\sin^{-1}u=\\frac{u'}{\\sqrt{1-u^2}}\\qquad\\frac{d}{dx}\\cos^{-1}u=-\\frac{u'}{\\sqrt{1-u^2}}\\]</div>\n<p><strong>The 5-step recipe</strong> (works every time):</p><ol class=\"steps\"><li><strong>Name the inside</strong> \\(u\\). In \\(\\tan^{-1}(e^x)\\), \\(u=e^x\\).</li><li><strong>Find \\(u'\\)</strong>. Here \\(u'=e^x\\).</li><li><strong>Find \\(u^2\\)</strong>. Square the <em>whole</em> inside: \\((e^x)^2=e^{2x}\\).</li><li><strong>Plug into the pattern</strong> \\(\\dfrac{u'}{1+u^2}\\) (or \\(\\dfrac{u'}{\\sqrt{1-u^2}}\\) for \\(\\sin^{-1}\\)).</li><li><strong>Simplify</strong> if you can.</li></ol>"
+   },
+   {
+    "type": "invtrig"
+   },
+   {
+    "type": "prose",
+    "html": "<p><strong>The insides you'll see most</strong>, already worked out:</p><div class=\"compare\"><table><thead><tr><th>Inside \\(u\\)</th><th>\\(u'\\)</th><th>\\(u^2\\)</th><th>\\(\\frac{d}{dx}\\tan^{-1}u=\\frac{u'}{1+u^2}\\)</th></tr></thead><tbody>\n<tr><th>\\(e^x\\)</th><td>\\(e^x\\)</td><td>\\(e^{2x}\\)</td><td>\\(\\dfrac{e^x}{1+e^{2x}}\\)</td></tr>\n<tr><th>\\(x^2\\)</th><td>\\(2x\\)</td><td>\\(x^4\\)</td><td>\\(\\dfrac{2x}{1+x^4}\\)</td></tr>\n<tr><th>\\(3x\\)</th><td>\\(3\\)</td><td>\\(9x^2\\)</td><td>\\(\\dfrac{3}{1+9x^2}\\)</td></tr>\n<tr><th>\\(\\sqrt x\\)</th><td>\\(\\frac{1}{2\\sqrt x}\\)</td><td>\\(x\\)</td><td>\\(\\dfrac{1}{2\\sqrt x\\,(1+x)}\\)</td></tr>\n<tr><th>\\(\\ln x\\)</th><td>\\(\\frac1x\\)</td><td>\\((\\ln x)^2\\)</td><td>\\(\\dfrac{1}{x\\,(1+(\\ln x)^2)}\\)</td></tr>\n<tr><th>\\(\\frac1x\\)</th><td>\\(-\\frac{1}{x^2}\\)</td><td>\\(\\frac{1}{x^2}\\)</td><td>\\(-\\dfrac{1}{1+x^2}\\)</td></tr>\n</tbody></table></div>"
+   },
+   {
+    "type": "heading",
+    "text": "Where does 1/(1 + x²) come from?"
+   },
+   {
+    "type": "prose",
+    "html": "<p>If you understand this once, you never have to memorize it blindly. Let \\(y=\\tan^{-1}x\\). That means \\(\\tan y=x\\). Differentiate both sides (implicit differentiation, §3.5):</p>\n<div>\\[\\sec^2y\\cdot y'=1\\quad\\Longrightarrow\\quad y'=\\frac{1}{\\sec^2y}=\\frac{1}{1+\\tan^2y}=\\frac{1}{1+x^2}\\]</div>\n<p class=\"why\">We used \\(\\sec^2y=1+\\tan^2y\\) and \\(\\tan y=x\\). The same trick with \\(\\sin y=x\\) gives \\(\\frac{1}{\\sqrt{1-x^2}}\\).</p>"
+   },
+   {
+    "type": "heading",
+    "text": "Worked examples"
+   },
+   {
+    "type": "examples",
+    "items": [
+     {
+      "label": "The one from your quiz: tan⁻¹(eˣ)",
+      "html": "<p>Find \\(y'\\) if \\(y=\\tan^{-1}(e^x)\\).</p><ol class=\"steps\"><li><strong>Inside:</strong> \\(u=e^x\\).</li><li><strong>Its derivative:</strong> \\(u'=e^x\\) (e is lazy).</li><li><strong>Square the inside:</strong> \\(u^2=(e^x)^2=e^{2x}\\). <span class='why'>Not \\(e^{x^2}\\). Squaring \\(e^x\\) doubles the exponent: \\((e^x)^2=e^x\\cdot e^x=e^{2x}\\).</span></li><li><strong>Plug in:</strong> \\(y'=\\dfrac{u'}{1+u^2}=\\dfrac{e^x}{1+e^{2x}}\\).</li><li><strong>Check at \\(x=0\\):</strong> \\(y'(0)=\\frac{1}{1+1}=\\frac12\\). The graph of \\(\\tan^{-1}(e^x)\\) passes through \\((0,\\frac\\pi4)\\) with slope \\(\\frac12\\). ✓</li></ol><p class='ans'>\\(y'=\\dfrac{e^x}{1+e^{2x}}\\)</p>"
+     },
+     {
+      "label": "sin⁻¹ with an inside",
+      "html": "<p>Differentiate \\(y=\\sin^{-1}(x^2)\\).</p><ol class=\"steps\"><li>\\(u=x^2\\), \\(u'=2x\\), \\(u^2=x^4\\).</li><li>\\(y'=\\dfrac{u'}{\\sqrt{1-u^2}}=\\dfrac{2x}{\\sqrt{1-x^4}}\\).</li></ol>"
+     },
+     {
+      "label": "Careful: the inverse trig is on the inside",
+      "html": "<p>Differentiate \\(y=(\\tan^{-1}x)^2\\).</p><ol class=\"steps\"><li>The <strong>last</strong> thing computed is squaring, so the outside is \\(u^2\\) and the inside is \\(u=\\tan^{-1}x\\).</li><li>Power rule + chain rule: \\(y'=2\\tan^{-1}x\\cdot\\dfrac{1}{1+x^2}\\).</li></ol><p class='ans'>\\(y'=\\dfrac{2\\tan^{-1}x}{1+x^2}\\)</p>"
+     },
+     {
+      "label": "Product with inverse trig",
+      "html": "<p>Differentiate \\(y=x\\tan^{-1}x\\).</p><ol class=\"steps\"><li>Product rule: first · d(second) + second · d(first).</li><li>\\(y'=x\\cdot\\dfrac{1}{1+x^2}+\\tan^{-1}x\\cdot1\\).</li></ol><p class='ans'>\\(y'=\\tan^{-1}x+\\dfrac{x}{1+x^2}\\)</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Inverse trig practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p36i-1",
+      "source": "Quiz-style",
+      "href": null,
+      "question": "Find \\(y'\\) if \\(y=\\tan^{-1}(e^x)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Square the inside: \\((e^x)^2=e^{2x}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(u=e^x\\), \\(u'=e^x\\), \\(u^2=e^{2x}\\).</p><p class=\"ans\">\\(y'=\\dfrac{e^x}{1+e^{2x}}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36i-2",
+      "source": "Quiz-style",
+      "href": null,
+      "question": "Find \\(f'(x)\\) if \\(f(x)=\\tan^{-1}(3x)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Don't forget to square the 3 as well.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(u=3x\\), \\(u'=3\\), \\(u^2=9x^2\\).</p><p class=\"ans\">\\(f'(x)=\\dfrac{3}{1+9x^2}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36i-3",
+      "source": "Quiz-style",
+      "href": null,
+      "question": "Find \\(y'\\) if \\(y=\\tan^{-1}(\\sqrt x)\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(u=\\sqrt x\\), \\(u'=\\frac{1}{2\\sqrt x}\\), \\(u^2=x\\).</p><p>\\(y'=\\dfrac{\\frac{1}{2\\sqrt x}}{1+x}\\).</p><p class=\"ans\">\\(y'=\\dfrac{1}{2\\sqrt x\\,(1+x)}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36i-4",
+      "source": "Quiz-style",
+      "href": null,
+      "question": "Find \\(y'\\) if \\(y=\\tan^{-1}(\\ln x)\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(u=\\ln x\\), \\(u'=\\frac1x\\), \\(u^2=(\\ln x)^2\\).</p><p class=\"ans\">\\(y'=\\dfrac{1}{x\\,\\big(1+(\\ln x)^2\\big)}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36i-5",
+      "source": "§3.6 #66",
+      "href": null,
+      "question": "Find \\(y'\\) if \\(y=\\tan^{-1}(x^2)\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(u=x^2\\), \\(u'=2x\\), \\(u^2=x^4\\).</p><p class=\"ans\">\\(y'=\\dfrac{2x}{1+x^4}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36i-6",
+      "source": "§3.6 #67",
+      "href": null,
+      "question": "Find \\(y'\\) if \\(y=(\\tan^{-1}x)^2\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>What's computed last? Here it's the square, not the arctan.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Outside is squaring; inside is \\(\\tan^{-1}x\\).</p><p>\\(y'=2\\tan^{-1}x\\cdot\\frac{1}{1+x^2}\\).</p><p class=\"ans\">\\(y'=\\dfrac{2\\tan^{-1}x}{1+x^2}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36i-7",
+      "source": "Quiz-style",
+      "href": null,
+      "question": "Find \\(y'\\) if \\(y=x\\tan^{-1}x\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Product rule: \\(x\\cdot\\frac{1}{1+x^2}+\\tan^{-1}x\\cdot1\\).</p><p class=\"ans\">\\(y'=\\tan^{-1}x+\\dfrac{x}{1+x^2}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36i-8",
+      "source": "Quiz-style",
+      "href": null,
+      "question": "Find \\(y'\\) if \\(y=\\tan^{-1}\\!\\left(\\dfrac1x\\right)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>After plugging in, clear the small fractions by multiplying top and bottom by \\(x^2\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(u=\\frac1x\\), \\(u'=-\\frac1{x^2}\\), \\(u^2=\\frac{1}{x^2}\\).</p><p>\\(y'=\\dfrac{-1/x^2}{1+1/x^2}\\). Multiply top and bottom by \\(x^2\\): \\(\\dfrac{-1}{x^2+1}\\).</p><p class=\"ans\">\\(y'=-\\dfrac{1}{1+x^2}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36i-9",
+      "source": "§3.6 #63",
+      "href": null,
+      "question": "Find \\(f'(x)\\) if \\(f(x)=\\sin^{-1}(5x)\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(u=5x\\), \\(u'=5\\), \\(u^2=25x^2\\).</p><p class=\"ans\">\\(f'(x)=\\dfrac{5}{\\sqrt{1-25x^2}}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36i-10",
+      "source": "§3.6 #68",
+      "href": null,
+      "question": "Find \\(g'(x)\\) if \\(g(x)=\\cos^{-1}\\sqrt x\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(u=\\sqrt x\\), \\(u'=\\frac1{2\\sqrt x}\\), \\(u^2=x\\).</p><p>\\(\\cos^{-1}\\) has a minus: \\(g'=-\\dfrac{u'}{\\sqrt{1-u^2}}\\).</p><p class=\"ans\">\\(g'(x)=-\\dfrac{1}{2\\sqrt x\\,\\sqrt{1-x}}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36i-11",
+      "source": "§3.6 #69",
+      "href": null,
+      "question": "Find \\(h'(x)\\) if \\(h(x)=(\\sin^{-1}x)\\ln x\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Product rule: \\(\\frac{1}{\\sqrt{1-x^2}}\\cdot\\ln x+\\sin^{-1}x\\cdot\\frac1x\\).</p><p class=\"ans\">\\(h'(x)=\\dfrac{\\ln x}{\\sqrt{1-x^2}}+\\dfrac{\\sin^{-1}x}{x}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36i-12",
+      "source": "§3.6 #70",
+      "href": null,
+      "question": "Find \\(g'(t)\\) if \\(g(t)=\\ln\\big(\\tan^{-1}(t^4)\\big)\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Three layers: \\(\\ln\\) → \\(\\tan^{-1}\\) → \\(t^4\\).</p><p>\\(\\ln w\\to\\frac{w'}{w}\\) with \\(w=\\tan^{-1}(t^4)\\), and \\(w'=\\dfrac{4t^3}{1+t^8}\\).</p><p class=\"ans\">\\(g'(t)=\\dfrac{4t^3}{(1+t^8)\\tan^{-1}(t^4)}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36i-13",
+      "source": "§3.6 #71",
+      "href": null,
+      "question": "Find \\(f'(z)\\) if \\(f(z)=e^{\\sin^{-1}(z^2)}\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\((e^w)'=e^w\\cdot w'\\) with \\(w=\\sin^{-1}(z^2)\\).</p><p>\\(w'=\\dfrac{2z}{\\sqrt{1-z^4}}\\).</p><p class=\"ans\">\\(f'(z)=\\dfrac{2z\\,e^{\\sin^{-1}(z^2)}}{\\sqrt{1-z^4}}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36i-14",
+      "source": "§3.6 #74",
+      "href": null,
+      "question": "Find \\(R'(t)\\) if \\(R(t)=\\sin^{-1}\\!\\left(\\dfrac1t\\right)\\), for \\(t>1\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(u=\\frac1t\\), \\(u'=-\\frac1{t^2}\\), \\(1-u^2=1-\\frac1{t^2}=\\frac{t^2-1}{t^2}\\).</p><p>\\(\\sqrt{1-u^2}=\\frac{\\sqrt{t^2-1}}{t}\\) (for \\(t>0\\)). So \\(R'=\\dfrac{-1/t^2}{\\sqrt{t^2-1}/t}\\).</p><p class=\"ans\">\\(R'(t)=-\\dfrac{1}{t\\sqrt{t^2-1}}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36i-15",
+      "source": "§3.6 #75",
+      "href": null,
+      "question": "Find \\(y'\\) if \\(y=x\\sin^{-1}x+\\sqrt{1-x^2}\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Product rule on the first term: \\(\\sin^{-1}x+\\dfrac{x}{\\sqrt{1-x^2}}\\).</p><p>Chain rule on the second: \\(\\dfrac{-2x}{2\\sqrt{1-x^2}}=-\\dfrac{x}{\\sqrt{1-x^2}}\\).</p><p>They cancel.</p><p class=\"ans\">\\(y'=\\sin^{-1}x\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36i-16",
+      "source": "§3.6 #73",
+      "href": null,
+      "question": "Find \\(h'(t)\\) if \\(h(t)=\\cot^{-1}(t)+\\cot^{-1}(1/t)\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\((\\cot^{-1}u)'=-\\dfrac{u'}{1+u^2}\\).</p><p>First term: \\(-\\dfrac{1}{1+t^2}\\). Second: \\(-\\dfrac{-1/t^2}{1+1/t^2}=\\dfrac{1}{t^2+1}\\).</p><p class=\"ans\">\\(h'(t)=0\\) (so \\(h\\) is constant on each side of 0)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36i-17",
+      "source": "Tangent line",
+      "href": null,
+      "question": "Find the tangent line to \\(y=\\tan^{-1}x\\) at \\(x=1\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Point: \\(\\tan^{-1}1=\\frac\\pi4\\).</p><p>Slope: \\(\\frac{1}{1+1^2}=\\frac12\\).</p><p class=\"ans\">\\(y=\\frac12(x-1)+\\frac\\pi4\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36i-18",
+      "source": "Slope at a point",
+      "href": null,
+      "question": "Find the slope of \\(y=\\tan^{-1}(e^{2x})\\) at \\(x=0\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(u=e^{2x}\\), \\(u'=2e^{2x}\\), \\(u^2=e^{4x}\\). So \\(y'=\\dfrac{2e^{2x}}{1+e^{4x}}\\).</p><p>At \\(x=0\\): \\(\\frac{2}{1+1}\\).</p><p class=\"ans\">Slope \\(=1\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36i-19",
+      "source": "Proof",
+      "href": null,
+      "question": "Prove that \\(\\dfrac{d}{dx}\\sin^{-1}x=\\dfrac{1}{\\sqrt{1-x^2}}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Rewrite \\(y=\\sin^{-1}x\\) as \\(\\sin y=x\\), then differentiate implicitly.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Let \\(y=\\sin^{-1}x\\), so \\(\\sin y=x\\) with \\(-\\frac\\pi2\\le y\\le\\frac\\pi2\\).</p><p>Differentiate implicitly: \\(\\cos y\\cdot y'=1\\Rightarrow y'=\\dfrac{1}{\\cos y}\\).</p><p>On \\([-\\frac\\pi2,\\frac\\pi2]\\), \\(\\cos y\\ge0\\), so \\(\\cos y=\\sqrt{1-\\sin^2y}=\\sqrt{1-x^2}\\).</p><p class=\"ans\">\\(\\dfrac{d}{dx}\\sin^{-1}x=\\dfrac{1}{\\sqrt{1-x^2}}\\) ✓</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36i-20",
+      "source": "§3.6 #81 (proof)",
+      "href": null,
+      "question": "Prove that \\(\\dfrac{d}{dx}\\cos^{-1}x=-\\dfrac{1}{\\sqrt{1-x^2}}\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Let \\(y=\\cos^{-1}x\\), so \\(\\cos y=x\\) with \\(0\\le y\\le\\pi\\).</p><p>Differentiate: \\(-\\sin y\\cdot y'=1\\Rightarrow y'=-\\dfrac{1}{\\sin y}\\).</p><p>On \\([0,\\pi]\\), \\(\\sin y\\ge0\\), so \\(\\sin y=\\sqrt{1-\\cos^2y}=\\sqrt{1-x^2}\\).</p><p class=\"ans\">\\(\\dfrac{d}{dx}\\cos^{-1}x=-\\dfrac{1}{\\sqrt{1-x^2}}\\) ✓</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "(eˣ)² written as e^(x²)",
+      "html": "<p>\\((e^x)^2=e^{2x}\\). Squaring doubles the exponent; it doesn't square it.</p>"
+     },
+     {
+      "title": "Forgetting u′",
+      "html": "<p>\\(\\frac{d}{dx}\\tan^{-1}(3x)\\) is \\(\\frac{3}{1+9x^2}\\), not \\(\\frac{1}{1+9x^2}\\).</p>"
+     },
+     {
+      "title": "Squaring only part of u",
+      "html": "<p>For \\(u=3x\\), \\(u^2=9x^2\\), not \\(3x^2\\).</p>"
+     },
+     {
+      "title": "tan⁻¹ is not 1/tan",
+      "html": "<p>\\(\\tan^{-1}x\\) means arctan, the inverse function, not \\(\\cot x\\).</p>"
      }
     ]
    },
@@ -3952,6 +4423,31 @@ export const sections: Section[] = [
       "front": "Closed Interval Method",
       "back": "Compare \\(f\\) at critical numbers inside \\([a,b]\\) and at both endpoints",
       "tag": "Q4 · max/min"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\tan^{-1}u\\)",
+      "back": "\\(\\dfrac{u'}{1+u^2}\\)",
+      "tag": "Q4 · inverse trig"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\sin^{-1}u\\)",
+      "back": "\\(\\dfrac{u'}{\\sqrt{1-u^2}}\\)",
+      "tag": "Q4 · inverse trig"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\tan^{-1}(e^x)\\)",
+      "back": "\\(\\dfrac{e^x}{1+e^{2x}}\\)",
+      "tag": "Q4 · inverse trig"
+     },
+     {
+      "front": "\\((e^x)^2=\\)",
+      "back": "\\(e^{2x}\\) (not \\(e^{x^2}\\))",
+      "tag": "Q4 · inverse trig"
+     },
+     {
+      "front": "How do you prove \\((\\cot x)'=-\\csc^2x\\)?",
+      "back": "Write \\(\\frac{\\cos x}{\\sin x}\\), quotient rule, \\(\\sin^2+\\cos^2=1\\), rewrite as \\(-\\csc^2x\\)",
+      "tag": "Trig proof"
      }
     ]
    },

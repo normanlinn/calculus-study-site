@@ -7,3 +7,4 @@ export const LazyGenerator = dynamic(() => import("./Generator"), { ssr: false, 
 export const LazyChecker = dynamic(() => import("./FunctionChecker"), { ssr: false, loading: Loading });
 export const LazyMock = dynamic(() => import("./MockExam"), { ssr: false, loading: Loading });
 export const LazyGrades = dynamic(() => import("./GradeCalc"), { ssr: false, loading: Loading });
+export const LazyInvTrig = dynamic(() => import("./InvTrigBuilder"), { ssr: false, loading: Loading });

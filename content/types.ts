@@ -15,7 +15,8 @@ export type Block =
   | { type: "checker" }
   | { type: "countdown"; target: string; label: string }
   | { type: "mock" }
-  | { type: "gradecalc" };
+  | { type: "gradecalc" }
+  | { type: "invtrig" };
 
 export interface Problem {
   id: string;

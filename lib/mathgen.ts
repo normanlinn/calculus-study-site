@@ -514,23 +514,74 @@ function logDiffPower(): GenProblem {
 }
 
 function invTrig(): GenProblem {
-  const a = ri(2, 5), n = ri(1, 3), useTan = Math.random() < 0.6;
-  const u = lead(a, xp(n)), du = n === 1 ? String(a) : lead(a * n, xp(n - 1));
-  return useTan
-    ? {
-        section: "3.6", kind: "Inverse trig",
-        question: `Differentiate \\(y=\\tan^{-1}(${u})\\).`,
-        hint: `<p>\\(\\frac{d}{dx}\\tan^{-1}u=\\dfrac{u'}{1+u^2}\\).</p>`,
-        steps: [`<p><strong>Inside.</strong> \\(u=${u}\\), \\(u'=${du}\\), \\(u^2=${a * a}${xp(2 * n)}\\).</p>`],
-        answer: `\\(y'=\\dfrac{${du}}{1+${a * a}${xp(2 * n)}}\\)`,
-      }
-    : {
-        section: "3.6", kind: "Inverse trig",
-        question: `Differentiate \\(y=\\sin^{-1}(${a}x)\\).`,
-        hint: `<p>\\(\\frac{d}{dx}\\sin^{-1}u=\\dfrac{u'}{\\sqrt{1-u^2}}\\).</p>`,
-        steps: [`<p><strong>Inside.</strong> \\(u=${a}x\\), \\(u'=${a}\\), \\(u^2=${a * a}x^2\\).</p>`],
-        answer: `\\(y'=\\dfrac{${a}}{\\sqrt{1-${a * a}x^2}}\\)`,
-      };
+  // inside u, u', u² — the same three pieces every problem needs
+  const a = ri(2, 5), n = ri(2, 4);
+  const inner = pick([
+    { u: "e^x", du: "e^x", u2: "e^{2x}" },
+    { u: `e^{${a}x}`, du: `${a}e^{${a}x}`, u2: `e^{${2 * a}x}` },
+    { u: `${a}x`, du: String(a), u2: `${a * a}x^2` },
+    { u: xp(n), du: `${n}${xp(n - 1)}`, u2: xp(2 * n) },
+    { u: "\\sqrt{x}", du: "\\frac{1}{2\\sqrt{x}}", u2: "x" },
+    { u: "\\ln x", du: "\\frac{1}{x}", u2: "(\\ln x)^2" },
+  ]);
+  const outer = pick(["tan", "tan", "sin", "cos"] as const);
+  const fn = outer === "tan" ? "\\tan^{-1}" : outer === "sin" ? "\\sin^{-1}" : "\\cos^{-1}";
+  const rule = outer === "tan" ? "\\dfrac{u'}{1+u^2}" : outer === "sin" ? "\\dfrac{u'}{\\sqrt{1-u^2}}" : "-\\dfrac{u'}{\\sqrt{1-u^2}}";
+  const ans = outer === "tan" ? `\\dfrac{${inner.du}}{1+${inner.u2}}` : `${outer === "cos" ? "-" : ""}\\dfrac{${inner.du}}{\\sqrt{1-${inner.u2}}}`;
+  return {
+    section: "3.6", kind: "Inverse trig + chain rule",
+    question: `Find \\(y'\\) if \\(y=${fn}\\big(${inner.u}\\big)\\).`,
+    hint: `<p>\\(\\frac{d}{dx}${fn}u=${rule}\\). Find \\(u\\), \\(u'\\) and \\(u^2\\) first.</p>`,
+    steps: [
+      `<p><strong>Inside.</strong> \\(u=${inner.u}\\)</p>`,
+      `<p><strong>Its derivative.</strong> \\(u'=${inner.du}\\)</p>`,
+      `<p><strong>Square the whole inside.</strong> \\(u^2=${inner.u2}\\)</p>`,
+      `<p><strong>Plug into</strong> \\(${rule}\\).</p>`,
+    ],
+    answer: `\\(y'=${ans}\\)`,
+  };
+}
+
+function invTrigSlope(): GenProblem {
+  // tan⁻¹(e^{ax}) at x = 0: slope a/(1+1) = a/2
+  const a = ri(1, 6);
+  const u = a === 1 ? "e^{x}" : `e^{${a}x}`, du = a === 1 ? "e^{x}" : `${a}e^{${a}x}`, u2 = `e^{${2 * a}x}`;
+  return {
+    section: "3.6", kind: "Inverse trig slope",
+    question: `Find the slope of \\(y=\\tan^{-1}(${u})\\) at \\(x=0\\).`,
+    hint: `<p>\\(y'=\\dfrac{u'}{1+u^2}\\), then plug in \\(x=0\\). Every \\(e^{0}=1\\).</p>`,
+    steps: [
+      `<p><strong>Differentiate.</strong> \\(u=${u}\\), \\(u'=${du}\\), \\(u^2=${u2}\\), so \\(y'=\\dfrac{${du}}{1+${u2}}\\).</p>`,
+      `<p><strong>At \\(x=0\\).</strong> \\(\\dfrac{${a}}{1+1}\\)</p>`,
+    ],
+    answer: `Slope \\(=${frac(a, 2)}\\)`,
+    numeric: { value: a / 2, label: "Slope" },
+  };
+}
+
+function trigProof(): GenProblem {
+  const P_ = pick([
+    { f: "\\cot x", g: "-\\csc^2x", w: "\\dfrac{\\cos x}{\\sin x}",
+      q: "\\dfrac{\\sin x(-\\sin x)-\\cos x\\cos x}{\\sin^2x}", top: "\\dfrac{-(\\sin^2x+\\cos^2x)}{\\sin^2x}=\\dfrac{-1}{\\sin^2x}" },
+    { f: "\\tan x", g: "\\sec^2x", w: "\\dfrac{\\sin x}{\\cos x}",
+      q: "\\dfrac{\\cos x\\cos x-\\sin x(-\\sin x)}{\\cos^2x}", top: "\\dfrac{\\cos^2x+\\sin^2x}{\\cos^2x}=\\dfrac{1}{\\cos^2x}" },
+    { f: "\\sec x", g: "\\sec x\\tan x", w: "\\dfrac{1}{\\cos x}",
+      q: "\\dfrac{\\cos x\\cdot0-1\\cdot(-\\sin x)}{\\cos^2x}", top: "\\dfrac{\\sin x}{\\cos^2x}=\\dfrac{1}{\\cos x}\\cdot\\dfrac{\\sin x}{\\cos x}" },
+    { f: "\\csc x", g: "-\\csc x\\cot x", w: "\\dfrac{1}{\\sin x}",
+      q: "\\dfrac{\\sin x\\cdot0-1\\cdot\\cos x}{\\sin^2x}", top: "-\\dfrac{1}{\\sin x}\\cdot\\dfrac{\\cos x}{\\sin x}" },
+  ]);
+  return {
+    section: "3.3", kind: "Prove a trig derivative",
+    question: `Show that \\(\\dfrac{d}{dx}${P_.f}=${P_.g}\\).`,
+    hint: `<p>Rewrite \\(${P_.f}=${P_.w}\\), use the quotient rule, then simplify with \\(\\sin^2x+\\cos^2x=1\\).</p>`,
+    steps: [
+      `<p><strong>Rewrite.</strong> \\(\\dfrac{d}{dx}${P_.f}=\\dfrac{d}{dx}\\left(${P_.w}\\right)\\)</p>`,
+      `<p><strong>Quotient rule.</strong> \\(=${P_.q}\\)</p>`,
+      `<p><strong>Simplify.</strong> \\(=${P_.top}\\)</p>`,
+      `<p><strong>Rewrite back.</strong> \\(=${P_.g}\\) ✓</p>`,
+    ],
+    answer: `\\(\\dfrac{d}{dx}${P_.f}=${P_.g}\\) ✓`,
+  };
 }
 
 /* ---------- §3.9 ---------- */
@@ -753,10 +804,10 @@ export const GENERATORS: Record<GenSection, (() => GenProblem)[]> = {
   "2.8": [defQuadratic, slopeQuadratic],
   "3.1": [polyDeriv, rewritePowers, tangentCubic],
   "3.2": [productRule, quotientLinear, powerTimesExp],
-  "3.3": [trigCombo, powerTimesTrig, trigLimit, trigCycle],
+  "3.3": [trigCombo, powerTimesTrig, trigLimit, trigCycle, trigProof],
   "3.4": [chainPower, chainTrig, chainExp, chainSqrt, chainTable],
   "3.5": [implicitCircle, implicitConic, implicitGeneral],
-  "3.6": [lnPoly, logBase, lnSlope, logDiffPower, invTrig],
+  "3.6": [lnPoly, logBase, lnSlope, logDiffPower, invTrig, invTrig, invTrigSlope],
   "3.9": [sphereRate, ladderRate, carsRate, coneRate],
   "3.10": [linSqrt, linCbrt, linearization, differential],
   "3.11": [hypDeriv, coshLn, hypIdentity],

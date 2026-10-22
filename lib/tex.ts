@@ -44,6 +44,7 @@ function renderBlock(b: Block): Block {
     case "countdown":
     case "mock":
     case "gradecalc":
+    case "invtrig":
       return b;
     case "sheet":
       return { ...b, items: b.items.map((c) => ({ ...c, html: tex(c.html), details: tex(c.details) })) };
