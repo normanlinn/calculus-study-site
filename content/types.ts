@@ -12,7 +12,8 @@ export type Block =
   | { type: "flashcards"; items: Flashcard[] }
   | { type: "sheet"; items: SheetCard[] }
   | { type: "generator" }
-  | { type: "checker" };
+  | { type: "checker" }
+  | { type: "countdown"; target: string; label: string };
 
 export interface Problem {
   id: string;
@@ -43,7 +44,9 @@ export interface QuizItem {
   explain: string;
 }
 
-export type LabId = "lab-secant" | "lab-trace" | "lab-exp" | "lab-prod" | "lab-sin" | "lab-circ" | "lab-chain" | "lab-imp";
+export type LabId =
+  | "lab-secant" | "lab-trace" | "lab-exp" | "lab-prod" | "lab-sin" | "lab-circ" | "lab-chain" | "lab-imp"
+  | "lab-ln" | "lab-ladder" | "lab-linear" | "lab-hyper" | "lab-extrema";
 
 export interface Section {
   id: string;
@@ -52,4 +55,8 @@ export interface Section {
   title: string;
   lede: string;
   blocks: Block[];
+  /** Which quiz the section belongs to; tools have none. */
+  unit?: Unit;
 }
+
+export type Unit = "q3" | "q4";

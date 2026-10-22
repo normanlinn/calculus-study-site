@@ -41,6 +41,7 @@ function renderBlock(b: Block): Block {
       };
     case "generator":
     case "checker":
+    case "countdown":
       return b;
     case "sheet":
       return { ...b, items: b.items.map((c) => ({ ...c, html: tex(c.html), details: tex(c.details) })) };

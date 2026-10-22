@@ -1,6 +1,11 @@
+import { compile } from "./expr";
+
 // Random practice problems with worked solutions. Text uses TeX between \( \) and \[ \]; render with tex().
 
-export type GenSection = "2.8" | "3.1" | "3.2" | "3.3" | "3.4" | "3.5";
+export type GenSection = "2.8" | "3.1" | "3.2" | "3.3" | "3.4" | "3.5" | "3.6" | "3.9" | "3.10" | "3.11" | "4.1";
+export type GenMix = "mixed" | "mixed-q3" | "mixed-q4";
+const Q3: GenSection[] = ["2.8", "3.1", "3.2", "3.3", "3.4", "3.5"];
+const Q4: GenSection[] = ["3.6", "3.9", "3.10", "3.11", "4.1"];
 
 export interface GenProblem {
   section: GenSection;
@@ -439,6 +444,311 @@ function implicitGeneral(): GenProblem {
   };
 }
 
+/* ---------- §3.6 ---------- */
+function lnPoly(): GenProblem {
+  const a = ri(1, 5), b = ri(-6, 6), c = ri(1, 9);
+  const inner = poly([[a, 2], [b, 1], [c, 0]]), d = poly([[2 * a, 1], [b, 0]]);
+  return {
+    section: "3.6", kind: "ln of a function",
+    question: `Differentiate \\(y=\\ln(${inner})\\).`,
+    hint: `<p>\\(\\frac{d}{dx}\\ln u=\\frac{u'}{u}\\): derivative of the inside over the inside.</p>`,
+    steps: [`<p><strong>Inside.</strong> \\(u=${inner}\\), \\(u'=${d}\\).</p>`, `<p><strong>Divide.</strong> \\(y'=\\dfrac{u'}{u}\\).</p>`],
+    answer: `\\(y'=\\dfrac{${d}}{${inner}}\\)`,
+  };
+}
+
+function logBase(): GenProblem {
+  const b = pick([2, 3, 5, 10]), n = ri(2, 4), k = ri(1, 9);
+  return {
+    section: "3.6", kind: "Other log bases",
+    question: `Differentiate \\(y=\\log_{${b}}(x^{${n}}+${k})\\).`,
+    hint: `<p>\\(\\frac{d}{dx}\\log_b u=\\dfrac{u'}{u\\ln b}\\). Same as ln, then divide by \\(\\ln b\\).</p>`,
+    steps: [`<p><strong>Inside.</strong> \\(u=x^{${n}}+${k}\\), \\(u'=${n}x^{${n - 1}}\\).</p>`.replace("x^{1}", "x"), `<p><strong>Divide by \\(u\\ln ${b}\\).</strong></p>`],
+    answer: `\\(y'=\\dfrac{${n}x^{${n - 1}}}{(x^{${n}}+${k})\\ln ${b}}\\)`.replace("x^{1}", "x"),
+  };
+}
+
+function lnSlope(): GenProblem {
+  const k = ri(1, 4), c = ri(-3, 3);
+  const d = 1 - k * k - c * k; // makes the inside equal 1 at x = k, so y = 0 there
+  const inner = poly([[1, 2], [c, 1], [d, 0]]), m = 2 * k + c;
+  return {
+    section: "3.6", kind: "Tangent slope with ln",
+    question: `Find the slope of the tangent line to \\(y=\\ln(${inner})\\) at \\((${k},\\,0)\\).`,
+    hint: `<p>\\(y'=\\frac{u'}{u}\\), then plug in \\(x=${k}\\). The inside equals 1 there (that's why \\(y=0\\)).</p>`,
+    steps: [
+      `<p><strong>Differentiate.</strong> \\(y'=\\dfrac{${poly([[2, 1], [c, 0]])}}{${inner}}\\)</p>`,
+      `<p><strong>Plug in \\(x=${k}\\).</strong> Top: \\(${m}\\). Bottom: \\(${k * k + c * k + d}\\).</p>`,
+    ],
+    answer: `Slope \\(=${m}\\)`,
+    numeric: { value: m, label: "Slope" },
+  };
+}
+
+function logDiffPower(): GenProblem {
+  const a = ri(2, 5), useTrig = Math.random() < 0.5;
+  if (useTrig) {
+    return {
+      section: "3.6", kind: "Logarithmic differentiation",
+      question: `Differentiate \\(y=x^{\\cos x}\\).`,
+      hint: `<p>Variable base and variable exponent: take \\(\\ln\\) of both sides first.</p>`,
+      steps: [
+        `<p><strong>Take ln.</strong> \\(\\ln y=\\cos x\\,\\ln x\\)</p>`,
+        `<p><strong>Differentiate.</strong> \\(\\dfrac{y'}{y}=-\\sin x\\ln x+\\dfrac{\\cos x}{x}\\)</p>`,
+        `<p><strong>Multiply by \\(y\\).</strong></p>`,
+      ],
+      answer: `\\(y'=x^{\\cos x}\\left(\\dfrac{\\cos x}{x}-\\sin x\\ln x\\right)\\)`,
+    };
+  }
+  return {
+    section: "3.6", kind: "Logarithmic differentiation",
+    question: `Differentiate \\(y=x^{${a}x}\\).`,
+    hint: `<p>Take \\(\\ln\\) of both sides: \\(\\ln y=${a}x\\ln x\\).</p>`,
+    steps: [
+      `<p><strong>Take ln.</strong> \\(\\ln y=${a}x\\ln x\\)</p>`,
+      `<p><strong>Differentiate.</strong> \\(\\dfrac{y'}{y}=${a}\\ln x+${a}x\\cdot\\dfrac1x=${a}(\\ln x+1)\\)</p>`,
+      `<p><strong>Multiply by \\(y\\).</strong></p>`,
+    ],
+    answer: `\\(y'=${a}x^{${a}x}(\\ln x+1)\\)`,
+  };
+}
+
+function invTrig(): GenProblem {
+  const a = ri(2, 5), n = ri(1, 3), useTan = Math.random() < 0.6;
+  const u = lead(a, xp(n)), du = n === 1 ? String(a) : lead(a * n, xp(n - 1));
+  return useTan
+    ? {
+        section: "3.6", kind: "Inverse trig",
+        question: `Differentiate \\(y=\\tan^{-1}(${u})\\).`,
+        hint: `<p>\\(\\frac{d}{dx}\\tan^{-1}u=\\dfrac{u'}{1+u^2}\\).</p>`,
+        steps: [`<p><strong>Inside.</strong> \\(u=${u}\\), \\(u'=${du}\\), \\(u^2=${a * a}${xp(2 * n)}\\).</p>`],
+        answer: `\\(y'=\\dfrac{${du}}{1+${a * a}${xp(2 * n)}}\\)`,
+      }
+    : {
+        section: "3.6", kind: "Inverse trig",
+        question: `Differentiate \\(y=\\sin^{-1}(${a}x)\\).`,
+        hint: `<p>\\(\\frac{d}{dx}\\sin^{-1}u=\\dfrac{u'}{\\sqrt{1-u^2}}\\).</p>`,
+        steps: [`<p><strong>Inside.</strong> \\(u=${a}x\\), \\(u'=${a}\\), \\(u^2=${a * a}x^2\\).</p>`],
+        answer: `\\(y'=\\dfrac{${a}}{\\sqrt{1-${a * a}x^2}}\\)`,
+      };
+}
+
+/* ---------- §3.9 ---------- */
+function sphereRate(): GenProblem {
+  const r = ri(2, 12), dr = ri(1, 5), what = pick(["volume", "area"] as const);
+  const isV = what === "volume";
+  const coef = isV ? 4 * r * r * dr : 8 * r * dr;
+  return {
+    section: "3.9", kind: "Related rates: sphere",
+    question: `A sphere's radius grows at ${dr} cm/s. How fast is its ${isV ? "volume" : "surface area"} growing when \\(r=${r}\\) cm?`,
+    hint: `<p>${isV ? "\\(V=\\frac43\\pi r^3\\)" : "\\(S=4\\pi r^2\\)"}. Differentiate with respect to \\(t\\), then plug in.</p>`,
+    steps: [
+      `<p><strong>Differentiate.</strong> ${isV ? "\\(\\frac{dV}{dt}=4\\pi r^2\\frac{dr}{dt}\\)" : "\\(\\frac{dS}{dt}=8\\pi r\\frac{dr}{dt}\\)"}</p>`,
+      `<p><strong>Plug in.</strong> ${isV ? `\\(4\\pi(${r})^2(${dr})\\)` : `\\(8\\pi(${r})(${dr})\\)`}\\(=${coef}\\pi\\)</p>`,
+    ],
+    answer: `\\(${coef}\\pi\\approx${(coef * Math.PI).toFixed(1)}\\) ${isV ? "cm³/s" : "cm²/s"}`,
+    numeric: { value: coef * Math.PI, label: isV ? "dV/dt (you can type 100pi)" : "dS/dt (you can type 100pi)" },
+  };
+}
+
+function ladderRate(): GenProblem {
+  const [p, q, L] = pick([[6, 8, 10], [5, 12, 13], [8, 6, 10], [12, 5, 13], [7, 24, 25], [9, 12, 15]]);
+  const v = ri(1, 4);
+  return {
+    section: "3.9", kind: "Related rates: ladder",
+    question: `A ${L} m ladder leans against a wall. Its foot slides away at ${v} m/s. How fast is the top sliding down when the foot is ${p} m from the wall?`,
+    hint: `<p>\\(x^2+y^2=${L * L}\\). Differentiate, then find \\(y\\) at that moment.</p>`,
+    steps: [
+      `<p><strong>Differentiate.</strong> \\(2x\\dot x+2y\\dot y=0\\Rightarrow\\dot y=-\\frac{x}{y}\\dot x\\).</p>`,
+      `<p><strong>Find y.</strong> \\(y=\\sqrt{${L * L}-${p * p}}=${q}\\).</p>`,
+      `<p><strong>Plug in.</strong> \\(\\dot y=-\\frac{${p}}{${q}}(${v})=${frac(-p * v, q)}\\).</p>`,
+    ],
+    answer: `\\(\\frac{dy}{dt}=${frac(-p * v, q)}\\) m/s (sliding down at \\(${frac(p * v, q)}\\) m/s)`,
+    numeric: { value: (-p * v) / q, label: "dy/dt (negative = down)" },
+  };
+}
+
+function carsRate(): GenProblem {
+  const k = ri(2, 6), t = ri(1, 4);
+  const [a, b] = pick([[3, 4], [5, 12], [8, 15]]).map((n) => n * k);
+  const c = Math.sqrt(a * a + b * b);
+  return {
+    section: "3.9", kind: "Related rates: two cars",
+    question: `Two cars leave the same point. One drives north at ${a} km/h, the other east at ${b} km/h. How fast is the distance between them growing ${t} h later?`,
+    hint: `<p>\\(z^2=x^2+y^2\\), so \\(z\\dot z=x\\dot x+y\\dot y\\). Find \\(x\\), \\(y\\), \\(z\\) at that time first.</p>`,
+    steps: [
+      `<p><strong>Positions.</strong> \\(x=${a * t}\\), \\(y=${b * t}\\), \\(z=\\sqrt{${a * t}^2+${b * t}^2}=${c * t}\\).</p>`,
+      `<p><strong>Plug in.</strong> \\(\\dot z=\\frac{${a * t}(${a})+${b * t}(${b})}{${c * t}}=${c}\\).</p>`,
+      `<p class="why">The answer doesn't depend on the time: the cars move apart at a steady \\(${c}\\) km/h.</p>`,
+    ],
+    answer: `\\(${c}\\) km/h`,
+    numeric: { value: c, label: "dz/dt" },
+  };
+}
+
+function coneRate(): GenProblem {
+  const R = ri(1, 4), H = R * ri(2, 3), h = ri(1, H - 1), dV = ri(1, 9);
+  const kNum = H * H * dV, kDen = R * R * h * h; // dh/dt = dV·H² / (π R² h²)
+  return {
+    section: "3.9", kind: "Related rates: cone",
+    question: `Water pours at ${dV} m³/min into an inverted cone with top radius ${R} m and height ${H} m. How fast is the water level rising when the water is ${h} m deep?`,
+    hint: `<p>Similar triangles: \\(r=\\frac{${R}}{${H}}h\\). Write \\(V\\) in terms of \\(h\\) only, then differentiate.</p>`,
+    steps: [
+      `<p><strong>Similar triangles.</strong> \\(r=\\frac{${R}h}{${H}}\\), so \\(V=\\frac13\\pi\\left(\\frac{${R}h}{${H}}\\right)^2h=\\frac{${R * R}\\pi h^3}{${3 * H * H}}\\).</p>`,
+      `<p><strong>Differentiate.</strong> \\(\\frac{dV}{dt}=\\frac{${R * R}\\pi h^2}{${H * H}}\\frac{dh}{dt}\\).</p>`,
+      `<p><strong>Plug in.</strong> \\(${dV}=\\frac{${R * R}\\pi(${h})^2}{${H * H}}\\frac{dh}{dt}\\Rightarrow\\frac{dh}{dt}=\\frac{${kNum}}{${kDen}\\pi}\\).</p>`,
+    ],
+    answer: `\\(\\frac{dh}{dt}=${frac(kNum, kDen)}\\cdot\\frac{1}{\\pi}\\approx${(kNum / (kDen * Math.PI)).toFixed(3)}\\) m/min`,
+    numeric: { value: kNum / (kDen * Math.PI), label: "dh/dt (you can type 3/(4pi))" },
+  };
+}
+
+/* ---------- §3.10 ---------- */
+function linSqrt(): GenProblem {
+  const n = ri(3, 12), d = pick([-0.2, -0.1, 0.1, 0.2, 0.3, -0.3, 0.5]);
+  const a = n * n, est = n + d / (2 * n);
+  return {
+    section: "3.10", kind: "Estimate a root",
+    question: `Use a linear approximation to estimate \\(\\sqrt{${+(a + d).toFixed(1)}}\\).`,
+    hint: `<p>Use \\(f(x)=\\sqrt x\\) at the nearby perfect square \\(a=${a}\\).</p>`,
+    steps: [
+      `<p><strong>Pick a.</strong> \\(a=${a}\\): \\(f(${a})=${n}\\), \\(f'(x)=\\frac{1}{2\\sqrt x}\\Rightarrow f'(${a})=\\frac{1}{${2 * n}}\\).</p>`,
+      `<p><strong>Linearize.</strong> \\(L(x)=${n}+\\frac{1}{${2 * n}}(x-${a})\\).</p>`,
+      `<p><strong>Plug in.</strong> \\(L(${+(a + d).toFixed(1)})=${n}+\\frac{${d}}{${2 * n}}\\).</p>`,
+    ],
+    answer: `\\(\\approx${est.toFixed(4)}\\) (true value \\(${Math.sqrt(a + d).toFixed(4)}\\))`,
+    numeric: { value: est, label: "Estimate" },
+  };
+}
+
+function linCbrt(): GenProblem {
+  const n = ri(2, 10), d = pick([-2, -1, 1, 2, 3]);
+  const a = n ** 3, est = n + d / (3 * n * n);
+  return {
+    section: "3.10", kind: "Estimate a cube root",
+    question: `Use a linear approximation to estimate \\(\\sqrt[3]{${a + d}}\\).`,
+    hint: `<p>Use \\(f(x)=\\sqrt[3]{x}\\) at \\(a=${a}\\).</p>`,
+    steps: [
+      `<p><strong>Pick a.</strong> \\(f(${a})=${n}\\), \\(f'(x)=\\frac13x^{-2/3}\\Rightarrow f'(${a})=\\frac{1}{${3 * n * n}}\\).</p>`,
+      `<p><strong>Plug in.</strong> \\(L(${a + d})=${n}+\\frac{${d}}{${3 * n * n}}\\).</p>`,
+    ],
+    answer: `\\(\\approx${est.toFixed(4)}\\) (true value \\(${Math.cbrt(a + d).toFixed(4)}\\))`,
+    numeric: { value: est, label: "Estimate" },
+  };
+}
+
+function linearization(): GenProblem {
+  const a = nz(-3, 3), b = ri(-5, 5), c = ri(-6, 6);
+  const f = P([[1, 3], [b, 1], [c, 0]]);
+  const fa = evalPoly(f, a), m = 3 * a * a + b;
+  return {
+    section: "3.10", kind: "Linearization",
+    question: `Find the linearization \\(L(x)\\) of \\(f(x)=${polyTeX(f)}\\) at \\(a=${a}\\).`,
+    hint: `<p>\\(L(x)=f(a)+f'(a)(x-a)\\).</p>`,
+    steps: [
+      `<p><strong>f(a).</strong> \\(f(${a})=${fa}\\).</p>`,
+      `<p><strong>f′(a).</strong> \\(f'(x)=${polyTeX(deriv(f))}\\Rightarrow f'(${a})=${m}\\).</p>`,
+      `<p><strong>Assemble.</strong> \\(L(x)=${fa}${m < 0 ? "" : "+"}${m}(x${a < 0 ? "+" : "-"}${Math.abs(a)})\\).</p>`,
+    ],
+    answer: `\\(L(x)=${poly([[m, 1], [fa - m * a, 0]])}\\)`,
+  };
+}
+
+function differential(): GenProblem {
+  const x0 = ri(1, 4), k = ri(1, 6), dx = pick([0.1, -0.1, 0.05, 0.2, -0.05]);
+  const dy = (3 * x0 * x0 - k) * dx;
+  return {
+    section: "3.10", kind: "Differentials",
+    question: `For \\(y=x^3-${lead(k, "x")}\\), find \\(dy\\) and evaluate it at \\(x=${x0}\\), \\(dx=${dx}\\).`,
+    hint: `<p>\\(dy=f'(x)\\,dx\\).</p>`,
+    steps: [`<p>\\(dy=(3x^2-${k})\\,dx\\).</p>`, `<p>\\(dy=(3(${x0})^2-${k})(${dx})=(${3 * x0 * x0 - k})(${dx})\\).</p>`],
+    answer: `\\(dy=(3x^2-${k})\\,dx=${+dy.toFixed(4)}\\)`,
+    numeric: { value: dy, label: "dy" },
+  };
+}
+
+/* ---------- §3.11 ---------- */
+function hypDeriv(): GenProblem {
+  const a = ri(2, 5), n = ri(1, 3), fn = pick(["sinh", "cosh", "tanh"] as const);
+  const u = lead(a, xp(n)), du = n === 1 ? String(a) : lead(a * n, xp(n - 1));
+  const outer = fn === "sinh" ? "\\cosh" : fn === "cosh" ? "\\sinh" : "\\operatorname{sech}^2";
+  return {
+    section: "3.11", kind: "Hyperbolic derivatives",
+    question: `Differentiate \\(y=\\${fn}(${u})\\).`,
+    hint: `<p>\\((\\sinh)'=\\cosh\\), \\((\\cosh)'=\\sinh\\) (no minus!), \\((\\tanh)'=\\operatorname{sech}^2\\). Then times the inside's derivative.</p>`,
+    steps: [`<p><strong>Inside.</strong> \\(u=${u}\\), \\(u'=${du}\\).</p>`, `<p><strong>Outside.</strong> \\(\\${fn} u\\to ${outer} u\\).</p>`],
+    answer: `\\(y'=${n === 1 ? a : `${a * n}${xp(n - 1)}`}\\,${outer}(${u})\\)`,
+  };
+}
+
+function coshLn(): GenProblem {
+  const k = ri(2, 9), useCosh = Math.random() < 0.5;
+  const val = useCosh ? (k + 1 / k) / 2 : (k - 1 / k) / 2;
+  return {
+    section: "3.11", kind: "Evaluate with eˣ",
+    question: `Find the exact value of \\(\\${useCosh ? "cosh" : "sinh"}(\\ln ${k})\\).`,
+    hint: `<p>Use the definition, and \\(e^{\\ln ${k}}=${k}\\), \\(e^{-\\ln ${k}}=\\frac1{${k}}\\).</p>`,
+    steps: [
+      `<p>\\(\\${useCosh ? "cosh" : "sinh"}(\\ln ${k})=\\dfrac{${k}${useCosh ? "+" : "-"}\\frac1{${k}}}{2}\\)</p>`,
+      `<p>\\(=\\dfrac{${k * k}${useCosh ? "+" : "-"}1}{${2 * k}}\\)</p>`,
+    ],
+    answer: `\\(${frac(useCosh ? k * k + 1 : k * k - 1, 2 * k)}\\)`,
+    numeric: { value: val, label: "Value" },
+  };
+}
+
+function hypIdentity(): GenProblem {
+  const [c, s] = pick([[5, 4], [13, 12], [17, 15], [25, 24]]) as [number, number];
+  const d = Math.sqrt(c * c - s * s);
+  return {
+    section: "3.11", kind: "Hyperbolic identity",
+    question: `If \\(\\cosh x=\\frac{${c}}{${d}}\\) and \\(x>0\\), find \\(\\tanh x\\).`,
+    hint: `<p>\\(\\sinh^2x=\\cosh^2x-1\\). For \\(x>0\\), \\(\\sinh x>0\\).</p>`,
+    steps: [
+      `<p>\\(\\sinh^2x=\\frac{${c * c}}{${d * d}}-1=\\frac{${s * s}}{${d * d}}\\Rightarrow\\sinh x=\\frac{${s}}{${d}}\\).</p>`,
+      `<p>\\(\\tanh x=\\frac{\\sinh x}{\\cosh x}=\\frac{${s}/${d}}{${c}/${d}}\\).</p>`,
+    ],
+    answer: `\\(\\tanh x=\\frac{${s}}{${c}}\\)`,
+    numeric: { value: s / c, label: "tanh x" },
+  };
+}
+
+/* ---------- §4.1 ---------- */
+function critCubic(): GenProblem {
+  let r1 = 0, r2 = 0;
+  while ((r1 + r2) % 2 !== 0 || r1 === r2) { r1 = ri(-4, 3); r2 = ri(r1 + 1, 5); }
+  const f = P([[1, 3], [(-3 * (r1 + r2)) / 2, 2], [3 * r1 * r2, 1], [ri(-5, 5), 0]]);
+  return {
+    section: "4.1", kind: "Critical numbers",
+    question: `Find the critical numbers of \\(f(x)=${polyTeX(f)}\\).`,
+    hint: `<p>Set \\(f'(x)=0\\) and factor. A polynomial's derivative is defined everywhere.</p>`,
+    steps: [`<p>\\(f'(x)=${polyTeX(deriv(f))}=3(x-(${r1}))(x-(${r2}))\\).</p>`],
+    answer: `\\(x=${r1}\\) and \\(x=${r2}\\)`,
+  };
+}
+
+function closedInterval(): GenProblem {
+  let r1 = 0, r2 = 0;
+  while (r1 === r2) { r1 = ri(-3, 1); r2 = ri(r1 + 1, 4); }
+  const d = ri(-6, 6);
+  const f = P([[2, 3], [-3 * (r1 + r2), 2], [6 * r1 * r2, 1], [d, 0]]);
+  const a = r1 - ri(0, 2), b = r2 + ri(0, 2);
+  const cands = [...new Set([a, r1, r2, b])].sort((x, y) => x - y).map((x) => ({ x, y: evalPoly(f, x) }));
+  const max = cands.reduce((m, k) => (k.y > m.y ? k : m)), min = cands.reduce((m, k) => (k.y < m.y ? k : m));
+  return {
+    section: "4.1", kind: "Closed Interval Method",
+    question: `Find the absolute maximum and minimum of \\(f(x)=${polyTeX(f)}\\) on \\([${a},\\,${b}]\\).`,
+    hint: `<p>Critical numbers inside the interval, plus both endpoints. Make a table and compare.</p>`,
+    steps: [
+      `<p><strong>Critical numbers.</strong> \\(f'(x)=${polyTeX(deriv(f))}=6(x-(${r1}))(x-(${r2}))\\Rightarrow x=${r1},\\ ${r2}\\).</p>`,
+      `<p><strong>Table.</strong> ${cands.map((k) => `\\(f(${k.x})=${k.y}\\)`).join(", ")}.</p>`,
+      `<p><strong>Compare.</strong> Largest \\(${max.y}\\), smallest \\(${min.y}\\).</p>`,
+    ],
+    answer: `Absolute max \\(f(${max.x})=${max.y}\\); absolute min \\(f(${min.x})=${min.y}\\)`,
+    numeric: { value: max.y, label: "Absolute max value" },
+  };
+}
+
 export const GENERATORS: Record<GenSection, (() => GenProblem)[]> = {
   "2.8": [defQuadratic, slopeQuadratic],
   "3.1": [polyDeriv, rewritePowers, tangentCubic],
@@ -446,19 +756,32 @@ export const GENERATORS: Record<GenSection, (() => GenProblem)[]> = {
   "3.3": [trigCombo, powerTimesTrig, trigLimit, trigCycle],
   "3.4": [chainPower, chainTrig, chainExp, chainSqrt, chainTable],
   "3.5": [implicitCircle, implicitConic, implicitGeneral],
+  "3.6": [lnPoly, logBase, lnSlope, logDiffPower, invTrig],
+  "3.9": [sphereRate, ladderRate, carsRate, coneRate],
+  "3.10": [linSqrt, linCbrt, linearization, differential],
+  "3.11": [hypDeriv, coshLn, hypIdentity],
+  "4.1": [critCubic, closedInterval, closedInterval],
 };
 
-export function generate(section: GenSection | "mixed"): GenProblem {
-  const s = section === "mixed" ? pick(Object.keys(GENERATORS) as GenSection[]) : section;
+export function generate(section: GenSection | GenMix): GenProblem {
+  const s =
+    section === "mixed" ? pick([...Q3, ...Q4]) : section === "mixed-q3" ? pick(Q3) : section === "mixed-q4" ? pick(Q4) : section;
   return pick(GENERATORS[s])();
 }
 
-/** Parse a typed number like "-4/5", "0.8" or "−3". */
+/** Parse a typed number like "-4/5", "0.8", "−3", "400pi" or "800sqrt(5)/3". */
 export function parseNumber(s: string): number | null {
   const t = s.replace(/−/g, "-").replace(/\s+/g, "");
   if (!t) return null;
   const m = t.match(/^(-?\d+(?:\.\d+)?)\/(-?\d+(?:\.\d+)?)$/);
   if (m) return Number(m[2]) === 0 ? null : Number(m[1]) / Number(m[2]);
   const v = Number(t);
-  return Number.isFinite(v) ? v : null;
+  if (Number.isFinite(v)) return v;
+  if (/x/i.test(t)) return null;
+  try {
+    const w = compile(t)(0);
+    return Number.isFinite(w) ? w : null;
+  } catch {
+    return null;
+  }
 }

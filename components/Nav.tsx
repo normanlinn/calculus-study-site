@@ -3,7 +3,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion, useScroll, useSpring } from "motion/react";
 import { useEffect, useRef, useState } from "react";
-import { navItems, allProblemIds } from "@/content/nav";
+import { navItems, unitProblemIds, UNITS, LATEST_UNIT } from "@/content/nav";
+import type { Unit } from "@/content/types";
 import { useDone } from "@/lib/progress";
 import AccountButton from "./AccountButton";
 
@@ -45,7 +46,6 @@ const TOOLS: Record<string, string> = {
   "memory-tricks": "Learn the formulas, with a flashcard drill",
   "cheat-sheet": "Every rule on one page",
 };
-const mainItems = navItems.filter((n) => !(n.slug in TOOLS));
 const toolItems = navItems.filter((n) => n.slug in TOOLS);
 
 function ToolsMenu({ path }: { path: string }) {
@@ -101,7 +101,12 @@ function ToolsMenu({ path }: { path: string }) {
 export default function Nav() {
   const path = usePathname().replace(/\/$/, "");
   const done = useDone();
-  const count = allProblemIds.filter((id) => done[id]).length;
+  const pageUnit = navItems.find((n) => path.endsWith("/" + n.slug))?.unit;
+  const [unit, setUnit] = useState<Unit>(pageUnit ?? LATEST_UNIT);
+  useEffect(() => { if (pageUnit) setUnit(pageUnit); }, [pageUnit]);
+  const ids = unitProblemIds(unit);
+  const count = ids.filter((id) => done[id]).length;
+  const mainItems = navItems.filter((n) => n.unit === unit);
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, { stiffness: 200, damping: 30 });
   const listRef = useRef<HTMLDivElement>(null);
@@ -109,7 +114,7 @@ export default function Nav() {
   // keep the active link visible in the scrollable row
   useEffect(() => {
     listRef.current?.querySelector(".active")?.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
-  }, [path]);
+  }, [path, unit]);
 
   return (
     <>
@@ -121,22 +126,33 @@ export default function Nav() {
             <span className="brand-name">Field Guide</span>
           </Link>
           <nav className="navlinks" ref={listRef} aria-label="Sections">
-            {mainItems.map((n) => {
-              const active = path.endsWith("/" + n.slug);
-              return (
-                <Link key={n.slug} href={`/${n.slug}/`} className={"navlink" + (active ? " active" : "")} title={n.title} aria-current={active ? "page" : undefined}>
-                  {active && <motion.span layoutId="nav-pill" className="pill" transition={{ type: "spring", stiffness: 420, damping: 34 }} />}
-                  <span>{n.label}</span>
-                </Link>
-              );
-            })}
+            <div className="unit-switch" role="group" aria-label="Which quiz">
+              {UNITS.map((u) => (
+                <button key={u.id} type="button" className={unit === u.id ? "on" : ""} aria-pressed={unit === u.id} onClick={() => setUnit(u.id)} title={u.long}>
+                  {u.label}
+                </button>
+              ))}
+            </div>
+            <AnimatePresence mode="popLayout" initial={false}>
+              {mainItems.map((n) => {
+                const active = path.endsWith("/" + n.slug);
+                return (
+                  <motion.span key={n.slug} className="navlink-wrap" initial={{ opacity: 0, y: -6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 6 }} transition={{ duration: 0.18 }}>
+                    <Link href={`/${n.slug}/`} className={"navlink" + (active ? " active" : "")} title={n.title} aria-current={active ? "page" : undefined}>
+                      {active && <motion.span layoutId="nav-pill" className="pill" transition={{ type: "spring", stiffness: 420, damping: 34 }} />}
+                      <span>{n.label}</span>
+                    </Link>
+                  </motion.span>
+                );
+              })}
+            </AnimatePresence>
           </nav>
           <ToolsMenu path={path} />
           <div className="navtools">
-            <motion.span key={count} className="count" title={`${count} of ${allProblemIds.length} problems marked “I can do this”`}
+            <motion.span key={unit + count} className="count" title={`${count} of ${ids.length} ${UNITS.find((u) => u.id === unit)!.label} problems marked “I can do this”`}
               initial={{ y: -6, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
               <svg width="12" height="12" viewBox="0 0 16 16" aria-hidden><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" /></svg>
-              {count}/{allProblemIds.length}
+              {count}/{ids.length}
             </motion.span>
             <AccountButton />
             <ThemeToggle />

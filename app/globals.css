@@ -474,3 +474,29 @@ h3[id] { scroll-margin-top: 80px; }
   .acct-signin { padding: 7px 9px; font-size: 12px; }
   .iconbtn { width: 32px; height: 32px; }
 }
+
+/* Two canvases side by side (hyperbolic lab) */
+.lab-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.lab-pair canvas { aspect-ratio: 1 / 1; }
+@media (max-width: 520px) { .lab-pair { grid-template-columns: 1fr; } }
+
+/* Quiz countdown */
+.countdown { display: flex; align-items: center; gap: 18px; padding: 18px 20px; border-radius: 16px; background: var(--ink); color: var(--bg); width: fit-content; max-width: 100%; }
+.countdown > b { font: 800 56px/1 var(--font-display); font-variant-numeric: tabular-nums; color: var(--bg); }
+.countdown div { display: grid; gap: 2px; }
+.countdown .eyebrow { color: color-mix(in srgb, var(--bg) 70%, transparent); }
+.countdown strong { font: 700 20px var(--font-display); }
+.countdown span:last-child { font-size: 14px; opacity: .8; }
+
+/* Unit switch in the top bar */
+.unit-switch { flex: none; display: inline-flex; padding: 2px; margin-right: 6px; border-radius: 999px; background: var(--grid); }
+.unit-switch button { border: 0; background: none; cursor: pointer; padding: 6px 10px; border-radius: 999px; font: 700 12px var(--font-mono); color: var(--muted); white-space: nowrap; }
+.unit-switch button.on { background: var(--surface); color: var(--ink); box-shadow: 0 1px 3px rgba(0, 0, 0, .12); }
+.navlink-wrap { flex: none; display: inline-flex; }
+.navlinks { align-items: center; }
+@media (pointer: fine) { .unit-switch button { cursor: var(--cur-pointer) !important; } }
+.unit-head { font-size: 22px; font-weight: 700; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; padding: 8px 0 12px; border-top: 2px solid var(--ink); margin-top: 12px; }
+.unit-head span { font: 600 12px var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.gen-group { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.gen-group > span { font: 700 12px var(--font-mono); color: var(--muted); min-width: 52px; }
+.gen .seg { flex-wrap: wrap; }

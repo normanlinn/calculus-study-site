@@ -1,19 +1,20 @@
 "use client";
 import { AnimatePresence, motion } from "motion/react";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { generate, parseNumber, type GenProblem, type GenSection } from "@/lib/mathgen";
+import { generate, parseNumber, type GenMix, type GenProblem, type GenSection } from "@/lib/mathgen";
 import { tex } from "@/lib/tex";
 import { recordGen, useGenStats } from "@/lib/genstats";
 
-const SECTIONS: { id: GenSection | "mixed"; label: string }[] = [
-  { id: "mixed", label: "Mixed" }, { id: "2.8", label: "2.8" }, { id: "3.1", label: "3.1" }, { id: "3.2", label: "3.2" },
-  { id: "3.3", label: "3.3" }, { id: "3.4", label: "3.4" }, { id: "3.5", label: "3.5" },
+type Pick = GenSection | GenMix;
+const GROUPS: { label: string; items: { id: Pick; label: string }[] }[] = [
+  { label: "Quiz 4", items: [{ id: "mixed-q4", label: "Mix" }, { id: "3.6", label: "3.6" }, { id: "3.9", label: "3.9" }, { id: "3.10", label: "3.10" }, { id: "3.11", label: "3.11" }, { id: "4.1", label: "4.1" }] },
+  { label: "Quiz 3", items: [{ id: "mixed-q3", label: "Mix" }, { id: "2.8", label: "2.8" }, { id: "3.1", label: "3.1" }, { id: "3.2", label: "3.2" }, { id: "3.3", label: "3.3" }, { id: "3.4", label: "3.4" }, { id: "3.5", label: "3.5" }] },
 ];
 
 type Verdict = "right" | "wrong" | null;
 
 export default function Generator() {
-  const [section, setSection] = useState<GenSection | "mixed">("mixed");
+  const [section, setSection] = useState<Pick>("mixed-q4");
   const [prob, setProb] = useState<GenProblem | null>(null);
   const [n, setN] = useState(0);
   const [hint, setHint] = useState(false);
@@ -23,14 +24,14 @@ export default function Generator() {
   const [marked, setMarked] = useState(false);
   const stats = useGenStats();
 
-  const next = useCallback((s: GenSection | "mixed") => {
+  const next = useCallback((s: Pick) => {
     setProb(generate(s));
     setN((k) => k + 1);
     setHint(false); setSol(false); setTyped(""); setVerdict(null); setMarked(false);
   }, []);
 
   // first problem after mount, so the server and browser renders match
-  useEffect(() => next("mixed"), [next]);
+  useEffect(() => next("mixed-q4"), [next]);
 
   const html = useMemo(() => prob && {
     q: tex(prob.question), hint: tex(prob.hint), steps: prob.steps.map(tex), answer: tex(prob.answer),
@@ -59,14 +60,19 @@ export default function Generator() {
   return (
     <div className="gen">
       <div className="controls">
-        <div className="seg" role="group" aria-label="Section">
-          {SECTIONS.map((s) => (
-            <button key={s.id} type="button" className={section === s.id ? "on" : ""} aria-pressed={section === s.id}
-              onClick={() => { setSection(s.id); next(s.id); }}>
-              {s.label}
-            </button>
-          ))}
-        </div>
+        {GROUPS.map((g) => (
+          <div key={g.label} className="gen-group">
+            <span>{g.label}</span>
+            <div className="seg" role="group" aria-label={`${g.label} sections`}>
+              {g.items.map((s) => (
+                <button key={s.id} type="button" className={section === s.id ? "on" : ""} aria-pressed={section === s.id}
+                  onClick={() => { setSection(s.id); next(s.id); }}>
+                  {s.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        ))}
         <span className="gen-stats">{tried ? `${right} / ${tried} right so far` : "No problems tried yet"}</span>
       </div>
 

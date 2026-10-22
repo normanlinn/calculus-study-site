@@ -3,12 +3,15 @@ import { AnimatePresence, motion } from "motion/react";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import type { Flashcard } from "@/content/types";
 
-type Filter = "all" | "trig" | "rules";
+type Filter = "all" | "q4" | "trig" | "rules";
 const FILTERS: { id: Filter; label: string }[] = [
   { id: "all", label: "All cards" },
-  { id: "trig", label: "Trig only" },
-  { id: "rules", label: "Rules only" },
+  { id: "q4", label: "Quiz 4" },
+  { id: "trig", label: "Trig" },
+  { id: "rules", label: "Rules" },
 ];
+const matches = (tag: string, f: Filter) =>
+  f === "all" || (f === "q4" ? tag.startsWith("Q4") : f === "trig" ? tag.startsWith("Trig") : !tag.startsWith("Trig") && !tag.startsWith("Q4"));
 
 const shuffle = (a: number[]) => {
   const b = [...a];
@@ -26,7 +29,7 @@ export default function Flashcards({ items }: { items: Flashcard[] }) {
     () =>
       items
         .map((c, i) => ({ c, i }))
-        .filter(({ c }) => filter === "all" || (filter === "trig" ? c.tag.startsWith("Trig") : !c.tag.startsWith("Trig")))
+        .filter(({ c }) => matches(c.tag, filter))
         .map(({ i }) => i),
     [items, filter],
   );

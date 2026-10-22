@@ -163,7 +163,7 @@ function makeKit(root: HTMLElement, signal: AbortSignal) {
     on(cv, "pointerup", () => (down = false));
     on(cv, "pointercancel", () => (down = false));
   };
-  return { $, on, text, animate, dragX };
+  return { $, on, text, animate, dragX, signal };
 }
 type Kit = ReturnType<typeof makeKit>;
 
@@ -473,6 +473,204 @@ function imp({ $, on, text }: Kit) {
   return draw;
 }
 
+/* ---------- §3.6: slope of log_b x ---------- */
+function lnLab({ $, on, text, animate, dragX }: Kit) {
+  const cv = $<HTMLCanvasElement>("#ln-cv"), X = $<HTMLInputElement>("#ln-x"), B = $<HTMLSelectElement>("#ln-base");
+  let P: P | null = null;
+  function draw() {
+    const x = +X.value, b = B.value === "e" ? Math.E : +B.value, lb = Math.log(b);
+    const f: Fn = (t) => Math.log(t) / lb, fp: Fn = (t) => 1 / (t * lb);
+    P = Plot(cv, -0.3, 6.3, -2.6, 3.2);
+    curve(P, fp, css("--deriv"), 2.5, 0.01, 6.3, [7, 5]);
+    line(P, x, f(x), fp(x), css("--tangent"), 2);
+    curve(P, f, css("--accent"), 3, 0.01, 6.3);
+    dot(P, x, f(x), css("--tangent"), 6);
+    dot(P, x, fp(x), css("--deriv"), 5);
+    label(P, B.value === "e" ? "ln x" : `log${B.value === "2" ? "₂" : "₁₀"} x`, 5.2, f(5.2), css("--accent"), 0, -10);
+    label(P, B.value === "e" ? "1/x" : "1/(x ln b)", 4.6, fp(4.6), css("--deriv"), 0, -10);
+    text("#ln-xv", fmt(x, 2));
+    text("#ln-m", fmt(fp(x), 4));
+    text("#ln-f", fmt(1 / (x * lb), 4));
+  }
+  on(X, "input", draw); on(B, "change", draw);
+  dragX(cv, () => P, X);
+  on($("#ln-anim"), "click", () => animate(X, 0.25, 6, 4000));
+  return draw;
+}
+
+/* ---------- §3.9: sliding ladder ---------- */
+function ladder({ $, on, text, signal }: Kit) {
+  const cv = $<HTMLCanvasElement>("#ld-cv"), X = $<HTMLInputElement>("#ld-x"), V = $<HTMLInputElement>("#ld-v"), btn = $<HTMLButtonElement>("#ld-play");
+  const L = 5;
+  let raf = 0, playing = false, last = 0;
+  signal.addEventListener("abort", () => cancelAnimationFrame(raf));
+  function draw() {
+    const x = +X.value, v = +V.value, y = Math.sqrt(Math.max(0, L * L - x * x)), dy = -(x / y) * v;
+    const P = Plot(cv, -0.9, 8.1, -0.6, 5.6, { xstep: 1, ystep: 1 });
+    const c = P.c;
+    c.save();
+    c.strokeStyle = css("--ink"); c.lineWidth = 5;
+    c.beginPath(); c.moveTo(P.X(0), P.Y(5.6)); c.lineTo(P.X(0), P.Y(0)); c.lineTo(P.X(8.1), P.Y(0)); c.stroke();
+    c.strokeStyle = css("--accent"); c.lineWidth = 7; c.lineCap = "round";
+    c.beginPath(); c.moveTo(P.X(x), P.Y(0)); c.lineTo(P.X(0), P.Y(y)); c.stroke();
+    const arrow = (x0: number, y0: number, x1: number, y1: number, col: string) => {
+      c.strokeStyle = col; c.fillStyle = col; c.lineWidth = 3;
+      c.beginPath(); c.moveTo(P.X(x0), P.Y(y0)); c.lineTo(P.X(x1), P.Y(y1)); c.stroke();
+      const ang = Math.atan2(P.Y(y1) - P.Y(y0), P.X(x1) - P.X(x0));
+      c.beginPath(); c.moveTo(P.X(x1), P.Y(y1));
+      c.lineTo(P.X(x1) - 10 * Math.cos(ang - 0.4), P.Y(y1) - 10 * Math.sin(ang - 0.4));
+      c.lineTo(P.X(x1) - 10 * Math.cos(ang + 0.4), P.Y(y1) - 10 * Math.sin(ang + 0.4));
+      c.closePath(); c.fill();
+    };
+    arrow(x, 0.25, x + v * 0.8, 0.25, css("--tangent"));
+    if (y > 0.05) arrow(0.25, y, 0.25, y + Math.max(-4.5, dy * 0.8), css("--deriv"));
+    c.restore();
+    label(P, `x = ${x.toFixed(2)}`, x / 2, 0, css("--ink"), -20, 18);
+    label(P, `y = ${y.toFixed(2)}`, 0, y / 2, css("--ink"), 10, 0);
+    label(P, "5 m", x / 2, y / 2, css("--accent"), 8, -8);
+    text("#ld-xy", `x = ${x.toFixed(2)} m, y = ${y.toFixed(2)} m`);
+    text("#ld-sum", (x * x + y * y).toFixed(2));
+    text("#ld-dy", y < 0.05 ? "→ −∞ (top hits the floor)" : `${fmt(dy, 3)} m/s`);
+  }
+  const stop = () => { playing = false; cancelAnimationFrame(raf); btn.textContent = "Play"; };
+  const tick = (t: number) => {
+    if (!playing) return;
+    const dt = last ? (t - last) / 1000 : 0; last = t;
+    const nx = Math.min(+X.max, +X.value + +V.value * dt);
+    X.value = String(nx); draw();
+    if (nx >= +X.max) stop(); else raf = requestAnimationFrame(tick);
+  };
+  on(btn, "click", () => {
+    if (playing) return stop();
+    if (+X.value >= +X.max - 0.01) X.value = "0.3";
+    playing = true; last = 0; btn.textContent = "Pause";
+    raf = requestAnimationFrame(tick);
+  });
+  on(X, "input", () => { stop(); draw(); }); on(V, "input", draw);
+  return draw;
+}
+
+/* ---------- §3.10: linearization ---------- */
+function linear({ $, on, text }: Kit) {
+  const cv = $<HTMLCanvasElement>("#lin-cv"), F = $<HTMLSelectElement>("#lin-fn"), D = $<HTMLInputElement>("#lin-dx");
+  interface Lin { f: Fn; fp: Fn; a: number; v: [number, number, number, number]; dmin: number; dmax: number }
+  const FN: Record<string, Lin> = {
+    sqrt: { f: Math.sqrt, fp: (x) => 1 / (2 * Math.sqrt(x)), a: 4, v: [-0.5, 10, -0.6, 3.8], dmin: -3.9, dmax: 5.5 },
+    exp: { f: Math.exp, fp: Math.exp, a: 0, v: [-2.4, 2.4, -1, 6], dmin: -2, dmax: 1.7 },
+    ln: { f: Math.log, fp: (x) => 1 / x, a: 1, v: [-0.3, 4.5, -2.5, 2], dmin: -0.9, dmax: 3.2 },
+    sin: { f: Math.sin, fp: Math.cos, a: 0, v: [-3.4, 3.4, -2.2, 2.2], dmin: -3, dmax: 3 },
+    cbrt: { f: Math.cbrt, fp: (x) => 1 / (3 * Math.cbrt(x * x)), a: 8, v: [-1, 18, -0.6, 3.4], dmin: -7.5, dmax: 9 },
+  };
+  function draw() {
+    const G = FN[F.value], dx = +D.value, a = G.a, x = a + dx;
+    const fa = G.f(a), m = G.fp(a), Lx = fa + m * dx, fx = G.f(x);
+    const P = Plot(cv, ...G.v);
+    line(P, a, fa, m, css("--tangent"), 2.2);
+    curve(P, G.f, css("--accent"), 3);
+    const c = P.c;
+    c.save(); c.lineWidth = 3;
+    c.strokeStyle = css("--muted"); c.setLineDash([4, 4]);
+    c.beginPath(); c.moveTo(P.X(a), P.Y(fa)); c.lineTo(P.X(x), P.Y(fa)); c.stroke();
+    c.setLineDash([]);
+    c.strokeStyle = css("--tangent"); c.beginPath(); c.moveTo(P.X(x) + 4, P.Y(fa)); c.lineTo(P.X(x) + 4, P.Y(Lx)); c.stroke();
+    if (Number.isFinite(fx)) { c.strokeStyle = css("--accent"); c.beginPath(); c.moveTo(P.X(x) - 4, P.Y(fa)); c.lineTo(P.X(x) - 4, P.Y(fx)); c.stroke(); }
+    c.restore();
+    dot(P, a, fa, css("--ink"), 5);
+    if (Number.isFinite(fx)) dot(P, x, fx, css("--accent"), 6);
+    dot(P, x, Lx, css("--tangent"), 6, true);
+    label(P, "a", a, fa, css("--ink"), -14, 18);
+    label(P, "dx", (a + x) / 2, fa, css("--muted"), -8, 18);
+    text("#lin-f", Number.isFinite(fx) ? fmt(fx, 5) : "undefined");
+    text("#lin-L", fmt(Lx, 5));
+    text("#lin-e", Number.isFinite(fx) ? fmt(fx - Lx, 5) : "–");
+    text("#lin-dy", Number.isFinite(fx) ? `Δy = ${fmt(fx - fa, 4)}, dy = ${fmt(m * dx, 4)}` : "–");
+  }
+  on(F, "change", () => { const G = FN[F.value]; D.min = String(G.dmin); D.max = String(G.dmax); D.value = "1"; draw(); });
+  on(D, "input", draw);
+  return draw;
+}
+
+/* ---------- §3.11: hyperbola and graphs ---------- */
+function hyper({ $, on, text, animate }: Kit) {
+  const left = $<HTMLCanvasElement>("#hy-left"), right = $<HTMLCanvasElement>("#hy-right"), T = $<HTMLInputElement>("#hy-t");
+  function draw() {
+    const t = +T.value, ch = Math.cosh(t), sh = Math.sinh(t);
+    const A = Plot(left, -1.6, 5, -4.6, 4.6, { xstep: 1, ystep: 1 });
+    const c = A.c;
+    // shaded hyperbolic sector from the origin to the point
+    c.save(); c.fillStyle = `color-mix(in srgb, ${css("--accent")} 18%, transparent)`;
+    c.beginPath(); c.moveTo(A.X(0), A.Y(0));
+    const n = 60;
+    for (let i = 0; i <= n; i++) { const u = (t * i) / n; c.lineTo(A.X(Math.cosh(u)), A.Y(Math.sinh(u))); }
+    c.closePath(); c.fill(); c.restore();
+    for (const sgn of [1, -1]) curve(A, (x) => (x >= 1 ? sgn * Math.sqrt(x * x - 1) : NaN), css("--accent"), 3, 1, 5);
+    c.save(); c.strokeStyle = css("--tangent"); c.lineWidth = 2; c.setLineDash([4, 4]);
+    c.beginPath(); c.moveTo(A.X(ch), A.Y(0)); c.lineTo(A.X(ch), A.Y(sh)); c.stroke(); c.restore();
+    dot(A, ch, sh, css("--tangent"), 6);
+    label(A, "x² − y² = 1", 2.6, 4.3, css("--accent"), 0, 0);
+    label(A, "(cosh t, sinh t)", ch, sh, css("--tangent"), 8, sh >= 0 ? -8 : 18);
+    const B = Plot(right, -2.6, 2.6, -3.6, 4.4, { xstep: 1, ystep: 1 });
+    curve(B, Math.cosh, css("--accent"), 3);
+    curve(B, Math.sinh, css("--deriv"), 3);
+    curve(B, Math.tanh, css("--tangent"), 2.5, undefined, undefined, [6, 5]);
+    dot(B, t, ch, css("--accent"), 5); dot(B, t, sh, css("--deriv"), 5);
+    label(B, "cosh", 1.9, Math.cosh(1.9), css("--accent"), -44, 4);
+    label(B, "sinh", 2, Math.sinh(2), css("--deriv"), 6, 14);
+    label(B, "tanh", 2, 1, css("--tangent"), -10, -8);
+    text("#hy-c", ch.toFixed(4)); text("#hy-s", fmt(sh, 4)); text("#hy-id", (ch * ch - sh * sh).toFixed(6));
+  }
+  on(T, "input", draw);
+  on($("#hy-anim"), "click", () => animate(T, -2.2, 2.2, 4500));
+  return draw;
+}
+
+/* ---------- §4.1: closed interval method ---------- */
+function extrema({ $, on }: Kit) {
+  const cv = $<HTMLCanvasElement>("#ex-cv"), F = $<HTMLSelectElement>("#ex-fn"), A = $<HTMLInputElement>("#ex-a"), Bi = $<HTMLInputElement>("#ex-b");
+  const table = $("#ex-table");
+  interface E { f: Fn; crit: number[]; v: [number, number, number, number]; lo: number; hi: number; a: number; b: number; name: string }
+  const FN: Record<string, E> = {
+    cubic: { f: (x) => x ** 3 - 3 * x * x + 1, crit: [0, 2], v: [-2.3, 4.5, -6, 19], lo: -2, hi: 4.2, a: -0.5, b: 4, name: "x³ − 3x² + 1" },
+    quartic: { f: (x) => 3 * x ** 4 - 4 * x ** 3 - 12 * x * x + 1, crit: [-1, 0, 2], v: [-2.4, 3.4, -36, 40], lo: -2.2, hi: 3.2, a: -2, b: 3, name: "3x⁴ − 4x³ − 12x² + 1" },
+    frac: { f: (x) => x + 1 / x, crit: [1], v: [-0.2, 4.6, -0.5, 6.5], lo: 0.2, hi: 4.4, a: 0.2, b: 4, name: "x + 1/x" },
+  };
+  const n2 = (v: number) => fmt(v, Math.abs(v) < 10 ? 3 : 2);
+  function draw() {
+    const G = FN[F.value];
+    let a = +A.value, b = +Bi.value;
+    if (b - a < 0.1) { b = Math.min(G.hi, a + 0.1); a = b - 0.1; }
+    const P = Plot(cv, ...G.v);
+    const c = P.c;
+    c.save(); c.fillStyle = `color-mix(in srgb, ${css("--accent")} 8%, transparent)`;
+    c.fillRect(P.X(a), 0, P.X(b) - P.X(a), P.h); c.restore();
+    curve(P, G.f, css("--axis"), 2);
+    curve(P, G.f, css("--accent"), 3.5, a, b);
+    const cands = [
+      { x: a, kind: "endpoint" }, ...G.crit.filter((x) => x > a && x < b).map((x) => ({ x, kind: "critical" })), { x: b, kind: "endpoint" },
+    ].map((k) => ({ ...k, y: G.f(k.x) }));
+    const max = cands.reduce((m, k) => (k.y > m.y ? k : m)), min = cands.reduce((m, k) => (k.y < m.y ? k : m));
+    for (const k of cands) {
+      dot(P, k.x, k.y, k.kind === "critical" ? css("--tangent") : css("--muted"), 6);
+      if (k === max || k === min) {
+        c.save(); c.strokeStyle = k === max ? css("--good") : css("--bad"); c.lineWidth = 3;
+        c.beginPath(); c.arc(P.X(k.x), P.Y(k.y), 11, 0, Math.PI * 2); c.stroke(); c.restore();
+        label(P, k === max ? "abs max" : "abs min", k.x, k.y, k === max ? css("--good") : css("--bad"), 12, k === max ? -10 : 20);
+      }
+    }
+    const skipped = G.crit.filter((x) => x <= a || x >= b);
+    table.innerHTML = cands
+      .map((k) => `<div>${k.kind === "critical" ? "critical" : "endpoint"} x = ${n2(k.x)}<b style="color:${k === max ? css("--good") : k === min ? css("--bad") : "inherit"}">f = ${n2(k.y)}${k === max ? " ← max" : k === min ? " ← min" : ""}</b></div>`)
+      .join("") + (skipped.length ? `<div>outside [a, b], skipped<b>${skipped.map((x) => `x = ${n2(x)}`).join(", ")}</b></div>` : "");
+  }
+  on(F, "change", () => {
+    const G = FN[F.value];
+    for (const el of [A, Bi]) { el.min = String(G.lo); el.max = String(G.hi); }
+    A.value = String(G.a); Bi.value = String(G.b); draw();
+  });
+  on(A, "input", draw); on(Bi, "input", draw);
+  return draw;
+}
+
 const LABS: Record<LabId, (k: Kit) => () => void> = {
   "lab-secant": secant,
   "lab-trace": trace,
@@ -482,6 +680,11 @@ const LABS: Record<LabId, (k: Kit) => () => void> = {
   "lab-circ": circ,
   "lab-chain": chain,
   "lab-imp": imp,
+  "lab-ln": lnLab,
+  "lab-ladder": ladder,
+  "lab-linear": linear,
+  "lab-hyper": hyper,
+  "lab-extrema": extrema,
 };
 
 /** Start a lab inside root. Redraws on resize and theme change. Returns cleanup. */

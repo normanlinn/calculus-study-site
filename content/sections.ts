@@ -295,7 +295,8 @@ export const sections: Section[] = [
      }
     ]
    }
-  ]
+  ],
+  "unit": "q3"
  },
  {
   "id": "s28",
@@ -555,7 +556,8 @@ export const sections: Section[] = [
      }
     ]
    }
-  ]
+  ],
+  "unit": "q3"
  },
  {
   "id": "s31",
@@ -841,7 +843,8 @@ export const sections: Section[] = [
      }
     ]
    }
-  ]
+  ],
+  "unit": "q3"
  },
  {
   "id": "s32",
@@ -1043,7 +1046,8 @@ export const sections: Section[] = [
      }
     ]
    }
-  ]
+  ],
+  "unit": "q3"
  },
  {
   "id": "s33",
@@ -1279,7 +1283,8 @@ export const sections: Section[] = [
      }
     ]
    }
-  ]
+  ],
+  "unit": "q3"
  },
  {
   "id": "s34",
@@ -1497,7 +1502,8 @@ export const sections: Section[] = [
      }
     ]
    }
-  ]
+  ],
+  "unit": "q3"
  },
  {
   "id": "s35",
@@ -1686,7 +1692,1634 @@ export const sections: Section[] = [
      }
     ]
    }
-  ]
+  ],
+  "unit": "q3"
+ },
+ {
+  "id": "q4",
+  "slug": "quiz-4",
+  "num": "Quiz 4 · Tue, Oct 27",
+  "title": "Quiz 4 study plan",
+  "lede": "Sections 3.6, 3.9, 3.10, 3.11 and 4.1: what's assigned, what's solved here, and a day-by-day plan.",
+  "blocks": [
+   {
+    "type": "countdown",
+    "target": "2026-10-27",
+    "label": "Quiz 4"
+   },
+   {
+    "type": "heading",
+    "text": "Your assigned problems"
+   },
+   {
+    "type": "prose",
+    "html": "<p>Every problem number below is solved step by step on its section page. Tap one to jump straight to it. Try it on paper first, then open the solution.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": false,
+      "html": "<span class=\"tag\">§3.6 · assigned 1–59 odd</span><p><strong><a href=\"/3-6/\">Derivatives of Logarithmic and Inverse Trig Functions</a></strong></p><p class=\"note\">Solved step by step on the site: <a href=\"/3-6/#p36-5\">#5</a>, <a href=\"/3-6/#p36-9\">#9</a>, <a href=\"/3-6/#p36-13\">#13</a>, <a href=\"/3-6/#p36-15\">#15</a>, <a href=\"/3-6/#p36-17\">#17</a>, <a href=\"/3-6/#p36-19\">#19</a>, <a href=\"/3-6/#p36-21\">#21</a>, <a href=\"/3-6/#p36-29\">#29</a>, <a href=\"/3-6/#p36-35\">#35</a>, <a href=\"/3-6/#p36-39\">#39</a>, <a href=\"/3-6/#p36-43\">#43</a>, <a href=\"/3-6/#p36-45\">#45</a>, <a href=\"/3-6/#p36-51\">#51</a>, <a href=\"/3-6/#p36-55\">#55</a>, <a href=\"/3-6/#p36-57\">#57</a>, <a href=\"/3-6/#p36-59\">#59</a></p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">§3.9 · assigned 1–33 odd</span><p><strong><a href=\"/3-9/\">Related Rates</a></strong></p><p class=\"note\">Solved step by step on the site: <a href=\"/3-9/#p39-1\">#1</a>, <a href=\"/3-9/#p39-3\">#3</a>, <a href=\"/3-9/#p39-5\">#5</a>, <a href=\"/3-9/#p39-7\">#7</a>, <a href=\"/3-9/#p39-9\">#9</a>, <a href=\"/3-9/#p39-13\">#13</a>, <a href=\"/3-9/#p39-15\">#15</a>, <a href=\"/3-9/#p39-17\">#17</a>, <a href=\"/3-9/#p39-21\">#21</a>, <a href=\"/3-9/#p39-23\">#23</a>, <a href=\"/3-9/#p39-25\">#25</a>, <a href=\"/3-9/#p39-29\">#29</a>, <a href=\"/3-9/#p39-31\">#31</a>, <a href=\"/3-9/#p39-33\">#33</a></p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">§3.10 · assigned 1–37 odd</span><p><strong><a href=\"/3-10/\">Linear Approximations and Differentials</a></strong></p><p class=\"note\">Solved step by step on the site: <a href=\"/3-10/#p310-1\">#1</a>, <a href=\"/3-10/#p310-3\">#3</a>, <a href=\"/3-10/#p310-5\">#5</a>, <a href=\"/3-10/#p310-7\">#7</a>, <a href=\"/3-10/#p310-11\">#11</a>, <a href=\"/3-10/#p310-13\">#13</a>, <a href=\"/3-10/#p310-17\">#17</a>, <a href=\"/3-10/#p310-19\">#19</a>, <a href=\"/3-10/#p310-21\">#21</a>, <a href=\"/3-10/#p310-23\">#23</a>, <a href=\"/3-10/#p310-25\">#25</a>, <a href=\"/3-10/#p310-31\">#31</a>, <a href=\"/3-10/#p310-33\">#33</a>, <a href=\"/3-10/#p310-35\">#35</a>, <a href=\"/3-10/#p310-37\">#37</a></p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">§3.11 · assigned 1–45 odd</span><p><strong><a href=\"/3-11/\">Hyperbolic Functions</a></strong></p><p class=\"note\">Solved step by step on the site: <a href=\"/3-11/#p311-1\">#1</a>, <a href=\"/3-11/#p311-3\">#3</a>, <a href=\"/3-11/#p311-5\">#5</a>, <a href=\"/3-11/#p311-7\">#7</a>, <a href=\"/3-11/#p311-9\">#9</a>, <a href=\"/3-11/#p311-13\">#13</a>, <a href=\"/3-11/#p311-19\">#19</a>, <a href=\"/3-11/#p311-25\">#25</a>, <a href=\"/3-11/#p311-27\">#27</a>, <a href=\"/3-11/#p311-35\">#35</a>, <a href=\"/3-11/#p311-37\">#37</a>, <a href=\"/3-11/#p311-39\">#39</a>, <a href=\"/3-11/#p311-43\">#43</a>, <a href=\"/3-11/#p311-45\">#45</a></p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">§4.1 · assigned 13–65 odd</span><p><strong><a href=\"/4-1/\">Maximum and Minimum Values</a></strong></p><p class=\"note\">Solved step by step on the site: <a href=\"/4-1/#p41-19\">#19</a>, <a href=\"/4-1/#p41-23\">#23</a>, <a href=\"/4-1/#p41-29\">#29</a>, <a href=\"/4-1/#p41-31\">#31</a>, <a href=\"/4-1/#p41-33\">#33</a>, <a href=\"/4-1/#p41-35\">#35</a>, <a href=\"/4-1/#p41-37\">#37</a>, <a href=\"/4-1/#p41-39\">#39</a>, <a href=\"/4-1/#p41-41\">#41</a>, <a href=\"/4-1/#p41-43\">#43</a>, <a href=\"/4-1/#p41-45\">#45</a>, <a href=\"/4-1/#p41-47\">#47</a>, <a href=\"/4-1/#p41-51\">#51</a>, <a href=\"/4-1/#p41-53\">#53</a>, <a href=\"/4-1/#p41-55\">#55</a>, <a href=\"/4-1/#p41-57\">#57</a>, <a href=\"/4-1/#p41-59\">#59</a>, <a href=\"/4-1/#p41-61\">#61</a>, <a href=\"/4-1/#p41-63\">#63</a>, <a href=\"/4-1/#p41-65\">#65</a></p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Day-by-day plan"
+   },
+   {
+    "type": "prose",
+    "html": "<div class=\"compare\"><table><thead><tr><th>Day</th><th>Focus</th><th>Do this</th></tr></thead><tbody>\n<tr><th>Thu Oct 22</th><td>§3.6 logs</td><td>Lesson + lab, then #5–21 odd. Drill the ln and log<sub>b</sub> flashcards.</td></tr>\n<tr><th>Fri Oct 23</th><td>§3.6 log diff + §3.11</td><td>#45–59 odd (log differentiation), then hyperbolic #1–27 odd and #35–45 odd.</td></tr>\n<tr><th>Sat Oct 24</th><td>§3.9 related rates</td><td>The biggest topic. Learn the recipe, play with the ladder lab, do #1–33 odd. Draw a picture every time.</td></tr>\n<tr><th>Sun Oct 25</th><td>§3.10 + §4.1</td><td>Linearization #1–37 odd. Then critical numbers #29–47 odd.</td></tr>\n<tr><th>Mon Oct 26</th><td>§4.1 + review</td><td>Closed Interval Method #51–65 odd. Then 20 mixed problems on the Generate page, set to the Quiz 4 sections.</td></tr>\n<tr><th>Tue Oct 27</th><td>Quiz day</td><td>Light review only: cheat sheet and a round of flashcards.</td></tr>\n</tbody></table></div>"
+   },
+   {
+    "type": "heading",
+    "text": "Skills the quiz will test"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": false,
+      "html": "<span class=\"tag\">§3.6</span><p>Differentiate \\(\\ln u\\), \\(\\log_b u\\), \\(b^u\\); simplify with log laws first; logarithmic differentiation for \\(x^x\\)-type functions.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">§3.9</span><p>Set up the equation, differentiate with respect to \\(t\\), <em>then</em> plug in. Pythagoras, similar triangles, cones, spheres.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">§3.10</span><p>\\(L(x)=f(a)+f'(a)(x-a)\\); estimate numbers; \\(dy=f'(x)dx\\) vs \\(\\Delta y\\); error estimates.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">§3.11</span><p>Definitions with \\(e^x\\); \\(\\cosh^2-\\sinh^2=1\\); derivatives (cosh′ has no minus).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">§4.1</span><p>Critical numbers (\\(f'=0\\) or undefined, in the domain); Closed Interval Method with a table of candidates.</p>"
+     }
+    ]
+   }
+  ],
+  "unit": "q4"
+ },
+ {
+  "id": "s36",
+  "slug": "3-6",
+  "num": "§3.6",
+  "title": "Derivatives of Logarithmic and Inverse Trig Functions",
+  "lede": "ln, other logs, logarithmic differentiation, and the inverse trig family.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p>Two new families: <strong>logarithms</strong> and <strong>inverse trig functions</strong>. Every formula comes from implicit differentiation: if \\(y=\\ln x\\) then \\(e^y=x\\), so \\(e^y\\,y'=1\\) and \\(y'=\\frac{1}{e^y}=\\frac1x\\).</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Natural log</span>\\[\\frac{d}{dx}\\ln x=\\frac1x\\qquad \\frac{d}{dx}\\ln|x|=\\frac1x\\]"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Chain rule version</span>\\[\\frac{d}{dx}\\ln u=\\frac{u'}{u}\\]<p class=\"note\">“Derivative of the inside over the inside.”</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Other bases</span>\\[\\frac{d}{dx}\\log_b x=\\frac{1}{x\\ln b}\\qquad \\frac{d}{dx}b^x=b^x\\ln b\\]"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Log laws (use first!)</span><p>\\(\\ln(ab)=\\ln a+\\ln b\\), \\(\\ln\\frac ab=\\ln a-\\ln b\\), \\(\\ln a^n=n\\ln a\\). Splitting first turns one hard quotient rule into easy pieces.</p>"
+     }
+    ]
+   },
+   {
+    "type": "lab",
+    "id": "lab-ln",
+    "html": "<div class=\"lab-head\"><h4>The slope of ln x is 1/x</h4><span class=\"tag\">Lab · drag on the graph</span></div>\n<canvas class=\"tall\" id=\"ln-cv\" aria-label=\"Graph of ln x with a tangent line; its slope is traced against 1/x\"></canvas>\n<div class=\"controls\">\n  <label for=\"ln-x\">x <input id=\"ln-x\" type=\"range\" min=\"0.25\" max=\"6\" step=\"0.01\" value=\"2\"></label>\n  <label for=\"ln-base\">curve\n    <select id=\"ln-base\">\n      <option value=\"e\">ln x</option>\n      <option value=\"2\">log₂ x</option>\n      <option value=\"10\">log₁₀ x</option>\n    </select>\n  </label>\n  <button type=\"button\" id=\"ln-anim\">Sweep</button>\n</div>\n<div class=\"readout\">\n  <div>x<b id=\"ln-xv\">–</b></div>\n  <div>slope of the tangent<b class=\"c-t\" id=\"ln-m\">–</b></div>\n  <div>formula 1 / (x ln b)<b class=\"c-d\" id=\"ln-f\">–</b></div>\n</div>\n<p class=\"note\">The pink dashed curve is 1/(x ln b). Its height always equals the slope of the blue curve. For ln x the base is e and ln e = 1, so the slope is simply 1/x. Other bases pick up the extra factor 1/ln b.</p>"
+   },
+   {
+    "type": "heading",
+    "text": "Logarithmic differentiation"
+   },
+   {
+    "type": "prose",
+    "html": "<p>For messy products/quotients/powers, and for <strong>variable to a variable power</strong> like \\(x^x\\), take \\(\\ln\\) of both sides first:</p><ol class=\"steps\"><li>Take \\(\\ln\\) of both sides: \\(\\ln y=\\ln(\\dots)\\).</li><li>Use the log laws to break it into sums.</li><li>Differentiate implicitly: the left side becomes \\(\\dfrac{y'}{y}\\).</li><li>Multiply by \\(y\\) and substitute the original function back in.</li></ol><p class=\"callout\">Neither the power rule nor the exponential rule works for \\(x^x\\): the power rule needs a constant exponent, and \\(b^x\\) needs a constant base. Logarithmic differentiation is the way.</p>"
+   },
+   {
+    "type": "heading",
+    "text": "Inverse trig derivatives"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": false,
+      "html": "<span class=\"tag\">sin⁻¹ and cos⁻¹</span>\\[\\frac{d}{dx}\\sin^{-1}x=\\frac{1}{\\sqrt{1-x^2}}\\qquad\\frac{d}{dx}\\cos^{-1}x=-\\frac{1}{\\sqrt{1-x^2}}\\]"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">tan⁻¹ and cot⁻¹</span>\\[\\frac{d}{dx}\\tan^{-1}x=\\frac{1}{1+x^2}\\qquad\\frac{d}{dx}\\cot^{-1}x=-\\frac{1}{1+x^2}\\]"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">sec⁻¹ and csc⁻¹</span>\\[\\frac{d}{dx}\\sec^{-1}x=\\frac{1}{x\\sqrt{x^2-1}}\\qquad\\frac{d}{dx}\\csc^{-1}x=-\\frac{1}{x\\sqrt{x^2-1}}\\]"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Pattern</span><p>Same “co gets a minus” rule as in §3.3. With an inside \\(u\\), multiply by \\(u'\\): \\(\\frac{d}{dx}\\tan^{-1}(x^2)=\\frac{2x}{1+x^4}\\).</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Worked examples"
+   },
+   {
+    "type": "examples",
+    "items": [
+     {
+      "label": "ln of a polynomial (§3.6 #3)",
+      "html": "<p>Differentiate \\(f(x)=\\ln(x^2+3x+5)\\).</p><ol class=\"steps\"><li>Inside \\(u=x^2+3x+5\\), \\(u'=2x+3\\).</li><li>\\(\\dfrac{u'}{u}\\): \\(f'(x)=\\dfrac{2x+3}{x^2+3x+5}\\).</li></ol>"
+     },
+     {
+      "label": "Log laws first (§3.6 #24 style)",
+      "html": "<p>Differentiate \\(y=\\ln\\sqrt{\\dfrac{1+2x}{1-2x}}\\).</p><ol class=\"steps\"><li>Rewrite: \\(y=\\tfrac12\\big[\\ln(1+2x)-\\ln(1-2x)\\big]\\).</li><li>Differentiate each piece: \\(y'=\\tfrac12\\Big[\\dfrac{2}{1+2x}-\\dfrac{-2}{1-2x}\\Big]=\\dfrac{1}{1+2x}+\\dfrac{1}{1-2x}\\).</li><li>Combine: \\(y'=\\dfrac{(1-2x)+(1+2x)}{(1+2x)(1-2x)}=\\dfrac{2}{1-4x^2}\\).</li></ol>"
+     },
+     {
+      "label": "Variable to a variable power (§3.6 #49)",
+      "html": "<p>Differentiate \\(y=x^x\\).</p><ol class=\"steps\"><li>\\(\\ln y=x\\ln x\\)</li><li>Differentiate: \\(\\dfrac{y'}{y}=1\\cdot\\ln x+x\\cdot\\dfrac1x=\\ln x+1\\)</li><li>Multiply by \\(y\\): \\(y'=x^x(\\ln x+1)\\).</li></ol>"
+     },
+     {
+      "label": "Inverse trig with chain rule",
+      "html": "<p>Differentiate \\(y=\\tan^{-1}(x^2)\\).</p><ol class=\"steps\"><li>Outside: \\(\\tan^{-1}u\\to\\dfrac{1}{1+u^2}\\). Inside \\(u=x^2\\), \\(u'=2x\\).</li><li>\\(y'=\\dfrac{1}{1+(x^2)^2}\\cdot 2x=\\dfrac{2x}{1+x^4}\\).</li></ol>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p36-5",
+      "source": "§3.6 #5",
+      "href": null,
+      "question": "Differentiate \\(f(x)=\\sin(\\ln x)\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Outside \\(\\sin u\\), inside \\(u=\\ln x\\), \\(u'=\\tfrac1x\\).</p><p class=\"ans\">\\(f'(x)=\\dfrac{\\cos(\\ln x)}{x}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36-9",
+      "source": "§3.6 #9",
+      "href": null,
+      "question": "Differentiate \\(g(x)=\\ln\\big(xe^{-2x}\\big)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Split the product with \\(\\ln(ab)=\\ln a+\\ln b\\), and remember \\(\\ln e^{k}=k\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Log laws first: \\(g(x)=\\ln x+\\ln e^{-2x}=\\ln x-2x\\).</p><p class=\"ans\">\\(g'(x)=\\dfrac1x-2\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36-13",
+      "source": "§3.6 #13",
+      "href": null,
+      "question": "Differentiate \\(y=\\log_8(x^2+3x)\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\dfrac{d}{dx}\\log_b u=\\dfrac{u'}{u\\ln b}\\), with \\(u=x^2+3x\\), \\(u'=2x+3\\).</p><p class=\"ans\">\\(y'=\\dfrac{2x+3}{(x^2+3x)\\ln 8}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36-15",
+      "source": "§3.6 #15",
+      "href": null,
+      "question": "Differentiate \\(F(s)=\\ln(\\ln s)\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Inside \\(u=\\ln s\\), \\(u'=\\tfrac1s\\). So \\(F'=\\dfrac{1/s}{\\ln s}\\).</p><p class=\"ans\">\\(F'(s)=\\dfrac{1}{s\\ln s}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36-17",
+      "source": "§3.6 #17",
+      "href": null,
+      "question": "Differentiate \\(T(z)=2^z\\log_2 z\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Product rule with \\((2^z)'=2^z\\ln2\\) and \\((\\log_2 z)'=\\dfrac{1}{z\\ln 2}\\).</p><p class=\"ans\">\\(T'(z)=2^z\\ln 2\\,\\log_2 z+\\dfrac{2^z}{z\\ln 2}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36-19",
+      "source": "§3.6 #19",
+      "href": null,
+      "question": "Differentiate \\(y=\\ln|3-2x^5|\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\ln|u|\\) has the same derivative \\(\\dfrac{u'}{u}\\). Here \\(u'=-10x^4\\).</p><p class=\"ans\">\\(y'=\\dfrac{-10x^4}{3-2x^5}=\\dfrac{10x^4}{2x^5-3}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36-21",
+      "source": "§3.6 #21",
+      "href": null,
+      "question": "Differentiate \\(y=\\ln\\big(e^{-x}+xe^{-x}\\big)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Factor \\(e^{-x}\\) out of the inside, then use log laws.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Factor inside: \\(e^{-x}(1+x)\\). Then \\(y=\\ln e^{-x}+\\ln(1+x)=-x+\\ln(1+x)\\).</p><p>\\(y'=-1+\\dfrac{1}{1+x}=\\dfrac{-(1+x)+1}{1+x}\\).</p><p class=\"ans\">\\(y'=-\\dfrac{x}{1+x}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36-29",
+      "source": "§3.6 #29",
+      "href": null,
+      "question": "Find \\(y'\\) and \\(y''\\) for \\(y=\\sqrt{x}\\,\\ln x\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(y'=\\dfrac{1}{2\\sqrt x}\\ln x+\\sqrt x\\cdot\\dfrac1x=\\dfrac{\\ln x+2}{2\\sqrt x}\\).</p><p>Quotient rule: \\(y''=\\dfrac{\\frac1x\\cdot2\\sqrt x-(\\ln x+2)\\cdot\\frac{1}{\\sqrt x}}{4x}=\\dfrac{2-\\ln x-2}{4x\\sqrt x}\\).</p><p class=\"ans\">\\(y'=\\dfrac{\\ln x+2}{2\\sqrt x}\\), \\(y''=-\\dfrac{\\ln x}{4x^{3/2}}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36-35",
+      "source": "§3.6 #35",
+      "href": null,
+      "question": "Differentiate \\(f(x)=\\ln(x^2-2x)\\) and find the domain of \\(f\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'(x)=\\dfrac{2x-2}{x^2-2x}\\).</p><p>Domain: need \\(x^2-2x=x(x-2)>0\\), which happens when \\(x<0\\) or \\(x>2\\).</p><p class=\"ans\">\\(f'(x)=\\dfrac{2(x-1)}{x(x-2)}\\); domain \\((-\\infty,0)\\cup(2,\\infty)\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36-39",
+      "source": "§3.6 #39",
+      "href": null,
+      "question": "Find the tangent line to \\(y=\\ln(x^2-3x+1)\\) at \\((3,0)\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(y'=\\dfrac{2x-3}{x^2-3x+1}\\). At \\(x=3\\): \\(\\dfrac{3}{1}=3\\).</p><p>\\(y-0=3(x-3)\\).</p><p class=\"ans\">\\(y=3x-9\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36-43",
+      "source": "§3.6 #43",
+      "href": null,
+      "question": "Let \\(f(x)=cx+\\ln(\\cos x)\\). For what \\(c\\) is \\(f'(\\pi/4)=6\\)?",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'(x)=c+\\dfrac{-\\sin x}{\\cos x}=c-\\tan x\\).</p><p>\\(f'(\\pi/4)=c-1=6\\).</p><p class=\"ans\">\\(c=7\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36-45",
+      "source": "§3.6 #45",
+      "href": null,
+      "question": "Use logarithmic differentiation: \\(y=(x^2+2)^2(x^4+4)^4\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\ln y=2\\ln(x^2+2)+4\\ln(x^4+4)\\)</p><p>\\(\\dfrac{y'}{y}=\\dfrac{4x}{x^2+2}+\\dfrac{16x^3}{x^4+4}\\)</p><p class=\"ans\">\\(y'=(x^2+2)^2(x^4+4)^4\\left(\\dfrac{4x}{x^2+2}+\\dfrac{16x^3}{x^4+4}\\right)\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36-51",
+      "source": "§3.6 #51",
+      "href": null,
+      "question": "Differentiate \\(y=x^{\\sin x}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Variable base and variable exponent: take ln of both sides.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\ln y=\\sin x\\,\\ln x\\).</p><p>\\(\\dfrac{y'}{y}=\\cos x\\ln x+\\dfrac{\\sin x}{x}\\) (product rule).</p><p class=\"ans\">\\(y'=x^{\\sin x}\\left(\\cos x\\ln x+\\dfrac{\\sin x}{x}\\right)\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36-55",
+      "source": "§3.6 #55",
+      "href": null,
+      "question": "Differentiate \\(y=x^{\\ln x}\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\ln y=\\ln x\\cdot\\ln x=(\\ln x)^2\\).</p><p>\\(\\dfrac{y'}{y}=\\dfrac{2\\ln x}{x}\\).</p><p class=\"ans\">\\(y'=\\dfrac{2\\ln x}{x}\\,x^{\\ln x}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36-57",
+      "source": "§3.6 #57",
+      "href": null,
+      "question": "Find \\(y'\\) if \\(y=\\ln(x^2+y^2)\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Implicit: \\(y'=\\dfrac{2x+2yy'}{x^2+y^2}\\).</p><p>Multiply out: \\(y'(x^2+y^2)=2x+2yy'\\Rightarrow y'(x^2+y^2-2y)=2x\\).</p><p class=\"ans\">\\(y'=\\dfrac{2x}{x^2+y^2-2y}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p36-59",
+      "source": "§3.6 #59",
+      "href": null,
+      "question": "Find a formula for \\(f^{(n)}(x)\\) if \\(f(x)=\\ln(x-1)\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=(x-1)^{-1}\\), \\(f''=-(x-1)^{-2}\\), \\(f'''=2(x-1)^{-3}\\), \\(f^{(4)}=-6(x-1)^{-4}\\).</p><p>Signs alternate and the constants are \\(0!,1!,2!,3!,\\dots\\)</p><p class=\"ans\">\\(f^{(n)}(x)=\\dfrac{(-1)^{n-1}(n-1)!}{(x-1)^n}\\)</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Forgetting u′",
+      "html": "<p>\\(\\frac{d}{dx}\\ln(x^2+1)=\\frac{2x}{x^2+1}\\), not \\(\\frac{1}{x^2+1}\\).</p>"
+     },
+     {
+      "title": "ln of a sum",
+      "html": "<p>\\(\\ln(a+b)\\neq\\ln a+\\ln b\\). Log laws only split products, quotients and powers.</p>"
+     },
+     {
+      "title": "Power rule on x^x",
+      "html": "<p>\\((x^x)'\\neq x\\cdot x^{x-1}\\). Use logarithmic differentiation.</p>"
+     },
+     {
+      "title": "Missing ln b",
+      "html": "<p>\\((\\log_2 x)'=\\frac{1}{x\\ln 2}\\) and \\((2^x)'=2^x\\ln 2\\). Only base \\(e\\) has no extra factor.</p>"
+     }
+    ]
+   }
+  ],
+  "unit": "q4"
+ },
+ {
+  "id": "s39",
+  "slug": "3-9",
+  "num": "§3.9",
+  "title": "Related Rates",
+  "lede": "When several quantities change together, the chain rule links their rates.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p>In a related-rates problem, several quantities change with time \\(t\\). You know how fast some are changing and want the rate of another. The idea: find an equation linking the quantities, then <strong>differentiate both sides with respect to \\(t\\)</strong>. Every variable picks up its own rate by the chain rule: \\(\\frac{d}{dt}(x^2)=2x\\,\\frac{dx}{dt}\\).</p>"
+   },
+   {
+    "type": "heading",
+    "text": "The recipe"
+   },
+   {
+    "type": "prose",
+    "html": "<ol class=\"steps\"><li><strong>Draw and label</strong> a picture at a general time \\(t\\). Use letters for anything that changes. Only fixed numbers get numbers.</li><li><strong>Write what you know and what you want</strong> as rates: e.g. given \\(\\frac{dx}{dt}=1\\), find \\(\\frac{dy}{dt}\\) when \\(x=3\\).</li><li><strong>Find an equation</strong> relating the quantities: Pythagoras, similar triangles, area or volume formulas, trig.</li><li><strong>Differentiate with respect to \\(t\\)</strong> (implicitly).</li><li><strong>Now plug in</strong> the numbers for that instant and solve for the unknown rate.</li><li><strong>Answer with units</strong>. A negative rate means that quantity is decreasing.</li></ol><p class=\"callout\">The #1 mistake: plugging in the numbers <em>before</em> differentiating. If you set \\(x=3\\) first, \\(x\\) becomes a constant and its rate disappears.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Pythagoras</span>\\[x^2+y^2=z^2\\Rightarrow x\\dot x+y\\dot y=z\\dot z\\]<p class='note'>Ladders, planes, cars at right angles.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Spheres & circles</span>\\[V=\\tfrac43\\pi r^3,\\ S=4\\pi r^2,\\ A=\\pi r^2\\]"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Cones</span>\\[V=\\tfrac13\\pi r^2h\\]<p class='note'>Use similar triangles to replace \\(r\\) with a multiple of \\(h\\) <em>before</em> differentiating.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Similar triangles</span><p>Shadows and tanks: matching ratios like \\(\\frac{r}{h}=\\frac{2}{4}\\) or \\(\\frac{s-x}{2}=\\frac{s}{6}\\).</p>"
+     }
+    ]
+   },
+   {
+    "type": "lab",
+    "id": "lab-ladder",
+    "html": "<div class=\"lab-head\"><h4>A sliding ladder</h4><span class=\"tag\">Lab · press Play or drag the slider</span></div>\n<canvas class=\"tall\" id=\"ld-cv\" aria-label=\"A 5 meter ladder sliding down a wall as its foot is pulled away\"></canvas>\n<div class=\"controls\">\n  <label for=\"ld-x\">foot distance x <input id=\"ld-x\" type=\"range\" min=\"0.3\" max=\"4.95\" step=\"0.01\" value=\"3\"></label>\n  <label for=\"ld-v\">pull speed dx/dt <input id=\"ld-v\" type=\"range\" min=\"0.2\" max=\"2\" step=\"0.1\" value=\"1\"></label>\n  <button type=\"button\" id=\"ld-play\">Play</button>\n</div>\n<div class=\"readout\">\n  <div>x (foot) and y (top)<b id=\"ld-xy\">–</b></div>\n  <div>x² + y² (always 25)<b id=\"ld-sum\">–</b></div>\n  <div>dy/dt = −(x / y)·dx/dt<b class=\"c-d\" id=\"ld-dy\">–</b></div>\n</div>\n<p class=\"note\">The foot moves at a steady speed, but the top does not. Near the floor (small y), x/y gets huge and the top falls faster and faster. That's why you differentiate first and plug in numbers last: the rate depends on where you are.</p>"
+   },
+   {
+    "type": "heading",
+    "text": "Worked examples"
+   },
+   {
+    "type": "examples",
+    "items": [
+     {
+      "label": "Balloon (Stewart Example 1)",
+      "html": "<p>Air is pumped into a spherical balloon at \\(100\\text{ cm}^3/\\text{s}\\). How fast is the radius increasing when the diameter is 50 cm?</p><ol class=\"steps\"><li>Given \\(\\frac{dV}{dt}=100\\). Want \\(\\frac{dr}{dt}\\) when \\(r=25\\).</li><li>\\(V=\\tfrac43\\pi r^3\\). Differentiate: \\(\\frac{dV}{dt}=4\\pi r^2\\frac{dr}{dt}\\).</li><li>Plug in: \\(100=4\\pi(25)^2\\frac{dr}{dt}\\Rightarrow\\frac{dr}{dt}=\\frac{100}{2500\\pi}=\\frac{1}{25\\pi}\\approx0.0127\\text{ cm/s}\\).</li></ol>"
+     },
+     {
+      "label": "Ladder",
+      "html": "<p>A 5 m ladder leans on a wall. The foot slides away at 1 m/s. How fast is the top sliding down when the foot is 3 m from the wall?</p><ol class=\"steps\"><li>\\(x^2+y^2=25\\). Given \\(\\frac{dx}{dt}=1\\); want \\(\\frac{dy}{dt}\\) when \\(x=3\\).</li><li>Differentiate: \\(2x\\frac{dx}{dt}+2y\\frac{dy}{dt}=0\\Rightarrow\\frac{dy}{dt}=-\\frac{x}{y}\\frac{dx}{dt}\\).</li><li>When \\(x=3\\), \\(y=\\sqrt{25-9}=4\\): \\(\\frac{dy}{dt}=-\\frac34(1)=-\\frac34\\text{ m/s}\\).</li><li>The top slides <strong>down</strong> at \\(0.75\\) m/s (negative = decreasing).</li></ol>"
+     },
+     {
+      "label": "Cone tank (Stewart Example 3)",
+      "html": "<p>A tank is an inverted cone, radius 2 m at the top and 4 m tall. Water flows in at 2 m³/min. How fast is the water rising when it's 3 m deep?</p><ol class=\"steps\"><li>Similar triangles: \\(\\frac rh=\\frac24\\Rightarrow r=\\frac h2\\).</li><li>Volume in terms of \\(h\\) only: \\(V=\\frac13\\pi\\left(\\frac h2\\right)^2h=\\frac{\\pi h^3}{12}\\).</li><li>Differentiate: \\(\\frac{dV}{dt}=\\frac{\\pi h^2}{4}\\frac{dh}{dt}\\).</li><li>Plug in \\(h=3\\), \\(\\frac{dV}{dt}=2\\): \\(\\frac{dh}{dt}=\\frac{8}{9\\pi}\\approx0.28\\text{ m/min}\\).</li></ol>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p39-1",
+      "source": "§3.9 #1",
+      "href": null,
+      "question": "(a) \\(V\\) is the volume of a cube with edge \\(x\\). Find \\(\\frac{dV}{dt}\\) in terms of \\(\\frac{dx}{dt}\\). (b) If the edge grows at 4 cm/s, how fast is the volume growing when the edge is 15 cm?",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>(a) \\(V=x^3\\Rightarrow\\frac{dV}{dt}=3x^2\\frac{dx}{dt}\\).</p><p>(b) \\(3(15)^2(4)=2700\\).</p><p class=\"ans\">(a) \\(\\frac{dV}{dt}=3x^2\\frac{dx}{dt}\\) (b) \\(2700\\text{ cm}^3/\\text{s}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p39-3",
+      "source": "§3.9 #3",
+      "href": null,
+      "question": "Each side of a square grows at 6 cm/s. How fast is the area growing when the area is 16 cm²?",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Convert the area into a side length first.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(A=s^2\\Rightarrow\\frac{dA}{dt}=2s\\frac{ds}{dt}\\).</p><p>Area 16 means \\(s=4\\): \\(2(4)(6)=48\\).</p><p class=\"ans\">\\(48\\text{ cm}^2/\\text{s}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p39-5",
+      "source": "§3.9 #5",
+      "href": null,
+      "question": "A ball's radius grows at 2 cm/min. How fast is its surface area growing when \\(r=8\\) cm?",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(S=4\\pi r^2\\Rightarrow\\frac{dS}{dt}=8\\pi r\\frac{dr}{dt}=8\\pi(8)(2)\\).</p><p class=\"ans\">\\(128\\pi\\approx402\\text{ cm}^2/\\text{min}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p39-7",
+      "source": "§3.9 #7",
+      "href": null,
+      "question": "A cylindrical tank of radius 5 m fills at 3 m³/min. How fast is the water height rising?",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(V=\\pi r^2h=25\\pi h\\) (radius fixed).</p><p>\\(\\frac{dV}{dt}=25\\pi\\frac{dh}{dt}\\Rightarrow3=25\\pi\\frac{dh}{dt}\\).</p><p class=\"ans\">\\(\\frac{dh}{dt}=\\frac{3}{25\\pi}\\approx0.038\\text{ m/min}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p39-9",
+      "source": "§3.9 #9",
+      "href": null,
+      "question": "\\(4x^2+9y^2=25\\), with \\(x,y\\) functions of \\(t\\). (a) If \\(\\frac{dy}{dt}=\\frac13\\), find \\(\\frac{dx}{dt}\\) at \\((2,1)\\). (b) If \\(\\frac{dx}{dt}=3\\), find \\(\\frac{dy}{dt}\\) at \\((-2,1)\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Differentiate: \\(8x\\frac{dx}{dt}+18y\\frac{dy}{dt}=0\\).</p><p>(a) \\(16\\frac{dx}{dt}+18(1)\\left(\\frac13\\right)=0\\Rightarrow\\frac{dx}{dt}=-\\frac{6}{16}\\).</p><p>(b) \\(8(-2)(3)+18(1)\\frac{dy}{dt}=0\\Rightarrow\\frac{dy}{dt}=\\frac{48}{18}\\).</p><p class=\"ans\">(a) \\(-\\frac38\\) (b) \\(\\frac83\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p39-13",
+      "source": "§3.9 #13",
+      "href": null,
+      "question": "A plane at altitude 2 km flies at 800 km/h and passes directly over a radar station. How fast is its distance from the station growing when that distance is 3 km?",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Horizontal distance \\(x\\), straight-line distance \\(s\\): \\(x^2+2^2=s^2\\).</p><p>\\(2x\\dot x=2s\\dot s\\Rightarrow\\dot s=\\frac{x}{s}\\dot x\\).</p><p>When \\(s=3\\): \\(x=\\sqrt{9-4}=\\sqrt5\\). \\(\\dot s=\\frac{\\sqrt5}{3}(800)\\).</p><p class=\"ans\">\\(\\frac{800\\sqrt5}{3}\\approx596\\text{ km/h}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p39-15",
+      "source": "§3.9 #15",
+      "href": null,
+      "question": "A street light is on a 6 m pole. A 2 m tall man walks away at 1.5 m/s. How fast is the tip of his shadow moving when he is 10 m from the pole?",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Draw the big triangle (pole) and the small one (man). They share the angle at the shadow tip.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Man at distance \\(x\\), shadow tip at \\(s\\). Similar triangles: \\(\\frac{s}{6}=\\frac{s-x}{2}\\Rightarrow 2s=6s-6x\\Rightarrow s=\\frac32x\\).</p><p>\\(\\frac{ds}{dt}=\\frac32\\frac{dx}{dt}=\\frac32(1.5)\\).</p><p class=\"ans\">\\(2.25\\text{ m/s}\\) (the same at every distance, so the “10 m” isn't needed)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p39-17",
+      "source": "§3.9 #17",
+      "href": null,
+      "question": "Two cars leave the same point. One drives south at 30 km/h, the other west at 72 km/h. How fast is the distance between them growing 2 hours later?",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>After 2 h: \\(x=144\\), \\(y=60\\), \\(z=\\sqrt{144^2+60^2}=156\\).</p><p>\\(z\\dot z=x\\dot x+y\\dot y\\Rightarrow\\dot z=\\frac{144(72)+60(30)}{156}=\\frac{12168}{156}\\).</p><p class=\"ans\">\\(78\\text{ km/h}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p39-21",
+      "source": "§3.9 #21",
+      "href": null,
+      "question": "A triangle's altitude grows at 1 cm/min and its area at 2 cm²/min. How fast is the base changing when the altitude is 10 cm and the area is 100 cm²?",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(A=\\frac12bh\\). At that moment \\(b=\\frac{2A}{h}=20\\).</p><p>Product rule: \\(\\frac{dA}{dt}=\\frac12\\left(\\frac{db}{dt}h+b\\frac{dh}{dt}\\right)\\Rightarrow2=\\frac12\\left(10\\frac{db}{dt}+20\\right)\\).</p><p>\\(4=10\\frac{db}{dt}+20\\Rightarrow\\frac{db}{dt}=-1.6\\).</p><p class=\"ans\">\\(-1.6\\text{ cm/min}\\) (the base is shrinking)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p39-23",
+      "source": "§3.9 #23",
+      "href": null,
+      "question": "Using \\(d=4.9t^2\\): a woman drops a stone off a cliff, then drops a second one exactly 1 s later. One second after that, how fast is the distance between the stones changing?",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>First stone has fallen \\(4.9t^2\\), second \\(4.9(t-1)^2\\). Gap \\(D=4.9t^2-4.9(t-1)^2\\).</p><p>\\(\\frac{dD}{dt}=9.8t-9.8(t-1)=9.8\\).</p><p class=\"ans\">\\(9.8\\text{ m/s}\\), constant at every moment</p>"
+       }
+      ]
+     },
+     {
+      "id": "p39-25",
+      "source": "§3.9 #25",
+      "href": null,
+      "question": "An inverted cone (height 6 m, top diameter 4 m) leaks 10,000 cm³/min while water is pumped in at a constant rate. The level rises 20 cm/min when the water is 2 m deep. Find the pumping rate.",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Work in cm: \\(\\frac rh=\\frac{200}{600}\\Rightarrow r=\\frac h3\\), so \\(V=\\frac13\\pi\\frac{h^2}{9}h=\\frac{\\pi h^3}{27}\\).</p><p>\\(\\frac{dV}{dt}=\\frac{\\pi h^2}{9}\\frac{dh}{dt}=\\frac{\\pi(200)^2}{9}(20)\\approx279{,}253\\text{ cm}^3/\\text{min}\\).</p><p>Net rate = pumped in − leaking out: \\(C-10{,}000=279{,}253\\).</p><p class=\"ans\">\\(C\\approx289{,}253\\text{ cm}^3/\\text{min}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p39-29",
+      "source": "§3.9 #29",
+      "href": null,
+      "question": "Gravel falls onto a conical pile at 3 m³/min. The base diameter always equals the height. How fast is the height growing when the pile is 3 m high?",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Diameter = \\(h\\), so \\(r=\\frac h2\\) and \\(V=\\frac13\\pi\\frac{h^2}{4}h=\\frac{\\pi h^3}{12}\\).</p><p>\\(\\frac{dV}{dt}=\\frac{\\pi h^2}{4}\\frac{dh}{dt}\\Rightarrow3=\\frac{9\\pi}{4}\\frac{dh}{dt}\\).</p><p class=\"ans\">\\(\\frac{dh}{dt}=\\frac{4}{3\\pi}\\approx0.42\\text{ m/min}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p39-31",
+      "source": "§3.9 #31",
+      "href": null,
+      "question": "The sides of an equilateral triangle grow at 10 cm/min. How fast is the area growing when the sides are 30 cm?",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(A=\\frac{\\sqrt3}{4}s^2\\Rightarrow\\frac{dA}{dt}=\\frac{\\sqrt3}{2}s\\frac{ds}{dt}=\\frac{\\sqrt3}{2}(30)(10)\\).</p><p class=\"ans\">\\(150\\sqrt3\\approx259.8\\text{ cm}^2/\\text{min}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p39-33",
+      "source": "§3.9 #33",
+      "href": null,
+      "question": "A car drives north at 20 m/s. A drone flies east at 6 m/s, 25 m up, and passes directly over the car. How fast is the distance between them changing 5 s later?",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Three directions at right angles: \\(D^2=x^2+y^2+z^2\\), and the height \\(z=25\\) stays fixed.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>After 5 s: car 100 m north, drone 30 m east and 25 m up. \\(D^2=x^2+y^2+25^2\\).</p><p>\\(D=\\sqrt{30^2+100^2+25^2}=\\sqrt{11525}\\approx107.35\\).</p><p>\\(D\\dot D=x\\dot x+y\\dot y\\Rightarrow\\dot D=\\frac{30(6)+100(20)}{107.35}\\).</p><p class=\"ans\">\\(\\approx20.3\\text{ m/s}\\)</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Plugging in too early",
+      "html": "<p>Substitute the instant's values only <em>after</em> differentiating. Otherwise changing quantities turn into constants.</p>"
+     },
+     {
+      "title": "Wrong sign",
+      "html": "<p>“Decreasing at 3 cm/s” means a rate of \\(-3\\). A negative answer means that quantity is shrinking.</p>"
+     },
+     {
+      "title": "Cone with two variables",
+      "html": "<p>Use similar triangles to write \\(V\\) in terms of \\(h\\) alone before differentiating.</p>"
+     },
+     {
+      "title": "Missing units",
+      "html": "<p>Rates have units like m/s or cm³/min. Include them in your answer.</p>"
+     }
+    ]
+   }
+  ],
+  "unit": "q4"
+ },
+ {
+  "id": "s310",
+  "slug": "3-10",
+  "num": "§3.10",
+  "title": "Linear Approximations and Differentials",
+  "lede": "Use the tangent line to estimate values and measurement errors.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p>Zoom in on a smooth curve and it looks like its tangent line. So near \\(x=a\\) we can use the tangent line, which is easy to compute, in place of the function, which may be hard to compute.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Linearization</span>\\[L(x)=f(a)+f'(a)(x-a)\\]<p class='note'>It's the tangent line at \\(a\\), written as a function.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Linear approximation</span>\\[f(x)\\approx f(a)+f'(a)(x-a)\\quad\\text{for }x\\text{ near }a\\]"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Differentials</span>\\[dy=f'(x)\\,dx\\]<p class='note'>\\(dx=\\Delta x\\) is the change in \\(x\\). \\(dy\\) is the change along the tangent; \\(\\Delta y=f(x+dx)-f(x)\\) is the real change. \\(dy\\approx\\Delta y\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Errors</span><p>Max error \\(\\approx dV\\). Relative error \\(=\\frac{dV}{V}\\). Percentage error \\(=100\\%\\times\\frac{dV}{V}\\).</p>"
+     }
+    ]
+   },
+   {
+    "type": "lab",
+    "id": "lab-linear",
+    "html": "<div class=\"lab-head\"><h4>The tangent line as an approximation</h4><span class=\"tag\">Lab · move x away from a</span></div>\n<canvas class=\"tall\" id=\"lin-cv\" aria-label=\"A curve, its tangent line at a, and the gap between them at x\"></canvas>\n<div class=\"controls\">\n  <label for=\"lin-fn\">function\n    <select id=\"lin-fn\">\n      <option value=\"sqrt\">√x at a = 4</option>\n      <option value=\"exp\">eˣ at a = 0</option>\n      <option value=\"ln\">ln x at a = 1</option>\n      <option value=\"sin\">sin x at a = 0</option>\n      <option value=\"cbrt\">∛x at a = 8</option>\n    </select>\n  </label>\n  <label for=\"lin-dx\">dx = x − a <input id=\"lin-dx\" type=\"range\" min=\"-2\" max=\"2\" step=\"0.01\" value=\"1\"></label>\n</div>\n<div class=\"readout\">\n  <div>f(x), the true value<b class=\"c-f\" id=\"lin-f\">–</b></div>\n  <div>L(x), the tangent line<b class=\"c-t\" id=\"lin-L\">–</b></div>\n  <div>error f(x) − L(x)<b class=\"c-d\" id=\"lin-e\">–</b></div>\n  <div>Δy (curve) vs dy (tangent)<b id=\"lin-dy\">–</b></div>\n</div>\n<p class=\"note\">Near a, the tangent line hugs the curve, so L(x) is a great estimate. Move x farther away and the gap grows. On the graph, dy is the rise along the tangent and Δy is the real rise along the curve.</p>"
+   },
+   {
+    "type": "heading",
+    "text": "Handy approximations near 0"
+   },
+   {
+    "type": "prose",
+    "html": "<div class=\"compare\"><table><thead><tr><th></th><th>Approximation</th><th>Why</th></tr></thead><tbody>\n<tr><th>\\(\\sin x\\)</th><td>\\(\\approx x\\)</td><td>\\(\\sin0=0\\), \\(\\cos0=1\\)</td></tr>\n<tr><th>\\(e^x\\)</th><td>\\(\\approx1+x\\)</td><td>\\(e^0=1\\), slope 1</td></tr>\n<tr><th>\\(\\ln(1+x)\\)</th><td>\\(\\approx x\\)</td><td>\\(\\ln1=0\\), slope 1</td></tr>\n<tr><th>\\(\\sqrt{1+x}\\)</th><td>\\(\\approx1+\\frac x2\\)</td><td>slope \\(\\frac{1}{2\\sqrt1}=\\frac12\\)</td></tr>\n<tr><th>\\((1+x)^k\\)</th><td>\\(\\approx1+kx\\)</td><td>slope \\(k\\)</td></tr>\n</tbody></table></div>"
+   },
+   {
+    "type": "heading",
+    "text": "Worked examples"
+   },
+   {
+    "type": "examples",
+    "items": [
+     {
+      "label": "Linearize, then estimate (Stewart Example 1)",
+      "html": "<p>Find \\(L(x)\\) for \\(f(x)=\\sqrt{x+3}\\) at \\(a=1\\), and use it to estimate \\(\\sqrt{3.98}\\) and \\(\\sqrt{4.05}\\).</p><ol class=\"steps\"><li>\\(f(1)=2\\). \\(f'(x)=\\frac{1}{2\\sqrt{x+3}}\\Rightarrow f'(1)=\\frac14\\).</li><li>\\(L(x)=2+\\frac14(x-1)=\\frac74+\\frac x4\\).</li><li>\\(\\sqrt{3.98}=f(0.98)\\approx L(0.98)=1.995\\). \\(\\sqrt{4.05}=f(1.05)\\approx L(1.05)=2.0125\\).</li><li><span class='why'>Pick \\(a\\) so that \\(f(a)\\) is easy (here \\(\\sqrt4=2\\)) and close to the number you want.</span></li></ol>"
+     },
+     {
+      "label": "Error with differentials (Stewart Example 4)",
+      "html": "<p>A sphere's radius is measured as 21 cm, with a possible error of 0.05 cm. Estimate the maximum error in the volume.</p><ol class=\"steps\"><li>\\(V=\\frac43\\pi r^3\\Rightarrow dV=4\\pi r^2\\,dr\\).</li><li>\\(dV=4\\pi(21)^2(0.05)\\approx277\\text{ cm}^3\\).</li><li>Relative error: \\(\\frac{dV}{V}=\\frac{4\\pi r^2dr}{\\frac43\\pi r^3}=3\\frac{dr}{r}=3\\cdot\\frac{0.05}{21}\\approx0.0071\\), about \\(0.7\\%\\).</li></ol>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p310-1",
+      "source": "§3.10 #1",
+      "href": null,
+      "question": "Find the linearization of \\(f(x)=x^3-x^2+3\\) at \\(a=-2\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(-2)=-8-4+3=-9\\).</p><p>\\(f'(x)=3x^2-2x\\Rightarrow f'(-2)=12+4=16\\).</p><p>\\(L(x)=-9+16(x+2)\\).</p><p class=\"ans\">\\(L(x)=16x+23\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p310-3",
+      "source": "§3.10 #3",
+      "href": null,
+      "question": "Find the linearization of \\(f(x)=\\sqrt[3]{x}\\) at \\(a=8\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(8)=2\\). \\(f'(x)=\\frac13x^{-2/3}\\Rightarrow f'(8)=\\frac13\\cdot\\frac14=\\frac1{12}\\).</p><p class=\"ans\">\\(L(x)=2+\\frac{1}{12}(x-8)\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p310-5",
+      "source": "§3.10 #5",
+      "href": null,
+      "question": "Find the linear approximation of \\(f(x)=\\sqrt{1-x}\\) at \\(a=0\\) and use it to approximate \\(\\sqrt{0.9}\\) and \\(\\sqrt{0.99}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Which \\(x\\) makes \\(\\sqrt{1-x}=\\sqrt{0.9}\\)?</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(0)=1\\). \\(f'(x)=-\\frac{1}{2\\sqrt{1-x}}\\Rightarrow f'(0)=-\\frac12\\). So \\(L(x)=1-\\frac x2\\).</p><p>\\(\\sqrt{0.9}=f(0.1)\\approx1-0.05\\). \\(\\sqrt{0.99}=f(0.01)\\approx1-0.005\\).</p><p class=\"ans\">\\(L(x)=1-\\frac x2\\); \\(\\sqrt{0.9}\\approx0.95\\), \\(\\sqrt{0.99}\\approx0.995\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p310-7",
+      "source": "§3.10 #7",
+      "href": null,
+      "question": "Verify \\(\\tan^{-1}x\\approx x\\) at \\(a=0\\). For which \\(x\\) is it accurate to within 0.1?",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(0)=0\\), \\(f'(x)=\\frac1{1+x^2}\\Rightarrow f'(0)=1\\). So \\(L(x)=x\\). ✓</p><p>We need \\(|x-\\tan^{-1}x|<0.1\\). Graphing (or solving numerically) gives about \\(|x|<0.73\\).</p><p class=\"ans\">Accurate to within 0.1 for about \\(-0.73<x<0.73\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p310-11",
+      "source": "§3.10 #11",
+      "href": null,
+      "question": "Find the differential of \\(y=e^{5x}\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(dy=y'\\,dx\\) with \\(y'=5e^{5x}\\).</p><p class=\"ans\">\\(dy=5e^{5x}\\,dx\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p310-13",
+      "source": "§3.10 #13",
+      "href": null,
+      "question": "Find the differential of \\(y=\\dfrac{1+2u}{1+3u}\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Quotient rule: \\(y'=\\frac{2(1+3u)-3(1+2u)}{(1+3u)^2}=\\frac{-1}{(1+3u)^2}\\).</p><p class=\"ans\">\\(dy=-\\dfrac{du}{(1+3u)^2}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p310-17",
+      "source": "§3.10 #17",
+      "href": null,
+      "question": "Find the differential of \\(y=\\ln(\\sin\\theta)\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(y'=\\frac{\\cos\\theta}{\\sin\\theta}=\\cot\\theta\\).</p><p class=\"ans\">\\(dy=\\cot\\theta\\,d\\theta\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p310-19",
+      "source": "§3.10 #19",
+      "href": null,
+      "question": "(a) Find \\(dy\\) for \\(y=e^{x/10}\\). (b) Evaluate it at \\(x=0\\), \\(dx=0.1\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>(a) \\(dy=\\frac1{10}e^{x/10}dx\\).</p><p>(b) \\(\\frac1{10}(1)(0.1)\\).</p><p class=\"ans\">(a) \\(dy=\\frac{1}{10}e^{x/10}dx\\) (b) \\(dy=0.01\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p310-21",
+      "source": "§3.10 #21",
+      "href": null,
+      "question": "(a) Find \\(dy\\) for \\(y=\\sqrt{3+x^2}\\). (b) Evaluate at \\(x=1\\), \\(dx=-0.1\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>(a) \\(dy=\\frac{x}{\\sqrt{3+x^2}}dx\\).</p><p>(b) \\(\\frac{1}{2}(-0.1)\\).</p><p class=\"ans\">(a) \\(dy=\\dfrac{x\\,dx}{\\sqrt{3+x^2}}\\) (b) \\(dy=-0.05\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p310-23",
+      "source": "§3.10 #23",
+      "href": null,
+      "question": "Compute \\(\\Delta y\\) and \\(dy\\) for \\(y=x^2-4x\\), \\(x=3\\), \\(\\Delta x=0.5\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\Delta y=f(3.5)-f(3)=(12.25-14)-(9-12)=-1.75+3=1.25\\).</p><p>\\(dy=(2x-4)dx=(2)(0.5)=1\\).</p><p class=\"ans\">\\(\\Delta y=1.25\\), \\(dy=1\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p310-25",
+      "source": "§3.10 #25",
+      "href": null,
+      "question": "Compute \\(\\Delta y\\) and \\(dy\\) for \\(y=\\sqrt{x-2}\\), \\(x=3\\), \\(\\Delta x=0.8\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\Delta y=\\sqrt{1.8}-\\sqrt1\\approx0.342\\).</p><p>\\(dy=\\frac{1}{2\\sqrt{x-2}}dx=\\frac12(0.8)=0.4\\).</p><p class=\"ans\">\\(\\Delta y\\approx0.342\\), \\(dy=0.4\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p310-31",
+      "source": "§3.10 #31",
+      "href": null,
+      "question": "Use a linear approximation to estimate \\((1.999)^4\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(x)=x^4\\), \\(a=2\\): \\(f(2)=16\\), \\(f'(2)=4(8)=32\\).</p><p>\\(L(1.999)=16+32(-0.001)\\).</p><p class=\"ans\">\\((1.999)^4\\approx15.968\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p310-33",
+      "source": "§3.10 #33",
+      "href": null,
+      "question": "Use a linear approximation to estimate \\(\\sqrt[3]{1001}\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(x)=\\sqrt[3]{x}\\), \\(a=1000\\): \\(f(1000)=10\\), \\(f'(1000)=\\frac{1}{3(1000)^{2/3}}=\\frac1{300}\\).</p><p>\\(L(1001)=10+\\frac{1}{300}(1)\\).</p><p class=\"ans\">\\(\\sqrt[3]{1001}\\approx10.0033\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p310-35",
+      "source": "§3.10 #35",
+      "href": null,
+      "question": "Use a linear approximation to estimate \\(e^{0.1}\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(x)=e^x\\) at \\(a=0\\): \\(L(x)=1+x\\).</p><p class=\"ans\">\\(e^{0.1}\\approx1.1\\) (the true value is 1.10517…)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p310-37",
+      "source": "§3.10 #37",
+      "href": null,
+      "question": "Explain why \\(\\ln1.04\\approx0.04\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Linearize \\(f(x)=\\ln x\\) at \\(a=1\\): \\(f(1)=0\\), \\(f'(1)=1\\), so \\(L(x)=x-1\\).</p><p>\\(\\ln1.04\\approx L(1.04)=0.04\\).</p><p class=\"ans\">Because near \\(x=1\\), \\(\\ln x\\approx x-1\\)</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Using x instead of a",
+      "html": "<p>In \\(L(x)=f(a)+f'(a)(x-a)\\), evaluate \\(f\\) and \\(f'\\) at \\(a\\), the easy point.</p>"
+     },
+     {
+      "title": "Δy vs dy",
+      "html": "<p>\\(\\Delta y\\) is the exact change \\(f(x+\\Delta x)-f(x)\\). \\(dy=f'(x)dx\\) is the tangent-line estimate.</p>"
+     },
+     {
+      "title": "Degrees",
+      "html": "<p>For trig, convert to radians first: \\(1^\\circ=\\frac{\\pi}{180}\\) rad.</p>"
+     },
+     {
+      "title": "Relative vs absolute error",
+      "html": "<p>Absolute: \\(dV\\). Relative: \\(dV/V\\). Percentage: relative × 100%.</p>"
+     }
+    ]
+   }
+  ],
+  "unit": "q4"
+ },
+ {
+  "id": "s311",
+  "slug": "3-11",
+  "num": "§3.11",
+  "title": "Hyperbolic Functions",
+  "lede": "sinh, cosh and tanh: the e-based cousins of sin, cos and tan.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p>Hyperbolic functions are built from \\(e^x\\) and \\(e^{-x}\\). They behave a lot like trig functions, with a few sign flips.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Definitions</span>\\[\\sinh x=\\frac{e^x-e^{-x}}{2}\\qquad\\cosh x=\\frac{e^x+e^{-x}}{2}\\]<p>\\(\\tanh x=\\frac{\\sinh x}{\\cosh x}\\), \\(\\operatorname{sech}x=\\frac{1}{\\cosh x}\\), \\(\\operatorname{csch}x=\\frac1{\\sinh x}\\), \\(\\coth x=\\frac{\\cosh x}{\\sinh x}\\)</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Key identity</span>\\[\\cosh^2x-\\sinh^2x=1\\]<p class='note'>Minus, unlike \\(\\cos^2+\\sin^2=1\\). Divide by \\(\\cosh^2\\): \\(1-\\tanh^2x=\\operatorname{sech}^2x\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Symmetry & values</span><p>\\(\\sinh\\) is odd, \\(\\cosh\\) is even. \\(\\sinh0=0\\), \\(\\cosh0=1\\). \\(\\cosh x+\\sinh x=e^x\\).</p>"
+     }
+    ]
+   },
+   {
+    "type": "lab",
+    "id": "lab-hyper",
+    "html": "<div class=\"lab-head\"><h4>cosh and sinh live on a hyperbola</h4><span class=\"tag\">Lab · slide t</span></div>\n<div class=\"lab-pair\"><canvas id=\"hy-left\" aria-label=\"The hyperbola x squared minus y squared equals 1 with the point (cosh t, sinh t)\"></canvas><canvas id=\"hy-right\" aria-label=\"Graphs of cosh, sinh and tanh with the current t marked\"></canvas></div>\n<div class=\"controls\">\n  <label for=\"hy-t\">t <input id=\"hy-t\" type=\"range\" min=\"-2.2\" max=\"2.2\" step=\"0.01\" value=\"1\"></label>\n  <button type=\"button\" id=\"hy-anim\">Sweep</button>\n</div>\n<div class=\"readout\">\n  <div class=\"c-f\">cosh t = (eᵗ + e⁻ᵗ)/2<b id=\"hy-c\">–</b></div>\n  <div class=\"c-d\">sinh t = (eᵗ − e⁻ᵗ)/2<b id=\"hy-s\">–</b></div>\n  <div>cosh² t − sinh² t<b id=\"hy-id\">–</b></div>\n</div>\n<p class=\"note\">Just as (cos t, sin t) is always on the circle x² + y² = 1, the point (cosh t, sinh t) is always on the hyperbola x² − y² = 1. That's where the name comes from, and why the identity has a minus sign.</p>"
+   },
+   {
+    "type": "heading",
+    "text": "Derivatives"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">sinh and cosh</span>\\[(\\sinh x)'=\\cosh x\\qquad(\\cosh x)'=\\sinh x\\]<p class='note'><strong>No minus sign</strong> on cosh, unlike \\((\\cos x)'=-\\sin x\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">tanh and coth</span>\\[(\\tanh x)'=\\operatorname{sech}^2x\\qquad(\\coth x)'=-\\operatorname{csch}^2x\\]"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">sech and csch</span>\\[(\\operatorname{sech}x)'=-\\operatorname{sech}x\\tanh x\\qquad(\\operatorname{csch}x)'=-\\operatorname{csch}x\\coth x\\]"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Inverses</span>\\[(\\sinh^{-1}x)'=\\frac{1}{\\sqrt{1+x^2}},\\ (\\cosh^{-1}x)'=\\frac{1}{\\sqrt{x^2-1}},\\ (\\tanh^{-1}x)'=\\frac{1}{1-x^2}\\]"
+     }
+    ]
+   },
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\"><strong>Memory trick:</strong> it's the trig table with one change: cosh's derivative has no minus. sech, csch and coth keep their minus signs, just like sec, csc and cot.</p>"
+   },
+   {
+    "type": "heading",
+    "text": "Worked examples"
+   },
+   {
+    "type": "examples",
+    "items": [
+     {
+      "label": "Evaluate with the definition (§3.11 #3a)",
+      "html": "<p>Find \\(\\cosh(\\ln5)\\).</p><ol class=\"steps\"><li>\\(\\cosh(\\ln5)=\\frac{e^{\\ln5}+e^{-\\ln5}}{2}\\).</li><li>\\(e^{\\ln5}=5\\) and \\(e^{-\\ln5}=\\frac15\\).</li><li>\\(\\frac{5+\\frac15}{2}=\\frac{26/5}{2}=\\frac{13}{5}\\).</li></ol>"
+     },
+     {
+      "label": "Prove the identity",
+      "html": "<p>Show \\(\\cosh^2x-\\sinh^2x=1\\).</p><ol class=\"steps\"><li>\\(\\cosh^2x=\\frac{e^{2x}+2+e^{-2x}}{4}\\) and \\(\\sinh^2x=\\frac{e^{2x}-2+e^{-2x}}{4}\\).</li><li>Subtract: \\(\\frac{(2)-(-2)}{4}=\\frac44=1\\). ✓</li></ol>"
+     },
+     {
+      "label": "Chain rule (§3.11 #41)",
+      "html": "<p>Differentiate \\(f(x)=\\tanh\\sqrt x\\).</p><ol class=\"steps\"><li>Outside \\(\\tanh u\\to\\operatorname{sech}^2u\\); inside \\(u=\\sqrt x\\), \\(u'=\\frac{1}{2\\sqrt x}\\).</li><li>\\(f'(x)=\\dfrac{\\operatorname{sech}^2\\sqrt x}{2\\sqrt x}\\).</li></ol>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p311-1",
+      "source": "§3.11 #1",
+      "href": null,
+      "question": "Find (a) \\(\\sinh0\\) (b) \\(\\cosh0\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>(a) \\(\\frac{1-1}{2}=0\\). (b) \\(\\frac{1+1}{2}=1\\).</p><p class=\"ans\">(a) 0 (b) 1</p>"
+       }
+      ]
+     },
+     {
+      "id": "p311-3",
+      "source": "§3.11 #3",
+      "href": null,
+      "question": "Find (a) \\(\\cosh(\\ln5)\\) (b) \\(\\cosh5\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>(a) \\(\\frac{5+1/5}{2}=\\frac{13}{5}\\).</p><p>(b) \\(\\frac{e^5+e^{-5}}{2}\\approx74.21\\).</p><p class=\"ans\">(a) \\(\\frac{13}{5}\\) (b) \\(\\approx74.21\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p311-5",
+      "source": "§3.11 #5",
+      "href": null,
+      "question": "Find (a) \\(\\operatorname{sech}0\\) (b) \\(\\cosh^{-1}1\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>(a) \\(\\frac{1}{\\cosh0}=1\\).</p><p>(b) \\(\\cosh y=1\\) only when \\(y=0\\).</p><p class=\"ans\">(a) 1 (b) 0</p>"
+       }
+      ]
+     },
+     {
+      "id": "p311-7",
+      "source": "§3.11 #7",
+      "href": null,
+      "question": "Write \\(8\\sinh x+5\\cosh x\\) in terms of \\(e^x\\) and \\(e^{-x}\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(8\\cdot\\frac{e^x-e^{-x}}{2}+5\\cdot\\frac{e^x+e^{-x}}{2}=4e^x-4e^{-x}+\\frac52e^x+\\frac52e^{-x}\\).</p><p class=\"ans\">\\(\\frac{13}{2}e^x-\\frac32e^{-x}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p311-9",
+      "source": "§3.11 #9",
+      "href": null,
+      "question": "Write \\(\\sinh(\\ln x)\\) as a rational function of \\(x\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{e^{\\ln x}-e^{-\\ln x}}{2}=\\frac{x-\\frac1x}{2}\\).</p><p class=\"ans\">\\(\\dfrac{x^2-1}{2x}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p311-13",
+      "source": "§3.11 #13",
+      "href": null,
+      "question": "Prove \\(\\cosh x+\\sinh x=e^x\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{e^x+e^{-x}}{2}+\\frac{e^x-e^{-x}}{2}=\\frac{2e^x}{2}\\).</p><p class=\"ans\">\\(=e^x\\) ✓</p>"
+       }
+      ]
+     },
+     {
+      "id": "p311-19",
+      "source": "§3.11 #19",
+      "href": null,
+      "question": "Prove \\(\\sinh2x=2\\sinh x\\cosh x\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Right side: \\(2\\cdot\\frac{e^x-e^{-x}}{2}\\cdot\\frac{e^x+e^{-x}}{2}=\\frac{e^{2x}-e^{-2x}}{2}\\) (difference of squares).</p><p class=\"ans\">\\(=\\sinh2x\\) ✓</p>"
+       }
+      ]
+     },
+     {
+      "id": "p311-25",
+      "source": "§3.11 #25",
+      "href": null,
+      "question": "If \\(\\cosh x=\\frac53\\) and \\(x>0\\), find the other hyperbolic functions at \\(x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Use \\(\\cosh^2x-\\sinh^2x=1\\). For \\(x>0\\), \\(\\sinh x\\) is positive.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\sinh^2x=\\cosh^2x-1=\\frac{25}{9}-1=\\frac{16}{9}\\). Since \\(x>0\\), \\(\\sinh x=\\frac43\\).</p><p>\\(\\tanh x=\\frac{4/3}{5/3}=\\frac45\\), then take reciprocals.</p><p class=\"ans\">\\(\\sinh x=\\frac43\\), \\(\\tanh x=\\frac45\\), \\(\\operatorname{sech}x=\\frac35\\), \\(\\operatorname{csch}x=\\frac34\\), \\(\\coth x=\\frac54\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p311-27",
+      "source": "§3.11 #27",
+      "href": null,
+      "question": "Find \\(\\lim_{x\\to\\infty}\\tanh x\\), \\(\\lim_{x\\to-\\infty}\\tanh x\\), \\(\\lim_{x\\to\\infty}\\operatorname{sech}x\\) and \\(\\lim_{x\\to\\infty}\\frac{\\sinh x}{e^x}\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\tanh x=\\frac{e^x-e^{-x}}{e^x+e^{-x}}\\). As \\(x\\to\\infty\\), \\(e^{-x}\\to0\\) so it \\(\\to\\frac{e^x}{e^x}=1\\). As \\(x\\to-\\infty\\), \\(e^x\\to0\\) so it \\(\\to\\frac{-e^{-x}}{e^{-x}}=-1\\).</p><p>\\(\\operatorname{sech}x=\\frac{2}{e^x+e^{-x}}\\to0\\).</p><p>\\(\\frac{\\sinh x}{e^x}=\\frac{1-e^{-2x}}{2}\\to\\frac12\\).</p><p class=\"ans\">\\(1\\), \\(-1\\), \\(0\\), \\(\\frac12\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p311-35",
+      "source": "§3.11 #35",
+      "href": null,
+      "question": "Differentiate \\(f(x)=\\cosh3x\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Chain rule, no minus sign.</p><p class=\"ans\">\\(f'(x)=3\\sinh3x\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p311-37",
+      "source": "§3.11 #37",
+      "href": null,
+      "question": "Differentiate \\(h(x)=\\sinh(x^2)\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Outside \\(\\sinh u\\to\\cosh u\\), inside \\(x^2\\to2x\\).</p><p class=\"ans\">\\(h'(x)=2x\\cosh(x^2)\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p311-39",
+      "source": "§3.11 #39",
+      "href": null,
+      "question": "Differentiate \\(G(t)=\\sinh(\\ln t)\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(G'(t)=\\cosh(\\ln t)\\cdot\\frac1t\\).</p><p>Simplify: \\(\\cosh(\\ln t)=\\frac{t+1/t}{2}=\\frac{t^2+1}{2t}\\).</p><p class=\"ans\">\\(G'(t)=\\dfrac{\\cosh(\\ln t)}{t}=\\dfrac{t^2+1}{2t^2}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p311-43",
+      "source": "§3.11 #43",
+      "href": null,
+      "question": "Differentiate \\(y=\\operatorname{sech}x\\tanh x\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Product rule: \\((-\\operatorname{sech}x\\tanh x)\\tanh x+\\operatorname{sech}x\\cdot\\operatorname{sech}^2x\\).</p><p class=\"ans\">\\(y'=\\operatorname{sech}x\\,(\\operatorname{sech}^2x-\\tanh^2x)\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p311-45",
+      "source": "§3.11 #45",
+      "href": null,
+      "question": "Differentiate \\(g(t)=t\\coth\\sqrt{t^2+1}\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Product rule. Derivative of \\(\\coth u\\) is \\(-\\operatorname{csch}^2u\\cdot u'\\) with \\(u=\\sqrt{t^2+1}\\), \\(u'=\\frac{t}{\\sqrt{t^2+1}}\\).</p><p>\\(g'=\\coth\\sqrt{t^2+1}+t\\cdot\\left(-\\operatorname{csch}^2\\sqrt{t^2+1}\\right)\\frac{t}{\\sqrt{t^2+1}}\\).</p><p class=\"ans\">\\(g'(t)=\\coth\\sqrt{t^2+1}-\\dfrac{t^2\\operatorname{csch}^2\\sqrt{t^2+1}}{\\sqrt{t^2+1}}\\)</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "A minus on cosh′",
+      "html": "<p>\\((\\cosh x)'=\\sinh x\\), with no minus. That's the opposite of cos.</p>"
+     },
+     {
+      "title": "Wrong identity sign",
+      "html": "<p>\\(\\cosh^2x-\\sinh^2x=1\\). The trig version has a plus.</p>"
+     },
+     {
+      "title": "Treating sinh as sin",
+      "html": "<p>\\(\\sinh x\\) is not periodic and not bounded: \\(\\sinh x\\to\\infty\\) as \\(x\\to\\infty\\).</p>"
+     }
+    ]
+   }
+  ],
+  "unit": "q4"
+ },
+ {
+  "id": "s41",
+  "slug": "4-1",
+  "num": "§4.1",
+  "title": "Maximum and Minimum Values",
+  "lede": "Critical numbers, and the Closed Interval Method for absolute extremes.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p>This section is about finding the highest and lowest values of a function. It starts the “applications of derivatives” chapter, and every optimization problem later builds on it.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Absolute vs local</span><p><strong>Absolute</strong> max/min: the highest/lowest value on the whole domain or interval. <strong>Local</strong>: highest/lowest compared with nearby points only.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Extreme Value Theorem</span><p>If \\(f\\) is <strong>continuous</strong> on a <strong>closed</strong> interval \\([a,b]\\), it has an absolute max and an absolute min there.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Fermat's Theorem</span><p>If \\(f\\) has a local max or min at \\(c\\) and \\(f'(c)\\) exists, then \\(f'(c)=0\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Critical number</span><p>A number \\(c\\) <strong>in the domain</strong> of \\(f\\) where \\(f'(c)=0\\) <strong>or</strong> \\(f'(c)\\) does not exist.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "The Closed Interval Method"
+   },
+   {
+    "type": "prose",
+    "html": "<p>To find the absolute max and min of a continuous \\(f\\) on \\([a,b]\\):</p><ol class=\"steps\"><li>Find the <strong>critical numbers</strong> of \\(f\\) that lie <strong>inside</strong> \\((a,b)\\).</li><li>Evaluate \\(f\\) at each of those critical numbers.</li><li>Evaluate \\(f\\) at the <strong>endpoints</strong> \\(a\\) and \\(b\\).</li><li>The largest value is the absolute max; the smallest is the absolute min.</li></ol><p class=\"callout\">A table of candidates (\\(x\\) and \\(f(x)\\)) is the cleanest way to show your work on the quiz.</p>"
+   },
+   {
+    "type": "lab",
+    "id": "lab-extrema",
+    "html": "<div class=\"lab-head\"><h4>The closed interval method, live</h4><span class=\"tag\">Lab · move the endpoints</span></div>\n<canvas class=\"tall\" id=\"ex-cv\" aria-label=\"Graph of f on an interval with critical points and endpoints marked, and the absolute max and min highlighted\"></canvas>\n<div class=\"controls\">\n  <label for=\"ex-fn\">f(x)\n    <select id=\"ex-fn\">\n      <option value=\"cubic\">x³ − 3x² + 1</option>\n      <option value=\"quartic\">3x⁴ − 4x³ − 12x² + 1</option>\n      <option value=\"frac\">x + 1/x</option>\n    </select>\n  </label>\n  <label for=\"ex-a\">a <input id=\"ex-a\" type=\"range\" min=\"-2\" max=\"4\" step=\"0.05\" value=\"-0.5\"></label>\n  <label for=\"ex-b\">b <input id=\"ex-b\" type=\"range\" min=\"-2\" max=\"4\" step=\"0.05\" value=\"4\"></label>\n</div>\n<div class=\"readout\" id=\"ex-table\"></div>\n<p class=\"note\" id=\"ex-note\">Candidates are the critical numbers inside [a, b] (orange) and the two endpoints (gray). The biggest value is the absolute max (green), the smallest the absolute min (red). Shrink the interval and watch the winner change, sometimes to an endpoint.</p>"
+   },
+   {
+    "type": "heading",
+    "text": "Worked examples"
+   },
+   {
+    "type": "examples",
+    "items": [
+     {
+      "label": "Closed interval method (Stewart Example 8)",
+      "html": "<p>Find the absolute max and min of \\(f(x)=x^3-3x^2+1\\) on \\([-\\tfrac12,4]\\).</p><ol class=\"steps\"><li>\\(f'(x)=3x^2-6x=3x(x-2)\\Rightarrow\\) critical numbers \\(0\\) and \\(2\\), both inside the interval.</li><li>\\(f(0)=1\\), \\(f(2)=8-12+1=-3\\).</li><li>Endpoints: \\(f(-\\tfrac12)=-\\tfrac18-\\tfrac34+1=\\tfrac18\\), \\(f(4)=64-48+1=17\\).</li><li>Largest \\(17\\) (at \\(x=4\\)); smallest \\(-3\\) (at \\(x=2\\)).</li></ol><p class='ans'>Absolute max \\(f(4)=17\\); absolute min \\(f(2)=-3\\)</p>"
+     },
+     {
+      "label": "Critical numbers where f′ doesn't exist (Stewart Example 6)",
+      "html": "<p>Find the critical numbers of \\(f(x)=x^{3/5}(4-x)\\).</p><ol class=\"steps\"><li>Product rule: \\(f'(x)=\\tfrac35x^{-2/5}(4-x)-x^{3/5}\\).</li><li>Common denominator \\(5x^{2/5}\\): \\(f'(x)=\\dfrac{3(4-x)-5x}{5x^{2/5}}=\\dfrac{12-8x}{5x^{2/5}}\\).</li><li>\\(f'=0\\) when \\(12-8x=0\\Rightarrow x=\\tfrac32\\). \\(f'\\) is undefined at \\(x=0\\), and 0 is in the domain.</li><li>Critical numbers: \\(0\\) and \\(\\tfrac32\\).</li></ol>"
+     },
+     {
+      "label": "f′(c) = 0 isn't always an extreme",
+      "html": "<p>\\(f(x)=x^3\\) has \\(f'(0)=0\\), but 0 is neither a max nor a min: the graph keeps rising through it. Critical numbers are only <em>candidates</em>.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p41-19",
+      "source": "§4.1 #19",
+      "href": null,
+      "question": "Sketch \\(f(x)=\\sin x\\) on \\(0\\le x<\\pi/2\\) and find its absolute and local max and min values.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Is the right endpoint included? The interval isn't closed, so the Extreme Value Theorem doesn't apply.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>On this interval \\(\\sin x\\) increases from \\(\\sin0=0\\) toward 1, but \\(x=\\pi/2\\) is <em>not included</em>, so it never reaches 1.</p><p class=\"ans\">Absolute min \\(f(0)=0\\); no absolute max; no local max or min</p>"
+       }
+      ]
+     },
+     {
+      "id": "p41-23",
+      "source": "§4.1 #23",
+      "href": null,
+      "question": "Sketch \\(f(x)=\\ln x\\) on \\(0<x\\le2\\) and find its absolute and local extreme values.",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\ln x\\) increases. It reaches \\(\\ln2\\) at the included endpoint 2, but drops toward \\(-\\infty\\) as \\(x\\to0^+\\).</p><p class=\"ans\">Absolute max \\(f(2)=\\ln2\\); no absolute min; no local extremes</p>"
+       }
+      ]
+     },
+     {
+      "id": "p41-29",
+      "source": "§4.1 #29",
+      "href": null,
+      "question": "Find the critical numbers of \\(f(x)=3x^2+x-2\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'(x)=6x+1=0\\).</p><p class=\"ans\">\\(x=-\\frac16\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p41-31",
+      "source": "§4.1 #31",
+      "href": null,
+      "question": "Find the critical numbers of \\(f(x)=3x^4+8x^3-48x^2\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'(x)=12x^3+24x^2-96x=12x(x^2+2x-8)=12x(x+4)(x-2)\\).</p><p class=\"ans\">\\(x=-4,\\ 0,\\ 2\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p41-33",
+      "source": "§4.1 #33",
+      "href": null,
+      "question": "Find the critical numbers of \\(g(t)=t^5+5t^3+50t\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(g'(t)=5t^4+15t^2+50\\). Every term is \\(\\ge0\\) and the constant is 50, so \\(g'(t)\\ge50>0\\). It's never 0 and always defined.</p><p class=\"ans\">No critical numbers</p>"
+       }
+      ]
+     },
+     {
+      "id": "p41-35",
+      "source": "§4.1 #35",
+      "href": null,
+      "question": "Find the critical numbers of \\(g(y)=\\dfrac{y-1}{y^2-y+1}\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Quotient rule numerator: \\((y^2-y+1)-(y-1)(2y-1)=y^2-y+1-(2y^2-3y+1)=-y^2+2y\\).</p><p>\\(g'(y)=\\dfrac{-y(y-2)}{(y^2-y+1)^2}\\). The denominator is never 0 (its discriminant is negative).</p><p class=\"ans\">\\(y=0\\) and \\(y=2\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p41-37",
+      "source": "§4.1 #37",
+      "href": null,
+      "question": "Find the critical numbers of \\(p(x)=\\dfrac{x^2+2}{2x-1}\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(p'(x)=\\dfrac{2x(2x-1)-2(x^2+2)}{(2x-1)^2}=\\dfrac{2x^2-2x-4}{(2x-1)^2}=\\dfrac{2(x-2)(x+1)}{(2x-1)^2}\\).</p><p>\\(p'\\) is undefined at \\(x=\\frac12\\), but \\(\\frac12\\) is <strong>not in the domain</strong> of \\(p\\), so it isn't a critical number.</p><p class=\"ans\">\\(x=-1\\) and \\(x=2\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p41-39",
+      "source": "§4.1 #39",
+      "href": null,
+      "question": "Find the critical numbers of \\(h(t)=t^{3/4}-2t^{1/4}\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(h'(t)=\\frac34t^{-1/4}-\\frac12t^{-3/4}=\\dfrac{3t^{1/2}-2}{4t^{3/4}}\\).</p><p>Zero when \\(\\sqrt t=\\frac23\\Rightarrow t=\\frac49\\). Undefined at \\(t=0\\), which is in the domain (\\(t\\ge0\\)).</p><p class=\"ans\">\\(t=0\\) and \\(t=\\frac49\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p41-41",
+      "source": "§4.1 #41",
+      "href": null,
+      "question": "Find the critical numbers of \\(F(x)=x^{4/5}(x-4)^2\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(F'=\\frac45x^{-1/5}(x-4)^2+2x^{4/5}(x-4)=x^{-1/5}(x-4)\\left[\\frac45(x-4)+2x\\right]\\).</p><p>Bracket: \\(\\frac{14x-16}{5}\\). So \\(F'(x)=\\dfrac{2(x-4)(7x-8)}{5x^{1/5}}\\).</p><p class=\"ans\">\\(x=0,\\ \\frac87,\\ 4\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p41-43",
+      "source": "§4.1 #43",
+      "href": null,
+      "question": "Find the critical numbers of \\(f(x)=x^{1/3}(4-x)^{2/3}\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=\\frac13x^{-2/3}(4-x)^{2/3}-\\frac23x^{1/3}(4-x)^{-1/3}=\\dfrac{(4-x)-2x}{3x^{2/3}(4-x)^{1/3}}\\).</p><p>\\(f'=0\\) at \\(x=\\frac43\\); undefined at \\(x=0\\) and \\(x=4\\) (both in the domain).</p><p class=\"ans\">\\(x=0,\\ \\frac43,\\ 4\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p41-45",
+      "source": "§4.1 #45",
+      "href": null,
+      "question": "Find the critical numbers of \\(f(\\theta)=2\\cos\\theta+\\sin^2\\theta\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'(\\theta)=-2\\sin\\theta+2\\sin\\theta\\cos\\theta=2\\sin\\theta(\\cos\\theta-1)\\).</p><p>Zero when \\(\\sin\\theta=0\\) or \\(\\cos\\theta=1\\). Both happen exactly at multiples of \\(\\pi\\).</p><p class=\"ans\">\\(\\theta=n\\pi\\), \\(n\\) any integer</p>"
+       }
+      ]
+     },
+     {
+      "id": "p41-47",
+      "source": "§4.1 #47",
+      "href": null,
+      "question": "Find the critical numbers of \\(g(x)=x^2\\ln x\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>Domain \\(x>0\\). \\(g'(x)=2x\\ln x+x=x(2\\ln x+1)\\).</p><p>\\(x\\neq0\\), so \\(2\\ln x+1=0\\Rightarrow\\ln x=-\\frac12\\).</p><p class=\"ans\">\\(x=e^{-1/2}=\\frac{1}{\\sqrt e}\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p41-51",
+      "source": "§4.1 #51",
+      "href": null,
+      "question": "Find the absolute max and min of \\(f(x)=12+4x-x^2\\) on \\([0,5]\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=4-2x=0\\Rightarrow x=2\\).</p><p>\\(f(0)=12\\), \\(f(2)=16\\), \\(f(5)=7\\).</p><p class=\"ans\">Max \\(f(2)=16\\); min \\(f(5)=7\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p41-53",
+      "source": "§4.1 #53",
+      "href": null,
+      "question": "Find the absolute max and min of \\(f(x)=2x^3-3x^2-12x+1\\) on \\([-2,3]\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=6x^2-6x-12=6(x-2)(x+1)\\Rightarrow x=-1,2\\).</p><p>\\(f(-2)=-3\\), \\(f(-1)=8\\), \\(f(2)=-19\\), \\(f(3)=-8\\).</p><p class=\"ans\">Max \\(f(-1)=8\\); min \\(f(2)=-19\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p41-55",
+      "source": "§4.1 #55",
+      "href": null,
+      "question": "Find the absolute max and min of \\(f(x)=3x^4-4x^3-12x^2+1\\) on \\([-2,3]\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=12x^3-12x^2-24x=12x(x-2)(x+1)\\Rightarrow x=-1,0,2\\).</p><p>\\(f(-2)=33\\), \\(f(-1)=-4\\), \\(f(0)=1\\), \\(f(2)=-31\\), \\(f(3)=28\\).</p><p class=\"ans\">Max \\(f(-2)=33\\) (an endpoint!); min \\(f(2)=-31\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p41-57",
+      "source": "§4.1 #57",
+      "href": null,
+      "question": "Find the absolute max and min of \\(f(x)=x+\\frac1x\\) on \\([0.2,4]\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=1-\\frac1{x^2}=0\\Rightarrow x=\\pm1\\); only \\(x=1\\) is in the interval.</p><p>\\(f(0.2)=5.2\\), \\(f(1)=2\\), \\(f(4)=4.25\\).</p><p class=\"ans\">Max \\(f(0.2)=5.2\\); min \\(f(1)=2\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p41-59",
+      "source": "§4.1 #59",
+      "href": null,
+      "question": "Find the absolute max and min of \\(f(t)=t-\\sqrt[3]{t}\\) on \\([-1,4]\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=1-\\frac13t^{-2/3}\\). Zero when \\(t^{2/3}=\\frac13\\Rightarrow t=\\pm\\frac{1}{3\\sqrt3}\\approx\\pm0.192\\). Undefined at \\(t=0\\).</p><p>\\(f(-1)=0\\), \\(f(-0.192)\\approx0.385\\), \\(f(0)=0\\), \\(f(0.192)\\approx-0.385\\), \\(f(4)=4-\\sqrt[3]4\\approx2.413\\).</p><p class=\"ans\">Max \\(f(4)=4-\\sqrt[3]{4}\\approx2.41\\); min \\(f\\!\\left(\\tfrac{\\sqrt3}{9}\\right)=-\\tfrac{2\\sqrt3}{9}\\approx-0.385\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p41-61",
+      "source": "§4.1 #61",
+      "href": null,
+      "question": "Find the absolute max and min of \\(f(t)=2\\cos t+\\sin2t\\) on \\([0,\\pi/2]\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Write \\(\\cos2t=1-2\\sin^2t\\) to get a quadratic in \\(\\sin t\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=-2\\sin t+2\\cos2t=-2\\sin t+2(1-2\\sin^2t)=-2(2\\sin t-1)(\\sin t+1)\\).</p><p>In \\([0,\\pi/2]\\): \\(\\sin t=\\frac12\\Rightarrow t=\\frac\\pi6\\).</p><p>\\(f(0)=2\\), \\(f(\\frac\\pi6)=\\sqrt3+\\frac{\\sqrt3}{2}=\\frac{3\\sqrt3}{2}\\approx2.60\\), \\(f(\\frac\\pi2)=0\\).</p><p class=\"ans\">Max \\(f(\\frac\\pi6)=\\frac{3\\sqrt3}{2}\\); min \\(f(\\frac\\pi2)=0\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p41-63",
+      "source": "§4.1 #63",
+      "href": null,
+      "question": "Find the absolute max and min of \\(f(x)=x^{-2}\\ln x\\) on \\([\\frac12,4]\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=-2x^{-3}\\ln x+x^{-3}=\\dfrac{1-2\\ln x}{x^3}\\Rightarrow x=\\sqrt e\\approx1.65\\).</p><p>\\(f(\\frac12)=4\\ln\\frac12\\approx-2.77\\), \\(f(\\sqrt e)=\\frac{1/2}{e}\\approx0.184\\), \\(f(4)=\\frac{\\ln4}{16}\\approx0.087\\).</p><p class=\"ans\">Max \\(f(\\sqrt e)=\\frac{1}{2e}\\); min \\(f(\\frac12)=-4\\ln2\\)</p>"
+       }
+      ]
+     },
+     {
+      "id": "p41-65",
+      "source": "§4.1 #65",
+      "href": null,
+      "question": "Find the absolute max and min of \\(f(x)=\\ln(x^2+x+1)\\) on \\([-1,1]\\).",
+      "reveals": [
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=\\frac{2x+1}{x^2+x+1}=0\\Rightarrow x=-\\frac12\\).</p><p>\\(f(-1)=\\ln1=0\\), \\(f(-\\frac12)=\\ln\\frac34\\approx-0.288\\), \\(f(1)=\\ln3\\approx1.10\\).</p><p class=\"ans\">Max \\(f(1)=\\ln3\\); min \\(f(-\\frac12)=\\ln\\frac34\\)</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Forgetting the endpoints",
+      "html": "<p>On a closed interval, the absolute max or min is often at an endpoint (#55: the max is at \\(x=-2\\)).</p>"
+     },
+     {
+      "title": "Critical numbers outside the interval",
+      "html": "<p>Only test critical numbers that lie inside \\([a,b]\\).</p>"
+     },
+     {
+      "title": "Points not in the domain",
+      "html": "<p>Where \\(f'\\) is undefined only counts if \\(f\\) itself is defined there (#37: \\(x=\\frac12\\) doesn't count).</p>"
+     },
+     {
+      "title": "f′ = 0 means extreme",
+      "html": "<p>Not always: \\(x^3\\) has \\(f'(0)=0\\) and no extreme there.</p>"
+     }
+    ]
+   }
+  ],
+  "unit": "q4"
  },
  {
   "id": "quiz",
@@ -1972,6 +3605,40 @@ export const sections: Section[] = [
    },
    {
     "type": "heading",
+    "text": "Quiz 4 formulas: the shortcuts",
+    "id": "quiz-4-tricks"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">ln</span><p><strong>“Derivative of the inside over the inside.”</strong> \\((\\ln u)'=\\frac{u'}{u}\\). Other bases: divide by \\(\\ln b\\). Exponentials \\(b^x\\): multiply by \\(\\ln b\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Inverse trig</span><p>\\(\\tan^{-1}\\): “one over one plus x squared.” \\(\\sin^{-1}\\): “one over root of one minus x squared.” The “co” versions (\\(\\cos^{-1}\\), \\(\\cot^{-1}\\), \\(\\csc^{-1}\\)) get a minus.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Hyperbolic</span><p>Same table as trig, with <strong>one change</strong>: \\((\\cosh x)'=\\sinh x\\), no minus. The identity flips too: \\(\\cosh^2-\\sinh^2=1\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Related rates</span><p><strong>Draw → Equation → Differentiate → Plug in.</strong> Plug in numbers <em>last</em>.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Linear approx</span><p>“It's just the tangent line”: \\(L(x)=f(a)+f'(a)(x-a)\\). Choose \\(a\\) where \\(f(a)\\) is easy.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Max/min</span><p><strong>Critical numbers inside + both endpoints → table → biggest and smallest.</strong></p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
     "text": "Every rule as a phrase you can say"
    },
    {
@@ -2093,6 +3760,111 @@ export const sections: Section[] = [
       "front": "Definition: \\(f'(x)=\\)",
       "back": "\\(\\displaystyle\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}\\)",
       "tag": "Definition"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\ln x\\)",
+      "back": "\\(\\dfrac1x\\)",
+      "tag": "Q4 · logs"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\ln u\\)",
+      "back": "\\(\\dfrac{u'}{u}\\)",
+      "tag": "Q4 · logs"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\log_b x\\)",
+      "back": "\\(\\dfrac{1}{x\\ln b}\\)",
+      "tag": "Q4 · logs"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}b^x\\)",
+      "back": "\\(b^x\\ln b\\)",
+      "tag": "Q4 · logs"
+     },
+     {
+      "front": "Derivative of \\(x^x\\)",
+      "back": "\\(x^x(\\ln x+1)\\) (take ln first)",
+      "tag": "Q4 · logs"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\sin^{-1}x\\)",
+      "back": "\\(\\dfrac{1}{\\sqrt{1-x^2}}\\)",
+      "tag": "Q4 · inverse trig"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\cos^{-1}x\\)",
+      "back": "\\(-\\dfrac{1}{\\sqrt{1-x^2}}\\)",
+      "tag": "Q4 · inverse trig"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\tan^{-1}x\\)",
+      "back": "\\(\\dfrac{1}{1+x^2}\\)",
+      "tag": "Q4 · inverse trig"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\sec^{-1}x\\)",
+      "back": "\\(\\dfrac{1}{x\\sqrt{x^2-1}}\\)",
+      "tag": "Q4 · inverse trig"
+     },
+     {
+      "front": "\\(\\sinh x=\\)",
+      "back": "\\(\\dfrac{e^x-e^{-x}}{2}\\)",
+      "tag": "Q4 · hyperbolic"
+     },
+     {
+      "front": "\\(\\cosh x=\\)",
+      "back": "\\(\\dfrac{e^x+e^{-x}}{2}\\)",
+      "tag": "Q4 · hyperbolic"
+     },
+     {
+      "front": "\\(\\cosh^2x-\\sinh^2x=\\)",
+      "back": "\\(1\\)",
+      "tag": "Q4 · hyperbolic"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\sinh x\\)",
+      "back": "\\(\\cosh x\\)",
+      "tag": "Q4 · hyperbolic"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\cosh x\\)",
+      "back": "\\(\\sinh x\\) (no minus!)",
+      "tag": "Q4 · hyperbolic"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\tanh x\\)",
+      "back": "\\(\\operatorname{sech}^2x\\)",
+      "tag": "Q4 · hyperbolic"
+     },
+     {
+      "front": "Linearization \\(L(x)=\\)",
+      "back": "\\(f(a)+f'(a)(x-a)\\)",
+      "tag": "Q4 · approximation"
+     },
+     {
+      "front": "Differential \\(dy=\\)",
+      "back": "\\(f'(x)\\,dx\\)",
+      "tag": "Q4 · approximation"
+     },
+     {
+      "front": "Related rates: when do you plug in numbers?",
+      "back": "After differentiating with respect to \\(t\\)",
+      "tag": "Q4 · related rates"
+     },
+     {
+      "front": "Cone volume",
+      "back": "\\(V=\\tfrac13\\pi r^2h\\)",
+      "tag": "Q4 · related rates"
+     },
+     {
+      "front": "Critical number",
+      "back": "\\(c\\) in the domain with \\(f'(c)=0\\) or \\(f'(c)\\) undefined",
+      "tag": "Q4 · max/min"
+     },
+     {
+      "front": "Closed Interval Method",
+      "back": "Compare \\(f\\) at critical numbers inside \\([a,b]\\) and at both endpoints",
+      "tag": "Q4 · max/min"
      }
     ]
    },
@@ -2128,7 +3900,7 @@ export const sections: Section[] = [
   "slug": "cheat-sheet",
   "num": "Review",
   "title": "One-page cheat sheet",
-  "lede": "Everything you need to memorize, in one place. Tap a card to open the full explanation with examples.",
+  "lede": "Everything you need to memorize for Quiz 3 and Quiz 4, in one place. Tap a card to open the full explanation with examples.",
   "blocks": [
    {
     "type": "sheet",
@@ -2174,6 +3946,41 @@ export const sections: Section[] = [
       "details": "<p><strong>When:</strong> the equation mixes \\(x\\) and \\(y\\) and is hard to solve for \\(y\\), like \\(x^2+y^2=25\\) or \\(x^3+y^3=6xy\\).</p>\n<p><strong>Recipe:</strong></p>\n<ol class=\"steps\"><li>Differentiate both sides with respect to \\(x\\). <strong>Every \\(y\\)-term gets a \\(y'\\)</strong> (chain rule).</li><li>Move all \\(y'\\) terms to one side, everything else to the other.</li><li>Factor out \\(y'\\) and divide.</li></ol>\n<p><strong>Building blocks:</strong></p>\n<ul class=\"steps\"><li>\\((y^n)'=n\\,y^{n-1}\\,y'\\)</li><li>\\((xy)'=y+x\\,y'\\) (product rule)</li><li>\\((x^2y)'=2xy+x^2y'\\)</li><li>\\((\\sin y)'=\\cos y\\cdot y'\\), \\((e^y)'=e^y\\,y'\\)</li><li>A constant on either side → 0.</li></ul>\n<p><strong>Example.</strong> \\(x^2+y^2=25\\): \\(2x+2yy'=0\\Rightarrow y'=-\\dfrac{x}{y}\\). At \\((3,4)\\) the slope is \\(-\\tfrac34\\).</p>\n<p><strong>Slope at a point, fast:</strong> plug in \\(x\\) and \\(y\\) right after differentiating, then solve for \\(y'\\). For \\(x^2+xy+y^2=7\\) at \\((1,2)\\): \\(2+2+y'+4y'=0\\Rightarrow y'=-\\tfrac45\\).</p>\n<p><strong>Horizontal tangent:</strong> numerator of \\(y'\\) is 0. <strong>Vertical tangent:</strong> denominator is 0.</p>",
       "href": "/3-5/",
       "linkLabel": "Open §3.5"
+     },
+     {
+      "title": "Logs & inverse trig (3.6)",
+      "html": "\\[(\\ln u)'=\\frac{u'}{u},\\quad(\\log_bx)'=\\frac{1}{x\\ln b},\\quad(b^x)'=b^x\\ln b\\]<p class='note'>\\((\\tan^{-1}x)'=\\frac1{1+x^2}\\), \\((\\sin^{-1}x)'=\\frac{1}{\\sqrt{1-x^2}}\\)</p>",
+      "details": "<p><strong>Logs.</strong> \\((\\ln x)'=\\frac1x\\), and with an inside \\((\\ln u)'=\\frac{u'}{u}\\). Also \\((\\ln|x|)'=\\frac1x\\).</p><p><strong>Simplify first</strong> with log laws: \\(\\ln(ab)=\\ln a+\\ln b\\), \\(\\ln\\frac ab=\\ln a-\\ln b\\), \\(\\ln a^n=n\\ln a\\).</p><p><strong>Logarithmic differentiation</strong> for \\(x^x\\), \\(x^{\\sin x}\\), or messy products: take \\(\\ln\\) of both sides, differentiate (left side becomes \\(\\frac{y'}{y}\\)), multiply by \\(y\\).</p><div>\\[\\frac{d}{dx}x^x=x^x(\\ln x+1)\\]</div><p><strong>Inverse trig:</strong></p><div>\\[(\\sin^{-1}x)'=\\frac{1}{\\sqrt{1-x^2}},\\ (\\cos^{-1}x)'=-\\frac{1}{\\sqrt{1-x^2}},\\ (\\tan^{-1}x)'=\\frac{1}{1+x^2},\\ (\\sec^{-1}x)'=\\frac{1}{x\\sqrt{x^2-1}}\\]</div>",
+      "href": "/3-6/",
+      "linkLabel": "Open §3.6"
+     },
+     {
+      "title": "Related rates (3.9)",
+      "html": "<p>Draw → equation → differentiate in \\(t\\) → <strong>then</strong> plug in.</p><p class='note'>\\(x^2+y^2=z^2\\), \\(V=\\frac13\\pi r^2h\\), \\(V=\\frac43\\pi r^3\\)</p>",
+      "details": "<ol class='steps'><li>Draw a picture at a general time; label changing quantities with letters.</li><li>Write the given rates and the unknown rate.</li><li>Find an equation linking the quantities (Pythagoras, similar triangles, volume/area, trig).</li><li>Differentiate both sides with respect to \\(t\\).</li><li>Plug in the values at that instant and solve.</li><li>Give units; negative means decreasing.</li></ol><p><strong>Cones:</strong> use similar triangles to replace \\(r\\) with a multiple of \\(h\\) <em>before</em> differentiating.</p><p><strong>Ladder:</strong> \\(x^2+y^2=L^2\\Rightarrow\\dot y=-\\frac xy\\dot x\\).</p>",
+      "href": "/3-9/",
+      "linkLabel": "Open §3.9"
+     },
+     {
+      "title": "Linear approximation (3.10)",
+      "html": "\\[L(x)=f(a)+f'(a)(x-a)\\]<p class='note'>\\(dy=f'(x)\\,dx\\approx\\Delta y\\)</p>",
+      "details": "<p>The linearization is the tangent line at \\(a\\). Near \\(a\\), \\(f(x)\\approx L(x)\\).</p><p><strong>Estimating a number:</strong> pick \\(a\\) near it where \\(f(a)\\) is easy. \\(\\sqrt{4.05}\\): use \\(f=\\sqrt x\\), \\(a=4\\): \\(2+\\frac14(0.05)=2.0125\\).</p><p><strong>Differentials:</strong> \\(dy=f'(x)\\,dx\\) (tangent change), \\(\\Delta y=f(x+dx)-f(x)\\) (true change).</p><p><strong>Errors:</strong> max error \\(\\approx dV\\); relative \\(\\frac{dV}{V}\\); percentage = relative × 100%.</p><p><strong>Near 0:</strong> \\(\\sin x\\approx x\\), \\(e^x\\approx1+x\\), \\(\\ln(1+x)\\approx x\\), \\(\\sqrt{1+x}\\approx1+\\frac x2\\).</p>",
+      "href": "/3-10/",
+      "linkLabel": "Open §3.10"
+     },
+     {
+      "title": "Hyperbolic (3.11)",
+      "html": "\\[\\sinh x=\\tfrac{e^x-e^{-x}}{2},\\ \\cosh x=\\tfrac{e^x+e^{-x}}{2}\\]<p class='note'>\\(\\cosh^2-\\sinh^2=1\\); \\((\\cosh)'=\\sinh\\), no minus</p>",
+      "details": "<p><strong>Definitions:</strong> \\(\\sinh x=\\frac{e^x-e^{-x}}{2}\\), \\(\\cosh x=\\frac{e^x+e^{-x}}{2}\\), \\(\\tanh x=\\frac{\\sinh x}{\\cosh x}\\).</p><p><strong>Identities:</strong> \\(\\cosh^2x-\\sinh^2x=1\\), \\(1-\\tanh^2x=\\operatorname{sech}^2x\\), \\(\\cosh x+\\sinh x=e^x\\), \\(\\sinh2x=2\\sinh x\\cosh x\\).</p><div>\\[(\\sinh x)'=\\cosh x,\\ (\\cosh x)'=\\sinh x,\\ (\\tanh x)'=\\operatorname{sech}^2x\\]</div><div>\\[(\\operatorname{sech}x)'=-\\operatorname{sech}x\\tanh x,\\ (\\operatorname{csch}x)'=-\\operatorname{csch}x\\coth x,\\ (\\coth x)'=-\\operatorname{csch}^2x\\]</div><p><strong>Inverses:</strong> \\((\\sinh^{-1}x)'=\\frac{1}{\\sqrt{1+x^2}}\\), \\((\\cosh^{-1}x)'=\\frac{1}{\\sqrt{x^2-1}}\\), \\((\\tanh^{-1}x)'=\\frac{1}{1-x^2}\\).</p>",
+      "href": "/3-11/",
+      "linkLabel": "Open §3.11"
+     },
+     {
+      "title": "Max & min (4.1)",
+      "html": "<p>Critical number: \\(f'(c)=0\\) or undefined, \\(c\\) in the domain.</p><p class='note'>Closed interval: check critical numbers inside + endpoints.</p>",
+      "details": "<p><strong>Extreme Value Theorem:</strong> continuous on a closed \\([a,b]\\) ⇒ an absolute max and min exist.</p><p><strong>Fermat:</strong> a local extreme at \\(c\\) with \\(f'(c)\\) existing ⇒ \\(f'(c)=0\\). But \\(f'(c)=0\\) alone doesn't guarantee an extreme (\\(x^3\\) at 0).</p><p><strong>Closed Interval Method:</strong></p><ol class='steps'><li>Find critical numbers in \\((a,b)\\).</li><li>Evaluate \\(f\\) there and at \\(a\\) and \\(b\\).</li><li>Largest = absolute max, smallest = absolute min.</li></ol><p><strong>Watch:</strong> points where \\(f'\\) is undefined only count if \\(f\\) is defined there; skip critical numbers outside the interval.</p>",
+      "href": "/4-1/",
+      "linkLabel": "Open §4.1"
      }
     ]
    }
