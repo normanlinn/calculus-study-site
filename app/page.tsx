@@ -41,7 +41,10 @@ export default function Home() {
           </p>
         </HeroFade>
         <HeroFade delay={0.45}>
-          <Countdown target={UNITS[0].date!} label="Quiz 4" />
+          <div className="countdowns">
+            <Link href="/quiz-4/"><Countdown target={UNITS[0].date!} label="Quiz 4" /></Link>
+            <Link href="/midterm-2/"><Countdown target="2026-10-29" label="Midterm 2" /></Link>
+          </div>
         </HeroFade>
         <HeroGraph />
         <HeroFade delay={0.5}>

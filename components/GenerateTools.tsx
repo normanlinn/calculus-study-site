@@ -5,3 +5,5 @@ import dynamic from "next/dynamic";
 const Loading = () => <div className="gen-loading">Loading…</div>;
 export const LazyGenerator = dynamic(() => import("./Generator"), { ssr: false, loading: Loading });
 export const LazyChecker = dynamic(() => import("./FunctionChecker"), { ssr: false, loading: Loading });
+export const LazyMock = dynamic(() => import("./MockExam"), { ssr: false, loading: Loading });
+export const LazyGrades = dynamic(() => import("./GradeCalc"), { ssr: false, loading: Loading });

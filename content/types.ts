@@ -13,7 +13,9 @@ export type Block =
   | { type: "sheet"; items: SheetCard[] }
   | { type: "generator" }
   | { type: "checker" }
-  | { type: "countdown"; target: string; label: string };
+  | { type: "countdown"; target: string; label: string }
+  | { type: "mock" }
+  | { type: "gradecalc" };
 
 export interface Problem {
   id: string;

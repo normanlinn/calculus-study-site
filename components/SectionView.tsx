@@ -4,7 +4,7 @@ import Problem from "./Problem";
 import Quiz from "./Quiz";
 import Flashcards from "./Flashcards";
 import SheetCards from "./SheetCards";
-import { LazyChecker, LazyGenerator } from "./GenerateTools";
+import { LazyChecker, LazyGenerator, LazyGrades, LazyMock } from "./GenerateTools";
 import Countdown from "./Countdown";
 import Reveal, { Stagger } from "./Reveal";
 
@@ -46,6 +46,10 @@ function BlockView({ b }: { b: Block }) {
       return <LazyChecker />;
     case "countdown":
       return <Countdown target={b.target} label={b.label} />;
+    case "mock":
+      return <LazyMock />;
+    case "gradecalc":
+      return <LazyGrades />;
   }
 }
 

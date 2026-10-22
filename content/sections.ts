@@ -3322,6 +3322,93 @@ export const sections: Section[] = [
   "unit": "q4"
  },
  {
+  "id": "mt2",
+  "slug": "midterm-2",
+  "num": "Midterm 2 · Thu, Oct 29",
+  "title": "Midterm 2 study plan",
+  "lede": "Everything since Midterm 1, a day-by-day plan that also covers Quiz 4, and a timed mock midterm.",
+  "blocks": [
+   {
+    "type": "countdown",
+    "target": "2026-10-29",
+    "label": "Midterm 2"
+   },
+   {
+    "type": "heading",
+    "text": "What's likely on it"
+   },
+   {
+    "type": "prose",
+    "html": "<p>Midterm 1 was on Sep 29, so Midterm 2 most likely covers everything taught since then: the end of Chapter 2 through §4.1. The syllabus skips §3.7 and §3.8. Your instructor holds a review the class meeting before each exam (Tue, Oct 27, the same day as Quiz 4), so confirm the exact list there.</p><div class=\"cover-grid\"><a href=\"/2-8/\"><b>§2.8</b><span>The derivative as a function</span></a><a href=\"/3-1/\"><b>§3.1</b><span>Power rule, eˣ</span></a><a href=\"/3-2/\"><b>§3.2</b><span>Product & quotient rules</span></a><a href=\"/3-3/\"><b>§3.3</b><span>Trig derivatives & limits</span></a><a href=\"/3-4/\"><b>§3.4</b><span>Chain rule</span></a><a href=\"/3-5/\"><b>§3.5</b><span>Implicit differentiation</span></a><a href=\"/3-6/\"><b>§3.6</b><span>Logs & inverse trig</span></a><a href=\"/3-9/\"><b>§3.9</b><span>Related rates</span></a><a href=\"/3-10/\"><b>§3.10</b><span>Linear approximation</span></a><a href=\"/3-11/\"><b>§3.11</b><span>Hyperbolic functions</span></a><a href=\"/4-1/\"><b>§4.1</b><span>Max & min values</span></a></div><p class='callout'><strong>Closed book, closed notes, no calculator.</strong> You have to know every formula by heart and do the arithmetic by hand. That's what the Memorize page and the mock midterm below are for.</p>"
+   },
+   {
+    "type": "heading",
+    "text": "Day-by-day plan"
+   },
+   {
+    "type": "prose",
+    "html": "<div class=\"compare\"><table><thead><tr><th>Day</th><th>Focus</th><th>Do this</th></tr></thead><tbody>\n<tr><th>Thu Oct 22</th><td>§3.6</td><td>Logs and log differentiation. Assigned #1–59 odd.</td></tr>\n<tr><th>Fri Oct 23</th><td>§3.11 + §3.10</td><td>Hyperbolic definitions and derivatives; linearization and differentials.</td></tr>\n<tr><th>Sat Oct 24</th><td>§3.9</td><td>Related rates: draw every problem. Then a <strong>short mock midterm</strong> to see where you stand.</td></tr>\n<tr><th>Sun Oct 25</th><td>§4.1 + Quiz 3 refresh</td><td>Critical numbers and the Closed Interval Method. Then redo the 18-question practice quiz (2.8–3.5), timed.</td></tr>\n<tr><th>Mon Oct 26</th><td>Quiz 4 review</td><td>Generate → Quiz 4 Mix, 20 problems. Memorize → Quiz 4 flashcards until you finish a round with no misses.</td></tr>\n<tr><th>Tue Oct 27</th><td>Quiz 4 + review class</td><td>Take the quiz. Write down anything the instructor emphasizes in the review. That evening: a <strong>full mock midterm</strong>.</td></tr>\n<tr><th>Wed Oct 28</th><td>Fix weak spots</td><td>Redo every problem you missed on the mocks, using the “Review” links. Then Generate → Quiz 3 Mix, 15 problems.</td></tr>\n<tr><th>Thu Oct 29</th><td>Midterm 2</td><td>Morning: one round of all flashcards and a read of the cheat sheet. Nothing new.</td></tr>\n</tbody></table></div>"
+   },
+   {
+    "type": "heading",
+    "text": "Exam-day strategy"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">First pass</span><p>Do every problem you're sure of first. Mark the rest and come back. Don't spend 15 minutes stuck on one.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Show the setup</span><p>Write the rule you're using (“chain rule: outside′·inside′”). Partial credit lives in the setup.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Related rates</span><p>Picture → equation → differentiate in \\(t\\) → plug in. Units in the answer.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Max/min</span><p>Always make the table: critical numbers inside the interval plus both endpoints.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Check</span><p>Plug a simple \\(x\\) into your derivative and see if the slope makes sense. Check every sign when you distribute a minus.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">No calculator</span><p>Leave answers exact (\\(\\frac{8}{9\\pi}\\), \\(\\sqrt5\\), \\(\\ln3\\)) unless asked for a decimal.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Mock midterm",
+    "id": "mock"
+   },
+   {
+    "type": "mock"
+   }
+  ]
+ },
+ {
+  "id": "grades",
+  "slug": "grades",
+  "num": "Grades",
+  "title": "Grade calculator",
+  "lede": "Enter your scores to see your grade so far, and what you need on the rest for an A or B.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p>This uses the grading rules from the Math 190 syllabus (Martinez, Fall 2026):</p>\n<ul class=\"steps\"><li><strong>Quizzes 10%</strong> (lowest quiz dropped), <strong>midterms 50%</strong> (three tests), <strong>final 40%</strong>,</li><li><strong>or the final exam alone</strong>, whichever is better,</li><li>A 90%+, B 80%+, C 70%+, D 60%+. No curve.</li></ul>\n<p class=\"callout\">The “final alone” rule is your safety net: <strong>90% on the comprehensive final is an A</strong>, and 80% is a B, no matter how the midterms went.</p>"
+   },
+   {
+    "type": "gradecalc"
+   }
+  ]
+ },
+ {
   "id": "quiz",
   "slug": "quick-quiz",
   "num": "Mixed",
