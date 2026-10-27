@@ -1,7 +1,9 @@
 "use client";
 import { AnimatePresence, motion } from "motion/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { QuizItem } from "@/content/types";
+import { UNITS } from "@/content/nav";
+import { useSharedUnit } from "@/lib/unit";
 
 function Question({ q, n, onAnswer }: { q: QuizItem; n: number; onAnswer: (ok: boolean) => void }) {
   const [picked, setPicked] = useState<number | null>(null);
@@ -44,12 +46,29 @@ function Question({ q, n, onAnswer }: { q: QuizItem; n: number; onAnswer: (ok: b
   );
 }
 
-export default function Quiz({ items }: { items: QuizItem[] }) {
+export default function Quiz({ items: all }: { items: QuizItem[] }) {
   const [score, setScore] = useState(0);
   const [answered, setAnswered] = useState(0);
   const [round, setRound] = useState(0);
+  const [unit, setUnit] = useSharedUnit();
+  const units = UNITS.filter((u) => all.some((q) => (q.unit ?? "q3") === u.id));
+  const items = units.length > 1 ? all.filter((q) => (q.unit ?? "q3") === unit) : all;
+  const reset = () => { setScore(0); setAnswered(0); setRound((r) => r + 1); };
+  // a new unit is a fresh round
+  useEffect(reset, [unit]);
   return (
     <div className="quiz">
+      {units.length > 1 && (
+        <div className="controls">
+          <div className="seg" role="group" aria-label="Which quiz">
+            {units.map((u) => (
+              <button key={u.id} type="button" className={unit === u.id ? "on" : ""} aria-pressed={unit === u.id} onClick={() => setUnit(u.id)}>
+                {u.long}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
       <div className="sec-progress" aria-live="polite">
         <span>Score</span>
         <motion.b key={score} initial={{ scale: 1.6, color: "var(--good)" }} animate={{ scale: 1, color: "var(--ink)" }} style={{ fontSize: 18 }}>
@@ -57,11 +76,11 @@ export default function Quiz({ items }: { items: QuizItem[] }) {
         </motion.b>
         <span>/ {items.length} · {answered} answered</span>
         {answered > 0 && (
-          <button type="button" className="btn" onClick={() => { setScore(0); setAnswered(0); setRound(round + 1); }}>Try again</button>
+          <button type="button" className="btn" onClick={reset}>Try again</button>
         )}
       </div>
       {items.map((q, i) => (
-        <Question key={`${round}-${i}`} q={q} n={i} onAnswer={(ok) => { setAnswered((a) => a + 1); if (ok) setScore((s) => s + 1); }} />
+        <Question key={`${unit}-${round}-${i}`} q={q} n={i} onAnswer={(ok) => { setAnswered((a) => a + 1); if (ok) setScore((s) => s + 1); }} />
       ))}
       <AnimatePresence>
         {answered === items.length && (

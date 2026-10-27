@@ -63,6 +63,7 @@ function renderBlock(b: Block): Block {
       return {
         ...b,
         items: b.items.map((q) => ({
+          ...q,
           question: tex(q.question),
           explain: tex(q.explain),
           options: q.options.map((o) => ({ ...o, html: tex(o.html) })),

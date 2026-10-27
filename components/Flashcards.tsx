@@ -2,6 +2,7 @@
 import { AnimatePresence, motion } from "motion/react";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import type { Flashcard } from "@/content/types";
+import { useSharedUnit } from "@/lib/unit";
 
 type Filter = "all" | "q4" | "trig" | "rules";
 const FILTERS: { id: Filter; label: string }[] = [
@@ -24,6 +25,9 @@ const shuffle = (a: number[]) => {
 
 export default function Flashcards({ items }: { items: Flashcard[] }) {
   const [filter, setFilter] = useState<Filter>("all");
+  const [unit] = useSharedUnit();
+  // open on the cards for the quiz picked in the top bar
+  useEffect(() => setFilter(unit === "q4" ? "q4" : "all"), [unit]);
   const [reverse, setReverse] = useState(false);
   const pool = useMemo(
     () =>

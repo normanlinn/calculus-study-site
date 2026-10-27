@@ -1,6 +1,10 @@
 [
   {
     "date": "2026-10-27",
+    "text": "Quick quiz now has 18 Quiz 4 questions, and Memorize has a full Quiz 4 section with 45 flashcards. Both follow the Quiz 4 / Quiz 3 switch in the top bar."
+  },
+  {
+    "date": "2026-10-27",
     "text": "New for Quiz 4: every problem in 3.6, 3.9, 3.10, 3.11 and 4.1 has a “Step through it like a debugger” button. It walks the solution one line at a time, with a Why box and a Watch panel."
   },
   {

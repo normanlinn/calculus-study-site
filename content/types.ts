@@ -54,6 +54,8 @@ export interface Flashcard {
 
 export interface QuizItem {
   question: string;
+  /** Which quiz the question practices; untagged questions are Quiz 3. */
+  unit?: Unit;
   options: { html: string; correct: boolean }[];
   explain: string;
 }

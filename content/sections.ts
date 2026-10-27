@@ -7650,13 +7650,427 @@ export const sections: Section[] = [
  {
   "id": "quiz",
   "slug": "quick-quiz",
-  "num": "Mixed",
+  "num": "Quiz 4 + Quiz 3",
   "title": "Quick quiz",
-  "lede": "Ten fast questions from all six sections. Pick an answer for instant feedback.",
+  "lede": "Fast multiple-choice questions with instant feedback. Pick Quiz 4 (§3.6–4.1, 18 questions) or Quiz 3 (§2.8–3.5, 10 questions).",
   "blocks": [
    {
     "type": "quiz",
     "items": [
+     {
+      "question": "<b>1.</b> §3.6 · \\(\\dfrac{d}{dx}\\tan^{-1}(e^x)\\) =",
+      "unit": "q4",
+      "options": [
+       {
+        "html": "\\(\\dfrac{e^x}{1+e^{2x}}\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(\\dfrac{1}{1+e^{2x}}\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\dfrac{e^x}{1+e^{x^2}}\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\dfrac{e^x}{\\sqrt{1-e^{2x}}}\\)",
+        "correct": false
+       }
+      ],
+      "explain": "Arctan chain rule \\(\\dfrac{u'}{1+u^2}\\) with \\(u=e^x\\): \\(u'=e^x\\) and \\(u^2=(e^x)^2=e^{2x}\\), not \\(e^{x^2}\\)."
+     },
+     {
+      "question": "<b>2.</b> §3.6 · \\(\\dfrac{d}{dx}\\sin^{-1}(3x)\\) =",
+      "unit": "q4",
+      "options": [
+       {
+        "html": "\\(\\dfrac{3}{\\sqrt{1-3x^2}}\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\dfrac{3}{\\sqrt{1-9x^2}}\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(\\dfrac{1}{\\sqrt{1-9x^2}}\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(-\\dfrac{3}{\\sqrt{1-9x^2}}\\)",
+        "correct": false
+       }
+      ],
+      "explain": "\\(\\dfrac{u'}{\\sqrt{1-u^2}}\\) with \\(u=3x\\): \\(u'=3\\), \\(u^2=9x^2\\). Only \\(\\cos^{-1}\\) gets the minus."
+     },
+     {
+      "question": "<b>3.</b> §3.6 · \\(\\dfrac{d}{dx}\\ln(x^2+1)\\) =",
+      "unit": "q4",
+      "options": [
+       {
+        "html": "\\(\\dfrac{1}{x^2+1}\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(2x\\ln(x^2+1)\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\dfrac{2x}{x^2+1}\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(\\dfrac{2x}{(x^2+1)^2}\\)",
+        "correct": false
+       }
+      ],
+      "explain": "\\((\\ln u)'=\\dfrac{u'}{u}\\): derivative of the inside over the inside."
+     },
+     {
+      "question": "<b>4.</b> §3.6 · \\(\\dfrac{d}{dx}\\log_2 x\\) =",
+      "unit": "q4",
+      "options": [
+       {
+        "html": "\\(\\dfrac{\\ln 2}{x}\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\dfrac1x\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(x\\ln2\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\dfrac{1}{x\\ln 2}\\)",
+        "correct": true
+       }
+      ],
+      "explain": "Logs <b>divide</b> by \\(\\ln b\\): \\((\\log_b x)'=\\dfrac{1}{x\\ln b}\\). Exponentials multiply: \\((b^x)'=b^x\\ln b\\)."
+     },
+     {
+      "question": "<b>5.</b> §3.6 · \\(\\dfrac{d}{dx}\\,x^x\\) =",
+      "unit": "q4",
+      "options": [
+       {
+        "html": "\\(x\\cdot x^{x-1}\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(x^x(\\ln x+1)\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(x^x\\ln x\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(x^x\\)",
+        "correct": false
+       }
+      ],
+      "explain": "Variable base <i>and</i> exponent, so use log differentiation: \\(\\ln y=x\\ln x\\Rightarrow \\dfrac{y'}{y}=\\ln x+1\\)."
+     },
+     {
+      "question": "<b>6.</b> §3.9 · A circle's radius grows at 2 cm/s. How fast is the area growing when \\(r=5\\) cm?",
+      "unit": "q4",
+      "options": [
+       {
+        "html": "\\(10\\pi\\) cm²/s",
+        "correct": false
+       },
+       {
+        "html": "\\(25\\pi\\) cm²/s",
+        "correct": false
+       },
+       {
+        "html": "\\(20\\pi\\) cm²/s",
+        "correct": true
+       },
+       {
+        "html": "\\(4\\pi\\) cm²/s",
+        "correct": false
+       }
+      ],
+      "explain": "\\(A=\\pi r^2\\Rightarrow \\dfrac{dA}{dt}=2\\pi r\\dfrac{dr}{dt}=2\\pi(5)(2)=20\\pi\\)."
+     },
+     {
+      "question": "<b>7.</b> §3.9 · In a related-rates problem, when do you plug in the numbers for “this moment”?",
+      "unit": "q4",
+      "options": [
+       {
+        "html": "Before writing the equation",
+        "correct": false
+       },
+       {
+        "html": "Before differentiating",
+        "correct": false
+       },
+       {
+        "html": "After differentiating",
+        "correct": true
+       },
+       {
+        "html": "It doesn't matter",
+        "correct": false
+       }
+      ],
+      "explain": "Differentiate first, then substitute. If you plug in a changing value too early it becomes a constant and its rate turns into 0."
+     },
+     {
+      "question": "<b>8.</b> §3.9 · A ladder slides with \\(x^2+y^2=25\\). Differentiating with respect to \\(t\\) gives",
+      "unit": "q4",
+      "options": [
+       {
+        "html": "\\(2x+2y=0\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(2x\\dfrac{dx}{dt}+2y\\dfrac{dy}{dt}=0\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(2x\\dfrac{dx}{dt}+2y\\dfrac{dy}{dt}=25\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(x\\dfrac{dx}{dt}=y\\dfrac{dy}{dt}\\)",
+        "correct": false
+       }
+      ],
+      "explain": "Each variable gets its own rate by the chain rule, and the constant 25 differentiates to 0."
+     },
+     {
+      "question": "<b>9.</b> §3.10 · The linearization of \\(f(x)=\\sqrt x\\) at \\(a=4\\) is",
+      "unit": "q4",
+      "options": [
+       {
+        "html": "\\(2+\\tfrac14(x-4)\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(2+\\tfrac12(x-4)\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(4+\\tfrac14(x-4)\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(2+\\tfrac14x\\)",
+        "correct": false
+       }
+      ],
+      "explain": "\\(L(x)=f(a)+f'(a)(x-a)\\): \\(f(4)=2\\), \\(f'(x)=\\dfrac{1}{2\\sqrt x}\\Rightarrow f'(4)=\\tfrac14\\)."
+     },
+     {
+      "question": "<b>10.</b> §3.10 · The differential of \\(y=x^3\\) is",
+      "unit": "q4",
+      "options": [
+       {
+        "html": "\\(3x^2\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(dy=x^3\\,dx\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(dy=3x\\,dx\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(dy=3x^2\\,dx\\)",
+        "correct": true
+       }
+      ],
+      "explain": "\\(dy=f'(x)\\,dx\\). Don't forget the \\(dx\\)."
+     },
+     {
+      "question": "<b>11.</b> §3.10 · Using \\(e^x\\approx1+x\\) near 0, \\(e^{0.02}\\approx\\)",
+      "unit": "q4",
+      "options": [
+       {
+        "html": "1.2",
+        "correct": false
+       },
+       {
+        "html": "1.02",
+        "correct": true
+       },
+       {
+        "html": "1.002",
+        "correct": false
+       },
+       {
+        "html": "0.98",
+        "correct": false
+       }
+      ],
+      "explain": "\\(L(x)=1+x\\), so \\(L(0.02)=1.02\\)."
+     },
+     {
+      "question": "<b>12.</b> §3.11 · \\(\\dfrac{d}{dx}\\cosh x\\) =",
+      "unit": "q4",
+      "options": [
+       {
+        "html": "\\(\\sinh x\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(-\\sinh x\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\cosh x\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(-\\cosh x\\)",
+        "correct": false
+       }
+      ],
+      "explain": "No minus sign, unlike \\((\\cos x)'=-\\sin x\\)."
+     },
+     {
+      "question": "<b>13.</b> §3.11 · Which identity is true?",
+      "unit": "q4",
+      "options": [
+       {
+        "html": "\\(\\cosh^2x+\\sinh^2x=1\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\cosh^2x-\\sinh^2x=1\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(\\sinh^2x-\\cosh^2x=1\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\cosh x-\\sinh x=1\\)",
+        "correct": false
+       }
+      ],
+      "explain": "Plug in the definitions: \\(\\left(\\frac{e^x+e^{-x}}2\\right)^2-\\left(\\frac{e^x-e^{-x}}2\\right)^2=\\frac{4}{4}=1\\)."
+     },
+     {
+      "question": "<b>14.</b> §3.11 · \\(\\sinh 0\\) and \\(\\cosh 0\\) are",
+      "unit": "q4",
+      "options": [
+       {
+        "html": "\\(1\\) and \\(0\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(0\\) and \\(0\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(0\\) and \\(1\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(1\\) and \\(1\\)",
+        "correct": false
+       }
+      ],
+      "explain": "\\(\\sinh0=\\frac{1-1}2=0\\), \\(\\cosh0=\\frac{1+1}2=1\\). Same as \\(\\sin0\\), \\(\\cos0\\)."
+     },
+     {
+      "question": "<b>15.</b> §4.1 · The critical numbers of \\(f(x)=x^3-3x\\) are",
+      "unit": "q4",
+      "options": [
+       {
+        "html": "\\(x=0\\) only",
+        "correct": false
+       },
+       {
+        "html": "\\(x=\\pm1\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(x=0,\\pm\\sqrt3\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(x=\\pm3\\)",
+        "correct": false
+       }
+      ],
+      "explain": "\\(f'(x)=3x^2-3=3(x-1)(x+1)=0\\)."
+     },
+     {
+      "question": "<b>16.</b> §4.1 · On a closed interval \\([a,b]\\), the absolute max of a continuous \\(f\\) can only be at",
+      "unit": "q4",
+      "options": [
+       {
+        "html": "points where \\(f'=0\\)",
+        "correct": false
+       },
+       {
+        "html": "the endpoints",
+        "correct": false
+       },
+       {
+        "html": "critical numbers or endpoints",
+        "correct": true
+       },
+       {
+        "html": "points where \\(f''=0\\)",
+        "correct": false
+       }
+      ],
+      "explain": "Closed Interval Method: list the critical numbers inside \\([a,b]\\) and both endpoints, evaluate \\(f\\) at each, and pick the largest."
+     },
+     {
+      "question": "<b>17.</b> §4.1 · The absolute max of \\(f(x)=x^2\\) on \\([-1,2]\\) is",
+      "unit": "q4",
+      "options": [
+       {
+        "html": "1",
+        "correct": false
+       },
+       {
+        "html": "0",
+        "correct": false
+       },
+       {
+        "html": "2",
+        "correct": false
+       },
+       {
+        "html": "4",
+        "correct": true
+       }
+      ],
+      "explain": "Candidates: \\(f(-1)=1\\), \\(f(0)=0\\) (critical number), \\(f(2)=4\\). The max is at an endpoint."
+     },
+     {
+      "question": "<b>18.</b> §4.1 · Is \\(x=\\tfrac12\\) a critical number of \\(p(x)=\\dfrac{x^2+2}{2x-1}\\)?",
+      "unit": "q4",
+      "options": [
+       {
+        "html": "Yes, \\(p'\\) is undefined there",
+        "correct": false
+       },
+       {
+        "html": "No, \\(\\tfrac12\\) is not in the domain of \\(p\\)",
+        "correct": true
+       },
+       {
+        "html": "Yes, \\(p'(\\tfrac12)=0\\)",
+        "correct": false
+       },
+       {
+        "html": "Only if p is continuous there",
+        "correct": false
+       }
+      ],
+      "explain": "A critical number must be in the domain of \\(f\\). \\(p\\) itself is undefined at \\(\\tfrac12\\)."
+     },
      {
       "question": "<b>1.</b> \\(\\dfrac{d}{dx}\\left(\\dfrac{1}{x^2}\\right)\\) =",
       "options": [
@@ -7885,54 +8299,195 @@ export const sections: Section[] = [
   "slug": "memory-tricks",
   "num": "Memorize",
   "title": "Memory tricks",
-  "lede": "How to remember every derivative and rule for the exam, plus a flashcard drill to practice them.",
+  "lede": "Quiz 4 first: tricks and phrases for §3.6–4.1 and a flashcard drill. The Quiz 3 trig tricks follow below.",
   "blocks": [
    {
     "type": "heading",
-    "text": "Trig derivatives: learn 3, get 6"
+    "text": "Quiz 4 · §3.6–4.1: what to memorize",
+    "id": "quiz-4-tricks"
    },
    {
     "type": "prose",
-    "html": "<p>Don't memorize six separate facts. Learn the three “plain” ones, then use one rule to get the other three for free.</p><p><strong>Step 1. Learn these three:</strong></p><div class=\"compare\"><table><thead><tr><th>Function</th><th>Derivative</th></tr></thead><tbody><tr><th>\\(\\sin x\\)</th><td>\\(\\cos x\\)</td></tr><tr><th>\\(\\tan x\\)</th><td>\\(\\sec^2 x\\)</td></tr><tr><th>\\(\\sec x\\)</th><td>\\(\\sec x\\tan x\\)</td></tr></tbody></table></div>"
+    "html": "<p>Everything for Quiz 4 in one place, one section at a time. Each card gives the formula and a phrase to say out loud. The flashcard drill right after this opens on the Quiz 4 cards. The Quiz 3 trig tricks are further down the page.</p>"
    },
    {
-    "type": "prose",
-    "html": "<p><strong>Step 2. The “co-” rule:</strong> put <strong>co</strong> in front of every function, then add a <strong>minus sign</strong>.</p><div class=\"compare\"><table><thead><tr><th>Plain</th><th>Add “co” + minus</th></tr></thead><tbody><tr><th>\\((\\sin x)'=\\cos x\\)</th><td>\\((\\cos x)'=-\\sin x\\)</td></tr><tr><th>\\((\\tan x)'=\\sec^2x\\)</th><td>\\((\\cot x)'=-\\csc^2x\\)</td></tr><tr><th>\\((\\sec x)'=\\sec x\\tan x\\)</th><td>\\((\\csc x)'=-\\csc x\\cot x\\)</td></tr></tbody></table></div><p class=\"note\">Adding “co” to cos gives “co-cos”, which is just sin. So in the first row, “cos x” becomes “sin x” and picks up the minus: \\((\\cos x)'=-\\sin x\\).</p>"
+    "type": "heading",
+    "text": "§3.6 Logs and exponentials: one idea, two directions"
    },
    {
     "type": "rules",
     "items": [
      {
       "key": true,
-      "html": "<span class=\"tag\">The one sentence</span><p><strong>“Co” functions get a minus.</strong> cos, cot and csc have negative derivatives. sin, tan and sec don't.</p>"
+      "html": "<span class=\"tag\">The ln rule</span>\\[(\\ln u)'=\\frac{u'}{u}\\]<p><strong>“Derivative of the inside over the inside.”</strong> Works for \\(\\ln|u|\\) too.</p>"
      },
      {
       "key": false,
-      "html": "<span class=\"tag\">Partners</span><p><strong>tan goes with sec, cot goes with csc.</strong> \\(\\tan\\to\\sec^2\\), \\(\\sec\\to\\sec\\tan\\). \\(\\cot\\to-\\csc^2\\), \\(\\csc\\to-\\csc\\cot\\).</p>"
+      "html": "<span class=\"tag\">Other bases</span>\\[(\\log_b x)'=\\frac{1}{x\\ln b}\\]\\[(b^x)'=b^x\\ln b\\]<p><strong>“Logs divide by ln b, powers multiply by ln b.”</strong> When \\(b=e\\), \\(\\ln e=1\\) and it disappears.</p>"
      },
      {
       "key": false,
-      "html": "<span class=\"tag\">Keep yourself</span><p>sec and csc keep themselves: \\(\\sec\\to\\boldsymbol{\\sec}\\cdot\\tan\\), \\(\\csc\\to-\\boldsymbol{\\csc}\\cdot\\cot\\).</p>"
+      "html": "<span class=\"tag\">Log laws first</span><p>Before differentiating \\(\\ln(\\text{product, quotient or power})\\), <strong>split it</strong>: \\(\\ln(ab)=\\ln a+\\ln b\\), \\(\\ln\\frac ab=\\ln a-\\ln b\\), \\(\\ln a^n=n\\ln a\\). Then each piece is easy.</p>"
      },
      {
-      "key": false,
-      "html": "<span class=\"tag\">The circle</span><p>sin and cos cycle every 4 derivatives: \\(\\sin\\to\\cos\\to-\\sin\\to-\\cos\\to\\sin\\). One quarter turn per derivative.</p>"
-     }
-    ]
-   },
-   {
-    "type": "examples",
-    "items": [
-     {
-      "label": "Blanked on the exam? Rebuild tan in 20 seconds",
-      "html": "<p>You only need sin, cos and the quotient rule. Write \\(\\tan x=\\dfrac{\\sin x}{\\cos x}\\):</p><ol class=\"steps\"><li>Low d-high minus high d-low: \\(\\dfrac{\\cos x\\cdot\\cos x-\\sin x\\cdot(-\\sin x)}{\\cos^2x}\\)</li><li>Top: \\(\\cos^2x+\\sin^2x=1\\).</li><li>So \\((\\tan x)'=\\dfrac{1}{\\cos^2x}=\\sec^2x\\).</li><li class=\"why\">Same idea for sec: \\(\\sec x=\\dfrac1{\\cos x}\\) gives \\(\\dfrac{\\sin x}{\\cos^2x}=\\sec x\\tan x\\).</li></ol>"
+      "key": true,
+      "html": "<span class=\"tag\">Variable in base AND exponent</span><p>\\(x^x\\), \\(x^{\\sin x}\\), \\(x^{\\ln x}\\): <strong>take ln of both sides first</strong> (log differentiation), then \\(\\frac{y'}{y}=\\dots\\), then multiply by \\(y\\).</p>"
      }
     ]
    },
    {
     "type": "heading",
-    "text": "Quiz 4 formulas: the shortcuts",
-    "id": "quiz-4-tricks"
+    "text": "§3.6 Inverse trig: learn 3, get 6"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Learn these 3</span>\\[(\\sin^{-1}x)'=\\frac{1}{\\sqrt{1-x^2}}\\]\\[(\\tan^{-1}x)'=\\frac{1}{1+x^2}\\]\\[(\\sec^{-1}x)'=\\frac{1}{x\\sqrt{x^2-1}}\\]"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Get the other 3 free</span><p>Same <strong>“co gets a minus”</strong> rule as regular trig: \\(\\cos^{-1}\\), \\(\\cot^{-1}\\), \\(\\csc^{-1}\\) are the same formulas with a minus in front.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Say it</span><p>tan⁻¹: <strong>“one over one plus x squared.”</strong><br>sin⁻¹: <strong>“one over root of one minus x squared.”</strong><br>Plus sign for tan (no root), minus sign under the root for sin.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">With an inside u</span>\\[(\\tan^{-1}u)'=\\frac{u'}{1+u^2}\\]<p><strong>Three things to write down: \\(u\\), \\(u'\\), \\(u^2\\).</strong> Then fill in the formula. \\(u'\\) goes on top; \\(u^2\\) replaces \\(x^2\\).</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "§3.9 Related rates: the 4-step routine"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">The routine</span><p><strong>Draw → Equation → Differentiate → Plug in.</strong> Say it as “D-E-D-P”. Numbers for “this moment” go in <em>last</em>, after differentiating with respect to \\(t\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Shapes to know</span><p>Sphere \\(V=\\frac43\\pi r^3\\), \\(S=4\\pi r^2\\). Cone \\(V=\\frac13\\pi r^2h\\). Cylinder \\(V=\\pi r^2h\\). Circle \\(A=\\pi r^2\\). Right triangle \\(x^2+y^2=z^2\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Cone trick</span><p>Water in a cone: use <strong>similar triangles</strong> (\\(\\frac rh=\\frac{R}{H}\\)) to replace \\(r\\) with a multiple of \\(h\\) <em>before</em> differentiating.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Signs</span><p>Something <strong>shrinking</strong> or <strong>leaking</strong> has a <strong>negative</strong> rate. Constants (a fixed pole, a fixed altitude) can be plugged in early; changing things cannot.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "§3.10 Linear approximation: it's just the tangent line"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Linearization</span>\\[L(x)=f(a)+f'(a)(x-a)\\]<p><strong>“Start at the height, move with the slope.”</strong> Pick \\(a\\) close to your number where \\(f(a)\\) is easy: \\(\\sqrt{4.02}\\to a=4\\), \\(e^{0.1}\\to a=0\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Differential</span>\\[dy=f'(x)\\,dx\\]<p><strong>“Derivative, then attach dx.”</strong></p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Δy vs dy</span><p>\\(\\Delta y=f(x+\\Delta x)-f(x)\\) is the <strong>real</strong> change (on the curve). \\(dy\\) is the <strong>predicted</strong> change (on the tangent line).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Ones worth knowing</span><p>Near 0: \\(e^x\\approx1+x\\), \\(\\sin x\\approx x\\), \\(\\tan^{-1}x\\approx x\\). Near 1: \\(\\ln x\\approx x-1\\).</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "§3.11 Hyperbolic: the trig table with the minus moved"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Definitions</span>\\[\\sinh x=\\frac{e^x-e^{-x}}{2}\\]\\[\\cosh x=\\frac{e^x+e^{-x}}{2}\\]<p><strong>“sinh is minus, cosh is plus.”</strong> (s and m sit together; c and p are both round.) At 0: \\(\\sinh0=0\\), \\(\\cosh0=1\\), like sin and cos.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Derivatives</span>\\[(\\sinh x)'=\\cosh x\\]\\[(\\cosh x)'=\\sinh x\\]\\[(\\tanh x)'=\\operatorname{sech}^2x\\]<p>Just like trig, <strong>except cosh has no minus</strong>.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Where the minus went</span>\\[(\\coth x)'=-\\operatorname{csch}^2x\\]\\[(\\operatorname{sech}x)'=-\\operatorname{sech}x\\tanh x\\]\\[(\\operatorname{csch}x)'=-\\operatorname{csch}x\\coth x\\]<p><strong>“The minus moves from cosh to sech.”</strong> Every other sign matches trig.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Identity</span>\\[\\cosh^2x-\\sinh^2x=1\\]<p>Trig has a plus; hyperbolic has a <strong>minus</strong>. Use it like \\(\\sin^2+\\cos^2=1\\) to find sinh from cosh.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "§4.1 Max and min: the checklist"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Critical number</span><p>A number \\(c\\) <strong>in the domain</strong> where \\(f'(c)=0\\) <strong>or</strong> \\(f'(c)\\) doesn't exist. Find \\(f'\\), factor it, set the <strong>top = 0</strong> and check where the <strong>bottom = 0</strong>.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Closed Interval Method</span><p><strong>“Critical numbers inside + both endpoints → table → biggest and smallest.”</strong> Evaluate the original \\(f\\), not \\(f'\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Extreme Value Theorem</span><p>Continuous on a <strong>closed</strong> interval \\([a,b]\\) ⇒ an absolute max and min <strong>both exist</strong>. Open or half-open intervals might have none.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Fermat's Theorem</span><p>Local max or min at \\(c\\) and \\(f'(c)\\) exists ⇒ \\(f'(c)=0\\). The reverse is false: \\(f(x)=x^3\\) has \\(f'(0)=0\\) but no max or min there.</p>"
+     }
+    ]
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Squaring the inside wrong",
+      "html": "<p>\\((e^x)^2=e^{2x}\\), not \\(e^{x^2}\\). \\((3x)^2=9x^2\\), not \\(3x^2\\). Square the <strong>whole</strong> inside.</p>"
+     },
+     {
+      "title": "Forgetting u′ in inverse trig",
+      "html": "<p>\\((\\tan^{-1}x^2)'=\\frac{2x}{1+x^4}\\). The \\(2x\\) on top is the chain rule; it's easy to forget.</p>"
+     },
+     {
+      "title": "Plugging in before differentiating",
+      "html": "<p>In related rates, a changing quantity replaced by a number has derivative 0, so its rate disappears and the answer is wrong.</p>"
+     },
+     {
+      "title": "Counting a point outside the domain",
+      "html": "<p>If \\(f\\) itself is undefined at \\(c\\), then \\(c\\) is not a critical number, even though \\(f'\\) is undefined there too.</p>"
+     },
+     {
+      "title": "Skipping the endpoints",
+      "html": "<p>On \\([a,b]\\) the absolute max is often at an endpoint. Always put \\(f(a)\\) and \\(f(b)\\) in your table.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Quiz 4 in one line each"
    },
    {
     "type": "rules",
@@ -7965,19 +8520,11 @@ export const sections: Section[] = [
    },
    {
     "type": "heading",
-    "text": "Every rule as a phrase you can say"
-   },
-   {
-    "type": "prose",
-    "html": "<div class=\"compare\"><table><thead><tr><th>Rule</th><th>Formula</th><th>Say it as</th></tr></thead><tbody><tr><th>Power</th><td>\\((x^n)'=nx^{n-1}\\)</td><td>“Bring the power down, subtract one.”</td></tr><tr><th>Constant</th><td>\\((c)'=0\\)</td><td>“Flat line, zero slope.”</td></tr><tr><th>\\(e^x\\)</th><td>\\((e^x)'=e^x\\)</td><td>“e to the x is lazy: it stays the same.”</td></tr><tr><th>\\(a^x\\)</th><td>\\((a^x)'=a^x\\ln a\\)</td><td>“Same as e to the x, times ln a.”</td></tr><tr><th>Product</th><td>\\((fg)'=fg'+gf'\\)</td><td>“First d-second, plus second d-first.”</td></tr><tr><th>Quotient</th><td>\\(\\left(\\frac fg\\right)'=\\frac{gf'-fg'}{g^2}\\)</td><td>“Low d-high minus high d-low, over the square of what's below.”</td></tr><tr><th>Chain</th><td>\\(f'(g(x))\\,g'(x)\\)</td><td>“Outside derivative, inside left alone, times inside derivative.” Peel the onion.</td></tr><tr><th>Implicit</th><td>\\((y^n)'=ny^{n-1}y'\\)</td><td>“Every y gets a y′.”</td></tr></tbody></table></div><p class=\"note\">Why “low” goes first in the quotient rule: the minus sign makes order matter. Start with the bottom and you'll get the sign right.</p>"
-   },
-   {
-    "type": "heading",
     "text": "Flashcard drill"
    },
    {
     "type": "prose",
-    "html": "<p>Tap a card to flip it. Mark <strong>Got it</strong> or <strong>Again</strong>. Cards you miss come back at the end of the round. Switch the direction to practice going from the answer back to the question.</p>"
+    "html": "<p>Tap a card to flip it. Mark <strong>Got it</strong> or <strong>Again</strong>. Cards you miss come back at the end of the round. Switch the direction to practice going from the answer back to the question. It opens on the <strong>Quiz 4</strong> cards when Quiz 4 is selected in the top bar; use the buttons to switch.</p>"
    },
    {
     "type": "flashcards",
@@ -8216,8 +8763,158 @@ export const sections: Section[] = [
       "front": "How do you prove \\((\\cot x)'=-\\csc^2x\\)?",
       "back": "Write \\(\\frac{\\cos x}{\\sin x}\\), quotient rule, \\(\\sin^2+\\cos^2=1\\), rewrite as \\(-\\csc^2x\\)",
       "tag": "Trig proof"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\cot^{-1}x\\)",
+      "back": "\\(-\\dfrac{1}{1+x^2}\\)",
+      "tag": "Q4 · inverse trig"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\csc^{-1}x\\)",
+      "back": "\\(-\\dfrac{1}{x\\sqrt{x^2-1}}\\)",
+      "tag": "Q4 · inverse trig"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\cos^{-1}u\\)",
+      "back": "\\(-\\dfrac{u'}{\\sqrt{1-u^2}}\\)",
+      "tag": "Q4 · inverse trig"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\ln|x|\\)",
+      "back": "\\(\\dfrac1x\\)",
+      "tag": "Q4 · logs"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}e^{u}\\)",
+      "back": "\\(e^{u}\\cdot u'\\)",
+      "tag": "Q4 · logs"
+     },
+     {
+      "front": "When do you use log differentiation?",
+      "back": "Variable in the base <b>and</b> the exponent (like \\(x^x\\)), or a big product/quotient of powers",
+      "tag": "Q4 · logs"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\coth x\\)",
+      "back": "\\(-\\operatorname{csch}^2x\\)",
+      "tag": "Q4 · hyperbolic"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\operatorname{sech}x\\)",
+      "back": "\\(-\\operatorname{sech}x\\tanh x\\)",
+      "tag": "Q4 · hyperbolic"
+     },
+     {
+      "front": "\\(\\dfrac{d}{dx}\\operatorname{csch}x\\)",
+      "back": "\\(-\\operatorname{csch}x\\coth x\\)",
+      "tag": "Q4 · hyperbolic"
+     },
+     {
+      "front": "\\(\\sinh0\\) and \\(\\cosh0\\)",
+      "back": "\\(0\\) and \\(1\\)",
+      "tag": "Q4 · hyperbolic"
+     },
+     {
+      "front": "\\(\\cosh x+\\sinh x=\\)",
+      "back": "\\(e^x\\)",
+      "tag": "Q4 · hyperbolic"
+     },
+     {
+      "front": "\\(\\Delta y\\) vs \\(dy\\)",
+      "back": "\\(\\Delta y\\): real change on the curve. \\(dy=f'(x)dx\\): change along the tangent line",
+      "tag": "Q4 · approximation"
+     },
+     {
+      "front": "\\(e^x\\approx\\) near 0",
+      "back": "\\(1+x\\)",
+      "tag": "Q4 · approximation"
+     },
+     {
+      "front": "\\(\\ln x\\approx\\) near 1",
+      "back": "\\(x-1\\)",
+      "tag": "Q4 · approximation"
+     },
+     {
+      "front": "Sphere: \\(V\\) and \\(S\\)",
+      "back": "\\(V=\\tfrac43\\pi r^3\\), \\(S=4\\pi r^2\\)",
+      "tag": "Q4 · related rates"
+     },
+     {
+      "front": "Related rates: the 4 steps",
+      "back": "Draw → Equation → Differentiate (in \\(t\\)) → Plug in",
+      "tag": "Q4 · related rates"
+     },
+     {
+      "front": "Water in a cone: how do you get rid of \\(r\\)?",
+      "back": "Similar triangles: \\(\\frac rh=\\frac RH\\), so \\(r\\) is a multiple of \\(h\\)",
+      "tag": "Q4 · related rates"
+     },
+     {
+      "front": "Extreme Value Theorem",
+      "back": "\\(f\\) continuous on a closed \\([a,b]\\) ⇒ absolute max and min exist",
+      "tag": "Q4 · max/min"
+     },
+     {
+      "front": "Fermat's Theorem",
+      "back": "Local extreme at \\(c\\) and \\(f'(c)\\) exists ⇒ \\(f'(c)=0\\)",
+      "tag": "Q4 · max/min"
+     },
+     {
+      "front": "Does \\(f'(c)=0\\) guarantee a max or min?",
+      "back": "No. \\(f(x)=x^3\\) at \\(c=0\\)",
+      "tag": "Q4 · max/min"
      }
     ]
+   },
+   {
+    "type": "heading",
+    "text": "Quiz 3 · Trig derivatives: learn 3, get 6"
+   },
+   {
+    "type": "prose",
+    "html": "<p>Don't memorize six separate facts. Learn the three “plain” ones, then use one rule to get the other three for free.</p><p><strong>Step 1. Learn these three:</strong></p><div class=\"compare\"><table><thead><tr><th>Function</th><th>Derivative</th></tr></thead><tbody><tr><th>\\(\\sin x\\)</th><td>\\(\\cos x\\)</td></tr><tr><th>\\(\\tan x\\)</th><td>\\(\\sec^2 x\\)</td></tr><tr><th>\\(\\sec x\\)</th><td>\\(\\sec x\\tan x\\)</td></tr></tbody></table></div>"
+   },
+   {
+    "type": "prose",
+    "html": "<p><strong>Step 2. The “co-” rule:</strong> put <strong>co</strong> in front of every function, then add a <strong>minus sign</strong>.</p><div class=\"compare\"><table><thead><tr><th>Plain</th><th>Add “co” + minus</th></tr></thead><tbody><tr><th>\\((\\sin x)'=\\cos x\\)</th><td>\\((\\cos x)'=-\\sin x\\)</td></tr><tr><th>\\((\\tan x)'=\\sec^2x\\)</th><td>\\((\\cot x)'=-\\csc^2x\\)</td></tr><tr><th>\\((\\sec x)'=\\sec x\\tan x\\)</th><td>\\((\\csc x)'=-\\csc x\\cot x\\)</td></tr></tbody></table></div><p class=\"note\">Adding “co” to cos gives “co-cos”, which is just sin. So in the first row, “cos x” becomes “sin x” and picks up the minus: \\((\\cos x)'=-\\sin x\\).</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">The one sentence</span><p><strong>“Co” functions get a minus.</strong> cos, cot and csc have negative derivatives. sin, tan and sec don't.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Partners</span><p><strong>tan goes with sec, cot goes with csc.</strong> \\(\\tan\\to\\sec^2\\), \\(\\sec\\to\\sec\\tan\\). \\(\\cot\\to-\\csc^2\\), \\(\\csc\\to-\\csc\\cot\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Keep yourself</span><p>sec and csc keep themselves: \\(\\sec\\to\\boldsymbol{\\sec}\\cdot\\tan\\), \\(\\csc\\to-\\boldsymbol{\\csc}\\cdot\\cot\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">The circle</span><p>sin and cos cycle every 4 derivatives: \\(\\sin\\to\\cos\\to-\\sin\\to-\\cos\\to\\sin\\). One quarter turn per derivative.</p>"
+     }
+    ]
+   },
+   {
+    "type": "examples",
+    "items": [
+     {
+      "label": "Blanked on the exam? Rebuild tan in 20 seconds",
+      "html": "<p>You only need sin, cos and the quotient rule. Write \\(\\tan x=\\dfrac{\\sin x}{\\cos x}\\):</p><ol class=\"steps\"><li>Low d-high minus high d-low: \\(\\dfrac{\\cos x\\cdot\\cos x-\\sin x\\cdot(-\\sin x)}{\\cos^2x}\\)</li><li>Top: \\(\\cos^2x+\\sin^2x=1\\).</li><li>So \\((\\tan x)'=\\dfrac{1}{\\cos^2x}=\\sec^2x\\).</li><li class=\"why\">Same idea for sec: \\(\\sec x=\\dfrac1{\\cos x}\\) gives \\(\\dfrac{\\sin x}{\\cos^2x}=\\sec x\\tan x\\).</li></ol>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Quiz 3 · Every rule as a phrase you can say"
+   },
+   {
+    "type": "prose",
+    "html": "<div class=\"compare\"><table><thead><tr><th>Rule</th><th>Formula</th><th>Say it as</th></tr></thead><tbody><tr><th>Power</th><td>\\((x^n)'=nx^{n-1}\\)</td><td>“Bring the power down, subtract one.”</td></tr><tr><th>Constant</th><td>\\((c)'=0\\)</td><td>“Flat line, zero slope.”</td></tr><tr><th>\\(e^x\\)</th><td>\\((e^x)'=e^x\\)</td><td>“e to the x is lazy: it stays the same.”</td></tr><tr><th>\\(a^x\\)</th><td>\\((a^x)'=a^x\\ln a\\)</td><td>“Same as e to the x, times ln a.”</td></tr><tr><th>Product</th><td>\\((fg)'=fg'+gf'\\)</td><td>“First d-second, plus second d-first.”</td></tr><tr><th>Quotient</th><td>\\(\\left(\\frac fg\\right)'=\\frac{gf'-fg'}{g^2}\\)</td><td>“Low d-high minus high d-low, over the square of what's below.”</td></tr><tr><th>Chain</th><td>\\(f'(g(x))\\,g'(x)\\)</td><td>“Outside derivative, inside left alone, times inside derivative.” Peel the onion.</td></tr><tr><th>Implicit</th><td>\\((y^n)'=ny^{n-1}y'\\)</td><td>“Every y gets a y′.”</td></tr></tbody></table></div><p class=\"note\">Why “low” goes first in the quotient rule: the minus sign makes order matter. Start with the bottom and you'll get the sign right.</p>"
    },
    {
     "type": "heading",

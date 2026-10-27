@@ -5,6 +5,7 @@ import { AnimatePresence, motion, useScroll, useSpring } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { navItems, unitProblemIds, UNITS, LATEST_UNIT } from "@/content/nav";
 import type { Unit } from "@/content/types";
+import { shareUnit, storedUnit } from "@/lib/unit";
 import { useDone } from "@/lib/progress";
 import AccountButton from "./AccountButton";
 
@@ -105,7 +106,12 @@ export default function Nav() {
   const done = useDone();
   const pageUnit = navItems.find((n) => path.endsWith("/" + n.slug))?.unit;
   const [unit, setUnit] = useState<Unit>(pageUnit ?? LATEST_UNIT);
-  useEffect(() => { if (pageUnit) setUnit(pageUnit); }, [pageUnit]);
+  useEffect(() => { const u = pageUnit ?? storedUnit(); if (u) setUnit(u); }, [pageUnit]);
+  useEffect(() => {
+    const on = (e: Event) => setUnit((e as CustomEvent<Unit>).detail);
+    window.addEventListener("deriv-guide-unit", on);
+    return () => window.removeEventListener("deriv-guide-unit", on);
+  }, []);
   const ids = unitProblemIds(unit);
   const count = ids.filter((id) => done[id]).length;
   const mainItems = navItems.filter((n) => n.unit === unit);
@@ -130,7 +136,7 @@ export default function Nav() {
           <nav className="navlinks" ref={listRef} aria-label="Sections">
             <div className="unit-switch" role="group" aria-label="Which quiz">
               {UNITS.map((u) => (
-                <button key={u.id} type="button" className={unit === u.id ? "on" : ""} aria-pressed={unit === u.id} onClick={() => setUnit(u.id)} title={u.long}>
+                <button key={u.id} type="button" className={unit === u.id ? "on" : ""} aria-pressed={unit === u.id} onClick={() => shareUnit(u.id)} title={u.long}>
                   {u.label}
                 </button>
               ))}
