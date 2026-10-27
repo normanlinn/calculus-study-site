@@ -596,3 +596,9 @@ h3[id] { scroll-margin-top: 80px; }
 .dbg-watch th { width: 30%; color: var(--accent); }
 .dbg-done { padding: 8px 12px; margin: 0; background: var(--good-soft); color: var(--good); font-weight: 600; font-size: 14px; }
 @media (pointer: fine) { .dbg-toolbar button:not(:disabled), .dbg-line, .dbg-open { cursor: var(--cur-pointer) !important; } }
+
+/* Phones: slightly smaller math so long solution lines fit without sideways scrolling */
+@media (max-width: 520px) {
+  .prob p .katex, .ex .katex, .steps .katex { white-space: normal; }
+  .math-display .katex, .dbg-src .katex, .steps .katex { font-size: 1em; }
+}
