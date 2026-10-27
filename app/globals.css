@@ -564,3 +564,35 @@ h3[id] { scroll-margin-top: 80px; }
 .itb-q { font-size: 19px; overflow-x: auto; }
 .itb-steps { display: grid; gap: 8px; grid-template-columns: minmax(0, 1fr); }
 .itb-steps > div { overflow-x: auto; overflow-y: hidden; padding-block: .3em; }
+
+/* Debugger-style solution stepper */
+.dbg-open { color: var(--deriv); }
+.dbg { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--bg); margin: 6px 0 10px; outline: none; }
+.dbg:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.dbg-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; padding: 8px 10px; background: var(--ink); color: var(--bg); }
+.dbg-toolbar button { font: 600 12px var(--font-mono); padding: 6px 10px; border-radius: 8px; border: 1px solid color-mix(in srgb, var(--bg) 30%, transparent); background: transparent; color: var(--bg); cursor: pointer; }
+.dbg-toolbar button:disabled { opacity: .35; cursor: default; }
+.dbg-toolbar .dbg-step { background: var(--good); border-color: var(--good); color: #fff; }
+.dbg-pos { margin-left: auto; font: 12px var(--font-mono); opacity: .8; }
+.dbg-body { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); }
+@media (max-width: 760px) { .dbg-body { grid-template-columns: minmax(0, 1fr); } }
+.dbg-code { list-style: none; margin: 0; padding: 6px 0; background: var(--surface); border-right: 1px solid var(--line); counter-reset: none; }
+.dbg-line { display: grid; grid-template-columns: 34px minmax(0, 1fr); align-items: center; gap: 4px; padding: 4px 10px 4px 0; cursor: pointer; border-left: 3px solid transparent; }
+.dbg-line:hover { background: var(--bg); }
+.dbg-gutter { font: 600 12px var(--font-mono); color: var(--muted); text-align: right; padding-right: 6px; }
+.dbg-line.cur { background: color-mix(in srgb, var(--tangent) 14%, transparent); border-left-color: var(--tangent); }
+.dbg-line.cur .dbg-gutter { color: var(--tangent); }
+.dbg-line.past .dbg-src { opacity: .62; }
+.dbg-src { overflow-x: auto; overflow-y: hidden; padding-block: .25em; }
+.dbg-hidden { font: 12px var(--font-mono); color: var(--muted); letter-spacing: .2em; }
+.dbg-side { display: grid; gap: 10px; align-content: start; padding: 12px; }
+.dbg-label { display: block; font: 700 11px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+.dbg-why { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--tangent); border-radius: 10px; padding: 10px 12px; font-size: 15.5px; line-height: 1.5; display: grid; gap: 6px; }
+.dbg-why > div { overflow-x: auto; overflow-y: hidden; padding-block: .15em; }
+.dbg-why p { overflow-x: auto; overflow-y: hidden; padding-block: .15em; }
+.dbg-watch table { width: 100%; border-collapse: collapse; font-size: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.dbg-watch th, .dbg-watch td { padding: 6px 10px; border-bottom: 1px solid var(--line); text-align: left; }
+.dbg-watch tr:last-child th, .dbg-watch tr:last-child td { border-bottom: 0; }
+.dbg-watch th { width: 30%; color: var(--accent); }
+.dbg-done { padding: 8px 12px; margin: 0; background: var(--good-soft); color: var(--good); font-weight: 600; font-size: 14px; }
+@media (pointer: fine) { .dbg-toolbar button:not(:disabled), .dbg-line, .dbg-open { cursor: var(--cur-pointer) !important; } }

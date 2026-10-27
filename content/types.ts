@@ -24,6 +24,17 @@ export interface Problem {
   href: string | null;
   question: string;
   reveals: { label: string; html: string }[];
+  /** Line-by-line walkthrough for the debugger-style stepper. */
+  debug?: DebugLine[];
+}
+
+export interface DebugLine {
+  /** The math written on this line (TeX, no delimiters). */
+  code: string;
+  /** Why this line is true / what rule produced it (HTML with TeX). */
+  why: string;
+  /** Values known after this line, shown in the Watch panel: [name, value] in TeX. */
+  watch?: [string, string][];
 }
 
 /** A cheat sheet card: a short summary that opens a pop-up with the full explanation. */

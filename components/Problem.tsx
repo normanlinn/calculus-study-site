@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
 import type { Problem as P } from "@/content/types";
 import { setDone, useDone } from "@/lib/progress";
+import DebugStepper from "./DebugStepper";
 
 function Disclosure({ label, html }: { label: string; html: string }) {
   const [open, setOpen] = useState(false);
@@ -29,6 +30,24 @@ function Disclosure({ label, html }: { label: string; html: string }) {
             >
               <StepLines html={html} />
             </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
+function DebugToggle({ lines }: { lines: NonNullable<P["debug"]> }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div>
+      <button type="button" className="reveal-btn dbg-open" aria-expanded={open} onClick={() => setOpen(!open)}>
+        <span aria-hidden>{open ? "■" : "▶"}</span> {open ? "Stop debugging" : "Step through it like a debugger"}
+      </button>
+      <AnimatePresence initial={false}>
+        {open && (
+          <motion.div className="reveal-body" initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.3 }}>
+            <DebugStepper lines={lines} />
           </motion.div>
         )}
       </AnimatePresence>
@@ -79,6 +98,7 @@ export default function Problem({ p }: { p: P }) {
         </motion.button>
       </div>
       <div className="reveals">
+        {p.debug && <DebugToggle lines={p.debug} />}
         {p.reveals.map((r, i) => <Disclosure key={i} label={r.label} html={r.html} />)}
       </div>
     </motion.div>

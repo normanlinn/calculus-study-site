@@ -2052,6 +2052,62 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(u=e^x\\), \\(u'=e^x\\), \\(u^2=e^{2x}\\).</p><p class=\"ans\">\\(y'=\\dfrac{e^x}{1+e^{2x}}\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "y=\\tan^{-1}\\big(e^x\\big)",
+        "why": "Read the structure first, like reading a function call: the <b>outer</b> function is \\(\\tan^{-1}(\\,\\cdot\\,)\\) and the <b>inner</b> one is what sits in the parentheses. Name the inside \\(u\\).",
+        "watch": [
+         [
+          "u",
+          "e^x"
+         ]
+        ]
+       },
+       {
+        "code": "u'=e^x",
+        "why": "The derivative of \\(e^x\\) is itself, \\(e^x\\). That never changes.",
+        "watch": [
+         [
+          "u'",
+          "e^x"
+         ]
+        ]
+       },
+       {
+        "code": "u^2=e^{2x}",
+        "why": "The formula needs \\(u^2\\) in the denominator, so square the inside now. Square the <i>whole</i> inside, not just part of it.",
+        "watch": [
+         [
+          "u^2",
+          "e^{2x}"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{u'}{1+u^2}",
+        "why": "Rule: \\(\\dfrac{d}{dx}\\tan^{-1}u=\\dfrac{u'}{1+u^2}\\). It is the chain rule built in: the \\(u'\\) on top is the derivative of the inside."
+       },
+       {
+        "code": "y'=\\frac{e^x}{1+e^{2x}}",
+        "why": "Substitute the values from the Watch panel: \\(u'\\) on top, \\(1+u^2\\) on the bottom. Nothing new happens here; it is pure plugging in.",
+        "watch": [
+         [
+          "y'",
+          "\\frac{e^x}{1+e^{2x}}"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{e^x}{1+e^{2x}}",
+        "why": "Already simplest. Common trap: \\((e^x)^2=e^{2x}\\), <b>not</b> \\(e^{x^2}\\). Exponent rule: \\((e^a)^b=e^{ab}\\).",
+        "watch": [
+         [
+          "y'",
+          "\\frac{e^x}{1+e^{2x}}"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2068,6 +2124,62 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(u=3x\\), \\(u'=3\\), \\(u^2=9x^2\\).</p><p class=\"ans\">\\(f'(x)=\\dfrac{3}{1+9x^2}\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "f=\\tan^{-1}\\big(3x\\big)",
+        "why": "Read the structure first, like reading a function call: the <b>outer</b> function is \\(\\tan^{-1}(\\,\\cdot\\,)\\) and the <b>inner</b> one is what sits in the parentheses. Name the inside \\(u\\).",
+        "watch": [
+         [
+          "u",
+          "3x"
+         ]
+        ]
+       },
+       {
+        "code": "u'=3",
+        "why": "Derivative of \\(3x\\) is \\(3\\) (the slope of a line).",
+        "watch": [
+         [
+          "u'",
+          "3"
+         ]
+        ]
+       },
+       {
+        "code": "u^2=9x^2",
+        "why": "The formula needs \\(u^2\\) in the denominator, so square the inside now. Square the <i>whole</i> inside, not just part of it.",
+        "watch": [
+         [
+          "u^2",
+          "9x^2"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{u'}{1+u^2}",
+        "why": "Rule: \\(\\dfrac{d}{dx}\\tan^{-1}u=\\dfrac{u'}{1+u^2}\\). It is the chain rule built in: the \\(u'\\) on top is the derivative of the inside."
+       },
+       {
+        "code": "y'=\\frac{3}{1+9x^2}",
+        "why": "Substitute the values from the Watch panel: \\(u'\\) on top, \\(1+u^2\\) on the bottom. Nothing new happens here; it is pure plugging in.",
+        "watch": [
+         [
+          "y'",
+          "\\frac{3}{1+9x^2}"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{3}{1+9x^2}",
+        "why": "Done. Trap: \\((3x)^2=9x^2\\), not \\(3x^2\\). The 3 gets squared too.",
+        "watch": [
+         [
+          "y'",
+          "\\frac{3}{1+9x^2}"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2079,6 +2191,62 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(u=\\sqrt x\\), \\(u'=\\frac{1}{2\\sqrt x}\\), \\(u^2=x\\).</p><p>\\(y'=\\dfrac{\\frac{1}{2\\sqrt x}}{1+x}\\).</p><p class=\"ans\">\\(y'=\\dfrac{1}{2\\sqrt x\\,(1+x)}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=\\tan^{-1}\\big(\\sqrt x\\big)",
+        "why": "Read the structure first, like reading a function call: the <b>outer</b> function is \\(\\tan^{-1}(\\,\\cdot\\,)\\) and the <b>inner</b> one is what sits in the parentheses. Name the inside \\(u\\).",
+        "watch": [
+         [
+          "u",
+          "\\sqrt x"
+         ]
+        ]
+       },
+       {
+        "code": "u'=\\frac{1}{2\\sqrt x}",
+        "why": "\\(\\sqrt x=x^{1/2}\\), power rule: \\(\\tfrac12x^{-1/2}=\\dfrac{1}{2\\sqrt x}\\). Memorize this one; it appears constantly.",
+        "watch": [
+         [
+          "u'",
+          "\\frac{1}{2\\sqrt x}"
+         ]
+        ]
+       },
+       {
+        "code": "u^2=x",
+        "why": "The formula needs \\(u^2\\) in the denominator, so square the inside now. Square the <i>whole</i> inside, not just part of it.",
+        "watch": [
+         [
+          "u^2",
+          "x"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{u'}{1+u^2}",
+        "why": "Rule: \\(\\dfrac{d}{dx}\\tan^{-1}u=\\dfrac{u'}{1+u^2}\\). It is the chain rule built in: the \\(u'\\) on top is the derivative of the inside."
+       },
+       {
+        "code": "y'=\\frac{\\frac{1}{2\\sqrt x}}{1+x}",
+        "why": "Substitute the values from the Watch panel: \\(u'\\) on top, \\(1+u^2\\) on the bottom. Nothing new happens here; it is pure plugging in.",
+        "watch": [
+         [
+          "y'",
+          "\\frac{\\frac{1}{2\\sqrt x}}{1+x}"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{1}{2\\sqrt x\\,(1+x)}",
+        "why": "A fraction on top of a fraction: dividing by \\((1+x)\\) is the same as multiplying the denominator by it, so \\(\\dfrac{1}{2\\sqrt x\\,(1+x)}\\).",
+        "watch": [
+         [
+          "y'",
+          "\\frac{1}{2\\sqrt x\\,(1+x)}"
+         ]
+        ]
        }
       ]
      },
@@ -2092,6 +2260,62 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(u=\\ln x\\), \\(u'=\\frac1x\\), \\(u^2=(\\ln x)^2\\).</p><p class=\"ans\">\\(y'=\\dfrac{1}{x\\,\\big(1+(\\ln x)^2\\big)}\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "y=\\tan^{-1}\\big(\\ln x\\big)",
+        "why": "Read the structure first, like reading a function call: the <b>outer</b> function is \\(\\tan^{-1}(\\,\\cdot\\,)\\) and the <b>inner</b> one is what sits in the parentheses. Name the inside \\(u\\).",
+        "watch": [
+         [
+          "u",
+          "\\ln x"
+         ]
+        ]
+       },
+       {
+        "code": "u'=\\frac1x",
+        "why": "Derivative of \\(\\ln x\\) is \\(\\dfrac1x\\).",
+        "watch": [
+         [
+          "u'",
+          "\\frac1x"
+         ]
+        ]
+       },
+       {
+        "code": "u^2=(\\ln x)^2",
+        "why": "The formula needs \\(u^2\\) in the denominator, so square the inside now. Square the <i>whole</i> inside, not just part of it.",
+        "watch": [
+         [
+          "u^2",
+          "(\\ln x)^2"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{u'}{1+u^2}",
+        "why": "Rule: \\(\\dfrac{d}{dx}\\tan^{-1}u=\\dfrac{u'}{1+u^2}\\). It is the chain rule built in: the \\(u'\\) on top is the derivative of the inside."
+       },
+       {
+        "code": "y'=\\frac{1/x}{1+(\\ln x)^2}",
+        "why": "Substitute the values from the Watch panel: \\(u'\\) on top, \\(1+u^2\\) on the bottom. Nothing new happens here; it is pure plugging in.",
+        "watch": [
+         [
+          "y'",
+          "\\frac{1/x}{1+(\\ln x)^2}"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{1}{x\\big(1+(\\ln x)^2\\big)}",
+        "why": "Move the \\(x\\) from the small fraction into the main denominator. Note \\((\\ln x)^2\\) is <b>not</b> \\(\\ln(x^2)\\); keep the parentheses.",
+        "watch": [
+         [
+          "y'",
+          "\\frac{1}{x\\big(1+(\\ln x)^2\\big)}"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2103,6 +2327,62 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(u=x^2\\), \\(u'=2x\\), \\(u^2=x^4\\).</p><p class=\"ans\">\\(y'=\\dfrac{2x}{1+x^4}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=\\tan^{-1}\\big(x^2\\big)",
+        "why": "Read the structure first, like reading a function call: the <b>outer</b> function is \\(\\tan^{-1}(\\,\\cdot\\,)\\) and the <b>inner</b> one is what sits in the parentheses. Name the inside \\(u\\).",
+        "watch": [
+         [
+          "u",
+          "x^2"
+         ]
+        ]
+       },
+       {
+        "code": "u'=2x",
+        "why": "Power rule: \\(x^2\\to2x\\).",
+        "watch": [
+         [
+          "u'",
+          "2x"
+         ]
+        ]
+       },
+       {
+        "code": "u^2=x^4",
+        "why": "The formula needs \\(u^2\\) in the denominator, so square the inside now. Square the <i>whole</i> inside, not just part of it.",
+        "watch": [
+         [
+          "u^2",
+          "x^4"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{u'}{1+u^2}",
+        "why": "Rule: \\(\\dfrac{d}{dx}\\tan^{-1}u=\\dfrac{u'}{1+u^2}\\). It is the chain rule built in: the \\(u'\\) on top is the derivative of the inside."
+       },
+       {
+        "code": "y'=\\frac{2x}{1+x^4}",
+        "why": "Substitute the values from the Watch panel: \\(u'\\) on top, \\(1+u^2\\) on the bottom. Nothing new happens here; it is pure plugging in.",
+        "watch": [
+         [
+          "y'",
+          "\\frac{2x}{1+x^4}"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{2x}{1+x^4}",
+        "why": "Done. \\((x^2)^2=x^4\\): powers multiply.",
+        "watch": [
+         [
+          "y'",
+          "\\frac{2x}{1+x^4}"
+         ]
+        ]
        }
       ]
      },
@@ -2120,6 +2400,46 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>Outside is squaring; inside is \\(\\tan^{-1}x\\).</p><p>\\(y'=2\\tan^{-1}x\\cdot\\frac{1}{1+x^2}\\).</p><p class=\"ans\">\\(y'=\\dfrac{2\\tan^{-1}x}{1+x^2}\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "y=\\big(\\tan^{-1}x\\big)^2",
+        "why": "Careful: this time the <b>outer</b> operation is squaring and the <b>inner</b> one is \\(\\tan^{-1}x\\). The last thing you would do on a calculator is square, so squaring is the outside.",
+        "watch": [
+         [
+          "\\text{outer}",
+          "(\\ )^2"
+         ],
+         [
+          "\\text{inner}",
+          "\\tan^{-1}x"
+         ]
+        ]
+       },
+       {
+        "code": "y'=2\\big(\\tan^{-1}x\\big)^{1}\\cdot\\big(\\tan^{-1}x\\big)'",
+        "why": "Chain rule with the power rule: bring the 2 down, lower the power by one, keep the inside unchanged, then multiply by the derivative of the inside."
+       },
+       {
+        "code": "\\big(\\tan^{-1}x\\big)'=\\frac{1}{1+x^2}",
+        "why": "Basic arctan derivative (here \\(u=x\\), so \\(u'=1\\)).",
+        "watch": [
+         [
+          "(\\tan^{-1}x)'",
+          "\\frac{1}{1+x^2}"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{2\\tan^{-1}x}{1+x^2}",
+        "why": "Multiply the pieces together and write as one fraction.",
+        "watch": [
+         [
+          "y'",
+          "\\frac{2\\tan^{-1}x}{1+x^2}"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2131,6 +2451,54 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>Product rule: \\(x\\cdot\\frac{1}{1+x^2}+\\tan^{-1}x\\cdot1\\).</p><p class=\"ans\">\\(y'=\\tan^{-1}x+\\dfrac{x}{1+x^2}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=\\underbrace{x}_{f}\\cdot\\underbrace{\\tan^{-1}x}_{g}",
+        "why": "Two functions <b>multiplied</b> together means product rule. Label them \\(f\\) and \\(g\\).",
+        "watch": [
+         [
+          "f",
+          "x"
+         ],
+         [
+          "g",
+          "\\tan^{-1}x"
+         ]
+        ]
+       },
+       {
+        "code": "f'=1,\\quad g'=\\frac{1}{1+x^2}",
+        "why": "Differentiate each piece on its own before combining. This keeps the bookkeeping clean.",
+        "watch": [
+         [
+          "f'",
+          "1"
+         ],
+         [
+          "g'",
+          "\\frac{1}{1+x^2}"
+         ]
+        ]
+       },
+       {
+        "code": "y'=f'g+fg'",
+        "why": "Product rule: derivative of the first times the second, plus the first times derivative of the second."
+       },
+       {
+        "code": "y'=1\\cdot\\tan^{-1}x+x\\cdot\\frac{1}{1+x^2}",
+        "why": "Plug in from the Watch panel."
+       },
+       {
+        "code": "y'=\\tan^{-1}x+\\frac{x}{1+x^2}",
+        "why": "Clean up the \\(1\\cdot\\) and merge \\(x\\) into the fraction.",
+        "watch": [
+         [
+          "y'",
+          "\\tan^{-1}x+\\frac{x}{1+x^2}"
+         ]
+        ]
        }
       ]
      },
@@ -2148,6 +2516,56 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(u=\\frac1x\\), \\(u'=-\\frac1{x^2}\\), \\(u^2=\\frac{1}{x^2}\\).</p><p>\\(y'=\\dfrac{-1/x^2}{1+1/x^2}\\). Multiply top and bottom by \\(x^2\\): \\(\\dfrac{-1}{x^2+1}\\).</p><p class=\"ans\">\\(y'=-\\dfrac{1}{1+x^2}\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "y=\\tan^{-1}\\Big(\\frac1x\\Big)",
+        "why": "Outer \\(\\tan^{-1}\\), inner \\(u=\\frac1x=x^{-1}\\).",
+        "watch": [
+         [
+          "u",
+          "x^{-1}"
+         ]
+        ]
+       },
+       {
+        "code": "u'=-x^{-2}=-\\frac{1}{x^2}",
+        "why": "Power rule on \\(x^{-1}\\): bring down \\(-1\\), subtract one from the exponent to get \\(-2\\).",
+        "watch": [
+         [
+          "u'",
+          "-\\frac{1}{x^2}"
+         ]
+        ]
+       },
+       {
+        "code": "u^2=\\frac{1}{x^2}",
+        "why": "Square the inside.",
+        "watch": [
+         [
+          "u^2",
+          "\\frac1{x^2}"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{-1/x^2}{1+1/x^2}",
+        "why": "Rule: \\(\\dfrac{d}{dx}\\tan^{-1}u=\\dfrac{u'}{1+u^2}\\). It is the chain rule built in: the \\(u'\\) on top is the derivative of the inside."
+       },
+       {
+        "code": "y'=\\frac{-1/x^2}{1+1/x^2}\\cdot\\frac{x^2}{x^2}=\\frac{-1}{x^2+1}",
+        "why": "Compound fraction trick: multiply top and bottom by \\(x^2\\), the common denominator of the small fractions. Top: \\(-1\\). Bottom: \\(x^2+1\\)."
+       },
+       {
+        "code": "y'=-\\frac{1}{1+x^2}",
+        "why": "Interesting: this is exactly the negative of \\((\\tan^{-1}x)'\\). That is why \\(\\tan^{-1}x+\\tan^{-1}(1/x)\\) is constant for \\(x>0\\).",
+        "watch": [
+         [
+          "y'",
+          "-\\frac1{1+x^2}"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2159,6 +2577,46 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(u=5x\\), \\(u'=5\\), \\(u^2=25x^2\\).</p><p class=\"ans\">\\(f'(x)=\\dfrac{5}{\\sqrt{1-25x^2}}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f=\\sin^{-1}(5x)",
+        "why": "Outer \\(\\sin^{-1}\\), inner \\(u=5x\\).",
+        "watch": [
+         [
+          "u",
+          "5x"
+         ]
+        ]
+       },
+       {
+        "code": "u'=5,\\quad u^2=25x^2",
+        "why": "Collect both things the formula needs. Square <i>all</i> of \\(5x\\): \\(25x^2\\).",
+        "watch": [
+         [
+          "u'",
+          "5"
+         ],
+         [
+          "u^2",
+          "25x^2"
+         ]
+        ]
+       },
+       {
+        "code": "f'=\\frac{u'}{\\sqrt{1-u^2}}",
+        "why": "Rule: \\(\\dfrac{d}{dx}\\sin^{-1}u=\\dfrac{u'}{\\sqrt{1-u^2}}\\). Again the \\(u'\\) on top is the chain rule."
+       },
+       {
+        "code": "f'=\\frac{5}{\\sqrt{1-25x^2}}",
+        "why": "Substitute. Done.",
+        "watch": [
+         [
+          "f'",
+          "\\frac5{\\sqrt{1-25x^2}}"
+         ]
+        ]
        }
       ]
      },
@@ -2172,6 +2630,50 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(u=\\sqrt x\\), \\(u'=\\frac1{2\\sqrt x}\\), \\(u^2=x\\).</p><p>\\(\\cos^{-1}\\) has a minus: \\(g'=-\\dfrac{u'}{\\sqrt{1-u^2}}\\).</p><p class=\"ans\">\\(g'(x)=-\\dfrac{1}{2\\sqrt x\\,\\sqrt{1-x}}\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "g=\\cos^{-1}\\sqrt x",
+        "why": "Outer \\(\\cos^{-1}\\), inner \\(u=\\sqrt x\\).",
+        "watch": [
+         [
+          "u",
+          "\\sqrt x"
+         ]
+        ]
+       },
+       {
+        "code": "u'=\\frac{1}{2\\sqrt x},\\quad u^2=x",
+        "why": "Square root derivative, and squaring a square root gives back \\(x\\).",
+        "watch": [
+         [
+          "u'",
+          "\\frac1{2\\sqrt x}"
+         ],
+         [
+          "u^2",
+          "x"
+         ]
+        ]
+       },
+       {
+        "code": "g'=-\\frac{u'}{\\sqrt{1-u^2}}",
+        "why": "Rule: \\(\\cos^{-1}\\) is the same as \\(\\sin^{-1}\\) but with a <b>minus</b>. Memory trick: every “co” inverse (\\(\\cos^{-1},\\cot^{-1},\\csc^{-1}\\)) gets a minus."
+       },
+       {
+        "code": "g'=-\\frac{\\frac{1}{2\\sqrt x}}{\\sqrt{1-x}}",
+        "why": "Substitute."
+       },
+       {
+        "code": "g'=-\\frac{1}{2\\sqrt x\\,\\sqrt{1-x}}",
+        "why": "Push the \\(2\\sqrt x\\) into the denominator.",
+        "watch": [
+         [
+          "g'",
+          "-\\frac1{2\\sqrt x\\sqrt{1-x}}"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2183,6 +2685,50 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>Product rule: \\(\\frac{1}{\\sqrt{1-x^2}}\\cdot\\ln x+\\sin^{-1}x\\cdot\\frac1x\\).</p><p class=\"ans\">\\(h'(x)=\\dfrac{\\ln x}{\\sqrt{1-x^2}}+\\dfrac{\\sin^{-1}x}{x}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "h=\\underbrace{\\sin^{-1}x}_{f}\\cdot\\underbrace{\\ln x}_{g}",
+        "why": "A product, so product rule.",
+        "watch": [
+         [
+          "f",
+          "\\sin^{-1}x"
+         ],
+         [
+          "g",
+          "\\ln x"
+         ]
+        ]
+       },
+       {
+        "code": "f'=\\frac{1}{\\sqrt{1-x^2}},\\quad g'=\\frac1x",
+        "why": "Two basic derivatives you must know cold.",
+        "watch": [
+         [
+          "f'",
+          "\\frac1{\\sqrt{1-x^2}}"
+         ],
+         [
+          "g'",
+          "\\frac1x"
+         ]
+        ]
+       },
+       {
+        "code": "h'=f'g+fg'",
+        "why": "Product rule."
+       },
+       {
+        "code": "h'=\\frac{\\ln x}{\\sqrt{1-x^2}}+\\frac{\\sin^{-1}x}{x}",
+        "why": "Plug in and write each term as one fraction.",
+        "watch": [
+         [
+          "h'",
+          "\\frac{\\ln x}{\\sqrt{1-x^2}}+\\frac{\\sin^{-1}x}{x}"
+         ]
+        ]
        }
       ]
      },
@@ -2196,6 +2742,46 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>Three layers: \\(\\ln\\) → \\(\\tan^{-1}\\) → \\(t^4\\).</p><p>\\(\\ln w\\to\\frac{w'}{w}\\) with \\(w=\\tan^{-1}(t^4)\\), and \\(w'=\\dfrac{4t^3}{1+t^8}\\).</p><p class=\"ans\">\\(g'(t)=\\dfrac{4t^3}{(1+t^8)\\tan^{-1}(t^4)}\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "g=\\ln\\Big(\\tan^{-1}\\big(t^4\\big)\\Big)",
+        "why": "Three layers, outside to inside: \\(\\ln\\) → \\(\\tan^{-1}\\) → \\(t^4\\). Peel them one at a time like an onion. Call the middle layer \\(w=\\tan^{-1}(t^4)\\).",
+        "watch": [
+         [
+          "w",
+          "\\tan^{-1}(t^4)"
+         ]
+        ]
+       },
+       {
+        "code": "g'=\\frac{w'}{w}",
+        "why": "Rule: \\((\\ln w)'=\\dfrac{w'}{w}\\). So the whole problem reduces to finding \\(w'\\)."
+       },
+       {
+        "code": "w'=\\frac{(t^4)'}{1+(t^4)^2}=\\frac{4t^3}{1+t^8}",
+        "why": "\\(w\\) is itself an arctan of something, so use the arctan chain rule with inner \\(t^4\\): derivative \\(4t^3\\), square \\(t^8\\).",
+        "watch": [
+         [
+          "w'",
+          "\\frac{4t^3}{1+t^8}"
+         ]
+        ]
+       },
+       {
+        "code": "g'=\\frac{4t^3/(1+t^8)}{\\tan^{-1}(t^4)}",
+        "why": "Substitute \\(w'\\) and \\(w\\)."
+       },
+       {
+        "code": "g'=\\frac{4t^3}{(1+t^8)\\tan^{-1}(t^4)}",
+        "why": "Combine into one fraction.",
+        "watch": [
+         [
+          "g'",
+          "\\frac{4t^3}{(1+t^8)\\tan^{-1}(t^4)}"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2207,6 +2793,42 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\((e^w)'=e^w\\cdot w'\\) with \\(w=\\sin^{-1}(z^2)\\).</p><p>\\(w'=\\dfrac{2z}{\\sqrt{1-z^4}}\\).</p><p class=\"ans\">\\(f'(z)=\\dfrac{2z\\,e^{\\sin^{-1}(z^2)}}{\\sqrt{1-z^4}}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f=e^{\\sin^{-1}(z^2)}",
+        "why": "Outer: \\(e^{(\\,\\cdot\\,)}\\). Middle: \\(w=\\sin^{-1}(z^2)\\). Inner: \\(z^2\\).",
+        "watch": [
+         [
+          "w",
+          "\\sin^{-1}(z^2)"
+         ]
+        ]
+       },
+       {
+        "code": "f'=e^{w}\\cdot w'",
+        "why": "Rule: \\((e^w)'=e^w\\cdot w'\\). The exponential copies itself, then multiplies by the derivative of the exponent."
+       },
+       {
+        "code": "w'=\\frac{2z}{\\sqrt{1-(z^2)^2}}=\\frac{2z}{\\sqrt{1-z^4}}",
+        "why": "Arcsin chain rule with inner \\(z^2\\): derivative \\(2z\\), square \\(z^4\\).",
+        "watch": [
+         [
+          "w'",
+          "\\frac{2z}{\\sqrt{1-z^4}}"
+         ]
+        ]
+       },
+       {
+        "code": "f'=\\frac{2z\\,e^{\\sin^{-1}(z^2)}}{\\sqrt{1-z^4}}",
+        "why": "Multiply \\(e^w\\) by \\(w'\\).",
+        "watch": [
+         [
+          "f'",
+          "\\frac{2ze^{\\sin^{-1}(z^2)}}{\\sqrt{1-z^4}}"
+         ]
+        ]
        }
       ]
      },
@@ -2220,6 +2842,62 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(u=\\frac1t\\), \\(u'=-\\frac1{t^2}\\), \\(1-u^2=1-\\frac1{t^2}=\\frac{t^2-1}{t^2}\\).</p><p>\\(\\sqrt{1-u^2}=\\frac{\\sqrt{t^2-1}}{t}\\) (for \\(t>0\\)). So \\(R'=\\dfrac{-1/t^2}{\\sqrt{t^2-1}/t}\\).</p><p class=\"ans\">\\(R'(t)=-\\dfrac{1}{t\\sqrt{t^2-1}}\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "R=\\sin^{-1}\\Big(\\frac1t\\Big)",
+        "why": "Outer \\(\\sin^{-1}\\), inner \\(u=\\frac1t\\).",
+        "watch": [
+         [
+          "u",
+          "\\frac1t"
+         ]
+        ]
+       },
+       {
+        "code": "u'=-\\frac1{t^2}",
+        "why": "Power rule on \\(t^{-1}\\).",
+        "watch": [
+         [
+          "u'",
+          "-\\frac1{t^2}"
+         ]
+        ]
+       },
+       {
+        "code": "1-u^2=1-\\frac1{t^2}=\\frac{t^2-1}{t^2}",
+        "why": "Build the expression under the root first and combine it over one denominator. This is what makes the simplification possible.",
+        "watch": [
+         [
+          "1-u^2",
+          "\\frac{t^2-1}{t^2}"
+         ]
+        ]
+       },
+       {
+        "code": "\\sqrt{1-u^2}=\\frac{\\sqrt{t^2-1}}{t}",
+        "why": "Root of top over root of bottom; \\(\\sqrt{t^2}=|t|=t\\) because the problem says \\(t>1\\).",
+        "watch": [
+         [
+          "\\sqrt{1-u^2}",
+          "\\frac{\\sqrt{t^2-1}}t"
+         ]
+        ]
+       },
+       {
+        "code": "R'=\\frac{-1/t^2}{\\sqrt{t^2-1}/t}",
+        "why": "Rule: \\(\\dfrac{d}{dx}\\sin^{-1}u=\\dfrac{u'}{\\sqrt{1-u^2}}\\). Again the \\(u'\\) on top is the chain rule."
+       },
+       {
+        "code": "R'=-\\frac1{t^2}\\cdot\\frac{t}{\\sqrt{t^2-1}}=-\\frac{1}{t\\sqrt{t^2-1}}",
+        "why": "Dividing by a fraction = multiplying by its flip. One \\(t\\) cancels.",
+        "watch": [
+         [
+          "R'",
+          "-\\frac1{t\\sqrt{t^2-1}}"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2231,6 +2909,46 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>Product rule on the first term: \\(\\sin^{-1}x+\\dfrac{x}{\\sqrt{1-x^2}}\\).</p><p>Chain rule on the second: \\(\\dfrac{-2x}{2\\sqrt{1-x^2}}=-\\dfrac{x}{\\sqrt{1-x^2}}\\).</p><p>They cancel.</p><p class=\"ans\">\\(y'=\\sin^{-1}x\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=\\underbrace{x\\sin^{-1}x}_{A}+\\underbrace{\\sqrt{1-x^2}}_{B}",
+        "why": "A sum: differentiate each term separately. \\(A\\) needs the product rule, \\(B\\) needs the chain rule."
+       },
+       {
+        "code": "A'=1\\cdot\\sin^{-1}x+x\\cdot\\frac{1}{\\sqrt{1-x^2}}",
+        "why": "Product rule on \\(x\\cdot\\sin^{-1}x\\).",
+        "watch": [
+         [
+          "A'",
+          "\\sin^{-1}x+\\frac{x}{\\sqrt{1-x^2}}"
+         ]
+        ]
+       },
+       {
+        "code": "B'=\\frac{1}{2\\sqrt{1-x^2}}\\cdot(-2x)=-\\frac{x}{\\sqrt{1-x^2}}",
+        "why": "Chain rule on \\(\\sqrt{u}\\) with \\(u=1-x^2\\): \\((\\sqrt u)'=\\frac{u'}{2\\sqrt u}\\), \\(u'=-2x\\). The 2s cancel.",
+        "watch": [
+         [
+          "B'",
+          "-\\frac{x}{\\sqrt{1-x^2}}"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\sin^{-1}x+\\frac{x}{\\sqrt{1-x^2}}-\\frac{x}{\\sqrt{1-x^2}}",
+        "why": "Add \\(A'+B'\\)."
+       },
+       {
+        "code": "y'=\\sin^{-1}x",
+        "why": "The fractions are equal and opposite, so they cancel. Clean answers like this are a sign you did it right.",
+        "watch": [
+         [
+          "y'",
+          "\\sin^{-1}x"
+         ]
+        ]
        }
       ]
      },
@@ -2244,6 +2962,46 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\((\\cot^{-1}u)'=-\\dfrac{u'}{1+u^2}\\).</p><p>First term: \\(-\\dfrac{1}{1+t^2}\\). Second: \\(-\\dfrac{-1/t^2}{1+1/t^2}=\\dfrac{1}{t^2+1}\\).</p><p class=\"ans\">\\(h'(t)=0\\) (so \\(h\\) is constant on each side of 0)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "h=\\cot^{-1}t+\\cot^{-1}\\Big(\\frac1t\\Big)",
+        "why": "A sum of two arccot terms. Differentiate each."
+       },
+       {
+        "code": "\\big(\\cot^{-1}u\\big)'=-\\frac{u'}{1+u^2}",
+        "why": "Rule: arccot is arctan with a minus (it is a “co” function)."
+       },
+       {
+        "code": "\\big(\\cot^{-1}t\\big)'=-\\frac{1}{1+t^2}",
+        "why": "First term: \\(u=t\\), \\(u'=1\\).",
+        "watch": [
+         [
+          "\\text{term 1}'",
+          "-\\frac1{1+t^2}"
+         ]
+        ]
+       },
+       {
+        "code": "\\Big(\\cot^{-1}\\tfrac1t\\Big)'=-\\frac{-1/t^2}{1+1/t^2}=\\frac{1}{t^2+1}",
+        "why": "Second term: \\(u=\\frac1t\\), \\(u'=-\\frac1{t^2}\\). The two minuses make a plus; multiply top and bottom by \\(t^2\\).",
+        "watch": [
+         [
+          "\\text{term 2}'",
+          "\\frac1{1+t^2}"
+         ]
+        ]
+       },
+       {
+        "code": "h'=0",
+        "why": "They cancel. Derivative zero means \\(h\\) is constant on each interval of its domain (\\(t>0\\) and \\(t<0\\) separately).",
+        "watch": [
+         [
+          "h'",
+          "0"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2256,6 +3014,46 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>Point: \\(\\tan^{-1}1=\\frac\\pi4\\).</p><p>Slope: \\(\\frac{1}{1+1^2}=\\frac12\\).</p><p class=\"ans\">\\(y=\\frac12(x-1)+\\frac\\pi4\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "y_0=\\tan^{-1}(1)=\\frac\\pi4",
+        "why": "A tangent line needs a <b>point</b> and a <b>slope</b>. Point first: which angle has tangent 1? \\(45^\\circ=\\frac\\pi4\\).",
+        "watch": [
+         [
+          "(x_0,y_0)",
+          "(1,\\tfrac\\pi4)"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{1}{1+x^2}",
+        "why": "Derivative of arctan."
+       },
+       {
+        "code": "m=y'(1)=\\frac{1}{1+1}=\\frac12",
+        "why": "Slope = derivative evaluated at \\(x=1\\).",
+        "watch": [
+         [
+          "m",
+          "\\tfrac12"
+         ]
+        ]
+       },
+       {
+        "code": "y-\\frac\\pi4=\\frac12(x-1)",
+        "why": "Point-slope form \\(y-y_0=m(x-x_0)\\)."
+       },
+       {
+        "code": "y=\\frac12x-\\frac12+\\frac\\pi4",
+        "why": "Optional: solve for \\(y\\). Either form is accepted.",
+        "watch": [
+         [
+          "\\text{line}",
+          "y=\\tfrac12(x-1)+\\tfrac\\pi4"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2267,6 +3065,46 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(u=e^{2x}\\), \\(u'=2e^{2x}\\), \\(u^2=e^{4x}\\). So \\(y'=\\dfrac{2e^{2x}}{1+e^{4x}}\\).</p><p>At \\(x=0\\): \\(\\frac{2}{1+1}\\).</p><p class=\"ans\">Slope \\(=1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=e^{2x}",
+        "why": "Outer arctan, inner \\(e^{2x}\\).",
+        "watch": [
+         [
+          "u",
+          "e^{2x}"
+         ]
+        ]
+       },
+       {
+        "code": "u'=2e^{2x},\\quad u^2=e^{4x}",
+        "why": "Chain rule on \\(e^{2x}\\) brings out the 2. Squaring doubles the exponent.",
+        "watch": [
+         [
+          "u'",
+          "2e^{2x}"
+         ],
+         [
+          "u^2",
+          "e^{4x}"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{2e^{2x}}{1+e^{4x}}",
+        "why": "Rule: \\(\\dfrac{d}{dx}\\tan^{-1}u=\\dfrac{u'}{1+u^2}\\). It is the chain rule built in: the \\(u'\\) on top is the derivative of the inside."
+       },
+       {
+        "code": "y'(0)=\\frac{2e^0}{1+e^0}=\\frac{2}{2}=1",
+        "why": "Only now plug in \\(x=0\\). Always differentiate first, then substitute. \\(e^0=1\\).",
+        "watch": [
+         [
+          "\\text{slope}",
+          "1"
+         ]
+        ]
        }
       ]
      },
@@ -2284,6 +3122,50 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>Let \\(y=\\sin^{-1}x\\), so \\(\\sin y=x\\) with \\(-\\frac\\pi2\\le y\\le\\frac\\pi2\\).</p><p>Differentiate implicitly: \\(\\cos y\\cdot y'=1\\Rightarrow y'=\\dfrac{1}{\\cos y}\\).</p><p>On \\([-\\frac\\pi2,\\frac\\pi2]\\), \\(\\cos y\\ge0\\), so \\(\\cos y=\\sqrt{1-\\sin^2y}=\\sqrt{1-x^2}\\).</p><p class=\"ans\">\\(\\dfrac{d}{dx}\\sin^{-1}x=\\dfrac{1}{\\sqrt{1-x^2}}\\) ✓</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "y=\\sin^{-1}x\\iff \\sin y=x,\\ \\ -\\tfrac\\pi2\\le y\\le\\tfrac\\pi2",
+        "why": "Strategy for every inverse-function proof: undo the inverse. If \\(y\\) is the angle whose sine is \\(x\\), then \\(\\sin y=x\\). The range of arcsin is \\([-\\frac\\pi2,\\frac\\pi2]\\); we will need it."
+       },
+       {
+        "code": "\\cos y\\cdot y'=1",
+        "why": "Differentiate both sides with respect to \\(x\\). Left side uses the chain rule because \\(y\\) depends on \\(x\\) (implicit differentiation)."
+       },
+       {
+        "code": "y'=\\frac{1}{\\cos y}",
+        "why": "Solve for \\(y'\\). But the answer must be in terms of \\(x\\), not \\(y\\).",
+        "watch": [
+         [
+          "y'",
+          "\\frac1{\\cos y}"
+         ]
+        ]
+       },
+       {
+        "code": "\\cos y=\\sqrt{1-\\sin^2y}",
+        "why": "Pythagorean identity \\(\\sin^2y+\\cos^2y=1\\). We take the <b>positive</b> root because \\(\\cos y\\ge0\\) when \\(y\\in[-\\frac\\pi2,\\frac\\pi2]\\). That is why the range mattered."
+       },
+       {
+        "code": "\\cos y=\\sqrt{1-x^2}",
+        "why": "Replace \\(\\sin y\\) with \\(x\\) (from line 1).",
+        "watch": [
+         [
+          "\\cos y",
+          "\\sqrt{1-x^2}"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{d}{dx}\\sin^{-1}x=\\frac{1}{\\sqrt{1-x^2}}\\ \\ \\checkmark",
+        "why": "Substitute into line 3. Proof complete.",
+        "watch": [
+         [
+          "y'",
+          "\\frac1{\\sqrt{1-x^2}}"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2295,6 +3177,46 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>Let \\(y=\\cos^{-1}x\\), so \\(\\cos y=x\\) with \\(0\\le y\\le\\pi\\).</p><p>Differentiate: \\(-\\sin y\\cdot y'=1\\Rightarrow y'=-\\dfrac{1}{\\sin y}\\).</p><p>On \\([0,\\pi]\\), \\(\\sin y\\ge0\\), so \\(\\sin y=\\sqrt{1-\\cos^2y}=\\sqrt{1-x^2}\\).</p><p class=\"ans\">\\(\\dfrac{d}{dx}\\cos^{-1}x=-\\dfrac{1}{\\sqrt{1-x^2}}\\) ✓</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=\\cos^{-1}x\\iff\\cos y=x,\\ \\ 0\\le y\\le\\pi",
+        "why": "Undo the inverse. Range of arccos is \\([0,\\pi]\\)."
+       },
+       {
+        "code": "-\\sin y\\cdot y'=1",
+        "why": "Differentiate implicitly. \\((\\cos y)'=-\\sin y\\cdot y'\\)."
+       },
+       {
+        "code": "y'=-\\frac{1}{\\sin y}",
+        "why": "Solve for \\(y'\\).",
+        "watch": [
+         [
+          "y'",
+          "-\\frac1{\\sin y}"
+         ]
+        ]
+       },
+       {
+        "code": "\\sin y=\\sqrt{1-\\cos^2y}=\\sqrt{1-x^2}",
+        "why": "Positive root because \\(\\sin y\\ge0\\) on \\([0,\\pi]\\) (upper half of the unit circle). Then \\(\\cos y=x\\).",
+        "watch": [
+         [
+          "\\sin y",
+          "\\sqrt{1-x^2}"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{d}{dx}\\cos^{-1}x=-\\frac{1}{\\sqrt{1-x^2}}\\ \\ \\checkmark",
+        "why": "Substitute. The minus came from \\((\\cos y)'=-\\sin y\\).",
+        "watch": [
+         [
+          "y'",
+          "-\\frac1{\\sqrt{1-x^2}}"
+         ]
+        ]
        }
       ]
      }
@@ -2363,6 +3285,46 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>Outside \\(\\sin u\\), inside \\(u=\\ln x\\), \\(u'=\\tfrac1x\\).</p><p class=\"ans\">\\(f'(x)=\\dfrac{\\cos(\\ln x)}{x}\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "f=\\sin(\\ln x)",
+        "why": "Read the structure: outer \\(\\sin(\\,\\cdot\\,)\\), inner \\(u=\\ln x\\).",
+        "watch": [
+         [
+          "u",
+          "\\ln x"
+         ]
+        ]
+       },
+       {
+        "code": "u'=\\frac1x",
+        "why": "Derivative of \\(\\ln x\\).",
+        "watch": [
+         [
+          "u'",
+          "\\frac1x"
+         ]
+        ]
+       },
+       {
+        "code": "(\\sin u)'=\\cos u\\cdot u'",
+        "why": "Chain rule: derivative of the outside (evaluated at the untouched inside) times derivative of the inside."
+       },
+       {
+        "code": "f'=\\cos(\\ln x)\\cdot\\frac1x",
+        "why": "Plug in \\(u\\) and \\(u'\\). Keep \\(\\ln x\\) inside the cosine; do not differentiate it there."
+       },
+       {
+        "code": "f'=\\frac{\\cos(\\ln x)}{x}",
+        "why": "Tidy into one fraction.",
+        "watch": [
+         [
+          "f'",
+          "\\frac{\\cos(\\ln x)}x"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2379,6 +3341,36 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>Log laws first: \\(g(x)=\\ln x+\\ln e^{-2x}=\\ln x-2x\\).</p><p class=\"ans\">\\(g'(x)=\\dfrac1x-2\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "g=\\ln\\big(x\\,e^{-2x}\\big)",
+        "why": "Before differentiating a log, ask: can log laws make it simpler? A product inside a log splits into a sum."
+       },
+       {
+        "code": "g=\\ln x+\\ln e^{-2x}",
+        "why": "Log law: \\(\\ln(ab)=\\ln a+\\ln b\\)."
+       },
+       {
+        "code": "g=\\ln x-2x",
+        "why": "\\(\\ln\\) and \\(e\\) undo each other: \\(\\ln e^{k}=k\\).",
+        "watch": [
+         [
+          "g",
+          "\\ln x-2x"
+         ]
+        ]
+       },
+       {
+        "code": "g'=\\frac1x-2",
+        "why": "Now it is easy: \\((\\ln x)'=\\frac1x\\), \\((-2x)'=-2\\). No chain or product rule needed.",
+        "watch": [
+         [
+          "g'",
+          "\\frac1x-2"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2390,6 +3382,42 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(\\dfrac{d}{dx}\\log_b u=\\dfrac{u'}{u\\ln b}\\), with \\(u=x^2+3x\\), \\(u'=2x+3\\).</p><p class=\"ans\">\\(y'=\\dfrac{2x+3}{(x^2+3x)\\ln 8}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=\\log_8\\big(x^2+3x\\big)",
+        "why": "A log with base 8, not \\(e\\). Inner \\(u=x^2+3x\\).",
+        "watch": [
+         [
+          "u",
+          "x^2+3x"
+         ]
+        ]
+       },
+       {
+        "code": "u'=2x+3",
+        "why": "Power rule term by term.",
+        "watch": [
+         [
+          "u'",
+          "2x+3"
+         ]
+        ]
+       },
+       {
+        "code": "\\big(\\log_b u\\big)'=\\frac{u'}{u\\,\\ln b}",
+        "why": "Rule: same as \\(\\ln\\) but divide by an extra \\(\\ln b\\). Reason: \\(\\log_b u=\\frac{\\ln u}{\\ln b}\\), and \\(\\ln b\\) is just a constant."
+       },
+       {
+        "code": "y'=\\frac{2x+3}{(x^2+3x)\\ln8}",
+        "why": "Substitute with \\(b=8\\).",
+        "watch": [
+         [
+          "y'",
+          "\\frac{2x+3}{(x^2+3x)\\ln8}"
+         ]
+        ]
        }
       ]
      },
@@ -2403,6 +3431,42 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>Inside \\(u=\\ln s\\), \\(u'=\\tfrac1s\\). So \\(F'=\\dfrac{1/s}{\\ln s}\\).</p><p class=\"ans\">\\(F'(s)=\\dfrac{1}{s\\ln s}\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "F=\\ln(\\ln s)",
+        "why": "Log of a log. Outer \\(\\ln\\), inner \\(u=\\ln s\\).",
+        "watch": [
+         [
+          "u",
+          "\\ln s"
+         ]
+        ]
+       },
+       {
+        "code": "u'=\\frac1s",
+        "why": "Derivative of the inner log.",
+        "watch": [
+         [
+          "u'",
+          "\\frac1s"
+         ]
+        ]
+       },
+       {
+        "code": "F'=\\frac{u'}{u}=\\frac{1/s}{\\ln s}",
+        "why": "Rule \\((\\ln u)'=\\frac{u'}{u}\\)."
+       },
+       {
+        "code": "F'=\\frac{1}{s\\ln s}",
+        "why": "Move the \\(s\\) down.",
+        "watch": [
+         [
+          "F'",
+          "\\frac1{s\\ln s}"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2415,6 +3479,56 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>Product rule with \\((2^z)'=2^z\\ln2\\) and \\((\\log_2 z)'=\\dfrac{1}{z\\ln 2}\\).</p><p class=\"ans\">\\(T'(z)=2^z\\ln 2\\,\\log_2 z+\\dfrac{2^z}{z\\ln 2}\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "T=\\underbrace{2^z}_{f}\\cdot\\underbrace{\\log_2z}_{g}",
+        "why": "A product, so product rule.",
+        "watch": [
+         [
+          "f",
+          "2^z"
+         ],
+         [
+          "g",
+          "\\log_2 z"
+         ]
+        ]
+       },
+       {
+        "code": "f'=2^z\\ln2",
+        "why": "Rule: \\((b^z)'=b^z\\ln b\\). Like \\(e^z\\), but with an extra \\(\\ln b\\) multiplied.",
+        "watch": [
+         [
+          "f'",
+          "2^z\\ln2"
+         ]
+        ]
+       },
+       {
+        "code": "g'=\\frac{1}{z\\ln2}",
+        "why": "Rule: \\((\\log_b z)'=\\frac1{z\\ln b}\\). Notice: exponentials <b>multiply</b> by \\(\\ln b\\), logs <b>divide</b> by it.",
+        "watch": [
+         [
+          "g'",
+          "\\frac1{z\\ln2}"
+         ]
+        ]
+       },
+       {
+        "code": "T'=f'g+fg'",
+        "why": "Product rule."
+       },
+       {
+        "code": "T'=2^z\\ln2\\,\\log_2z+\\frac{2^z}{z\\ln2}",
+        "why": "Substitute.",
+        "watch": [
+         [
+          "T'",
+          "2^z\\ln2\\log_2z+\\frac{2^z}{z\\ln2}"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2426,6 +3540,42 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(\\ln|u|\\) has the same derivative \\(\\dfrac{u'}{u}\\). Here \\(u'=-10x^4\\).</p><p class=\"ans\">\\(y'=\\dfrac{-10x^4}{3-2x^5}=\\dfrac{10x^4}{2x^5-3}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=\\ln|3-2x^5|",
+        "why": "Absolute value inside \\(\\ln\\). Good news: \\(\\ln|u|\\) has the same derivative as \\(\\ln u\\), namely \\(\\frac{u'}{u}\\).",
+        "watch": [
+         [
+          "u",
+          "3-2x^5"
+         ]
+        ]
+       },
+       {
+        "code": "u'=-10x^4",
+        "why": "\\((-2x^5)'=-2\\cdot5x^4\\).",
+        "watch": [
+         [
+          "u'",
+          "-10x^4"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{-10x^4}{3-2x^5}",
+        "why": "Apply \\(\\frac{u'}{u}\\). Drop the absolute value bars in the answer."
+       },
+       {
+        "code": "y'=\\frac{10x^4}{2x^5-3}",
+        "why": "Optional: multiply top and bottom by \\(-1\\) to remove the leading minus.",
+        "watch": [
+         [
+          "y'",
+          "\\frac{10x^4}{2x^5-3}"
+         ]
+        ]
        }
       ]
      },
@@ -2443,6 +3593,44 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>Factor inside: \\(e^{-x}(1+x)\\). Then \\(y=\\ln e^{-x}+\\ln(1+x)=-x+\\ln(1+x)\\).</p><p>\\(y'=-1+\\dfrac{1}{1+x}=\\dfrac{-(1+x)+1}{1+x}\\).</p><p class=\"ans\">\\(y'=-\\dfrac{x}{1+x}\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "y=\\ln\\big(e^{-x}+xe^{-x}\\big)",
+        "why": "Messy inside. Look for a common factor first."
+       },
+       {
+        "code": "y=\\ln\\big(e^{-x}(1+x)\\big)",
+        "why": "Factor out \\(e^{-x}\\)."
+       },
+       {
+        "code": "y=\\ln e^{-x}+\\ln(1+x)=-x+\\ln(1+x)",
+        "why": "Log of a product splits; \\(\\ln e^{-x}=-x\\).",
+        "watch": [
+         [
+          "y",
+          "-x+\\ln(1+x)"
+         ]
+        ]
+       },
+       {
+        "code": "y'=-1+\\frac{1}{1+x}",
+        "why": "Differentiate the simpler form term by term."
+       },
+       {
+        "code": "y'=\\frac{-(1+x)+1}{1+x}",
+        "why": "Common denominator."
+       },
+       {
+        "code": "y'=-\\frac{x}{1+x}",
+        "why": "Simplify the top: \\(-1-x+1=-x\\).",
+        "watch": [
+         [
+          "y'",
+          "-\\frac{x}{1+x}"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2454,6 +3642,58 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(y'=\\dfrac{1}{2\\sqrt x}\\ln x+\\sqrt x\\cdot\\dfrac1x=\\dfrac{\\ln x+2}{2\\sqrt x}\\).</p><p>Quotient rule: \\(y''=\\dfrac{\\frac1x\\cdot2\\sqrt x-(\\ln x+2)\\cdot\\frac{1}{\\sqrt x}}{4x}=\\dfrac{2-\\ln x-2}{4x\\sqrt x}\\).</p><p class=\"ans\">\\(y'=\\dfrac{\\ln x+2}{2\\sqrt x}\\), \\(y''=-\\dfrac{\\ln x}{4x^{3/2}}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=\\underbrace{\\sqrt x}_{f}\\cdot\\underbrace{\\ln x}_{g}",
+        "why": "Product rule for \\(y'\\).",
+        "watch": [
+         [
+          "f'",
+          "\\frac1{2\\sqrt x}"
+         ],
+         [
+          "g'",
+          "\\frac1x"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{\\ln x}{2\\sqrt x}+\\sqrt x\\cdot\\frac1x",
+        "why": "\\(f'g+fg'\\)."
+       },
+       {
+        "code": "\\sqrt x\\cdot\\frac1x=\\frac{1}{\\sqrt x}=\\frac{2}{2\\sqrt x}",
+        "why": "Simplify the second term and rewrite it over \\(2\\sqrt x\\) so the fractions can be added."
+       },
+       {
+        "code": "y'=\\frac{\\ln x+2}{2\\sqrt x}",
+        "why": "Add the numerators.",
+        "watch": [
+         [
+          "y'",
+          "\\frac{\\ln x+2}{2\\sqrt x}"
+         ]
+        ]
+       },
+       {
+        "code": "y''=\\frac{\\frac1x\\cdot2\\sqrt x-(\\ln x+2)\\cdot\\frac1{\\sqrt x}}{(2\\sqrt x)^2}",
+        "why": "Quotient rule on \\(y'\\): (bottom·top′ − top·bottom′)/bottom². Top′ \\(=\\frac1x\\), bottom′ \\(=(2\\sqrt x)'=\\frac1{\\sqrt x}\\)."
+       },
+       {
+        "code": "=\\frac{\\frac{2}{\\sqrt x}-\\frac{\\ln x+2}{\\sqrt x}}{4x}=\\frac{-\\ln x}{\\sqrt x\\cdot4x}",
+        "why": "\\(\\frac1x\\cdot2\\sqrt x=\\frac2{\\sqrt x}\\). Then \\(2-(\\ln x+2)=-\\ln x\\)."
+       },
+       {
+        "code": "y''=-\\frac{\\ln x}{4x^{3/2}}",
+        "why": "\\(x\\sqrt x=x^{3/2}\\).",
+        "watch": [
+         [
+          "y''",
+          "-\\frac{\\ln x}{4x^{3/2}}"
+         ]
+        ]
        }
       ]
      },
@@ -2467,6 +3707,50 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(f'(x)=\\dfrac{2x-2}{x^2-2x}\\).</p><p>Domain: need \\(x^2-2x=x(x-2)>0\\), which happens when \\(x<0\\) or \\(x>2\\).</p><p class=\"ans\">\\(f'(x)=\\dfrac{2(x-1)}{x(x-2)}\\); domain \\((-\\infty,0)\\cup(2,\\infty)\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "f=\\ln(x^2-2x)",
+        "why": "Two tasks: derivative and domain. Inner \\(u=x^2-2x\\).",
+        "watch": [
+         [
+          "u",
+          "x^2-2x"
+         ],
+         [
+          "u'",
+          "2x-2"
+         ]
+        ]
+       },
+       {
+        "code": "f'=\\frac{2x-2}{x^2-2x}=\\frac{2(x-1)}{x(x-2)}",
+        "why": "\\(\\frac{u'}{u}\\), then factor top and bottom.",
+        "watch": [
+         [
+          "f'",
+          "\\frac{2(x-1)}{x(x-2)}"
+         ]
+        ]
+       },
+       {
+        "code": "\\text{need } x(x-2)>0",
+        "why": "Domain: you can only take \\(\\ln\\) of a <b>positive</b> number, so the inside must be \\(>0\\)."
+       },
+       {
+        "code": "x<0\\ \\text{ or }\\ x>2",
+        "why": "Sign chart: zeros at 0 and 2. Test \\(x=-1\\): \\((-)(-)>0\\) ✓. Test \\(x=1\\): \\((+)(-)<0\\) ✗. Test \\(x=3\\): \\((+)(+)>0\\) ✓."
+       },
+       {
+        "code": "\\text{Domain}=(-\\infty,0)\\cup(2,\\infty)",
+        "why": "Write in interval notation.",
+        "watch": [
+         [
+          "\\text{domain}",
+          "(-\\infty,0)\\cup(2,\\infty)"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2478,6 +3762,42 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(y'=\\dfrac{2x-3}{x^2-3x+1}\\). At \\(x=3\\): \\(\\dfrac{3}{1}=3\\).</p><p>\\(y-0=3(x-3)\\).</p><p class=\"ans\">\\(y=3x-9\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y'=\\frac{2x-3}{x^2-3x+1}",
+        "why": "Tangent line needs a slope. \\(\\frac{u'}{u}\\) with \\(u=x^2-3x+1\\).",
+        "watch": [
+         [
+          "y'",
+          "\\frac{2x-3}{x^2-3x+1}"
+         ]
+        ]
+       },
+       {
+        "code": "m=y'(3)=\\frac{6-3}{9-9+1}=3",
+        "why": "Evaluate at the point's \\(x\\)-value.",
+        "watch": [
+         [
+          "m",
+          "3"
+         ]
+        ]
+       },
+       {
+        "code": "y-0=3(x-3)",
+        "why": "Point-slope with \\((3,0)\\)."
+       },
+       {
+        "code": "y=3x-9",
+        "why": "Simplify.",
+        "watch": [
+         [
+          "\\text{line}",
+          "y=3x-9"
+         ]
+        ]
        }
       ]
      },
@@ -2491,6 +3811,40 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(f'(x)=c+\\dfrac{-\\sin x}{\\cos x}=c-\\tan x\\).</p><p>\\(f'(\\pi/4)=c-1=6\\).</p><p class=\"ans\">\\(c=7\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "f=cx+\\ln(\\cos x)",
+        "why": "\\(c\\) is an unknown constant. Differentiate as usual, treating \\(c\\) like a number."
+       },
+       {
+        "code": "\\big(\\ln\\cos x\\big)'=\\frac{-\\sin x}{\\cos x}=-\\tan x",
+        "why": "\\(\\frac{u'}{u}\\) with \\(u=\\cos x\\), \\(u'=-\\sin x\\). Sine over cosine is tangent."
+       },
+       {
+        "code": "f'=c-\\tan x",
+        "why": "\\((cx)'=c\\).",
+        "watch": [
+         [
+          "f'",
+          "c-\\tan x"
+         ]
+        ]
+       },
+       {
+        "code": "f'(\\tfrac\\pi4)=c-1=6",
+        "why": "\\(\\tan\\frac\\pi4=1\\). Set equal to the given 6."
+       },
+       {
+        "code": "c=7",
+        "why": "Solve.",
+        "watch": [
+         [
+          "c",
+          "7"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2502,6 +3856,34 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(\\ln y=2\\ln(x^2+2)+4\\ln(x^4+4)\\)</p><p>\\(\\dfrac{y'}{y}=\\dfrac{4x}{x^2+2}+\\dfrac{16x^3}{x^4+4}\\)</p><p class=\"ans\">\\(y'=(x^2+2)^2(x^4+4)^4\\left(\\dfrac{4x}{x^2+2}+\\dfrac{16x^3}{x^4+4}\\right)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\ln y=\\ln\\!\\big[(x^2+2)^2(x^4+4)^4\\big]",
+        "why": "Logarithmic differentiation: take \\(\\ln\\) of both sides. Why? Logs turn products into sums and powers into multipliers, which are much easier to differentiate."
+       },
+       {
+        "code": "\\ln y=2\\ln(x^2+2)+4\\ln(x^4+4)",
+        "why": "Log laws: \\(\\ln(ab)=\\ln a+\\ln b\\) and \\(\\ln a^n=n\\ln a\\)."
+       },
+       {
+        "code": "\\frac{y'}{y}=2\\cdot\\frac{2x}{x^2+2}+4\\cdot\\frac{4x^3}{x^4+4}",
+        "why": "Differentiate both sides. Left: \\((\\ln y)'=\\frac{y'}{y}\\) (chain rule, since \\(y\\) depends on \\(x\\)). Right: \\(\\frac{u'}{u}\\) for each log."
+       },
+       {
+        "code": "y'=y\\left(\\frac{4x}{x^2+2}+\\frac{16x^3}{x^4+4}\\right)",
+        "why": "Multiply both sides by \\(y\\)."
+       },
+       {
+        "code": "y'=(x^2+2)^2(x^4+4)^4\\left(\\frac{4x}{x^2+2}+\\frac{16x^3}{x^4+4}\\right)",
+        "why": "Replace \\(y\\) with the original function. Always do this last step.",
+        "watch": [
+         [
+          "y'",
+          "y\\left(\\frac{4x}{x^2+2}+\\frac{16x^3}{x^4+4}\\right)"
+         ]
+        ]
        }
       ]
      },
@@ -2519,6 +3901,30 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(\\ln y=\\sin x\\,\\ln x\\).</p><p>\\(\\dfrac{y'}{y}=\\cos x\\ln x+\\dfrac{\\sin x}{x}\\) (product rule).</p><p class=\"ans\">\\(y'=x^{\\sin x}\\left(\\cos x\\ln x+\\dfrac{\\sin x}{x}\\right)\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "y=x^{\\sin x}",
+        "why": "Variable in the base <b>and</b> the exponent. Power rule (needs a constant exponent) and exponential rule (needs a constant base) both fail. Only log differentiation works."
+       },
+       {
+        "code": "\\ln y=\\sin x\\cdot\\ln x",
+        "why": "Take \\(\\ln\\); the exponent comes down in front."
+       },
+       {
+        "code": "\\frac{y'}{y}=\\cos x\\ln x+\\sin x\\cdot\\frac1x",
+        "why": "Left: implicit. Right: product rule on \\(\\sin x\\cdot\\ln x\\)."
+       },
+       {
+        "code": "y'=x^{\\sin x}\\left(\\cos x\\ln x+\\frac{\\sin x}{x}\\right)",
+        "why": "Multiply by \\(y=x^{\\sin x}\\).",
+        "watch": [
+         [
+          "y'",
+          "x^{\\sin x}\\left(\\cos x\\ln x+\\frac{\\sin x}x\\right)"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2530,6 +3936,30 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(\\ln y=\\ln x\\cdot\\ln x=(\\ln x)^2\\).</p><p>\\(\\dfrac{y'}{y}=\\dfrac{2\\ln x}{x}\\).</p><p class=\"ans\">\\(y'=\\dfrac{2\\ln x}{x}\\,x^{\\ln x}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=x^{\\ln x}",
+        "why": "Variable base and variable exponent: log differentiation."
+       },
+       {
+        "code": "\\ln y=\\ln x\\cdot\\ln x=(\\ln x)^2",
+        "why": "Bring the exponent down."
+       },
+       {
+        "code": "\\frac{y'}{y}=2\\ln x\\cdot\\frac1x",
+        "why": "Chain rule on \\((\\ln x)^2\\): power rule on the outside, times \\((\\ln x)'=\\frac1x\\)."
+       },
+       {
+        "code": "y'=\\frac{2\\ln x}{x}\\,x^{\\ln x}",
+        "why": "Multiply by \\(y\\).",
+        "watch": [
+         [
+          "y'",
+          "\\frac{2\\ln x}x\\,x^{\\ln x}"
+         ]
+        ]
        }
       ]
      },
@@ -2543,6 +3973,38 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>Implicit: \\(y'=\\dfrac{2x+2yy'}{x^2+y^2}\\).</p><p>Multiply out: \\(y'(x^2+y^2)=2x+2yy'\\Rightarrow y'(x^2+y^2-2y)=2x\\).</p><p class=\"ans\">\\(y'=\\dfrac{2x}{x^2+y^2-2y}\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "y=\\ln(x^2+y^2)",
+        "why": "\\(y\\) appears on both sides, so this is <b>implicit</b> differentiation. Every time you differentiate something with \\(y\\), multiply by \\(y'\\)."
+       },
+       {
+        "code": "y'=\\frac{2x+2y\\,y'}{x^2+y^2}",
+        "why": "Right side: \\(\\frac{u'}{u}\\) with \\(u=x^2+y^2\\), \\(u'=2x+2yy'\\)."
+       },
+       {
+        "code": "y'(x^2+y^2)=2x+2y\\,y'",
+        "why": "Clear the fraction by multiplying both sides by \\(x^2+y^2\\)."
+       },
+       {
+        "code": "y'(x^2+y^2)-2y\\,y'=2x",
+        "why": "Collect all \\(y'\\) terms on one side."
+       },
+       {
+        "code": "y'(x^2+y^2-2y)=2x",
+        "why": "Factor out \\(y'\\)."
+       },
+       {
+        "code": "y'=\\frac{2x}{x^2+y^2-2y}",
+        "why": "Divide.",
+        "watch": [
+         [
+          "y'",
+          "\\frac{2x}{x^2+y^2-2y}"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2554,6 +4016,62 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(f'=(x-1)^{-1}\\), \\(f''=-(x-1)^{-2}\\), \\(f'''=2(x-1)^{-3}\\), \\(f^{(4)}=-6(x-1)^{-4}\\).</p><p>Signs alternate and the constants are \\(0!,1!,2!,3!,\\dots\\)</p><p class=\"ans\">\\(f^{(n)}(x)=\\dfrac{(-1)^{n-1}(n-1)!}{(x-1)^n}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'=(x-1)^{-1}",
+        "why": "Find a pattern by computing several derivatives. Write in power form so the power rule is easy.",
+        "watch": [
+         [
+          "f'",
+          "(x-1)^{-1}"
+         ]
+        ]
+       },
+       {
+        "code": "f''=-1\\,(x-1)^{-2}",
+        "why": "Power rule: bring down \\(-1\\).",
+        "watch": [
+         [
+          "f''",
+          "-(x-1)^{-2}"
+         ]
+        ]
+       },
+       {
+        "code": "f'''=(-1)(-2)(x-1)^{-3}=2(x-1)^{-3}",
+        "why": "Bring down \\(-2\\).",
+        "watch": [
+         [
+          "f'''",
+          "2(x-1)^{-3}"
+         ]
+        ]
+       },
+       {
+        "code": "f^{(4)}=2(-3)(x-1)^{-4}=-6(x-1)^{-4}",
+        "why": "Bring down \\(-3\\).",
+        "watch": [
+         [
+          "f^{(4)}",
+          "-6(x-1)^{-4}"
+         ]
+        ]
+       },
+       {
+        "code": "1,\\ -1,\\ 2,\\ -6\\ =\\ (-1)^{n-1}(n-1)!",
+        "why": "Spot the pattern: signs alternate starting with \\(+\\) at \\(n=1\\); sizes are \\(0!,1!,2!,3!\\). The exponent is always \\(-n\\)."
+       },
+       {
+        "code": "f^{(n)}(x)=\\frac{(-1)^{n-1}(n-1)!}{(x-1)^n}",
+        "why": "Write the general formula. Check with \\(n=3\\): \\(\\frac{(+1)(2)}{(x-1)^3}\\) ✓.",
+        "watch": [
+         [
+          "f^{(n)}",
+          "\\frac{(-1)^{n-1}(n-1)!}{(x-1)^n}"
+         ]
+        ]
        }
       ]
      }
@@ -2670,6 +4188,50 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>(a) \\(V=x^3\\Rightarrow\\frac{dV}{dt}=3x^2\\frac{dx}{dt}\\).</p><p>(b) \\(3(15)^2(4)=2700\\).</p><p class=\"ans\">(a) \\(\\frac{dV}{dt}=3x^2\\frac{dx}{dt}\\) (b) \\(2700\\text{ cm}^3/\\text{s}\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "V=x^3",
+        "why": "Step 1 of every related-rates problem: write the equation that connects the quantities. Cube volume = edge cubed.",
+        "watch": [
+         [
+          "V",
+          "x^3"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{dV}{dt}=3x^2\\frac{dx}{dt}",
+        "why": "Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on. Power rule on \\(x^3\\), then multiply by \\(\\frac{dx}{dt}\\) because \\(x\\) depends on \\(t\\). This is part (a)."
+       },
+       {
+        "code": "x=15,\\quad \\frac{dx}{dt}=4",
+        "why": "List what is known at the moment in question.",
+        "watch": [
+         [
+          "x",
+          "15"
+         ],
+         [
+          "dx/dt",
+          "4"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{dV}{dt}=3(15)^2(4)=3\\cdot225\\cdot4",
+        "why": "Only now plug in the numbers for this instant. Golden rule of related rates: <b>differentiate first, substitute second</b>. Plugging in too early turns variables into constants and their rates become 0."
+       },
+       {
+        "code": "\\frac{dV}{dt}=2700\\ \\text{cm}^3/\\text{s}",
+        "why": "Units: volume per time.",
+        "watch": [
+         [
+          "dV/dt",
+          "2700"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2686,6 +4248,46 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(A=s^2\\Rightarrow\\frac{dA}{dt}=2s\\frac{ds}{dt}\\).</p><p>Area 16 means \\(s=4\\): \\(2(4)(6)=48\\).</p><p class=\"ans\">\\(48\\text{ cm}^2/\\text{s}\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "A=s^2",
+        "why": "Equation linking area and side.",
+        "watch": [
+         [
+          "A",
+          "s^2"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{dA}{dt}=2s\\frac{ds}{dt}",
+        "why": "Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on."
+       },
+       {
+        "code": "A=16\\Rightarrow s=4",
+        "why": "The problem gives the area, but the formula needs the side. Convert first.",
+        "watch": [
+         [
+          "s",
+          "4"
+         ],
+         [
+          "ds/dt",
+          "6"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{dA}{dt}=2(4)(6)=48\\ \\text{cm}^2/\\text{s}",
+        "why": "Only now plug in the numbers for this instant. Golden rule of related rates: <b>differentiate first, substitute second</b>. Plugging in too early turns variables into constants and their rates become 0.",
+        "watch": [
+         [
+          "dA/dt",
+          "48"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2697,6 +4299,46 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(S=4\\pi r^2\\Rightarrow\\frac{dS}{dt}=8\\pi r\\frac{dr}{dt}=8\\pi(8)(2)\\).</p><p class=\"ans\">\\(128\\pi\\approx402\\text{ cm}^2/\\text{min}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "S=4\\pi r^2",
+        "why": "Surface area of a sphere.",
+        "watch": [
+         [
+          "S",
+          "4\\pi r^2"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{dS}{dt}=8\\pi r\\frac{dr}{dt}",
+        "why": "Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on. \\(4\\pi\\) is a constant multiplier."
+       },
+       {
+        "code": "r=8,\\ \\frac{dr}{dt}=2",
+        "why": "Known values at this moment.",
+        "watch": [
+         [
+          "r",
+          "8"
+         ],
+         [
+          "dr/dt",
+          "2"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{dS}{dt}=8\\pi(8)(2)=128\\pi\\approx402\\ \\text{cm}^2/\\text{min}",
+        "why": "Only now plug in the numbers for this instant. Golden rule of related rates: <b>differentiate first, substitute second</b>. Plugging in too early turns variables into constants and their rates become 0.",
+        "watch": [
+         [
+          "dS/dt",
+          "128\\pi"
+         ]
+        ]
        }
       ]
      },
@@ -2710,6 +4352,46 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(V=\\pi r^2h=25\\pi h\\) (radius fixed).</p><p>\\(\\frac{dV}{dt}=25\\pi\\frac{dh}{dt}\\Rightarrow3=25\\pi\\frac{dh}{dt}\\).</p><p class=\"ans\">\\(\\frac{dh}{dt}=\\frac{3}{25\\pi}\\approx0.038\\text{ m/min}\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "V=\\pi r^2h",
+        "why": "Cylinder volume."
+       },
+       {
+        "code": "V=25\\pi h",
+        "why": "The radius of the tank is <b>fixed</b> at 5, so substitute it before differentiating. That is allowed because \\(r\\) never changes. Only things that vary must stay as variables.",
+        "watch": [
+         [
+          "V",
+          "25\\pi h"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{dV}{dt}=25\\pi\\frac{dh}{dt}",
+        "why": "Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on."
+       },
+       {
+        "code": "3=25\\pi\\frac{dh}{dt}",
+        "why": "Fill rate \\(\\frac{dV}{dt}=3\\).",
+        "watch": [
+         [
+          "dV/dt",
+          "3"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{dh}{dt}=\\frac{3}{25\\pi}\\approx0.038\\ \\text{m/min}",
+        "why": "Solve.",
+        "watch": [
+         [
+          "dh/dt",
+          "\\frac3{25\\pi}"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2722,6 +4404,44 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>Differentiate: \\(8x\\frac{dx}{dt}+18y\\frac{dy}{dt}=0\\).</p><p>(a) \\(16\\frac{dx}{dt}+18(1)\\left(\\frac13\\right)=0\\Rightarrow\\frac{dx}{dt}=-\\frac{6}{16}\\).</p><p>(b) \\(8(-2)(3)+18(1)\\frac{dy}{dt}=0\\Rightarrow\\frac{dy}{dt}=\\frac{48}{18}\\).</p><p class=\"ans\">(a) \\(-\\frac38\\) (b) \\(\\frac83\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "4x^2+9y^2=25",
+        "why": "Both \\(x\\) and \\(y\\) are functions of \\(t\\)."
+       },
+       {
+        "code": "8x\\frac{dx}{dt}+18y\\frac{dy}{dt}=0",
+        "why": "Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on. The constant 25 differentiates to 0."
+       },
+       {
+        "code": "(a)\\ \\ 8(2)\\frac{dx}{dt}+18(1)\\Big(\\frac13\\Big)=0",
+        "why": "Part (a): at \\((2,1)\\) with \\(\\frac{dy}{dt}=\\frac13\\)."
+       },
+       {
+        "code": "16\\frac{dx}{dt}+6=0\\Rightarrow\\frac{dx}{dt}=-\\frac38",
+        "why": "Solve.",
+        "watch": [
+         [
+          "(a)\\ dx/dt",
+          "-\\tfrac38"
+         ]
+        ]
+       },
+       {
+        "code": "(b)\\ \\ 8(-2)(3)+18(1)\\frac{dy}{dt}=0",
+        "why": "Part (b): at \\((-2,1)\\) with \\(\\frac{dx}{dt}=3\\)."
+       },
+       {
+        "code": "-48+18\\frac{dy}{dt}=0\\Rightarrow\\frac{dy}{dt}=\\frac{48}{18}=\\frac83",
+        "why": "Solve and reduce.",
+        "watch": [
+         [
+          "(b)\\ dy/dt",
+          "\\tfrac83"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2733,6 +4453,50 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>Horizontal distance \\(x\\), straight-line distance \\(s\\): \\(x^2+2^2=s^2\\).</p><p>\\(2x\\dot x=2s\\dot s\\Rightarrow\\dot s=\\frac{x}{s}\\dot x\\).</p><p>When \\(s=3\\): \\(x=\\sqrt{9-4}=\\sqrt5\\). \\(\\dot s=\\frac{\\sqrt5}{3}(800)\\).</p><p class=\"ans\">\\(\\frac{800\\sqrt5}{3}\\approx596\\text{ km/h}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x^2+2^2=s^2",
+        "why": "Draw it: a right triangle with vertical leg 2 (altitude, constant), horizontal leg \\(x\\) (ground distance, changing), hypotenuse \\(s\\) (distance to station). Pythagoras.",
+        "watch": [
+         [
+          "\\dot x",
+          "800"
+         ]
+        ]
+       },
+       {
+        "code": "2x\\frac{dx}{dt}=2s\\frac{ds}{dt}",
+        "why": "Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on. The \\(2^2\\) is a constant, derivative 0."
+       },
+       {
+        "code": "\\frac{ds}{dt}=\\frac{x}{s}\\frac{dx}{dt}",
+        "why": "Solve for the rate we want."
+       },
+       {
+        "code": "s=3\\Rightarrow x=\\sqrt{9-4}=\\sqrt5",
+        "why": "We need \\(x\\) at the moment \\(s=3\\): use the original equation (not the differentiated one).",
+        "watch": [
+         [
+          "s",
+          "3"
+         ],
+         [
+          "x",
+          "\\sqrt5"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{ds}{dt}=\\frac{\\sqrt5}{3}(800)=\\frac{800\\sqrt5}{3}\\approx596\\ \\text{km/h}",
+        "why": "Only now plug in the numbers for this instant. Golden rule of related rates: <b>differentiate first, substitute second</b>. Plugging in too early turns variables into constants and their rates become 0.",
+        "watch": [
+         [
+          "ds/dt",
+          "\\frac{800\\sqrt5}3"
+         ]
+        ]
        }
       ]
      },
@@ -2750,6 +4514,36 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>Man at distance \\(x\\), shadow tip at \\(s\\). Similar triangles: \\(\\frac{s}{6}=\\frac{s-x}{2}\\Rightarrow 2s=6s-6x\\Rightarrow s=\\frac32x\\).</p><p>\\(\\frac{ds}{dt}=\\frac32\\frac{dx}{dt}=\\frac32(1.5)\\).</p><p class=\"ans\">\\(2.25\\text{ m/s}\\) (the same at every distance, so the “10 m” isn't needed)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{s}{6}=\\frac{s-x}{2}",
+        "why": "Draw it: pole (height 6) at 0, man (height 2) at \\(x\\), shadow tip at \\(s\\). The big triangle (pole to tip) and small triangle (man to tip) are similar, so height/base ratios match. The man's shadow length is \\(s-x\\)."
+       },
+       {
+        "code": "2s=6s-6x\\Rightarrow s=\\tfrac32x",
+        "why": "Cross-multiply and solve for \\(s\\). Now \\(s\\) depends only on \\(x\\).",
+        "watch": [
+         [
+          "s",
+          "\\tfrac32x"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{ds}{dt}=\\frac32\\frac{dx}{dt}",
+        "why": "Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on."
+       },
+       {
+        "code": "\\frac{ds}{dt}=\\frac32(1.5)=2.25\\ \\text{m/s}",
+        "why": "Plug in his walking speed. The answer has no \\(x\\) in it, so the “10 m” was extra information.",
+        "watch": [
+         [
+          "ds/dt",
+          "2.25"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2761,6 +4555,64 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>After 2 h: \\(x=144\\), \\(y=60\\), \\(z=\\sqrt{144^2+60^2}=156\\).</p><p>\\(z\\dot z=x\\dot x+y\\dot y\\Rightarrow\\dot z=\\frac{144(72)+60(30)}{156}=\\frac{12168}{156}\\).</p><p class=\"ans\">\\(78\\text{ km/h}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "z^2=x^2+y^2",
+        "why": "West and south are perpendicular, so the distance \\(z\\) between the cars is the hypotenuse. \\(x\\) = west car's distance, \\(y\\) = south car's.",
+        "watch": [
+         [
+          "\\dot x",
+          "72"
+         ],
+         [
+          "\\dot y",
+          "30"
+         ]
+        ]
+       },
+       {
+        "code": "x=72(2)=144,\\ \\ y=30(2)=60",
+        "why": "Positions after 2 hours: distance = speed × time.",
+        "watch": [
+         [
+          "x",
+          "144"
+         ],
+         [
+          "y",
+          "60"
+         ]
+        ]
+       },
+       {
+        "code": "z=\\sqrt{144^2+60^2}=156",
+        "why": "Find \\(z\\) at that moment from the original equation.",
+        "watch": [
+         [
+          "z",
+          "156"
+         ]
+        ]
+       },
+       {
+        "code": "2z\\frac{dz}{dt}=2x\\frac{dx}{dt}+2y\\frac{dy}{dt}",
+        "why": "Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on."
+       },
+       {
+        "code": "\\frac{dz}{dt}=\\frac{144(72)+60(30)}{156}=\\frac{12168}{156}",
+        "why": "Cancel the 2s, divide by \\(z\\), plug in."
+       },
+       {
+        "code": "\\frac{dz}{dt}=78\\ \\text{km/h}",
+        "why": "Arithmetic.",
+        "watch": [
+         [
+          "dz/dt",
+          "78"
+         ]
+        ]
        }
       ]
      },
@@ -2774,6 +4626,52 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(A=\\frac12bh\\). At that moment \\(b=\\frac{2A}{h}=20\\).</p><p>Product rule: \\(\\frac{dA}{dt}=\\frac12\\left(\\frac{db}{dt}h+b\\frac{dh}{dt}\\right)\\Rightarrow2=\\frac12\\left(10\\frac{db}{dt}+20\\right)\\).</p><p>\\(4=10\\frac{db}{dt}+20\\Rightarrow\\frac{db}{dt}=-1.6\\).</p><p class=\"ans\">\\(-1.6\\text{ cm/min}\\) (the base is shrinking)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "A=\\tfrac12bh",
+        "why": "Triangle area. Both \\(b\\) and \\(h\\) change, so both stay as variables."
+       },
+       {
+        "code": "b=\\frac{2A}{h}=\\frac{2(100)}{10}=20",
+        "why": "We will need \\(b\\) at this moment; get it from the area formula.",
+        "watch": [
+         [
+          "b",
+          "20"
+         ],
+         [
+          "h",
+          "10"
+         ],
+         [
+          "dh/dt",
+          "1"
+         ],
+         [
+          "dA/dt",
+          "2"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{dA}{dt}=\\frac12\\Big(\\frac{db}{dt}h+b\\frac{dh}{dt}\\Big)",
+        "why": "Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on. \\(b\\cdot h\\) is a <b>product</b> of two changing things, so use the product rule."
+       },
+       {
+        "code": "2=\\frac12\\Big(10\\frac{db}{dt}+20\\cdot1\\Big)",
+        "why": "Only now plug in the numbers for this instant. Golden rule of related rates: <b>differentiate first, substitute second</b>. Plugging in too early turns variables into constants and their rates become 0."
+       },
+       {
+        "code": "4=10\\frac{db}{dt}+20\\Rightarrow\\frac{db}{dt}=-1.6",
+        "why": "Multiply by 2, then solve. Negative means the base is <b>shrinking</b>.",
+        "watch": [
+         [
+          "db/dt",
+          "-1.6"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2785,6 +4683,36 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>First stone has fallen \\(4.9t^2\\), second \\(4.9(t-1)^2\\). Gap \\(D=4.9t^2-4.9(t-1)^2\\).</p><p>\\(\\frac{dD}{dt}=9.8t-9.8(t-1)=9.8\\).</p><p class=\"ans\">\\(9.8\\text{ m/s}\\), constant at every moment</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "d_1=4.9t^2,\\quad d_2=4.9(t-1)^2",
+        "why": "Stone 1 has fallen for \\(t\\) seconds; stone 2 started 1 s later, so it has fallen for \\(t-1\\) seconds."
+       },
+       {
+        "code": "D=d_1-d_2=4.9t^2-4.9(t-1)^2",
+        "why": "The gap between them is the difference.",
+        "watch": [
+         [
+          "D",
+          "4.9t^2-4.9(t-1)^2"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{dD}{dt}=9.8t-9.8(t-1)",
+        "why": "Differentiate; chain rule on \\((t-1)^2\\) gives \\(2(t-1)\\cdot1\\)."
+       },
+       {
+        "code": "\\frac{dD}{dt}=9.8\\ \\text{m/s}",
+        "why": "The \\(t\\)s cancel: the gap grows at a constant 9.8 m/s at every moment, including the one asked about.",
+        "watch": [
+         [
+          "dD/dt",
+          "9.8"
+         ]
+        ]
        }
       ]
      },
@@ -2798,6 +4726,56 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>Work in cm: \\(\\frac rh=\\frac{200}{600}\\Rightarrow r=\\frac h3\\), so \\(V=\\frac13\\pi\\frac{h^2}{9}h=\\frac{\\pi h^3}{27}\\).</p><p>\\(\\frac{dV}{dt}=\\frac{\\pi h^2}{9}\\frac{dh}{dt}=\\frac{\\pi(200)^2}{9}(20)\\approx279{,}253\\text{ cm}^3/\\text{min}\\).</p><p>Net rate = pumped in − leaking out: \\(C-10{,}000=279{,}253\\).</p><p class=\"ans\">\\(C\\approx289{,}253\\text{ cm}^3/\\text{min}\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "\\frac rh=\\frac{200}{600}\\Rightarrow r=\\frac h3",
+        "why": "Work in cm (the leak is in cm³). Similar triangles: the water cone has the same shape as the tank, radius 200 to height 600. This removes \\(r\\), leaving one variable.",
+        "watch": [
+         [
+          "r",
+          "h/3"
+         ]
+        ]
+       },
+       {
+        "code": "V=\\frac13\\pi r^2h=\\frac13\\pi\\frac{h^2}9h=\\frac{\\pi h^3}{27}",
+        "why": "Cone volume, with \\(r\\) replaced.",
+        "watch": [
+         [
+          "V",
+          "\\frac{\\pi h^3}{27}"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{dV}{dt}=\\frac{\\pi h^2}{9}\\frac{dh}{dt}",
+        "why": "Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on. \\(\\frac{3}{27}=\\frac19\\)."
+       },
+       {
+        "code": "\\frac{dV}{dt}=\\frac{\\pi(200)^2}{9}(20)\\approx279{,}253",
+        "why": "Only now plug in the numbers for this instant. Golden rule of related rates: <b>differentiate first, substitute second</b>. Plugging in too early turns variables into constants and their rates become 0. \\(h=200\\) cm, \\(\\frac{dh}{dt}=20\\).",
+        "watch": [
+         [
+          "dV/dt",
+          "\\approx279{,}253"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{dV}{dt}=C-10{,}000",
+        "why": "The net change in volume is pumped in minus leaked out. \\(C\\) is the pumping rate."
+       },
+       {
+        "code": "C\\approx289{,}253\\ \\text{cm}^3/\\text{min}",
+        "why": "Solve for \\(C\\).",
+        "watch": [
+         [
+          "C",
+          "\\approx289{,}253"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2810,6 +4788,46 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>Diameter = \\(h\\), so \\(r=\\frac h2\\) and \\(V=\\frac13\\pi\\frac{h^2}{4}h=\\frac{\\pi h^3}{12}\\).</p><p>\\(\\frac{dV}{dt}=\\frac{\\pi h^2}{4}\\frac{dh}{dt}\\Rightarrow3=\\frac{9\\pi}{4}\\frac{dh}{dt}\\).</p><p class=\"ans\">\\(\\frac{dh}{dt}=\\frac{4}{3\\pi}\\approx0.42\\text{ m/min}\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "d=h\\Rightarrow r=\\frac h2",
+        "why": "Diameter equals height, so the radius is half the height. Use this to eliminate \\(r\\).",
+        "watch": [
+         [
+          "r",
+          "h/2"
+         ]
+        ]
+       },
+       {
+        "code": "V=\\frac13\\pi\\Big(\\frac h2\\Big)^2h=\\frac{\\pi h^3}{12}",
+        "why": "Cone volume in terms of \\(h\\) only.",
+        "watch": [
+         [
+          "V",
+          "\\frac{\\pi h^3}{12}"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{dV}{dt}=\\frac{\\pi h^2}{4}\\frac{dh}{dt}",
+        "why": "Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on."
+       },
+       {
+        "code": "3=\\frac{\\pi(9)}{4}\\frac{dh}{dt}",
+        "why": "Only now plug in the numbers for this instant. Golden rule of related rates: <b>differentiate first, substitute second</b>. Plugging in too early turns variables into constants and their rates become 0. \\(h=3\\), \\(\\frac{dV}{dt}=3\\)."
+       },
+       {
+        "code": "\\frac{dh}{dt}=\\frac{4}{3\\pi}\\approx0.42\\ \\text{m/min}",
+        "why": "Solve.",
+        "watch": [
+         [
+          "dh/dt",
+          "\\frac4{3\\pi}"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2821,6 +4839,26 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(A=\\frac{\\sqrt3}{4}s^2\\Rightarrow\\frac{dA}{dt}=\\frac{\\sqrt3}{2}s\\frac{ds}{dt}=\\frac{\\sqrt3}{2}(30)(10)\\).</p><p class=\"ans\">\\(150\\sqrt3\\approx259.8\\text{ cm}^2/\\text{min}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "A=\\frac{\\sqrt3}{4}s^2",
+        "why": "Area of an equilateral triangle with side \\(s\\) (memorize it, or derive: base \\(s\\), height \\(\\frac{\\sqrt3}2s\\))."
+       },
+       {
+        "code": "\\frac{dA}{dt}=\\frac{\\sqrt3}{2}s\\frac{ds}{dt}",
+        "why": "Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on."
+       },
+       {
+        "code": "\\frac{dA}{dt}=\\frac{\\sqrt3}{2}(30)(10)=150\\sqrt3\\approx259.8",
+        "why": "Only now plug in the numbers for this instant. Golden rule of related rates: <b>differentiate first, substitute second</b>. Plugging in too early turns variables into constants and their rates become 0.",
+        "watch": [
+         [
+          "dA/dt",
+          "150\\sqrt3"
+         ]
+        ]
        }
       ]
      },
@@ -2837,6 +4875,60 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>After 5 s: car 100 m north, drone 30 m east and 25 m up. \\(D^2=x^2+y^2+25^2\\).</p><p>\\(D=\\sqrt{30^2+100^2+25^2}=\\sqrt{11525}\\approx107.35\\).</p><p>\\(D\\dot D=x\\dot x+y\\dot y\\Rightarrow\\dot D=\\frac{30(6)+100(20)}{107.35}\\).</p><p class=\"ans\">\\(\\approx20.3\\text{ m/s}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "D^2=x^2+y^2+25^2",
+        "why": "3D distance: drone east \\(x\\), car north \\(y\\), height 25 (constant). It is Pythagoras with three perpendicular directions.",
+        "watch": [
+         [
+          "\\dot x",
+          "6"
+         ],
+         [
+          "\\dot y",
+          "20"
+         ]
+        ]
+       },
+       {
+        "code": "x=6(5)=30,\\ \\ y=20(5)=100",
+        "why": "Positions after 5 s.",
+        "watch": [
+         [
+          "x",
+          "30"
+         ],
+         [
+          "y",
+          "100"
+         ]
+        ]
+       },
+       {
+        "code": "D=\\sqrt{900+10000+625}=\\sqrt{11525}\\approx107.35",
+        "why": "Distance at that moment.",
+        "watch": [
+         [
+          "D",
+          "107.35"
+         ]
+        ]
+       },
+       {
+        "code": "2D\\dot D=2x\\dot x+2y\\dot y",
+        "why": "Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on. The 25 is constant, derivative 0."
+       },
+       {
+        "code": "\\dot D=\\frac{30(6)+100(20)}{107.35}=\\frac{2180}{107.35}\\approx20.3\\ \\text{m/s}",
+        "why": "Only now plug in the numbers for this instant. Golden rule of related rates: <b>differentiate first, substitute second</b>. Plugging in too early turns variables into constants and their rates become 0.",
+        "watch": [
+         [
+          "dD/dt",
+          "\\approx20.3"
+         ]
+        ]
        }
       ]
      }
@@ -2949,6 +5041,46 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(f(-2)=-8-4+3=-9\\).</p><p>\\(f'(x)=3x^2-2x\\Rightarrow f'(-2)=12+4=16\\).</p><p>\\(L(x)=-9+16(x+2)\\).</p><p class=\"ans\">\\(L(x)=16x+23\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "f(-2)=-8-4+3=-9",
+        "why": "Ingredient 1: the height at \\(a=-2\\). Careful with signs: \\((-2)^3=-8\\), \\((-2)^2=4\\).",
+        "watch": [
+         [
+          "f(a)",
+          "-9"
+         ]
+        ]
+       },
+       {
+        "code": "f'(x)=3x^2-2x",
+        "why": "Ingredient 2: the derivative."
+       },
+       {
+        "code": "f'(-2)=12+4=16",
+        "why": "Slope at \\(a\\).",
+        "watch": [
+         [
+          "f'(a)",
+          "16"
+         ]
+        ]
+       },
+       {
+        "code": "L(x)=-9+16(x+2)",
+        "why": "Linearization formula: \\(L(x)=f(a)+f'(a)(x-a)\\). It is just the tangent line at \\(x=a\\): start at height \\(f(a)\\), move with slope \\(f'(a)\\)."
+       },
+       {
+        "code": "L(x)=16x+23",
+        "why": "Expand: \\(16x+32-9\\).",
+        "watch": [
+         [
+          "L(x)",
+          "16x+23"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2960,6 +5092,42 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(f(8)=2\\). \\(f'(x)=\\frac13x^{-2/3}\\Rightarrow f'(8)=\\frac13\\cdot\\frac14=\\frac1{12}\\).</p><p class=\"ans\">\\(L(x)=2+\\frac{1}{12}(x-8)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(8)=\\sqrt[3]8=2",
+        "why": "Height at \\(a=8\\).",
+        "watch": [
+         [
+          "f(a)",
+          "2"
+         ]
+        ]
+       },
+       {
+        "code": "f'(x)=\\tfrac13x^{-2/3}",
+        "why": "Power rule on \\(x^{1/3}\\)."
+       },
+       {
+        "code": "f'(8)=\\frac13\\cdot\\frac{1}{8^{2/3}}=\\frac13\\cdot\\frac14=\\frac1{12}",
+        "why": "\\(8^{2/3}=(\\sqrt[3]8)^2=4\\). Take the root first, then square.",
+        "watch": [
+         [
+          "f'(a)",
+          "\\frac1{12}"
+         ]
+        ]
+       },
+       {
+        "code": "L(x)=2+\\frac1{12}(x-8)",
+        "why": "Linearization formula: \\(L(x)=f(a)+f'(a)(x-a)\\). It is just the tangent line at \\(x=a\\): start at height \\(f(a)\\), move with slope \\(f'(a)\\).",
+        "watch": [
+         [
+          "L(x)",
+          "2+\\frac1{12}(x-8)"
+         ]
+        ]
        }
       ]
      },
@@ -2977,6 +5145,60 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(f(0)=1\\). \\(f'(x)=-\\frac{1}{2\\sqrt{1-x}}\\Rightarrow f'(0)=-\\frac12\\). So \\(L(x)=1-\\frac x2\\).</p><p>\\(\\sqrt{0.9}=f(0.1)\\approx1-0.05\\). \\(\\sqrt{0.99}=f(0.01)\\approx1-0.005\\).</p><p class=\"ans\">\\(L(x)=1-\\frac x2\\); \\(\\sqrt{0.9}\\approx0.95\\), \\(\\sqrt{0.99}\\approx0.995\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "f(0)=\\sqrt1=1",
+        "why": "Height at \\(a=0\\).",
+        "watch": [
+         [
+          "f(a)",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "f'(x)=\\frac{-1}{2\\sqrt{1-x}}",
+        "why": "Chain rule: \\((\\sqrt u)'=\\frac{u'}{2\\sqrt u}\\) with \\(u'=-1\\)."
+       },
+       {
+        "code": "f'(0)=-\\frac12",
+        "why": "Slope at 0.",
+        "watch": [
+         [
+          "f'(a)",
+          "-\\frac12"
+         ]
+        ]
+       },
+       {
+        "code": "L(x)=1-\\frac x2",
+        "why": "Linearization formula: \\(L(x)=f(a)+f'(a)(x-a)\\). It is just the tangent line at \\(x=a\\): start at height \\(f(a)\\), move with slope \\(f'(a)\\).",
+        "watch": [
+         [
+          "L(x)",
+          "1-\\frac x2"
+         ]
+        ]
+       },
+       {
+        "code": "\\sqrt{0.9}=f(0.1)\\approx1-0.05=0.95",
+        "why": "Match: \\(\\sqrt{1-x}=\\sqrt{0.9}\\) means \\(x=0.1\\). Plug into \\(L\\), not \\(f\\)."
+       },
+       {
+        "code": "\\sqrt{0.99}=f(0.01)\\approx1-0.005=0.995",
+        "why": "Same idea, \\(x=0.01\\). Closer to \\(a\\) means a more accurate estimate.",
+        "watch": [
+         [
+          "\\sqrt{0.9}",
+          "0.95"
+         ],
+         [
+          "\\sqrt{0.99}",
+          "0.995"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -2988,6 +5210,46 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(f(0)=0\\), \\(f'(x)=\\frac1{1+x^2}\\Rightarrow f'(0)=1\\). So \\(L(x)=x\\). ✓</p><p>We need \\(|x-\\tan^{-1}x|<0.1\\). Graphing (or solving numerically) gives about \\(|x|<0.73\\).</p><p class=\"ans\">Accurate to within 0.1 for about \\(-0.73<x<0.73\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(0)=\\tan^{-1}0=0",
+        "why": "Height at 0.",
+        "watch": [
+         [
+          "f(a)",
+          "0"
+         ]
+        ]
+       },
+       {
+        "code": "f'(0)=\\frac1{1+0}=1",
+        "why": "Slope at 0.",
+        "watch": [
+         [
+          "f'(a)",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "L(x)=0+1(x-0)=x\\ \\ \\checkmark",
+        "why": "Linearization formula: \\(L(x)=f(a)+f'(a)(x-a)\\). It is just the tangent line at \\(x=a\\): start at height \\(f(a)\\), move with slope \\(f'(a)\\). So \\(\\tan^{-1}x\\approx x\\) near 0, as claimed."
+       },
+       {
+        "code": "|x-\\tan^{-1}x|<0.1",
+        "why": "“Accurate within 0.1” means the gap between the line and the curve is less than 0.1."
+       },
+       {
+        "code": "-0.73<x<0.73",
+        "why": "Can't solve by algebra; graph \\(y=x-\\tan^{-1}x\\) and \\(y=\\pm0.1\\) and read off the crossings, about \\(x\\approx\\pm0.73\\).",
+        "watch": [
+         [
+          "\\text{range}",
+          "|x|<0.73"
+         ]
+        ]
        }
       ]
      },
@@ -3001,6 +5263,28 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(dy=y'\\,dx\\) with \\(y'=5e^{5x}\\).</p><p class=\"ans\">\\(dy=5e^{5x}\\,dx\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "y'=5e^{5x}",
+        "why": "Chain rule on \\(e^{5x}\\).",
+        "watch": [
+         [
+          "y'",
+          "5e^{5x}"
+         ]
+        ]
+       },
+       {
+        "code": "dy=5e^{5x}\\,dx",
+        "why": "Differential: \\(dy=f'(x)\\,dx\\). It is the derivative with the \\(dx\\) “multiplied across”. Find \\(y'\\), then attach \\(dx\\).",
+        "watch": [
+         [
+          "dy",
+          "5e^{5x}dx"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3012,6 +5296,32 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>Quotient rule: \\(y'=\\frac{2(1+3u)-3(1+2u)}{(1+3u)^2}=\\frac{-1}{(1+3u)^2}\\).</p><p class=\"ans\">\\(dy=-\\dfrac{du}{(1+3u)^2}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y'=\\frac{2(1+3u)-(1+2u)(3)}{(1+3u)^2}",
+        "why": "Quotient rule: (bottom·top′ − top·bottom′)/bottom². Top′ = 2, bottom′ = 3."
+       },
+       {
+        "code": "=\\frac{2+6u-3-6u}{(1+3u)^2}=\\frac{-1}{(1+3u)^2}",
+        "why": "Expand the numerator; the \\(u\\) terms cancel.",
+        "watch": [
+         [
+          "y'",
+          "\\frac{-1}{(1+3u)^2}"
+         ]
+        ]
+       },
+       {
+        "code": "dy=-\\frac{du}{(1+3u)^2}",
+        "why": "Differential: \\(dy=f'(x)\\,dx\\). It is the derivative with the \\(dx\\) “multiplied across”. Find \\(y'\\), then attach \\(dx\\). Here the variable is \\(u\\), so attach \\(du\\).",
+        "watch": [
+         [
+          "dy",
+          "-\\frac{du}{(1+3u)^2}"
+         ]
+        ]
        }
       ]
      },
@@ -3025,6 +5335,28 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(y'=\\frac{\\cos\\theta}{\\sin\\theta}=\\cot\\theta\\).</p><p class=\"ans\">\\(dy=\\cot\\theta\\,d\\theta\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "y'=\\frac{\\cos\\theta}{\\sin\\theta}=\\cot\\theta",
+        "why": "\\((\\ln u)'=\\frac{u'}{u}\\) with \\(u=\\sin\\theta\\).",
+        "watch": [
+         [
+          "y'",
+          "\\cot\\theta"
+         ]
+        ]
+       },
+       {
+        "code": "dy=\\cot\\theta\\,d\\theta",
+        "why": "Differential: \\(dy=f'(x)\\,dx\\). It is the derivative with the \\(dx\\) “multiplied across”. Find \\(y'\\), then attach \\(dx\\).",
+        "watch": [
+         [
+          "dy",
+          "\\cot\\theta\\,d\\theta"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3036,6 +5368,32 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>(a) \\(dy=\\frac1{10}e^{x/10}dx\\).</p><p>(b) \\(\\frac1{10}(1)(0.1)\\).</p><p class=\"ans\">(a) \\(dy=\\frac{1}{10}e^{x/10}dx\\) (b) \\(dy=0.01\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y'=\\frac1{10}e^{x/10}",
+        "why": "Chain rule: inside \\(\\frac{x}{10}\\) has derivative \\(\\frac1{10}\\)."
+       },
+       {
+        "code": "dy=\\frac1{10}e^{x/10}\\,dx",
+        "why": "Differential: \\(dy=f'(x)\\,dx\\). It is the derivative with the \\(dx\\) “multiplied across”. Find \\(y'\\), then attach \\(dx\\). This is part (a).",
+        "watch": [
+         [
+          "dy",
+          "\\frac1{10}e^{x/10}dx"
+         ]
+        ]
+       },
+       {
+        "code": "dy=\\frac1{10}e^{0}(0.1)=0.01",
+        "why": "Part (b): plug in \\(x=0\\), \\(dx=0.1\\).",
+        "watch": [
+         [
+          "dy",
+          "0.01"
+         ]
+        ]
        }
       ]
      },
@@ -3049,6 +5407,32 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>(a) \\(dy=\\frac{x}{\\sqrt{3+x^2}}dx\\).</p><p>(b) \\(\\frac{1}{2}(-0.1)\\).</p><p class=\"ans\">(a) \\(dy=\\dfrac{x\\,dx}{\\sqrt{3+x^2}}\\) (b) \\(dy=-0.05\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "y'=\\frac{2x}{2\\sqrt{3+x^2}}=\\frac{x}{\\sqrt{3+x^2}}",
+        "why": "\\((\\sqrt u)'=\\frac{u'}{2\\sqrt u}\\), \\(u'=2x\\)."
+       },
+       {
+        "code": "dy=\\frac{x}{\\sqrt{3+x^2}}\\,dx",
+        "why": "Differential: \\(dy=f'(x)\\,dx\\). It is the derivative with the \\(dx\\) “multiplied across”. Find \\(y'\\), then attach \\(dx\\). Part (a).",
+        "watch": [
+         [
+          "dy",
+          "\\frac{x\\,dx}{\\sqrt{3+x^2}}"
+         ]
+        ]
+       },
+       {
+        "code": "dy=\\frac{1}{\\sqrt4}(-0.1)=\\frac12(-0.1)=-0.05",
+        "why": "Part (b): \\(x=1\\), \\(dx=-0.1\\).",
+        "watch": [
+         [
+          "dy",
+          "-0.05"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3060,6 +5444,40 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(\\Delta y=f(3.5)-f(3)=(12.25-14)-(9-12)=-1.75+3=1.25\\).</p><p>\\(dy=(2x-4)dx=(2)(0.5)=1\\).</p><p class=\"ans\">\\(\\Delta y=1.25\\), \\(dy=1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\Delta y=f(3.5)-f(3)",
+        "why": "Two different things: \\(\\Delta y\\) is the <b>actual</b> change in the function. \\(dy\\) is the change predicted by the tangent line."
+       },
+       {
+        "code": "f(3.5)=12.25-14=-1.75,\\ \\ f(3)=9-12=-3",
+        "why": "Evaluate both."
+       },
+       {
+        "code": "\\Delta y=-1.75-(-3)=1.25",
+        "why": "Subtract.",
+        "watch": [
+         [
+          "\\Delta y",
+          "1.25"
+         ]
+        ]
+       },
+       {
+        "code": "dy=f'(x)\\,dx=(2x-4)\\,dx",
+        "why": "Differential: \\(dy=f'(x)\\,dx\\). It is the derivative with the \\(dx\\) “multiplied across”. Find \\(y'\\), then attach \\(dx\\)."
+       },
+       {
+        "code": "dy=(6-4)(0.5)=1",
+        "why": "\\(x=3\\), \\(dx=\\Delta x=0.5\\). The tangent underestimates here because the parabola curves upward.",
+        "watch": [
+         [
+          "dy",
+          "1"
+         ]
+        ]
        }
       ]
      },
@@ -3073,6 +5491,36 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(\\Delta y=\\sqrt{1.8}-\\sqrt1\\approx0.342\\).</p><p>\\(dy=\\frac{1}{2\\sqrt{x-2}}dx=\\frac12(0.8)=0.4\\).</p><p class=\"ans\">\\(\\Delta y\\approx0.342\\), \\(dy=0.4\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "\\Delta y=\\sqrt{3.8-2}-\\sqrt{3-2}=\\sqrt{1.8}-1",
+        "why": "Actual change: new value minus old value."
+       },
+       {
+        "code": "\\Delta y\\approx1.342-1=0.342",
+        "why": "Calculator for \\(\\sqrt{1.8}\\).",
+        "watch": [
+         [
+          "\\Delta y",
+          "0.342"
+         ]
+        ]
+       },
+       {
+        "code": "dy=\\frac{1}{2\\sqrt{x-2}}\\,dx",
+        "why": "Differential: \\(dy=f'(x)\\,dx\\). It is the derivative with the \\(dx\\) “multiplied across”. Find \\(y'\\), then attach \\(dx\\)."
+       },
+       {
+        "code": "dy=\\frac{1}{2(1)}(0.8)=0.4",
+        "why": "Plug in \\(x=3\\), \\(dx=0.8\\). The square root bends down, so the tangent overestimates.",
+        "watch": [
+         [
+          "dy",
+          "0.4"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3084,6 +5532,40 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(f(x)=x^4\\), \\(a=2\\): \\(f(2)=16\\), \\(f'(2)=4(8)=32\\).</p><p>\\(L(1.999)=16+32(-0.001)\\).</p><p class=\"ans\">\\((1.999)^4\\approx15.968\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=x^4,\\ \\ a=2",
+        "why": "Pick a function \\(f\\) and a nearby “nice” point \\(a\\) where you know the exact value. 1.999 is very close to 2, and \\(2^4\\) is easy."
+       },
+       {
+        "code": "f(2)=16,\\ \\ f'(x)=4x^3\\Rightarrow f'(2)=32",
+        "why": "Gather the height and slope at \\(a\\).",
+        "watch": [
+         [
+          "f(a)",
+          "16"
+         ],
+         [
+          "f'(a)",
+          "32"
+         ]
+        ]
+       },
+       {
+        "code": "L(x)=16+32(x-2)",
+        "why": "Linearization formula: \\(L(x)=f(a)+f'(a)(x-a)\\). It is just the tangent line at \\(x=a\\): start at height \\(f(a)\\), move with slope \\(f'(a)\\)."
+       },
+       {
+        "code": "L(1.999)=16+32(-0.001)=15.968",
+        "why": "\\(x-a=-0.001\\).",
+        "watch": [
+         [
+          "(1.999)^4",
+          "\\approx15.968"
+         ]
+        ]
        }
       ]
      },
@@ -3097,6 +5579,40 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(f(x)=\\sqrt[3]{x}\\), \\(a=1000\\): \\(f(1000)=10\\), \\(f'(1000)=\\frac{1}{3(1000)^{2/3}}=\\frac1{300}\\).</p><p>\\(L(1001)=10+\\frac{1}{300}(1)\\).</p><p class=\"ans\">\\(\\sqrt[3]{1001}\\approx10.0033\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=\\sqrt[3]x,\\ \\ a=1000",
+        "why": "Pick a function \\(f\\) and a nearby “nice” point \\(a\\) where you know the exact value. \\(\\sqrt[3]{1000}=10\\)."
+       },
+       {
+        "code": "f'(x)=\\frac{1}{3x^{2/3}}\\Rightarrow f'(1000)=\\frac1{3\\cdot100}=\\frac1{300}",
+        "why": "\\(1000^{2/3}=10^2=100\\).",
+        "watch": [
+         [
+          "f(a)",
+          "10"
+         ],
+         [
+          "f'(a)",
+          "\\frac1{300}"
+         ]
+        ]
+       },
+       {
+        "code": "L(1001)=10+\\frac1{300}(1)",
+        "why": "Linearization formula: \\(L(x)=f(a)+f'(a)(x-a)\\). It is just the tangent line at \\(x=a\\): start at height \\(f(a)\\), move with slope \\(f'(a)\\)."
+       },
+       {
+        "code": "\\sqrt[3]{1001}\\approx10.0033",
+        "why": "\\(\\frac1{300}\\approx0.0033\\).",
+        "watch": [
+         [
+          "\\sqrt[3]{1001}",
+          "\\approx10.0033"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3109,6 +5625,40 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(f(x)=e^x\\) at \\(a=0\\): \\(L(x)=1+x\\).</p><p class=\"ans\">\\(e^{0.1}\\approx1.1\\) (the true value is 1.10517…)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=e^x,\\ \\ a=0",
+        "why": "Pick a function \\(f\\) and a nearby “nice” point \\(a\\) where you know the exact value. \\(e^0=1\\)."
+       },
+       {
+        "code": "f(0)=1,\\ \\ f'(0)=e^0=1",
+        "why": "\\(e^x\\) is its own derivative.",
+        "watch": [
+         [
+          "f(a)",
+          "1"
+         ],
+         [
+          "f'(a)",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "L(x)=1+x",
+        "why": "Linearization formula: \\(L(x)=f(a)+f'(a)(x-a)\\). It is just the tangent line at \\(x=a\\): start at height \\(f(a)\\), move with slope \\(f'(a)\\)."
+       },
+       {
+        "code": "e^{0.1}\\approx1.1",
+        "why": "True value 1.10517…, very close.",
+        "watch": [
+         [
+          "e^{0.1}",
+          "\\approx1.1"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3120,6 +5670,40 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>Linearize \\(f(x)=\\ln x\\) at \\(a=1\\): \\(f(1)=0\\), \\(f'(1)=1\\), so \\(L(x)=x-1\\).</p><p>\\(\\ln1.04\\approx L(1.04)=0.04\\).</p><p class=\"ans\">Because near \\(x=1\\), \\(\\ln x\\approx x-1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=\\ln x,\\ \\ a=1",
+        "why": "Pick a function \\(f\\) and a nearby “nice” point \\(a\\) where you know the exact value. \\(\\ln1=0\\)."
+       },
+       {
+        "code": "f(1)=0,\\ \\ f'(1)=\\frac11=1",
+        "why": "Height and slope.",
+        "watch": [
+         [
+          "f(a)",
+          "0"
+         ],
+         [
+          "f'(a)",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "L(x)=0+1(x-1)=x-1",
+        "why": "Linearization formula: \\(L(x)=f(a)+f'(a)(x-a)\\). It is just the tangent line at \\(x=a\\): start at height \\(f(a)\\), move with slope \\(f'(a)\\)."
+       },
+       {
+        "code": "\\ln1.04\\approx L(1.04)=0.04",
+        "why": "That is the explanation: near 1, \\(\\ln x\\) is almost the line \\(x-1\\).",
+        "watch": [
+         [
+          "\\ln1.04",
+          "\\approx0.04"
+         ]
+        ]
        }
       ]
      }
@@ -3253,6 +5837,32 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>(a) \\(\\frac{1-1}{2}=0\\). (b) \\(\\frac{1+1}{2}=1\\).</p><p class=\"ans\">(a) 0 (b) 1</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "\\sinh0=\\frac{e^0-e^{-0}}{2}",
+        "why": "Definitions: \\(\\sinh x=\\dfrac{e^x-e^{-x}}{2}\\) (minus), \\(\\cosh x=\\dfrac{e^x+e^{-x}}{2}\\) (plus). Every hyperbolic question starts from these."
+       },
+       {
+        "code": "=\\frac{1-1}{2}=0",
+        "why": "\\(e^0=1\\).",
+        "watch": [
+         [
+          "\\sinh0",
+          "0"
+         ]
+        ]
+       },
+       {
+        "code": "\\cosh0=\\frac{1+1}{2}=1",
+        "why": "Same idea with the plus sign. Like \\(\\sin0=0\\), \\(\\cos0=1\\).",
+        "watch": [
+         [
+          "\\cosh0",
+          "1"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3264,6 +5874,36 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>(a) \\(\\frac{5+1/5}{2}=\\frac{13}{5}\\).</p><p>(b) \\(\\frac{e^5+e^{-5}}{2}\\approx74.21\\).</p><p class=\"ans\">(a) \\(\\frac{13}{5}\\) (b) \\(\\approx74.21\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\cosh(\\ln5)=\\frac{e^{\\ln5}+e^{-\\ln5}}{2}",
+        "why": "Definitions: \\(\\sinh x=\\dfrac{e^x-e^{-x}}{2}\\) (minus), \\(\\cosh x=\\dfrac{e^x+e^{-x}}{2}\\) (plus). Every hyperbolic question starts from these."
+       },
+       {
+        "code": "e^{\\ln5}=5,\\quad e^{-\\ln5}=\\frac15",
+        "why": "\\(e\\) and \\(\\ln\\) cancel. A minus in the exponent means reciprocal: \\(e^{-\\ln5}=\\frac1{e^{\\ln5}}\\)."
+       },
+       {
+        "code": "\\cosh(\\ln5)=\\frac{5+\\frac15}{2}=\\frac{26/5}{2}=\\frac{13}5",
+        "why": "Simplify.",
+        "watch": [
+         [
+          "\\cosh(\\ln5)",
+          "\\frac{13}5"
+         ]
+        ]
+       },
+       {
+        "code": "\\cosh5=\\frac{e^5+e^{-5}}{2}\\approx74.21",
+        "why": "No log to cancel here, so use a calculator.",
+        "watch": [
+         [
+          "\\cosh5",
+          "\\approx74.21"
+         ]
+        ]
        }
       ]
      },
@@ -3277,6 +5917,32 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>(a) \\(\\frac{1}{\\cosh0}=1\\).</p><p>(b) \\(\\cosh y=1\\) only when \\(y=0\\).</p><p class=\"ans\">(a) 1 (b) 0</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "\\operatorname{sech}0=\\frac1{\\cosh0}=\\frac11=1",
+        "why": "\\(\\operatorname{sech}\\) is the reciprocal of \\(\\cosh\\), just as \\(\\sec=\\frac1{\\cos}\\).",
+        "watch": [
+         [
+          "\\operatorname{sech}0",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "y=\\cosh^{-1}1\\iff\\cosh y=1,\\ y\\ge0",
+        "why": "Inverse means: which \\(y\\ge0\\) has \\(\\cosh y=1\\)?"
+       },
+       {
+        "code": "\\cosh y\\ge1\\text{, with equality only at }y=0",
+        "why": "\\(\\cosh\\) has its minimum value 1 at 0 (it is shaped like a U).",
+        "watch": [
+         [
+          "\\cosh^{-1}1",
+          "0"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3288,6 +5954,26 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(8\\cdot\\frac{e^x-e^{-x}}{2}+5\\cdot\\frac{e^x+e^{-x}}{2}=4e^x-4e^{-x}+\\frac52e^x+\\frac52e^{-x}\\).</p><p class=\"ans\">\\(\\frac{13}{2}e^x-\\frac32e^{-x}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "8\\sinh x+5\\cosh x=8\\cdot\\frac{e^x-e^{-x}}2+5\\cdot\\frac{e^x+e^{-x}}2",
+        "why": "Definitions: \\(\\sinh x=\\dfrac{e^x-e^{-x}}{2}\\) (minus), \\(\\cosh x=\\dfrac{e^x+e^{-x}}{2}\\) (plus). Every hyperbolic question starts from these."
+       },
+       {
+        "code": "=4e^x-4e^{-x}+\\tfrac52e^x+\\tfrac52e^{-x}",
+        "why": "Distribute: \\(\\frac82=4\\), \\(\\frac52\\) stays."
+       },
+       {
+        "code": "=\\tfrac{13}2e^x-\\tfrac32e^{-x}",
+        "why": "Combine like terms: \\(4+\\frac52=\\frac{13}2\\) and \\(-4+\\frac52=-\\frac32\\).",
+        "watch": [
+         [
+          "\\text{result}",
+          "\\tfrac{13}2e^x-\\tfrac32e^{-x}"
+         ]
+        ]
        }
       ]
      },
@@ -3301,6 +5987,26 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(\\frac{e^{\\ln x}-e^{-\\ln x}}{2}=\\frac{x-\\frac1x}{2}\\).</p><p class=\"ans\">\\(\\dfrac{x^2-1}{2x}\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "\\sinh(\\ln x)=\\frac{e^{\\ln x}-e^{-\\ln x}}2",
+        "why": "Definitions: \\(\\sinh x=\\dfrac{e^x-e^{-x}}{2}\\) (minus), \\(\\cosh x=\\dfrac{e^x+e^{-x}}{2}\\) (plus). Every hyperbolic question starts from these."
+       },
+       {
+        "code": "=\\frac{x-\\frac1x}{2}",
+        "why": "\\(e^{\\ln x}=x\\), \\(e^{-\\ln x}=\\frac1x\\)."
+       },
+       {
+        "code": "=\\frac{\\frac{x^2-1}{x}}{2}=\\frac{x^2-1}{2x}",
+        "why": "Combine the top over \\(x\\), then divide by 2.",
+        "watch": [
+         [
+          "\\sinh(\\ln x)",
+          "\\frac{x^2-1}{2x}"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3313,6 +6019,20 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(\\frac{e^x+e^{-x}}{2}+\\frac{e^x-e^{-x}}{2}=\\frac{2e^x}{2}\\).</p><p class=\"ans\">\\(=e^x\\) ✓</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "\\cosh x+\\sinh x=\\frac{e^x+e^{-x}}2+\\frac{e^x-e^{-x}}2",
+        "why": "Proof strategy for hyperbolic identities: replace every hyperbolic function by its exponential definition, then simplify with algebra."
+       },
+       {
+        "code": "=\\frac{2e^x}{2}",
+        "why": "Same denominator, so add the tops: the \\(e^{-x}\\) terms cancel."
+       },
+       {
+        "code": "=e^x\\ \\ \\checkmark",
+        "why": "Done."
+       }
       ]
      },
      {
@@ -3324,6 +6044,24 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>Right side: \\(2\\cdot\\frac{e^x-e^{-x}}{2}\\cdot\\frac{e^x+e^{-x}}{2}=\\frac{e^{2x}-e^{-2x}}{2}\\) (difference of squares).</p><p class=\"ans\">\\(=\\sinh2x\\) ✓</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "2\\sinh x\\cosh x=2\\cdot\\frac{e^x-e^{-x}}2\\cdot\\frac{e^x+e^{-x}}2",
+        "why": "Start from the more complicated side (the right) and use the definitions."
+       },
+       {
+        "code": "=\\frac{(e^x-e^{-x})(e^x+e^{-x})}{2}",
+        "why": "\\(2\\cdot\\frac12\\cdot\\frac12=\\frac12\\)."
+       },
+       {
+        "code": "=\\frac{e^{2x}-e^{-2x}}{2}",
+        "why": "Difference of squares \\((a-b)(a+b)=a^2-b^2\\), with \\((e^x)^2=e^{2x}\\)."
+       },
+       {
+        "code": "=\\sinh2x\\ \\ \\checkmark",
+        "why": "That is the definition of \\(\\sinh\\) with input \\(2x\\)."
        }
       ]
      },
@@ -3341,6 +6079,60 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(\\sinh^2x=\\cosh^2x-1=\\frac{25}{9}-1=\\frac{16}{9}\\). Since \\(x>0\\), \\(\\sinh x=\\frac43\\).</p><p>\\(\\tanh x=\\frac{4/3}{5/3}=\\frac45\\), then take reciprocals.</p><p class=\"ans\">\\(\\sinh x=\\frac43\\), \\(\\tanh x=\\frac45\\), \\(\\operatorname{sech}x=\\frac35\\), \\(\\operatorname{csch}x=\\frac34\\), \\(\\coth x=\\frac54\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "\\cosh^2x-\\sinh^2x=1",
+        "why": "The key hyperbolic identity (like \\(\\cos^2+\\sin^2=1\\) but with a <b>minus</b>).",
+        "watch": [
+         [
+          "\\cosh x",
+          "\\frac53"
+         ]
+        ]
+       },
+       {
+        "code": "\\sinh^2x=\\frac{25}9-1=\\frac{16}9",
+        "why": "Solve for \\(\\sinh^2x\\)."
+       },
+       {
+        "code": "\\sinh x=\\frac43",
+        "why": "Take the positive root because \\(x>0\\) makes \\(\\sinh x>0\\).",
+        "watch": [
+         [
+          "\\sinh x",
+          "\\frac43"
+         ]
+        ]
+       },
+       {
+        "code": "\\tanh x=\\frac{\\sinh x}{\\cosh x}=\\frac{4/3}{5/3}=\\frac45",
+        "why": "Same definition as tangent.",
+        "watch": [
+         [
+          "\\tanh x",
+          "\\frac45"
+         ]
+        ]
+       },
+       {
+        "code": "\\operatorname{sech}x=\\tfrac35,\\ \\operatorname{csch}x=\\tfrac34,\\ \\coth x=\\tfrac54",
+        "why": "The other three are reciprocals of cosh, sinh and tanh: flip each fraction.",
+        "watch": [
+         [
+          "\\operatorname{sech}x",
+          "\\frac35"
+         ],
+         [
+          "\\operatorname{csch}x",
+          "\\frac34"
+         ],
+         [
+          "\\coth x",
+          "\\frac54"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3352,6 +6144,52 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(\\tanh x=\\frac{e^x-e^{-x}}{e^x+e^{-x}}\\). As \\(x\\to\\infty\\), \\(e^{-x}\\to0\\) so it \\(\\to\\frac{e^x}{e^x}=1\\). As \\(x\\to-\\infty\\), \\(e^x\\to0\\) so it \\(\\to\\frac{-e^{-x}}{e^{-x}}=-1\\).</p><p>\\(\\operatorname{sech}x=\\frac{2}{e^x+e^{-x}}\\to0\\).</p><p>\\(\\frac{\\sinh x}{e^x}=\\frac{1-e^{-2x}}{2}\\to\\frac12\\).</p><p class=\"ans\">\\(1\\), \\(-1\\), \\(0\\), \\(\\frac12\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\tanh x=\\frac{e^x-e^{-x}}{e^x+e^{-x}}",
+        "why": "Write in exponentials."
+       },
+       {
+        "code": "x\\to\\infty:\\ e^{-x}\\to0\\Rightarrow\\tanh x\\to\\frac{e^x}{e^x}=1",
+        "why": "For large \\(x\\), \\(e^{-x}\\) is tiny, so only \\(e^x\\) matters.",
+        "watch": [
+         [
+          "\\lim_{+\\infty}\\tanh",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "x\\to-\\infty:\\ e^{x}\\to0\\Rightarrow\\tanh x\\to\\frac{-e^{-x}}{e^{-x}}=-1",
+        "why": "Now \\(e^x\\) is tiny and \\(e^{-x}\\) dominates.",
+        "watch": [
+         [
+          "\\lim_{-\\infty}\\tanh",
+          "-1"
+         ]
+        ]
+       },
+       {
+        "code": "\\operatorname{sech}x=\\frac{2}{e^x+e^{-x}}\\to0",
+        "why": "Denominator grows without bound, so the fraction goes to 0.",
+        "watch": [
+         [
+          "\\lim\\operatorname{sech}",
+          "0"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{\\sinh x}{e^x}=\\frac{e^x-e^{-x}}{2e^x}=\\frac{1-e^{-2x}}{2}\\to\\frac12",
+        "why": "Divide each term by \\(e^x\\); \\(e^{-2x}\\to0\\).",
+        "watch": [
+         [
+          "\\lim\\frac{\\sinh x}{e^x}",
+          "\\frac12"
+         ]
+        ]
        }
       ]
      },
@@ -3365,6 +6203,32 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>Chain rule, no minus sign.</p><p class=\"ans\">\\(f'(x)=3\\sinh3x\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "f=\\cosh(3x),\\quad u=3x,\\ u'=3",
+        "why": "Outer \\(\\cosh\\), inner \\(3x\\).",
+        "watch": [
+         [
+          "u'",
+          "3"
+         ]
+        ]
+       },
+       {
+        "code": "f'=\\sinh(3x)\\cdot3",
+        "why": "Hyperbolic derivatives: \\((\\sinh u)'=\\cosh u\\cdot u'\\) and \\((\\cosh u)'=\\sinh u\\cdot u'\\). <b>No minus signs</b> (unlike \\(\\cos\\))."
+       },
+       {
+        "code": "f'=3\\sinh3x",
+        "why": "Tidy.",
+        "watch": [
+         [
+          "f'",
+          "3\\sinh3x"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3376,6 +6240,32 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>Outside \\(\\sinh u\\to\\cosh u\\), inside \\(x^2\\to2x\\).</p><p class=\"ans\">\\(h'(x)=2x\\cosh(x^2)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "h=\\sinh(x^2),\\quad u=x^2,\\ u'=2x",
+        "why": "Outer \\(\\sinh\\), inner \\(x^2\\).",
+        "watch": [
+         [
+          "u'",
+          "2x"
+         ]
+        ]
+       },
+       {
+        "code": "h'=\\cosh(x^2)\\cdot2x",
+        "why": "Hyperbolic derivatives: \\((\\sinh u)'=\\cosh u\\cdot u'\\) and \\((\\cosh u)'=\\sinh u\\cdot u'\\). <b>No minus signs</b> (unlike \\(\\cos\\))."
+       },
+       {
+        "code": "h'=2x\\cosh(x^2)",
+        "why": "Put the polynomial factor in front.",
+        "watch": [
+         [
+          "h'",
+          "2x\\cosh(x^2)"
+         ]
+        ]
        }
       ]
      },
@@ -3389,6 +6279,36 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(G'(t)=\\cosh(\\ln t)\\cdot\\frac1t\\).</p><p>Simplify: \\(\\cosh(\\ln t)=\\frac{t+1/t}{2}=\\frac{t^2+1}{2t}\\).</p><p class=\"ans\">\\(G'(t)=\\dfrac{\\cosh(\\ln t)}{t}=\\dfrac{t^2+1}{2t^2}\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "G=\\sinh(\\ln t),\\quad u=\\ln t,\\ u'=\\tfrac1t",
+        "why": "Outer \\(\\sinh\\), inner \\(\\ln t\\).",
+        "watch": [
+         [
+          "u'",
+          "\\frac1t"
+         ]
+        ]
+       },
+       {
+        "code": "G'=\\cosh(\\ln t)\\cdot\\frac1t",
+        "why": "Hyperbolic derivatives: \\((\\sinh u)'=\\cosh u\\cdot u'\\) and \\((\\cosh u)'=\\sinh u\\cdot u'\\). <b>No minus signs</b> (unlike \\(\\cos\\))."
+       },
+       {
+        "code": "\\cosh(\\ln t)=\\frac{t+\\frac1t}{2}=\\frac{t^2+1}{2t}",
+        "why": "Bonus simplification: use the definition, \\(e^{\\ln t}=t\\)."
+       },
+       {
+        "code": "G'=\\frac{t^2+1}{2t}\\cdot\\frac1t=\\frac{t^2+1}{2t^2}",
+        "why": "Multiply.",
+        "watch": [
+         [
+          "G'",
+          "\\frac{t^2+1}{2t^2}"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3401,6 +6321,50 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>Product rule: \\((-\\operatorname{sech}x\\tanh x)\\tanh x+\\operatorname{sech}x\\cdot\\operatorname{sech}^2x\\).</p><p class=\"ans\">\\(y'=\\operatorname{sech}x\\,(\\operatorname{sech}^2x-\\tanh^2x)\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "y=\\underbrace{\\operatorname{sech}x}_{f}\\cdot\\underbrace{\\tanh x}_{g}",
+        "why": "Product rule.",
+        "watch": [
+         [
+          "f",
+          "\\operatorname{sech}x"
+         ],
+         [
+          "g",
+          "\\tanh x"
+         ]
+        ]
+       },
+       {
+        "code": "f'=-\\operatorname{sech}x\\tanh x,\\quad g'=\\operatorname{sech}^2x",
+        "why": "Table: \\((\\operatorname{sech}x)'=-\\operatorname{sech}x\\tanh x\\) (one of the few hyperbolic derivatives with a minus), \\((\\tanh x)'=\\operatorname{sech}^2x\\).",
+        "watch": [
+         [
+          "f'",
+          "-\\operatorname{sech}x\\tanh x"
+         ],
+         [
+          "g'",
+          "\\operatorname{sech}^2x"
+         ]
+        ]
+       },
+       {
+        "code": "y'=-\\operatorname{sech}x\\tanh^2x+\\operatorname{sech}^3x",
+        "why": "\\(f'g+fg'\\)."
+       },
+       {
+        "code": "y'=\\operatorname{sech}x\\big(\\operatorname{sech}^2x-\\tanh^2x\\big)",
+        "why": "Factor out \\(\\operatorname{sech}x\\).",
+        "watch": [
+         [
+          "y'",
+          "\\operatorname{sech}x(\\operatorname{sech}^2x-\\tanh^2x)"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3412,6 +6376,44 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>Product rule. Derivative of \\(\\coth u\\) is \\(-\\operatorname{csch}^2u\\cdot u'\\) with \\(u=\\sqrt{t^2+1}\\), \\(u'=\\frac{t}{\\sqrt{t^2+1}}\\).</p><p>\\(g'=\\coth\\sqrt{t^2+1}+t\\cdot\\left(-\\operatorname{csch}^2\\sqrt{t^2+1}\\right)\\frac{t}{\\sqrt{t^2+1}}\\).</p><p class=\"ans\">\\(g'(t)=\\coth\\sqrt{t^2+1}-\\dfrac{t^2\\operatorname{csch}^2\\sqrt{t^2+1}}{\\sqrt{t^2+1}}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "g=\\underbrace{t}_{f}\\cdot\\underbrace{\\coth\\sqrt{t^2+1}}_{h}",
+        "why": "Product rule, and \\(h\\) needs the chain rule inside it."
+       },
+       {
+        "code": "u=\\sqrt{t^2+1},\\quad u'=\\frac{t}{\\sqrt{t^2+1}}",
+        "why": "Inner of \\(h\\): \\((\\sqrt w)'=\\frac{w'}{2\\sqrt w}\\) with \\(w'=2t\\).",
+        "watch": [
+         [
+          "u",
+          "\\sqrt{t^2+1}"
+         ],
+         [
+          "u'",
+          "\\frac{t}{\\sqrt{t^2+1}}"
+         ]
+        ]
+       },
+       {
+        "code": "h'=-\\operatorname{csch}^2u\\cdot u'",
+        "why": "Table: \\((\\coth u)'=-\\operatorname{csch}^2u\\cdot u'\\)."
+       },
+       {
+        "code": "g'=1\\cdot\\coth u+t\\cdot\\Big(-\\operatorname{csch}^2u\\Big)\\frac{t}{\\sqrt{t^2+1}}",
+        "why": "Product rule \\(f'h+fh'\\)."
+       },
+       {
+        "code": "g'=\\coth\\sqrt{t^2+1}-\\frac{t^2\\operatorname{csch}^2\\sqrt{t^2+1}}{\\sqrt{t^2+1}}",
+        "why": "Substitute \\(u\\) back and combine \\(t\\cdot t=t^2\\).",
+        "watch": [
+         [
+          "g'",
+          "\\coth u-\\frac{t^2\\operatorname{csch}^2u}{u}"
+         ]
+        ]
        }
       ]
      }
@@ -3528,6 +6530,46 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>On this interval \\(\\sin x\\) increases from \\(\\sin0=0\\) toward 1, but \\(x=\\pi/2\\) is <em>not included</em>, so it never reaches 1.</p><p class=\"ans\">Absolute min \\(f(0)=0\\); no absolute max; no local max or min</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=\\sin x,\\quad 0\\le x<\\tfrac\\pi2",
+        "why": "Read the interval carefully: \\(0\\) is <b>included</b> (\\(\\le\\)) but \\(\\frac\\pi2\\) is <b>not</b> (\\(<\\))."
+       },
+       {
+        "code": "f'(x)=\\cos x>0\\ \\text{ on }[0,\\tfrac\\pi2)",
+        "why": "Positive derivative, so \\(\\sin x\\) is strictly increasing the whole time."
+       },
+       {
+        "code": "\\text{min at the left end: }f(0)=0",
+        "why": "Increasing function: smallest value at the start.",
+        "watch": [
+         [
+          "\\text{abs min}",
+          "f(0)=0"
+         ]
+        ]
+       },
+       {
+        "code": "\\sin x\\to1\\text{ but never reaches it}",
+        "why": "The max would be at \\(\\frac\\pi2\\), but that point is excluded. You can get as close to 1 as you like, yet no \\(x\\) gives exactly 1, so <b>no absolute max</b>.",
+        "watch": [
+         [
+          "\\text{abs max}",
+          "\\text{none}"
+         ]
+        ]
+       },
+       {
+        "code": "\\text{no local max or min}",
+        "why": "A local extreme needs a turnaround (the graph going up then down, or vice versa) at an interior point. Strictly increasing never turns around.",
+        "watch": [
+         [
+          "\\text{local}",
+          "\\text{none}"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3539,6 +6581,46 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(\\ln x\\) increases. It reaches \\(\\ln2\\) at the included endpoint 2, but drops toward \\(-\\infty\\) as \\(x\\to0^+\\).</p><p class=\"ans\">Absolute max \\(f(2)=\\ln2\\); no absolute min; no local extremes</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=\\ln x,\\quad 0<x\\le2",
+        "why": "\\(2\\) is included, \\(0\\) is not (and \\(\\ln0\\) is undefined anyway)."
+       },
+       {
+        "code": "f'(x)=\\frac1x>0",
+        "why": "Always increasing."
+       },
+       {
+        "code": "\\text{max at the right end: }f(2)=\\ln2",
+        "why": "Increasing function, included right endpoint: that is the biggest value.",
+        "watch": [
+         [
+          "\\text{abs max}",
+          "\\ln2"
+         ]
+        ]
+       },
+       {
+        "code": "x\\to0^+\\Rightarrow\\ln x\\to-\\infty",
+        "why": "Going left, the values drop without bound, so there is <b>no absolute min</b>.",
+        "watch": [
+         [
+          "\\text{abs min}",
+          "\\text{none}"
+         ]
+        ]
+       },
+       {
+        "code": "\\text{no local extremes}",
+        "why": "No turnaround points.",
+        "watch": [
+         [
+          "\\text{local}",
+          "\\text{none}"
+         ]
+        ]
        }
       ]
      },
@@ -3552,6 +6634,26 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(f'(x)=6x+1=0\\).</p><p class=\"ans\">\\(x=-\\frac16\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=6x+1",
+        "why": "Critical number: a point <b>in the domain</b> of \\(f\\) where \\(f'=0\\) or \\(f'\\) does not exist. Recipe: find \\(f'\\), factor it, set the top \\(=0\\), and check where the bottom \\(=0\\)."
+       },
+       {
+        "code": "6x+1=0",
+        "why": "A polynomial derivative exists everywhere, so the only critical numbers come from \\(f'=0\\)."
+       },
+       {
+        "code": "x=-\\tfrac16",
+        "why": "Solve.",
+        "watch": [
+         [
+          "\\text{c.n.}",
+          "-\\tfrac16"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3563,6 +6665,30 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(f'(x)=12x^3+24x^2-96x=12x(x^2+2x-8)=12x(x+4)(x-2)\\).</p><p class=\"ans\">\\(x=-4,\\ 0,\\ 2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=12x^3+24x^2-96x",
+        "why": "Critical number: a point <b>in the domain</b> of \\(f\\) where \\(f'=0\\) or \\(f'\\) does not exist. Recipe: find \\(f'\\), factor it, set the top \\(=0\\), and check where the bottom \\(=0\\)."
+       },
+       {
+        "code": "=12x\\,(x^2+2x-8)",
+        "why": "Factor out the GCF \\(12x\\) first. Never divide by \\(x\\); you would lose the solution \\(x=0\\)."
+       },
+       {
+        "code": "=12x\\,(x+4)(x-2)",
+        "why": "Factor the quadratic: two numbers that multiply to \\(-8\\) and add to \\(2\\): \\(4\\) and \\(-2\\)."
+       },
+       {
+        "code": "x=-4,\\ 0,\\ 2",
+        "why": "Set each factor to zero.",
+        "watch": [
+         [
+          "\\text{c.n.}",
+          "-4,0,2"
+         ]
+        ]
        }
       ]
      },
@@ -3576,6 +6702,26 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(g'(t)=5t^4+15t^2+50\\). Every term is \\(\\ge0\\) and the constant is 50, so \\(g'(t)\\ge50>0\\). It's never 0 and always defined.</p><p class=\"ans\">No critical numbers</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "g'(t)=5t^4+15t^2+50",
+        "why": "Critical number: a point <b>in the domain</b> of \\(f\\) where \\(f'=0\\) or \\(f'\\) does not exist. Recipe: find \\(f'\\), factor it, set the top \\(=0\\), and check where the bottom \\(=0\\)."
+       },
+       {
+        "code": "5t^4\\ge0,\\ 15t^2\\ge0\\Rightarrow g'(t)\\ge50",
+        "why": "Even powers are never negative, so the smallest \\(g'\\) can be is 50."
+       },
+       {
+        "code": "g'(t)\\ne0\\text{ and is defined everywhere}",
+        "why": "Neither condition for a critical number ever happens.",
+        "watch": [
+         [
+          "\\text{c.n.}",
+          "\\text{none}"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3587,6 +6733,40 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>Quotient rule numerator: \\((y^2-y+1)-(y-1)(2y-1)=y^2-y+1-(2y^2-3y+1)=-y^2+2y\\).</p><p>\\(g'(y)=\\dfrac{-y(y-2)}{(y^2-y+1)^2}\\). The denominator is never 0 (its discriminant is negative).</p><p class=\"ans\">\\(y=0\\) and \\(y=2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "g'(y)=\\frac{(y^2-y+1)(1)-(y-1)(2y-1)}{(y^2-y+1)^2}",
+        "why": "Quotient rule: (bottom·top′ − top·bottom′)/bottom²."
+       },
+       {
+        "code": "\\text{top}=y^2-y+1-(2y^2-3y+1)=-y^2+2y",
+        "why": "Expand \\((y-1)(2y-1)=2y^2-3y+1\\), then subtract. Distribute the minus to every term."
+       },
+       {
+        "code": "g'(y)=\\frac{-y(y-2)}{(y^2-y+1)^2}",
+        "why": "Factor the top.",
+        "watch": [
+         [
+          "g'",
+          "\\frac{-y(y-2)}{(y^2-y+1)^2}"
+         ]
+        ]
+       },
+       {
+        "code": "y^2-y+1=0\\text{ has }\\Delta=1-4<0",
+        "why": "Check the bottom: negative discriminant means no real roots, so \\(g'\\) is defined everywhere."
+       },
+       {
+        "code": "y=0,\\ 2",
+        "why": "Top = 0.",
+        "watch": [
+         [
+          "\\text{c.n.}",
+          "0,2"
+         ]
+        ]
        }
       ]
      },
@@ -3600,6 +6780,40 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(p'(x)=\\dfrac{2x(2x-1)-2(x^2+2)}{(2x-1)^2}=\\dfrac{2x^2-2x-4}{(2x-1)^2}=\\dfrac{2(x-2)(x+1)}{(2x-1)^2}\\).</p><p>\\(p'\\) is undefined at \\(x=\\frac12\\), but \\(\\frac12\\) is <strong>not in the domain</strong> of \\(p\\), so it isn't a critical number.</p><p class=\"ans\">\\(x=-1\\) and \\(x=2\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "p'(x)=\\frac{2x(2x-1)-2(x^2+2)}{(2x-1)^2}",
+        "why": "Quotient rule."
+       },
+       {
+        "code": "=\\frac{4x^2-2x-2x^2-4}{(2x-1)^2}=\\frac{2x^2-2x-4}{(2x-1)^2}",
+        "why": "Expand the top."
+       },
+       {
+        "code": "=\\frac{2(x-2)(x+1)}{(2x-1)^2}",
+        "why": "Factor: \\(2(x^2-x-2)\\).",
+        "watch": [
+         [
+          "p'",
+          "\\frac{2(x-2)(x+1)}{(2x-1)^2}"
+         ]
+        ]
+       },
+       {
+        "code": "x=\\tfrac12\\ \\text{is NOT in the domain of }p",
+        "why": "\\(p'\\) is undefined at \\(\\frac12\\), but so is \\(p\\) itself. A critical number must be in the domain, so \\(\\frac12\\) does not count. This is the trap of the problem."
+       },
+       {
+        "code": "x=-1,\\ 2",
+        "why": "Top = 0.",
+        "watch": [
+         [
+          "\\text{c.n.}",
+          "-1,2"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3611,6 +6825,30 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(h'(t)=\\frac34t^{-1/4}-\\frac12t^{-3/4}=\\dfrac{3t^{1/2}-2}{4t^{3/4}}\\).</p><p>Zero when \\(\\sqrt t=\\frac23\\Rightarrow t=\\frac49\\). Undefined at \\(t=0\\), which is in the domain (\\(t\\ge0\\)).</p><p class=\"ans\">\\(t=0\\) and \\(t=\\frac49\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "h'(t)=\\tfrac34t^{-1/4}-\\tfrac12t^{-3/4}",
+        "why": "Power rule on each term. Domain: \\(t\\ge0\\) (fourth roots)."
+       },
+       {
+        "code": "=\\frac{3t^{1/2}-2}{4t^{3/4}}",
+        "why": "Combine over the common denominator \\(4t^{3/4}\\): multiply the first term by \\(\\frac{t^{3/4}}{t^{3/4}}\\), giving \\(t^{-1/4+3/4}=t^{1/2}\\) on top."
+       },
+       {
+        "code": "3\\sqrt t-2=0\\Rightarrow t=\\tfrac49",
+        "why": "Top = 0: \\(\\sqrt t=\\frac23\\), square both sides."
+       },
+       {
+        "code": "t=0:\\ \\text{denominator}=0",
+        "why": "\\(h'\\) undefined at 0, and \\(0\\) <b>is</b> in the domain of \\(h\\), so it counts.",
+        "watch": [
+         [
+          "\\text{c.n.}",
+          "0,\\tfrac49"
+         ]
+        ]
        }
       ]
      },
@@ -3624,6 +6862,40 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(F'=\\frac45x^{-1/5}(x-4)^2+2x^{4/5}(x-4)=x^{-1/5}(x-4)\\left[\\frac45(x-4)+2x\\right]\\).</p><p>Bracket: \\(\\frac{14x-16}{5}\\). So \\(F'(x)=\\dfrac{2(x-4)(7x-8)}{5x^{1/5}}\\).</p><p class=\"ans\">\\(x=0,\\ \\frac87,\\ 4\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "F'=\\tfrac45x^{-1/5}(x-4)^2+x^{4/5}\\cdot2(x-4)",
+        "why": "Product rule; chain rule on \\((x-4)^2\\)."
+       },
+       {
+        "code": "=x^{-1/5}(x-4)\\Big[\\tfrac45(x-4)+2x\\Big]",
+        "why": "Factor out the <b>lowest</b> power of each common piece: \\(x^{-1/5}\\) and \\((x-4)^1\\). (\\(x^{4/5}=x^{-1/5}\\cdot x\\).)"
+       },
+       {
+        "code": "\\tfrac45(x-4)+2x=\\frac{4x-16+10x}{5}=\\frac{14x-16}5",
+        "why": "Simplify the bracket."
+       },
+       {
+        "code": "F'(x)=\\frac{2(x-4)(7x-8)}{5x^{1/5}}",
+        "why": "Move \\(x^{-1/5}\\) to the bottom; factor 2 from \\(14x-16\\).",
+        "watch": [
+         [
+          "F'",
+          "\\frac{2(x-4)(7x-8)}{5x^{1/5}}"
+         ]
+        ]
+       },
+       {
+        "code": "x=0,\\ \\tfrac87,\\ 4",
+        "why": "Top = 0 gives \\(4\\) and \\(\\frac87\\); bottom = 0 gives \\(0\\), which is in the domain.",
+        "watch": [
+         [
+          "\\text{c.n.}",
+          "0,\\tfrac87,4"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3635,6 +6907,40 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(f'=\\frac13x^{-2/3}(4-x)^{2/3}-\\frac23x^{1/3}(4-x)^{-1/3}=\\dfrac{(4-x)-2x}{3x^{2/3}(4-x)^{1/3}}\\).</p><p>\\(f'=0\\) at \\(x=\\frac43\\); undefined at \\(x=0\\) and \\(x=4\\) (both in the domain).</p><p class=\"ans\">\\(x=0,\\ \\frac43,\\ 4\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'=\\tfrac13x^{-2/3}(4-x)^{2/3}+x^{1/3}\\cdot\\tfrac23(4-x)^{-1/3}(-1)",
+        "why": "Product rule; the \\((-1)\\) is the chain rule on \\(4-x\\)."
+       },
+       {
+        "code": "=\\frac{(4-x)-2x}{3x^{2/3}(4-x)^{1/3}}",
+        "why": "Common denominator \\(3x^{2/3}(4-x)^{1/3}\\). First term needs one more \\((4-x)\\) on top, second needs one more \\(x\\)."
+       },
+       {
+        "code": "=\\frac{4-3x}{3x^{2/3}(4-x)^{1/3}}",
+        "why": "Simplify the top.",
+        "watch": [
+         [
+          "f'",
+          "\\frac{4-3x}{3x^{2/3}(4-x)^{1/3}}"
+         ]
+        ]
+       },
+       {
+        "code": "4-3x=0\\Rightarrow x=\\tfrac43",
+        "why": "Top = 0."
+       },
+       {
+        "code": "x=0,\\ x=4\\ \\ (f'\\text{ undefined})",
+        "why": "Bottom = 0 at both. Cube roots are defined for all \\(x\\), so both are in the domain and count.",
+        "watch": [
+         [
+          "\\text{c.n.}",
+          "0,\\tfrac43,4"
+         ]
+        ]
        }
       ]
      },
@@ -3648,6 +6954,34 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(f'(\\theta)=-2\\sin\\theta+2\\sin\\theta\\cos\\theta=2\\sin\\theta(\\cos\\theta-1)\\).</p><p>Zero when \\(\\sin\\theta=0\\) or \\(\\cos\\theta=1\\). Both happen exactly at multiples of \\(\\pi\\).</p><p class=\"ans\">\\(\\theta=n\\pi\\), \\(n\\) any integer</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "f'(\\theta)=-2\\sin\\theta+2\\sin\\theta\\cos\\theta",
+        "why": "\\((2\\cos\\theta)'=-2\\sin\\theta\\); chain rule \\((\\sin^2\\theta)'=2\\sin\\theta\\cos\\theta\\)."
+       },
+       {
+        "code": "=2\\sin\\theta(\\cos\\theta-1)",
+        "why": "Factor out \\(2\\sin\\theta\\). Never divide by \\(\\sin\\theta\\) (you would lose solutions)."
+       },
+       {
+        "code": "\\sin\\theta=0\\Rightarrow\\theta=n\\pi",
+        "why": "First factor."
+       },
+       {
+        "code": "\\cos\\theta=1\\Rightarrow\\theta=2n\\pi",
+        "why": "Second factor. These are already included in \\(n\\pi\\)."
+       },
+       {
+        "code": "\\theta=n\\pi,\\ n\\in\\mathbb Z",
+        "why": "Combined answer.",
+        "watch": [
+         [
+          "\\text{c.n.}",
+          "n\\pi"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3659,6 +6993,40 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>Domain \\(x>0\\). \\(g'(x)=2x\\ln x+x=x(2\\ln x+1)\\).</p><p>\\(x\\neq0\\), so \\(2\\ln x+1=0\\Rightarrow\\ln x=-\\frac12\\).</p><p class=\"ans\">\\(x=e^{-1/2}=\\frac{1}{\\sqrt e}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\text{Domain: }x>0",
+        "why": "Because of \\(\\ln x\\). Remember this; it rules out candidates later."
+       },
+       {
+        "code": "g'(x)=2x\\ln x+x^2\\cdot\\frac1x=2x\\ln x+x",
+        "why": "Product rule."
+       },
+       {
+        "code": "=x(2\\ln x+1)",
+        "why": "Factor out \\(x\\).",
+        "watch": [
+         [
+          "g'",
+          "x(2\\ln x+1)"
+         ]
+        ]
+       },
+       {
+        "code": "x=0\\ \\text{rejected (not in domain)}",
+        "why": "First factor is 0 only at \\(x=0\\), outside the domain."
+       },
+       {
+        "code": "2\\ln x+1=0\\Rightarrow\\ln x=-\\tfrac12\\Rightarrow x=e^{-1/2}",
+        "why": "Exponentiate both sides to undo \\(\\ln\\).",
+        "watch": [
+         [
+          "\\text{c.n.}",
+          "\\frac1{\\sqrt e}"
+         ]
+        ]
        }
       ]
      },
@@ -3672,6 +7040,54 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(f'=4-2x=0\\Rightarrow x=2\\).</p><p>\\(f(0)=12\\), \\(f(2)=16\\), \\(f(5)=7\\).</p><p class=\"ans\">Max \\(f(2)=16\\); min \\(f(5)=7\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=4-2x=0\\Rightarrow x=2",
+        "why": "Closed Interval Method: the absolute max and min on \\([a,b]\\) can only happen at critical numbers inside the interval or at the two endpoints. Make a list and evaluate \\(f\\) at each. Step 1: critical numbers. \\(2\\in[0,5]\\) ✓"
+       },
+       {
+        "code": "\\text{candidates: }0,\\ 2,\\ 5",
+        "why": "Step 2: endpoints plus critical numbers.",
+        "watch": [
+         [
+          "\\text{check}",
+          "0,2,5"
+         ]
+        ]
+       },
+       {
+        "code": "f(0)=12,\\ \\ f(2)=12+8-4=16,\\ \\ f(5)=12+20-25=7",
+        "why": "Step 3: evaluate the <b>original</b> \\(f\\) (not \\(f'\\)) at each.",
+        "watch": [
+         [
+          "f(0)",
+          "12"
+         ],
+         [
+          "f(2)",
+          "16"
+         ],
+         [
+          "f(5)",
+          "7"
+         ]
+        ]
+       },
+       {
+        "code": "\\max=f(2)=16,\\quad \\min=f(5)=7",
+        "why": "Step 4: biggest and smallest from the list.",
+        "watch": [
+         [
+          "\\max",
+          "16"
+         ],
+         [
+          "\\min",
+          "7"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3683,6 +7099,62 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(f'=6x^2-6x-12=6(x-2)(x+1)\\Rightarrow x=-1,2\\).</p><p>\\(f(-2)=-3\\), \\(f(-1)=8\\), \\(f(2)=-19\\), \\(f(3)=-8\\).</p><p class=\"ans\">Max \\(f(-1)=8\\); min \\(f(2)=-19\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'=6x^2-6x-12=6(x-2)(x+1)",
+        "why": "Closed Interval Method: the absolute max and min on \\([a,b]\\) can only happen at critical numbers inside the interval or at the two endpoints. Make a list and evaluate \\(f\\) at each. Find and factor \\(f'\\)."
+       },
+       {
+        "code": "x=-1,\\ 2\\ \\in[-2,3]\\ \\checkmark",
+        "why": "Both are inside the interval, so keep both."
+       },
+       {
+        "code": "\\text{candidates: }-2,\\ -1,\\ 2,\\ 3",
+        "why": "Add the endpoints."
+       },
+       {
+        "code": "f(-2)=-16-12+24+1=-3,\\ \\ f(-1)=-2-3+12+1=8",
+        "why": "Evaluate carefully with signs.",
+        "watch": [
+         [
+          "f(-2)",
+          "-3"
+         ],
+         [
+          "f(-1)",
+          "8"
+         ]
+        ]
+       },
+       {
+        "code": "f(2)=16-12-24+1=-19,\\ \\ f(3)=54-27-36+1=-8",
+        "why": "Keep going.",
+        "watch": [
+         [
+          "f(2)",
+          "-19"
+         ],
+         [
+          "f(3)",
+          "-8"
+         ]
+        ]
+       },
+       {
+        "code": "\\max=f(-1)=8,\\quad\\min=f(2)=-19",
+        "why": "Compare.",
+        "watch": [
+         [
+          "\\max",
+          "8"
+         ],
+         [
+          "\\min",
+          "-19"
+         ]
+        ]
        }
       ]
      },
@@ -3696,6 +7168,62 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(f'=12x^3-12x^2-24x=12x(x-2)(x+1)\\Rightarrow x=-1,0,2\\).</p><p>\\(f(-2)=33\\), \\(f(-1)=-4\\), \\(f(0)=1\\), \\(f(2)=-31\\), \\(f(3)=28\\).</p><p class=\"ans\">Max \\(f(-2)=33\\) (an endpoint!); min \\(f(2)=-31\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "f'=12x^3-12x^2-24x=12x(x-2)(x+1)",
+        "why": "Closed Interval Method: the absolute max and min on \\([a,b]\\) can only happen at critical numbers inside the interval or at the two endpoints. Make a list and evaluate \\(f\\) at each."
+       },
+       {
+        "code": "x=-1,\\ 0,\\ 2",
+        "why": "All three are in \\([-2,3]\\)."
+       },
+       {
+        "code": "f(-2)=48+32-48+1=33,\\ \\ f(-1)=3+4-12+1=-4",
+        "why": "\\((-2)^4=16\\), \\((-2)^3=-8\\).",
+        "watch": [
+         [
+          "f(-2)",
+          "33"
+         ],
+         [
+          "f(-1)",
+          "-4"
+         ]
+        ]
+       },
+       {
+        "code": "f(0)=1,\\ \\ f(2)=48-32-48+1=-31,\\ \\ f(3)=243-108-108+1=28",
+        "why": "Evaluate the rest.",
+        "watch": [
+         [
+          "f(0)",
+          "1"
+         ],
+         [
+          "f(2)",
+          "-31"
+         ],
+         [
+          "f(3)",
+          "28"
+         ]
+        ]
+       },
+       {
+        "code": "\\max=f(-2)=33,\\quad\\min=f(2)=-31",
+        "why": "The max is at an <b>endpoint</b>. That is why you must never skip the endpoints.",
+        "watch": [
+         [
+          "\\max",
+          "33"
+         ],
+         [
+          "\\min",
+          "-31"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3708,6 +7236,48 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(f'=1-\\frac1{x^2}=0\\Rightarrow x=\\pm1\\); only \\(x=1\\) is in the interval.</p><p>\\(f(0.2)=5.2\\), \\(f(1)=2\\), \\(f(4)=4.25\\).</p><p class=\"ans\">Max \\(f(0.2)=5.2\\); min \\(f(1)=2\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "f'=1-\\frac1{x^2}=0\\Rightarrow x^2=1",
+        "why": "Closed Interval Method: the absolute max and min on \\([a,b]\\) can only happen at critical numbers inside the interval or at the two endpoints. Make a list and evaluate \\(f\\) at each."
+       },
+       {
+        "code": "x=\\pm1,\\ \\text{only }x=1\\in[0.2,4]",
+        "why": "Throw away \\(-1\\): it is outside the interval."
+       },
+       {
+        "code": "f(0.2)=0.2+5=5.2,\\ f(1)=2,\\ f(4)=4.25",
+        "why": "Endpoints and the critical number.",
+        "watch": [
+         [
+          "f(0.2)",
+          "5.2"
+         ],
+         [
+          "f(1)",
+          "2"
+         ],
+         [
+          "f(4)",
+          "4.25"
+         ]
+        ]
+       },
+       {
+        "code": "\\max=f(0.2)=5.2,\\quad\\min=f(1)=2",
+        "why": "Compare.",
+        "watch": [
+         [
+          "\\max",
+          "5.2"
+         ],
+         [
+          "\\min",
+          "2"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3719,6 +7289,66 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(f'=1-\\frac13t^{-2/3}\\). Zero when \\(t^{2/3}=\\frac13\\Rightarrow t=\\pm\\frac{1}{3\\sqrt3}\\approx\\pm0.192\\). Undefined at \\(t=0\\).</p><p>\\(f(-1)=0\\), \\(f(-0.192)\\approx0.385\\), \\(f(0)=0\\), \\(f(0.192)\\approx-0.385\\), \\(f(4)=4-\\sqrt[3]4\\approx2.413\\).</p><p class=\"ans\">Max \\(f(4)=4-\\sqrt[3]{4}\\approx2.41\\); min \\(f\\!\\left(\\tfrac{\\sqrt3}{9}\\right)=-\\tfrac{2\\sqrt3}{9}\\approx-0.385\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'=1-\\tfrac13t^{-2/3}",
+        "why": "Closed Interval Method: the absolute max and min on \\([a,b]\\) can only happen at critical numbers inside the interval or at the two endpoints. Make a list and evaluate \\(f\\) at each. \\(\\sqrt[3]t=t^{1/3}\\)."
+       },
+       {
+        "code": "f'=0\\Rightarrow t^{2/3}=\\tfrac13\\Rightarrow t=\\pm\\Big(\\tfrac13\\Big)^{3/2}=\\pm\\tfrac{1}{3\\sqrt3}\\approx\\pm0.192",
+        "why": "Raise both sides to the \\(\\frac32\\) power; even root on \\(t^{2/3}\\) gives \\(\\pm\\)."
+       },
+       {
+        "code": "f'\\text{ undefined at }t=0",
+        "why": "\\(t^{-2/3}\\) blows up at 0, which is in \\([-1,4]\\). So 0 is also a critical number."
+       },
+       {
+        "code": "f(-1)=0,\\ f(-0.192)\\approx0.385,\\ f(0)=0",
+        "why": "Evaluate. \\(\\sqrt[3]{-1}=-1\\).",
+        "watch": [
+         [
+          "f(-1)",
+          "0"
+         ],
+         [
+          "f(-0.192)",
+          "0.385"
+         ],
+         [
+          "f(0)",
+          "0"
+         ]
+        ]
+       },
+       {
+        "code": "f(0.192)\\approx-0.385,\\ f(4)=4-\\sqrt[3]4\\approx2.41",
+        "why": "The rest.",
+        "watch": [
+         [
+          "f(0.192)",
+          "-0.385"
+         ],
+         [
+          "f(4)",
+          "2.41"
+         ]
+        ]
+       },
+       {
+        "code": "\\max=f(4)\\approx2.41,\\quad\\min=f\\big(\\tfrac{\\sqrt3}9\\big)=-\\tfrac{2\\sqrt3}9\\approx-0.385",
+        "why": "Compare. Note \\(\\frac1{3\\sqrt3}=\\frac{\\sqrt3}9\\).",
+        "watch": [
+         [
+          "\\max",
+          "4-\\sqrt[3]4"
+         ],
+         [
+          "\\min",
+          "-\\tfrac{2\\sqrt3}9"
+         ]
+        ]
        }
       ]
      },
@@ -3736,6 +7366,56 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(f'=-2\\sin t+2\\cos2t=-2\\sin t+2(1-2\\sin^2t)=-2(2\\sin t-1)(\\sin t+1)\\).</p><p>In \\([0,\\pi/2]\\): \\(\\sin t=\\frac12\\Rightarrow t=\\frac\\pi6\\).</p><p>\\(f(0)=2\\), \\(f(\\frac\\pi6)=\\sqrt3+\\frac{\\sqrt3}{2}=\\frac{3\\sqrt3}{2}\\approx2.60\\), \\(f(\\frac\\pi2)=0\\).</p><p class=\"ans\">Max \\(f(\\frac\\pi6)=\\frac{3\\sqrt3}{2}\\); min \\(f(\\frac\\pi2)=0\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "f'=-2\\sin t+2\\cos2t",
+        "why": "Closed Interval Method: the absolute max and min on \\([a,b]\\) can only happen at critical numbers inside the interval or at the two endpoints. Make a list and evaluate \\(f\\) at each. Chain rule on \\(\\sin2t\\) gives \\(2\\cos2t\\)."
+       },
+       {
+        "code": "=-2\\sin t+2(1-2\\sin^2t)",
+        "why": "Rewrite \\(\\cos2t=1-2\\sin^2t\\) so everything is in \\(\\sin t\\)."
+       },
+       {
+        "code": "=-2(2\\sin^2t+\\sin t-1)=-2(2\\sin t-1)(\\sin t+1)",
+        "why": "It is a quadratic in \\(\\sin t\\); factor it."
+       },
+       {
+        "code": "\\sin t=\\tfrac12\\Rightarrow t=\\tfrac\\pi6",
+        "why": "In \\([0,\\frac\\pi2]\\) only. (\\(\\sin t=-1\\) has no solution there.)"
+       },
+       {
+        "code": "f(0)=2,\\ f(\\tfrac\\pi6)=\\sqrt3+\\tfrac{\\sqrt3}2=\\tfrac{3\\sqrt3}2\\approx2.60,\\ f(\\tfrac\\pi2)=0",
+        "why": "\\(2\\cos\\frac\\pi6=\\sqrt3\\), \\(\\sin\\frac\\pi3=\\frac{\\sqrt3}2\\).",
+        "watch": [
+         [
+          "f(0)",
+          "2"
+         ],
+         [
+          "f(\\pi/6)",
+          "2.60"
+         ],
+         [
+          "f(\\pi/2)",
+          "0"
+         ]
+        ]
+       },
+       {
+        "code": "\\max=\\tfrac{3\\sqrt3}2,\\quad\\min=0",
+        "why": "Compare.",
+        "watch": [
+         [
+          "\\max",
+          "\\tfrac{3\\sqrt3}2"
+         ],
+         [
+          "\\min",
+          "0"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3748,6 +7428,52 @@ export const sections: Section[] = [
         "label": "Full solution",
         "html": "<p>\\(f'=-2x^{-3}\\ln x+x^{-3}=\\dfrac{1-2\\ln x}{x^3}\\Rightarrow x=\\sqrt e\\approx1.65\\).</p><p>\\(f(\\frac12)=4\\ln\\frac12\\approx-2.77\\), \\(f(\\sqrt e)=\\frac{1/2}{e}\\approx0.184\\), \\(f(4)=\\frac{\\ln4}{16}\\approx0.087\\).</p><p class=\"ans\">Max \\(f(\\sqrt e)=\\frac{1}{2e}\\); min \\(f(\\frac12)=-4\\ln2\\)</p>"
        }
+      ],
+      "debug": [
+       {
+        "code": "f'=-2x^{-3}\\ln x+x^{-2}\\cdot\\frac1x",
+        "why": "Closed Interval Method: the absolute max and min on \\([a,b]\\) can only happen at critical numbers inside the interval or at the two endpoints. Make a list and evaluate \\(f\\) at each. Product rule on \\(x^{-2}\\cdot\\ln x\\)."
+       },
+       {
+        "code": "=\\frac{1-2\\ln x}{x^3}",
+        "why": "Combine: \\(x^{-3}(1-2\\ln x)\\)."
+       },
+       {
+        "code": "1-2\\ln x=0\\Rightarrow x=e^{1/2}=\\sqrt e\\approx1.65",
+        "why": "In the interval ✓."
+       },
+       {
+        "code": "f(\\tfrac12)=4\\ln\\tfrac12\\approx-2.77,\\ f(\\sqrt e)=\\frac{1/2}{e}\\approx0.184,\\ f(4)=\\frac{\\ln4}{16}\\approx0.087",
+        "why": "Evaluate. \\(\\ln\\sqrt e=\\frac12\\), \\((\\sqrt e)^2=e\\).",
+        "watch": [
+         [
+          "f(1/2)",
+          "-2.77"
+         ],
+         [
+          "f(\\sqrt e)",
+          "0.184"
+         ],
+         [
+          "f(4)",
+          "0.087"
+         ]
+        ]
+       },
+       {
+        "code": "\\max=\\frac1{2e},\\quad\\min=-4\\ln2",
+        "why": "\\(4\\ln\\frac12=-4\\ln2\\).",
+        "watch": [
+         [
+          "\\max",
+          "\\frac1{2e}"
+         ],
+         [
+          "\\min",
+          "-4\\ln2"
+         ]
+        ]
+       }
       ]
      },
      {
@@ -3759,6 +7485,48 @@ export const sections: Section[] = [
        {
         "label": "Full solution",
         "html": "<p>\\(f'=\\frac{2x+1}{x^2+x+1}=0\\Rightarrow x=-\\frac12\\).</p><p>\\(f(-1)=\\ln1=0\\), \\(f(-\\frac12)=\\ln\\frac34\\approx-0.288\\), \\(f(1)=\\ln3\\approx1.10\\).</p><p class=\"ans\">Max \\(f(1)=\\ln3\\); min \\(f(-\\frac12)=\\ln\\frac34\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'=\\frac{2x+1}{x^2+x+1}",
+        "why": "Closed Interval Method: the absolute max and min on \\([a,b]\\) can only happen at critical numbers inside the interval or at the two endpoints. Make a list and evaluate \\(f\\) at each. \\(\\frac{u'}{u}\\). The bottom is never 0 (negative discriminant)."
+       },
+       {
+        "code": "2x+1=0\\Rightarrow x=-\\tfrac12",
+        "why": "In \\([-1,1]\\) ✓."
+       },
+       {
+        "code": "f(-1)=\\ln1=0,\\ f(-\\tfrac12)=\\ln\\tfrac34\\approx-0.288,\\ f(1)=\\ln3\\approx1.10",
+        "why": "\\(\\frac14-\\frac12+1=\\frac34\\).",
+        "watch": [
+         [
+          "f(-1)",
+          "0"
+         ],
+         [
+          "f(-1/2)",
+          "-0.288"
+         ],
+         [
+          "f(1)",
+          "1.10"
+         ]
+        ]
+       },
+       {
+        "code": "\\max=\\ln3,\\quad\\min=\\ln\\tfrac34",
+        "why": "Compare.",
+        "watch": [
+         [
+          "\\max",
+          "\\ln3"
+         ],
+         [
+          "\\min",
+          "\\ln\\tfrac34"
+         ]
+        ]
        }
       ]
      }

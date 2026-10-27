@@ -37,7 +37,16 @@ function renderBlock(b: Block): Block {
     case "practice":
       return {
         ...b,
-        items: b.items.map((p) => ({ ...p, question: tex(p.question), reveals: p.reveals.map((r) => ({ ...r, html: tex(r.html) })) })),
+        items: b.items.map((p) => ({
+          ...p,
+          question: tex(p.question),
+          reveals: p.reveals.map((r) => ({ ...r, html: tex(r.html) })),
+          debug: p.debug?.map((l) => ({
+            code: tex(`\\(\\displaystyle ${l.code}\\)`),
+            why: tex(l.why),
+            watch: l.watch?.map(([n, v]) => [tex(`\\(${n}\\)`), tex(`\\(\\displaystyle ${v}\\)`)] as [string, string]),
+          })),
+        })),
       };
     case "generator":
     case "checker":
