@@ -28,6 +28,7 @@ jobs:
         run: |
           npm install --save-exact next@15.5.29 katex@0.19.1
           npm pkg set overrides.@grpc/grpc-js='^1.14.0'
+          npm pkg set 'overrides.next.postcss=8.5.30'
           npm install
           npm run typecheck
           npm run build
