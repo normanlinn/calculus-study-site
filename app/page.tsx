@@ -36,8 +36,8 @@ export default function Home() {
         <HeroTitle />
         <HeroFade delay={0.35}>
           <p className="lede">
-            Midterm 2 is tomorrow, Thu, Nov 5, and covers §2.8 through §4.1. Start with the plan for tonight: formulas, a timed mock midterm, then
-            fix what you missed with the step-by-step walkthroughs. Every section explains the idea, gives you a graph you can drag and solves your assigned problems.
+            Midterm 2 is tomorrow, Thu, Nov 5, and covers §2.8 through §4.1. Start with the crash course: 10 short lessons, one per section, each with
+            examples you step through one line at a time. Then take the timed mock midterm and fix what you missed.
           </p>
         </HeroFade>
         <HeroFade delay={0.45}>
@@ -48,7 +48,8 @@ export default function Home() {
         <HeroGraph />
         <HeroFade delay={0.5}>
           <div className="cta-row">
-            <Link className="cta" href="/midterm-2/#tonight">Open tonight's plan →</Link>
+            <Link className="cta" href="/crash-course/">Start the crash course →</Link>
+            <Link className="cta ghost" href="/midterm-2/#tonight">Tonight's plan</Link>
             <Link className="cta ghost" href="/midterm-2/#mock">Take the mock midterm</Link>
             <Ring ids={unitProblemIds("q4")} />
           </div>

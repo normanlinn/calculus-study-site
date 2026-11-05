@@ -7561,6 +7561,1246 @@ export const sections: Section[] = [
   "unit": "q4"
  },
  {
+  "id": "cc",
+  "slug": "crash-course",
+  "num": "Midterm 2 · start here",
+  "title": "Midterm 2 crash course",
+  "lede": "Every section on Midterm 2, from §2.8 to §4.1, in 10 short lessons. Each lesson explains the idea, gives the recipe, and walks through examples one line at a time.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p>Midterm 2 is tomorrow, so this page is the shortest path through every section on it, from §2.8 to §4.1. Each lesson gives you:</p>\n<ol class=\"steps\">\n<li><strong>The idea in plain words</strong>: what the section is actually about.</li>\n<li><strong>The recipe</strong>: the steps you follow on the exam, every time.</li>\n<li><strong>Worked examples</strong>. Click <strong>Step through it like a debugger</strong> under each one and press <strong>Step ▶</strong> (or →) one line at a time. Before each step, try to guess the next line yourself.</li>\n</ol>\n<p class=\"callout\"><strong>How to use it tonight:</strong> Part 1 is a fast refresh of §2.8–3.6 (about an hour). Part 2 teaches §3.9, §4.1, §3.10 and §3.11 from scratch (about 1½ hours), most points first. Then take the <a href=\"/midterm-2/#mock\">mock midterm</a>. Have paper next to you and write every example down as you step through it; writing it is what makes it stick.</p>"
+   },
+   {
+    "type": "heading",
+    "text": "Part 1 · Refresh: §2.8 to §3.6",
+    "id": "part-1"
+   },
+   {
+    "type": "heading",
+    "text": "Lesson 1 · §2.8 The derivative from the definition (10 min)",
+    "id": "l-2-8"
+   },
+   {
+    "type": "prose",
+    "html": "<p>The derivative \\(f'(x)\\) is the <strong>slope of the curve at \\(x\\)</strong>. You can't get a slope from one point, so take a second point \\(h\\) away, find the slope between them, and let \\(h\\) shrink to 0.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">The definition</span>\\[f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}\\]<p><strong>Recipe:</strong> plug in \\(x+h\\), subtract \\(f(x)\\), cancel what cancels, divide out the \\(h\\), then set \\(h=0\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Tricks</span><p>Square roots: multiply by the <strong>conjugate</strong>. Fractions like \\(\\frac1x\\): use a <strong>common denominator</strong>. If nothing cancels, you made an algebra mistake.</p>"
+     }
+    ]
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "cc-1",
+      "source": "Crash course · open the full §2.8 lesson",
+      "href": "2-8",
+      "question": "Use the definition to find \\(f'(x)\\) for \\(f(x)=x^2-3x\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(f'(x)=2x-3\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}",
+        "why": "Always start by writing the definition. On the exam this line alone earns credit."
+       },
+       {
+        "code": "f(x+h)=(x+h)^2-3(x+h)",
+        "why": "Replace <b>every</b> \\(x\\) in \\(f\\) with \\((x+h)\\). Keep the parentheses.",
+        "watch": [
+         [
+          "f(x+h)",
+          "(x+h)^2-3(x+h)"
+         ]
+        ]
+       },
+       {
+        "code": "=x^2+2xh+h^2-3x-3h",
+        "why": "Expand: \\((x+h)^2=x^2+2xh+h^2\\) (not \\(x^2+h^2\\)!)."
+       },
+       {
+        "code": "f(x+h)-f(x)=2xh+h^2-3h",
+        "why": "Subtract \\(f(x)=x^2-3x\\). The \\(x^2\\) and \\(-3x\\) cancel. Everything left has an \\(h\\) in it: that is the sign you're on track.",
+        "watch": [
+         [
+          "\\text{top}",
+          "2xh+h^2-3h"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{2xh+h^2-3h}{h}=2x+h-3",
+        "why": "Factor \\(h\\) out of the top and cancel it with the bottom. This is what gets rid of the \\(\\frac00\\) problem."
+       },
+       {
+        "code": "f'(x)=\\lim_{h\\to0}(2x+h-3)=2x-3",
+        "why": "Now it's safe to set \\(h=0\\). Check with the power rule: \\((x^2-3x)'=2x-3\\) ✓.",
+        "watch": [
+         [
+          "f'(x)",
+          "2x-3"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Lesson 2 · §3.1–3.2 Power, product and quotient rules (10 min)",
+    "id": "l-3-1"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Power rule</span>\\[(x^n)'=nx^{n-1}\\]<p><strong>“Bring the power down, subtract one.”</strong> First rewrite roots and fractions as powers: \\(\\sqrt x=x^{1/2}\\), \\(\\frac{1}{x^2}=x^{-2}\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Product</span>\\[(fg)'=f'g+fg'\\]<p>“Derivative of the first times the second, plus the first times derivative of the second.”</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Quotient</span>\\[\\Big(\\frac{hi}{lo}\\Big)'=\\frac{lo\\cdot hi'-hi\\cdot lo'}{lo^2}\\]<p><strong>“Low d-high minus high d-low, over low squared.”</strong> The order matters because of the minus.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Also</span><p>\\((e^x)'=e^x\\). Constants: \\((c)'=0\\), \\((5f)'=5f'\\).</p>"
+     }
+    ]
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "cc-2",
+      "source": "Crash course · open the full §3.1 lesson",
+      "href": "3-1",
+      "question": "Differentiate \\(y=3\\sqrt x-\\dfrac{4}{x^2}+5\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(y'=\\dfrac{3}{2\\sqrt x}+\\dfrac{8}{x^3}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=3x^{1/2}-4x^{-2}+5",
+        "why": "Rewrite first. The power rule only works on \\(x^n\\), so turn the root and the fraction into powers."
+       },
+       {
+        "code": "(3x^{1/2})'=3\\cdot\\tfrac12x^{-1/2}=\\tfrac32x^{-1/2}",
+        "why": "Bring the \\(\\frac12\\) down, subtract 1: \\(\\frac12-1=-\\frac12\\).",
+        "watch": [
+         [
+          "\\text{term 1}'",
+          "\\tfrac32x^{-1/2}"
+         ]
+        ]
+       },
+       {
+        "code": "(-4x^{-2})'=-4\\cdot(-2)x^{-3}=8x^{-3}",
+        "why": "Bring the \\(-2\\) down; \\(-2-1=-3\\). Two minuses make a plus.",
+        "watch": [
+         [
+          "\\text{term 2}'",
+          "8x^{-3}"
+         ]
+        ]
+       },
+       {
+        "code": "(5)'=0",
+        "why": "A constant has zero slope."
+       },
+       {
+        "code": "y'=\\frac{3}{2\\sqrt x}+\\frac{8}{x^3}",
+        "why": "Rewrite negative and fractional powers back as fractions and roots.",
+        "watch": [
+         [
+          "y'",
+          "\\frac{3}{2\\sqrt x}+\\frac8{x^3}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "cc-3",
+      "source": "Crash course · open the full §3.2 lesson",
+      "href": "3-2",
+      "question": "Differentiate \\(y=\\dfrac{x^2+1}{x-3}\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(y'=\\dfrac{x^2-6x-1}{(x-3)^2}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "hi=x^2+1,\\quad lo=x-3",
+        "why": "A fraction of two functions: quotient rule. Name the top and bottom.",
+        "watch": [
+         [
+          "hi'",
+          "2x"
+         ],
+         [
+          "lo'",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{lo\\cdot hi'-hi\\cdot lo'}{lo^2}",
+        "why": "“Low d-high minus high d-low, over low squared.”"
+       },
+       {
+        "code": "y'=\\frac{(x-3)(2x)-(x^2+1)(1)}{(x-3)^2}",
+        "why": "Plug in from the Watch panel. Put parentheses around every piece."
+       },
+       {
+        "code": "=\\frac{2x^2-6x-x^2-1}{(x-3)^2}",
+        "why": "Expand. The minus goes to <b>every</b> term of \\((x^2+1)\\): that's the most common sign mistake."
+       },
+       {
+        "code": "y'=\\frac{x^2-6x-1}{(x-3)^2}",
+        "why": "Combine like terms. Leave the bottom factored.",
+        "watch": [
+         [
+          "y'",
+          "\\frac{x^2-6x-1}{(x-3)^2}"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Lesson 3 · §3.3 Trig derivatives and the trig limit (10 min)",
+    "id": "l-3-3"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Learn 3, get 6</span>\\[(\\sin x)'=\\cos x\\]\\[(\\tan x)'=\\sec^2x\\]\\[(\\sec x)'=\\sec x\\tan x\\]<p>The <strong>co-</strong> versions: put “co” on everything and add a minus: \\((\\cos x)'=-\\sin x\\), \\((\\cot x)'=-\\csc^2x\\), \\((\\csc x)'=-\\csc x\\cot x\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">The limit</span>\\[\\lim_{\\theta\\to0}\\frac{\\sin\\theta}{\\theta}=1\\]<p>Only when the angle and the denominator <strong>match exactly</strong>. Otherwise multiply and divide to make them match.</p>"
+     }
+    ]
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "cc-4",
+      "source": "Crash course · open the full §3.3 lesson",
+      "href": "3-3",
+      "question": "Differentiate \\(y=x^2\\sin x\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(y'=2x\\sin x+x^2\\cos x\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=\\underbrace{x^2}_{f}\\cdot\\underbrace{\\sin x}_{g}",
+        "why": "Two functions multiplied: product rule.",
+        "watch": [
+         [
+          "f'",
+          "2x"
+         ],
+         [
+          "g'",
+          "\\cos x"
+         ]
+        ]
+       },
+       {
+        "code": "y'=f'g+fg'",
+        "why": "Product rule."
+       },
+       {
+        "code": "y'=2x\\sin x+x^2\\cos x",
+        "why": "Plug in. Done.",
+        "watch": [
+         [
+          "y'",
+          "2x\\sin x+x^2\\cos x"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "cc-5",
+      "source": "Crash course · open the full §3.3 lesson",
+      "href": "3-3",
+      "question": "Find \\(\\displaystyle\\lim_{x\\to0}\\frac{\\sin 5x}{x}\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(5\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\lim_{x\\to0}\\frac{\\sin5x}{x}",
+        "why": "Plugging in gives \\(\\frac00\\). The angle is \\(5x\\) but the bottom is \\(x\\): they don't match yet."
+       },
+       {
+        "code": "=\\lim_{x\\to0}5\\cdot\\frac{\\sin5x}{5x}",
+        "why": "Multiply top and bottom by 5. Now the bottom matches the angle. (\\(5\\cdot\\frac{1}{5x}=\\frac1x\\), so nothing changed.)"
+       },
+       {
+        "code": "=5\\cdot1=5",
+        "why": "As \\(x\\to0\\), \\(5x\\to0\\) too, so \\(\\frac{\\sin5x}{5x}\\to1\\).",
+        "watch": [
+         [
+          "\\text{limit}",
+          "5"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Lesson 4 · §3.4 The chain rule (10 min)",
+    "id": "l-3-4"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Chain rule</span>\\[\\big(f(g(x))\\big)'=f'(g(x))\\cdot g'(x)\\]<p><strong>“Derivative of the outside, leave the inside alone, times derivative of the inside.”</strong> With more layers, keep multiplying, outside to inside.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Spot the layers</span><p>Ask: what would I do <strong>last</strong> on a calculator? That's the outside. \\(\\sin^2(3x)\\): last step is squaring, then sin, then \\(3x\\).</p>"
+     }
+    ]
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "cc-6",
+      "source": "Crash course · open the full §3.4 lesson",
+      "href": "3-4",
+      "question": "Differentiate \\(y=\\sin^2(3x)\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(y'=6\\sin(3x)\\cos(3x)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=\\big(\\sin(3x)\\big)^2",
+        "why": "Rewrite so the layers are visible: <b>square</b> (outside) → <b>sin</b> (middle) → <b>3x</b> (inside)."
+       },
+       {
+        "code": "\\text{outside: } 2\\sin(3x)",
+        "why": "Power rule on the square. The inside, \\(\\sin(3x)\\), stays exactly as it is.",
+        "watch": [
+         [
+          "\\text{outside}'",
+          "2\\sin(3x)"
+         ]
+        ]
+       },
+       {
+        "code": "\\text{middle: } \\cos(3x)",
+        "why": "Derivative of sin is cos. Its inside \\(3x\\) stays.",
+        "watch": [
+         [
+          "\\text{middle}'",
+          "\\cos(3x)"
+         ]
+        ]
+       },
+       {
+        "code": "\\text{inside: } 3",
+        "why": "Derivative of \\(3x\\).",
+        "watch": [
+         [
+          "\\text{inside}'",
+          "3"
+         ]
+        ]
+       },
+       {
+        "code": "y'=2\\sin(3x)\\cdot\\cos(3x)\\cdot3=6\\sin(3x)\\cos(3x)",
+        "why": "Multiply all the layers together.",
+        "watch": [
+         [
+          "y'",
+          "6\\sin(3x)\\cos(3x)"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Lesson 5 · §3.5 Implicit differentiation (10 min)",
+    "id": "l-3-5"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Recipe</span><p>1. Differentiate both sides with respect to \\(x\\). <strong>Every time you differentiate a \\(y\\), multiply by \\(y'\\).</strong><br>2. Move all \\(y'\\) terms to one side.<br>3. Factor out \\(y'\\) and divide.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Watch out</span><p>\\(xy\\) needs the <strong>product rule</strong>: \\(y+xy'\\). \\(y^2\\) needs the chain rule: \\(2y\\,y'\\). A constant goes to 0.</p>"
+     }
+    ]
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "cc-7",
+      "source": "Crash course · open the full §3.5 lesson",
+      "href": "3-5",
+      "question": "Find \\(y'\\) if \\(x^2+xy+y^2=7\\), and the slope at \\((1,2)\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(y'=-\\dfrac{2x+y}{x+2y}\\); slope at \\((1,2)\\) is \\(-\\tfrac45\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{d}{dx}\\big(x^2\\big)+\\frac{d}{dx}\\big(xy\\big)+\\frac{d}{dx}\\big(y^2\\big)=\\frac{d}{dx}(7)",
+        "why": "Differentiate every term on both sides. \\(y\\) is secretly a function of \\(x\\)."
+       },
+       {
+        "code": "2x+\\big(1\\cdot y+x\\,y'\\big)+2y\\,y'=0",
+        "why": "\\(xy\\): product rule. \\(y^2\\): power rule then \\(\\times y'\\) (chain rule). \\(7\\to0\\)."
+       },
+       {
+        "code": "x\\,y'+2y\\,y'=-2x-y",
+        "why": "Keep the \\(y'\\) terms on the left; move the rest right (signs flip)."
+       },
+       {
+        "code": "y'(x+2y)=-(2x+y)",
+        "why": "Factor \\(y'\\) out."
+       },
+       {
+        "code": "y'=-\\frac{2x+y}{x+2y}",
+        "why": "Divide.",
+        "watch": [
+         [
+          "y'",
+          "-\\frac{2x+y}{x+2y}"
+         ]
+        ]
+       },
+       {
+        "code": "y'\\big|_{(1,2)}=-\\frac{2+2}{1+4}=-\\frac45",
+        "why": "For a slope at a point, plug in <b>both</b> \\(x=1\\) and \\(y=2\\).",
+        "watch": [
+         [
+          "\\text{slope}",
+          "-\\tfrac45"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Lesson 6 · §3.6 Logs and inverse trig (10 min)",
+    "id": "l-3-6"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Logs</span>\\[(\\ln u)'=\\frac{u'}{u}\\]<p>“Derivative of the inside over the inside.” Other bases: \\((\\log_b x)'=\\frac{1}{x\\ln b}\\), \\((b^x)'=b^x\\ln b\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Inverse trig</span>\\[(\\tan^{-1}u)'=\\frac{u'}{1+u^2}\\]\\[(\\sin^{-1}u)'=\\frac{u'}{\\sqrt{1-u^2}}\\]<p>\\(\\cos^{-1}\\) is the same as \\(\\sin^{-1}\\) with a minus.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">x to the x</span><p>Variable in the base <strong>and</strong> the exponent: take \\(\\ln\\) of both sides first.</p>"
+     }
+    ]
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "cc-8",
+      "source": "Crash course · open the full §3.6 lesson",
+      "href": "3-6",
+      "question": "Differentiate \\(y=\\ln(x^2+1)+\\tan^{-1}(2x)\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(y'=\\dfrac{2x}{x^2+1}+\\dfrac{2}{1+4x^2}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=\\ln(x^2+1)+\\tan^{-1}(2x)",
+        "why": "A sum: do each term separately."
+       },
+       {
+        "code": "\\big(\\ln(x^2+1)\\big)'=\\frac{2x}{x^2+1}",
+        "why": "\\(\\frac{u'}{u}\\) with \\(u=x^2+1\\), \\(u'=2x\\).",
+        "watch": [
+         [
+          "\\text{term 1}'",
+          "\\frac{2x}{x^2+1}"
+         ]
+        ]
+       },
+       {
+        "code": "\\big(\\tan^{-1}(2x)\\big)'=\\frac{2}{1+(2x)^2}=\\frac{2}{1+4x^2}",
+        "why": "\\(\\frac{u'}{1+u^2}\\) with \\(u=2x\\): \\(u'=2\\), \\(u^2=4x^2\\). Square the 2 too.",
+        "watch": [
+         [
+          "\\text{term 2}'",
+          "\\frac2{1+4x^2}"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{2x}{x^2+1}+\\frac{2}{1+4x^2}",
+        "why": "Add them.",
+        "watch": [
+         [
+          "y'",
+          "\\frac{2x}{x^2+1}+\\frac{2}{1+4x^2}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "cc-9",
+      "source": "Crash course · open the full §3.6 lesson",
+      "href": "3-6",
+      "question": "Differentiate \\(y=x^x\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(y'=x^x(\\ln x+1)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\ln y=\\ln\\big(x^x\\big)=x\\ln x",
+        "why": "Neither the power rule nor the exponential rule fits, so take \\(\\ln\\) of both sides. The exponent comes down in front."
+       },
+       {
+        "code": "\\frac{y'}{y}=1\\cdot\\ln x+x\\cdot\\frac1x",
+        "why": "Left: \\((\\ln y)'=\\frac{y'}{y}\\). Right: product rule on \\(x\\cdot\\ln x\\)."
+       },
+       {
+        "code": "\\frac{y'}{y}=\\ln x+1",
+        "why": "Simplify."
+       },
+       {
+        "code": "y'=x^x(\\ln x+1)",
+        "why": "Multiply both sides by \\(y\\), and replace \\(y\\) with \\(x^x\\).",
+        "watch": [
+         [
+          "y'",
+          "x^x(\\ln x+1)"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Part 2 · Learn: §3.9, §4.1, §3.10, §3.11",
+    "id": "part-2"
+   },
+   {
+    "type": "prose",
+    "html": "<p>These are probably the sections you haven't seen properly yet. They're in order of how many points they're usually worth: related rates and max/min are long, multi-step problems; linear approximation and hyperbolic functions are short ones.</p>"
+   },
+   {
+    "type": "heading",
+    "text": "Lesson 7 · §3.9 Related rates (30 min)",
+    "id": "l-3-9"
+   },
+   {
+    "type": "prose",
+    "html": "<p><strong>The idea:</strong> two quantities are connected by an equation, and both are changing over time. You're told how fast one is changing and asked how fast the other is changing <em>at one particular moment</em>.</p>\n<p>The key move: differentiate the equation <strong>with respect to time \\(t\\)</strong>. Every changing quantity then picks up its own rate (\\(x\\to\\frac{dx}{dt}\\)) by the chain rule. That's the same idea as implicit differentiation, with \\(t\\) instead of \\(x\\).</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">The recipe</span><p>1. <strong>Draw</strong> it. Letters for things that change, numbers for things that don't.<br>2. Write <strong>Given</strong> and <strong>Want</strong> as rates (\\(\\frac{dx}{dt}=2\\), want \\(\\frac{dy}{dt}\\)).<br>3. Write the <strong>equation</strong> connecting the letters.<br>4. <strong>Differentiate</strong> with respect to \\(t\\).<br>5. <strong>Plug in</strong> the numbers for this moment and solve.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">The equation is usually one of</span><p><strong>Pythagoras</strong> \\(x^2+y^2=z^2\\) (ladders, cars, planes). <strong>Sphere</strong> \\(V=\\frac43\\pi r^3\\). <strong>Cone</strong> \\(V=\\frac13\\pi r^2h\\). <strong>Similar triangles</strong> (shadows, cone tanks).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Never plug in early</span><p>Plug numbers for changing quantities in only <strong>after</strong> step 4. Otherwise they become constants, their rates become 0, and the answer is wrong.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Signs</span><p>Getting smaller (sliding down, leaking, shrinking) means a <strong>negative</strong> rate.</p>"
+     }
+    ]
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "cc-10",
+      "source": "Crash course · open the full §3.9 lesson",
+      "href": "3-9",
+      "question": "A 10 ft ladder leans against a wall. The bottom slides away from the wall at 2 ft/s. How fast is the top sliding down when the bottom is 6 ft from the wall?",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(\\frac{dy}{dt}=-\\frac32\\) ft/s: the top slides down at 1.5 ft/s</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x=\\text{bottom to wall},\\ \\ y=\\text{height of top},\\ \\ 10=\\text{ladder}",
+        "why": "<b>Draw:</b> a right triangle. The wall and the ground are the legs, the ladder is the hypotenuse. The ladder's length never changes, so it's a number.",
+        "watch": [
+         [
+          "dx/dt",
+          "2"
+         ],
+         [
+          "\\text{want}",
+          "dy/dt\\text{ at }x=6"
+         ]
+        ]
+       },
+       {
+        "code": "x^2+y^2=10^2",
+        "why": "<b>Equation:</b> Pythagoras."
+       },
+       {
+        "code": "2x\\frac{dx}{dt}+2y\\frac{dy}{dt}=0",
+        "why": "<b>Differentiate in \\(t\\)</b>. Each letter gets its own rate. \\(10^2=100\\) is a constant, so it becomes 0."
+       },
+       {
+        "code": "x=6\\Rightarrow y=\\sqrt{100-36}=8",
+        "why": "We need \\(y\\) at this moment. Get it from the <b>original</b> equation.",
+        "watch": [
+         [
+          "x",
+          "6"
+         ],
+         [
+          "y",
+          "8"
+         ]
+        ]
+       },
+       {
+        "code": "2(6)(2)+2(8)\\frac{dy}{dt}=0\\ \\Rightarrow\\ 24+16\\frac{dy}{dt}=0",
+        "why": "<b>Plug in</b> now that we've differentiated."
+       },
+       {
+        "code": "\\frac{dy}{dt}=-\\frac{24}{16}=-\\frac32\\ \\text{ft/s}",
+        "why": "Negative means \\(y\\) is shrinking: the top slides <b>down</b> at 1.5 ft/s.",
+        "watch": [
+         [
+          "dy/dt",
+          "-\\tfrac32"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "cc-11",
+      "source": "Crash course · open the full §3.9 lesson",
+      "href": "3-9",
+      "question": "Air is pumped into a spherical balloon at \\(100\\text{ cm}^3/\\text{s}\\). How fast is the radius growing when \\(r=25\\) cm?",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(\\frac{dr}{dt}=\\frac{1}{25\\pi}\\approx0.0127\\) cm/s</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{dV}{dt}=100,\\quad\\text{want }\\frac{dr}{dt}\\text{ at }r=25",
+        "why": "<b>Given and want.</b> “Air pumped in at 100 cm³/s” is a rate of change of <b>volume</b>.",
+        "watch": [
+         [
+          "dV/dt",
+          "100"
+         ],
+         [
+          "r",
+          "25"
+         ]
+        ]
+       },
+       {
+        "code": "V=\\frac43\\pi r^3",
+        "why": "<b>Equation:</b> volume of a sphere."
+       },
+       {
+        "code": "\\frac{dV}{dt}=4\\pi r^2\\frac{dr}{dt}",
+        "why": "<b>Differentiate in \\(t\\)</b>: \\(\\frac43\\cdot3=4\\), and \\(r^3\\to3r^2\\cdot\\frac{dr}{dt}\\)."
+       },
+       {
+        "code": "100=4\\pi(25)^2\\frac{dr}{dt}=2500\\pi\\frac{dr}{dt}",
+        "why": "<b>Plug in.</b> \\(25^2=625\\), \\(4\\cdot625=2500\\)."
+       },
+       {
+        "code": "\\frac{dr}{dt}=\\frac{100}{2500\\pi}=\\frac{1}{25\\pi}\\ \\text{cm/s}",
+        "why": "Solve. Leave it exact on a no-calculator exam.",
+        "watch": [
+         [
+          "dr/dt",
+          "\\frac1{25\\pi}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "cc-12",
+      "source": "Crash course · open the full §3.9 lesson",
+      "href": "3-9",
+      "question": "Water is poured at \\(2\\text{ m}^3/\\text{min}\\) into a cone-shaped tank, point down, 10 m tall with top radius 4 m. How fast is the water level rising when the water is 5 m deep?",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(\\frac{dh}{dt}=\\frac{1}{2\\pi}\\approx0.16\\) m/min</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{dV}{dt}=2,\\quad\\text{want }\\frac{dh}{dt}\\text{ at }h=5",
+        "why": "<b>Given and want.</b> The water forms a smaller cone with radius \\(r\\) and height \\(h\\); both change.",
+        "watch": [
+         [
+          "dV/dt",
+          "2"
+         ],
+         [
+          "h",
+          "5"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac rh=\\frac{4}{10}\\ \\Rightarrow\\ r=\\frac{2h}{5}",
+        "why": "<b>Similar triangles:</b> the water cone has the same shape as the tank. This lets us get rid of \\(r\\), because the problem gives nothing about \\(\\frac{dr}{dt}\\).",
+        "watch": [
+         [
+          "r",
+          "\\tfrac{2h}5"
+         ]
+        ]
+       },
+       {
+        "code": "V=\\frac13\\pi r^2h=\\frac13\\pi\\Big(\\frac{2h}5\\Big)^2h=\\frac{4\\pi h^3}{75}",
+        "why": "<b>Equation</b> with only \\(h\\) left. \\(\\big(\\frac{2h}{5}\\big)^2=\\frac{4h^2}{25}\\), times \\(\\frac13\\) gives \\(\\frac{4}{75}\\)."
+       },
+       {
+        "code": "\\frac{dV}{dt}=\\frac{4\\pi h^2}{25}\\frac{dh}{dt}",
+        "why": "<b>Differentiate in \\(t\\):</b> \\(\\frac{4}{75}\\cdot3=\\frac{4}{25}\\)."
+       },
+       {
+        "code": "2=\\frac{4\\pi(25)}{25}\\frac{dh}{dt}=4\\pi\\frac{dh}{dt}",
+        "why": "<b>Plug in</b> \\(h=5\\)."
+       },
+       {
+        "code": "\\frac{dh}{dt}=\\frac{2}{4\\pi}=\\frac{1}{2\\pi}\\ \\text{m/min}",
+        "why": "Solve.",
+        "watch": [
+         [
+          "dh/dt",
+          "\\frac1{2\\pi}"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Lesson 8 · §4.1 Maximum and minimum values (25 min)",
+    "id": "l-4-1"
+   },
+   {
+    "type": "prose",
+    "html": "<p><strong>The idea:</strong> the highest and lowest points of a graph happen where the graph <strong>turns around</strong> (slope 0, or a sharp corner where the slope doesn't exist) or at the <strong>ends</strong> of the interval. So you only need to check a short list of \\(x\\)-values.</p>\n<p><strong>Absolute</strong> max/min = the highest/lowest value on the whole interval. <strong>Local</strong> max/min = a peak or valley compared with nearby points.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Critical number</span><p>A number \\(c\\) <strong>in the domain</strong> of \\(f\\) where \\(f'(c)=0\\) or \\(f'(c)\\) doesn't exist.<br><strong>Find them:</strong> compute \\(f'\\), write it as one fraction, factor. <strong>Top = 0</strong> gives one kind; <strong>bottom = 0</strong> gives the other.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Closed Interval Method</span><p>For the absolute max and min of \\(f\\) on \\([a,b]\\):<br>1. Find critical numbers; keep only those inside \\([a,b]\\).<br>2. Make a table: \\(f\\) at each critical number and at both endpoints \\(a\\), \\(b\\).<br>3. Largest value = absolute max, smallest = absolute min.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Mistakes that cost points</span><p>Evaluating \\(f'\\) instead of \\(f\\) in the table. Forgetting the endpoints. Counting a point where \\(f\\) itself is undefined.</p>"
+     }
+    ]
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "cc-13",
+      "source": "Crash course · open the full §4.1 lesson",
+      "href": "4-1",
+      "question": "Find the critical numbers of \\(f(x)=x^3-6x^2+9x+1\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(x=1\\) and \\(x=3\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=3x^2-12x+9",
+        "why": "Step 1 is always the derivative."
+       },
+       {
+        "code": "=3(x^2-4x+3)=3(x-1)(x-3)",
+        "why": "Factor: first the 3, then the quadratic (two numbers multiplying to 3 and adding to \\(-4\\): \\(-1\\) and \\(-3\\))."
+       },
+       {
+        "code": "f'=0\\ \\Rightarrow\\ x=1,\\ 3",
+        "why": "Set each factor to 0. A polynomial's derivative exists everywhere, so there are no “undefined” critical numbers.",
+        "watch": [
+         [
+          "\\text{c.n.}",
+          "1,\\ 3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "cc-14",
+      "source": "Crash course · open the full §4.1 lesson",
+      "href": "4-1",
+      "question": "Find the absolute max and min of \\(f(x)=x^3-6x^2+9x+1\\) on \\([-1,4]\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">Max \\(5\\) (at \\(x=1\\) and \\(x=4\\)); min \\(-15\\) (at \\(x=-1\\))</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\text{critical numbers: }1,\\ 3\\ \\in[-1,4]",
+        "why": "From the previous example. Both are inside the interval, so both stay."
+       },
+       {
+        "code": "\\text{check: }x=-1,\\ 1,\\ 3,\\ 4",
+        "why": "Add the two endpoints. These four \\(x\\)-values are the only places the max and min can be."
+       },
+       {
+        "code": "f(-1)=-1-6-9+1=-15",
+        "why": "Evaluate the <b>original</b> \\(f\\). Careful: \\((-1)^3=-1\\), \\(-6(-1)^2=-6\\), \\(9(-1)=-9\\).",
+        "watch": [
+         [
+          "f(-1)",
+          "-15"
+         ]
+        ]
+       },
+       {
+        "code": "f(1)=1-6+9+1=5",
+        "why": "Next one.",
+        "watch": [
+         [
+          "f(1)",
+          "5"
+         ]
+        ]
+       },
+       {
+        "code": "f(3)=27-54+27+1=1",
+        "why": "Next one.",
+        "watch": [
+         [
+          "f(3)",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "f(4)=64-96+36+1=5",
+        "why": "Last one.",
+        "watch": [
+         [
+          "f(4)",
+          "5"
+         ]
+        ]
+       },
+       {
+        "code": "\\max=5\\ (x=1,4),\\quad \\min=-15\\ (x=-1)",
+        "why": "Pick the biggest and smallest values. The max happens twice, and the min is at an <b>endpoint</b>; that's why you never skip the endpoints.",
+        "watch": [
+         [
+          "\\max",
+          "5"
+         ],
+         [
+          "\\min",
+          "-15"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "cc-15",
+      "source": "Crash course · open the full §4.1 lesson",
+      "href": "4-1",
+      "question": "Find the critical numbers of \\(f(x)=x^{2/3}(x-5)\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(x=0\\) and \\(x=2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f=x^{5/3}-5x^{2/3}",
+        "why": "Distribute first; it's easier than the product rule. \\(x^{2/3}\\cdot x=x^{5/3}\\)."
+       },
+       {
+        "code": "f'=\\tfrac53x^{2/3}-\\tfrac{10}{3}x^{-1/3}",
+        "why": "Power rule on each term."
+       },
+       {
+        "code": "f'=\\frac{5x-10}{3x^{1/3}}=\\frac{5(x-2)}{3x^{1/3}}",
+        "why": "Write as one fraction: a negative power goes to the bottom, and \\(x^{2/3}\\cdot x^{1/3}=x\\) on top.",
+        "watch": [
+         [
+          "f'",
+          "\\frac{5(x-2)}{3x^{1/3}}"
+         ]
+        ]
+       },
+       {
+        "code": "\\text{top}=0:\\ x=2",
+        "why": "Where the slope is 0."
+       },
+       {
+        "code": "\\text{bottom}=0:\\ x=0",
+        "why": "Where the slope doesn't exist (a sharp point). \\(f(0)=0\\) is defined, so 0 is in the domain and counts.",
+        "watch": [
+         [
+          "\\text{c.n.}",
+          "0,\\ 2"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Lesson 9 · §3.10 Linear approximation and differentials (15 min)",
+    "id": "l-3-10"
+   },
+   {
+    "type": "prose",
+    "html": "<p><strong>The idea:</strong> zoom in close enough on a smooth curve and it looks like a straight line, its tangent line. So near a point you know, use the tangent line to estimate values that are hard to compute by hand, like \\(\\sqrt{4.1}\\).</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Linearization</span>\\[L(x)=f(a)+f'(a)(x-a)\\]<p><strong>“Start at the height, move with the slope.”</strong> Pick \\(a\\) close to your number where \\(f(a)\\) is easy.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Differentials</span>\\[dy=f'(x)\\,dx\\]<p>\\(dy\\) = change along the tangent line (the estimate). \\(\\Delta y=f(x+dx)-f(x)\\) = the real change.</p>"
+     }
+    ]
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "cc-16",
+      "source": "Crash course · open the full §3.10 lesson",
+      "href": "3-10",
+      "question": "Use a linear approximation to estimate \\(\\sqrt{4.1}\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(\\sqrt{4.1}\\approx2.025\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=\\sqrt x,\\quad a=4",
+        "why": "4 is close to 4.1, and \\(\\sqrt4=2\\) is easy."
+       },
+       {
+        "code": "f(4)=2",
+        "why": "The height at \\(a\\).",
+        "watch": [
+         [
+          "f(a)",
+          "2"
+         ]
+        ]
+       },
+       {
+        "code": "f'(x)=\\frac{1}{2\\sqrt x}\\ \\Rightarrow\\ f'(4)=\\frac14",
+        "why": "The slope at \\(a\\).",
+        "watch": [
+         [
+          "f'(a)",
+          "\\tfrac14"
+         ]
+        ]
+       },
+       {
+        "code": "L(x)=2+\\tfrac14(x-4)",
+        "why": "Linearization formula."
+       },
+       {
+        "code": "\\sqrt{4.1}\\approx L(4.1)=2+\\tfrac14(0.1)=2.025",
+        "why": "Plug in 4.1. The real value is 2.02485…, very close.",
+        "watch": [
+         [
+          "\\sqrt{4.1}",
+          "\\approx2.025"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "cc-17",
+      "source": "Crash course · open the full §3.10 lesson",
+      "href": "3-10",
+      "question": "For \\(y=x^3\\), find \\(dy\\) and \\(\\Delta y\\) when \\(x=2\\) and \\(dx=\\Delta x=0.1\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(dy=1.2\\), \\(\\Delta y=1.261\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "dy=3x^2\\,dx",
+        "why": "Differential: derivative, then attach \\(dx\\)."
+       },
+       {
+        "code": "dy=3(2)^2(0.1)=1.2",
+        "why": "Plug in \\(x=2\\), \\(dx=0.1\\).",
+        "watch": [
+         [
+          "dy",
+          "1.2"
+         ]
+        ]
+       },
+       {
+        "code": "\\Delta y=(2.1)^3-2^3=9.261-8",
+        "why": "Real change: new value minus old value."
+       },
+       {
+        "code": "\\Delta y=1.261",
+        "why": "Close to \\(dy\\), but not equal. The tangent line slightly underestimates because \\(x^3\\) curves upward here.",
+        "watch": [
+         [
+          "\\Delta y",
+          "1.261"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Lesson 10 · §3.11 Hyperbolic functions (15 min)",
+    "id": "l-3-11"
+   },
+   {
+    "type": "prose",
+    "html": "<p><strong>The idea:</strong> sinh and cosh aren't new mysteries. They're just names for two combinations of \\(e^x\\) and \\(e^{-x}\\). Every question is either “use the definition” or “use the derivative table”, which looks almost exactly like the trig table.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Definitions</span>\\[\\sinh x=\\frac{e^x-e^{-x}}{2}\\]\\[\\cosh x=\\frac{e^x+e^{-x}}{2}\\]<p>sinh has the minus, cosh has the plus. \\(\\sinh0=0\\), \\(\\cosh0=1\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Derivatives</span>\\[(\\sinh x)'=\\cosh x\\]\\[(\\cosh x)'=\\sinh x\\]\\[(\\tanh x)'=\\operatorname{sech}^2x\\]<p>Like trig, but <strong>cosh has no minus</strong>.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Identity</span>\\[\\cosh^2x-\\sinh^2x=1\\]<p>A minus, unlike \\(\\sin^2+\\cos^2=1\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">With ln inside</span><p>\\(e^{\\ln a}=a\\) and \\(e^{-\\ln a}=\\frac1a\\). That's how \\(\\cosh(\\ln 3)\\) becomes a plain number.</p>"
+     }
+    ]
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "cc-18",
+      "source": "Crash course · open the full §3.11 lesson",
+      "href": "3-11",
+      "question": "Find the exact value of \\(\\cosh(\\ln3)\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(\\tfrac53\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\cosh(\\ln3)=\\frac{e^{\\ln3}+e^{-\\ln3}}{2}",
+        "why": "Use the definition with \\(x=\\ln3\\)."
+       },
+       {
+        "code": "e^{\\ln3}=3,\\quad e^{-\\ln3}=\\frac13",
+        "why": "\\(e\\) and \\(\\ln\\) undo each other. A minus in the exponent means “one over”."
+       },
+       {
+        "code": "=\\frac{3+\\frac13}{2}=\\frac{10/3}{2}=\\frac53",
+        "why": "Simplify.",
+        "watch": [
+         [
+          "\\cosh(\\ln3)",
+          "\\tfrac53"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "cc-19",
+      "source": "Crash course · open the full §3.11 lesson",
+      "href": "3-11",
+      "question": "Differentiate \\(y=\\cosh(3x)+\\tanh(x^2)\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(y'=3\\sinh(3x)+2x\\operatorname{sech}^2(x^2)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\big(\\cosh(3x)\\big)'=\\sinh(3x)\\cdot3",
+        "why": "Table + chain rule. No minus sign for cosh.",
+        "watch": [
+         [
+          "\\text{term 1}'",
+          "3\\sinh(3x)"
+         ]
+        ]
+       },
+       {
+        "code": "\\big(\\tanh(x^2)\\big)'=\\operatorname{sech}^2(x^2)\\cdot2x",
+        "why": "\\((\\tanh u)'=\\operatorname{sech}^2u\\cdot u'\\) with \\(u=x^2\\).",
+        "watch": [
+         [
+          "\\text{term 2}'",
+          "2x\\operatorname{sech}^2(x^2)"
+         ]
+        ]
+       },
+       {
+        "code": "y'=3\\sinh(3x)+2x\\operatorname{sech}^2(x^2)",
+        "why": "Add.",
+        "watch": [
+         [
+          "y'",
+          "3\\sinh(3x)+2x\\operatorname{sech}^2(x^2)"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Done? Test yourself",
+    "id": "test"
+   },
+   {
+    "type": "prose",
+    "html": "<ol class=\"steps\">\n<li>Take the <a href=\"/midterm-2/#mock\">11-problem mock midterm</a>, timed, on paper.</li>\n<li>For every miss, go back to that lesson above and step through its examples again.</li>\n<li>Then the <a href=\"/quick-quiz/\">quick quiz</a> in <strong>Midterm 2 · everything</strong> mode, and one round of <a href=\"/memory-tricks/\">flashcards</a>.</li>\n<li>Go to sleep. Read the <a href=\"/cheat-sheet/\">cheat sheet</a> once in the morning.</li>\n</ol>"
+   }
+  ]
+ },
+ {
   "id": "mt2",
   "slug": "midterm-2",
   "num": "Midterm 2 · Thu, Nov 5",
@@ -7579,7 +8819,7 @@ export const sections: Section[] = [
    },
    {
     "type": "prose",
-    "html": "<p>About four hours, in this order. The order matters: find out what you can't do <em>first</em>, then spend your time there instead of rereading things you already know.</p>\n<ol class=\"steps\">\n<li><strong>Formulas, 30 min.</strong> On a blank sheet, write every derivative rule from memory: power, product, quotient, chain, all 6 trig, \\(e^x\\), \\(b^x\\), \\(\\ln\\), \\(\\log_b\\), the inverse trig ones, sinh/cosh/tanh, and \\(L(x)\\). Check it against the <a href=\"/cheat-sheet/\">cheat sheet</a>. Then do one round of <a href=\"/memory-tricks/\">flashcards</a> on <strong>All cards</strong>.</li>\n<li><strong>Mock midterm, 55 min.</strong> Scroll down and start the <a href=\"#mock\">11-problem mock</a>. Timer on, paper only, no peeking. This tells you exactly which sections need work.</li>\n<li><strong>Fix the misses, 60 min.</strong> For every problem you missed, click its <strong>Review</strong> link. Open two or three of that section's problems and use <strong>Step through it like a debugger</strong>. Stop at the first line where your work and the walkthrough differ; that line is the gap.</li>\n<li><strong>Drill weak spots, 45 min.</strong> In the <a href=\"/generate/\">problem generator</a>, pick the sections you missed and do 5 fresh problems each. Make sure related rates (§3.9) and max/min (§4.1) get at least 3 each. Those are long, high-point problems.</li>\n<li><strong>Quick quiz, 20 min.</strong> <a href=\"/quick-quiz/\">Quick quiz</a> → <strong>Midterm 2 · everything</strong> (28 questions). Aim for 25+.</li>\n<li><strong>Stop and sleep.</strong> 7+ hours. Sleep is when the formulas actually get stored; an extra hour of cramming at 2 a.m. costs more points than it earns.</li>\n</ol>\n<p class=\"callout\"><strong>Only have an hour?</strong> Do step 1 (20 min), then the quick quiz in Midterm 2 mode, then read the debugger walkthrough for one related-rates problem and one closed-interval problem.</p>"
+    "html": "<p class=\"callout\"><strong>Feel like you don't know the material yet?</strong> Do the <a href=\"/crash-course/\">crash course</a> first (about 2½ hours): 10 short lessons, §2.8 to §4.1. Then come back here and start at step 2.</p><p>About four hours, in this order. The order matters: find out what you can't do <em>first</em>, then spend your time there instead of rereading things you already know.</p>\n<ol class=\"steps\">\n<li><strong>Formulas, 30 min.</strong> On a blank sheet, write every derivative rule from memory: power, product, quotient, chain, all 6 trig, \\(e^x\\), \\(b^x\\), \\(\\ln\\), \\(\\log_b\\), the inverse trig ones, sinh/cosh/tanh, and \\(L(x)\\). Check it against the <a href=\"/cheat-sheet/\">cheat sheet</a>. Then do one round of <a href=\"/memory-tricks/\">flashcards</a> on <strong>All cards</strong>.</li>\n<li><strong>Mock midterm, 55 min.</strong> Scroll down and start the <a href=\"#mock\">11-problem mock</a>. Timer on, paper only, no peeking. This tells you exactly which sections need work.</li>\n<li><strong>Fix the misses, 60 min.</strong> For every problem you missed, click its <strong>Review</strong> link. Open two or three of that section's problems and use <strong>Step through it like a debugger</strong>. Stop at the first line where your work and the walkthrough differ; that line is the gap.</li>\n<li><strong>Drill weak spots, 45 min.</strong> In the <a href=\"/generate/\">problem generator</a>, pick the sections you missed and do 5 fresh problems each. Make sure related rates (§3.9) and max/min (§4.1) get at least 3 each. Those are long, high-point problems.</li>\n<li><strong>Quick quiz, 20 min.</strong> <a href=\"/quick-quiz/\">Quick quiz</a> → <strong>Midterm 2 · everything</strong> (28 questions). Aim for 25+.</li>\n<li><strong>Stop and sleep.</strong> 7+ hours. Sleep is when the formulas actually get stored; an extra hour of cramming at 2 a.m. costs more points than it earns.</li>\n</ol>\n<p class=\"callout\"><strong>Only have an hour?</strong> Do step 1 (20 min), then the quick quiz in Midterm 2 mode, then read the debugger walkthrough for one related-rates problem and one closed-interval problem.</p>"
    },
    {
     "type": "heading",

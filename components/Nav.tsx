@@ -42,9 +42,10 @@ function ThemeToggle() {
 
 // Study tools live in a menu so the bar never runs out of room.
 const TOOLS: Record<string, string> = {
+  "crash-course": "Every Midterm 2 section in 10 short lessons",
   "midterm-2": "Tonight's plan and a timed mock exam for Thu, Nov 5",
   grades: "What you need for an A or a B",
-  "quick-quiz": "10 fast questions with instant feedback",
+  "quick-quiz": "28 fast questions with instant feedback",
   generate: "Unlimited new problems, and check your own",
   "memory-tricks": "Learn the formulas, with a flashcard drill",
   "cheat-sheet": "Every rule on one page",
