@@ -7,6 +7,7 @@ import { recordGen, useGenStats } from "@/lib/genstats";
 
 type Pick = GenSection | GenMix;
 const GROUPS: { label: string; items: { id: Pick; label: string }[] }[] = [
+  { label: "Midterm 2", items: [{ id: "mixed", label: "Everything" }] },
   { label: "Quiz 4", items: [{ id: "mixed-q4", label: "Mix" }, { id: "3.6", label: "3.6" }, { id: "3.9", label: "3.9" }, { id: "3.10", label: "3.10" }, { id: "3.11", label: "3.11" }, { id: "4.1", label: "4.1" }] },
   { label: "Quiz 3", items: [{ id: "mixed-q3", label: "Mix" }, { id: "2.8", label: "2.8" }, { id: "3.1", label: "3.1" }, { id: "3.2", label: "3.2" }, { id: "3.3", label: "3.3" }, { id: "3.4", label: "3.4" }, { id: "3.5", label: "3.5" }] },
 ];
@@ -14,7 +15,7 @@ const GROUPS: { label: string; items: { id: Pick; label: string }[] }[] = [
 type Verdict = "right" | "wrong" | null;
 
 export default function Generator() {
-  const [section, setSection] = useState<Pick>("mixed-q4");
+  const [section, setSection] = useState<Pick>("mixed");
   const [prob, setProb] = useState<GenProblem | null>(null);
   const [n, setN] = useState(0);
   const [hint, setHint] = useState(false);

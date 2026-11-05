@@ -14,7 +14,7 @@ function Question({ q, n, onAnswer }: { q: QuizItem; n: number; onAnswer: (ok: b
   };
   return (
     <div className="qq">
-      <div dangerouslySetInnerHTML={{ __html: q.question }} />
+      <div dangerouslySetInnerHTML={{ __html: q.question.replace(/^<b>\d+\.<\/b>/, `<b>${n + 1}.</b>`) }} />
       <div className="opts">
         {q.options.map((o, i) => {
           const state = picked === null ? "" : o.correct ? "right" : picked === i ? "wrong" : "";
@@ -51,18 +51,23 @@ export default function Quiz({ items: all }: { items: QuizItem[] }) {
   const [answered, setAnswered] = useState(0);
   const [round, setRound] = useState(0);
   const [unit, setUnit] = useSharedUnit();
+  // "all" is Midterm 2 mode: every question from both quizzes
+  const [everything, setEverything] = useState(true);
   const units = UNITS.filter((u) => all.some((q) => (q.unit ?? "q3") === u.id));
-  const items = units.length > 1 ? all.filter((q) => (q.unit ?? "q3") === unit) : all;
+  const items = units.length > 1 && !everything ? all.filter((q) => (q.unit ?? "q3") === unit) : all;
   const reset = () => { setScore(0); setAnswered(0); setRound((r) => r + 1); };
   // a new unit is a fresh round
-  useEffect(reset, [unit]);
+  useEffect(reset, [unit, everything]);
   return (
     <div className="quiz">
       {units.length > 1 && (
         <div className="controls">
           <div className="seg" role="group" aria-label="Which quiz">
+            <button type="button" className={everything ? "on" : ""} aria-pressed={everything} onClick={() => setEverything(true)}>
+              Midterm 2 · everything
+            </button>
             {units.map((u) => (
-              <button key={u.id} type="button" className={unit === u.id ? "on" : ""} aria-pressed={unit === u.id} onClick={() => setUnit(u.id)}>
+              <button key={u.id} type="button" className={!everything && unit === u.id ? "on" : ""} aria-pressed={!everything && unit === u.id} onClick={() => { setEverything(false); setUnit(u.id); }}>
                 {u.long}
               </button>
             ))}

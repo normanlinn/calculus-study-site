@@ -7563,14 +7563,81 @@ export const sections: Section[] = [
  {
   "id": "mt2",
   "slug": "midterm-2",
-  "num": "Midterm 2 · Thu, Oct 29",
+  "num": "Midterm 2 · Thu, Nov 5",
   "title": "Midterm 2 study plan",
-  "lede": "Everything since Midterm 1, a day-by-day plan that also covers Quiz 4, and a timed mock midterm.",
+  "lede": "Midterm 2 moved to tomorrow, Thu, Nov 5. Here's a plan for tonight, a checklist for every section, and a timed mock midterm.",
   "blocks": [
    {
     "type": "countdown",
-    "target": "2026-10-29",
+    "target": "2026-11-05",
     "label": "Midterm 2"
+   },
+   {
+    "type": "heading",
+    "text": "Tonight's plan",
+    "id": "tonight"
+   },
+   {
+    "type": "prose",
+    "html": "<p>About four hours, in this order. The order matters: find out what you can't do <em>first</em>, then spend your time there instead of rereading things you already know.</p>\n<ol class=\"steps\">\n<li><strong>Formulas, 30 min.</strong> On a blank sheet, write every derivative rule from memory: power, product, quotient, chain, all 6 trig, \\(e^x\\), \\(b^x\\), \\(\\ln\\), \\(\\log_b\\), the inverse trig ones, sinh/cosh/tanh, and \\(L(x)\\). Check it against the <a href=\"/cheat-sheet/\">cheat sheet</a>. Then do one round of <a href=\"/memory-tricks/\">flashcards</a> on <strong>All cards</strong>.</li>\n<li><strong>Mock midterm, 55 min.</strong> Scroll down and start the <a href=\"#mock\">11-problem mock</a>. Timer on, paper only, no peeking. This tells you exactly which sections need work.</li>\n<li><strong>Fix the misses, 60 min.</strong> For every problem you missed, click its <strong>Review</strong> link. Open two or three of that section's problems and use <strong>Step through it like a debugger</strong>. Stop at the first line where your work and the walkthrough differ; that line is the gap.</li>\n<li><strong>Drill weak spots, 45 min.</strong> In the <a href=\"/generate/\">problem generator</a>, pick the sections you missed and do 5 fresh problems each. Make sure related rates (§3.9) and max/min (§4.1) get at least 3 each. Those are long, high-point problems.</li>\n<li><strong>Quick quiz, 20 min.</strong> <a href=\"/quick-quiz/\">Quick quiz</a> → <strong>Midterm 2 · everything</strong> (28 questions). Aim for 25+.</li>\n<li><strong>Stop and sleep.</strong> 7+ hours. Sleep is when the formulas actually get stored; an extra hour of cramming at 2 a.m. costs more points than it earns.</li>\n</ol>\n<p class=\"callout\"><strong>Only have an hour?</strong> Do step 1 (20 min), then the quick quiz in Midterm 2 mode, then read the debugger walkthrough for one related-rates problem and one closed-interval problem.</p>"
+   },
+   {
+    "type": "heading",
+    "text": "Can you do each of these?",
+    "id": "checklist"
+   },
+   {
+    "type": "prose",
+    "html": "<p>Go through the list. Anything you can't do in about 3 minutes goes into step 4 of tonight's plan. The ones with a blue border are worth the most time.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">§2.8</span><p>Find \\(f'(x)\\) from the <strong>limit definition</strong> \\(\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}\\), including \\(\\sqrt{x}\\) (multiply by the conjugate) and \\(\\frac1x\\) (common denominator). <a href=\"/2-8/\">Practice →</a></p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">§3.1</span><p>Rewrite roots and fractions as powers, then use the power rule. Tangent line at a point. <a href=\"/3-1/\">Practice →</a></p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">§3.2</span><p>Product and quotient rules without mixing up the order: “low d-high minus high d-low, over low squared.” <a href=\"/3-2/\">Practice →</a></p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">§3.3</span><p>All 6 trig derivatives, \\(\\lim\\frac{\\sin\\theta}{\\theta}=1\\), and proving \\((\\cot x)'=-\\csc^2x\\) with the quotient rule. <a href=\"/3-3/\">Practice →</a></p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">§3.4</span><p>Chain rule with 2–3 layers: outside′ (inside unchanged) × inside′. <a href=\"/3-4/\">Practice →</a></p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">§3.5</span><p>Implicit differentiation: every \\(y\\) term gets \\(y'\\); collect \\(y'\\) terms, factor, divide. Tangent line to a curve. <a href=\"/3-5/\">Practice →</a></p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">§3.6</span><p>\\(\\frac{u'}{u}\\), \\(\\log_b\\), \\(b^x\\), log differentiation for \\(x^x\\), and inverse trig with an inside \\(u\\). <a href=\"/3-6/\">Practice →</a></p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">§3.9</span><p>Related rates from scratch: draw, equation, differentiate in \\(t\\), plug in last. Ladders, cones, shadows, two cars. <a href=\"/3-9/\">Practice →</a></p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">§3.10</span><p>\\(L(x)=f(a)+f'(a)(x-a)\\) to estimate \\(\\sqrt{4.02}\\), \\((1.999)^4\\), \\(e^{0.1}\\); \\(dy\\) vs \\(\\Delta y\\). <a href=\"/3-10/\">Practice →</a></p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">§3.11</span><p>sinh/cosh definitions, values like \\(\\cosh(\\ln 5)\\), derivatives (cosh has no minus), \\(\\cosh^2-\\sinh^2=1\\). <a href=\"/3-11/\">Practice →</a></p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">§4.1</span><p>Critical numbers (top = 0, bottom = 0, must be in the domain) and the Closed Interval Method table. <a href=\"/4-1/\">Practice →</a></p>"
+     }
+    ]
    },
    {
     "type": "heading",
@@ -7578,15 +7645,28 @@ export const sections: Section[] = [
    },
    {
     "type": "prose",
-    "html": "<p>Midterm 1 was on Sep 29, so Midterm 2 most likely covers everything taught since then: the end of Chapter 2 through §4.1. The syllabus skips §3.7 and §3.8. Your instructor holds a review the class meeting before each exam (Tue, Oct 27, the same day as Quiz 4), so confirm the exact list there.</p><div class=\"cover-grid\"><a href=\"/2-8/\"><b>§2.8</b><span>The derivative as a function</span></a><a href=\"/3-1/\"><b>§3.1</b><span>Power rule, eˣ</span></a><a href=\"/3-2/\"><b>§3.2</b><span>Product & quotient rules</span></a><a href=\"/3-3/\"><b>§3.3</b><span>Trig derivatives & limits</span></a><a href=\"/3-4/\"><b>§3.4</b><span>Chain rule</span></a><a href=\"/3-5/\"><b>§3.5</b><span>Implicit differentiation</span></a><a href=\"/3-6/\"><b>§3.6</b><span>Logs & inverse trig</span></a><a href=\"/3-9/\"><b>§3.9</b><span>Related rates</span></a><a href=\"/3-10/\"><b>§3.10</b><span>Linear approximation</span></a><a href=\"/3-11/\"><b>§3.11</b><span>Hyperbolic functions</span></a><a href=\"/4-1/\"><b>§4.1</b><span>Max & min values</span></a></div><p class='callout'><strong>Closed book, closed notes, no calculator.</strong> You have to know every formula by heart and do the arithmetic by hand. That's what the Memorize page and the mock midterm below are for.</p>"
+    "html": "<p>Midterm 1 was on Sep 29, so Midterm 2 most likely covers everything taught since then: the end of Chapter 2 through §4.1. The syllabus skips §3.7 and §3.8. If your instructor added anything after §4.1 when the date moved, check your notes from the review class.</p><div class=\"cover-grid\"><a href=\"/2-8/\"><b>§2.8</b><span>The derivative as a function</span></a><a href=\"/3-1/\"><b>§3.1</b><span>Power rule, eˣ</span></a><a href=\"/3-2/\"><b>§3.2</b><span>Product & quotient rules</span></a><a href=\"/3-3/\"><b>§3.3</b><span>Trig derivatives & limits</span></a><a href=\"/3-4/\"><b>§3.4</b><span>Chain rule</span></a><a href=\"/3-5/\"><b>§3.5</b><span>Implicit differentiation</span></a><a href=\"/3-6/\"><b>§3.6</b><span>Logs & inverse trig</span></a><a href=\"/3-9/\"><b>§3.9</b><span>Related rates</span></a><a href=\"/3-10/\"><b>§3.10</b><span>Linear approximation</span></a><a href=\"/3-11/\"><b>§3.11</b><span>Hyperbolic functions</span></a><a href=\"/4-1/\"><b>§4.1</b><span>Max & min values</span></a></div><p class='callout'><strong>Closed book, closed notes, no calculator.</strong> You have to know every formula by heart and do the arithmetic by hand. That's what the Memorize page and the mock midterm below are for.</p>"
    },
    {
     "type": "heading",
-    "text": "Day-by-day plan"
+    "text": "Tomorrow morning"
    },
    {
-    "type": "prose",
-    "html": "<div class=\"compare\"><table><thead><tr><th>Day</th><th>Focus</th><th>Do this</th></tr></thead><tbody>\n<tr><th>Thu Oct 22</th><td>§3.6</td><td>Logs and log differentiation. Assigned #1–59 odd.</td></tr>\n<tr><th>Fri Oct 23</th><td>§3.11 + §3.10</td><td>Hyperbolic definitions and derivatives; linearization and differentials.</td></tr>\n<tr><th>Sat Oct 24</th><td>§3.9</td><td>Related rates: draw every problem. Then a <strong>short mock midterm</strong> to see where you stand.</td></tr>\n<tr><th>Sun Oct 25</th><td>§4.1 + Quiz 3 refresh</td><td>Critical numbers and the Closed Interval Method. Then redo the 18-question practice quiz (2.8–3.5), timed.</td></tr>\n<tr><th>Mon Oct 26</th><td>Quiz 4 review</td><td>Generate → Quiz 4 Mix, 20 problems. Memorize → Quiz 4 flashcards until you finish a round with no misses.</td></tr>\n<tr><th>Tue Oct 27</th><td>Quiz 4 + review class</td><td>Take the quiz. Write down anything the instructor emphasizes in the review. That evening: a <strong>full mock midterm</strong>.</td></tr>\n<tr><th>Wed Oct 28</th><td>Fix weak spots</td><td>Redo every problem you missed on the mocks, using the “Review” links. Then Generate → Quiz 3 Mix, 15 problems.</td></tr>\n<tr><th>Thu Oct 29</th><td>Midterm 2</td><td>Morning: one round of all flashcards and a read of the cheat sheet. Nothing new.</td></tr>\n</tbody></table></div>"
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Morning, 15 min</span><p>One round of flashcards and a read of the <a href=\"/cheat-sheet/\">cheat sheet</a>. <strong>Nothing new.</strong> Don't start a hard problem you can't finish.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Before you start</span><p>Write the formulas you're most afraid of forgetting in the margin of the exam as soon as you get it (arcsin, arctan, sec/csc, sinh/cosh).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Bring</span><p>Pencils, eraser, ID. No calculator, so practice arithmetic by hand tonight.</p>"
+     }
+    ]
    },
    {
     "type": "heading",
@@ -7650,9 +7730,9 @@ export const sections: Section[] = [
  {
   "id": "quiz",
   "slug": "quick-quiz",
-  "num": "Quiz 4 + Quiz 3",
+  "num": "Midterm 2 review",
   "title": "Quick quiz",
-  "lede": "Fast multiple-choice questions with instant feedback. Pick Quiz 4 (§3.6–4.1, 18 questions) or Quiz 3 (§2.8–3.5, 10 questions).",
+  "lede": "Fast multiple-choice questions with instant feedback. Pick Midterm 2 (all 28), Quiz 4 (§3.6–4.1) or Quiz 3 (§2.8–3.5).",
   "blocks": [
    {
     "type": "quiz",

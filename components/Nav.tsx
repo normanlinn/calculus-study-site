@@ -42,7 +42,7 @@ function ThemeToggle() {
 
 // Study tools live in a menu so the bar never runs out of room.
 const TOOLS: Record<string, string> = {
-  "midterm-2": "Plan and a timed mock exam for Thu, Oct 29",
+  "midterm-2": "Tonight's plan and a timed mock exam for Thu, Nov 5",
   grades: "What you need for an A or a B",
   "quick-quiz": "10 fast questions with instant feedback",
   generate: "Unlimited new problems, and check your own",
