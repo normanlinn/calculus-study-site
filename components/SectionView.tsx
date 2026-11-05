@@ -7,6 +7,7 @@ import SheetCards from "./SheetCards";
 import { LazyChecker, LazyGenerator, LazyGrades, LazyInvTrig, LazyMock } from "./GenerateTools";
 import Countdown from "./Countdown";
 import Reveal, { Stagger } from "./Reveal";
+import ExamScore from "./ExamScore";
 
 const H = ({ html, className }: { html: string; className?: string }) => <div className={className} dangerouslySetInnerHTML={{ __html: html }} />;
 
@@ -52,6 +53,8 @@ function BlockView({ b }: { b: Block }) {
       return <LazyGrades />;
     case "invtrig":
       return <LazyInvTrig />;
+    case "examscore":
+      return <ExamScore items={b.items} total={b.total} />;
   }
 }
 

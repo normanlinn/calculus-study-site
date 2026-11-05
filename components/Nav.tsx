@@ -42,6 +42,8 @@ function ThemeToggle() {
 
 // Study tools live in a menu so the bar never runs out of room.
 const TOOLS: Record<string, string> = {
+  "quiz-review": "Every Quiz 3 and Quiz 4 problem, solved line by line",
+  "midterm-practice": "Shaped like the real midterm: 52 points, 2 hours, live score",
   "crash-course": "Every Midterm 2 section in 10 short lessons",
   "midterm-2": "Tonight's plan and a timed mock exam for Thu, Nov 5",
   grades: "What you need for an A or a B",

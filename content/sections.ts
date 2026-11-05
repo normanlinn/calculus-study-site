@@ -7561,12 +7561,1936 @@ export const sections: Section[] = [
   "unit": "q4"
  },
  {
+  "id": "qr",
+  "slug": "quiz-review",
+  "num": "Midterm 2 · from Quiz 3 + 4",
+  "title": "Quiz 3 & 4 review",
+  "lede": "Every Quiz 3 and Quiz 4 problem with the correct answer, a line-by-line walkthrough, and the mistake to avoid. Midterm 2 is built from these.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p>Every problem from <strong>Quiz 3</strong> (§3.1–3.6) and <strong>Quiz 4</strong> (§3.6–4.1), solved correctly. Your professor said Midterm 2 comes from these two quizzes, so this is the most important page to study.</p>\n<ol class=\"steps\">\n<li>Cover the solution and do the problem on paper first.</li>\n<li>Open <strong>Step through it like a debugger</strong> and compare line by line. The first line that differs is what to fix.</li>\n<li>Open <strong>Common mistake</strong> to see the error people usually make on that problem.</li>\n</ol>\n<p class=\"callout\">After this page, take the <a href=\"/midterm-practice/\">Midterm 2 practice exam</a>: 52 points in 2 hours, the same style as these quizzes.</p>"
+   },
+   {
+    "type": "heading",
+    "text": "Quiz 3",
+    "id": "quiz-3"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "qr3-1a",
+      "source": "Quiz 3 · #1a · §3.1",
+      "href": "3-1",
+      "question": "Differentiate \\(y=3e^x+\\dfrac{4}{\\sqrt[3]{x}}\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(y'=3e^x-\\dfrac{4}{3}x^{-4/3}=3e^x-\\dfrac{4}{3\\sqrt[3]{x^4}}\\)</p>"
+       },
+       {
+        "label": "Common mistake",
+        "html": "<p>Writing \\(\\sqrt{x^4}\\) instead of \\(\\sqrt[3]{x^4}\\). In \\(x^{4/3}\\), the <b>bottom</b> number 3 is the root.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=3e^x+4x^{-1/3}",
+        "why": "Rewrite the root as a power first: \\(\\sqrt[3]x=x^{1/3}\\), and 1 over it is \\(x^{-1/3}\\)."
+       },
+       {
+        "code": "(3e^x)'=3e^x",
+        "why": "\\(e^x\\) is its own derivative; the 3 just comes along."
+       },
+       {
+        "code": "(4x^{-1/3})'=4\\cdot\\big(-\\tfrac13\\big)x^{-1/3-1}=-\\tfrac43x^{-4/3}",
+        "why": "Power rule: bring down \\(-\\frac13\\), then \\(-\\frac13-1=-\\frac43\\)."
+       },
+       {
+        "code": "y'=3e^x-\\frac{4}{3x^{4/3}}=3e^x-\\frac{4}{3\\sqrt[3]{x^4}}",
+        "why": "Rewrite with a root. It's a <b>cube</b> root of \\(x^4\\) (denominator 3 in the exponent), not a square root.",
+        "watch": [
+         [
+          "y'",
+          "3e^x-\\frac{4}{3\\sqrt[3]{x^4}}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "qr3-1b",
+      "source": "Quiz 3 · #1b · §3.2",
+      "href": "3-2",
+      "question": "Differentiate \\(f(x)=\\dfrac{x^2}{1+e^x}\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(f'(x)=\\dfrac{2x(1+e^x)-x^2e^x}{(1+e^x)^2}=\\dfrac{x\\,(2+2e^x-xe^x)}{(1+e^x)^2}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "hi=x^2,\\quad lo=1+e^x",
+        "why": "A fraction: quotient rule.",
+        "watch": [
+         [
+          "hi'",
+          "2x"
+         ],
+         [
+          "lo'",
+          "e^x"
+         ]
+        ]
+       },
+       {
+        "code": "f'=\\frac{lo\\cdot hi'-hi\\cdot lo'}{lo^2}",
+        "why": "“Low d-high minus high d-low, over low squared.”"
+       },
+       {
+        "code": "f'=\\frac{(1+e^x)(2x)-x^2e^x}{(1+e^x)^2}",
+        "why": "Plug in."
+       },
+       {
+        "code": "=\\frac{2x+2xe^x-x^2e^x}{(1+e^x)^2}=\\frac{x(2+2e^x-xe^x)}{(1+e^x)^2}",
+        "why": "Expand the top and factor out \\(x\\). Either form is fine.",
+        "watch": [
+         [
+          "f'",
+          "\\frac{2x+2xe^x-x^2e^x}{(1+e^x)^2}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "qr3-2",
+      "source": "Quiz 3 · #2 · §3.3",
+      "href": "3-3",
+      "question": "Differentiate \\(f(\\theta)=\\dfrac{\\sin\\theta}{1+\\cos\\theta}\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(f'(\\theta)=\\dfrac{1}{1+\\cos\\theta}\\)</p>"
+       },
+       {
+        "label": "Common mistake",
+        "html": "<p>Stopping before the cancellation. The top \\(\\cos\\theta+1\\) is the same as one factor of the bottom.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "hi=\\sin\\theta,\\quad lo=1+\\cos\\theta",
+        "why": "Quotient rule.",
+        "watch": [
+         [
+          "hi'",
+          "\\cos\\theta"
+         ],
+         [
+          "lo'",
+          "-\\sin\\theta"
+         ]
+        ]
+       },
+       {
+        "code": "f'=\\frac{(1+\\cos\\theta)\\cos\\theta-\\sin\\theta(-\\sin\\theta)}{(1+\\cos\\theta)^2}",
+        "why": "Low d-high minus high d-low. Note the \\(-\\sin\\theta\\) from \\((\\cos\\theta)'\\)."
+       },
+       {
+        "code": "=\\frac{\\cos\\theta+\\cos^2\\theta+\\sin^2\\theta}{(1+\\cos\\theta)^2}",
+        "why": "Expand. Minus times minus is plus."
+       },
+       {
+        "code": "=\\frac{\\cos\\theta+1}{(1+\\cos\\theta)^2}",
+        "why": "\\(\\sin^2\\theta+\\cos^2\\theta=1\\). Look for this identity every time both squares appear."
+       },
+       {
+        "code": "f'(\\theta)=\\frac{1}{1+\\cos\\theta}",
+        "why": "Cancel one factor of \\((1+\\cos\\theta)\\).",
+        "watch": [
+         [
+          "f'",
+          "\\frac{1}{1+\\cos\\theta}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "qr3-3",
+      "source": "Quiz 3 · #3 · §3.3",
+      "href": "3-3",
+      "question": "Prove that \\(\\dfrac{d}{dx}(\\cot x)=-\\csc^2x\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(\\dfrac{d}{dx}\\cot x=\\dfrac{-\\sin^2x-\\cos^2x}{\\sin^2x}=-\\dfrac{1}{\\sin^2x}=-\\csc^2x\\)</p>"
+       },
+       {
+        "label": "Common mistake",
+        "html": "<p>Putting \\(\\cos x\\cdot\\cos x\\) first. With “low d-high minus high d-low”, the first term is \\(\\sin x\\cdot(-\\sin x)\\). Swapping them flips the sign and gives \\(+\\csc^2x\\).</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\cot x=\\frac{\\cos x}{\\sin x}",
+        "why": "Write cot in terms of sin and cos. Now it's a quotient.",
+        "watch": [
+         [
+          "hi",
+          "\\cos x"
+         ],
+         [
+          "lo",
+          "\\sin x"
+         ]
+        ]
+       },
+       {
+        "code": "hi'=-\\sin x,\\quad lo'=\\cos x",
+        "why": "The two basic derivatives.",
+        "watch": [
+         [
+          "hi'",
+          "-\\sin x"
+         ],
+         [
+          "lo'",
+          "\\cos x"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{d}{dx}\\cot x=\\frac{\\sin x\\,(-\\sin x)-\\cos x\\,(\\cos x)}{\\sin^2x}",
+        "why": "Low d-high <b>minus</b> high d-low. The low is \\(\\sin x\\), so it goes first."
+       },
+       {
+        "code": "=\\frac{-\\sin^2x-\\cos^2x}{\\sin^2x}=\\frac{-(\\sin^2x+\\cos^2x)}{\\sin^2x}",
+        "why": "Both terms on top are negative; factor out the minus."
+       },
+       {
+        "code": "=\\frac{-1}{\\sin^2x}",
+        "why": "\\(\\sin^2x+\\cos^2x=1\\)."
+       },
+       {
+        "code": "=-\\csc^2x\\ \\ \\checkmark",
+        "why": "\\(\\frac{1}{\\sin x}=\\csc x\\). Proof done.",
+        "watch": [
+         [
+          "(\\cot x)'",
+          "-\\csc^2x"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "qr3-4",
+      "source": "Quiz 3 · #4 · §3.3",
+      "href": "3-3",
+      "question": "Find \\(\\displaystyle\\lim_{x\\to0}\\frac{\\sin3x}{5x^3-4x}\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(-\\dfrac34\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\lim_{x\\to0}\\frac{\\sin3x}{5x^3-4x}",
+        "why": "Plugging in 0 gives \\(\\frac00\\), so we need the trig limit."
+       },
+       {
+        "code": "=\\lim_{x\\to0}\\frac{\\sin3x}{x(5x^2-4)}",
+        "why": "Factor \\(x\\) out of the bottom."
+       },
+       {
+        "code": "=\\lim_{x\\to0}\\frac{\\sin3x}{x}\\cdot\\frac{1}{5x^2-4}",
+        "why": "Split into a trig-limit piece and an ordinary piece."
+       },
+       {
+        "code": "\\frac{\\sin3x}{x}=3\\cdot\\frac{\\sin3x}{3x}\\to3",
+        "why": "Make the bottom match the angle: multiply and divide by 3.",
+        "watch": [
+         [
+          "\\lim\\frac{\\sin3x}x",
+          "3"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{1}{5x^2-4}\\to\\frac{1}{-4}",
+        "why": "This piece has no problem at 0: just plug in.",
+        "watch": [
+         [
+          "\\lim\\frac1{5x^2-4}",
+          "-\\tfrac14"
+         ]
+        ]
+       },
+       {
+        "code": "3\\cdot\\Big(-\\frac14\\Big)=-\\frac34",
+        "why": "Multiply the two limits.",
+        "watch": [
+         [
+          "\\text{limit}",
+          "-\\tfrac34"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "qr3-5a",
+      "source": "Quiz 3 · #5a · §3.4",
+      "href": "3-4",
+      "question": "Differentiate \\(f(\\theta)=\\cos(\\theta^2)\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(f'(\\theta)=-2\\theta\\sin(\\theta^2)\\)</p>"
+       },
+       {
+        "label": "Common mistake",
+        "html": "<p>Treating \\(\\cos(\\theta^2)\\) as \\((\\cos\\theta)^2\\) and getting \\(-2\\sin\\theta\\cos\\theta\\). Look at where the square is: inside the parentheses.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f=\\cos(u),\\quad u=\\theta^2",
+        "why": "The square is <b>inside</b> the cosine. This is not \\((\\cos\\theta)^2\\).",
+        "watch": [
+         [
+          "u",
+          "\\theta^2"
+         ],
+         [
+          "u'",
+          "2\\theta"
+         ]
+        ]
+       },
+       {
+        "code": "f'=-\\sin(u)\\cdot u'",
+        "why": "Chain rule: derivative of cos is \\(-\\sin\\), keep the inside, times the inside's derivative."
+       },
+       {
+        "code": "f'=-\\sin(\\theta^2)\\cdot2\\theta=-2\\theta\\sin(\\theta^2)",
+        "why": "Substitute.",
+        "watch": [
+         [
+          "f'",
+          "-2\\theta\\sin(\\theta^2)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "qr3-5b",
+      "source": "Quiz 3 · #5b · §3.4",
+      "href": "3-4",
+      "question": "Differentiate \\(y=e^{\\tan\\theta}\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(y'=e^{\\tan\\theta}\\sec^2\\theta\\)</p>"
+       },
+       {
+        "label": "Common mistake",
+        "html": "<p>Writing just \\(e^{\\tan\\theta}\\) and forgetting the \\(\\sec^2\\theta\\) from the chain rule.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=e^{u},\\quad u=\\tan\\theta",
+        "why": "\\(e\\) to a function: the exponent is the inside.",
+        "watch": [
+         [
+          "u'",
+          "\\sec^2\\theta"
+         ]
+        ]
+       },
+       {
+        "code": "y'=e^{u}\\cdot u'",
+        "why": "\\((e^u)'=e^u\\cdot u'\\): copy the exponential, multiply by the exponent's derivative."
+       },
+       {
+        "code": "y'=e^{\\tan\\theta}\\sec^2\\theta",
+        "why": "Substitute.",
+        "watch": [
+         [
+          "y'",
+          "e^{\\tan\\theta}\\sec^2\\theta"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "qr3-5c",
+      "source": "Quiz 3 · #5c · §3.6",
+      "href": "3-6",
+      "question": "Differentiate \\(r(t)=10^{2\\sqrt t}\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(r'(t)=\\dfrac{10^{2\\sqrt t}\\ln10}{\\sqrt t}\\)</p>"
+       },
+       {
+        "label": "Common mistake",
+        "html": "<p>Using the power rule or product rule on \\(10^{2\\sqrt t}\\). When the variable is in the <b>exponent</b>, use \\((b^u)'=b^u\\ln b\\cdot u'\\).</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "r=10^{u},\\quad u=2\\sqrt t",
+        "why": "The base is the constant 10 and the variable is in the exponent. It is <b>not</b> a product, so no product rule.",
+        "watch": [
+         [
+          "u",
+          "2\\sqrt t"
+         ]
+        ]
+       },
+       {
+        "code": "u'=2\\cdot\\frac{1}{2\\sqrt t}=\\frac{1}{\\sqrt t}",
+        "why": "Derivative of \\(\\sqrt t\\) is \\(\\frac{1}{2\\sqrt t}\\).",
+        "watch": [
+         [
+          "u'",
+          "\\frac1{\\sqrt t}"
+         ]
+        ]
+       },
+       {
+        "code": "(b^u)'=b^u\\ln b\\cdot u'",
+        "why": "Exponential with base \\(b\\): copy it, multiply by \\(\\ln b\\), multiply by \\(u'\\)."
+       },
+       {
+        "code": "r'(t)=10^{2\\sqrt t}\\ln10\\cdot\\frac1{\\sqrt t}",
+        "why": "Substitute.",
+        "watch": [
+         [
+          "r'",
+          "\\frac{10^{2\\sqrt t}\\ln10}{\\sqrt t}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "qr3-6",
+      "source": "Quiz 3 · #6 · §3.5",
+      "href": "3-5",
+      "question": "Find \\(y''\\) by implicit differentiation if \\(x^2+y^2=1\\). Simplify completely.",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(y''=-\\dfrac{1}{y^3}\\)</p>"
+       },
+       {
+        "label": "Common mistake",
+        "html": "<p>Writing \\(\\frac{dy^2}{dx^2}\\) terms instead of differentiating \\(y'=-\\frac xy\\). Always find \\(y'\\) first, then differentiate <b>that</b>.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "2x+2y\\,y'=0",
+        "why": "Differentiate both sides; \\(y^2\\) gives \\(2y\\,y'\\); the constant 1 gives 0."
+       },
+       {
+        "code": "y'=-\\frac{x}{y}",
+        "why": "Solve for \\(y'\\) first. You need it later.",
+        "watch": [
+         [
+          "y'",
+          "-\\frac xy"
+         ]
+        ]
+       },
+       {
+        "code": "y''=-\\frac{(1)\\,y-x\\,y'}{y^2}",
+        "why": "Differentiate \\(y'=-\\frac xy\\) with the quotient rule. Top is \\(x\\), bottom is \\(y\\), and the bottom's derivative is \\(y'\\)."
+       },
+       {
+        "code": "=-\\frac{y-x\\big(-\\frac xy\\big)}{y^2}=-\\frac{y+\\frac{x^2}{y}}{y^2}",
+        "why": "Replace \\(y'\\) with \\(-\\frac xy\\)."
+       },
+       {
+        "code": "=-\\frac{\\frac{y^2+x^2}{y}}{y^2}=-\\frac{x^2+y^2}{y^3}",
+        "why": "Combine the top over \\(y\\), then move that \\(y\\) to the bottom."
+       },
+       {
+        "code": "y''=-\\frac{1}{y^3}",
+        "why": "“Simplify completely” means use the original equation: \\(x^2+y^2=1\\).",
+        "watch": [
+         [
+          "y''",
+          "-\\frac1{y^3}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "qr3-7",
+      "source": "Quiz 3 · #7 · §3.6",
+      "href": "3-6",
+      "question": "Find the derivative of \\(y=\\arctan\\sqrt x\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(y'=\\dfrac{1}{2\\sqrt x\\,(1+x)}\\)</p>"
+       },
+       {
+        "label": "Common mistake",
+        "html": "<p>Not knowing \\((\\tan^{-1}x)'=\\frac{1}{1+x^2}\\). Memorize it: “one over one plus x squared,” then put \\(u'\\) on top.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=\\tan^{-1}(u),\\quad u=\\sqrt x",
+        "why": "Arctan of an inside.",
+        "watch": [
+         [
+          "u",
+          "\\sqrt x"
+         ],
+         [
+          "u'",
+          "\\frac1{2\\sqrt x}"
+         ],
+         [
+          "u^2",
+          "x"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{u'}{1+u^2}",
+        "why": "Rule: \\((\\tan^{-1}u)'=\\frac{u'}{1+u^2}\\)."
+       },
+       {
+        "code": "y'=\\frac{\\frac{1}{2\\sqrt x}}{1+x}",
+        "why": "Substitute; \\((\\sqrt x)^2=x\\)."
+       },
+       {
+        "code": "y'=\\frac{1}{2\\sqrt x\\,(1+x)}",
+        "why": "Move \\(2\\sqrt x\\) into the denominator.",
+        "watch": [
+         [
+          "y'",
+          "\\frac1{2\\sqrt x(1+x)}"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Quiz 4",
+    "id": "quiz-4"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "qr4-1",
+      "source": "Quiz 4 · #1 · §3.6",
+      "href": "3-6",
+      "question": "Differentiate \\(f(x)=\\log_{10}(1+\\cos x)\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(f'(x)=-\\dfrac{\\sin x}{(1+\\cos x)\\ln10}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f=\\log_{10}u,\\quad u=1+\\cos x",
+        "why": "Log with base 10 of an inside.",
+        "watch": [
+         [
+          "u",
+          "1+\\cos x"
+         ],
+         [
+          "u'",
+          "-\\sin x"
+         ]
+        ]
+       },
+       {
+        "code": "(\\log_b u)'=\\frac{u'}{u\\ln b}",
+        "why": "Same as \\(\\ln\\), but divide by an extra \\(\\ln b\\)."
+       },
+       {
+        "code": "f'(x)=\\frac{-\\sin x}{(1+\\cos x)\\ln10}",
+        "why": "Substitute.",
+        "watch": [
+         [
+          "f'",
+          "-\\frac{\\sin x}{(1+\\cos x)\\ln10}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "qr4-2",
+      "source": "Quiz 4 · #2 · §3.6",
+      "href": "3-6",
+      "question": "Use logarithmic differentiation to find the derivative of \\(y=x^{e^x}\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(y'=x^{e^x}\\Big(e^x\\ln x+\\dfrac{e^x}{x}\\Big)\\)</p>"
+       },
+       {
+        "label": "Common mistake",
+        "html": "<p>Writing \\(\\ln x\\cdot e^x\\) as “\\(\\ln x^{e^x}\\)” in the product rule. The second term is \\(e^x\\cdot\\frac1x\\), and the first is \\(e^x\\cdot\\ln x\\).</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\ln y=\\ln\\big(x^{e^x}\\big)=e^x\\ln x",
+        "why": "Take \\(\\ln\\) of both sides; the exponent \\(e^x\\) comes down in front."
+       },
+       {
+        "code": "\\frac{y'}{y}=(e^x)'\\ln x+e^x(\\ln x)'",
+        "why": "Left: \\((\\ln y)'=\\frac{y'}{y}\\). Right: <b>product rule</b> on \\(e^x\\cdot\\ln x\\)."
+       },
+       {
+        "code": "\\frac{y'}{y}=e^x\\ln x+\\frac{e^x}{x}",
+        "why": "\\((e^x)'=e^x\\) and \\((\\ln x)'=\\frac1x\\)."
+       },
+       {
+        "code": "y'=x^{e^x}\\Big(e^x\\ln x+\\frac{e^x}{x}\\Big)",
+        "why": "Multiply by \\(y=x^{e^x}\\).",
+        "watch": [
+         [
+          "y'",
+          "x^{e^x}\\left(e^x\\ln x+\\frac{e^x}x\\right)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "qr4-3",
+      "source": "Quiz 4 · #3 · §3.9",
+      "href": "3-9",
+      "question": "The altitude of a triangle is increasing at 1 cm/min while the area is increasing at \\(2\\text{ cm}^2/\\text{min}\\). At what rate is the base changing when the altitude is 10 cm and the area is \\(100\\text{ cm}^2\\)?",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(\\dfrac{db}{dt}=-1.6\\) cm/min (the base is shrinking)</p>"
+       },
+       {
+        "label": "Common mistake",
+        "html": "<p>Using Pythagoras or a circle formula. Read what the problem is about: area of a triangle → \\(A=\\frac12bh\\).</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "A=\\tfrac12bh",
+        "why": "<b>Pick the equation that connects the quantities in the question:</b> area, base and altitude. There's no hypotenuse here, so it is <b>not</b> Pythagoras.",
+        "watch": [
+         [
+          "dh/dt",
+          "1"
+         ],
+         [
+          "dA/dt",
+          "2"
+         ],
+         [
+          "\\text{want}",
+          "db/dt"
+         ]
+        ]
+       },
+       {
+        "code": "b=\\frac{2A}{h}=\\frac{2(100)}{10}=20",
+        "why": "We need the base at this moment; get it from the area formula.",
+        "watch": [
+         [
+          "h",
+          "10"
+         ],
+         [
+          "b",
+          "20"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{dA}{dt}=\\frac12\\Big(\\frac{db}{dt}h+b\\frac{dh}{dt}\\Big)",
+        "why": "Differentiate in \\(t\\). Both \\(b\\) and \\(h\\) change, so \\(bh\\) needs the <b>product rule</b>."
+       },
+       {
+        "code": "2=\\frac12\\Big(10\\frac{db}{dt}+20\\cdot1\\Big)",
+        "why": "Now plug in."
+       },
+       {
+        "code": "4=10\\frac{db}{dt}+20\\ \\Rightarrow\\ \\frac{db}{dt}=-1.6",
+        "why": "Multiply by 2, subtract 20, divide by 10. Negative means the base is getting shorter.",
+        "watch": [
+         [
+          "db/dt",
+          "-1.6"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "qr4-4",
+      "source": "Quiz 4 · #4 · §3.10",
+      "href": "3-10",
+      "question": "Find the differential \\(dy\\) and evaluate it for \\(y=x^2+2x\\), \\(x=1\\), \\(dx=\\frac12\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(dy=(2x+2)\\,dx\\); \\(dy=2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "dy=f'(x)\\,dx=(2x+2)\\,dx",
+        "why": "Differential: take the derivative and attach \\(dx\\).",
+        "watch": [
+         [
+          "dy",
+          "(2x+2)dx"
+         ]
+        ]
+       },
+       {
+        "code": "dy=(2\\cdot1+2)\\cdot\\tfrac12=2",
+        "why": "Plug in \\(x=1\\) and \\(dx=\\frac12\\).",
+        "watch": [
+         [
+          "dy",
+          "2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "qr4-5",
+      "source": "Quiz 4 · #5 · §3.11",
+      "href": "3-11",
+      "question": "Use the definition of the hyperbolic function to find \\(\\displaystyle\\lim_{x\\to\\infty}\\tanh x\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(1\\)</p>"
+       },
+       {
+        "label": "Common mistake",
+        "html": "<p>Writing only \\(\\frac{\\sinh x}{\\cosh x}=1\\). The question asks for the exponential definition and the dividing step.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\tanh x=\\frac{\\sinh x}{\\cosh x}=\\frac{e^x-e^{-x}}{e^x+e^{-x}}",
+        "why": "“Use the definition” means write it in exponentials. Just writing \\(\\frac{\\sinh x}{\\cosh x}\\) and the answer doesn't show why."
+       },
+       {
+        "code": "=\\frac{e^x-e^{-x}}{e^x+e^{-x}}\\cdot\\frac{e^{-x}}{e^{-x}}=\\frac{1-e^{-2x}}{1+e^{-2x}}",
+        "why": "Divide top and bottom by the biggest term, \\(e^x\\) (same as multiplying by \\(e^{-x}\\))."
+       },
+       {
+        "code": "x\\to\\infty:\\ e^{-2x}\\to0",
+        "why": "\\(e^{-2x}=\\frac{1}{e^{2x}}\\), and the bottom grows without bound."
+       },
+       {
+        "code": "\\lim_{x\\to\\infty}\\tanh x=\\frac{1-0}{1+0}=1",
+        "why": "Substitute the limit.",
+        "watch": [
+         [
+          "\\lim",
+          "1"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "qr4-6",
+      "source": "Quiz 4 · #6 · §3.11",
+      "href": "3-11",
+      "question": "Find the derivative of \\(f(x)=\\tanh\\sqrt{x^2+4}\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(f'(x)=\\dfrac{x\\,\\operatorname{sech}^2\\sqrt{x^2+4}}{\\sqrt{x^2+4}}\\)</p>"
+       },
+       {
+        "label": "Common mistake",
+        "html": "<p>Copying \\(\\tanh\\) unchanged. The derivative of tanh is \\(\\operatorname{sech}^2\\), and the chain rule adds \\(u'\\).</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f=\\tanh u,\\quad u=\\sqrt{x^2+4}",
+        "why": "Outer tanh, inner square root.",
+        "watch": [
+         [
+          "u",
+          "\\sqrt{x^2+4}"
+         ]
+        ]
+       },
+       {
+        "code": "(\\tanh u)'=\\operatorname{sech}^2u\\cdot u'",
+        "why": "Hyperbolic table: \\((\\tanh x)'=\\operatorname{sech}^2x\\), same as \\((\\tan x)'=\\sec^2x\\)."
+       },
+       {
+        "code": "u'=\\frac{2x}{2\\sqrt{x^2+4}}=\\frac{x}{\\sqrt{x^2+4}}",
+        "why": "\\((\\sqrt w)'=\\frac{w'}{2\\sqrt w}\\) with \\(w=x^2+4\\).",
+        "watch": [
+         [
+          "u'",
+          "\\frac x{\\sqrt{x^2+4}}"
+         ]
+        ]
+       },
+       {
+        "code": "f'(x)=\\operatorname{sech}^2\\!\\big(\\sqrt{x^2+4}\\big)\\cdot\\frac{x}{\\sqrt{x^2+4}}",
+        "why": "Multiply.",
+        "watch": [
+         [
+          "f'",
+          "\\frac{x\\operatorname{sech}^2\\sqrt{x^2+4}}{\\sqrt{x^2+4}}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "qr4-7",
+      "source": "Quiz 4 · #7 · §4.1",
+      "href": "4-1",
+      "question": "Find the absolute maximum and minimum values of \\(f(x)=\\dfrac{x}{x^2+1}\\) on \\([0,2]\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">Absolute max \\(f(1)=\\tfrac12\\); absolute min \\(f(0)=0\\)</p>"
+       },
+       {
+        "label": "Common mistake",
+        "html": "<p>Swapping the quotient-rule order to \\(\\frac{(2x)(x)-(x^2+1)}{(x^2+1)^2}\\). That flips the sign of \\(f'\\), but you also must evaluate \\(f\\) (not \\(f'\\)) at the candidates.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "hi=x,\\quad lo=x^2+1",
+        "why": "Step 1 of the Closed Interval Method: the derivative. Quotient rule.",
+        "watch": [
+         [
+          "hi'",
+          "1"
+         ],
+         [
+          "lo'",
+          "2x"
+         ]
+        ]
+       },
+       {
+        "code": "f'(x)=\\frac{(x^2+1)(1)-x(2x)}{(x^2+1)^2}",
+        "why": "Low d-high minus high d-low. The low \\((x^2+1)\\) goes first."
+       },
+       {
+        "code": "f'(x)=\\frac{1-x^2}{(x^2+1)^2}",
+        "why": "\\(x^2+1-2x^2=1-x^2\\).",
+        "watch": [
+         [
+          "f'",
+          "\\frac{1-x^2}{(x^2+1)^2}"
+         ]
+        ]
+       },
+       {
+        "code": "1-x^2=0\\Rightarrow x=\\pm1;\\ \\text{keep }x=1",
+        "why": "Critical numbers: top = 0. The bottom is never 0. \\(-1\\) is outside \\([0,2]\\), so drop it."
+       },
+       {
+        "code": "f(0)=0,\\quad f(1)=\\tfrac12,\\quad f(2)=\\tfrac25",
+        "why": "Evaluate the <b>original</b> \\(f\\) at the critical number and both endpoints.",
+        "watch": [
+         [
+          "f(0)",
+          "0"
+         ],
+         [
+          "f(1)",
+          "\\tfrac12"
+         ],
+         [
+          "f(2)",
+          "\\tfrac25"
+         ]
+        ]
+       },
+       {
+        "code": "\\max=f(1)=\\tfrac12,\\quad\\min=f(0)=0",
+        "why": "Compare: \\(\\frac12=0.5>\\frac25=0.4>0\\).",
+        "watch": [
+         [
+          "\\max",
+          "\\tfrac12"
+         ],
+         [
+          "\\min",
+          "0"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "qr4-8",
+      "source": "Quiz 4 · #8 · extra credit (Newton's method, §4.8)",
+      "href": null,
+      "question": "The sequence \\(x_1,x_2,\\dots\\) converges to \\(\\sqrt[m]{a}\\) (\\(a>0\\), \\(m\\) a counting number), where (a) \\(x_1=\\,\\)? and (b) \\(x_{n+1}=\\,\\)?",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">(a) \\(x_1\\) = any initial guess (\\(>0\\)); (b) \\(x_{n+1}=\\dfrac1m\\Big[(m-1)x_n+\\dfrac{a}{x_n^{\\,m-1}}\\Big]\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=x^m-a",
+        "why": "\\(\\sqrt[m]a\\) is the positive root of \\(x^m-a=0\\). This is Newton's method, which finds roots by repeatedly following tangent lines."
+       },
+       {
+        "code": "x_{n+1}=x_n-\\frac{f(x_n)}{f'(x_n)}",
+        "why": "Newton's formula. Start from an initial guess \\(x_1\\)."
+       },
+       {
+        "code": "=x_n-\\frac{x_n^m-a}{m\\,x_n^{m-1}}",
+        "why": "\\(f'(x)=mx^{m-1}\\)."
+       },
+       {
+        "code": "=x_n-\\frac{x_n}{m}+\\frac{a}{m\\,x_n^{m-1}}",
+        "why": "Split the fraction: \\(\\frac{x_n^m}{mx_n^{m-1}}=\\frac{x_n}{m}\\)."
+       },
+       {
+        "code": "x_{n+1}=\\frac1m\\Big[(m-1)x_n+\\frac{a}{x_n^{m-1}}\\Big]",
+        "why": "Factor out \\(\\frac1m\\): \\(x_n-\\frac{x_n}m=\\frac{(m-1)x_n}{m}\\).",
+        "watch": [
+         [
+          "x_{n+1}",
+          "\\frac1m\\left[(m-1)x_n+\\frac{a}{x_n^{m-1}}\\right]"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "The mistakes that cost the most points",
+    "id": "mistakes"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Quotient rule order",
+      "html": "<p>It's <b>low</b> d-high <b>minus</b> high d-low. Swapping the order flips the sign of the whole answer. Write \\(lo\\), \\(hi\\), \\(lo'\\), \\(hi'\\) before you start.</p>"
+     },
+     {
+      "title": "Missing the chain-rule factor",
+      "html": "<p>\\(\\tanh\\sqrt{x^2+4}\\), \\(e^{\\tan\\theta}\\), \\(\\cos(\\theta^2)\\): every inside needs its derivative multiplied on.</p>"
+     },
+     {
+      "title": "Exponent vs. power",
+      "html": "<p>\\(10^{2\\sqrt t}\\) (variable on top): \\(b^u\\ln b\\cdot u'\\). \\(x^{10}\\) (variable on the bottom): power rule. \\(x^{e^x}\\) (both): log differentiation.</p>"
+     },
+     {
+      "title": "Wrong equation in related rates",
+      "html": "<p>Use the formula for what the problem is about: area → \\(A=\\frac12bh\\), volume of a sphere → \\(V=\\frac43\\pi r^3\\), distance → Pythagoras.</p>"
+     },
+     {
+      "title": "Not simplifying with the original equation",
+      "html": "<p>For \\(y''\\) problems, the last step is often replacing \\(x^2+y^2\\) (or similar) with the constant from the original equation.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mp",
+  "slug": "midterm-practice",
+  "num": "Midterm 2 · 52 pts · 2 hours",
+  "title": "Midterm 2 practice exam",
+  "lede": "Shaped like the real midterm: 2 problems from Quiz 1–2, then a slightly harder twin of every Quiz 3 and Quiz 4 problem. Answers and step-through solutions included.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p>Built the way your midterms are: <strong>1–2 problems from earlier quizzes</strong> (Quiz 1–2, Chapter 2), then <strong>a slightly harder twin of every Quiz 3 and Quiz 4 problem</strong>, in the same order and the same format. <strong>20 problems, 52 points, 2 hours.</strong></p>\n<ol class=\"steps\">\n<li>Set a 2-hour timer. Paper and pencil only.</li>\n<li>Do everything before opening any answer.</li>\n<li>Grade yourself with <strong>Show the answer</strong>. Tick <strong>I can do this</strong> on each problem you got fully right, and the score bar adds up your points. For each miss, <strong>Step through it like a debugger</strong> to find the line where it went wrong.</li>\n</ol>"
+   },
+   {
+    "type": "examscore",
+    "items": [
+     {
+      "id": "mx-1",
+      "points": 3
+     },
+     {
+      "id": "mx-2",
+      "points": 3
+     },
+     {
+      "id": "mx-3",
+      "points": 2
+     },
+     {
+      "id": "mx-4",
+      "points": 2
+     },
+     {
+      "id": "mx-5",
+      "points": 3
+     },
+     {
+      "id": "mx-6",
+      "points": 3
+     },
+     {
+      "id": "mx-7",
+      "points": 2
+     },
+     {
+      "id": "mx-8",
+      "points": 2
+     },
+     {
+      "id": "mx-9",
+      "points": 2
+     },
+     {
+      "id": "mx-10",
+      "points": 2
+     },
+     {
+      "id": "mx-11",
+      "points": 4
+     },
+     {
+      "id": "mx-12",
+      "points": 2
+     },
+     {
+      "id": "mx-13",
+      "points": 2
+     },
+     {
+      "id": "mx-14",
+      "points": 3
+     },
+     {
+      "id": "mx-15",
+      "points": 4
+     },
+     {
+      "id": "mx-16",
+      "points": 2
+     },
+     {
+      "id": "mx-17",
+      "points": 2
+     },
+     {
+      "id": "mx-18",
+      "points": 2
+     },
+     {
+      "id": "mx-19",
+      "points": 4
+     },
+     {
+      "id": "mx-20",
+      "points": 3
+     }
+    ],
+    "total": 52
+   },
+   {
+    "type": "heading",
+    "text": "Part 1 · From Quiz 1–2 (Chapter 2)",
+    "id": "part-1"
+   },
+   {
+    "type": "prose",
+    "html": "<p>Midterms usually bring back one or two earlier problems. These are the two most common Chapter 2 types: a 0/0 limit and making a function continuous.</p>"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "mx-1",
+      "source": "Problem 1 · 3 pts · §2.3",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to4}\\frac{\\sqrt x-2}{x-4}\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(\\dfrac14\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{\\sqrt4-2}{4-4}=\\frac00",
+        "why": "Always try plugging in first. \\(\\frac00\\) means “do algebra, then try again”, not “the limit doesn't exist”."
+       },
+       {
+        "code": "\\frac{\\sqrt x-2}{x-4}\\cdot\\frac{\\sqrt x+2}{\\sqrt x+2}",
+        "why": "A square root next to a minus: multiply top and bottom by the <b>conjugate</b> (same thing with the sign flipped)."
+       },
+       {
+        "code": "=\\frac{x-4}{(x-4)(\\sqrt x+2)}",
+        "why": "Top: \\((\\sqrt x-2)(\\sqrt x+2)=x-4\\) (difference of squares). Leave the bottom factored."
+       },
+       {
+        "code": "=\\frac{1}{\\sqrt x+2}",
+        "why": "Cancel the \\((x-4)\\) that caused the \\(\\frac00\\)."
+       },
+       {
+        "code": "\\lim_{x\\to4}\\frac1{\\sqrt x+2}=\\frac1{2+2}=\\frac14",
+        "why": "Now plugging in works.",
+        "watch": [
+         [
+          "\\text{limit}",
+          "\\tfrac14"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "mx-2",
+      "source": "Problem 2 · 3 pts · §2.5",
+      "href": null,
+      "question": "Find the value of \\(c\\) that makes \\(f\\) continuous everywhere: \\(f(x)=\\begin{cases}cx^2+2x & x<2\\\\ x^3-cx & x\\ge2\\end{cases}\\)",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(c=\\tfrac23\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\lim_{x\\to2^-}f=\\lim_{x\\to2^+}f=f(2)",
+        "why": "Each piece is a polynomial, so it's continuous on its own. The only danger is the switch point \\(x=2\\), where the two pieces must meet."
+       },
+       {
+        "code": "\\text{left: }c(2)^2+2(2)=4c+4",
+        "why": "Plug 2 into the left piece.",
+        "watch": [
+         [
+          "\\text{left}",
+          "4c+4"
+         ]
+        ]
+       },
+       {
+        "code": "\\text{right: }2^3-c(2)=8-2c",
+        "why": "Plug 2 into the right piece (this is also \\(f(2)\\)).",
+        "watch": [
+         [
+          "\\text{right}",
+          "8-2c"
+         ]
+        ]
+       },
+       {
+        "code": "4c+4=8-2c",
+        "why": "Set them equal so there's no jump."
+       },
+       {
+        "code": "6c=4\\ \\Rightarrow\\ c=\\tfrac23",
+        "why": "Solve.",
+        "watch": [
+         [
+          "c",
+          "\\tfrac23"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Part 2 · Quiz 3 twins (§3.1–3.6)",
+    "id": "part-2"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "mx-3",
+      "source": "Problem 3 · 2 pts · §3.1 · twin of Q3 #1a",
+      "href": "3-1",
+      "question": "Differentiate \\(y=4e^x-\\dfrac{6}{\\sqrt[4]{x^3}}\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(y'=4e^x+\\dfrac92x^{-7/4}=4e^x+\\dfrac{9}{2\\sqrt[4]{x^7}}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=4e^x-6x^{-3/4}",
+        "why": "\\(\\sqrt[4]{x^3}=x^{3/4}\\): the root becomes the <b>bottom</b> of the fraction. One over it is \\(x^{-3/4}\\)."
+       },
+       {
+        "code": "(-6x^{-3/4})'=-6\\big(-\\tfrac34\\big)x^{-7/4}=\\tfrac92x^{-7/4}",
+        "why": "Power rule: \\(-\\frac34-1=-\\frac74\\). \\((-6)(-\\frac34)=\\frac{18}4=\\frac92\\)."
+       },
+       {
+        "code": "y'=4e^x+\\frac{9}{2x^{7/4}}=4e^x+\\frac{9}{2\\sqrt[4]{x^7}}",
+        "why": "Fourth root, because the exponent's bottom is 4.",
+        "watch": [
+         [
+          "y'",
+          "4e^x+\\tfrac92x^{-7/4}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "mx-4",
+      "source": "Problem 4 · 2 pts · §3.2 · twin of Q3 #1b",
+      "href": "3-2",
+      "question": "Differentiate \\(f(x)=\\dfrac{x^3}{2+e^x}\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(f'(x)=\\dfrac{3x^2(2+e^x)-x^3e^x}{(2+e^x)^2}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "hi=x^3,\\ lo=2+e^x",
+        "why": "Quotient rule.",
+        "watch": [
+         [
+          "hi'",
+          "3x^2"
+         ],
+         [
+          "lo'",
+          "e^x"
+         ]
+        ]
+       },
+       {
+        "code": "f'=\\frac{(2+e^x)(3x^2)-x^3e^x}{(2+e^x)^2}",
+        "why": "Low d-high minus high d-low, over low squared."
+       },
+       {
+        "code": "=\\frac{x^2(6+3e^x-xe^x)}{(2+e^x)^2}",
+        "why": "Optional: factor \\(x^2\\) from the top.",
+        "watch": [
+         [
+          "f'",
+          "\\frac{x^2(6+3e^x-xe^x)}{(2+e^x)^2}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "mx-5",
+      "source": "Problem 5 · 3 pts · §3.3 · twin of Q3 #2",
+      "href": "3-3",
+      "question": "Differentiate \\(f(\\theta)=\\dfrac{\\cos\\theta}{1-\\sin\\theta}\\) and simplify completely.",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(f'(\\theta)=\\dfrac{1}{1-\\sin\\theta}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "hi=\\cos\\theta,\\ lo=1-\\sin\\theta",
+        "why": "Quotient rule.",
+        "watch": [
+         [
+          "hi'",
+          "-\\sin\\theta"
+         ],
+         [
+          "lo'",
+          "-\\cos\\theta"
+         ]
+        ]
+       },
+       {
+        "code": "\\text{top}=(1-\\sin\\theta)(-\\sin\\theta)-\\cos\\theta(-\\cos\\theta)",
+        "why": "Low d-high minus high d-low. Work out the top separately to keep it readable."
+       },
+       {
+        "code": "\\text{top}=-\\sin\\theta+\\sin^2\\theta+\\cos^2\\theta=1-\\sin\\theta",
+        "why": "Expand; then \\(\\sin^2\\theta+\\cos^2\\theta=1\\)."
+       },
+       {
+        "code": "f'=\\frac{1-\\sin\\theta}{(1-\\sin\\theta)^2}=\\frac1{1-\\sin\\theta}",
+        "why": "Divide by low squared and cancel one factor.",
+        "watch": [
+         [
+          "f'",
+          "\\frac1{1-\\sin\\theta}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "mx-6",
+      "source": "Problem 6 · 3 pts · §3.3 · twin of Q3 #3",
+      "href": "3-3",
+      "question": "Prove that \\(\\dfrac{d}{dx}(\\csc x)=-\\csc x\\cot x\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(\\dfrac{d}{dx}\\dfrac1{\\sin x}=\\dfrac{-\\cos x}{\\sin^2x}=-\\dfrac1{\\sin x}\\cdot\\dfrac{\\cos x}{\\sin x}=-\\csc x\\cot x\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\csc x=\\frac1{\\sin x}",
+        "why": "Rewrite with sin.",
+        "watch": [
+         [
+          "hi'",
+          "0"
+         ],
+         [
+          "lo'",
+          "\\cos x"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{d}{dx}\\csc x=\\frac{\\sin x\\cdot0-1\\cdot\\cos x}{\\sin^2x}",
+        "why": "Quotient rule, low (\\(\\sin x\\)) first."
+       },
+       {
+        "code": "=\\frac{-\\cos x}{\\sin^2x}",
+        "why": "Simplify."
+       },
+       {
+        "code": "=-\\frac1{\\sin x}\\cdot\\frac{\\cos x}{\\sin x}=-\\csc x\\cot x\\ \\ \\checkmark",
+        "why": "Split \\(\\sin^2x\\) into two factors.",
+        "watch": [
+         [
+          "(\\csc x)'",
+          "-\\csc x\\cot x"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "mx-7",
+      "source": "Problem 7 · 2 pts · §3.3 · twin of Q3 #4",
+      "href": "3-3",
+      "question": "Find \\(\\displaystyle\\lim_{x\\to0}\\frac{\\sin6x}{x^3-3x}\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(-2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "=\\lim_{x\\to0}\\frac{\\sin6x}{x(x^2-3)}",
+        "why": "\\(\\frac00\\) at first. Factor \\(x\\) out of the bottom."
+       },
+       {
+        "code": "=\\lim_{x\\to0}\\frac{\\sin6x}{x}\\cdot\\frac{1}{x^2-3}",
+        "why": "Split into the trig piece and an ordinary piece."
+       },
+       {
+        "code": "\\frac{\\sin6x}{x}=6\\cdot\\frac{\\sin6x}{6x}\\to6",
+        "why": "Match the bottom to the angle.",
+        "watch": [
+         [
+          "\\lim\\frac{\\sin6x}x",
+          "6"
+         ]
+        ]
+       },
+       {
+        "code": "6\\cdot\\frac{1}{0-3}=-2",
+        "why": "Plug 0 into the ordinary piece and multiply.",
+        "watch": [
+         [
+          "\\text{limit}",
+          "-2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "mx-8",
+      "source": "Problem 8 · 2 pts · §3.4 · twin of Q3 #5a",
+      "href": "3-4",
+      "question": "Find the derivative of \\(f(\\theta)=\\sin\\big(\\sqrt\\theta\\big)\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(f'(\\theta)=\\dfrac{\\cos\\sqrt\\theta}{2\\sqrt\\theta}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f=\\sin u,\\ u=\\sqrt\\theta",
+        "why": "The root is <b>inside</b> the sine.",
+        "watch": [
+         [
+          "u'",
+          "\\frac1{2\\sqrt\\theta}"
+         ]
+        ]
+       },
+       {
+        "code": "f'=\\cos\\big(\\sqrt\\theta\\big)\\cdot\\frac{1}{2\\sqrt\\theta}",
+        "why": "Chain rule.",
+        "watch": [
+         [
+          "f'",
+          "\\frac{\\cos\\sqrt\\theta}{2\\sqrt\\theta}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "mx-9",
+      "source": "Problem 9 · 2 pts · §3.4 · twin of Q3 #5b",
+      "href": "3-4",
+      "question": "Find the derivative of \\(y=e^{\\sec\\theta}\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(y'=e^{\\sec\\theta}\\sec\\theta\\tan\\theta\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=e^u,\\ u=\\sec\\theta",
+        "why": "The exponent is the inside.",
+        "watch": [
+         [
+          "u'",
+          "\\sec\\theta\\tan\\theta"
+         ]
+        ]
+       },
+       {
+        "code": "y'=e^{\\sec\\theta}\\sec\\theta\\tan\\theta",
+        "why": "\\((e^u)'=e^u\\cdot u'\\).",
+        "watch": [
+         [
+          "y'",
+          "e^{\\sec\\theta}\\sec\\theta\\tan\\theta"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "mx-10",
+      "source": "Problem 10 · 2 pts · §3.6 · twin of Q3 #5c",
+      "href": "3-6",
+      "question": "Find the derivative of \\(r(t)=5^{3\\sqrt t}\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(r'(t)=\\dfrac{3\\cdot5^{3\\sqrt t}\\ln5}{2\\sqrt t}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "r=5^u,\\ u=3\\sqrt t",
+        "why": "Constant base, variable exponent.",
+        "watch": [
+         [
+          "u'",
+          "\\frac{3}{2\\sqrt t}"
+         ]
+        ]
+       },
+       {
+        "code": "r'=5^{3\\sqrt t}\\ln5\\cdot\\frac{3}{2\\sqrt t}",
+        "why": "\\((b^u)'=b^u\\ln b\\cdot u'\\).",
+        "watch": [
+         [
+          "r'",
+          "\\frac{3\\cdot5^{3\\sqrt t}\\ln5}{2\\sqrt t}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "mx-11",
+      "source": "Problem 11 · 4 pts · §3.5 · twin of Q3 #6",
+      "href": "3-5",
+      "question": "Find \\(y''\\) by implicit differentiation if \\(x^2+4y^2=4\\). Simplify completely.",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(y''=-\\dfrac{1}{4y^3}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "2x+8y\\,y'=0\\ \\Rightarrow\\ y'=-\\frac{x}{4y}",
+        "why": "First derivative, solved for \\(y'\\).",
+        "watch": [
+         [
+          "y'",
+          "-\\frac x{4y}"
+         ]
+        ]
+       },
+       {
+        "code": "y''=-\\frac{(1)(4y)-x(4y')}{(4y)^2}",
+        "why": "Quotient rule on \\(\\frac{x}{4y}\\), keeping the minus in front."
+       },
+       {
+        "code": "-4x\\,y'=-4x\\Big(-\\frac{x}{4y}\\Big)=\\frac{x^2}{y}",
+        "why": "Substitute \\(y'\\)."
+       },
+       {
+        "code": "y''=-\\frac{4y+\\frac{x^2}{y}}{16y^2}=-\\frac{4y^2+x^2}{16y^3}",
+        "why": "Combine the top over \\(y\\)."
+       },
+       {
+        "code": "y''=-\\frac{4}{16y^3}=-\\frac1{4y^3}",
+        "why": "Use the original equation: \\(x^2+4y^2=4\\).",
+        "watch": [
+         [
+          "y''",
+          "-\\frac1{4y^3}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "mx-12",
+      "source": "Problem 12 · 2 pts · §3.6 · twin of Q3 #7",
+      "href": "3-6",
+      "question": "Find the derivative of \\(y=\\arcsin\\sqrt x\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(y'=\\dfrac{1}{2\\sqrt x\\,\\sqrt{1-x}}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=\\sqrt x,\\ u'=\\frac1{2\\sqrt x},\\ u^2=x",
+        "why": "Collect the pieces.",
+        "watch": [
+         [
+          "u'",
+          "\\frac1{2\\sqrt x}"
+         ],
+         [
+          "u^2",
+          "x"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{u'}{\\sqrt{1-u^2}}=\\frac{1}{2\\sqrt x\\sqrt{1-x}}",
+        "why": "Arcsin rule.",
+        "watch": [
+         [
+          "y'",
+          "\\frac1{2\\sqrt x\\sqrt{1-x}}"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Part 3 · Quiz 4 twins (§3.6–4.1)",
+    "id": "part-3"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "mx-13",
+      "source": "Problem 13 · 2 pts · §3.6 · twin of Q4 #1",
+      "href": "3-6",
+      "question": "Differentiate \\(f(x)=\\log_5(2+\\sin x)\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(f'(x)=\\dfrac{\\cos x}{(2+\\sin x)\\ln5}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=2+\\sin x,\\ u'=\\cos x",
+        "why": "Log base 5 of an inside.",
+        "watch": [
+         [
+          "u'",
+          "\\cos x"
+         ]
+        ]
+       },
+       {
+        "code": "f'=\\frac{u'}{u\\ln5}=\\frac{\\cos x}{(2+\\sin x)\\ln5}",
+        "why": "\\((\\log_bu)'=\\frac{u'}{u\\ln b}\\).",
+        "watch": [
+         [
+          "f'",
+          "\\frac{\\cos x}{(2+\\sin x)\\ln5}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "mx-14",
+      "source": "Problem 14 · 3 pts · §3.6 · twin of Q4 #2",
+      "href": "3-6",
+      "question": "Use logarithmic differentiation to find the derivative of \\(y=x^{\\tan x}\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(y'=x^{\\tan x}\\Big(\\sec^2x\\ln x+\\dfrac{\\tan x}{x}\\Big)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\ln y=\\tan x\\,\\ln x",
+        "why": "Take \\(\\ln\\); bring the exponent down."
+       },
+       {
+        "code": "\\frac{y'}{y}=\\sec^2x\\ln x+\\tan x\\cdot\\frac1x",
+        "why": "Product rule on \\(\\tan x\\cdot\\ln x\\)."
+       },
+       {
+        "code": "y'=x^{\\tan x}\\Big(\\sec^2x\\ln x+\\frac{\\tan x}{x}\\Big)",
+        "why": "Multiply by \\(y\\).",
+        "watch": [
+         [
+          "y'",
+          "x^{\\tan x}\\left(\\sec^2x\\ln x+\\frac{\\tan x}x\\right)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "mx-15",
+      "source": "Problem 15 · 4 pts · §3.9 · twin of Q4 #3",
+      "href": "3-9",
+      "question": "The base of a triangle is increasing at 2 cm/min while its area is increasing at \\(3\\text{ cm}^2/\\text{min}\\). At what rate is the altitude changing when the base is 12 cm and the area is \\(48\\text{ cm}^2\\)?",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(\\dfrac{dh}{dt}=-\\dfrac56\\) cm/min (the altitude is shrinking)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "A=\\tfrac12bh",
+        "why": "Area of a triangle. This time the <b>altitude</b> is the unknown rate.",
+        "watch": [
+         [
+          "db/dt",
+          "2"
+         ],
+         [
+          "dA/dt",
+          "3"
+         ],
+         [
+          "\\text{want}",
+          "dh/dt"
+         ]
+        ]
+       },
+       {
+        "code": "h=\\frac{2A}{b}=\\frac{96}{12}=8",
+        "why": "Altitude at this moment.",
+        "watch": [
+         [
+          "b",
+          "12"
+         ],
+         [
+          "h",
+          "8"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{dA}{dt}=\\frac12\\Big(\\frac{db}{dt}h+b\\frac{dh}{dt}\\Big)",
+        "why": "Product rule: both change."
+       },
+       {
+        "code": "3=\\frac12\\Big(2\\cdot8+12\\frac{dh}{dt}\\Big)",
+        "why": "Plug in."
+       },
+       {
+        "code": "6=16+12\\frac{dh}{dt}\\ \\Rightarrow\\ \\frac{dh}{dt}=-\\frac{10}{12}=-\\frac56",
+        "why": "Solve.",
+        "watch": [
+         [
+          "dh/dt",
+          "-\\tfrac56"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "mx-16",
+      "source": "Problem 16 · 2 pts · §3.10 · twin of Q4 #4",
+      "href": "3-10",
+      "question": "Find the differential \\(dy\\) and evaluate it for \\(y=x^3-2x\\), \\(x=2\\), \\(dx=0.1\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(dy=(3x^2-2)\\,dx\\); \\(dy=1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "dy=(3x^2-2)\\,dx",
+        "why": "Derivative, then attach \\(dx\\)."
+       },
+       {
+        "code": "dy=(12-2)(0.1)=1",
+        "why": "Plug in.",
+        "watch": [
+         [
+          "dy",
+          "1"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "mx-17",
+      "source": "Problem 17 · 2 pts · §3.11 · twin of Q4 #5",
+      "href": "3-11",
+      "question": "Use the definition of the hyperbolic function to find \\(\\displaystyle\\lim_{x\\to-\\infty}\\tanh x\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(-1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\tanh x=\\frac{e^x-e^{-x}}{e^x+e^{-x}}",
+        "why": "Exponential definition."
+       },
+       {
+        "code": "=\\frac{e^{2x}-1}{e^{2x}+1}",
+        "why": "As \\(x\\to-\\infty\\) the big term is \\(e^{-x}\\): multiply top and bottom by \\(e^{x}\\)."
+       },
+       {
+        "code": "e^{2x}\\to0\\ \\Rightarrow\\ \\frac{0-1}{0+1}=-1",
+        "why": "Take the limit.",
+        "watch": [
+         [
+          "\\lim",
+          "-1"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "mx-18",
+      "source": "Problem 18 · 2 pts · §3.11 · twin of Q4 #6",
+      "href": "3-11",
+      "question": "Find the derivative of \\(f(x)=\\cosh\\sqrt{x^2+1}\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(f'(x)=\\dfrac{x\\sinh\\sqrt{x^2+1}}{\\sqrt{x^2+1}}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=\\sqrt{x^2+1},\\ u'=\\frac{x}{\\sqrt{x^2+1}}",
+        "why": "Inner function.",
+        "watch": [
+         [
+          "u'",
+          "\\frac x{\\sqrt{x^2+1}}"
+         ]
+        ]
+       },
+       {
+        "code": "f'=\\sinh u\\cdot u'",
+        "why": "\\((\\cosh u)'=\\sinh u\\cdot u'\\), with <b>no</b> minus sign."
+       },
+       {
+        "code": "f'=\\frac{x\\sinh\\sqrt{x^2+1}}{\\sqrt{x^2+1}}",
+        "why": "Substitute.",
+        "watch": [
+         [
+          "f'",
+          "\\frac{x\\sinh\\sqrt{x^2+1}}{\\sqrt{x^2+1}}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "mx-19",
+      "source": "Problem 19 · 4 pts · §4.1 · twin of Q4 #7",
+      "href": "4-1",
+      "question": "Find the absolute maximum and minimum values of \\(f(x)=\\dfrac{x}{x^2+4}\\) on \\([0,3]\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">Max \\(f(2)=\\tfrac14\\); min \\(f(0)=0\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'=\\frac{(x^2+4)(1)-x(2x)}{(x^2+4)^2}",
+        "why": "Quotient rule, low first."
+       },
+       {
+        "code": "f'=\\frac{4-x^2}{(x^2+4)^2}",
+        "why": "Simplify the top.",
+        "watch": [
+         [
+          "f'",
+          "\\frac{4-x^2}{(x^2+4)^2}"
+         ]
+        ]
+       },
+       {
+        "code": "x=\\pm2;\\ \\text{keep }2",
+        "why": "Top = 0. \\(-2\\) is outside \\([0,3]\\)."
+       },
+       {
+        "code": "f(0)=0,\\ f(2)=\\tfrac14,\\ f(3)=\\tfrac3{13}",
+        "why": "Table with the critical number and both endpoints.",
+        "watch": [
+         [
+          "f(0)",
+          "0"
+         ],
+         [
+          "f(2)",
+          "\\tfrac14"
+         ],
+         [
+          "f(3)",
+          "\\tfrac3{13}"
+         ]
+        ]
+       },
+       {
+        "code": "\\max=\\tfrac14,\\ \\min=0",
+        "why": "\\(\\frac14=0.25>\\frac3{13}\\approx0.23>0\\).",
+        "watch": [
+         [
+          "\\max",
+          "\\tfrac14"
+         ],
+         [
+          "\\min",
+          "0"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "mx-20",
+      "source": "Problem 20 · 3 pts · §4.1 · twin of Q4 #7, harder",
+      "href": "4-1",
+      "question": "Find the critical numbers of \\(g(x)=x^{1/3}(x-4)\\).",
+      "reveals": [
+       {
+        "label": "Show the answer",
+        "html": "<p class=\"ans\">\\(x=0\\) and \\(x=1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "g=x^{4/3}-4x^{1/3}",
+        "why": "Distribute first."
+       },
+       {
+        "code": "g'=\\tfrac43x^{1/3}-\\tfrac43x^{-2/3}=\\frac{4(x-1)}{3x^{2/3}}",
+        "why": "Power rule, then one fraction."
+       },
+       {
+        "code": "\\text{top}=0:\\ x=1;\\quad\\text{bottom}=0:\\ x=0",
+        "why": "Both are in the domain (cube roots work everywhere).",
+        "watch": [
+         [
+          "\\text{c.n.}",
+          "0,\\ 1"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\">Done? Your score is in the bar at the bottom of the screen. Then go back to the <a href=\"/quiz-review/\">Quiz 3 &amp; 4 review</a> for every problem type you missed.</p>"
+   }
+  ]
+ },
+ {
   "id": "cc",
   "slug": "crash-course",
   "num": "Midterm 2 · start here",
   "title": "Midterm 2 crash course",
   "lede": "Every section on Midterm 2, from §2.8 to §4.1, in 10 short lessons. Each lesson explains the idea, gives the recipe, and walks through examples one line at a time.",
   "blocks": [
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\"><strong>New:</strong> Midterm 2 comes from Quiz 3 and Quiz 4. Study the <a href=\"/quiz-review/\">Quiz 3 &amp; 4 review</a>, then take the <a href=\"/midterm-practice/\">practice exam</a> (52 points, 2 hours).</p>"
+   },
    {
     "type": "prose",
     "html": "<p>Midterm 2 is tomorrow, so this page is the shortest path through every section on it, from §2.8 to §4.1. Each lesson gives you:</p>\n<ol class=\"steps\">\n<li><strong>The idea in plain words</strong>: what the section is actually about.</li>\n<li><strong>The recipe</strong>: the steps you follow on the exam, every time.</li>\n<li><strong>Worked examples</strong>. Click <strong>Step through it like a debugger</strong> under each one and press <strong>Step ▶</strong> (or →) one line at a time. Before each step, try to guess the next line yourself.</li>\n</ol>\n<p class=\"callout\"><strong>How to use it tonight:</strong> Part 1 is a fast refresh of §2.8–3.6 (about an hour). Part 2 teaches §3.9, §4.1, §3.10 and §3.11 from scratch (about 1½ hours), most points first. Then take the <a href=\"/midterm-2/#mock\">mock midterm</a>. Have paper next to you and write every example down as you step through it; writing it is what makes it stick.</p>"
@@ -8811,6 +10735,10 @@ export const sections: Section[] = [
     "type": "countdown",
     "target": "2026-11-05",
     "label": "Midterm 2"
+   },
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\"><strong>New:</strong> Midterm 2 comes from Quiz 3 and Quiz 4. Study the <a href=\"/quiz-review/\">Quiz 3 &amp; 4 review</a>, then take the <a href=\"/midterm-practice/\">practice exam</a> (52 points, 2 hours).</p>"
    },
    {
     "type": "heading",

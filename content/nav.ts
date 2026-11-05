@@ -16,6 +16,8 @@ const SHORT: Record<string, string> = {
   "3-10": "3.10",
   "3-11": "3.11",
   "4-1": "4.1",
+  "quiz-review": "Quiz 3 & 4 review",
+  "midterm-practice": "Practice exam",
   "crash-course": "Crash course",
   "midterm-2": "Midterm 2",
   "grades": "Grades",

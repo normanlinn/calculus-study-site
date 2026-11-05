@@ -16,7 +16,8 @@ export type Block =
   | { type: "countdown"; target: string; label: string }
   | { type: "mock" }
   | { type: "gradecalc" }
-  | { type: "invtrig" };
+  | { type: "invtrig" }
+  | { type: "examscore"; items: { id: string; points: number }[]; total: number };
 
 export interface Problem {
   id: string;

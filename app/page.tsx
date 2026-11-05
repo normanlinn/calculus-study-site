@@ -8,6 +8,7 @@ import { CardBar, Ring } from "@/components/Progress";
 import { Stagger } from "@/components/Reveal";
 import { HeroTitle, HeroFade } from "@/components/HeroTitle";
 import Countdown from "@/components/Countdown";
+import MathGlyphs from "@/components/MathGlyphs";
 
 function Cards({ list }: { list: Section[] }) {
   return (
@@ -32,12 +33,13 @@ export default function Home() {
   return (
     <>
       <section className="home-hero">
+        <MathGlyphs />
         <HeroFade delay={0}><span className="eyebrow">Stewart · Calculus: Early Transcendentals 9e · Math 190</span></HeroFade>
         <HeroTitle />
         <HeroFade delay={0.35}>
           <p className="lede">
-            Midterm 2 is tomorrow, Thu, Nov 5, and covers §2.8 through §4.1. Start with the crash course: 10 short lessons, one per section, each with
-            examples you step through one line at a time. Then take the timed mock midterm and fix what you missed.
+            Midterm 2 is built from Quiz 3 and Quiz 4: 2 hours, about 52 points. Start with the Quiz 3 &amp; 4 review (every problem solved line by line),
+            then take the full practice exam. New to §3.9–4.1? The crash course teaches every section from scratch.
           </p>
         </HeroFade>
         <HeroFade delay={0.45}>
@@ -48,9 +50,9 @@ export default function Home() {
         <HeroGraph />
         <HeroFade delay={0.5}>
           <div className="cta-row">
-            <Link className="cta" href="/crash-course/">Start the crash course →</Link>
-            <Link className="cta ghost" href="/midterm-2/#tonight">Tonight's plan</Link>
-            <Link className="cta ghost" href="/midterm-2/#mock">Take the mock midterm</Link>
+            <Link className="cta" href="/quiz-review/">Quiz 3 &amp; 4 review →</Link>
+            <Link className="cta ghost" href="/midterm-practice/">Practice exam (52 pts)</Link>
+            <Link className="cta ghost" href="/crash-course/">Crash course</Link>
             <Ring ids={unitProblemIds("q4")} />
           </div>
         </HeroFade>
