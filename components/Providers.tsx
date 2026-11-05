@@ -1,6 +1,7 @@
 "use client";
 import { MotionConfig } from "motion/react";
 import AuthProvider from "./AuthProvider";
+import SmoothScroll from "./SmoothScroll";
 import Spotlight from "./Spotlight";
 
 // Honors the viewer's "reduce motion" setting for every animation.
@@ -9,6 +10,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
     <MotionConfig reducedMotion="user">
       <AuthProvider>{children}</AuthProvider>
       <Spotlight />
+      <SmoothScroll />
     </MotionConfig>
   );
 }
