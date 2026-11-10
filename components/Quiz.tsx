@@ -52,7 +52,7 @@ export default function Quiz({ items: all }: { items: QuizItem[] }) {
   const [round, setRound] = useState(0);
   const [unit, setUnit] = useSharedUnit();
   // "all" is Midterm 2 mode: every question from both quizzes
-  const [everything, setEverything] = useState(true);
+  const [everything, setEverything] = useState(false);
   const units = UNITS.filter((u) => all.some((q) => (q.unit ?? "q3") === u.id));
   const items = units.length > 1 && !everything ? all.filter((q) => (q.unit ?? "q3") === unit) : all;
   const reset = () => { setScore(0); setAnswered(0); setRound((r) => r + 1); };
@@ -64,7 +64,7 @@ export default function Quiz({ items: all }: { items: QuizItem[] }) {
         <div className="controls">
           <div className="seg" role="group" aria-label="Which quiz">
             <button type="button" className={everything ? "on" : ""} aria-pressed={everything} onClick={() => setEverything(true)}>
-              Midterm 2 · everything
+              Everything
             </button>
             {units.map((u) => (
               <button key={u.id} type="button" className={!everything && unit === u.id ? "on" : ""} aria-pressed={!everything && unit === u.id} onClick={() => { setEverything(false); setUnit(u.id); }}>

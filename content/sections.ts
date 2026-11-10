@@ -7558,7 +7558,3469 @@ export const sections: Section[] = [
     ]
    }
   ],
-  "unit": "q4"
+  "unit": "q4",
+  "also": [
+   "q5"
+  ]
+ },
+ {
+  "id": "q5",
+  "slug": "quiz-5",
+  "num": "Quiz 5 · Thu, Nov 12",
+  "unit": "q5",
+  "title": "Quiz 5 study plan",
+  "lede": "Sections 4.1–4.9: what's assigned, where each skill is taught, and a 2-day plan for starting from zero.",
+  "blocks": [
+   {
+    "type": "countdown",
+    "target": "2026-11-12",
+    "label": "Quiz 5"
+   },
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\">These practice problems are written to match the types in each homework range. They aren't copied from the textbook, so do the real assigned numbers too if you have time. The skills are the same.</p>"
+   },
+   {
+    "type": "heading",
+    "text": "Your assigned homework"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">§4.1 · homework 13–65 odd</span><p><strong><a href=\"/4-1/\">Maximum and Minimum Values</a></strong></p><p class=\"note\">Already on the site from Quiz 4: 20 solved problems.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">§4.2 · homework 9–25 odd · read only</span><p><strong><a href=\"/4-2/\">The Mean Value Theorem</a></strong></p><p class=\"note\">Not on the test. Skim it. <a href=\"/4-2/#p42-1\">#1</a>, <a href=\"/4-2/#p42-2\">#2</a>, <a href=\"/4-2/#p42-3\">#3</a></p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">§4.3 · homework 1–29 odd, 45–65 odd</span><p><strong><a href=\"/4-3/\">Shape of a graph</a></strong></p><p class=\"note\">10 practice problems, each solved line by line: <a href=\"/4-3/#p43-1\">#1</a>, <a href=\"/4-3/#p43-2\">#2</a>, <a href=\"/4-3/#p43-3\">#3</a>, <a href=\"/4-3/#p43-4\">#4</a>, <a href=\"/4-3/#p43-5\">#5</a>, <a href=\"/4-3/#p43-6\">#6</a>, <a href=\"/4-3/#p43-7\">#7</a>, <a href=\"/4-3/#p43-8\">#8</a>, <a href=\"/4-3/#p43-9\">#9</a>, <a href=\"/4-3/#p43-10\">#10</a></p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">§4.4 · homework 1–69 odd</span><p><strong><a href=\"/4-4/\">l'Hospital's Rule</a></strong></p><p class=\"note\">11 practice problems, each solved line by line: <a href=\"/4-4/#p44-1\">#1</a>, <a href=\"/4-4/#p44-2\">#2</a>, <a href=\"/4-4/#p44-3\">#3</a>, <a href=\"/4-4/#p44-4\">#4</a>, <a href=\"/4-4/#p44-5\">#5</a>, <a href=\"/4-4/#p44-6\">#6</a>, <a href=\"/4-4/#p44-7\">#7</a>, <a href=\"/4-4/#p44-8\">#8</a>, <a href=\"/4-4/#p44-9\">#9</a>, <a href=\"/4-4/#p44-10\">#10</a>, <a href=\"/4-4/#p44-11\">#11</a></p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">§4.5 · homework 7–53 odd</span><p><strong><a href=\"/4-5/\">Curve sketching</a></strong></p><p class=\"note\">6 practice problems, each solved line by line: <a href=\"/4-5/#p45-1\">#1</a>, <a href=\"/4-5/#p45-2\">#2</a>, <a href=\"/4-5/#p45-3\">#3</a>, <a href=\"/4-5/#p45-4\">#4</a>, <a href=\"/4-5/#p45-5\">#5</a>, <a href=\"/4-5/#p45-6\">#6</a></p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">§4.7 · homework 3–7 odd, 25, 26, 27</span><p><strong><a href=\"/4-7/\">Optimization</a></strong></p><p class=\"note\">8 practice problems, each solved line by line: <a href=\"/4-7/#p47-1\">#1</a>, <a href=\"/4-7/#p47-2\">#2</a>, <a href=\"/4-7/#p47-3\">#3</a>, <a href=\"/4-7/#p47-4\">#4</a>, <a href=\"/4-7/#p47-5\">#5</a>, <a href=\"/4-7/#p47-6\">#6</a>, <a href=\"/4-7/#p47-7\">#7</a>, <a href=\"/4-7/#p47-8\">#8</a></p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">§4.8 · homework 1–31 odd</span><p><strong><a href=\"/4-8/\">Newton's Method</a></strong></p><p class=\"note\">5 practice problems, each solved line by line: <a href=\"/4-8/#p48-1\">#1</a>, <a href=\"/4-8/#p48-2\">#2</a>, <a href=\"/4-8/#p48-3\">#3</a>, <a href=\"/4-8/#p48-4\">#4</a>, <a href=\"/4-8/#p48-5\">#5</a></p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">§4.9 · homework 1–53 odd</span><p><strong><a href=\"/4-9/\">Antiderivatives</a></strong></p><p class=\"note\">10 practice problems, each solved line by line: <a href=\"/4-9/#p49-1\">#1</a>, <a href=\"/4-9/#p49-2\">#2</a>, <a href=\"/4-9/#p49-3\">#3</a>, <a href=\"/4-9/#p49-4\">#4</a>, <a href=\"/4-9/#p49-5\">#5</a>, <a href=\"/4-9/#p49-6\">#6</a>, <a href=\"/4-9/#p49-7\">#7</a>, <a href=\"/4-9/#p49-8\">#8</a>, <a href=\"/4-9/#p49-9\">#9</a>, <a href=\"/4-9/#p49-10\">#10</a></p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "If you're starting from zero"
+   },
+   {
+    "type": "prose",
+    "html": "<p><strong>Day 1 (today)</strong></p><ol class=\"steps\"><li><a href=\"/4-3/\">§4.3</a>: read the rules, then do #1, #3 and #6 with the debugger. This is the core skill for §4.5 too.</li><li><a href=\"/4-4/\">§4.4</a>: l'Hospital. Do #1–#6, then the powers (#8–#10).</li><li><a href=\"/4-9/\">§4.9</a>: antiderivatives are quick marks. Do all 10.</li></ol><p><strong>Day 2 (the night before)</strong></p><ol class=\"steps\"><li><a href=\"/4-7/\">§4.7</a>: optimization #1, #4, #6, #7.</li><li><a href=\"/4-8/\">§4.8</a>: Newton's method. Practise one with a calculator in radians.</li><li><a href=\"/4-5/\">§4.5</a>: sketch one full curve (#3 or #5) with the A–H list.</li><li><a href=\"/quick-quiz/\">Quick quiz</a> on Quiz 5, then the <a href=\"/memory-tricks/\">Quiz 5 flashcards</a>.</li></ol>"
+   },
+   {
+    "type": "heading",
+    "text": "The 6 things to memorize"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Sign of f′</span><p>\\(+\\) up, \\(-\\) down. \\(+\\to-\\) max, \\(-\\to+\\) min.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Sign of f″</span><p>\\(+\\) cup, \\(-\\) cap. A flip means an inflection point.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">l'Hospital</span><p>\\(\\frac00\\) or \\(\\frac\\infty\\infty\\): \\(\\frac{f'}{g'}\\). Powers: take \\(\\ln\\), then \\(e^{L}\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Optimization</span><p>Objective + constraint → one variable → derivative = 0 → justify.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Newton</span><p>\\(x_{n+1}=x_n-\\frac{f(x_n)}{f'(x_n)}\\)</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Antiderivative</span><p>\\(x^n\\to\\frac{x^{n+1}}{n+1}\\), \\(\\frac1x\\to\\ln|x|\\), and always \\(+C\\).</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s42",
+  "slug": "4-2",
+  "num": "§4.2",
+  "unit": "q5",
+  "title": "The Mean Value Theorem",
+  "lede": "Rolle's Theorem and the MVT. Read-only: your instructor says it won't be on the test.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\"><strong>Not on the quiz.</strong> §4.2 is “read only”, so skim this page once and spend your time on §4.3–4.9. The idea does explain <em>why</em> the tests in §4.3 work.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Rolle's Theorem</span><p>If \\(f\\) is continuous on \\([a,b]\\), differentiable on \\((a,b)\\), and \\(f(a)=f(b)\\), then there is a \\(c\\) in \\((a,b)\\) with \\(f'(c)=0\\).</p><p class=\"note\">Same height at both ends ⇒ somewhere the tangent is flat.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Mean Value Theorem</span><p>If \\(f\\) is continuous on \\([a,b]\\) and differentiable on \\((a,b)\\), there is a \\(c\\) in \\((a,b)\\) with</p>\\[f'(c)=\\frac{f(b)-f(a)}{b-a}.\\]<p class=\"note\">Somewhere the instant slope equals the average slope.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Recipe</span><p>1) Check continuity and differentiability. 2) Work out the average slope \\(\\frac{f(b)-f(a)}{b-a}\\). 3) Set \\(f'(c)\\) equal to it and solve. 4) Keep only \\(c\\) strictly inside \\((a,b)\\).</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p42-1",
+      "source": "Like §4.2 #1–11",
+      "href": null,
+      "question": "Verify that \\(f(x)=x^2-4x+1\\) satisfies Rolle's Theorem on \\([0,4]\\), then find every \\(c\\) it promises.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Check \\(f(0)\\) and \\(f(4)\\) first, then solve \\(f'(c)=0\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>A polynomial is continuous and differentiable everywhere. \\(f(0)=1\\) and \\(f(4)=16-16+1=1\\), so the ends match. \\(f'(x)=2x-4=0\\Rightarrow x=2\\), which is in \\((0,4)\\).</p><p class=\"ans\">\\(c=2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(0)=1,\\quad f(4)=1",
+        "why": "Rolle needs equal heights at the ends. They match.",
+        "watch": [
+         [
+          "f(a)=f(b)",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "f'(x)=2x-4",
+        "why": "Power rule. Polynomials are smooth, so the hypotheses hold."
+       },
+       {
+        "code": "2c-4=0\\ \\Rightarrow\\ c=2",
+        "why": "Rolle promises a flat tangent. \\(2\\) lies inside \\((0,4)\\).",
+        "watch": [
+         [
+          "c",
+          "2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p42-2",
+      "source": "Like §4.2 #13–23",
+      "href": null,
+      "question": "Find every \\(c\\) that satisfies the Mean Value Theorem for \\(f(x)=x^3-x\\) on \\([0,2]\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Average slope first: \\(\\frac{f(2)-f(0)}{2-0}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(2)=6\\), \\(f(0)=0\\), so the average slope is \\(3\\). \\(f'(c)=3c^2-1=3\\Rightarrow c^2=\\tfrac43\\Rightarrow c=\\pm\\tfrac{2}{\\sqrt3}\\). Only the positive one is in \\((0,2)\\).</p><p class=\"ans\">\\(c=\\dfrac{2}{\\sqrt3}\\approx1.155\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{f(2)-f(0)}{2-0}=\\frac{6-0}{2}=3",
+        "why": "This is the slope of the secant line from end to end.",
+        "watch": [
+         [
+          "\\text{avg slope}",
+          "3"
+         ]
+        ]
+       },
+       {
+        "code": "f'(c)=3c^2-1",
+        "why": "Derivative of \\(x^3-x\\)."
+       },
+       {
+        "code": "3c^2-1=3\\ \\Rightarrow\\ c^2=\\tfrac43",
+        "why": "Set the instant slope equal to the average slope."
+       },
+       {
+        "code": "c=\\tfrac{2}{\\sqrt3}",
+        "why": "\\(-\\tfrac{2}{\\sqrt3}\\) is outside \\((0,2)\\), so throw it out.",
+        "watch": [
+         [
+          "c",
+          "2/\\sqrt3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p42-3",
+      "source": "Like §4.2 #13–23",
+      "href": null,
+      "question": "Find the \\(c\\) promised by the MVT for \\(f(x)=\\sqrt{x}\\) on \\([0,4]\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f'(x)=\\frac{1}{2\\sqrt x}\\). Set it equal to the average slope.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Average slope \\(\\frac{2-0}{4}=\\frac12\\). \\(\\frac{1}{2\\sqrt c}=\\frac12\\Rightarrow\\sqrt c=1\\Rightarrow c=1\\).</p><p class=\"ans\">\\(c=1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{\\sqrt4-\\sqrt0}{4-0}=\\frac12",
+        "why": "Average slope over the interval."
+       },
+       {
+        "code": "\\frac{1}{2\\sqrt c}=\\frac12",
+        "why": "\\(\\sqrt x\\) is continuous on \\([0,4]\\) and differentiable on \\((0,4)\\), which is all the MVT needs."
+       },
+       {
+        "code": "\\sqrt c=1\\ \\Rightarrow\\ c=1",
+        "why": "Cross-multiply.",
+        "watch": [
+         [
+          "c",
+          "1"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s43",
+  "slug": "4-3",
+  "num": "§4.3",
+  "unit": "q5",
+  "title": "What Derivatives Tell Us About the Shape of a Graph",
+  "lede": "Increasing/decreasing, local max/min, concave up/down and inflection points, all read from f′ and f″.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p>This section turns signs into shape. The <strong>sign of \\(f'\\)</strong> tells you whether the graph goes up or down. The <strong>sign of \\(f''\\)</strong> tells you whether it bends like a cup or a cap. Almost every homework problem (#1–29 and #45–65) is the same routine: find where \\(f'\\) or \\(f''\\) is zero, then test the sign on each interval.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Increasing/Decreasing Test</span><p>\\(f'>0\\) on an interval ⇒ \\(f\\) increasing there. \\(f'<0\\) ⇒ decreasing.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">First Derivative Test</span><p>At a critical number \\(c\\): \\(f'\\) changes \\(+\\to-\\) ⇒ <strong>local max</strong>. \\(-\\to+\\) ⇒ <strong>local min</strong>. No sign change ⇒ neither.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Concavity Test</span><p>\\(f''>0\\) ⇒ <strong>concave up</strong> (cup ∪). \\(f''<0\\) ⇒ <strong>concave down</strong> (cap ∩).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Inflection point</span><p>A point on the graph where the concavity <em>changes</em>. Find where \\(f''=0\\) or is undefined, then check that the sign of \\(f''\\) really flips.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Second Derivative Test</span><p>If \\(f'(c)=0\\): \\(f''(c)>0\\) ⇒ local min. \\(f''(c)<0\\) ⇒ local max. \\(f''(c)=0\\) ⇒ the test says nothing; use the first derivative test.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "The routine (sign chart)"
+   },
+   {
+    "type": "prose",
+    "html": "<ol class=\"steps\"><li>Find \\(f'\\) and <strong>factor it</strong>.</li><li>Critical numbers: where \\(f'=0\\) or \\(f'\\) is undefined (inside the domain).</li><li>Cut the number line at those points. Pick a test value in each piece and record the sign of \\(f'\\).</li><li>Read off increasing/decreasing and the local max/min. Plug the \\(x\\) back into \\(f\\) to get the <em>values</em>.</li><li>Repeat steps 1–3 with \\(f''\\) for concavity and inflection points.</li></ol><p class=\"callout\">Answer in the form the question asks: intervals for “where increasing”, <em>values</em> \\(f(c)\\) for “local maximum value”, and points \\((x,y)\\) for “inflection points”.</p>"
+   },
+   {
+    "type": "heading",
+    "text": "Worked examples"
+   },
+   {
+    "type": "examples",
+    "items": [
+     {
+      "label": "Full analysis of a cubic",
+      "html": "<p>\\(f(x)=2x^3-3x^2-12x\\).</p><ol class=\"steps\"><li>\\(f'(x)=6x^2-6x-12=6(x-2)(x+1)\\), so the critical numbers are \\(-1\\) and \\(2\\).</li><li>Signs of \\(f'\\): \\(+\\) on \\((-\\infty,-1)\\), \\(-\\) on \\((-1,2)\\), \\(+\\) on \\((2,\\infty)\\).</li><li>Local max \\(f(-1)=7\\); local min \\(f(2)=-20\\).</li><li>\\(f''(x)=12x-6=0\\) at \\(x=\\tfrac12\\): concave down before it, concave up after it.</li></ol><p class=\"ans\">Inflection point \\((\\tfrac12,-\\tfrac{13}{2})\\)</p>"
+     },
+     {
+      "label": "Second derivative test",
+      "html": "<p>\\(f(x)=x^5-5x+3\\). \\(f'(x)=5x^4-5=0\\Rightarrow x=\\pm1\\). \\(f''(x)=20x^3\\): \\(f''(1)=20>0\\) gives a min, and \\(f''(-1)=-20<0\\) gives a max.</p><p class=\"ans\">Local max \\(f(-1)=7\\); local min \\(f(1)=-1\\)</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p43-1",
+      "source": "Like §4.3 #9–19",
+      "href": null,
+      "question": "For \\(f(x)=2x^3-3x^2-12x\\), find (a) the intervals where \\(f\\) is increasing or decreasing, (b) the local max and min values, and (c) the intervals of concavity and the inflection point.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Factor \\(f'(x)=6x^2-6x-12\\) by pulling out 6 first.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=6(x-2)(x+1)\\). Increasing on \\((-\\infty,-1)\\) and \\((2,\\infty)\\); decreasing on \\((-1,2)\\). \\(f(-1)=-2-3+12=7\\) and \\(f(2)=16-12-24=-20\\). \\(f''=12x-6\\) changes sign at \\(x=\\tfrac12\\), where \\(f(\\tfrac12)=\\tfrac14-\\tfrac34-6=-\\tfrac{13}2\\).</p><p class=\"ans\">Inc \\((-\\infty,-1),(2,\\infty)\\); dec \\((-1,2)\\); loc max \\(7\\), loc min \\(-20\\); CD \\((-\\infty,\\tfrac12)\\), CU \\((\\tfrac12,\\infty)\\); IP \\((\\tfrac12,-\\tfrac{13}2)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=6x^2-6x-12",
+        "why": "Power rule on each term."
+       },
+       {
+        "code": "f'(x)=6(x^2-x-2)=6(x-2)(x+1)",
+        "why": "Always factor. The factors give the cut points.",
+        "watch": [
+         [
+          "\\text{crit}",
+          "-1,\\ 2"
+         ]
+        ]
+       },
+       {
+        "code": "x=-2:\\ 6(-4)(-1)>0",
+        "why": "Test a point left of \\(-1\\): positive, so increasing."
+       },
+       {
+        "code": "x=0:\\ 6(-2)(1)<0",
+        "why": "Between \\(-1\\) and \\(2\\): negative, so decreasing."
+       },
+       {
+        "code": "x=3:\\ 6(1)(4)>0",
+        "why": "Right of \\(2\\): positive, so increasing again.",
+        "watch": [
+         [
+          "\\text{inc}",
+          "(-\\infty,-1),(2,\\infty)"
+         ],
+         [
+          "\\text{dec}",
+          "(-1,2)"
+         ]
+        ]
+       },
+       {
+        "code": "f(-1)=-2-3+12=7",
+        "why": "\\(+\\to-\\) at \\(-1\\), so it's a local max. Plug into \\(f\\) to get the value.",
+        "watch": [
+         [
+          "\\text{loc max}",
+          "7"
+         ]
+        ]
+       },
+       {
+        "code": "f(2)=16-12-24=-20",
+        "why": "\\(-\\to+\\) at \\(2\\), so it's a local min.",
+        "watch": [
+         [
+          "\\text{loc min}",
+          "-20"
+         ]
+        ]
+       },
+       {
+        "code": "f''(x)=12x-6=0\\Rightarrow x=\\tfrac12",
+        "why": "Where concavity can switch."
+       },
+       {
+        "code": "f''<0\\text{ for }x<\\tfrac12,\\ f''>0\\text{ for }x>\\tfrac12",
+        "why": "Sign flips, so it really is an inflection point.",
+        "watch": [
+         [
+          "\\text{CD}",
+          "(-\\infty,\\tfrac12)"
+         ],
+         [
+          "\\text{CU}",
+          "(\\tfrac12,\\infty)"
+         ]
+        ]
+       },
+       {
+        "code": "f(\\tfrac12)=\\tfrac14-\\tfrac34-6=-\\tfrac{13}2",
+        "why": "An inflection <em>point</em> needs both coordinates.",
+        "watch": [
+         [
+          "\\text{IP}",
+          "(\\tfrac12,-\\tfrac{13}2)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p43-2",
+      "source": "Like §4.3 #9–19",
+      "href": null,
+      "question": "For \\(f(x)=x^4-2x^2+3\\), find the intervals of increase/decrease, local extreme values, concavity and inflection points.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f'(x)=4x^3-4x=4x(x-1)(x+1)\\) has three cut points.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Signs of \\(f'\\): \\(-,+,-,+\\) across \\(-1,0,1\\). So local min \\(f(\\pm1)=2\\) and local max \\(f(0)=3\\). \\(f''=12x^2-4=0\\Rightarrow x=\\pm\\tfrac1{\\sqrt3}\\), and \\(f(\\pm\\tfrac1{\\sqrt3})=\\tfrac19-\\tfrac23+3=\\tfrac{22}9\\).</p><p class=\"ans\">Dec \\((-\\infty,-1),(0,1)\\); inc \\((-1,0),(1,\\infty)\\); loc min \\(2\\), loc max \\(3\\); CU \\(|x|>\\tfrac1{\\sqrt3}\\), CD \\(|x|<\\tfrac1{\\sqrt3}\\); IPs \\((\\pm\\tfrac1{\\sqrt3},\\tfrac{22}9)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=4x^3-4x=4x(x-1)(x+1)",
+        "why": "Factor out \\(4x\\), then difference of squares.",
+        "watch": [
+         [
+          "\\text{crit}",
+          "-1,0,1"
+         ]
+        ]
+       },
+       {
+        "code": "-\\ \\big|_{-1}\\ +\\ \\big|_{0}\\ -\\ \\big|_{1}\\ +",
+        "why": "Test \\(x=-2,-\\tfrac12,\\tfrac12,2\\) in the factored form. Count the negative factors."
+       },
+       {
+        "code": "f(-1)=f(1)=1-2+3=2",
+        "why": "\\(-\\to+\\) at \\(\\pm1\\): local mins.",
+        "watch": [
+         [
+          "\\text{loc min}",
+          "2"
+         ]
+        ]
+       },
+       {
+        "code": "f(0)=3",
+        "why": "\\(+\\to-\\) at \\(0\\): local max.",
+        "watch": [
+         [
+          "\\text{loc max}",
+          "3"
+         ]
+        ]
+       },
+       {
+        "code": "f''(x)=12x^2-4",
+        "why": "Differentiate again."
+       },
+       {
+        "code": "12x^2=4\\Rightarrow x=\\pm\\tfrac1{\\sqrt3}",
+        "why": "Where \\(f''=0\\). Outside these \\(f''>0\\) (CU); between them \\(f''<0\\) (CD)."
+       },
+       {
+        "code": "f(\\tfrac1{\\sqrt3})=\\tfrac19-\\tfrac23+3=\\tfrac{22}9",
+        "why": "\\(x^4=\\tfrac19\\), \\(x^2=\\tfrac13\\). Even function, so both points have the same height.",
+        "watch": [
+         [
+          "\\text{IPs}",
+          "(\\pm\\tfrac1{\\sqrt3},\\tfrac{22}9)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p43-3",
+      "source": "Like §4.3 #9–19",
+      "href": null,
+      "question": "For \\(f(x)=xe^{x}\\), find the intervals of increase/decrease, the local extreme value, concavity and the inflection point.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Product rule, then factor out \\(e^x\\). Remember that \\(e^x\\) is always positive.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=e^x(1+x)\\): negative for \\(x<-1\\), positive after, so local min \\(f(-1)=-\\tfrac1e\\). \\(f''=e^x(2+x)\\): CD for \\(x<-2\\), CU for \\(x>-2\\). The inflection point is \\((-2,-2e^{-2})\\).</p><p class=\"ans\">Dec \\((-\\infty,-1)\\), inc \\((-1,\\infty)\\); loc min \\(-1/e\\); CD \\((-\\infty,-2)\\), CU \\((-2,\\infty)\\); IP \\((-2,-2/e^2)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=e^x+xe^x=e^x(1+x)",
+        "why": "Product rule: \\((x)'e^x+x(e^x)'\\)."
+       },
+       {
+        "code": "e^x>0\\ \\Rightarrow\\ \\text{sign of }f'=\\text{sign of }(1+x)",
+        "why": "The exponential never changes the sign, so ignore it.",
+        "watch": [
+         [
+          "\\text{crit}",
+          "-1"
+         ]
+        ]
+       },
+       {
+        "code": "f(-1)=-e^{-1}",
+        "why": "\\(-\\to+\\): local min value \\(-\\tfrac1e\\).",
+        "watch": [
+         [
+          "\\text{loc min}",
+          "-1/e"
+         ]
+        ]
+       },
+       {
+        "code": "f''(x)=e^x(1+x)+e^x=e^x(2+x)",
+        "why": "Product rule on \\(e^x(1+x)\\)."
+       },
+       {
+        "code": "f''=0\\Rightarrow x=-2",
+        "why": "Sign flips from \\(-\\) to \\(+\\) there.",
+        "watch": [
+         [
+          "\\text{CD}",
+          "(-\\infty,-2)"
+         ],
+         [
+          "\\text{CU}",
+          "(-2,\\infty)"
+         ]
+        ]
+       },
+       {
+        "code": "f(-2)=-2e^{-2}",
+        "why": "The y-coordinate of the inflection point.",
+        "watch": [
+         [
+          "\\text{IP}",
+          "(-2,-2/e^2)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p43-4",
+      "source": "Like §4.3 #9–19",
+      "href": null,
+      "question": "For \\(f(x)=x\\ln x\\), find where it is increasing or decreasing, the local extreme value, and the concavity.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>The domain is \\(x>0\\). Then \\(f'(x)=\\ln x+1\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\ln x+1=0\\Rightarrow x=e^{-1}\\). \\(f'<0\\) on \\((0,\\tfrac1e)\\) and \\(f'>0\\) after, so local min \\(f(\\tfrac1e)=-\\tfrac1e\\). \\(f''=\\tfrac1x>0\\): concave up everywhere, no inflection point.</p><p class=\"ans\">Dec \\((0,\\tfrac1e)\\), inc \\((\\tfrac1e,\\infty)\\); loc min \\(-\\tfrac1e\\); CU on \\((0,\\infty)\\); no IP</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\text{domain: }x>0",
+        "why": "\\(\\ln x\\) needs \\(x>0\\). Every interval lives inside \\((0,\\infty)\\)."
+       },
+       {
+        "code": "f'(x)=1\\cdot\\ln x+x\\cdot\\tfrac1x=\\ln x+1",
+        "why": "Product rule."
+       },
+       {
+        "code": "\\ln x=-1\\Rightarrow x=e^{-1}",
+        "why": "Undo ln with \\(e\\).",
+        "watch": [
+         [
+          "\\text{crit}",
+          "1/e"
+         ]
+        ]
+       },
+       {
+        "code": "f'(e^{-2})=-1<0,\\ \\ f'(1)=1>0",
+        "why": "Test one point on each side."
+       },
+       {
+        "code": "f(\\tfrac1e)=\\tfrac1e\\ln\\tfrac1e=-\\tfrac1e",
+        "why": "\\(\\ln(1/e)=-1\\).",
+        "watch": [
+         [
+          "\\text{loc min}",
+          "-1/e"
+         ]
+        ]
+       },
+       {
+        "code": "f''(x)=\\tfrac1x>0",
+        "why": "Positive on the whole domain, so it is always concave up and has no inflection point.",
+        "watch": [
+         [
+          "\\text{CU}",
+          "(0,\\infty)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p43-5",
+      "source": "Like §4.3 #9–19",
+      "href": null,
+      "question": "For \\(f(x)=\\dfrac{x}{x^2+1}\\), find the intervals of increase/decrease and the local extreme values. Then find the inflection points, given that \\(f''(x)=\\dfrac{2x(x^2-3)}{(x^2+1)^3}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Quotient rule: low·d(high) − high·d(low), over low².</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=\\frac{(x^2+1)-x(2x)}{(x^2+1)^2}=\\frac{1-x^2}{(x^2+1)^2}\\). The denominator is always positive, so only \\(1-x^2\\) matters: positive on \\((-1,1)\\). Local min \\(f(-1)=-\\tfrac12\\), local max \\(f(1)=\\tfrac12\\). \\(f''=0\\) at \\(0,\\pm\\sqrt3\\), and the sign flips at each one.</p><p class=\"ans\">Inc \\((-1,1)\\); dec \\((-\\infty,-1),(1,\\infty)\\); loc min \\(-\\tfrac12\\), loc max \\(\\tfrac12\\); IPs \\((0,0),(\\pm\\sqrt3,\\pm\\tfrac{\\sqrt3}4)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'=\\frac{(x^2+1)\\cdot1-x\\cdot2x}{(x^2+1)^2}",
+        "why": "Quotient rule. Low first!"
+       },
+       {
+        "code": "f'=\\frac{1-x^2}{(x^2+1)^2}",
+        "why": "Simplify the top. The bottom is a square plus 1, so it is always positive.",
+        "watch": [
+         [
+          "\\text{crit}",
+          "\\pm1"
+         ]
+        ]
+       },
+       {
+        "code": "1-x^2>0\\iff -1<x<1",
+        "why": "Increasing in the middle, decreasing outside."
+       },
+       {
+        "code": "f(-1)=-\\tfrac12,\\quad f(1)=\\tfrac12",
+        "why": "\\(-\\to+\\) at \\(-1\\) (min); \\(+\\to-\\) at \\(1\\) (max).",
+        "watch": [
+         [
+          "\\text{loc min}",
+          "-1/2"
+         ],
+         [
+          "\\text{loc max}",
+          "1/2"
+         ]
+        ]
+       },
+       {
+        "code": "2x(x^2-3)=0\\Rightarrow x=0,\\pm\\sqrt3",
+        "why": "The bottom of \\(f''\\) is positive, so the sign comes from the top."
+       },
+       {
+        "code": "-\\ \\big|_{-\\sqrt3}\\ +\\ \\big|_{0}\\ -\\ \\big|_{\\sqrt3}\\ +",
+        "why": "The sign of \\(f''\\) flips at all three, so all three are inflection points."
+       },
+       {
+        "code": "f(\\sqrt3)=\\frac{\\sqrt3}{4}",
+        "why": "\\(\\frac{\\sqrt3}{3+1}\\). The function is odd, so \\(f(-\\sqrt3)=-\\frac{\\sqrt3}4\\).",
+        "watch": [
+         [
+          "\\text{IPs}",
+          "(0,0),(\\pm\\sqrt3,\\pm\\tfrac{\\sqrt3}4)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p43-6",
+      "source": "Like §4.3 #21–29",
+      "href": null,
+      "question": "Use the Second Derivative Test to find the local max and min values of \\(f(x)=x^5-5x+3\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Find the critical numbers, then plug each one into \\(f''\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=5x^4-5=5(x^2-1)(x^2+1)\\Rightarrow x=\\pm1\\). \\(f''=20x^3\\): \\(f''(1)=20>0\\) (min) and \\(f''(-1)=-20<0\\) (max).</p><p class=\"ans\">Local max \\(f(-1)=7\\); local min \\(f(1)=-1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=5x^4-5=5(x^2-1)(x^2+1)",
+        "why": "\\(x^2+1\\) is never 0, so only \\(x=\\pm1\\).",
+        "watch": [
+         [
+          "\\text{crit}",
+          "\\pm1"
+         ]
+        ]
+       },
+       {
+        "code": "f''(x)=20x^3",
+        "why": "Second derivative."
+       },
+       {
+        "code": "f''(1)=20>0",
+        "why": "Concave up at a flat point is the bottom of a cup: <b>min</b>."
+       },
+       {
+        "code": "f(1)=1-5+3=-1",
+        "why": "",
+        "watch": [
+         [
+          "\\text{loc min}",
+          "-1"
+         ]
+        ]
+       },
+       {
+        "code": "f''(-1)=-20<0",
+        "why": "Concave down at a flat point is the top of a cap: <b>max</b>."
+       },
+       {
+        "code": "f(-1)=-1+5+3=7",
+        "why": "",
+        "watch": [
+         [
+          "\\text{loc max}",
+          "7"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p43-7",
+      "source": "Like §4.3 #21–29",
+      "href": null,
+      "question": "For \\(f(x)=x-2\\sin x\\) on \\(0<x<2\\pi\\), find the intervals of increase/decrease, the local extreme values, the concavity and the inflection point.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f'(x)=1-2\\cos x=0\\) when \\(\\cos x=\\tfrac12\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\cos x=\\tfrac12\\) at \\(x=\\tfrac\\pi3,\\tfrac{5\\pi}3\\). \\(f'<0\\) near \\(0\\) (cos is close to 1), \\(f'>0\\) in the middle, and \\(f'<0\\) near \\(2\\pi\\). \\(f''=2\\sin x\\): CU on \\((0,\\pi)\\), CD on \\((\\pi,2\\pi)\\).</p><p class=\"ans\">Dec \\((0,\\tfrac\\pi3),(\\tfrac{5\\pi}3,2\\pi)\\), inc \\((\\tfrac\\pi3,\\tfrac{5\\pi}3)\\); loc min \\(\\tfrac\\pi3-\\sqrt3\\), loc max \\(\\tfrac{5\\pi}3+\\sqrt3\\); IP \\((\\pi,\\pi)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=1-2\\cos x",
+        "why": "Derivative of \\(\\sin\\) is \\(\\cos\\)."
+       },
+       {
+        "code": "\\cos x=\\tfrac12\\Rightarrow x=\\tfrac\\pi3,\\ \\tfrac{5\\pi}3",
+        "why": "Unit circle: \\(60^\\circ\\) and \\(300^\\circ\\).",
+        "watch": [
+         [
+          "\\text{crit}",
+          "\\pi/3,\\ 5\\pi/3"
+         ]
+        ]
+       },
+       {
+        "code": "x=\\tfrac\\pi6:\\ 1-\\sqrt3<0",
+        "why": "Test each piece: decreasing first."
+       },
+       {
+        "code": "x=\\pi:\\ 1+2>0",
+        "why": "Increasing in the middle. At \\(x=\\tfrac{11\\pi}6\\) it is negative again."
+       },
+       {
+        "code": "f(\\tfrac\\pi3)=\\tfrac\\pi3-2\\cdot\\tfrac{\\sqrt3}2=\\tfrac\\pi3-\\sqrt3",
+        "why": "\\(-\\to+\\): local min.",
+        "watch": [
+         [
+          "\\text{loc min}",
+          "\\pi/3-\\sqrt3"
+         ]
+        ]
+       },
+       {
+        "code": "f(\\tfrac{5\\pi}3)=\\tfrac{5\\pi}3+\\sqrt3",
+        "why": "\\(\\sin\\tfrac{5\\pi}3=-\\tfrac{\\sqrt3}2\\), so minus that is plus \\(\\sqrt3\\). \\(+\\to-\\): local max.",
+        "watch": [
+         [
+          "\\text{loc max}",
+          "5\\pi/3+\\sqrt3"
+         ]
+        ]
+       },
+       {
+        "code": "f''(x)=2\\sin x",
+        "why": "\\(>0\\) on \\((0,\\pi)\\), \\(<0\\) on \\((\\pi,2\\pi)\\)."
+       },
+       {
+        "code": "f(\\pi)=\\pi-0=\\pi",
+        "why": "Concavity flips at \\(\\pi\\).",
+        "watch": [
+         [
+          "\\text{IP}",
+          "(\\pi,\\pi)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p43-8",
+      "source": "Like §4.3 #21–29",
+      "href": null,
+      "question": "For \\(f(x)=x^{1/3}(x+4)\\), find the intervals of increase/decrease, local extremes, concavity and inflection points.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Expand to \\(x^{4/3}+4x^{1/3}\\) before differentiating, then factor out the lowest power.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=\\tfrac43x^{1/3}+\\tfrac43x^{-2/3}=\\tfrac43x^{-2/3}(x+1)\\). Critical numbers are \\(-1\\) (\\(f'=0\\)) and \\(0\\) (\\(f'\\) undefined). \\(x^{-2/3}>0\\), so the sign follows \\(x+1\\): there is a local min at \\(-1\\) and nothing at \\(0\\). \\(f''=\\tfrac49x^{-5/3}(x-2)\\) changes sign at \\(0\\) and \\(2\\).</p><p class=\"ans\">Dec \\((-\\infty,-1)\\), inc \\((-1,\\infty)\\); loc min \\(f(-1)=-3\\); CU \\((-\\infty,0),(2,\\infty)\\), CD \\((0,2)\\); IPs \\((0,0),(2,6\\sqrt[3]2)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=x^{4/3}+4x^{1/3}",
+        "why": "Distribute so you can use the power rule."
+       },
+       {
+        "code": "f'(x)=\\tfrac43x^{1/3}+\\tfrac43x^{-2/3}",
+        "why": "Bring the power down, subtract 1."
+       },
+       {
+        "code": "f'(x)=\\tfrac43x^{-2/3}(x+1)",
+        "why": "Factor out the <em>lowest</em> power, \\(x^{-2/3}\\).",
+        "watch": [
+         [
+          "\\text{crit}",
+          "-1,\\ 0"
+         ]
+        ]
+       },
+       {
+        "code": "x^{-2/3}=\\frac{1}{(\\sqrt[3]x)^2}>0",
+        "why": "A square is positive, so only \\((x+1)\\) decides the sign."
+       },
+       {
+        "code": "f(-1)=(-1)(3)=-3",
+        "why": "\\(-\\to+\\) at \\(-1\\): local min. At \\(0\\) the sign stays \\(+\\), so no extremum (vertical tangent).",
+        "watch": [
+         [
+          "\\text{loc min}",
+          "-3"
+         ]
+        ]
+       },
+       {
+        "code": "f''=\\tfrac49x^{-2/3}-\\tfrac89x^{-5/3}",
+        "why": "Differentiate each term."
+       },
+       {
+        "code": "f''=\\tfrac49x^{-5/3}(x-2)",
+        "why": "Factor out \\(x^{-5/3}\\). It is negative when \\(x<0\\)."
+       },
+       {
+        "code": "+\\ \\big|_{0}\\ -\\ \\big|_{2}\\ +",
+        "why": "\\(x<0\\): \\((-)(-)=+\\). \\(0<x<2\\): \\((+)(-)=-\\). \\(x>2\\): \\(+\\)."
+       },
+       {
+        "code": "f(2)=\\sqrt[3]2\\cdot6",
+        "why": "Inflection points at \\(x=0\\) and \\(x=2\\).",
+        "watch": [
+         [
+          "\\text{IPs}",
+          "(0,0),(2,6\\sqrt[3]2)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p43-9",
+      "source": "Like §4.3 #45–65",
+      "href": null,
+      "question": "For \\(f(x)=e^{-x^2}\\) (the bell curve), find the local max, the intervals of concavity and the inflection points.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Chain rule: \\(f'=-2xe^{-x^2}\\). For \\(f''\\) use the product rule.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=-2xe^{-x^2}\\): positive for \\(x<0\\), negative for \\(x>0\\), so the max is \\(f(0)=1\\). \\(f''=(4x^2-2)e^{-x^2}\\) is zero at \\(x=\\pm\\tfrac1{\\sqrt2}\\).</p><p class=\"ans\">Loc max \\(f(0)=1\\); CU \\(|x|>\\tfrac1{\\sqrt2}\\), CD \\(|x|<\\tfrac1{\\sqrt2}\\); IPs \\((\\pm\\tfrac1{\\sqrt2},e^{-1/2})\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=e^{-x^2}\\cdot(-2x)",
+        "why": "Chain rule: outside \\(e^u\\), inside \\(u=-x^2\\).",
+        "watch": [
+         [
+          "\\text{crit}",
+          "0"
+         ]
+        ]
+       },
+       {
+        "code": "f(0)=e^0=1",
+        "why": "\\(+\\to-\\) at \\(0\\): local (and absolute) max.",
+        "watch": [
+         [
+          "\\text{loc max}",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "f''=-2e^{-x^2}+(-2x)(-2x)e^{-x^2}",
+        "why": "Product rule on \\((-2x)\\cdot e^{-x^2}\\)."
+       },
+       {
+        "code": "f''=(4x^2-2)e^{-x^2}",
+        "why": "Factor out the exponential."
+       },
+       {
+        "code": "4x^2=2\\Rightarrow x=\\pm\\tfrac1{\\sqrt2}",
+        "why": "Sign flips at both, so both are inflection points."
+       },
+       {
+        "code": "f(\\pm\\tfrac1{\\sqrt2})=e^{-1/2}",
+        "why": "\\(x^2=\\tfrac12\\).",
+        "watch": [
+         [
+          "\\text{IPs}",
+          "(\\pm\\tfrac1{\\sqrt2},e^{-1/2})"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p43-10",
+      "source": "Like §4.3 #31–43",
+      "href": null,
+      "question": "Sketch a graph of a function \\(f\\) with all of these properties: \\(f'(\\pm2)=0\\); \\(f'(x)>0\\) for \\(|x|<2\\); \\(f'(x)<0\\) for \\(|x|>2\\); \\(f''(x)<0\\) for \\(0<x<3\\); \\(f''(x)>0\\) for \\(x>3\\); \\(\\lim_{x\\to\\infty}f(x)=0\\); and \\(f(-x)=-f(x)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Translate each clue into one fact about the picture, then join them up.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>The function is odd (symmetric about the origin), so draw \\(x\\ge0\\) and rotate it \\(180^\\circ\\). Rising from \\((0,0)\\) to a peak at \\(x=2\\), then falling. Concave down until \\(x=3\\), then concave up, flattening toward the x-axis.</p><p class=\"ans\">Peak at \\(x=2\\), valley at \\(x=-2\\), passes through the origin, inflection at \\(x=\\pm3\\), and \\(y\\to0\\) at both ends</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(-x)=-f(x)",
+        "why": "Odd function: symmetric about the origin, and \\(f(0)=0\\). Do the right half, then rotate it."
+       },
+       {
+        "code": "f'>0\\text{ on }(0,2),\\ f'<0\\text{ on }(2,\\infty)",
+        "why": "Up, then down: a local max at \\(x=2\\).",
+        "watch": [
+         [
+          "x=2",
+          "\\text{peak}"
+         ]
+        ]
+       },
+       {
+        "code": "f''<0\\text{ on }(0,3)",
+        "why": "Bending like a cap through the peak."
+       },
+       {
+        "code": "f''>0\\text{ on }(3,\\infty)",
+        "why": "The bend switches at \\(x=3\\): an inflection point while still falling.",
+        "watch": [
+         [
+          "x=3",
+          "\\text{IP}"
+         ]
+        ]
+       },
+       {
+        "code": "\\lim_{x\\to\\infty}f(x)=0",
+        "why": "The graph flattens onto the x-axis: horizontal asymptote \\(y=0\\)."
+       },
+       {
+        "code": "\\text{rotate }180^\\circ",
+        "why": "Valley at \\(x=-2\\), IP at \\(x=-3\\), and the left end also goes to \\(0\\).",
+        "watch": [
+         [
+          "x=-2",
+          "\\text{valley}"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Giving \\(x\\) instead of the value",
+      "html": "<p>“Find the local maximum <em>value</em>” wants \\(f(c)\\), not \\(c\\). Say “local max \\(f(-1)=7\\)”.</p>"
+     },
+     {
+      "title": "\\(f''=0\\) doesn't guarantee an inflection point",
+      "html": "<p>\\(f(x)=x^4\\) has \\(f''(0)=0\\), but it is concave up on both sides. Always check that the sign flips.</p>"
+     },
+     {
+      "title": "Second Derivative Test gives up when \\(f''(c)=0\\)",
+      "html": "<p>That doesn't mean “neither”. Fall back on the First Derivative Test.</p>"
+     },
+     {
+      "title": "Forgetting where \\(f'\\) is undefined",
+      "html": "<p>\\(x^{1/3}\\) and \\(x^{2/3}\\) produce critical numbers where \\(f'\\) blows up (like \\(x=0\\) in #8).</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s44",
+  "slug": "4-4",
+  "num": "§4.4",
+  "unit": "q5",
+  "title": "Indeterminate Forms and l'Hospital's Rule",
+  "lede": "0/0 and ∞/∞ limits by differentiating top and bottom, plus how to rewrite 0·∞, ∞−∞, 1^∞, 0⁰ and ∞⁰ first.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p>When plugging in gives \\(\\frac00\\) or \\(\\frac\\infty\\infty\\), the limit could be anything. l'Hospital's Rule says: differentiate the top and the bottom <strong>separately</strong>, then try the limit again. The homework (#1–69 odd) is mostly the same skill: recognise the form, rewrite it if needed, apply the rule (sometimes twice).</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">l'Hospital's Rule</span><p>If \\(\\lim\\frac{f(x)}{g(x)}\\) is \\(\\frac00\\) or \\(\\frac{\\pm\\infty}{\\pm\\infty}\\), then</p>\\[\\lim\\frac{f(x)}{g(x)}=\\lim\\frac{f'(x)}{g'(x)}.\\]<p class=\"note\">Top' over bottom'. NOT the quotient rule.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">0 · ∞ (product)</span><p>Rewrite as a fraction: \\(fg=\\dfrac{f}{1/g}\\) or \\(\\dfrac{g}{1/f}\\). Put the \\(\\ln\\) on top when there is one.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">∞ − ∞ (difference)</span><p>Combine into a single fraction (common denominator), or factor something out.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">1^∞, 0⁰, ∞⁰ (powers)</span><p>Let \\(y=f^g\\). Take \\(\\ln y=g\\ln f\\), find \\(\\lim\\ln y=L\\) (a 0·∞ form), and the answer is \\(e^{L}\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Not indeterminate</span><p>\\(\\frac{0}{5}=0\\), \\(\\frac{5}{0}\\) (→ ±∞), \\(\\infty+\\infty\\), \\(0^\\infty=0\\) and \\(\\infty\\cdot\\infty\\) are NOT indeterminate. Don't use l'Hospital on them.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Worked examples"
+   },
+   {
+    "type": "examples",
+    "items": [
+     {
+      "label": "Used twice",
+      "html": "<p>\\(\\displaystyle\\lim_{x\\to0}\\frac{e^x-1-x}{x^2}\\) is \\(\\frac00\\). L'H gives \\(\\displaystyle\\lim\\frac{e^x-1}{2x}\\), still \\(\\frac00\\). L'H again gives \\(\\displaystyle\\lim\\frac{e^x}{2}=\\frac12\\).</p><p class=\"ans\">\\(\\tfrac12\\)</p>"
+     },
+     {
+      "label": "A 1^∞ limit",
+      "html": "<p>\\(\\displaystyle\\lim_{x\\to\\infty}\\Big(1+\\frac3x\\Big)^x\\). \\(\\ln y=x\\ln(1+\\tfrac3x)=\\frac{\\ln(1+3/x)}{1/x}\\to3\\), so the answer is \\(e^3\\).</p><p class=\"ans\">\\(e^3\\)</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p44-1",
+      "source": "Like §4.4 #7–21",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to1}\\frac{x^2-1}{x^2-x}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Plug in first: what form is it?</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac00\\). L'H: \\(\\frac{2x}{2x-1}\\to\\frac{2}{1}=2\\). Factoring also works: \\(\\frac{(x-1)(x+1)}{x(x-1)}=\\frac{x+1}{x}\\to2\\).</p><p class=\"ans\">\\(2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{1-1}{1-1}=\\frac00",
+        "why": "Always check the form before using the rule.",
+        "watch": [
+         [
+          "\\text{form}",
+          "0/0"
+         ]
+        ]
+       },
+       {
+        "code": "\\lim\\frac{(x^2-1)'}{(x^2-x)'}=\\lim\\frac{2x}{2x-1}",
+        "why": "Differentiate the top and the bottom separately."
+       },
+       {
+        "code": "\\frac{2(1)}{2(1)-1}=2",
+        "why": "Now plugging in works.",
+        "watch": [
+         [
+          "\\text{limit}",
+          "2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p44-2",
+      "source": "Like §4.4 #7–21",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to0}\\frac{\\tan3x}{\\sin5x}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\frac00\\). Chain rule on both: \\((\\tan3x)'=3\\sec^23x\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>L'H: \\(\\frac{3\\sec^2 3x}{5\\cos5x}\\to\\frac{3\\cdot1}{5\\cdot1}=\\frac35\\).</p><p class=\"ans\">\\(\\tfrac35\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{\\tan0}{\\sin0}=\\frac00",
+        "why": "Indeterminate.",
+        "watch": [
+         [
+          "\\text{form}",
+          "0/0"
+         ]
+        ]
+       },
+       {
+        "code": "\\lim\\frac{3\\sec^23x}{5\\cos5x}",
+        "why": "Chain rule brings out the 3 and the 5."
+       },
+       {
+        "code": "\\frac{3\\sec^20}{5\\cos0}=\\frac{3}{5}",
+        "why": "\\(\\sec0=\\cos0=1\\).",
+        "watch": [
+         [
+          "\\text{limit}",
+          "3/5"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p44-3",
+      "source": "Like §4.4 #7–21",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to0}\\frac{\\sin x-x}{x^3}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>You will need l'Hospital three times. Check the form each time.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac00\\to\\frac{\\cos x-1}{3x^2}\\) (\\(\\frac00\\)) \\(\\to\\frac{-\\sin x}{6x}\\) (\\(\\frac00\\)) \\(\\to\\frac{-\\cos x}{6}\\to-\\frac16\\).</p><p class=\"ans\">\\(-\\tfrac16\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{0-0}{0}",
+        "why": "",
+        "watch": [
+         [
+          "\\text{form}",
+          "0/0"
+         ]
+        ]
+       },
+       {
+        "code": "\\lim\\frac{\\cos x-1}{3x^2}",
+        "why": "L'H #1. Plugging in gives \\(\\frac{1-1}{0}\\): still \\(\\frac00\\)."
+       },
+       {
+        "code": "\\lim\\frac{-\\sin x}{6x}",
+        "why": "L'H #2. Still \\(\\frac00\\)."
+       },
+       {
+        "code": "\\lim\\frac{-\\cos x}{6}=-\\frac16",
+        "why": "L'H #3. Now it plugs in.",
+        "watch": [
+         [
+          "\\text{limit}",
+          "-1/6"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p44-4",
+      "source": "Like §4.4 #7–21",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to\\infty}\\frac{\\ln x}{\\sqrt x}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\frac\\infty\\infty\\). After l'Hospital, simplify the complex fraction.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{1/x}{1/(2\\sqrt x)}=\\frac{2\\sqrt x}{x}=\\frac{2}{\\sqrt x}\\to0\\). Powers of \\(x\\) beat logs.</p><p class=\"ans\">\\(0\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{\\infty}{\\infty}",
+        "why": "Both blow up.",
+        "watch": [
+         [
+          "\\text{form}",
+          "\\infty/\\infty"
+         ]
+        ]
+       },
+       {
+        "code": "\\lim\\frac{1/x}{\\tfrac{1}{2}x^{-1/2}}",
+        "why": "\\((\\ln x)'=\\tfrac1x\\), \\((x^{1/2})'=\\tfrac12x^{-1/2}\\)."
+       },
+       {
+        "code": "=\\lim\\frac{2\\sqrt x}{x}=\\lim\\frac{2}{\\sqrt x}",
+        "why": "Flip and multiply, then cancel."
+       },
+       {
+        "code": "\\frac{2}{\\infty}=0",
+        "why": "",
+        "watch": [
+         [
+          "\\text{limit}",
+          "0"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p44-5",
+      "source": "Like §4.4 #39–49",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to\\infty}x^2e^{-x}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\infty\\cdot0\\). Rewrite it as \\(\\frac{x^2}{e^x}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{x^2}{e^x}\\) is \\(\\frac\\infty\\infty\\to\\frac{2x}{e^x}\\to\\frac{2}{e^x}\\to0\\). Exponentials beat powers.</p><p class=\"ans\">\\(0\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\infty\\cdot0",
+        "why": "A product. l'Hospital needs a fraction.",
+        "watch": [
+         [
+          "\\text{form}",
+          "\\infty\\cdot0"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{x^2}{e^{x}}",
+        "why": "\\(e^{-x}=\\frac1{e^x}\\). Now it's \\(\\frac\\infty\\infty\\)."
+       },
+       {
+        "code": "\\lim\\frac{2x}{e^x}",
+        "why": "L'H #1. Still \\(\\frac\\infty\\infty\\)."
+       },
+       {
+        "code": "\\lim\\frac{2}{e^x}=0",
+        "why": "L'H #2.",
+        "watch": [
+         [
+          "\\text{limit}",
+          "0"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p44-6",
+      "source": "Like §4.4 #39–49",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to0^+}x\\ln x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(0\\cdot(-\\infty)\\). Keep \\(\\ln x\\) on top: \\(\\frac{\\ln x}{1/x}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{1/x}{-1/x^2}=-x\\to0\\).</p><p class=\"ans\">\\(0\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "0\\cdot(-\\infty)",
+        "why": "Indeterminate product.",
+        "watch": [
+         [
+          "\\text{form}",
+          "0\\cdot\\infty"
+         ]
+        ]
+       },
+       {
+        "code": "\\lim\\frac{\\ln x}{x^{-1}}",
+        "why": "Move \\(x\\) to the bottom as \\(\\frac1x\\). This is \\(\\frac{-\\infty}{\\infty}\\)."
+       },
+       {
+        "code": "\\lim\\frac{1/x}{-1/x^{2}}",
+        "why": "L'H. Derivative of \\(x^{-1}\\) is \\(-x^{-2}\\)."
+       },
+       {
+        "code": "=\\lim(-x)=0",
+        "why": "\\(\\frac1x\\cdot(-x^2)=-x\\).",
+        "watch": [
+         [
+          "\\text{limit}",
+          "0"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p44-7",
+      "source": "Like §4.4 #51–57",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to0}\\Big(\\frac1x-\\frac1{e^x-1}\\Big)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\infty-\\infty\\). Combine over the common denominator \\(x(e^x-1)\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{e^x-1-x}{x(e^x-1)}\\) is \\(\\frac00\\). L'H: \\(\\frac{e^x-1}{e^x-1+xe^x}\\), still \\(\\frac00\\). L'H: \\(\\frac{e^x}{2e^x+xe^x}\\to\\frac12\\).</p><p class=\"ans\">\\(\\tfrac12\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\infty-\\infty",
+        "why": "",
+        "watch": [
+         [
+          "\\text{form}",
+          "\\infty-\\infty"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{(e^x-1)-x}{x(e^x-1)}",
+        "why": "One fraction."
+       },
+       {
+        "code": "\\lim\\frac{e^x-1}{(e^x-1)+xe^x}",
+        "why": "L'H. The bottom uses the product rule: \\((x(e^x-1))'=(e^x-1)+xe^x\\)."
+       },
+       {
+        "code": "\\lim\\frac{e^x}{e^x+e^x+xe^x}",
+        "why": "Still \\(\\frac00\\), so L'H again."
+       },
+       {
+        "code": "\\frac{1}{1+1+0}=\\frac12",
+        "why": "",
+        "watch": [
+         [
+          "\\text{limit}",
+          "1/2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p44-8",
+      "source": "Like §4.4 #59–69",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to0^+}x^{x}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(0^0\\). Let \\(y=x^x\\) and take \\(\\ln\\) of both sides.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\ln y=x\\ln x\\to0\\) (from #6). So \\(y\\to e^0=1\\).</p><p class=\"ans\">\\(1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "0^0",
+        "why": "Indeterminate power.",
+        "watch": [
+         [
+          "\\text{form}",
+          "0^0"
+         ]
+        ]
+       },
+       {
+        "code": "\\ln y=\\ln x^x=x\\ln x",
+        "why": "Log rule: the exponent comes down."
+       },
+       {
+        "code": "\\lim_{x\\to0^+}x\\ln x=0",
+        "why": "Exactly problem #6.",
+        "watch": [
+         [
+          "\\lim\\ln y",
+          "0"
+         ]
+        ]
+       },
+       {
+        "code": "y\\to e^{0}=1",
+        "why": "Undo the ln. Don't stop at 0! The question was about \\(y\\), not \\(\\ln y\\).",
+        "watch": [
+         [
+          "\\text{limit}",
+          "1"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p44-9",
+      "source": "Like §4.4 #59–69",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to0^+}(1+\\sin4x)^{\\cot x}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(1^\\infty\\). \\(\\ln y=\\cot x\\,\\ln(1+\\sin4x)=\\frac{\\ln(1+\\sin4x)}{\\tan x}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{\\ln(1+\\sin4x)}{\\tan x}\\) is \\(\\frac00\\). L'H: \\(\\frac{4\\cos4x/(1+\\sin4x)}{\\sec^2x}\\to\\frac{4}{1}=4\\). So the answer is \\(e^4\\).</p><p class=\"ans\">\\(e^4\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "1^{\\infty}",
+        "why": "Base → 1, exponent → ∞.",
+        "watch": [
+         [
+          "\\text{form}",
+          "1^\\infty"
+         ]
+        ]
+       },
+       {
+        "code": "\\ln y=\\cot x\\cdot\\ln(1+\\sin4x)",
+        "why": "Bring the exponent down."
+       },
+       {
+        "code": "=\\frac{\\ln(1+\\sin4x)}{\\tan x}",
+        "why": "\\(\\cot x=\\frac1{\\tan x}\\). Now it's \\(\\frac00\\)."
+       },
+       {
+        "code": "\\lim\\frac{\\frac{4\\cos4x}{1+\\sin4x}}{\\sec^2x}",
+        "why": "L'H. The top is a chain rule: \\(\\frac{1}{u}\\cdot u'\\)."
+       },
+       {
+        "code": "\\frac{4\\cdot1/1}{1}=4",
+        "why": "",
+        "watch": [
+         [
+          "\\lim\\ln y",
+          "4"
+         ]
+        ]
+       },
+       {
+        "code": "y\\to e^4",
+        "why": "",
+        "watch": [
+         [
+          "\\text{limit}",
+          "e^4"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p44-10",
+      "source": "Like §4.4 #59–69",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to\\infty}\\Big(1+\\frac3x\\Big)^{x}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(1^\\infty\\). Write \\(\\ln y\\) as \\(\\frac{\\ln(1+3/x)}{1/x}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>L'H on \\(\\frac{\\ln(1+3x^{-1})}{x^{-1}}\\): \\(\\frac{\\frac{-3x^{-2}}{1+3/x}}{-x^{-2}}=\\frac{3}{1+3/x}\\to3\\). So \\(y\\to e^3\\).</p><p class=\"ans\">\\(e^3\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "1^\\infty",
+        "why": "",
+        "watch": [
+         [
+          "\\text{form}",
+          "1^\\infty"
+         ]
+        ]
+       },
+       {
+        "code": "\\ln y=x\\ln(1+\\tfrac3x)=\\frac{\\ln(1+3x^{-1})}{x^{-1}}",
+        "why": "Move \\(x\\) down as \\(\\frac1x\\): \\(\\frac00\\)."
+       },
+       {
+        "code": "\\frac{\\frac{1}{1+3/x}\\cdot(-3x^{-2})}{-x^{-2}}",
+        "why": "L'H. The chain rule on top gives \\(-3x^{-2}\\)."
+       },
+       {
+        "code": "=\\frac{3}{1+3/x}\\to3",
+        "why": "The \\(-x^{-2}\\) cancels.",
+        "watch": [
+         [
+          "\\lim\\ln y",
+          "3"
+         ]
+        ]
+       },
+       {
+        "code": "y\\to e^3",
+        "why": "Shortcut to remember: \\((1+\\tfrac ax)^x\\to e^a\\).",
+        "watch": [
+         [
+          "\\text{limit}",
+          "e^3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p44-11",
+      "source": "Like §4.4 #1–6",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to\\pi^-}\\frac{\\sin x}{1-\\cos x}\\). (Careful!)",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Plug in before you do anything.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{\\sin\\pi}{1-\\cos\\pi}=\\frac{0}{2}=0\\). It's not indeterminate, so l'Hospital doesn't apply. Using it anyway gives \\(\\frac{\\cos x}{\\sin x}\\to-\\infty\\), which is wrong.</p><p class=\"ans\">\\(0\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{\\sin\\pi}{1-\\cos\\pi}=\\frac{0}{1-(-1)}",
+        "why": "Plug in: \\(\\cos\\pi=-1\\)."
+       },
+       {
+        "code": "=\\frac02=0",
+        "why": "Zero over a nonzero number is just 0. Done.",
+        "watch": [
+         [
+          "\\text{form}",
+          "0/2"
+         ],
+         [
+          "\\text{limit}",
+          "0"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Using the quotient rule",
+      "html": "<p>l'Hospital is \\(\\frac{f'}{g'}\\), the top and bottom differentiated separately. It is not \\(\\big(\\frac fg\\big)'\\).</p>"
+     },
+     {
+      "title": "Not checking the form",
+      "html": "<p>Check before every application, including the 2nd and 3rd. Problem #11 shows what goes wrong.</p>"
+     },
+     {
+      "title": "Stopping at \\(\\ln y\\)",
+      "html": "<p>For powers, \\(\\lim\\ln y=L\\) means the answer is \\(e^L\\), not \\(L\\).</p>"
+     },
+     {
+      "title": "Thinking \\(1^\\infty=1\\)",
+      "html": "<p>It's indeterminate. \\((1+\\frac3x)^x\\to e^3\\), not 1.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s45",
+  "slug": "4-5",
+  "num": "§4.5",
+  "unit": "q5",
+  "title": "Summary of Curve Sketching",
+  "lede": "The A–H checklist: domain, intercepts, symmetry, asymptotes, f′ and f″, then draw.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p>§4.5 puts everything together. Homework #7–53 all say “use the guidelines to sketch the curve”. On a quiz you will be graded on the <strong>list of facts</strong> as much as the drawing, so write each step down.</p><ol class=\"steps\"><li><strong>Domain</strong></li><li><strong>Intercepts</strong>: \\(y\\)-int \\(f(0)\\); \\(x\\)-ints where \\(f=0\\)</li><li><strong>Symmetry</strong>: even \\(f(-x)=f(x)\\), odd \\(f(-x)=-f(x)\\), periodic</li><li><strong>Asymptotes</strong>: vertical (denominator 0), horizontal (\\(\\lim_{x\\to\\pm\\infty}\\)), slant (long division)</li><li><strong>Increasing/decreasing</strong> from \\(f'\\)</li><li><strong>Local max/min</strong></li><li><strong>Concavity and inflection points</strong> from \\(f''\\)</li><li><strong>Sketch</strong> using all of the above</li></ol>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Vertical asymptote</span><p>\\(x=a\\) where the denominator is 0 (and the top isn't). Check \\(\\lim_{x\\to a^\\pm}\\) to see which way it goes.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Horizontal asymptote</span><p>\\(y=L\\) if \\(\\lim_{x\\to\\infty}f=L\\) or \\(\\lim_{x\\to-\\infty}f=L\\). For rational functions compare the degrees.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Slant asymptote</span><p>When the top's degree is exactly one more than the bottom's, long-divide: \\(f=mx+b+\\frac{\\text{rem}}{\\text{bottom}}\\). The line \\(y=mx+b\\) is the asymptote.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p45-1",
+      "source": "Like §4.5 #7–15",
+      "href": null,
+      "question": "Sketch \\(y=x^3+3x^2\\) using the guidelines.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(y'=3x(x+2)\\), \\(y''=6x+6\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Domain ℝ. Intercepts: \\(x^2(x+3)=0\\Rightarrow x=0,-3\\); \\(y\\)-int \\(0\\). No symmetry, no asymptotes. \\(y'=3x(x+2)\\): inc \\((-\\infty,-2)\\), dec \\((-2,0)\\), inc \\((0,\\infty)\\). Local max \\((-2,4)\\), local min \\((0,0)\\). \\(y''=6(x+1)\\): CD \\((-\\infty,-1)\\), CU \\((-1,\\infty)\\), IP \\((-1,2)\\).</p><p class=\"ans\">Max \\((-2,4)\\), min \\((0,0)\\), IP \\((-1,2)\\), x-intercepts \\(-3,0\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\text{A. domain }\\mathbb R",
+        "why": "Polynomial."
+       },
+       {
+        "code": "\\text{B. }x^2(x+3)=0\\Rightarrow x=0,-3",
+        "why": "x-intercepts. y-intercept \\(y(0)=0\\).",
+        "watch": [
+         [
+          "\\text{ints}",
+          "(-3,0),(0,0)"
+         ]
+        ]
+       },
+       {
+        "code": "\\text{C/D. no symmetry, no asymptotes}",
+        "why": "Mixed odd and even powers; polynomials have no asymptotes."
+       },
+       {
+        "code": "\\text{E. }y'=3x^2+6x=3x(x+2)",
+        "why": "Signs \\(+,-,+\\) across \\(-2,0\\)."
+       },
+       {
+        "code": "\\text{F. }y(-2)=-8+12=4",
+        "why": "Local max \\((-2,4)\\). Local min \\((0,0)\\).",
+        "watch": [
+         [
+          "\\text{max}",
+          "(-2,4)"
+         ],
+         [
+          "\\text{min}",
+          "(0,0)"
+         ]
+        ]
+       },
+       {
+        "code": "\\text{G. }y''=6x+6=0\\Rightarrow x=-1",
+        "why": "CD left of \\(-1\\), CU right of it.",
+        "watch": [
+         [
+          "\\text{IP}",
+          "(-1,2)"
+         ]
+        ]
+       },
+       {
+        "code": "\\text{H. sketch}",
+        "why": "Start bottom-left, rise to \\((-2,4)\\), fall through the IP \\((-1,2)\\) to \\((0,0)\\), then rise."
+       }
+      ]
+     },
+     {
+      "id": "p45-2",
+      "source": "Like §4.5 #7–15",
+      "href": null,
+      "question": "Sketch \\(y=x^4-4x^3\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(y'=4x^2(x-3)\\). The \\(x^2\\) factor doesn't change sign.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Intercepts \\(x^3(x-4)=0\\Rightarrow0,4\\). \\(y'=4x^2(x-3)\\): negative for \\(x<3\\) (except at 0), positive after. Only one local min, \\((3,-27)\\); \\(x=0\\) is a flat spot, not an extremum. \\(y''=12x(x-2)\\): CU \\((-\\infty,0)\\), CD \\((0,2)\\), CU \\((2,\\infty)\\). IPs \\((0,0)\\) and \\((2,-16)\\).</p><p class=\"ans\">Min \\((3,-27)\\); IPs \\((0,0),(2,-16)\\); x-intercepts \\(0,4\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x^3(x-4)=0",
+        "why": "x-intercepts \\(0\\) and \\(4\\).",
+        "watch": [
+         [
+          "\\text{ints}",
+          "0,\\ 4"
+         ]
+        ]
+       },
+       {
+        "code": "y'=4x^3-12x^2=4x^2(x-3)",
+        "why": "Critical numbers \\(0\\) and \\(3\\)."
+       },
+       {
+        "code": "4x^2\\ge0\\Rightarrow\\text{sign}=\\text{sign}(x-3)",
+        "why": "Decreasing on \\((-\\infty,3)\\) and increasing after. At \\(0\\) there is no sign change, so no extremum."
+       },
+       {
+        "code": "y(3)=81-108=-27",
+        "why": "",
+        "watch": [
+         [
+          "\\text{min}",
+          "(3,-27)"
+         ]
+        ]
+       },
+       {
+        "code": "y''=12x^2-24x=12x(x-2)",
+        "why": "Signs \\(+,-,+\\) across \\(0,2\\)."
+       },
+       {
+        "code": "y(2)=16-32=-16",
+        "why": "",
+        "watch": [
+         [
+          "\\text{IPs}",
+          "(0,0),(2,-16)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p45-3",
+      "source": "Like §4.5 #17–31",
+      "href": null,
+      "question": "Sketch \\(y=\\dfrac{x}{x^2-9}\\). Use \\(y''=\\dfrac{2x(x^2+27)}{(x^2-9)^3}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Vertical asymptotes where \\(x^2-9=0\\). Is the function odd?</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Domain \\(x\\ne\\pm3\\). Odd. Passes through \\((0,0)\\). VA \\(x=\\pm3\\), HA \\(y=0\\). \\(y'=\\frac{-(x^2+9)}{(x^2-9)^2}<0\\): decreasing on every piece, no max or min. \\(y''\\) sign: CD on \\((-\\infty,-3)\\), CU on \\((-3,0)\\), CD on \\((0,3)\\), CU on \\((3,\\infty)\\). IP \\((0,0)\\).</p><p class=\"ans\">VA \\(x=\\pm3\\), HA \\(y=0\\), always decreasing, no extrema, IP \\((0,0)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\text{domain: }x\\ne\\pm3",
+        "why": "Denominator \\(x^2-9=(x-3)(x+3)\\)."
+       },
+       {
+        "code": "f(-x)=\\frac{-x}{x^2-9}=-f(x)",
+        "why": "Odd: symmetric about the origin.",
+        "watch": [
+         [
+          "\\text{sym}",
+          "\\text{odd}"
+         ]
+        ]
+       },
+       {
+        "code": "\\lim_{x\\to3^+}=\\tfrac{3}{0^+}=+\\infty",
+        "why": "Just right of 3 the bottom is a small positive number. Left of 3 the limit is \\(-\\infty\\).",
+        "watch": [
+         [
+          "\\text{VA}",
+          "x=\\pm3"
+         ]
+        ]
+       },
+       {
+        "code": "\\lim_{x\\to\\pm\\infty}\\frac{x}{x^2-9}=0",
+        "why": "The bottom has the higher degree.",
+        "watch": [
+         [
+          "\\text{HA}",
+          "y=0"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{(x^2-9)-x(2x)}{(x^2-9)^2}",
+        "why": "Quotient rule."
+       },
+       {
+        "code": "y'=\\frac{-(x^2+9)}{(x^2-9)^2}<0",
+        "why": "The top is always negative and the bottom always positive: decreasing everywhere, so no local extremes.",
+        "watch": [
+         [
+          "\\text{extrema}",
+          "\\text{none}"
+         ]
+        ]
+       },
+       {
+        "code": "y''=\\frac{2x(x^2+27)}{(x^2-9)^3}",
+        "why": "\\(x^2+27>0\\). The sign comes from \\(x\\) and \\((x^2-9)^3\\)."
+       },
+       {
+        "code": "-\\ \\big|_{-3}\\ +\\ \\big|_{0}\\ -\\ \\big|_{3}\\ +",
+        "why": "Only \\(x=0\\) is in the domain, so that's the only IP.",
+        "watch": [
+         [
+          "\\text{IP}",
+          "(0,0)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p45-4",
+      "source": "Like §4.5 #33–45",
+      "href": null,
+      "question": "Sketch \\(y=\\dfrac{e^x}{x}\\). Use \\(y''=\\dfrac{e^x(x^2-2x+2)}{x^3}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>VA at \\(x=0\\). What does \\(e^x/x\\) do as \\(x\\to-\\infty\\)?</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Domain \\(x\\ne0\\). No intercepts. VA \\(x=0\\) (\\(\\to+\\infty\\) from the right, \\(-\\infty\\) from the left). HA \\(y=0\\) as \\(x\\to-\\infty\\). \\(y'=\\frac{e^x(x-1)}{x^2}\\): dec on \\((-\\infty,0)\\) and \\((0,1)\\), inc on \\((1,\\infty)\\). Local min \\((1,e)\\). \\(x^2-2x+2>0\\) always, so CU for \\(x>0\\) and CD for \\(x<0\\). No IP.</p><p class=\"ans\">VA \\(x=0\\), HA \\(y=0\\) (left side), min \\((1,e)\\), CD \\(x<0\\), CU \\(x>0\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\text{domain: }x\\ne0",
+        "why": "No intercepts: \\(e^x\\) is never 0, and \\(x=0\\) is excluded."
+       },
+       {
+        "code": "\\lim_{x\\to0^+}\\frac{e^x}{x}=+\\infty,\\ \\lim_{x\\to0^-}=-\\infty",
+        "why": "",
+        "watch": [
+         [
+          "\\text{VA}",
+          "x=0"
+         ]
+        ]
+       },
+       {
+        "code": "\\lim_{x\\to-\\infty}\\frac{e^x}{x}=\\frac{0}{-\\infty}=0",
+        "why": "To the right it goes to \\(\\infty\\) (l'Hospital), so the HA is on the left only.",
+        "watch": [
+         [
+          "\\text{HA}",
+          "y=0\\ (x\\to-\\infty)"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{xe^x-e^x}{x^2}=\\frac{e^x(x-1)}{x^2}",
+        "why": "Quotient rule. Only \\((x-1)\\) can change sign.",
+        "watch": [
+         [
+          "\\text{crit}",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "y(1)=e",
+        "why": "\\(-\\to+\\) at 1.",
+        "watch": [
+         [
+          "\\text{min}",
+          "(1,e)"
+         ]
+        ]
+       },
+       {
+        "code": "x^2-2x+2=(x-1)^2+1>0",
+        "why": "Complete the square: always positive."
+       },
+       {
+        "code": "\\text{sign of }y''=\\text{sign of }x^3",
+        "why": "CD for \\(x<0\\), CU for \\(x>0\\). The flip happens at the asymptote, so there is no IP."
+       }
+      ]
+     },
+     {
+      "id": "p45-5",
+      "source": "Like §4.5 #47–53",
+      "href": null,
+      "question": "Sketch \\(y=\\dfrac{x^2}{x-1}\\), including its slant asymptote.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Long division: \\(\\frac{x^2}{x-1}=x+1+\\frac{1}{x-1}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Domain \\(x\\ne1\\); intercept \\((0,0)\\). VA \\(x=1\\). Slant asymptote \\(y=x+1\\). \\(y'=\\frac{x(x-2)}{(x-1)^2}\\): inc \\((-\\infty,0)\\), dec \\((0,1)\\) and \\((1,2)\\), inc \\((2,\\infty)\\). Local max \\((0,0)\\), local min \\((2,4)\\). \\(y''=\\frac2{(x-1)^3}\\): CD for \\(x<1\\), CU for \\(x>1\\).</p><p class=\"ans\">VA \\(x=1\\), slant \\(y=x+1\\), max \\((0,0)\\), min \\((2,4)\\), no IP</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{x^2}{x-1}=x+1+\\frac{1}{x-1}",
+        "why": "Long division (or write \\(x^2=(x-1)(x+1)+1\\))."
+       },
+       {
+        "code": "\\frac1{x-1}\\to0\\text{ as }x\\to\\pm\\infty",
+        "why": "So the graph hugs the line \\(y=x+1\\).",
+        "watch": [
+         [
+          "\\text{slant}",
+          "y=x+1"
+         ],
+         [
+          "\\text{VA}",
+          "x=1"
+         ]
+        ]
+       },
+       {
+        "code": "y'=1-\\frac{1}{(x-1)^2}=\\frac{x^2-2x}{(x-1)^2}",
+        "why": "Differentiating the divided form is easier."
+       },
+       {
+        "code": "y'=\\frac{x(x-2)}{(x-1)^2}",
+        "why": "Signs \\(+,-,-,+\\) across \\(0,1,2\\)."
+       },
+       {
+        "code": "y(0)=0,\\quad y(2)=\\frac{4}{1}=4",
+        "why": "Local max at 0, local min at 2.",
+        "watch": [
+         [
+          "\\text{max}",
+          "(0,0)"
+         ],
+         [
+          "\\text{min}",
+          "(2,4)"
+         ]
+        ]
+       },
+       {
+        "code": "y''=\\frac{2}{(x-1)^3}",
+        "why": "Derivative of \\(-(x-1)^{-2}\\). It changes sign only at the asymptote, so there is no IP."
+       }
+      ]
+     },
+     {
+      "id": "p45-6",
+      "source": "Like §4.5 #33–45",
+      "href": null,
+      "question": "Sketch \\(y=x-\\ln x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Domain \\(x>0\\). \\(y'=1-\\frac1x\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Domain \\((0,\\infty)\\). As \\(x\\to0^+\\), \\(-\\ln x\\to+\\infty\\): VA \\(x=0\\). \\(y'=\\frac{x-1}{x}\\): dec on \\((0,1)\\), inc after. Min \\((1,1)\\). \\(y''=\\frac1{x^2}>0\\): CU everywhere. No intercepts (the min is above the axis).</p><p class=\"ans\">VA \\(x=0\\), min \\((1,1)\\), concave up, no intercepts</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\text{domain: }x>0",
+        "why": "Because of \\(\\ln x\\)."
+       },
+       {
+        "code": "\\lim_{x\\to0^+}(x-\\ln x)=0-(-\\infty)=\\infty",
+        "why": "",
+        "watch": [
+         [
+          "\\text{VA}",
+          "x=0"
+         ]
+        ]
+       },
+       {
+        "code": "y'=1-\\tfrac1x=\\tfrac{x-1}{x}",
+        "why": "Negative on \\((0,1)\\), positive after."
+       },
+       {
+        "code": "y(1)=1-0=1",
+        "why": "",
+        "watch": [
+         [
+          "\\text{min}",
+          "(1,1)"
+         ]
+        ]
+       },
+       {
+        "code": "y''=\\tfrac{1}{x^2}>0",
+        "why": "Concave up everywhere. The lowest value is 1, so the graph never touches the x-axis."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Inflection point at an asymptote",
+      "html": "<p>Concavity can flip at a vertical asymptote (like \\(e^x/x\\) at \\(x=0\\)), but that's not an inflection point: the function isn't defined there.</p>"
+     },
+     {
+      "title": "Skipping the limits at the VA",
+      "html": "<p>Find which side goes to \\(+\\infty\\) and which to \\(-\\infty\\). It decides how the sketch looks.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s47",
+  "slug": "4-7",
+  "num": "§4.7",
+  "unit": "q5",
+  "title": "Optimization Problems",
+  "lede": "Word problems: write one function of one variable, then use the max/min tools.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p>Your assigned problems are #3–7 odd (number problems) and #25–27 (geometry). They follow one recipe:</p><ol class=\"steps\"><li><strong>Draw and name</strong> the variables.</li><li>Write the quantity to optimize (the <strong>objective</strong>).</li><li>Use the <strong>constraint</strong> to eliminate all but one variable.</li><li>State the domain.</li><li>Set the derivative to 0, then confirm max or min (first/second derivative test, or the endpoints).</li><li>Answer the actual question, with units.</li></ol>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Objective vs constraint</span><p>The <strong>objective</strong> is what you maximize or minimize (area, cost, distance). The <strong>constraint</strong> is the fixed fact (sum is 100, fence is 2400 ft). Solve the constraint for one variable and substitute.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Distance trick</span><p>To minimise a distance, minimise \\(d^2\\) instead. Same answer, no square root.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Justify it</span><p>Write one line such as “\\(f''>0\\), so this is a min” or “\\(f'\\) changes \\(+\\to-\\)”. Teachers take marks off without it.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p47-1",
+      "source": "Like §4.7 #3",
+      "href": null,
+      "question": "Find two positive numbers whose sum is 100 and whose product is as large as possible.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Product \\(P=x\\,y\\) with \\(y=100-x\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(P(x)=x(100-x)=100x-x^2\\) on \\(0<x<100\\). \\(P'=100-2x=0\\Rightarrow x=50\\). \\(P''=-2<0\\), so it's a max.</p><p class=\"ans\">\\(50\\) and \\(50\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x+y=100",
+        "why": "Constraint.",
+        "watch": [
+         [
+          "y",
+          "100-x"
+         ]
+        ]
+       },
+       {
+        "code": "P=xy=x(100-x)",
+        "why": "Objective, now in one variable."
+       },
+       {
+        "code": "P'(x)=100-2x=0",
+        "why": "",
+        "watch": [
+         [
+          "x",
+          "50"
+         ]
+        ]
+       },
+       {
+        "code": "P''=-2<0\\Rightarrow\\text{max}",
+        "why": "Concave down, so it's the top."
+       },
+       {
+        "code": "y=100-50=50",
+        "why": "",
+        "watch": [
+         [
+          "\\text{numbers}",
+          "50,\\ 50"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p47-2",
+      "source": "Like §4.7 #5",
+      "href": null,
+      "question": "Find two positive numbers whose product is 100 and whose sum is as small as possible.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(y=\\frac{100}{x}\\). Minimise \\(S=x+\\frac{100}{x}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(S'=1-\\frac{100}{x^2}=0\\Rightarrow x=10\\). \\(S''=\\frac{200}{x^3}>0\\), so it's a min. \\(y=10\\).</p><p class=\"ans\">\\(10\\) and \\(10\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "xy=100\\Rightarrow y=\\tfrac{100}{x}",
+        "why": "Constraint."
+       },
+       {
+        "code": "S=x+\\tfrac{100}{x}",
+        "why": "Objective. Domain \\(x>0\\)."
+       },
+       {
+        "code": "S'=1-\\tfrac{100}{x^2}=0",
+        "why": "\\(x^2=100\\), so \\(x=10\\) (positive).",
+        "watch": [
+         [
+          "x",
+          "10"
+         ]
+        ]
+       },
+       {
+        "code": "S''=\\tfrac{200}{x^3}>0",
+        "why": "Concave up, so it's a min."
+       },
+       {
+        "code": "y=\\tfrac{100}{10}=10",
+        "why": "",
+        "watch": [
+         [
+          "\\text{numbers}",
+          "10,\\ 10"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p47-3",
+      "source": "Like §4.7 #7",
+      "href": null,
+      "question": "Find the positive number for which the sum of the number and its reciprocal is smallest.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Minimise \\(f(x)=x+\\frac1x\\) for \\(x>0\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=1-\\frac1{x^2}=0\\Rightarrow x=1\\). \\(f''=\\frac2{x^3}>0\\), so it's a min. The smallest sum is 2.</p><p class=\"ans\">\\(x=1\\) (sum \\(=2\\))</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=x+x^{-1},\\ x>0",
+        "why": "Objective."
+       },
+       {
+        "code": "f'(x)=1-x^{-2}=0",
+        "why": "",
+        "watch": [
+         [
+          "x",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "f''(1)=2>0",
+        "why": "Min."
+       },
+       {
+        "code": "f(1)=1+1=2",
+        "why": "",
+        "watch": [
+         [
+          "\\text{min sum}",
+          "2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p47-4",
+      "source": "Like §4.7 #9–11",
+      "href": null,
+      "question": "A farmer has 2400 ft of fencing to enclose a rectangular field along a straight river. No fence is needed along the river. What dimensions give the largest area?",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Two sides of length \\(x\\) (perpendicular to the river) and one side \\(y\\): \\(2x+y=2400\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(A=xy=x(2400-2x)=2400x-2x^2\\), \\(0\\le x\\le1200\\). \\(A'=2400-4x=0\\Rightarrow x=600\\), \\(y=1200\\). At the endpoints \\(A=0\\), so this is the max: \\(A=720{,}000\\) ft².</p><p class=\"ans\">\\(600\\) ft by \\(1200\\) ft (area \\(720{,}000\\) ft²)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "2x+y=2400",
+        "why": "Three sides of fence, since the river is the fourth.",
+        "watch": [
+         [
+          "y",
+          "2400-2x"
+         ]
+        ]
+       },
+       {
+        "code": "A=x(2400-2x)",
+        "why": "Objective in one variable."
+       },
+       {
+        "code": "0\\le x\\le1200",
+        "why": "Lengths can't be negative. This is a closed interval, so check the endpoints too."
+       },
+       {
+        "code": "A'=2400-4x=0\\Rightarrow x=600",
+        "why": "",
+        "watch": [
+         [
+          "x",
+          "600"
+         ]
+        ]
+       },
+       {
+        "code": "A(0)=A(1200)=0",
+        "why": "The endpoints give zero area, so \\(x=600\\) wins."
+       },
+       {
+        "code": "y=1200,\\ A=720{,}000",
+        "why": "",
+        "watch": [
+         [
+          "\\text{dims}",
+          "600\\times1200"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p47-5",
+      "source": "Like §4.7 #13–19",
+      "href": null,
+      "question": "An open-top box with a square base must hold \\(32{,}000\\text{ cm}^3\\). Find the dimensions that use the least material.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Base \\(x\\times x\\), height \\(h\\). Material \\(=x^2+4xh\\); volume \\(x^2h=32000\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(h=\\frac{32000}{x^2}\\), so \\(S=x^2+\\frac{128000}{x}\\). \\(S'=2x-\\frac{128000}{x^2}=0\\Rightarrow x^3=64000\\Rightarrow x=40\\), \\(h=20\\). \\(S''>0\\), so it's a min.</p><p class=\"ans\">Base \\(40\\times40\\) cm, height \\(20\\) cm</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x^2h=32000\\Rightarrow h=\\tfrac{32000}{x^2}",
+        "why": "Constraint (volume)."
+       },
+       {
+        "code": "S=x^2+4xh",
+        "why": "Bottom + 4 sides (open top)."
+       },
+       {
+        "code": "S=x^2+\\tfrac{128000}{x}",
+        "why": "Substitute \\(h\\): \\(4x\\cdot\\frac{32000}{x^2}\\)."
+       },
+       {
+        "code": "S'=2x-\\tfrac{128000}{x^2}=0",
+        "why": "Multiply by \\(x^2\\): \\(2x^3=128000\\)."
+       },
+       {
+        "code": "x^3=64000\\Rightarrow x=40",
+        "why": "",
+        "watch": [
+         [
+          "x",
+          "40"
+         ]
+        ]
+       },
+       {
+        "code": "S''=2+\\tfrac{256000}{x^3}>0",
+        "why": "Min."
+       },
+       {
+        "code": "h=\\tfrac{32000}{1600}=20",
+        "why": "",
+        "watch": [
+         [
+          "\\text{dims}",
+          "40\\times40\\times20"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p47-6",
+      "source": "Like §4.7 #25",
+      "href": null,
+      "question": "Find the point on the line \\(y=2x+3\\) that is closest to the origin.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Minimise \\(d^2=x^2+y^2=x^2+(2x+3)^2\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(D=5x^2+12x+9\\). \\(D'=10x+12=0\\Rightarrow x=-\\tfrac65\\), \\(y=-\\tfrac{12}5+3=\\tfrac35\\). \\(D''=10>0\\), so it's a min.</p><p class=\"ans\">\\(\\left(-\\tfrac65,\\tfrac35\\right)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "d^2=(x-0)^2+(y-0)^2",
+        "why": "Distance squared to the origin."
+       },
+       {
+        "code": "D=x^2+(2x+3)^2=5x^2+12x+9",
+        "why": "Use the line to eliminate \\(y\\)."
+       },
+       {
+        "code": "D'=10x+12=0",
+        "why": "",
+        "watch": [
+         [
+          "x",
+          "-6/5"
+         ]
+        ]
+       },
+       {
+        "code": "y=2(-\\tfrac65)+3=\\tfrac35",
+        "why": "",
+        "watch": [
+         [
+          "\\text{point}",
+          "(-6/5,\\ 3/5)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p47-7",
+      "source": "Like §4.7 #26",
+      "href": null,
+      "question": "Find the point on the parabola \\(y^2=2x\\) that is closest to the point \\((1,4)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Write \\(x=\\frac{y^2}{2}\\) and minimise \\(d^2\\) as a function of \\(y\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(D(y)=(\\tfrac{y^2}2-1)^2+(y-4)^2\\). \\(D'=2(\\tfrac{y^2}2-1)y+2(y-4)=y^3-8=0\\Rightarrow y=2\\), \\(x=2\\). \\(D'\\) changes \\(-\\to+\\), so it's a min.</p><p class=\"ans\">\\((2,2)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x=\\tfrac{y^2}{2}",
+        "why": "Solving for \\(x\\) is easier than for \\(y\\)."
+       },
+       {
+        "code": "D=\\big(\\tfrac{y^2}{2}-1\\big)^2+(y-4)^2",
+        "why": "Squared distance to \\((1,4)\\)."
+       },
+       {
+        "code": "D'=2\\big(\\tfrac{y^2}2-1\\big)(y)+2(y-4)",
+        "why": "Chain rule on both squares."
+       },
+       {
+        "code": "=y^3-2y+2y-8=y^3-8",
+        "why": "Expand. The \\(2y\\) terms cancel."
+       },
+       {
+        "code": "y^3=8\\Rightarrow y=2,\\ x=2",
+        "why": "",
+        "watch": [
+         [
+          "\\text{point}",
+          "(2,2)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p47-8",
+      "source": "Like §4.7 #27",
+      "href": null,
+      "question": "Find the dimensions of the rectangle of largest area that can be inscribed in a circle of radius 5.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Corner at \\((x,y)\\) on the circle: width \\(2x\\), height \\(2y\\), \\(y=\\sqrt{25-x^2}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(A=4x\\sqrt{25-x^2}\\). \\(A'=4\\sqrt{25-x^2}-\\frac{4x^2}{\\sqrt{25-x^2}}=\\frac{4(25-2x^2)}{\\sqrt{25-x^2}}=0\\Rightarrow x=\\frac5{\\sqrt2}\\), \\(y=\\frac5{\\sqrt2}\\). It's a square with side \\(5\\sqrt2\\) and area \\(50\\).</p><p class=\"ans\">Square, \\(5\\sqrt2\\times5\\sqrt2\\) (area \\(50\\))</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x^2+y^2=25",
+        "why": "The corner sits on the circle.",
+        "watch": [
+         [
+          "y",
+          "\\sqrt{25-x^2}"
+         ]
+        ]
+       },
+       {
+        "code": "A=(2x)(2y)=4x\\sqrt{25-x^2}",
+        "why": "Width times height, with \\(0\\le x\\le5\\)."
+       },
+       {
+        "code": "A'=4\\sqrt{25-x^2}+4x\\cdot\\frac{-x}{\\sqrt{25-x^2}}",
+        "why": "Product rule plus chain rule."
+       },
+       {
+        "code": "A'=\\frac{4(25-x^2)-4x^2}{\\sqrt{25-x^2}}",
+        "why": "Common denominator."
+       },
+       {
+        "code": "=\\frac{4(25-2x^2)}{\\sqrt{25-x^2}}=0",
+        "why": "Top = 0."
+       },
+       {
+        "code": "x^2=\\tfrac{25}{2}\\Rightarrow x=\\tfrac{5}{\\sqrt2}",
+        "why": "Endpoints give \\(A=0\\), so this is the max.",
+        "watch": [
+         [
+          "x",
+          "5/\\sqrt2"
+         ]
+        ]
+       },
+       {
+        "code": "y=\\sqrt{25-\\tfrac{25}2}=\\tfrac5{\\sqrt2}",
+        "why": "Width \\(=\\) height \\(=\\tfrac{10}{\\sqrt2}=5\\sqrt2\\).",
+        "watch": [
+         [
+          "\\text{area}",
+          "50"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Two variables at the derivative step",
+      "html": "<p>You can't differentiate \\(A=xy\\) usefully until \\(y\\) is replaced with the constraint.</p>"
+     },
+     {
+      "title": "Answering the wrong question",
+      "html": "<p>If it asks for <em>dimensions</em>, give both lengths. If it asks for the <em>point</em>, give \\((x,y)\\). Not just \\(x\\).</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s48",
+  "slug": "4-8",
+  "num": "§4.8",
+  "unit": "q5",
+  "title": "Newton's Method",
+  "lede": "Find a root by sliding down tangent lines: one formula, repeated.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p>Start with a guess \\(x_1\\). Draw the tangent line at \\((x_1,f(x_1))\\), see where it hits the x-axis, and call that \\(x_2\\). Repeat. Each new guess is usually much closer to the root.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Newton's formula</span>\\[x_{n+1}=x_n-\\frac{f(x_n)}{f'(x_n)}\\]<p class=\"note\">Where it comes from: the tangent line \\(y=f(x_n)+f'(x_n)(x-x_n)\\) set to \\(y=0\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Solving an equation</span><p>Move everything to one side first: “solve \\(\\cos x=x\\)” becomes \\(f(x)=\\cos x-x=0\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Approximating a root like \\(\\sqrt[3]{30}\\)</span><p>Turn it into an equation: \\(x^3=30\\Rightarrow f(x)=x^3-30\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">When it fails</span><p>If \\(f'(x_n)=0\\) the tangent is flat and never hits the axis. A bad first guess can also jump to a different root or wander off.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Calculator</span><p>Use radians for trig, and keep at least 6 decimals between steps. Round only the final answer.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p48-1",
+      "source": "Like §4.8 #5–11",
+      "href": null,
+      "question": "Use Newton's method with \\(x_1=1\\) to find \\(x_3\\) for the equation \\(x^3+2x-4=0\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f'(x)=3x^2+2\\). Do two steps.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x_2=1-\\frac{-1}{5}=1.2\\). \\(f(1.2)=0.128\\), \\(f'(1.2)=6.32\\), so \\(x_3=1.2-\\frac{0.128}{6.32}\\approx1.1797\\).</p><p class=\"ans\">\\(x_3\\approx1.1797\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=x^3+2x-4,\\ \\ f'(x)=3x^2+2",
+        "why": "Write both down first."
+       },
+       {
+        "code": "f(1)=-1,\\ \\ f'(1)=5",
+        "why": "",
+        "watch": [
+         [
+          "x_1",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "x_2=1-\\frac{-1}{5}=1.2",
+        "why": "Minus a negative moves right.",
+        "watch": [
+         [
+          "x_2",
+          "1.2"
+         ]
+        ]
+       },
+       {
+        "code": "f(1.2)=1.728+2.4-4=0.128",
+        "why": ""
+       },
+       {
+        "code": "f'(1.2)=3(1.44)+2=6.32",
+        "why": ""
+       },
+       {
+        "code": "x_3=1.2-\\frac{0.128}{6.32}\\approx1.179747",
+        "why": "",
+        "watch": [
+         [
+          "x_3",
+          "1.1797"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p48-2",
+      "source": "Like §4.8 #13–17",
+      "href": null,
+      "question": "Use Newton's method to approximate \\(\\sqrt2\\), starting from \\(x_1=1\\). Find \\(x_4\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f(x)=x^2-2\\), \\(f'(x)=2x\\). The formula simplifies to \\(x_{n+1}=\\frac{x_n}{2}+\\frac{1}{x_n}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x_2=1.5\\), \\(x_3=1.416667\\), \\(x_4=1.414216\\). The true value is \\(1.414214\\).</p><p class=\"ans\">\\(x_4\\approx1.414216\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=x^2-2",
+        "why": "\\(\\sqrt2\\) is the positive root of \\(x^2=2\\)."
+       },
+       {
+        "code": "x_{n+1}=x_n-\\frac{x_n^2-2}{2x_n}",
+        "why": "Newton's formula."
+       },
+       {
+        "code": "=\\frac{x_n}{2}+\\frac1{x_n}",
+        "why": "Simplify: \\(x_n-\\frac{x_n}{2}+\\frac{2}{2x_n}\\)."
+       },
+       {
+        "code": "x_2=\\tfrac12+1=1.5",
+        "why": "",
+        "watch": [
+         [
+          "x_2",
+          "1.5"
+         ]
+        ]
+       },
+       {
+        "code": "x_3=0.75+0.666667=1.416667",
+        "why": "",
+        "watch": [
+         [
+          "x_3",
+          "1.416667"
+         ]
+        ]
+       },
+       {
+        "code": "x_4=0.708333+0.705882=1.414216",
+        "why": "Already correct to 5 decimals.",
+        "watch": [
+         [
+          "x_4",
+          "1.414216"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p48-3",
+      "source": "Like §4.8 #13–17",
+      "href": null,
+      "question": "Use Newton's method with \\(x_1=3\\) to approximate \\(\\sqrt[3]{30}\\) (find \\(x_3\\)).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f(x)=x^3-30\\), \\(f'(x)=3x^2\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x_2=3-\\frac{-3}{27}=3.111111\\). \\(f(x_2)\\approx0.112483\\), \\(f'(x_2)\\approx29.037037\\), so \\(x_3\\approx3.107237\\). The true value is \\(3.107233\\).</p><p class=\"ans\">\\(x_3\\approx3.10724\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=x^3-30,\\ \\ f'(x)=3x^2",
+        "why": ""
+       },
+       {
+        "code": "f(3)=-3,\\ \\ f'(3)=27",
+        "why": "",
+        "watch": [
+         [
+          "x_1",
+          "3"
+         ]
+        ]
+       },
+       {
+        "code": "x_2=3+\\tfrac{3}{27}=3.111111",
+        "why": "",
+        "watch": [
+         [
+          "x_2",
+          "3.111111"
+         ]
+        ]
+       },
+       {
+        "code": "f(x_2)\\approx0.112483,\\ f'(x_2)\\approx29.037",
+        "why": "Keep the decimals."
+       },
+       {
+        "code": "x_3=3.111111-\\tfrac{0.112483}{29.037}",
+        "why": ""
+       },
+       {
+        "code": "x_3\\approx3.107237",
+        "why": "",
+        "watch": [
+         [
+          "x_3",
+          "3.10724"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p48-4",
+      "source": "Like §4.8 #19–27",
+      "href": null,
+      "question": "Use Newton's method to find the root of \\(\\cos x=x\\), starting from \\(x_1=1\\). Find \\(x_3\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f(x)=\\cos x-x\\), \\(f'(x)=-\\sin x-1\\). Use radians.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x_2=1-\\frac{-0.459698}{-1.841471}=0.750364\\). \\(f(x_2)\\approx-0.018923\\), \\(f'(x_2)\\approx-1.681905\\), so \\(x_3\\approx0.739113\\). The root is \\(0.739085\\).</p><p class=\"ans\">\\(x_3\\approx0.7391\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=\\cos x-x",
+        "why": "Move everything to one side."
+       },
+       {
+        "code": "f'(x)=-\\sin x-1",
+        "why": ""
+       },
+       {
+        "code": "f(1)=0.540302-1=-0.459698",
+        "why": "Radians!"
+       },
+       {
+        "code": "f'(1)=-0.841471-1=-1.841471",
+        "why": ""
+       },
+       {
+        "code": "x_2=1-\\frac{-0.459698}{-1.841471}=0.750364",
+        "why": "Negative over negative is positive, so you subtract.",
+        "watch": [
+         [
+          "x_2",
+          "0.750364"
+         ]
+        ]
+       },
+       {
+        "code": "f(x_2)\\approx-0.018923,\\ f'(x_2)\\approx-1.681905",
+        "why": ""
+       },
+       {
+        "code": "x_3\\approx0.750364-0.011251=0.739113",
+        "why": "",
+        "watch": [
+         [
+          "x_3",
+          "0.7391"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p48-5",
+      "source": "Like §4.8 #1–3",
+      "href": null,
+      "question": "Explain why Newton's method fails for \\(f(x)=x^3-3x+6\\) if you start at \\(x_1=1\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Compute \\(f'(1)\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'(x)=3x^2-3\\), so \\(f'(1)=0\\). The tangent line at \\(x=1\\) is horizontal and never meets the x-axis, so \\(x_2\\) would mean dividing by zero.</p><p class=\"ans\">\\(f'(1)=0\\): the tangent is horizontal, so \\(x_2\\) is undefined</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=3x^2-3",
+        "why": ""
+       },
+       {
+        "code": "f'(1)=0",
+        "why": "The formula would divide by zero.",
+        "watch": [
+         [
+          "f'(x_1)",
+          "0"
+         ]
+        ]
+       },
+       {
+        "code": "\\text{horizontal tangent}",
+        "why": "A flat line never crosses the x-axis, so there's no next guess. Pick a different \\(x_1\\)."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Plus instead of minus",
+      "html": "<p>It's \\(x_n\\) <strong>minus</strong> \\(\\frac{f}{f'}\\). Watch the double negatives.</p>"
+     },
+     {
+      "title": "Degrees mode",
+      "html": "<p>Trig in degrees gives completely wrong numbers. Switch the calculator to radians.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s49",
+  "slug": "4-9",
+  "num": "§4.9",
+  "unit": "q5",
+  "title": "Antiderivatives",
+  "lede": "Run the derivative rules backwards, add +C, and use initial conditions to find C.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p>An <strong>antiderivative</strong> of \\(f\\) is a function \\(F\\) with \\(F'=f\\). There are infinitely many, all differing by a constant, so the <em>general</em> antiderivative always ends in \\(+C\\). Check every answer by differentiating it.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Power rule backwards</span>\\[\\int x^n\\,dx\\to\\frac{x^{n+1}}{n+1}+C\\quad(n\\ne-1)\\]<p class=\"note\">Add 1 to the power, divide by the new power.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">The \\(n=-1\\) case</span><p>\\(\\frac1x\\to\\ln|x|+C\\)</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Exponentials and trig</span><p>\\(e^x\\to e^x\\) · \\(\\cos x\\to\\sin x\\) · \\(\\sin x\\to-\\cos x\\) · \\(\\sec^2x\\to\\tan x\\) · \\(\\sec x\\tan x\\to\\sec x\\)</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Inverse trig and hyperbolic</span><p>\\(\\frac1{1+x^2}\\to\\tan^{-1}x\\) · \\(\\frac1{\\sqrt{1-x^2}}\\to\\sin^{-1}x\\) · \\(\\cosh x\\to\\sinh x\\) · \\(\\sinh x\\to\\cosh x\\)</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Initial value problem</span><p>Find the general antiderivative with \\(+C\\), then plug in the given point to solve for \\(C\\). Given \\(f''\\)? Antidifferentiate twice: you get \\(C\\) and \\(D\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Motion</span><p>\\(a(t)\\to v(t)\\to s(t)\\). Use \\(v(0)\\) for the first constant and \\(s(0)\\) for the second.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p49-1",
+      "source": "Like §4.9 #1–21",
+      "href": null,
+      "question": "Find the most general antiderivative of \\(f(x)=4x^3-6x+2\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Term by term: add one to each power and divide by the new power.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{4x^4}{4}-\\frac{6x^2}{2}+2x+C\\).</p><p class=\"ans\">\\(F(x)=x^4-3x^2+2x+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "4x^3\\to\\frac{4x^4}{4}=x^4",
+        "why": "Power 3 becomes 4, divide by 4."
+       },
+       {
+        "code": "-6x\\to-\\frac{6x^2}{2}=-3x^2",
+        "why": ""
+       },
+       {
+        "code": "2\\to2x",
+        "why": "A constant picks up an \\(x\\)."
+       },
+       {
+        "code": "F=x^4-3x^2+2x+C",
+        "why": "Check: \\(F'=4x^3-6x+2\\). ✓",
+        "watch": [
+         [
+          "F",
+          "x^4-3x^2+2x+C"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-2",
+      "source": "Like §4.9 #1–21",
+      "href": null,
+      "question": "Find the most general antiderivative of \\(f(x)=\\sqrt x+\\dfrac1x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\sqrt x=x^{1/2}\\). And \\(\\frac1x\\) is the special case.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x^{1/2}\\to\\frac{x^{3/2}}{3/2}=\\tfrac23x^{3/2}\\), and \\(\\frac1x\\to\\ln|x|\\).</p><p class=\"ans\">\\(F(x)=\\tfrac23x^{3/2}+\\ln|x|+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x^{1/2}\\to\\frac{x^{3/2}}{3/2}",
+        "why": "\\(\\tfrac12+1=\\tfrac32\\)."
+       },
+       {
+        "code": "=\\tfrac23x^{3/2}",
+        "why": "Dividing by \\(\\tfrac32\\) is multiplying by \\(\\tfrac23\\)."
+       },
+       {
+        "code": "\\tfrac1x\\to\\ln|x|",
+        "why": "The power rule would divide by 0 here, so use the special case."
+       },
+       {
+        "code": "F=\\tfrac23x^{3/2}+\\ln|x|+C",
+        "why": "",
+        "watch": [
+         [
+          "F",
+          "\\tfrac23x^{3/2}+\\ln|x|+C"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-3",
+      "source": "Like §4.9 #1–21",
+      "href": null,
+      "question": "Find the most general antiderivative of \\(f(x)=\\dfrac{3}{x^2}-5\\sec^2x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\frac{3}{x^2}=3x^{-2}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(3x^{-2}\\to\\frac{3x^{-1}}{-1}=-\\frac3x\\). \\(\\sec^2x\\to\\tan x\\).</p><p class=\"ans\">\\(F(x)=-\\dfrac3x-5\\tan x+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "3x^{-2}\\to\\frac{3x^{-1}}{-1}=-\\tfrac{3}{x}",
+        "why": "\\(-2+1=-1\\). Divide by \\(-1\\)."
+       },
+       {
+        "code": "-5\\sec^2x\\to-5\\tan x",
+        "why": "Because \\((\\tan x)'=\\sec^2x\\)."
+       },
+       {
+        "code": "F=-\\tfrac3x-5\\tan x+C",
+        "why": "",
+        "watch": [
+         [
+          "F",
+          "-3/x-5\\tan x+C"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-4",
+      "source": "Like §4.9 #1–21",
+      "href": null,
+      "question": "Find the most general antiderivative of \\(f(x)=\\dfrac{x^2+3x-1}{x}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>There's no quotient rule backwards. Split the fraction first.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{x^2+3x-1}{x}=x+3-\\frac1x\\to\\frac{x^2}{2}+3x-\\ln|x|+C\\).</p><p class=\"ans\">\\(F(x)=\\tfrac{x^2}{2}+3x-\\ln|x|+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{x^2}{x}+\\frac{3x}{x}-\\frac1x=x+3-\\frac1x",
+        "why": "Divide every term by \\(x\\)."
+       },
+       {
+        "code": "x\\to\\tfrac{x^2}{2},\\quad3\\to3x",
+        "why": ""
+       },
+       {
+        "code": "-\\tfrac1x\\to-\\ln|x|",
+        "why": ""
+       },
+       {
+        "code": "F=\\tfrac{x^2}2+3x-\\ln|x|+C",
+        "why": "",
+        "watch": [
+         [
+          "F",
+          "\\tfrac{x^2}2+3x-\\ln|x|+C"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-5",
+      "source": "Like §4.9 #1–21",
+      "href": null,
+      "question": "Find the most general antiderivative of \\(f(x)=2e^x+\\dfrac{4}{1+x^2}-\\sin x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\frac1{1+x^2}\\) is the derivative of \\(\\tan^{-1}x\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(2e^x\\to2e^x\\); \\(\\frac4{1+x^2}\\to4\\tan^{-1}x\\); \\(-\\sin x\\to\\cos x\\).</p><p class=\"ans\">\\(F(x)=2e^x+4\\tan^{-1}x+\\cos x+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "2e^x\\to2e^x",
+        "why": "\\(e^x\\) is its own antiderivative."
+       },
+       {
+        "code": "\\frac{4}{1+x^2}\\to4\\tan^{-1}x",
+        "why": "Inverse-tan pattern."
+       },
+       {
+        "code": "-\\sin x\\to\\cos x",
+        "why": "Since \\((\\cos x)'=-\\sin x\\). The signs are tricky, so check by differentiating."
+       },
+       {
+        "code": "F=2e^x+4\\tan^{-1}x+\\cos x+C",
+        "why": "",
+        "watch": [
+         [
+          "F",
+          "2e^x+4\\tan^{-1}x+\\cos x+C"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-6",
+      "source": "Like §4.9 #23–45",
+      "href": null,
+      "question": "Find \\(f\\) given \\(f'(x)=6x^2-4x\\) and \\(f(1)=5\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Antidifferentiate with \\(+C\\), then plug in \\(x=1\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f=2x^3-2x^2+C\\). \\(f(1)=2-2+C=5\\Rightarrow C=5\\).</p><p class=\"ans\">\\(f(x)=2x^3-2x^2+5\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=2x^3-2x^2+C",
+        "why": "\\(6\\cdot\\frac{x^3}{3}\\) and \\(4\\cdot\\frac{x^2}{2}\\)."
+       },
+       {
+        "code": "f(1)=2-2+C=5",
+        "why": "Use the condition."
+       },
+       {
+        "code": "C=5",
+        "why": "",
+        "watch": [
+         [
+          "C",
+          "5"
+         ]
+        ]
+       },
+       {
+        "code": "f(x)=2x^3-2x^2+5",
+        "why": "",
+        "watch": [
+         [
+          "f",
+          "2x^3-2x^2+5"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-7",
+      "source": "Like §4.9 #23–45",
+      "href": null,
+      "question": "Find \\(f\\) given \\(f''(x)=12x^2+6x\\), \\(f'(0)=1\\) and \\(f(0)=3\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Two steps: \\(f''\\to f'\\) (find \\(C\\)), then \\(f'\\to f\\) (find \\(D\\)).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=4x^3+3x^2+C\\), \\(f'(0)=C=1\\). \\(f=x^4+x^3+x+D\\), \\(f(0)=D=3\\).</p><p class=\"ans\">\\(f(x)=x^4+x^3+x+3\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=4x^3+3x^2+C",
+        "why": "First antiderivative."
+       },
+       {
+        "code": "f'(0)=C=1",
+        "why": "",
+        "watch": [
+         [
+          "C",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "f(x)=x^4+x^3+x+D",
+        "why": "Antidifferentiate \\(4x^3+3x^2+1\\)."
+       },
+       {
+        "code": "f(0)=D=3",
+        "why": "",
+        "watch": [
+         [
+          "D",
+          "3"
+         ]
+        ]
+       },
+       {
+        "code": "f(x)=x^4+x^3+x+3",
+        "why": "",
+        "watch": [
+         [
+          "f",
+          "x^4+x^3+x+3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-8",
+      "source": "Like §4.9 #23–45",
+      "href": null,
+      "question": "Find \\(f\\) given \\(f'(x)=2\\cos x+\\sec^2x\\) on \\(-\\frac\\pi2<x<\\frac\\pi2\\), and \\(f(\\frac\\pi3)=4\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f=2\\sin x+\\tan x+C\\). Then use \\(\\sin\\frac\\pi3=\\frac{\\sqrt3}2\\) and \\(\\tan\\frac\\pi3=\\sqrt3\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(\\tfrac\\pi3)=\\sqrt3+\\sqrt3+C=4\\Rightarrow C=4-2\\sqrt3\\).</p><p class=\"ans\">\\(f(x)=2\\sin x+\\tan x+4-2\\sqrt3\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=2\\sin x+\\tan x+C",
+        "why": ""
+       },
+       {
+        "code": "f(\\tfrac\\pi3)=2\\cdot\\tfrac{\\sqrt3}{2}+\\sqrt3+C",
+        "why": "Exact values."
+       },
+       {
+        "code": "2\\sqrt3+C=4\\Rightarrow C=4-2\\sqrt3",
+        "why": "",
+        "watch": [
+         [
+          "C",
+          "4-2\\sqrt3"
+         ]
+        ]
+       },
+       {
+        "code": "f=2\\sin x+\\tan x+4-2\\sqrt3",
+        "why": "",
+        "watch": [
+         [
+          "f",
+          "2\\sin x+\\tan x+4-2\\sqrt3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-9",
+      "source": "Like §4.9 #47–53",
+      "href": null,
+      "question": "A particle has acceleration \\(a(t)=6t+2\\), with \\(v(0)=-3\\) and \\(s(0)=1\\). Find its position \\(s(t)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(v=\\int a\\), then \\(s=\\int v\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(v=3t^2+2t+C\\), \\(v(0)=C=-3\\). \\(s=t^3+t^2-3t+D\\), \\(s(0)=D=1\\).</p><p class=\"ans\">\\(s(t)=t^3+t^2-3t+1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "v(t)=3t^2+2t+C",
+        "why": "Antiderivative of the acceleration."
+       },
+       {
+        "code": "v(0)=C=-3",
+        "why": "",
+        "watch": [
+         [
+          "v",
+          "3t^2+2t-3"
+         ]
+        ]
+       },
+       {
+        "code": "s(t)=t^3+t^2-3t+D",
+        "why": "Antiderivative of the velocity."
+       },
+       {
+        "code": "s(0)=D=1",
+        "why": "",
+        "watch": [
+         [
+          "s",
+          "t^3+t^2-3t+1"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-10",
+      "source": "Like §4.9 #47–53",
+      "href": null,
+      "question": "A stone is dropped from a 450 m cliff. Using \\(a=-9.8\\) m/s², find its height \\(s(t)\\) and when it hits the ground.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>“Dropped” means \\(v(0)=0\\). \\(s(0)=450\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(v=-9.8t\\), \\(s=-4.9t^2+450\\). Ground: \\(4.9t^2=450\\Rightarrow t=\\sqrt{450/4.9}\\approx9.58\\) s.</p><p class=\"ans\">\\(s(t)=450-4.9t^2\\); hits the ground at \\(t\\approx9.58\\) s</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "v(t)=-9.8t+C,\\ v(0)=0",
+        "why": "Dropped, not thrown: starts at rest.",
+        "watch": [
+         [
+          "v",
+          "-9.8t"
+         ]
+        ]
+       },
+       {
+        "code": "s(t)=-4.9t^2+D,\\ s(0)=450",
+        "why": "\\(-9.8\\cdot\\frac{t^2}{2}\\).",
+        "watch": [
+         [
+          "s",
+          "450-4.9t^2"
+         ]
+        ]
+       },
+       {
+        "code": "450-4.9t^2=0",
+        "why": "Hits the ground when the height is 0."
+       },
+       {
+        "code": "t=\\sqrt{450/4.9}\\approx9.58\\text{ s}",
+        "why": "Take the positive root.",
+        "watch": [
+         [
+          "t",
+          "9.58\\text{ s}"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Forgetting \\(+C\\)",
+      "html": "<p>“Most general antiderivative” without \\(+C\\) loses marks.</p>"
+     },
+     {
+      "title": "Antiderivative of a product or quotient",
+      "html": "<p>There's no product rule backwards. Expand or split first (#4).</p>"
+     },
+     {
+      "title": "\\(\\sin\\) / \\(\\cos\\) signs",
+      "html": "<p>\\(\\int\\sin x=-\\cos x\\) and \\(\\int\\cos x=+\\sin x\\). Differentiate your answer to check.</p>"
+     }
+    ]
+   }
+  ]
  },
  {
   "id": "qr",
@@ -11506,6 +14968,328 @@ export const sections: Section[] = [
        }
       ],
       "explain": "\\((a^x)'=a^x\\ln a\\). Only base e has no extra factor."
+     },
+     {
+      "question": "<b>1.</b> If \\(f'(x)<0\\) on \\((2,5)\\), then on \\((2,5)\\) \\(f\\) is…",
+      "unit": "q5",
+      "options": [
+       {
+        "html": "increasing",
+        "correct": false
+       },
+       {
+        "html": "decreasing",
+        "correct": true
+       },
+       {
+        "html": "concave down",
+        "correct": false
+       },
+       {
+        "html": "concave up",
+        "correct": false
+       }
+      ],
+      "explain": "<p>The sign of \\(f'\\) gives direction. Negative means going down.</p>"
+     },
+     {
+      "question": "<b>2.</b> \\(f'\\) changes from \\(-\\) to \\(+\\) at \\(c\\). Then \\(f(c)\\) is a…",
+      "unit": "q5",
+      "options": [
+       {
+        "html": "local max",
+        "correct": false
+       },
+       {
+        "html": "local min",
+        "correct": true
+       },
+       {
+        "html": "inflection point",
+        "correct": false
+       },
+       {
+        "html": "neither",
+        "correct": false
+       }
+      ],
+      "explain": "<p>Down, then up: the bottom of a valley.</p>"
+     },
+     {
+      "question": "<b>3.</b> Where is \\(f(x)=x^3-3x\\) concave up?",
+      "unit": "q5",
+      "options": [
+       {
+        "html": "\\(x>0\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(x<0\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(|x|>1\\)",
+        "correct": false
+       },
+       {
+        "html": "everywhere",
+        "correct": false
+       }
+      ],
+      "explain": "<p>\\(f''=6x>0\\) when \\(x>0\\).</p>"
+     },
+     {
+      "question": "<b>4.</b> \\(f'(2)=0\\) and \\(f''(2)=-3\\). Then at \\(x=2\\) there is a…",
+      "unit": "q5",
+      "options": [
+       {
+        "html": "local min",
+        "correct": false
+       },
+       {
+        "html": "local max",
+        "correct": true
+       },
+       {
+        "html": "inflection point",
+        "correct": false
+       },
+       {
+        "html": "the test fails",
+        "correct": false
+       }
+      ],
+      "explain": "<p>Second Derivative Test: \\(f''<0\\) is a cap, so a max.</p>"
+     },
+     {
+      "question": "<b>5.</b> \\(\\displaystyle\\lim_{x\\to0}\\frac{\\sin 4x}{x}=\\)",
+      "unit": "q5",
+      "options": [
+       {
+        "html": "\\(0\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(1\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(4\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(\\tfrac14\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>\\(\\frac00\\). L'H: \\(\\frac{4\\cos4x}{1}\\to4\\).</p>"
+     },
+     {
+      "question": "<b>6.</b> Which of these is NOT an indeterminate form?",
+      "unit": "q5",
+      "options": [
+       {
+        "html": "\\(\\frac00\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(1^\\infty\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(0\\cdot\\infty\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\frac{0}{\\infty}\\)",
+        "correct": true
+       }
+      ],
+      "explain": "<p>\\(\\frac0\\infty=0\\). Nothing to fight about.</p>"
+     },
+     {
+      "question": "<b>7.</b> \\(\\displaystyle\\lim_{x\\to\\infty}\\frac{e^x}{x^3}=\\)",
+      "unit": "q5",
+      "options": [
+       {
+        "html": "\\(0\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(1\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\infty\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(3\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>L'H three times gives \\(\\frac{e^x}{6}\\to\\infty\\). Exponentials beat powers.</p>"
+     },
+     {
+      "question": "<b>8.</b> \\(\\displaystyle\\lim_{x\\to\\infty}\\Big(1+\\frac2x\\Big)^x=\\)",
+      "unit": "q5",
+      "options": [
+       {
+        "html": "\\(1\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(2\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(e^2\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(\\infty\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>\\(\\ln y=x\\ln(1+\\frac2x)\\to2\\), so \\(y\\to e^2\\).</p>"
+     },
+     {
+      "question": "<b>9.</b> The slant asymptote of \\(y=\\frac{x^2+1}{x}\\) is…",
+      "unit": "q5",
+      "options": [
+       {
+        "html": "\\(y=x\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(y=x+1\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(y=1\\)",
+        "correct": false
+       },
+       {
+        "html": "none",
+        "correct": false
+       }
+      ],
+      "explain": "<p>\\(\\frac{x^2+1}{x}=x+\\frac1x\\), and \\(\\frac1x\\to0\\).</p>"
+     },
+     {
+      "question": "<b>10.</b> Two positive numbers have sum 20. The largest possible product is…",
+      "unit": "q5",
+      "options": [
+       {
+        "html": "\\(64\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(99\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(100\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(400\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>\\(P=x(20-x)\\), \\(P'=0\\) at \\(x=10\\), so \\(10\\cdot10=100\\).</p>"
+     },
+     {
+      "question": "<b>11.</b> Newton's method for \\(f(x)=x^2-5\\) with \\(x_1=2\\) gives \\(x_2=\\)",
+      "unit": "q5",
+      "options": [
+       {
+        "html": "\\(2.2\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(2.25\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(2.5\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(1.75\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>\\(x_2=2-\\frac{-1}{4}=2.25\\).</p>"
+     },
+     {
+      "question": "<b>12.</b> The most general antiderivative of \\(\\cos x+3x^2\\) is…",
+      "unit": "q5",
+      "options": [
+       {
+        "html": "\\(-\\sin x+x^3+C\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\sin x+x^3+C\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(\\sin x+6x+C\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\sin x+x^3\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>\\(\\cos\\to\\sin\\), \\(3x^2\\to x^3\\), and don't forget \\(+C\\).</p>"
+     },
+     {
+      "question": "<b>13.</b> If \\(f'(x)=\\frac1x\\) and \\(f(1)=2\\), then \\(f(x)=\\)",
+      "unit": "q5",
+      "options": [
+       {
+        "html": "\\(\\ln|x|+2\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(\\ln|x|\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(-\\frac1{x^2}+3\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\ln|x|+1\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>\\(f=\\ln|x|+C\\), and \\(\\ln1=0\\), so \\(C=2\\).</p>"
+     },
+     {
+      "question": "<b>14.</b> \\(a(t)=4\\), \\(v(0)=1\\). Then \\(v(t)=\\)",
+      "unit": "q5",
+      "options": [
+       {
+        "html": "\\(4t\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(4t+1\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(2t^2+1\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(4\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>\\(v=4t+C\\), \\(C=v(0)=1\\).</p>"
      }
     ]
    }
@@ -11777,6 +15561,91 @@ export const sections: Section[] = [
    {
     "type": "flashcards",
     "items": [
+     {
+      "front": "\\(f'>0\\) / \\(f'<0\\)",
+      "back": "Increasing / decreasing",
+      "tag": "Q5 · 4.3"
+     },
+     {
+      "front": "First Derivative Test",
+      "back": "\\(+\\to-\\) local max · \\(-\\to+\\) local min · no change: neither",
+      "tag": "Q5 · 4.3"
+     },
+     {
+      "front": "\\(f''>0\\) / \\(f''<0\\)",
+      "back": "Concave up ∪ / concave down ∩",
+      "tag": "Q5 · 4.3"
+     },
+     {
+      "front": "Inflection point",
+      "back": "Where the concavity changes. Check that \\(f''\\) actually flips sign.",
+      "tag": "Q5 · 4.3"
+     },
+     {
+      "front": "Second Derivative Test",
+      "back": "\\(f'(c)=0\\): \\(f''(c)>0\\) min, \\(f''(c)<0\\) max, \\(=0\\) inconclusive",
+      "tag": "Q5 · 4.3"
+     },
+     {
+      "front": "l'Hospital's Rule",
+      "back": "\\(\\frac00\\) or \\(\\frac\\infty\\infty\\): \\(\\lim\\frac fg=\\lim\\frac{f'}{g'}\\)",
+      "tag": "Q5 · 4.4"
+     },
+     {
+      "front": "\\(0\\cdot\\infty\\)",
+      "back": "Rewrite as \\(\\frac{f}{1/g}\\) to get \\(\\frac00\\) or \\(\\frac\\infty\\infty\\)",
+      "tag": "Q5 · 4.4"
+     },
+     {
+      "front": "\\(1^\\infty,\\ 0^0,\\ \\infty^0\\)",
+      "back": "\\(\\ln y=g\\ln f\\to L\\), answer \\(e^L\\)",
+      "tag": "Q5 · 4.4"
+     },
+     {
+      "front": "\\(\\lim_{x\\to\\infty}(1+\\frac ax)^x\\)",
+      "back": "\\(e^a\\)",
+      "tag": "Q5 · 4.4"
+     },
+     {
+      "front": "Curve sketching checklist",
+      "back": "Domain, intercepts, symmetry, asymptotes, inc/dec, max/min, concavity, sketch",
+      "tag": "Q5 · 4.5"
+     },
+     {
+      "front": "Slant asymptote",
+      "back": "Top degree = bottom + 1. Long divide: \\(y=mx+b\\).",
+      "tag": "Q5 · 4.5"
+     },
+     {
+      "front": "Optimization recipe",
+      "back": "Objective + constraint → one variable → \\(f'=0\\) → justify max/min",
+      "tag": "Q5 · 4.7"
+     },
+     {
+      "front": "Newton's method",
+      "back": "\\(x_{n+1}=x_n-\\dfrac{f(x_n)}{f'(x_n)}\\)",
+      "tag": "Q5 · 4.8"
+     },
+     {
+      "front": "\\(\\int x^n\\)",
+      "back": "\\(\\dfrac{x^{n+1}}{n+1}+C\\ (n\\ne-1)\\)",
+      "tag": "Q5 · 4.9"
+     },
+     {
+      "front": "\\(\\int\\frac1x\\)",
+      "back": "\\(\\ln|x|+C\\)",
+      "tag": "Q5 · 4.9"
+     },
+     {
+      "front": "\\(\\int\\sin x\\) / \\(\\int\\cos x\\)",
+      "back": "\\(-\\cos x+C\\) / \\(\\sin x+C\\)",
+      "tag": "Q5 · 4.9"
+     },
+     {
+      "front": "\\(\\int\\sec^2x\\) / \\(\\int\\frac1{1+x^2}\\)",
+      "back": "\\(\\tan x+C\\) / \\(\\tan^{-1}x+C\\)",
+      "tag": "Q5 · 4.9"
+     },
      {
       "front": "\\(\\dfrac{d}{dx}\\sin x\\)",
       "back": "\\(\\cos x\\)",

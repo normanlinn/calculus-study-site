@@ -4,15 +4,17 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import type { Flashcard } from "@/content/types";
 import { useSharedUnit } from "@/lib/unit";
 
-type Filter = "all" | "q4" | "trig" | "rules";
+type Filter = "all" | "q5" | "q4" | "trig" | "rules";
 const FILTERS: { id: Filter; label: string }[] = [
   { id: "all", label: "All cards" },
+  { id: "q5", label: "Quiz 5" },
   { id: "q4", label: "Quiz 4" },
   { id: "trig", label: "Trig" },
   { id: "rules", label: "Rules" },
 ];
 const matches = (tag: string, f: Filter) =>
-  f === "all" || (f === "q4" ? tag.startsWith("Q4") : f === "trig" ? tag.startsWith("Trig") : !tag.startsWith("Trig") && !tag.startsWith("Q4"));
+  f === "all" ||
+  (f === "q5" ? tag.startsWith("Q5") : f === "q4" ? tag.startsWith("Q4") : f === "trig" ? tag.startsWith("Trig") : !/^(Trig|Q4|Q5)/.test(tag));
 
 const shuffle = (a: number[]) => {
   const b = [...a];
@@ -27,7 +29,7 @@ export default function Flashcards({ items }: { items: Flashcard[] }) {
   const [filter, setFilter] = useState<Filter>("all");
   const [unit] = useSharedUnit();
   // open on the cards for the quiz picked in the top bar
-  useEffect(() => setFilter(unit === "q4" ? "q4" : "all"), [unit]);
+  useEffect(() => setFilter(unit === "q5" || unit === "q4" ? unit : "all"), [unit]);
   const [reverse, setReverse] = useState(false);
   const pool = useMemo(
     () =>

@@ -27,6 +27,8 @@ function Cards({ list }: { list: Section[] }) {
 }
 
 export default function Home() {
+  const q5own = sections.filter((s) => s.unit === "q5");
+  const q5 = [...q5own.slice(0, 1), ...sections.filter((s) => s.unit !== "q5" && s.also?.includes("q5")), ...q5own.slice(1)];
   const q4 = sections.filter((s) => s.unit === "q4");
   const q3 = sections.filter((s) => s.unit === "q3");
   const tools = sections.filter((s) => !s.unit);
@@ -38,25 +40,27 @@ export default function Home() {
         <HeroTitle />
         <HeroFade delay={0.35}>
           <p className="lede">
-            Midterm 2 is built from Quiz 3 and Quiz 4: 2 hours, about 52 points. Start with the Quiz 3 &amp; 4 review (every problem solved line by line),
-            then take the full practice exam. New to §3.9–4.1? The crash course teaches every section from scratch.
+            Quiz 5 covers §4.1–4.9: shape of a graph, l&apos;Hospital&apos;s Rule, curve sketching, optimization, Newton&apos;s method and antiderivatives.
+            Every section has a short lesson and practice problems you can step through line by line.
           </p>
         </HeroFade>
         <HeroFade delay={0.45}>
           <div className="countdowns">
-            <Link href="/midterm-2/"><Countdown target="2026-11-05" label="Midterm 2" /></Link>
+            <Link href="/quiz-5/"><Countdown target="2026-11-12" label="Quiz 5" /></Link>
           </div>
         </HeroFade>
         <HeroGraph />
         <HeroFade delay={0.5}>
           <div className="cta-row">
-            <Link className="cta" href="/quiz-review/">Quiz 3 &amp; 4 review →</Link>
-            <Link className="cta ghost" href="/midterm-practice/">Practice exam (52 pts)</Link>
-            <Link className="cta ghost" href="/crash-course/">Crash course</Link>
-            <Ring ids={unitProblemIds("q4")} />
+            <Link className="cta" href="/quiz-5/">Quiz 5 plan →</Link>
+            <Link className="cta ghost" href="/4-3/">Start with §4.3</Link>
+            <Link className="cta ghost" href="/quick-quiz/">Quick quiz</Link>
+            <Ring ids={unitProblemIds("q5")} />
           </div>
         </HeroFade>
       </section>
+      <h2 className="unit-head">Quiz 5 · §4.1–4.9 <span>Thu, Nov 12</span></h2>
+      <Cards list={q5} />
       <h2 className="unit-head">Quiz 4 · §3.6–4.1 <span>Midterm 2 review</span></h2>
       <Cards list={q4} />
       <h2 className="unit-head">Quiz 3 · §2.8–3.5 <span>Midterm 2 review</span></h2>

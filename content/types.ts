@@ -74,6 +74,8 @@ export interface Section {
   blocks: Block[];
   /** Which quiz the section belongs to; tools have none. */
   unit?: Unit;
+  /** Other quizzes the section also counts toward (shown in their nav too). */
+  also?: Unit[];
 }
 
-export type Unit = "q3" | "q4";
+export type Unit = "q3" | "q4" | "q5";

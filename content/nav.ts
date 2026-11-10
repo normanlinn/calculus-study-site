@@ -16,6 +16,14 @@ const SHORT: Record<string, string> = {
   "3-10": "3.10",
   "3-11": "3.11",
   "4-1": "4.1",
+  "quiz-5": "Quiz 5 plan",
+  "4-2": "4.2",
+  "4-3": "4.3",
+  "4-4": "4.4",
+  "4-5": "4.5",
+  "4-7": "4.7",
+  "4-8": "4.8",
+  "4-9": "4.9",
   "quiz-review": "Quiz 3 & 4 review",
   "midterm-practice": "Practice exam",
   "crash-course": "Crash course",
@@ -28,15 +36,16 @@ const SHORT: Record<string, string> = {
 };
 
 export const UNITS: { id: Unit; label: string; long: string; date: string | null }[] = [
+  { id: "q5", label: "Quiz 5", long: "Quiz 5 · §4.1–4.9", date: "2026-11-12" },
   { id: "q4", label: "Quiz 4", long: "Quiz 4 · §3.6–4.1", date: "2026-10-27" },
   { id: "q3", label: "Quiz 3", long: "Quiz 3 · §2.8–3.5", date: null },
 ];
-export const LATEST_UNIT: Unit = "q4";
+export const LATEST_UNIT: Unit = "q5";
 
-export const navItems = sections.map((s) => ({ slug: s.slug, label: SHORT[s.slug] ?? s.num, title: s.title, unit: s.unit }));
+export const navItems = sections.map((s) => ({ slug: s.slug, label: SHORT[s.slug] ?? s.num, title: s.title, unit: s.unit, also: s.also ?? [] }));
 
 const idsOf = (pred: (u: Unit | undefined) => boolean) =>
-  sections.filter((s) => pred(s.unit)).flatMap((s) => s.blocks.flatMap((b) => (b.type === "practice" ? b.items.map((p) => p.id) : [])));
+  sections.filter((s) => pred(s.unit) || (s.also ?? []).some(pred)).flatMap((s) => s.blocks.flatMap((b) => (b.type === "practice" ? b.items.map((p) => p.id) : [])));
 
 export const allProblemIds = idsOf(() => true);
 export const unitProblemIds = (u: Unit) => idsOf((x) => x === u);

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import type { Unit } from "@/content/types";
 import { LATEST_UNIT } from "@/content/nav";
 
-// The Quiz 4 / Quiz 3 choice in the nav, shared with pages that filter by unit.
+// The Quiz 5 / 4 / 3 choice in the nav, shared with pages that filter by unit.
 const KEY = "deriv-guide-unit";
 const EVENT = "deriv-guide-unit";
 
@@ -13,7 +13,7 @@ export function shareUnit(u: Unit) {
 }
 
 export function storedUnit(): Unit | null {
-  try { const v = sessionStorage.getItem(KEY); return v === "q3" || v === "q4" ? v : null; } catch { return null; }
+  try { const v = sessionStorage.getItem(KEY); return v === "q3" || v === "q4" || v === "q5" ? v : null; } catch { return null; }
 }
 
 /** Follows the nav's unit switch; starts on the latest unit. */

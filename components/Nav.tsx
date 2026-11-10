@@ -47,7 +47,7 @@ const TOOLS: Record<string, string> = {
   "crash-course": "Every Midterm 2 section in 10 short lessons",
   "midterm-2": "Tonight's plan and a timed mock exam for Thu, Nov 5",
   grades: "What you need for an A or a B",
-  "quick-quiz": "28 fast questions with instant feedback",
+  "quick-quiz": "42 fast questions with instant feedback",
   generate: "Unlimited new problems, and check your own",
   "memory-tricks": "Learn the formulas, with a flashcard drill",
   "cheat-sheet": "Every rule on one page",
@@ -107,9 +107,16 @@ function ToolsMenu({ path }: { path: string }) {
 export default function Nav() {
   const path = usePathname().replace(/\/$/, "");
   const done = useDone();
-  const pageUnit = navItems.find((n) => path.endsWith("/" + n.slug))?.unit;
+  const page = navItems.find((n) => path.endsWith("/" + n.slug));
+  const pageUnit = page?.unit;
   const [unit, setUnit] = useState<Unit>(pageUnit ?? LATEST_UNIT);
-  useEffect(() => { const u = pageUnit ?? storedUnit(); if (u) setUnit(u); }, [pageUnit]);
+  useEffect(() => {
+    const s = storedUnit();
+    // a page shared by two quizzes (like 4.1) keeps whichever quiz you were browsing
+    const pref = s ?? LATEST_UNIT;
+    const u = page?.unit ? (page.also.includes(pref) ? pref : page.unit) : s;
+    if (u) setUnit(u);
+  }, [page]);
   useEffect(() => {
     const on = (e: Event) => setUnit((e as CustomEvent<Unit>).detail);
     window.addEventListener("deriv-guide-unit", on);
@@ -117,7 +124,10 @@ export default function Nav() {
   }, []);
   const ids = unitProblemIds(unit);
   const count = ids.filter((id) => done[id]).length;
-  const mainItems = navItems.filter((n) => n.unit === unit);
+  // the quiz's own pages first (its plan leads), then shared ones like 4.1 right after the plan
+  const own = navItems.filter((n) => n.unit === unit);
+  const shared = navItems.filter((n) => n.unit !== unit && n.also.includes(unit));
+  const mainItems = [...own.slice(0, 1), ...shared, ...own.slice(1)];
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, { stiffness: 200, damping: 30 });
   const listRef = useRef<HTMLDivElement>(null);
