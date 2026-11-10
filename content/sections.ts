@@ -7627,7 +7627,7 @@ export const sections: Section[] = [
    },
    {
     "type": "prose",
-    "html": "<p><strong>Day 1 (today)</strong></p><ol class=\"steps\"><li><a href=\"/4-3/\">§4.3</a>: read the rules, then do #1, #3 and #6 with the debugger. This is the core skill for §4.5 too.</li><li><a href=\"/4-4/\">§4.4</a>: l'Hospital. Do #1–#6, then the powers (#8–#10).</li><li><a href=\"/4-9/\">§4.9</a>: antiderivatives are quick marks. Do all 10.</li></ol><p><strong>Day 2 (the night before)</strong></p><ol class=\"steps\"><li><a href=\"/4-7/\">§4.7</a>: optimization #1, #4, #6, #7.</li><li><a href=\"/4-8/\">§4.8</a>: Newton's method. Practise one with a calculator in radians.</li><li><a href=\"/4-5/\">§4.5</a>: sketch one full curve (#3 or #5) with the A–H list.</li><li><a href=\"/quick-quiz/\">Quick quiz</a> on Quiz 5, then the <a href=\"/memory-tricks/\">Quiz 5 flashcards</a>.</li></ol>"
+    "html": "<p><strong>Day 1 (today)</strong></p><ol class=\"steps\"><li><a href=\"/4-3/\">§4.3</a>: read the rules, then do #1, #3 and #6 with the debugger. This is the core skill for §4.5 too.</li><li><a href=\"/4-4/\">§4.4</a>: l'Hospital. Do #1–#6, then the powers (#8–#10).</li><li><a href=\"/4-9/\">§4.9</a>: antiderivatives are quick marks. Do all 10.</li></ol><p><strong>Day 2 (the night before)</strong></p><ol class=\"steps\"><li><a href=\"/4-7/\">§4.7</a>: optimization #1, #4, #6, #7.</li><li><a href=\"/4-8/\">§4.8</a>: Newton's method. Practise one with a calculator in radians.</li><li><a href=\"/4-5/\">§4.5</a>: sketch one full curve (#3 or #5) with the A–H list.</li><li>Read the <a href=\"/cheat-sheet/#quiz-5\">Quiz 5 cheat sheet</a> once, end to end.</li><li><a href=\"/quick-quiz/\">Quick quiz</a> on Quiz 5, then the <a href=\"/memory-tricks/\">Quiz 5 flashcards</a>.</li></ol>"
    },
    {
     "type": "heading",
@@ -16065,8 +16065,86 @@ export const sections: Section[] = [
   "slug": "cheat-sheet",
   "num": "Review",
   "title": "One-page cheat sheet",
-  "lede": "Everything you need to memorize for Quiz 3 and Quiz 4, in one place. Tap a card to open the full explanation with examples.",
+  "lede": "Everything to memorize for Quiz 5, plus Quiz 3 and Quiz 4, in one place. Tap a card to open the full explanation with examples.",
   "blocks": [
+   {
+    "type": "heading",
+    "text": "Quiz 5 · §4.1–4.9",
+    "id": "quiz-5"
+   },
+   {
+    "type": "sheet",
+    "items": [
+     {
+      "title": "Max & min (4.1)",
+      "html": "<p>Critical number: \\(f'(c)=0\\) or undefined, \\(c\\) in the domain.</p><p class='note'>Closed interval: check critical numbers inside + endpoints.</p>",
+      "details": "<p><strong>Extreme Value Theorem:</strong> continuous on a closed \\([a,b]\\) ⇒ an absolute max and min exist.</p><p><strong>Fermat:</strong> a local extreme at \\(c\\) with \\(f'(c)\\) existing ⇒ \\(f'(c)=0\\). But \\(f'(c)=0\\) alone doesn't guarantee an extreme (\\(x^3\\) at 0).</p><p><strong>Closed Interval Method:</strong></p><ol class='steps'><li>Find critical numbers in \\((a,b)\\).</li><li>Evaluate \\(f\\) there and at \\(a\\) and \\(b\\).</li><li>Largest = absolute max, smallest = absolute min.</li></ol><p><strong>Watch:</strong> points where \\(f'\\) is undefined only count if \\(f\\) is defined there; skip critical numbers outside the interval.</p>",
+      "href": "/4-1/",
+      "linkLabel": "Open §4.1"
+     },
+     {
+      "title": "Shape from f′ (4.3)",
+      "html": "<p>\\(f'>0\\) increasing, \\(f'<0\\) decreasing.</p><p class='note'>\\(+\\to-\\) local max · \\(-\\to+\\) local min</p>",
+      "details": "<p><strong>Sign chart:</strong></p><ol class='steps'><li>Find \\(f'\\) and factor it.</li><li>Critical numbers: \\(f'=0\\) or undefined (in the domain).</li><li>Test one point in each interval.</li><li>Read off increasing/decreasing and max/min, then plug \\(c\\) into \\(f\\) for the <em>value</em>.</li></ol><p><strong>Example:</strong> \\(f=2x^3-3x^2-12x\\), \\(f'=6(x-2)(x+1)\\): \\(+,-,+\\), so local max \\(f(-1)=7\\) and local min \\(f(2)=-20\\).</p><p><strong>No sign change</strong> (like \\(x^3\\) at 0) means no max or min.</p>",
+      "href": "/4-3/",
+      "linkLabel": "Open §4.3"
+     },
+     {
+      "title": "Concavity from f″ (4.3)",
+      "html": "<p>\\(f''>0\\) concave up ∪, \\(f''<0\\) concave down ∩.</p><p class='note'>Inflection point = where the sign of \\(f''\\) flips.</p>",
+      "details": "<p><strong>Inflection points:</strong> solve \\(f''=0\\) (or undefined), then check that the sign really changes. \\(x^4\\) has \\(f''(0)=0\\) but no inflection point.</p><p>Give the <strong>point</strong> \\((c,f(c))\\), not just \\(c\\).</p><p><strong>Second Derivative Test</strong> at \\(f'(c)=0\\):</p><ul><li>\\(f''(c)>0\\): local min (cup)</li><li>\\(f''(c)<0\\): local max (cap)</li><li>\\(f''(c)=0\\): no conclusion, so use the first derivative test</li></ul>",
+      "href": "/4-3/",
+      "linkLabel": "Open §4.3"
+     },
+     {
+      "title": "l'Hospital (4.4)",
+      "html": "\\[\\lim\\frac fg=\\lim\\frac{f'}{g'}\\]<p class='note'>Only for \\(\\frac00\\) or \\(\\frac\\infty\\infty\\). Differentiate the top and bottom separately.</p>",
+      "details": "<p><strong>Check the form first</strong>, every time. \\(\\frac{0}{2}\\) is just 0.</p><p><strong>Example:</strong> \\(\\displaystyle\\lim_{x\\to0}\\frac{e^x-1-x}{x^2}\\to\\frac{e^x-1}{2x}\\to\\frac{e^x}{2}=\\frac12\\) (used twice).</p><p><strong>Growth order:</strong> \\(\\ln x\\ll x^n\\ll e^x\\) as \\(x\\to\\infty\\), so \\(\\frac{\\ln x}{x}\\to0\\) and \\(\\frac{x^3}{e^x}\\to0\\).</p><p>It's <strong>not</strong> the quotient rule.</p>",
+      "href": "/4-4/",
+      "linkLabel": "Open §4.4"
+     },
+     {
+      "title": "Other forms (4.4)",
+      "html": "<p>\\(0\\cdot\\infty\\): make a fraction. \\(\\infty-\\infty\\): combine.</p><p class='note'>\\(1^\\infty,0^0,\\infty^0\\): \\(\\ln y\\to L\\), answer \\(e^L\\).</p>",
+      "details": "<p><strong>\\(0\\cdot\\infty\\):</strong> \\(x\\ln x=\\frac{\\ln x}{1/x}\\). Keep the \\(\\ln\\) on top.</p><p><strong>\\(\\infty-\\infty\\):</strong> \\(\\frac1x-\\frac1{e^x-1}=\\frac{e^x-1-x}{x(e^x-1)}\\).</p><p><strong>Powers:</strong> \\(y=f^g\\Rightarrow\\ln y=g\\ln f\\). Find \\(\\lim\\ln y=L\\), then \\(y\\to e^L\\). Don't stop at \\(L\\)!</p><p><strong>Memorize:</strong> \\(\\displaystyle\\lim_{x\\to\\infty}\\Big(1+\\frac ax\\Big)^x=e^a\\) and \\(\\displaystyle\\lim_{x\\to0^+}x^x=1\\).</p>",
+      "href": "/4-4/",
+      "linkLabel": "Open §4.4"
+     },
+     {
+      "title": "Curve sketching (4.5)",
+      "html": "<p>Domain · intercepts · symmetry · asymptotes · \\(f'\\) · max/min · \\(f''\\) · sketch</p>",
+      "details": "<ol class='steps'><li><strong>Domain</strong></li><li><strong>Intercepts:</strong> \\(f(0)\\) and \\(f(x)=0\\)</li><li><strong>Symmetry:</strong> even \\(f(-x)=f(x)\\), odd \\(f(-x)=-f(x)\\)</li><li><strong>Asymptotes:</strong> VA where the bottom is 0; HA \\(\\lim_{x\\to\\pm\\infty}\\); slant when top degree = bottom + 1 (long divide)</li><li><strong>Inc/dec</strong> from \\(f'\\)</li><li><strong>Local max/min</strong></li><li><strong>Concavity and IPs</strong> from \\(f''\\)</li><li><strong>Sketch</strong></li></ol><p><strong>Slant example:</strong> \\(\\frac{x^2}{x-1}=x+1+\\frac1{x-1}\\), so \\(y=x+1\\).</p><p>A concavity flip at a vertical asymptote is <em>not</em> an inflection point.</p>",
+      "href": "/4-5/",
+      "linkLabel": "Open §4.5"
+     },
+     {
+      "title": "Optimization (4.7)",
+      "html": "<p>Objective + constraint → one variable → \\(f'=0\\) → justify.</p><p class='note'>Distance? Minimize \\(d^2\\).</p>",
+      "details": "<ol class='steps'><li>Draw and name the variables.</li><li><strong>Objective:</strong> what to maximize or minimize.</li><li><strong>Constraint:</strong> the fixed fact. Solve it for one variable and substitute.</li><li>Domain (closed interval? check the endpoints too).</li><li>\\(f'=0\\), then justify: \\(f''\\) sign or a first-derivative sign change.</li><li>Answer what was asked, with units.</li></ol><p><strong>Classics:</strong> sum fixed, so max product when the numbers are equal. Fence along a river, \\(2x+y=L\\): \\(x=\\frac L4\\). Rectangle in a circle: a square.</p>",
+      "href": "/4-7/",
+      "linkLabel": "Open §4.7"
+     },
+     {
+      "title": "Newton's method (4.8)",
+      "html": "\\[x_{n+1}=x_n-\\frac{f(x_n)}{f'(x_n)}\\]<p class='note'>Set the equation to 0 first. Radians!</p>",
+      "details": "<p><strong>Setup:</strong> \\(\\cos x=x\\Rightarrow f=\\cos x-x\\). \\(\\sqrt[3]{30}\\Rightarrow f=x^3-30\\).</p><p><strong>Example:</strong> \\(f=x^2-2\\), \\(x_1=1\\): \\(x_2=1.5\\), \\(x_3\\approx1.416667\\), \\(x_4\\approx1.414216\\).</p><p><strong>Fails when</strong> \\(f'(x_n)=0\\) (horizontal tangent), or when a bad guess jumps to a different root.</p><p>Keep 6+ decimals between steps and round only at the end.</p>",
+      "href": "/4-8/",
+      "linkLabel": "Open §4.8"
+     },
+     {
+      "title": "Antiderivatives (4.9)",
+      "html": "\\[x^n\\to\\frac{x^{n+1}}{n+1}+C\\]<p class='note'>\\(\\frac1x\\to\\ln|x|\\) · \\(\\sin\\to-\\cos\\) · \\(\\cos\\to\\sin\\) · always \\(+C\\)</p>",
+      "details": "<p><strong>Table:</strong></p><ul><li>\\(e^x\\to e^x\\)</li><li>\\(\\sec^2x\\to\\tan x\\), \\(\\sec x\\tan x\\to\\sec x\\)</li><li>\\(\\frac1{1+x^2}\\to\\tan^{-1}x\\), \\(\\frac1{\\sqrt{1-x^2}}\\to\\sin^{-1}x\\)</li><li>\\(\\cosh x\\to\\sinh x\\), \\(\\sinh x\\to\\cosh x\\)</li></ul><p><strong>Split fractions first:</strong> \\(\\frac{x^2+3x-1}{x}=x+3-\\frac1x\\).</p><p><strong>Initial value:</strong> antidifferentiate with \\(+C\\), then plug in the point. Given \\(f''\\)? Two constants, \\(C\\) and \\(D\\).</p><p><strong>Motion:</strong> \\(a\\to v\\to s\\), using \\(v(0)\\) then \\(s(0)\\).</p>",
+      "href": "/4-9/",
+      "linkLabel": "Open §4.9"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Quiz 3 & 4 · §2.8–4.1",
+    "id": "quiz-3-4"
+   },
    {
     "type": "sheet",
     "items": [

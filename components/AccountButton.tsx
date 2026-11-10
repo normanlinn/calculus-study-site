@@ -32,10 +32,12 @@ export default function AccountButton() {
     if (!open) return;
     closeRef.current?.focus();
     document.body.style.overflow = "hidden";
+    window.__lenis?.stop(); // keep the smooth-scroll engine from moving the page behind the pop-up
     const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setOpen(false); };
     window.addEventListener("keydown", onKey);
     const opener = btnRef.current;
-    return () => { document.body.style.overflow = ""; window.removeEventListener("keydown", onKey); opener?.focus(); };
+    return () => { document.body.style.overflow = "";
+      window.__lenis?.start(); window.removeEventListener("keydown", onKey); opener?.focus(); };
   }, [open]);
   // close the window once sign-in succeeds
   useEffect(() => { if (acct.user && open && mode !== "reset") { setMsg(null); setPassword(""); } }, [acct.user, open, mode]);

@@ -38,8 +38,10 @@ export default function SheetCards({ items }: { items: SheetCard[] }) {
     const opener = last.current;
     closeRef.current?.focus();
     document.body.style.overflow = "hidden";
+    window.__lenis?.stop(); // keep the smooth-scroll engine from moving the page behind the pop-up
     return () => {
       document.body.style.overflow = "";
+      window.__lenis?.start();
       if (opener !== null) cardRefs.current[opener]?.focus();
     };
   }, [isOpen]);
