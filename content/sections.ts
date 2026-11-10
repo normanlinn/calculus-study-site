@@ -7558,10 +7558,7 @@ export const sections: Section[] = [
     ]
    }
   ],
-  "unit": "q4",
-  "also": [
-   "q5"
-  ]
+  "unit": "q4"
  },
  {
   "id": "q5",
@@ -7569,7 +7566,7 @@ export const sections: Section[] = [
   "num": "Quiz 5 · Thu, Nov 12",
   "unit": "q5",
   "title": "Quiz 5 study plan",
-  "lede": "Sections 4.1–4.9: what's assigned, where each skill is taught, and a 2-day plan for starting from zero.",
+  "lede": "Quiz 5 covers §4.3, 4.4, 4.5 and 4.7. What's assigned, where each skill is taught, and a 2-day plan for starting from zero.",
   "blocks": [
    {
     "type": "countdown",
@@ -7578,26 +7575,18 @@ export const sections: Section[] = [
    },
    {
     "type": "prose",
-    "html": "<p class=\"callout\">These practice problems are written to match the types in each homework range. They aren't copied from the textbook, so do the real assigned numbers too if you have time. The skills are the same.</p>"
+    "html": "<p class=\"callout\"><strong>On the quiz:</strong> §4.3, §4.4, §4.5 and §4.7 only. §4.2, §4.8 and §4.9 are under the <strong>Later</strong> tab. The practice problems match each homework range but aren't copied from the textbook, so do some of the real assigned numbers too.</p>"
    },
    {
     "type": "heading",
-    "text": "Your assigned homework"
+    "text": "On Quiz 5"
    },
    {
     "type": "rules",
     "items": [
      {
       "key": true,
-      "html": "<span class=\"tag\">§4.1 · homework 13–65 odd</span><p><strong><a href=\"/4-1/\">Maximum and Minimum Values</a></strong></p><p class=\"note\">Already on the site from Quiz 4: 20 solved problems.</p>"
-     },
-     {
-      "key": false,
-      "html": "<span class=\"tag\">§4.2 · homework 9–25 odd · read only</span><p><strong><a href=\"/4-2/\">The Mean Value Theorem</a></strong></p><p class=\"note\">Not on the test. Skim it. <a href=\"/4-2/#p42-1\">#1</a>, <a href=\"/4-2/#p42-2\">#2</a>, <a href=\"/4-2/#p42-3\">#3</a></p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">§4.3 · homework 1–29 odd, 45–65 odd</span><p><strong><a href=\"/4-3/\">Shape of a graph</a></strong></p><p class=\"note\">10 practice problems, each solved line by line: <a href=\"/4-3/#p43-1\">#1</a>, <a href=\"/4-3/#p43-2\">#2</a>, <a href=\"/4-3/#p43-3\">#3</a>, <a href=\"/4-3/#p43-4\">#4</a>, <a href=\"/4-3/#p43-5\">#5</a>, <a href=\"/4-3/#p43-6\">#6</a>, <a href=\"/4-3/#p43-7\">#7</a>, <a href=\"/4-3/#p43-8\">#8</a>, <a href=\"/4-3/#p43-9\">#9</a>, <a href=\"/4-3/#p43-10\">#10</a></p>"
+      "html": "<span class=\"tag\">§4.3 · homework 1–29 odd, 45–65 odd</span><p><strong><a href=\"/4-3/\">Shape of a graph (f′ and f″)</a></strong></p><p class=\"note\">10 practice problems, each solved line by line: <a href=\"/4-3/#p43-1\">#1</a>, <a href=\"/4-3/#p43-2\">#2</a>, <a href=\"/4-3/#p43-3\">#3</a>, <a href=\"/4-3/#p43-4\">#4</a>, <a href=\"/4-3/#p43-5\">#5</a>, <a href=\"/4-3/#p43-6\">#6</a>, <a href=\"/4-3/#p43-7\">#7</a>, <a href=\"/4-3/#p43-8\">#8</a>, <a href=\"/4-3/#p43-9\">#9</a>, <a href=\"/4-3/#p43-10\">#10</a></p>"
      },
      {
       "key": true,
@@ -7612,12 +7601,8 @@ export const sections: Section[] = [
       "html": "<span class=\"tag\">§4.7 · homework 3–7 odd, 25, 26, 27</span><p><strong><a href=\"/4-7/\">Optimization</a></strong></p><p class=\"note\">8 practice problems, each solved line by line: <a href=\"/4-7/#p47-1\">#1</a>, <a href=\"/4-7/#p47-2\">#2</a>, <a href=\"/4-7/#p47-3\">#3</a>, <a href=\"/4-7/#p47-4\">#4</a>, <a href=\"/4-7/#p47-5\">#5</a>, <a href=\"/4-7/#p47-6\">#6</a>, <a href=\"/4-7/#p47-7\">#7</a>, <a href=\"/4-7/#p47-8\">#8</a></p>"
      },
      {
-      "key": true,
-      "html": "<span class=\"tag\">§4.8 · homework 1–31 odd</span><p><strong><a href=\"/4-8/\">Newton's Method</a></strong></p><p class=\"note\">5 practice problems, each solved line by line: <a href=\"/4-8/#p48-1\">#1</a>, <a href=\"/4-8/#p48-2\">#2</a>, <a href=\"/4-8/#p48-3\">#3</a>, <a href=\"/4-8/#p48-4\">#4</a>, <a href=\"/4-8/#p48-5\">#5</a></p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">§4.9 · homework 1–53 odd</span><p><strong><a href=\"/4-9/\">Antiderivatives</a></strong></p><p class=\"note\">10 practice problems, each solved line by line: <a href=\"/4-9/#p49-1\">#1</a>, <a href=\"/4-9/#p49-2\">#2</a>, <a href=\"/4-9/#p49-3\">#3</a>, <a href=\"/4-9/#p49-4\">#4</a>, <a href=\"/4-9/#p49-5\">#5</a>, <a href=\"/4-9/#p49-6\">#6</a>, <a href=\"/4-9/#p49-7\">#7</a>, <a href=\"/4-9/#p49-8\">#8</a>, <a href=\"/4-9/#p49-9\">#9</a>, <a href=\"/4-9/#p49-10\">#10</a></p>"
+      "key": false,
+      "html": "<span class=\"tag\">Then test yourself</span><p><strong><a href=\"/quiz-5-practice/\">Quiz 5 practice quiz</a></strong>: 7 problems, 10 points, with a live score.</p>"
      }
     ]
    },
@@ -7627,11 +7612,11 @@ export const sections: Section[] = [
    },
    {
     "type": "prose",
-    "html": "<p><strong>Day 1 (today)</strong></p><ol class=\"steps\"><li><a href=\"/4-3/\">§4.3</a>: read the rules, then do #1, #3 and #6 with the debugger. This is the core skill for §4.5 too.</li><li><a href=\"/4-4/\">§4.4</a>: l'Hospital. Do #1–#6, then the powers (#8–#10).</li><li><a href=\"/4-9/\">§4.9</a>: antiderivatives are quick marks. Do all 10.</li></ol><p><strong>Day 2 (the night before)</strong></p><ol class=\"steps\"><li><a href=\"/4-7/\">§4.7</a>: optimization #1, #4, #6, #7.</li><li><a href=\"/4-8/\">§4.8</a>: Newton's method. Practise one with a calculator in radians.</li><li><a href=\"/4-5/\">§4.5</a>: sketch one full curve (#3 or #5) with the A–H list.</li><li>Read the <a href=\"/cheat-sheet/#quiz-5\">Quiz 5 cheat sheet</a> once, end to end.</li><li><a href=\"/quick-quiz/\">Quick quiz</a> on Quiz 5, then the <a href=\"/memory-tricks/\">Quiz 5 flashcards</a>.</li></ol>"
+    "html": "<p><strong>Day 1 (today)</strong></p><ol class=\"steps\"><li><a href=\"/4-3/\">§4.3</a>: read the rules, then do #1, #3, #6 and #8 with the debugger. Everything else builds on this.</li><li><a href=\"/4-4/\">§4.4</a>: l'Hospital. Do #1–#7, then the powers (#8–#10). Do #11 so you remember to check the form.</li><li>The <a href=\"/unit-circle/\">unit circle</a> drill for 5 minutes: trig limits and critical numbers need exact values.</li></ol><p><strong>Day 2 (the night before)</strong></p><ol class=\"steps\"><li><a href=\"/4-5/\">§4.5</a>: sketch #3 and #5 with the A–H checklist.</li><li><a href=\"/4-7/\">§4.7</a>: optimization #1, #4, #5, #7 and #8.</li><li>Take the <a href=\"/quiz-5-practice/\">practice quiz</a> in 30 minutes.</li><li>Read the <a href=\"/cheat-sheet/#quiz-5\">Quiz 5 cheat sheet</a>, then the <a href=\"/quick-quiz/\">quick quiz</a> and <a href=\"/memory-tricks/\">flashcards</a>.</li></ol>"
    },
    {
     "type": "heading",
-    "text": "The 6 things to memorize"
+    "text": "The 5 things to memorize"
    },
    {
     "type": "rules",
@@ -7646,183 +7631,15 @@ export const sections: Section[] = [
      },
      {
       "key": true,
-      "html": "<span class=\"tag\">l'Hospital</span><p>\\(\\frac00\\) or \\(\\frac\\infty\\infty\\): \\(\\frac{f'}{g'}\\). Powers: take \\(\\ln\\), then \\(e^{L}\\).</p>"
+      "html": "<span class=\"tag\">l'Hospital</span><p>\\(\\frac00\\) or \\(\\frac\\infty\\infty\\): \\(\\frac{f'}{g'}\\). \\(0\\cdot\\infty\\): make a fraction. Powers: take \\(\\ln\\), answer \\(e^{L}\\).</p>"
      },
      {
       "key": true,
-      "html": "<span class=\"tag\">Optimization</span><p>Objective + constraint → one variable → derivative = 0 → justify.</p>"
+      "html": "<span class=\"tag\">Sketching</span><p>Domain · intercepts · symmetry · asymptotes · \\(f'\\) · max/min · \\(f''\\) · sketch</p>"
      },
      {
       "key": true,
-      "html": "<span class=\"tag\">Newton</span><p>\\(x_{n+1}=x_n-\\frac{f(x_n)}{f'(x_n)}\\)</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Antiderivative</span><p>\\(x^n\\to\\frac{x^{n+1}}{n+1}\\), \\(\\frac1x\\to\\ln|x|\\), and always \\(+C\\).</p>"
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "s42",
-  "slug": "4-2",
-  "num": "§4.2",
-  "unit": "q5",
-  "title": "The Mean Value Theorem",
-  "lede": "Rolle's Theorem and the MVT. Read-only: your instructor says it won't be on the test.",
-  "blocks": [
-   {
-    "type": "prose",
-    "html": "<p class=\"callout\"><strong>Not on the quiz.</strong> §4.2 is “read only”, so skim this page once and spend your time on §4.3–4.9. The idea does explain <em>why</em> the tests in §4.3 work.</p>"
-   },
-   {
-    "type": "rules",
-    "items": [
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Rolle's Theorem</span><p>If \\(f\\) is continuous on \\([a,b]\\), differentiable on \\((a,b)\\), and \\(f(a)=f(b)\\), then there is a \\(c\\) in \\((a,b)\\) with \\(f'(c)=0\\).</p><p class=\"note\">Same height at both ends ⇒ somewhere the tangent is flat.</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Mean Value Theorem</span><p>If \\(f\\) is continuous on \\([a,b]\\) and differentiable on \\((a,b)\\), there is a \\(c\\) in \\((a,b)\\) with</p>\\[f'(c)=\\frac{f(b)-f(a)}{b-a}.\\]<p class=\"note\">Somewhere the instant slope equals the average slope.</p>"
-     },
-     {
-      "key": false,
-      "html": "<span class=\"tag\">Recipe</span><p>1) Check continuity and differentiability. 2) Work out the average slope \\(\\frac{f(b)-f(a)}{b-a}\\). 3) Set \\(f'(c)\\) equal to it and solve. 4) Keep only \\(c\\) strictly inside \\((a,b)\\).</p>"
-     }
-    ]
-   },
-   {
-    "type": "heading",
-    "text": "Practice"
-   },
-   {
-    "type": "practice",
-    "items": [
-     {
-      "id": "p42-1",
-      "source": "Like §4.2 #1–11",
-      "href": null,
-      "question": "Verify that \\(f(x)=x^2-4x+1\\) satisfies Rolle's Theorem on \\([0,4]\\), then find every \\(c\\) it promises.",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Check \\(f(0)\\) and \\(f(4)\\) first, then solve \\(f'(c)=0\\).</p>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>A polynomial is continuous and differentiable everywhere. \\(f(0)=1\\) and \\(f(4)=16-16+1=1\\), so the ends match. \\(f'(x)=2x-4=0\\Rightarrow x=2\\), which is in \\((0,4)\\).</p><p class=\"ans\">\\(c=2\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(0)=1,\\quad f(4)=1",
-        "why": "Rolle needs equal heights at the ends. They match.",
-        "watch": [
-         [
-          "f(a)=f(b)",
-          "1"
-         ]
-        ]
-       },
-       {
-        "code": "f'(x)=2x-4",
-        "why": "Power rule. Polynomials are smooth, so the hypotheses hold."
-       },
-       {
-        "code": "2c-4=0\\ \\Rightarrow\\ c=2",
-        "why": "Rolle promises a flat tangent. \\(2\\) lies inside \\((0,4)\\).",
-        "watch": [
-         [
-          "c",
-          "2"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p42-2",
-      "source": "Like §4.2 #13–23",
-      "href": null,
-      "question": "Find every \\(c\\) that satisfies the Mean Value Theorem for \\(f(x)=x^3-x\\) on \\([0,2]\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Average slope first: \\(\\frac{f(2)-f(0)}{2-0}\\).</p>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(f(2)=6\\), \\(f(0)=0\\), so the average slope is \\(3\\). \\(f'(c)=3c^2-1=3\\Rightarrow c^2=\\tfrac43\\Rightarrow c=\\pm\\tfrac{2}{\\sqrt3}\\). Only the positive one is in \\((0,2)\\).</p><p class=\"ans\">\\(c=\\dfrac{2}{\\sqrt3}\\approx1.155\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "\\frac{f(2)-f(0)}{2-0}=\\frac{6-0}{2}=3",
-        "why": "This is the slope of the secant line from end to end.",
-        "watch": [
-         [
-          "\\text{avg slope}",
-          "3"
-         ]
-        ]
-       },
-       {
-        "code": "f'(c)=3c^2-1",
-        "why": "Derivative of \\(x^3-x\\)."
-       },
-       {
-        "code": "3c^2-1=3\\ \\Rightarrow\\ c^2=\\tfrac43",
-        "why": "Set the instant slope equal to the average slope."
-       },
-       {
-        "code": "c=\\tfrac{2}{\\sqrt3}",
-        "why": "\\(-\\tfrac{2}{\\sqrt3}\\) is outside \\((0,2)\\), so throw it out.",
-        "watch": [
-         [
-          "c",
-          "2/\\sqrt3"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p42-3",
-      "source": "Like §4.2 #13–23",
-      "href": null,
-      "question": "Find the \\(c\\) promised by the MVT for \\(f(x)=\\sqrt{x}\\) on \\([0,4]\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(f'(x)=\\frac{1}{2\\sqrt x}\\). Set it equal to the average slope.</p>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>Average slope \\(\\frac{2-0}{4}=\\frac12\\). \\(\\frac{1}{2\\sqrt c}=\\frac12\\Rightarrow\\sqrt c=1\\Rightarrow c=1\\).</p><p class=\"ans\">\\(c=1\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "\\frac{\\sqrt4-\\sqrt0}{4-0}=\\frac12",
-        "why": "Average slope over the interval."
-       },
-       {
-        "code": "\\frac{1}{2\\sqrt c}=\\frac12",
-        "why": "\\(\\sqrt x\\) is continuous on \\([0,4]\\) and differentiable on \\((0,4)\\), which is all the MVT needs."
-       },
-       {
-        "code": "\\sqrt c=1\\ \\Rightarrow\\ c=1",
-        "why": "Cross-multiply.",
-        "watch": [
-         [
-          "c",
-          "1"
-         ]
-        ]
-       }
-      ]
+      "html": "<span class=\"tag\">Optimization</span><p>Objective + constraint → one variable → \\(f'=0\\) → justify max/min → answer with units.</p>"
      }
     ]
    }
@@ -10167,13 +9984,661 @@ export const sections: Section[] = [
   ]
  },
  {
+  "id": "q5p",
+  "slug": "quiz-5-practice",
+  "num": "Quiz 5 · practice",
+  "unit": "q5",
+  "title": "Quiz 5 practice quiz",
+  "lede": "7 problems, 10 points, shaped like your quizzes: §4.3, 4.4, 4.5 and 4.7, slightly harder than the section practice.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<ol class=\"steps\"><li>Give yourself about 30 minutes. Paper and pencil only.</li><li>Do every problem before opening any answer.</li><li>Check with <strong>Full solution</strong>. Tick <strong>I can do this</strong> on each one you got fully right and the score bar adds up your points. For a miss, use <strong>Step through it like a debugger</strong> to find the line where it went wrong.</li></ol>"
+   },
+   {
+    "type": "examscore",
+    "items": [
+     {
+      "id": "q5p-1",
+      "points": 2
+     },
+     {
+      "id": "q5p-2",
+      "points": 1
+     },
+     {
+      "id": "q5p-3",
+      "points": 1
+     },
+     {
+      "id": "q5p-4",
+      "points": 1
+     },
+     {
+      "id": "q5p-5",
+      "points": 1
+     },
+     {
+      "id": "q5p-6",
+      "points": 2
+     },
+     {
+      "id": "q5p-7",
+      "points": 2
+     }
+    ],
+    "total": 10
+   },
+   {
+    "type": "heading",
+    "text": "§4.3 · Shape of a graph"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "q5p-1",
+      "source": "Like §4.3",
+      "href": "4-3",
+      "question": "<b>1.</b> (2 pts) For \\(f(x)=x^3-6x^2+9x+1\\): find the intervals of increase/decrease, the local max and min values, the intervals of concavity and the inflection point.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f'(x)=3x^2-12x+9\\). Pull out 3, then factor.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=3(x-1)(x-3)\\): \\(+,-,+\\). \\(f(1)=5\\), \\(f(3)=1\\). \\(f''=6x-12\\) flips at \\(x=2\\), \\(f(2)=3\\).</p><p class=\"ans\">Inc \\((-\\infty,1),(3,\\infty)\\); dec \\((1,3)\\); loc max \\(5\\), loc min \\(1\\); CD \\((-\\infty,2)\\), CU \\((2,\\infty)\\); IP \\((2,3)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=3x^2-12x+9=3(x-1)(x-3)",
+        "why": "Factor out 3: \\(x^2-4x+3=(x-1)(x-3)\\).",
+        "watch": [
+         [
+          "\\text{crit}",
+          "1,\\ 3"
+         ]
+        ]
+       },
+       {
+        "code": "+\\ \\big|_1\\ -\\ \\big|_3\\ +",
+        "why": "Test \\(x=0,2,4\\)."
+       },
+       {
+        "code": "f(1)=1-6+9+1=5",
+        "why": "\\(+\\to-\\): local max.",
+        "watch": [
+         [
+          "\\text{loc max}",
+          "5"
+         ]
+        ]
+       },
+       {
+        "code": "f(3)=27-54+27+1=1",
+        "why": "\\(-\\to+\\): local min.",
+        "watch": [
+         [
+          "\\text{loc min}",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "f''(x)=6x-12=0\\Rightarrow x=2",
+        "why": "Negative before 2, positive after."
+       },
+       {
+        "code": "f(2)=8-24+18+1=3",
+        "why": "",
+        "watch": [
+         [
+          "\\text{IP}",
+          "(2,3)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "q5p-2",
+      "source": "Like §4.3",
+      "href": "4-3",
+      "question": "<b>2.</b> (1 pt) Use the Second Derivative Test to find the local max and min values of \\(f(x)=x^4-8x^2\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Critical numbers from \\(4x(x^2-4)=0\\). Then plug each one into \\(f''\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=4x(x-2)(x+2)\\Rightarrow x=0,\\pm2\\). \\(f''=12x^2-16\\): \\(f''(\\pm2)=32>0\\) (min), \\(f''(0)=-16<0\\) (max).</p><p class=\"ans\">Local max \\(f(0)=0\\); local min \\(f(\\pm2)=-16\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=4x^3-16x=4x(x-2)(x+2)",
+        "why": "",
+        "watch": [
+         [
+          "\\text{crit}",
+          "0,\\pm2"
+         ]
+        ]
+       },
+       {
+        "code": "f''(x)=12x^2-16",
+        "why": ""
+       },
+       {
+        "code": "f''(\\pm2)=48-16=32>0",
+        "why": "Cup: local min."
+       },
+       {
+        "code": "f(\\pm2)=16-32=-16",
+        "why": "",
+        "watch": [
+         [
+          "\\text{loc min}",
+          "-16"
+         ]
+        ]
+       },
+       {
+        "code": "f''(0)=-16<0",
+        "why": "Cap: local max."
+       },
+       {
+        "code": "f(0)=0",
+        "why": "",
+        "watch": [
+         [
+          "\\text{loc max}",
+          "0"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "§4.4 · l'Hospital's Rule"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "q5p-3",
+      "source": "Like §4.4",
+      "href": "4-4",
+      "question": "<b>3.</b> (1 pt) Find \\(\\displaystyle\\lim_{x\\to0}\\frac{1-\\cos2x}{x^2}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\frac00\\). You'll need l'Hospital twice.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>L'H: \\(\\frac{2\\sin2x}{2x}\\) (still \\(\\frac00\\)). L'H again: \\(\\frac{4\\cos2x}{2}\\to2\\).</p><p class=\"ans\">\\(2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{1-1}{0}=\\frac00",
+        "why": "",
+        "watch": [
+         [
+          "\\text{form}",
+          "0/0"
+         ]
+        ]
+       },
+       {
+        "code": "\\lim\\frac{2\\sin2x}{2x}",
+        "why": "Chain rule: \\((\\cos2x)'=-2\\sin2x\\), so minus that is \\(+2\\sin2x\\)."
+       },
+       {
+        "code": "\\lim\\frac{4\\cos2x}{2}",
+        "why": "Still \\(\\frac00\\), so L'H again."
+       },
+       {
+        "code": "\\frac{4}{2}=2",
+        "why": "",
+        "watch": [
+         [
+          "\\text{limit}",
+          "2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "q5p-4",
+      "source": "Like §4.4",
+      "href": "4-4",
+      "question": "<b>4.</b> (1 pt) Find \\(\\displaystyle\\lim_{x\\to0^+}\\sin x\\,\\ln x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(0\\cdot(-\\infty)\\). Write it as \\(\\frac{\\ln x}{\\csc x}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>L'H: \\(\\frac{1/x}{-\\csc x\\cot x}=-\\frac{\\sin x}{x}\\cdot\\tan x\\to-1\\cdot0=0\\).</p><p class=\"ans\">\\(0\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "0\\cdot(-\\infty)",
+        "why": "",
+        "watch": [
+         [
+          "\\text{form}",
+          "0\\cdot\\infty"
+         ]
+        ]
+       },
+       {
+        "code": "\\frac{\\ln x}{\\csc x}",
+        "why": "\\(\\sin x=\\frac{1}{\\csc x}\\). Now it's \\(\\frac{-\\infty}{\\infty}\\)."
+       },
+       {
+        "code": "\\frac{1/x}{-\\csc x\\cot x}",
+        "why": "L'H. \\((\\csc x)'=-\\csc x\\cot x\\)."
+       },
+       {
+        "code": "=-\\frac{\\sin x}{x}\\cdot\\frac{\\sin x}{\\cos x}",
+        "why": "Flip: \\(\\frac{1}{\\csc x\\cot x}=\\sin x\\cdot\\frac{\\sin x}{\\cos x}\\)."
+       },
+       {
+        "code": "\\to-1\\cdot0=0",
+        "why": "\\(\\frac{\\sin x}{x}\\to1\\) and \\(\\tan x\\to0\\).",
+        "watch": [
+         [
+          "\\text{limit}",
+          "0"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "q5p-5",
+      "source": "Like §4.4",
+      "href": "4-4",
+      "question": "<b>5.</b> (1 pt) Find \\(\\displaystyle\\lim_{x\\to0^+}(1+2x)^{1/x}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(1^\\infty\\). Take \\(\\ln\\): \\(\\ln y=\\frac{\\ln(1+2x)}{x}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{\\ln(1+2x)}{x}\\) is \\(\\frac00\\). L'H: \\(\\frac{2/(1+2x)}{1}\\to2\\). So \\(y\\to e^2\\).</p><p class=\"ans\">\\(e^2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "1^\\infty",
+        "why": "",
+        "watch": [
+         [
+          "\\text{form}",
+          "1^\\infty"
+         ]
+        ]
+       },
+       {
+        "code": "\\ln y=\\tfrac1x\\ln(1+2x)=\\frac{\\ln(1+2x)}{x}",
+        "why": "Bring the exponent down: \\(\\frac00\\)."
+       },
+       {
+        "code": "\\lim\\frac{\\frac{2}{1+2x}}{1}=2",
+        "why": "L'H, with the chain rule on top.",
+        "watch": [
+         [
+          "\\lim\\ln y",
+          "2"
+         ]
+        ]
+       },
+       {
+        "code": "y\\to e^2",
+        "why": "Undo the ln.",
+        "watch": [
+         [
+          "\\text{limit}",
+          "e^2"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "§4.5 · Curve sketching"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "q5p-6",
+      "source": "Like §4.5",
+      "href": "4-5",
+      "question": "<b>6.</b> (2 pts) Sketch \\(y=\\dfrac{x^2}{x^2-4}\\): domain, symmetry, asymptotes, intervals of increase/decrease, local extremes and concavity.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Even function. VA where \\(x^2-4=0\\); HA from comparing the degrees. \\(y'=\\frac{-8x}{(x^2-4)^2}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Domain \\(x\\ne\\pm2\\); even; intercept \\((0,0)\\). VA \\(x=\\pm2\\), HA \\(y=1\\). \\(y'=\\frac{-8x}{(x^2-4)^2}\\): inc for \\(x<0\\), dec for \\(x>0\\) (skipping \\(\\pm2\\)), local max \\((0,0)\\). \\(y''=\\frac{8(3x^2+4)}{(x^2-4)^3}\\): CU for \\(|x|>2\\), CD for \\(|x|<2\\). No IP.</p><p class=\"ans\">VA \\(x=\\pm2\\), HA \\(y=1\\); inc \\((-\\infty,-2),(-2,0)\\), dec \\((0,2),(2,\\infty)\\); loc max \\((0,0)\\); CU \\(|x|>2\\), CD \\(|x|<2\\); no IP</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x^2-4\\ne0\\Rightarrow x\\ne\\pm2",
+        "why": "Domain.",
+        "watch": [
+         [
+          "\\text{VA}",
+          "x=\\pm2"
+         ]
+        ]
+       },
+       {
+        "code": "f(-x)=f(x)",
+        "why": "Even: symmetric about the y-axis."
+       },
+       {
+        "code": "\\lim_{x\\to\\pm\\infty}\\frac{x^2}{x^2-4}=1",
+        "why": "Same degree: ratio of the leading coefficients.",
+        "watch": [
+         [
+          "\\text{HA}",
+          "y=1"
+         ]
+        ]
+       },
+       {
+        "code": "y'=\\frac{2x(x^2-4)-x^2(2x)}{(x^2-4)^2}",
+        "why": "Quotient rule."
+       },
+       {
+        "code": "y'=\\frac{-8x}{(x^2-4)^2}",
+        "why": "The \\(2x^3\\) terms cancel. The bottom is always positive."
+       },
+       {
+        "code": "x<0:\\ y'>0,\\quad x>0:\\ y'<0",
+        "why": "Up then down: local max at 0.",
+        "watch": [
+         [
+          "\\text{max}",
+          "(0,0)"
+         ]
+        ]
+       },
+       {
+        "code": "y''=\\frac{8(3x^2+4)}{(x^2-4)^3}",
+        "why": "The top is always positive, so the sign comes from \\((x^2-4)^3\\)."
+       },
+       {
+        "code": "|x|>2:\\ \\text{CU},\\quad |x|<2:\\ \\text{CD}",
+        "why": "It only flips at the asymptotes, so there is no inflection point."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "§4.7 · Optimization"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "q5p-7",
+      "source": "Like §4.7",
+      "href": "4-7",
+      "question": "<b>7.</b> (2 pts) An open box is made from a 12 in × 12 in sheet by cutting equal squares of side \\(x\\) from each corner and folding up the sides. Find the largest possible volume.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Base \\((12-2x)\\times(12-2x)\\), height \\(x\\), with \\(0\\le x\\le6\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(V=x(12-2x)^2\\). \\(V'=(12-2x)^2-4x(12-2x)=(12-2x)(12-6x)=0\\Rightarrow x=2\\) (\\(x=6\\) gives \\(V=0\\)). Endpoints give 0, so the max is \\(V(2)=2\\cdot8^2=128\\).</p><p class=\"ans\">\\(128\\text{ in}^3\\) (cut \\(x=2\\) in)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "V=x(12-2x)^2,\\ 0\\le x\\le6",
+        "why": "Height times base area. You can't cut more than half of 12."
+       },
+       {
+        "code": "V'=(12-2x)^2+x\\cdot2(12-2x)(-2)",
+        "why": "Product rule, with the chain rule on the square."
+       },
+       {
+        "code": "V'=(12-2x)\\big[(12-2x)-4x\\big]",
+        "why": "Factor out \\((12-2x)\\)."
+       },
+       {
+        "code": "=(12-2x)(12-6x)=0",
+        "why": "\\(x=6\\) or \\(x=2\\).",
+        "watch": [
+         [
+          "\\text{crit}",
+          "2,\\ 6"
+         ]
+        ]
+       },
+       {
+        "code": "V(0)=V(6)=0,\\ V(2)=2\\cdot64=128",
+        "why": "Closed interval method: the biggest one wins.",
+        "watch": [
+         [
+          "V_{\\max}",
+          "128"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\">Missed one? Go back to that section's page: <a href=\"/4-3/\">§4.3</a>, <a href=\"/4-4/\">§4.4</a>, <a href=\"/4-5/\">§4.5</a>, <a href=\"/4-7/\">§4.7</a>.</p>"
+   }
+  ]
+ },
+ {
+  "id": "s42",
+  "slug": "4-2",
+  "num": "§4.2",
+  "unit": "later",
+  "title": "The Mean Value Theorem",
+  "lede": "Rolle's Theorem and the MVT. Read-only: your instructor says it won't be on the test.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\"><strong>Not on Quiz 5.</strong> §4.2 is “read only”. Skim it once; the idea explains <em>why</em> the tests in §4.3 work.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Rolle's Theorem</span><p>If \\(f\\) is continuous on \\([a,b]\\), differentiable on \\((a,b)\\), and \\(f(a)=f(b)\\), then there is a \\(c\\) in \\((a,b)\\) with \\(f'(c)=0\\).</p><p class=\"note\">Same height at both ends ⇒ somewhere the tangent is flat.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Mean Value Theorem</span><p>If \\(f\\) is continuous on \\([a,b]\\) and differentiable on \\((a,b)\\), there is a \\(c\\) in \\((a,b)\\) with</p>\\[f'(c)=\\frac{f(b)-f(a)}{b-a}.\\]<p class=\"note\">Somewhere the instant slope equals the average slope.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Recipe</span><p>1) Check continuity and differentiability. 2) Work out the average slope \\(\\frac{f(b)-f(a)}{b-a}\\). 3) Set \\(f'(c)\\) equal to it and solve. 4) Keep only \\(c\\) strictly inside \\((a,b)\\).</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p42-1",
+      "source": "Like §4.2 #1–11",
+      "href": null,
+      "question": "Verify that \\(f(x)=x^2-4x+1\\) satisfies Rolle's Theorem on \\([0,4]\\), then find every \\(c\\) it promises.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Check \\(f(0)\\) and \\(f(4)\\) first, then solve \\(f'(c)=0\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>A polynomial is continuous and differentiable everywhere. \\(f(0)=1\\) and \\(f(4)=16-16+1=1\\), so the ends match. \\(f'(x)=2x-4=0\\Rightarrow x=2\\), which is in \\((0,4)\\).</p><p class=\"ans\">\\(c=2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(0)=1,\\quad f(4)=1",
+        "why": "Rolle needs equal heights at the ends. They match.",
+        "watch": [
+         [
+          "f(a)=f(b)",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "f'(x)=2x-4",
+        "why": "Power rule. Polynomials are smooth, so the hypotheses hold."
+       },
+       {
+        "code": "2c-4=0\\ \\Rightarrow\\ c=2",
+        "why": "Rolle promises a flat tangent. \\(2\\) lies inside \\((0,4)\\).",
+        "watch": [
+         [
+          "c",
+          "2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p42-2",
+      "source": "Like §4.2 #13–23",
+      "href": null,
+      "question": "Find every \\(c\\) that satisfies the Mean Value Theorem for \\(f(x)=x^3-x\\) on \\([0,2]\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Average slope first: \\(\\frac{f(2)-f(0)}{2-0}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(2)=6\\), \\(f(0)=0\\), so the average slope is \\(3\\). \\(f'(c)=3c^2-1=3\\Rightarrow c^2=\\tfrac43\\Rightarrow c=\\pm\\tfrac{2}{\\sqrt3}\\). Only the positive one is in \\((0,2)\\).</p><p class=\"ans\">\\(c=\\dfrac{2}{\\sqrt3}\\approx1.155\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{f(2)-f(0)}{2-0}=\\frac{6-0}{2}=3",
+        "why": "This is the slope of the secant line from end to end.",
+        "watch": [
+         [
+          "\\text{avg slope}",
+          "3"
+         ]
+        ]
+       },
+       {
+        "code": "f'(c)=3c^2-1",
+        "why": "Derivative of \\(x^3-x\\)."
+       },
+       {
+        "code": "3c^2-1=3\\ \\Rightarrow\\ c^2=\\tfrac43",
+        "why": "Set the instant slope equal to the average slope."
+       },
+       {
+        "code": "c=\\tfrac{2}{\\sqrt3}",
+        "why": "\\(-\\tfrac{2}{\\sqrt3}\\) is outside \\((0,2)\\), so throw it out.",
+        "watch": [
+         [
+          "c",
+          "2/\\sqrt3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p42-3",
+      "source": "Like §4.2 #13–23",
+      "href": null,
+      "question": "Find the \\(c\\) promised by the MVT for \\(f(x)=\\sqrt{x}\\) on \\([0,4]\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f'(x)=\\frac{1}{2\\sqrt x}\\). Set it equal to the average slope.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Average slope \\(\\frac{2-0}{4}=\\frac12\\). \\(\\frac{1}{2\\sqrt c}=\\frac12\\Rightarrow\\sqrt c=1\\Rightarrow c=1\\).</p><p class=\"ans\">\\(c=1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{\\sqrt4-\\sqrt0}{4-0}=\\frac12",
+        "why": "Average slope over the interval."
+       },
+       {
+        "code": "\\frac{1}{2\\sqrt c}=\\frac12",
+        "why": "\\(\\sqrt x\\) is continuous on \\([0,4]\\) and differentiable on \\((0,4)\\), which is all the MVT needs."
+       },
+       {
+        "code": "\\sqrt c=1\\ \\Rightarrow\\ c=1",
+        "why": "Cross-multiply.",
+        "watch": [
+         [
+          "c",
+          "1"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "s48",
   "slug": "4-8",
   "num": "§4.8",
-  "unit": "q5",
+  "unit": "later",
   "title": "Newton's Method",
   "lede": "Find a root by sliding down tangent lines: one formula, repeated.",
   "blocks": [
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\"><strong>Not on Quiz 5.</strong> Quiz 5 covers §4.3, 4.4, 4.5 and 4.7. Come back to this section after the quiz.</p>"
+   },
    {
     "type": "prose",
     "html": "<p>Start with a guess \\(x_1\\). Draw the tangent line at \\((x_1,f(x_1))\\), see where it hits the x-axis, and call that \\(x_2\\). Repeat. Each new guess is usually much closer to the root.</p>"
@@ -10510,10 +10975,14 @@ export const sections: Section[] = [
   "id": "s49",
   "slug": "4-9",
   "num": "§4.9",
-  "unit": "q5",
+  "unit": "later",
   "title": "Antiderivatives",
   "lede": "Run the derivative rules backwards, add +C, and use initial conditions to find C.",
   "blocks": [
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\"><strong>Not on Quiz 5.</strong> Quiz 5 covers §4.3, 4.4, 4.5 and 4.7. Come back to this section after the quiz.</p>"
+   },
    {
     "type": "prose",
     "html": "<p>An <strong>antiderivative</strong> of \\(f\\) is a function \\(F\\) with \\(F'=f\\). There are infinitely many, all differing by a constant, so the <em>general</em> antiderivative always ends in \\(+C\\). Check every answer by differentiating it.</p>"
@@ -15201,7 +15670,7 @@ export const sections: Section[] = [
      },
      {
       "question": "<b>11.</b> Newton's method for \\(f(x)=x^2-5\\) with \\(x_1=2\\) gives \\(x_2=\\)",
-      "unit": "q5",
+      "unit": "later",
       "options": [
        {
         "html": "\\(2.2\\)",
@@ -15224,7 +15693,7 @@ export const sections: Section[] = [
      },
      {
       "question": "<b>12.</b> The most general antiderivative of \\(\\cos x+3x^2\\) is…",
-      "unit": "q5",
+      "unit": "later",
       "options": [
        {
         "html": "\\(-\\sin x+x^3+C\\)",
@@ -15247,7 +15716,7 @@ export const sections: Section[] = [
      },
      {
       "question": "<b>13.</b> If \\(f'(x)=\\frac1x\\) and \\(f(1)=2\\), then \\(f(x)=\\)",
-      "unit": "q5",
+      "unit": "later",
       "options": [
        {
         "html": "\\(\\ln|x|+2\\)",
@@ -15270,7 +15739,7 @@ export const sections: Section[] = [
      },
      {
       "question": "<b>14.</b> \\(a(t)=4\\), \\(v(0)=1\\). Then \\(v(t)=\\)",
-      "unit": "q5",
+      "unit": "later",
       "options": [
        {
         "html": "\\(4t\\)",
@@ -15624,27 +16093,27 @@ export const sections: Section[] = [
      {
       "front": "Newton's method",
       "back": "\\(x_{n+1}=x_n-\\dfrac{f(x_n)}{f'(x_n)}\\)",
-      "tag": "Q5 · 4.8"
+      "tag": "Later · 4.8"
      },
      {
       "front": "\\(\\int x^n\\)",
       "back": "\\(\\dfrac{x^{n+1}}{n+1}+C\\ (n\\ne-1)\\)",
-      "tag": "Q5 · 4.9"
+      "tag": "Later · 4.9"
      },
      {
       "front": "\\(\\int\\frac1x\\)",
       "back": "\\(\\ln|x|+C\\)",
-      "tag": "Q5 · 4.9"
+      "tag": "Later · 4.9"
      },
      {
       "front": "\\(\\int\\sin x\\) / \\(\\int\\cos x\\)",
       "back": "\\(-\\cos x+C\\) / \\(\\sin x+C\\)",
-      "tag": "Q5 · 4.9"
+      "tag": "Later · 4.9"
      },
      {
       "front": "\\(\\int\\sec^2x\\) / \\(\\int\\frac1{1+x^2}\\)",
       "back": "\\(\\tan x+C\\) / \\(\\tan^{-1}x+C\\)",
-      "tag": "Q5 · 4.9"
+      "tag": "Later · 4.9"
      },
      {
       "front": "\\(\\dfrac{d}{dx}\\sin x\\)",
@@ -16614,11 +17083,11 @@ export const sections: Section[] = [
   "slug": "cheat-sheet",
   "num": "Review",
   "title": "One-page cheat sheet",
-  "lede": "Everything to memorize for Quiz 5, plus Quiz 3 and Quiz 4, in one place. Tap a card to open the full explanation with examples.",
+  "lede": "Everything to memorize for Quiz 5 (§4.3–4.7), plus Quiz 3 & 4 and later sections. Tap a card to open the full explanation with examples.",
   "blocks": [
    {
     "type": "heading",
-    "text": "Quiz 5 · §4.1–4.9",
+    "text": "Quiz 5 · §4.3, 4.4, 4.5, 4.7",
     "id": "quiz-5"
    },
    {
@@ -16630,13 +17099,6 @@ export const sections: Section[] = [
       "details": "<p><strong>Quadrant I</strong> at \\(0,\\frac\\pi6,\\frac\\pi4,\\frac\\pi3,\\frac\\pi2\\):</p><ul><li>sin: \\(0,\\ \\tfrac12,\\ \\tfrac{\\sqrt2}2,\\ \\tfrac{\\sqrt3}2,\\ 1\\)</li><li>cos: \\(1,\\ \\tfrac{\\sqrt3}2,\\ \\tfrac{\\sqrt2}2,\\ \\tfrac12,\\ 0\\)</li><li>tan: \\(0,\\ \\tfrac{\\sqrt3}3,\\ 1,\\ \\sqrt3,\\) undefined</li></ul><p><strong>Other quadrants:</strong> use the reference angle (the angle to the nearest x-axis), then the sign. QI all positive, QII sin, QIII tan, QIV cos.</p><p><strong>Denominators:</strong> 6 → \\(\\frac\\pi6\\), 4 → \\(\\frac\\pi4\\), 3 → \\(\\frac\\pi3\\).</p><p><strong>Inverse ranges:</strong> \\(\\sin^{-1},\\tan^{-1}\\in[-\\frac\\pi2,\\frac\\pi2]\\); \\(\\cos^{-1}\\in[0,\\pi]\\).</p>",
       "href": "/unit-circle/",
       "linkLabel": "Open the interactive unit circle"
-     },
-     {
-      "title": "Max & min (4.1)",
-      "html": "<p>Critical number: \\(f'(c)=0\\) or undefined, \\(c\\) in the domain.</p><p class='note'>Closed interval: check critical numbers inside + endpoints.</p>",
-      "details": "<p><strong>Extreme Value Theorem:</strong> continuous on a closed \\([a,b]\\) ⇒ an absolute max and min exist.</p><p><strong>Fermat:</strong> a local extreme at \\(c\\) with \\(f'(c)\\) existing ⇒ \\(f'(c)=0\\). But \\(f'(c)=0\\) alone doesn't guarantee an extreme (\\(x^3\\) at 0).</p><p><strong>Closed Interval Method:</strong></p><ol class='steps'><li>Find critical numbers in \\((a,b)\\).</li><li>Evaluate \\(f\\) there and at \\(a\\) and \\(b\\).</li><li>Largest = absolute max, smallest = absolute min.</li></ol><p><strong>Watch:</strong> points where \\(f'\\) is undefined only count if \\(f\\) is defined there; skip critical numbers outside the interval.</p>",
-      "href": "/4-1/",
-      "linkLabel": "Open §4.1"
      },
      {
       "title": "Shape from f′ (4.3)",
@@ -16679,20 +17141,6 @@ export const sections: Section[] = [
       "details": "<ol class='steps'><li>Draw and name the variables.</li><li><strong>Objective:</strong> what to maximize or minimize.</li><li><strong>Constraint:</strong> the fixed fact. Solve it for one variable and substitute.</li><li>Domain (closed interval? check the endpoints too).</li><li>\\(f'=0\\), then justify: \\(f''\\) sign or a first-derivative sign change.</li><li>Answer what was asked, with units.</li></ol><p><strong>Classics:</strong> sum fixed, so max product when the numbers are equal. Fence along a river, \\(2x+y=L\\): \\(x=\\frac L4\\). Rectangle in a circle: a square.</p>",
       "href": "/4-7/",
       "linkLabel": "Open §4.7"
-     },
-     {
-      "title": "Newton's method (4.8)",
-      "html": "\\[x_{n+1}=x_n-\\frac{f(x_n)}{f'(x_n)}\\]<p class='note'>Set the equation to 0 first. Radians!</p>",
-      "details": "<p><strong>Setup:</strong> \\(\\cos x=x\\Rightarrow f=\\cos x-x\\). \\(\\sqrt[3]{30}\\Rightarrow f=x^3-30\\).</p><p><strong>Example:</strong> \\(f=x^2-2\\), \\(x_1=1\\): \\(x_2=1.5\\), \\(x_3\\approx1.416667\\), \\(x_4\\approx1.414216\\).</p><p><strong>Fails when</strong> \\(f'(x_n)=0\\) (horizontal tangent), or when a bad guess jumps to a different root.</p><p>Keep 6+ decimals between steps and round only at the end.</p>",
-      "href": "/4-8/",
-      "linkLabel": "Open §4.8"
-     },
-     {
-      "title": "Antiderivatives (4.9)",
-      "html": "\\[x^n\\to\\frac{x^{n+1}}{n+1}+C\\]<p class='note'>\\(\\frac1x\\to\\ln|x|\\) · \\(\\sin\\to-\\cos\\) · \\(\\cos\\to\\sin\\) · always \\(+C\\)</p>",
-      "details": "<p><strong>Table:</strong></p><ul><li>\\(e^x\\to e^x\\)</li><li>\\(\\sec^2x\\to\\tan x\\), \\(\\sec x\\tan x\\to\\sec x\\)</li><li>\\(\\frac1{1+x^2}\\to\\tan^{-1}x\\), \\(\\frac1{\\sqrt{1-x^2}}\\to\\sin^{-1}x\\)</li><li>\\(\\cosh x\\to\\sinh x\\), \\(\\sinh x\\to\\cosh x\\)</li></ul><p><strong>Split fractions first:</strong> \\(\\frac{x^2+3x-1}{x}=x+3-\\frac1x\\).</p><p><strong>Initial value:</strong> antidifferentiate with \\(+C\\), then plug in the point. Given \\(f''\\)? Two constants, \\(C\\) and \\(D\\).</p><p><strong>Motion:</strong> \\(a\\to v\\to s\\), using \\(v(0)\\) then \\(s(0)\\).</p>",
-      "href": "/4-9/",
-      "linkLabel": "Open §4.9"
      }
     ]
    },
@@ -16780,6 +17228,30 @@ export const sections: Section[] = [
       "details": "<p><strong>Extreme Value Theorem:</strong> continuous on a closed \\([a,b]\\) ⇒ an absolute max and min exist.</p><p><strong>Fermat:</strong> a local extreme at \\(c\\) with \\(f'(c)\\) existing ⇒ \\(f'(c)=0\\). But \\(f'(c)=0\\) alone doesn't guarantee an extreme (\\(x^3\\) at 0).</p><p><strong>Closed Interval Method:</strong></p><ol class='steps'><li>Find critical numbers in \\((a,b)\\).</li><li>Evaluate \\(f\\) there and at \\(a\\) and \\(b\\).</li><li>Largest = absolute max, smallest = absolute min.</li></ol><p><strong>Watch:</strong> points where \\(f'\\) is undefined only count if \\(f\\) is defined there; skip critical numbers outside the interval.</p>",
       "href": "/4-1/",
       "linkLabel": "Open §4.1"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Later · §4.8–4.9 (not on Quiz 5)",
+    "id": "later"
+   },
+   {
+    "type": "sheet",
+    "items": [
+     {
+      "title": "Newton's method (4.8)",
+      "html": "\\[x_{n+1}=x_n-\\frac{f(x_n)}{f'(x_n)}\\]<p class='note'>Set the equation to 0 first. Radians!</p>",
+      "details": "<p><strong>Setup:</strong> \\(\\cos x=x\\Rightarrow f=\\cos x-x\\). \\(\\sqrt[3]{30}\\Rightarrow f=x^3-30\\).</p><p><strong>Example:</strong> \\(f=x^2-2\\), \\(x_1=1\\): \\(x_2=1.5\\), \\(x_3\\approx1.416667\\), \\(x_4\\approx1.414216\\).</p><p><strong>Fails when</strong> \\(f'(x_n)=0\\) (horizontal tangent), or when a bad guess jumps to a different root.</p><p>Keep 6+ decimals between steps and round only at the end.</p>",
+      "href": "/4-8/",
+      "linkLabel": "Open §4.8"
+     },
+     {
+      "title": "Antiderivatives (4.9)",
+      "html": "\\[x^n\\to\\frac{x^{n+1}}{n+1}+C\\]<p class='note'>\\(\\frac1x\\to\\ln|x|\\) · \\(\\sin\\to-\\cos\\) · \\(\\cos\\to\\sin\\) · always \\(+C\\)</p>",
+      "details": "<p><strong>Table:</strong></p><ul><li>\\(e^x\\to e^x\\)</li><li>\\(\\sec^2x\\to\\tan x\\), \\(\\sec x\\tan x\\to\\sec x\\)</li><li>\\(\\frac1{1+x^2}\\to\\tan^{-1}x\\), \\(\\frac1{\\sqrt{1-x^2}}\\to\\sin^{-1}x\\)</li><li>\\(\\cosh x\\to\\sinh x\\), \\(\\sinh x\\to\\cosh x\\)</li></ul><p><strong>Split fractions first:</strong> \\(\\frac{x^2+3x-1}{x}=x+3-\\frac1x\\).</p><p><strong>Initial value:</strong> antidifferentiate with \\(+C\\), then plug in the point. Given \\(f''\\)? Two constants, \\(C\\) and \\(D\\).</p><p><strong>Motion:</strong> \\(a\\to v\\to s\\), using \\(v(0)\\) then \\(s(0)\\).</p>",
+      "href": "/4-9/",
+      "linkLabel": "Open §4.9"
      }
     ]
    }

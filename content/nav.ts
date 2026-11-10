@@ -17,6 +17,7 @@ const SHORT: Record<string, string> = {
   "3-11": "3.11",
   "4-1": "4.1",
   "quiz-5": "Quiz 5 plan",
+  "quiz-5-practice": "Practice quiz",
   "4-2": "4.2",
   "4-3": "4.3",
   "4-4": "4.4",
@@ -37,9 +38,10 @@ const SHORT: Record<string, string> = {
 };
 
 export const UNITS: { id: Unit; label: string; long: string; date: string | null }[] = [
-  { id: "q5", label: "Quiz 5", long: "Quiz 5 · §4.1–4.9", date: "2026-11-12" },
+  { id: "q5", label: "Quiz 5", long: "Quiz 5 · §4.3, 4.4, 4.5, 4.7", date: "2026-11-12" },
   { id: "q4", label: "Quiz 4", long: "Quiz 4 · §3.6–4.1", date: "2026-10-27" },
   { id: "q3", label: "Quiz 3", long: "Quiz 3 · §2.8–3.5", date: null },
+  { id: "later", label: "Later", long: "Not on Quiz 5 · §4.2, 4.8, 4.9", date: null },
 ];
 export const LATEST_UNIT: Unit = "q5";
 

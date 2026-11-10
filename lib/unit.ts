@@ -13,7 +13,7 @@ export function shareUnit(u: Unit) {
 }
 
 export function storedUnit(): Unit | null {
-  try { const v = sessionStorage.getItem(KEY); return v === "q3" || v === "q4" || v === "q5" ? v : null; } catch { return null; }
+  try { const v = sessionStorage.getItem(KEY); return v === "q3" || v === "q4" || v === "q5" || v === "later" ? v : null; } catch { return null; }
 }
 
 /** Follows the nav's unit switch; starts on the latest unit. */

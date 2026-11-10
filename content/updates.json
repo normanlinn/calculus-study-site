@@ -1,6 +1,10 @@
 [
   {
     "date": "2026-11-10",
+    "text": "Quiz 5 now covers only §4.3, 4.4, 4.5 and 4.7, plus a new 10-point Quiz 5 practice quiz with a live score. §4.2, 4.8 and 4.9 moved to the Later tab."
+  },
+  {
+    "date": "2026-11-10",
     "text": "New: an interactive unit circle. Drag the point or tap any angle to see sin, cos and tan with exact values, watch the sine and cosine waves move with it, and drill the 16 special angles until you know them by sight."
   },
   {

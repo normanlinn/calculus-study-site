@@ -79,4 +79,4 @@ export interface Section {
   also?: Unit[];
 }
 
-export type Unit = "q3" | "q4" | "q5";
+export type Unit = "q3" | "q4" | "q5" | "later";

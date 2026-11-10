@@ -27,8 +27,8 @@ function Cards({ list }: { list: Section[] }) {
 }
 
 export default function Home() {
-  const q5own = sections.filter((s) => s.unit === "q5");
-  const q5 = [...q5own.slice(0, 1), ...sections.filter((s) => s.unit !== "q5" && s.also?.includes("q5")), ...q5own.slice(1)];
+  const q5 = sections.filter((s) => s.unit === "q5");
+  const later = sections.filter((s) => s.unit === "later");
   const q4 = sections.filter((s) => s.unit === "q4");
   const q3 = sections.filter((s) => s.unit === "q3");
   const tools = sections.filter((s) => !s.unit);
@@ -40,8 +40,8 @@ export default function Home() {
         <HeroTitle />
         <HeroFade delay={0.35}>
           <p className="lede">
-            Quiz 5 covers §4.1–4.9: shape of a graph, l&apos;Hospital&apos;s Rule, curve sketching, optimization, Newton&apos;s method and antiderivatives.
-            Every section has a short lesson and practice problems you can step through line by line.
+            Quiz 5 covers §4.3, 4.4, 4.5 and 4.7: the shape of a graph, l&apos;Hospital&apos;s Rule, curve sketching and optimization.
+            Every section has a short lesson and practice problems you can step through line by line, then a 10-point practice quiz.
           </p>
         </HeroFade>
         <HeroFade delay={0.45}>
@@ -53,18 +53,20 @@ export default function Home() {
         <HeroFade delay={0.5}>
           <div className="cta-row">
             <Link className="cta" href="/quiz-5/">Quiz 5 plan →</Link>
-            <Link className="cta ghost" href="/4-3/">Start with §4.3</Link>
+            <Link className="cta ghost" href="/quiz-5-practice/">Practice quiz (10 pts)</Link>
             <Link className="cta ghost" href="/unit-circle/">Unit circle</Link>
             <Ring ids={unitProblemIds("q5")} />
           </div>
         </HeroFade>
       </section>
-      <h2 className="unit-head">Quiz 5 · §4.1–4.9 <span>Thu, Nov 12</span></h2>
+      <h2 className="unit-head">Quiz 5 · §4.3, 4.4, 4.5, 4.7 <span>Thu, Nov 12</span></h2>
       <Cards list={q5} />
       <h2 className="unit-head">Quiz 4 · §3.6–4.1 <span>Midterm 2 review</span></h2>
       <Cards list={q4} />
       <h2 className="unit-head">Quiz 3 · §2.8–3.5 <span>Midterm 2 review</span></h2>
       <Cards list={q3} />
+      <h2 className="unit-head">Later · §4.2, 4.8, 4.9 <span>Not on Quiz 5</span></h2>
+      <Cards list={later} />
       <h2 className="unit-head">Study tools</h2>
       <Cards list={tools} />
     </>

@@ -14,7 +14,7 @@ const FILTERS: { id: Filter; label: string }[] = [
 ];
 const matches = (tag: string, f: Filter) =>
   f === "all" ||
-  (f === "q5" ? tag.startsWith("Q5") : f === "q4" ? tag.startsWith("Q4") : f === "trig" ? tag.startsWith("Trig") : !/^(Trig|Q4|Q5)/.test(tag));
+  (f === "q5" ? tag.startsWith("Q5") : f === "q4" ? tag.startsWith("Q4") : f === "trig" ? tag.startsWith("Trig") : !/^(Trig|Q4|Q5|Later)/.test(tag));
 
 const shuffle = (a: number[]) => {
   const b = [...a];
