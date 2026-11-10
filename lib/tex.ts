@@ -54,6 +54,7 @@ function renderBlock(b: Block): Block {
     case "mock":
     case "gradecalc":
     case "invtrig":
+    case "unitcircle":
       return b;
     case "examscore":
       return b;

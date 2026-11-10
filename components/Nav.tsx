@@ -50,6 +50,7 @@ const TOOLS: Record<string, string> = {
   "quick-quiz": "42 fast questions with instant feedback",
   generate: "Unlimited new problems, and check your own",
   "memory-tricks": "Learn the formulas, with a flashcard drill",
+  "unit-circle": "Drag around the circle and drill the exact values",
   "cheat-sheet": "Every rule on one page",
 };
 const toolItems = navItems.filter((n) => n.slug in TOOLS);

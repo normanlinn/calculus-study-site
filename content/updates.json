@@ -1,6 +1,10 @@
 [
   {
     "date": "2026-11-10",
+    "text": "New: an interactive unit circle. Drag the point or tap any angle to see sin, cos and tan with exact values, watch the sine and cosine waves move with it, and drill the 16 special angles until you know them by sight."
+  },
+  {
+    "date": "2026-11-10",
     "text": "New: Quiz 5 cheat sheet: shape from f′ and f″, l'Hospital and the other indeterminate forms, curve sketching, optimization, Newton's method and antiderivatives. Tap a card for the full explanation."
   },
   {

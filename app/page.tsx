@@ -54,7 +54,7 @@ export default function Home() {
           <div className="cta-row">
             <Link className="cta" href="/quiz-5/">Quiz 5 plan →</Link>
             <Link className="cta ghost" href="/4-3/">Start with §4.3</Link>
-            <Link className="cta ghost" href="/quick-quiz/">Quick quiz</Link>
+            <Link className="cta ghost" href="/unit-circle/">Unit circle</Link>
             <Ring ids={unitProblemIds("q5")} />
           </div>
         </HeroFade>

@@ -16061,6 +16061,555 @@ export const sections: Section[] = [
   ]
  },
  {
+  "id": "uc",
+  "slug": "unit-circle",
+  "num": "Tool",
+  "title": "The unit circle",
+  "lede": "Drag a point around the circle and watch sin, cos and tan change. Learn the 16 exact values, then drill them until you recognise them instantly.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p>Every point on the unit circle (radius 1) is \\((\\cos\\theta,\\ \\sin\\theta)\\). <strong>cos is the x-coordinate, sin is the y-coordinate.</strong> Grab the black point and drag it, tap any angle, or press ▶ Spin. The coloured lines are the actual lengths: <span style=\"color:var(--accent)\">blue = cos</span>, <span style=\"color:var(--deriv)\">pink = sin</span>, <span style=\"color:var(--tangent)\">orange = tan</span> (tick “Show tan”).</p>"
+   },
+   {
+    "type": "unitcircle"
+   },
+   {
+    "type": "heading",
+    "text": "How to memorize it in 5 minutes",
+    "id": "memorize"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">1 · Quadrant I is the whole circle</span><p>Learn only \\(0,\\ \\frac\\pi6,\\ \\frac\\pi4,\\ \\frac\\pi3,\\ \\frac\\pi2\\). The other 12 angles reuse these values with a sign.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">2 · The √ pattern for sin</span><p>\\(\\sin\\) at \\(0,\\frac\\pi6,\\frac\\pi4,\\frac\\pi3,\\frac\\pi2\\) is</p>\\[\\tfrac{\\sqrt0}{2},\\ \\tfrac{\\sqrt1}{2},\\ \\tfrac{\\sqrt2}{2},\\ \\tfrac{\\sqrt3}{2},\\ \\tfrac{\\sqrt4}{2}\\]<p class=\"note\">= \\(0,\\ \\tfrac12,\\ \\tfrac{\\sqrt2}2,\\ \\tfrac{\\sqrt3}2,\\ 1\\). Count 0-1-2-3-4 under the root.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">3 · cos is the same list backwards</span><p>\\(\\cos\\): \\(1,\\ \\tfrac{\\sqrt3}2,\\ \\tfrac{\\sqrt2}2,\\ \\tfrac12,\\ 0\\).</p><p class=\"note\">At \\(\\frac\\pi6\\) the point is wide and low, so cos is big and sin is small. At \\(\\frac\\pi3\\) it's the other way round.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">4 · tan = sin ÷ cos</span><p>\\(\\tan\\frac\\pi6=\\tfrac{\\sqrt3}3\\), \\(\\tan\\frac\\pi4=1\\), \\(\\tan\\frac\\pi3=\\sqrt3\\). \\(\\tan\\frac\\pi2\\) is undefined (cos = 0).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">5 · Other quadrants: reference angle + sign</span><p>The <strong>reference angle</strong> is the angle to the nearest x-axis. Same reference angle means the same numbers; only the signs change.</p><p class=\"note\">\\(\\frac{5\\pi}6,\\ \\frac{7\\pi}6,\\ \\frac{11\\pi}6\\) all have reference angle \\(\\frac\\pi6\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">6 · Signs: All Students Take Calculus</span><p>Quadrant I: <b>All</b> positive · II: <b>Sin</b> positive · III: <b>Tan</b> positive · IV: <b>Cos</b> positive.</p><p class=\"note\">Or just think: x is negative on the left, y is negative at the bottom.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Recognise the denominators</span><p>Denominator 6 → reference \\(\\frac\\pi6\\) · 4 → \\(\\frac\\pi4\\) · 3 → \\(\\frac\\pi3\\). Then the numerator tells you the quadrant: \\(\\frac{5\\pi}{6}\\) is just short of \\(\\pi\\) (QII), \\(\\frac{7\\pi}{6}\\) just past \\(\\pi\\) (QIII), \\(\\frac{11\\pi}{6}\\) just short of \\(2\\pi\\) (QIV).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Degrees ↔ radians</span><p>\\(\\pi=180^\\circ\\). Multiply by \\(\\frac{\\pi}{180}\\) to get radians, or by \\(\\frac{180}{\\pi}\\) to get degrees. \\(\\frac\\pi6=30^\\circ,\\ \\frac\\pi4=45^\\circ,\\ \\frac\\pi3=60^\\circ\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Negative and big angles</span><p>\\(-\\theta\\) goes clockwise: \\(\\cos(-\\theta)=\\cos\\theta\\), \\(\\sin(-\\theta)=-\\sin\\theta\\). For angles past \\(2\\pi\\), subtract \\(2\\pi\\) until you're back in \\([0,2\\pi)\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Reciprocals</span><p>\\(\\sec=\\frac1{\\cos}\\), \\(\\csc=\\frac1{\\sin}\\), \\(\\cot=\\frac{\\cos}{\\sin}\\). Find cos or sin first, then flip it.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Where it shows up in calculus"
+   },
+   {
+    "type": "prose",
+    "html": "<ul><li><strong>Critical numbers with trig</strong> (§4.1, §4.3): solving \\(\\cos x=\\tfrac12\\) means reading the circle backwards: \\(x=\\frac\\pi3,\\frac{5\\pi}3\\).</li><li><strong>Inverse trig</strong> (§3.6): \\(\\sin^{-1}\\) and \\(\\tan^{-1}\\) give angles in \\([-\\frac\\pi2,\\frac\\pi2]\\) (the right half), and \\(\\cos^{-1}\\) gives angles in \\([0,\\pi]\\) (the top half).</li><li><strong>Evaluating derivatives</strong>: \\(f'(\\frac\\pi4)\\) for \\(f=\\tan x\\) is \\(\\sec^2\\frac\\pi4=(\\sqrt2)^2=2\\).</li><li><strong>l'Hospital and limits</strong> (§4.4): you need \\(\\cos0=1\\), \\(\\sin0=0\\) and \\(\\cos\\pi=-1\\) instantly.</li></ul>"
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "uc-1",
+      "source": "Unit circle",
+      "href": null,
+      "question": "Find \\(\\sin\\dfrac{5\\pi}{6}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Denominator 6, so the reference angle is \\(\\frac\\pi6\\). Which quadrant?</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{5\\pi}6\\) is just short of \\(\\pi\\): Quadrant II, where sin is positive. \\(\\sin\\frac\\pi6=\\frac12\\).</p><p class=\"ans\">\\(\\tfrac12\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\tfrac{5\\pi}{6}=\\pi-\\tfrac{\\pi}{6}",
+        "why": "Reference angle \\(\\frac\\pi6\\).",
+        "watch": [
+         [
+          "\\text{ref}",
+          "\\pi/6"
+         ]
+        ]
+       },
+       {
+        "code": "\\text{Quadrant II}",
+        "why": "Between \\(\\frac\\pi2\\) and \\(\\pi\\). <b>S</b>tudents: sin is positive.",
+        "watch": [
+         [
+          "\\text{sign}",
+          "+"
+         ]
+        ]
+       },
+       {
+        "code": "\\sin\\tfrac{5\\pi}{6}=+\\sin\\tfrac\\pi6=\\tfrac12",
+        "why": "",
+        "watch": [
+         [
+          "\\text{answer}",
+          "1/2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "uc-2",
+      "source": "Unit circle",
+      "href": null,
+      "question": "Find \\(\\cos\\dfrac{4\\pi}{3}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Reference angle \\(\\frac\\pi3\\). Is x positive or negative there?</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{4\\pi}3=\\pi+\\frac\\pi3\\): Quadrant III, where x is negative. \\(\\cos\\frac\\pi3=\\frac12\\).</p><p class=\"ans\">\\(-\\tfrac12\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\tfrac{4\\pi}{3}=\\pi+\\tfrac\\pi3",
+        "why": "Just past \\(\\pi\\).",
+        "watch": [
+         [
+          "\\text{ref}",
+          "\\pi/3"
+         ]
+        ]
+       },
+       {
+        "code": "\\text{Quadrant III: }x<0",
+        "why": "cos is the x-coordinate, so negative.",
+        "watch": [
+         [
+          "\\text{sign}",
+          "-"
+         ]
+        ]
+       },
+       {
+        "code": "\\cos\\tfrac\\pi3=\\tfrac12",
+        "why": "From the backwards list: \\(1,\\frac{\\sqrt3}2,\\frac{\\sqrt2}2,\\frac12,0\\)."
+       },
+       {
+        "code": "\\cos\\tfrac{4\\pi}{3}=-\\tfrac12",
+        "why": "",
+        "watch": [
+         [
+          "\\text{answer}",
+          "-1/2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "uc-3",
+      "source": "Unit circle",
+      "href": null,
+      "question": "Find \\(\\tan\\dfrac{3\\pi}{4}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\tan=\\frac{y}{x}\\). Find the point first.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>The point is \\(\\big(-\\frac{\\sqrt2}2,\\frac{\\sqrt2}2\\big)\\), so \\(\\tan=\\frac{\\sqrt2/2}{-\\sqrt2/2}=-1\\).</p><p class=\"ans\">\\(-1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\tfrac{3\\pi}{4}=\\pi-\\tfrac\\pi4",
+        "why": "Reference \\(\\frac\\pi4\\), Quadrant II."
+       },
+       {
+        "code": "(x,y)=\\Big(-\\tfrac{\\sqrt2}{2},\\ \\tfrac{\\sqrt2}{2}\\Big)",
+        "why": "Left half, so x is negative.",
+        "watch": [
+         [
+          "\\text{point}",
+          "(-\\tfrac{\\sqrt2}2,\\tfrac{\\sqrt2}2)"
+         ]
+        ]
+       },
+       {
+        "code": "\\tan=\\frac{y}{x}=-1",
+        "why": "Same size, opposite signs.",
+        "watch": [
+         [
+          "\\text{answer}",
+          "-1"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "uc-4",
+      "source": "Unit circle",
+      "href": null,
+      "question": "Find \\(\\sec\\dfrac{5\\pi}{3}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\sec=\\frac1{\\cos}\\). Find \\(\\cos\\frac{5\\pi}3\\) first.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{5\\pi}3=2\\pi-\\frac\\pi3\\): Quadrant IV, where cos is positive. \\(\\cos=\\frac12\\), so \\(\\sec=2\\).</p><p class=\"ans\">\\(2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\tfrac{5\\pi}{3}=2\\pi-\\tfrac\\pi3",
+        "why": "Just short of a full turn.",
+        "watch": [
+         [
+          "\\text{ref}",
+          "\\pi/3"
+         ]
+        ]
+       },
+       {
+        "code": "\\cos\\tfrac{5\\pi}{3}=+\\tfrac12",
+        "why": "Quadrant IV: <b>C</b>alculus, cos is positive."
+       },
+       {
+        "code": "\\sec=\\frac{1}{1/2}=2",
+        "why": "Flip it.",
+        "watch": [
+         [
+          "\\text{answer}",
+          "2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "uc-5",
+      "source": "Unit circle",
+      "href": null,
+      "question": "Find \\(\\cos\\!\\big(-\\tfrac{\\pi}{4}\\big)\\) and \\(\\sin\\!\\big(-\\tfrac{\\pi}{4}\\big)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>A negative angle goes clockwise, into Quadrant IV.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(-\\frac\\pi4\\) lands at the same spot as \\(\\frac{7\\pi}4\\): the point \\(\\big(\\frac{\\sqrt2}2,-\\frac{\\sqrt2}2\\big)\\).</p><p class=\"ans\">\\(\\cos=\\tfrac{\\sqrt2}2,\\ \\sin=-\\tfrac{\\sqrt2}2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "-\\tfrac\\pi4\\ \\equiv\\ 2\\pi-\\tfrac\\pi4=\\tfrac{7\\pi}{4}",
+        "why": "Add \\(2\\pi\\) to get a positive angle."
+       },
+       {
+        "code": "(x,y)=\\Big(\\tfrac{\\sqrt2}2,\\ -\\tfrac{\\sqrt2}2\\Big)",
+        "why": "Right and below the axis.",
+        "watch": [
+         [
+          "\\cos",
+          "\\sqrt2/2"
+         ],
+         [
+          "\\sin",
+          "-\\sqrt2/2"
+         ]
+        ]
+       },
+       {
+        "code": "\\cos(-\\theta)=\\cos\\theta,\\ \\sin(-\\theta)=-\\sin\\theta",
+        "why": "The general rule: cos is even, sin is odd."
+       }
+      ]
+     },
+     {
+      "id": "uc-6",
+      "source": "Unit circle",
+      "href": null,
+      "question": "Find \\(\\sin\\dfrac{11\\pi}{4}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Bigger than \\(2\\pi\\)? Subtract \\(2\\pi=\\frac{8\\pi}4\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{11\\pi}4-\\frac{8\\pi}4=\\frac{3\\pi}4\\): Quadrant II, sin positive, \\(\\frac{\\sqrt2}2\\).</p><p class=\"ans\">\\(\\tfrac{\\sqrt2}{2}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\tfrac{11\\pi}{4}-2\\pi=\\tfrac{3\\pi}{4}",
+        "why": "A full lap brings you back to the same point."
+       },
+       {
+        "code": "\\tfrac{3\\pi}{4}:\\ \\text{ref }\\tfrac\\pi4,\\ \\text{QII}",
+        "why": ""
+       },
+       {
+        "code": "\\sin=+\\tfrac{\\sqrt2}{2}",
+        "why": "",
+        "watch": [
+         [
+          "\\text{answer}",
+          "\\sqrt2/2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "uc-7",
+      "source": "Unit circle",
+      "href": null,
+      "question": "Find \\(\\csc\\dfrac{7\\pi}{6}\\) and \\(\\cot\\dfrac{\\pi}{3}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\csc=\\frac1{\\sin}\\) and \\(\\cot=\\frac{\\cos}{\\sin}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\sin\\frac{7\\pi}6=-\\frac12\\) (QIII), so \\(\\csc=-2\\). \\(\\cot\\frac\\pi3=\\frac{1/2}{\\sqrt3/2}=\\frac1{\\sqrt3}=\\frac{\\sqrt3}3\\).</p><p class=\"ans\">\\(\\csc\\tfrac{7\\pi}6=-2,\\ \\cot\\tfrac\\pi3=\\tfrac{\\sqrt3}3\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\sin\\tfrac{7\\pi}{6}=-\\tfrac12",
+        "why": "Reference \\(\\frac\\pi6\\). Quadrant III: y is negative."
+       },
+       {
+        "code": "\\csc\\tfrac{7\\pi}{6}=-2",
+        "why": "Flip it.",
+        "watch": [
+         [
+          "\\csc",
+          "-2"
+         ]
+        ]
+       },
+       {
+        "code": "\\cot\\tfrac\\pi3=\\frac{\\cos}{\\sin}=\\frac{1/2}{\\sqrt3/2}",
+        "why": "The halves cancel."
+       },
+       {
+        "code": "=\\tfrac{1}{\\sqrt3}=\\tfrac{\\sqrt3}{3}",
+        "why": "Rationalize the denominator.",
+        "watch": [
+         [
+          "\\cot",
+          "\\sqrt3/3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "uc-8",
+      "source": "Unit circle",
+      "href": null,
+      "question": "Solve \\(\\cos x=\\tfrac12\\) for \\(0\\le x<2\\pi\\). (This is the critical-number step in a §4.3 problem.)",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Where on the circle is the x-coordinate \\(\\frac12\\)? There are two places.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x=\\frac12\\) is a vertical line that crosses the circle twice: at \\(\\frac\\pi3\\) (QI) and \\(\\frac{5\\pi}3\\) (QIV).</p><p class=\"ans\">\\(x=\\tfrac\\pi3,\\ \\tfrac{5\\pi}3\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\cos\\tfrac\\pi3=\\tfrac12",
+        "why": "Reference angle from the list.",
+        "watch": [
+         [
+          "\\text{ref}",
+          "\\pi/3"
+         ]
+        ]
+       },
+       {
+        "code": "\\cos>0\\text{ in QI and QIV}",
+        "why": "x is positive on the right half."
+       },
+       {
+        "code": "x=\\tfrac\\pi3,\\ \\ 2\\pi-\\tfrac\\pi3=\\tfrac{5\\pi}{3}",
+        "why": "",
+        "watch": [
+         [
+          "x",
+          "\\pi/3,\\ 5\\pi/3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "uc-9",
+      "source": "Unit circle",
+      "href": null,
+      "question": "Solve \\(\\sin\\theta=-\\tfrac{\\sqrt3}{2}\\) for \\(0\\le\\theta<2\\pi\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Reference angle \\(\\frac\\pi3\\). sin is negative in which quadrants?</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>sin is negative in QIII and QIV: \\(\\pi+\\frac\\pi3=\\frac{4\\pi}3\\) and \\(2\\pi-\\frac\\pi3=\\frac{5\\pi}3\\).</p><p class=\"ans\">\\(\\theta=\\tfrac{4\\pi}3,\\ \\tfrac{5\\pi}3\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\sin\\tfrac\\pi3=\\tfrac{\\sqrt3}{2}",
+        "why": "",
+        "watch": [
+         [
+          "\\text{ref}",
+          "\\pi/3"
+         ]
+        ]
+       },
+       {
+        "code": "\\sin<0\\text{ in QIII, QIV}",
+        "why": "Below the x-axis."
+       },
+       {
+        "code": "\\pi+\\tfrac\\pi3=\\tfrac{4\\pi}{3}",
+        "why": "QIII."
+       },
+       {
+        "code": "2\\pi-\\tfrac\\pi3=\\tfrac{5\\pi}{3}",
+        "why": "QIV.",
+        "watch": [
+         [
+          "\\theta",
+          "4\\pi/3,\\ 5\\pi/3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "uc-10",
+      "source": "Unit circle",
+      "href": null,
+      "question": "Find \\(\\cos^{-1}\\!\\big(-\\tfrac12\\big)\\) and \\(\\sin^{-1}\\!\\big(-\\tfrac12\\big)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Inverse trig gives ONE angle: \\(\\cos^{-1}\\) in \\([0,\\pi]\\), \\(\\sin^{-1}\\) in \\([-\\frac\\pi2,\\frac\\pi2]\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\cos^{-1}\\): top half, x = \\(-\\frac12\\) gives \\(\\frac{2\\pi}3\\). \\(\\sin^{-1}\\): right half, y = \\(-\\frac12\\) gives \\(-\\frac\\pi6\\) (not \\(\\frac{11\\pi}6\\)).</p><p class=\"ans\">\\(\\cos^{-1}(-\\tfrac12)=\\tfrac{2\\pi}3,\\ \\sin^{-1}(-\\tfrac12)=-\\tfrac\\pi6\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\cos^{-1}:\\ \\theta\\in[0,\\pi]",
+        "why": "Top half of the circle only."
+       },
+       {
+        "code": "x=-\\tfrac12\\ \\text{on top}\\Rightarrow\\theta=\\tfrac{2\\pi}{3}",
+        "why": "Reference \\(\\frac\\pi3\\), Quadrant II.",
+        "watch": [
+         [
+          "\\cos^{-1}",
+          "2\\pi/3"
+         ]
+        ]
+       },
+       {
+        "code": "\\sin^{-1}:\\ \\theta\\in[-\\tfrac\\pi2,\\tfrac\\pi2]",
+        "why": "Right half only, measured from the positive x-axis."
+       },
+       {
+        "code": "y=-\\tfrac12\\ \\text{on right}\\Rightarrow\\theta=-\\tfrac\\pi6",
+        "why": "Clockwise by \\(\\frac\\pi6\\).",
+        "watch": [
+         [
+          "\\sin^{-1}",
+          "-\\pi/6"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Swapping sin and cos",
+      "html": "<p>The point is \\((\\cos,\\sin)\\), x first, like the alphabet: c before s.</p>"
+     },
+     {
+      "title": "Wrong sign",
+      "html": "<p>Always ask which quadrant before writing the number. Left half: cos is negative. Bottom half: sin is negative.</p>"
+     },
+     {
+      "title": "Calculator in degrees",
+      "html": "<p>\\(\\sin(\\pi/6)\\) in degrees mode gives 0.0091, not 0.5. Calculus uses radians.</p>"
+     },
+     {
+      "title": "Inverse trig giving the wrong angle",
+      "html": "<p>\\(\\sin^{-1}(-\\frac12)\\) is \\(-\\frac\\pi6\\), not \\(\\frac{7\\pi}6\\) or \\(\\frac{11\\pi}6\\): it must be in \\([-\\frac\\pi2,\\frac\\pi2]\\).</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "sheet",
   "slug": "cheat-sheet",
   "num": "Review",
@@ -16075,6 +16624,13 @@ export const sections: Section[] = [
    {
     "type": "sheet",
     "items": [
+     {
+      "title": "Unit circle",
+      "html": "<p>Point \\(=(\\cos\\theta,\\sin\\theta)\\). sin: \\(\\tfrac{\\sqrt0}2,\\tfrac{\\sqrt1}2,\\tfrac{\\sqrt2}2,\\tfrac{\\sqrt3}2,\\tfrac{\\sqrt4}2\\)</p><p class='note'>cos = same list backwards · All Students Take Calculus</p>",
+      "details": "<p><strong>Quadrant I</strong> at \\(0,\\frac\\pi6,\\frac\\pi4,\\frac\\pi3,\\frac\\pi2\\):</p><ul><li>sin: \\(0,\\ \\tfrac12,\\ \\tfrac{\\sqrt2}2,\\ \\tfrac{\\sqrt3}2,\\ 1\\)</li><li>cos: \\(1,\\ \\tfrac{\\sqrt3}2,\\ \\tfrac{\\sqrt2}2,\\ \\tfrac12,\\ 0\\)</li><li>tan: \\(0,\\ \\tfrac{\\sqrt3}3,\\ 1,\\ \\sqrt3,\\) undefined</li></ul><p><strong>Other quadrants:</strong> use the reference angle (the angle to the nearest x-axis), then the sign. QI all positive, QII sin, QIII tan, QIV cos.</p><p><strong>Denominators:</strong> 6 → \\(\\frac\\pi6\\), 4 → \\(\\frac\\pi4\\), 3 → \\(\\frac\\pi3\\).</p><p><strong>Inverse ranges:</strong> \\(\\sin^{-1},\\tan^{-1}\\in[-\\frac\\pi2,\\frac\\pi2]\\); \\(\\cos^{-1}\\in[0,\\pi]\\).</p>",
+      "href": "/unit-circle/",
+      "linkLabel": "Open the interactive unit circle"
+     },
      {
       "title": "Max & min (4.1)",
       "html": "<p>Critical number: \\(f'(c)=0\\) or undefined, \\(c\\) in the domain.</p><p class='note'>Closed interval: check critical numbers inside + endpoints.</p>",

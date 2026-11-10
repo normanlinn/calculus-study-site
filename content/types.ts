@@ -17,6 +17,7 @@ export type Block =
   | { type: "mock" }
   | { type: "gradecalc" }
   | { type: "invtrig" }
+  | { type: "unitcircle" }
   | { type: "examscore"; items: { id: string; points: number }[]; total: number };
 
 export interface Problem {

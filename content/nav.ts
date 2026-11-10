@@ -32,6 +32,7 @@ const SHORT: Record<string, string> = {
   "quick-quiz": "Quick quiz",
   "generate": "Generate",
   "memory-tricks": "Memorize",
+  "unit-circle": "Unit circle",
   "cheat-sheet": "Cheat sheet",
 };
 
