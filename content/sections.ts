@@ -7575,7 +7575,7 @@ export const sections: Section[] = [
    },
    {
     "type": "prose",
-    "html": "<p class=\"callout\"><strong>On the quiz:</strong> §4.3, §4.4, §4.5 and §4.7 only. §4.2, §4.8 and §4.9 are under the <strong>Later</strong> tab. The practice problems match each homework range but aren't copied from the textbook, so do some of the real assigned numbers too.</p>"
+    "html": "<p class=\"callout\"><strong>On the quiz:</strong> §4.3, §4.4, §4.5 and §4.7 only. §4.2, §4.8 and §4.9 are under the <strong>Final</strong> tab. The practice problems match each homework range but aren't copied from the textbook, so do some of the real assigned numbers too.</p>"
    },
    {
     "type": "heading",
@@ -10464,6 +10464,1098 @@ export const sections: Section[] = [
   ]
  },
  {
+  "id": "fplan",
+  "slug": "final",
+  "num": "Final · Tue, Dec 8",
+  "unit": "later",
+  "title": "Final exam plan",
+  "lede": "From your syllabus: comprehensive, 2 hours, closed book, no calculator. Here's how to get a B or an A.",
+  "blocks": [
+   {
+    "type": "countdown",
+    "target": "2026-12-08",
+    "label": "Final exam"
+   },
+   {
+    "type": "countdown",
+    "target": "2026-12-01",
+    "label": "Midterm 3"
+   },
+   {
+    "type": "heading",
+    "text": "What the syllabus says"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Final · Tue Dec 8, 2:25–4:25 pm</span><p><strong>Comprehensive</strong> (Ch. 2–5), 2 hours, closed book and notes, <strong>no calculator</strong>.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Midterm 3 · Tue Dec 1</span><p>Most likely the rest of Ch. 4 and Ch. 5 (whatever is covered after Midterm 2). A review is held the class before each exam.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Grade = the better of two</span><p>Quizzes 10% (lowest dropped) + midterms 50% + final 40%, <strong>or the final alone</strong>, whichever is higher.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Scale</span><p>A 90% · B 80% · C 70% · D 60%</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Skipped sections</span><p>§3.7, §3.8 and §4.6 aren't taught, so they won't be tested.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Your route to a B or an A",
+    "id": "route"
+   },
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\">The final-only rule is your safety net: <strong>score 80% on the final and you get at least a B. Score 90% and you get an A</strong>, no matter what happened earlier. Every point on Midterm 3 and the quizzes still helps, because the weighted grade might beat the final.</p><p>Put your real scores into the <a href=\"/grades/\">grade calculator</a> to see exactly what you need on each remaining exam. It stays in your browser only.</p>"
+   },
+   {
+    "type": "heading",
+    "text": "Week-by-week plan"
+   },
+   {
+    "type": "prose",
+    "html": "<ol class=\"steps\"><li><strong>Now → Thu Nov 12:</strong> <a href=\"/quiz-5/\">Quiz 5</a> (§4.3, 4.4, 4.5, 4.7).</li><li><strong>Nov 13–19:</strong> as class covers them: <a href=\"/4-8/\">§4.8</a>, <a href=\"/4-9/\">§4.9</a>, <a href=\"/5-1/\">§5.1</a>, <a href=\"/5-2/\">§5.2</a>. One section a night, practice problems with the debugger.</li><li><strong>Nov 20–26:</strong> <a href=\"/5-3/\">§5.3</a>, <a href=\"/5-4/\">§5.4</a>, <a href=\"/5-5/\">§5.5</a>. Substitution is the biggest skill.</li><li><strong>Nov 27–30:</strong> Midterm 3 review: redo every §4.x and §5.x practice problem you didn't tick.</li><li><strong>Dec 2–4:</strong> Ch. 2–3 refresh: <a href=\"/crash-course/\">crash course</a>, <a href=\"/quiz-review/\">Quiz 3 &amp; 4 review</a>, <a href=\"/midterm-practice/\">Midterm 2 practice exam</a>.</li><li><strong>Dec 5:</strong> <a href=\"/final-practice/\">practice final</a>, 2 hours. Score it. Study the part you scored lowest on.</li><li><strong>Dec 6–7:</strong> retake the practice final (aim for 90+), <a href=\"/cheat-sheet/\">cheat sheet</a>, <a href=\"/unit-circle/\">unit circle</a> drill, <a href=\"/quick-quiz/\">quick quiz</a>.</li></ol>"
+   },
+   {
+    "type": "heading",
+    "text": "Everything on the final"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Ch. 2 · Limits and derivatives</span><p>Limits by factoring/conjugates, one-sided limits, continuity (find \\(c\\)), limits at infinity, the limit definition of \\(f'(x)\\). Review: <a href=\"/crash-course/\">crash course</a>, <a href=\"/2-8/\">§2.8</a>.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Ch. 3 · Differentiation rules</span><p><a href=\"/3-1/\">3.1</a>, <a href=\"/3-2/\">3.2</a>, <a href=\"/3-3/\">3.3</a>, <a href=\"/3-4/\">3.4</a>, <a href=\"/3-5/\">3.5</a>, <a href=\"/3-6/\">3.6</a>, <a href=\"/3-9/\">3.9</a>, <a href=\"/3-10/\">3.10</a>, <a href=\"/3-11/\">3.11</a></p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Ch. 4 · Applications</span><p><a href=\"/4-1/\">4.1</a>, <a href=\"/4-2/\">4.2</a>, <a href=\"/4-3/\">4.3</a>, <a href=\"/4-4/\">4.4</a>, <a href=\"/4-5/\">4.5</a>, <a href=\"/4-7/\">4.7</a>, <a href=\"/4-8/\">4.8</a>, <a href=\"/4-9/\">4.9</a></p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Ch. 5 · Integrals</span><p><a href=\"/5-1/\">5.1</a>, <a href=\"/5-2/\">5.2</a>, <a href=\"/5-3/\">5.3</a>, <a href=\"/5-4/\">5.4</a>, <a href=\"/5-5/\">5.5</a></p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "No calculator: what that changes"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Exact values",
+      "html": "<p>Know \\(\\sin,\\cos,\\tan\\) at every special angle cold. Drill the <a href=\"/unit-circle/\">unit circle</a>.</p>"
+     },
+     {
+      "title": "Leave answers exact",
+      "html": "<p>\\(\\frac{\\sqrt3}2\\), \\(e-1\\), \\(\\ln 2\\) and \\(\\frac\\pi4\\) are finished answers. Don't try to turn them into decimals.</p>"
+     },
+     {
+      "title": "Arithmetic by hand",
+      "html": "<p>Newton's method and Riemann sums will use friendly numbers. Write each step; most lost points are arithmetic slips.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "fx",
+  "slug": "final-practice",
+  "num": "Final · practice",
+  "unit": "later",
+  "title": "Practice final exam",
+  "lede": "25 problems, 100 points, 2 hours, no calculator. Comprehensive like the real final: Ch. 2 limits, Ch. 3 derivatives, Ch. 4 applications, Ch. 5 integrals.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<ol class=\"steps\"><li>Set a <strong>2-hour</strong> timer. Closed book, no notes, <strong>no calculator</strong>, just like the real final.</li><li>Do everything before checking. Then use <strong>Full solution</strong> and tick <strong>I can do this</strong> on each problem you got fully right.</li><li>The bar shows your score out of 100. <strong>80 = B, 90 = A</strong>, the same scale as your class.</li></ol>"
+   },
+   {
+    "type": "examscore",
+    "items": [
+     {
+      "id": "fx-1",
+      "points": 4
+     },
+     {
+      "id": "fx-2",
+      "points": 4
+     },
+     {
+      "id": "fx-3",
+      "points": 6
+     },
+     {
+      "id": "fx-4",
+      "points": 3
+     },
+     {
+      "id": "fx-5",
+      "points": 3
+     },
+     {
+      "id": "fx-6",
+      "points": 3
+     },
+     {
+      "id": "fx-7",
+      "points": 3
+     },
+     {
+      "id": "fx-8",
+      "points": 3
+     },
+     {
+      "id": "fx-9",
+      "points": 4
+     },
+     {
+      "id": "fx-10",
+      "points": 3
+     },
+     {
+      "id": "fx-11",
+      "points": 4
+     },
+     {
+      "id": "fx-12",
+      "points": 4
+     },
+     {
+      "id": "fx-13",
+      "points": 5
+     },
+     {
+      "id": "fx-14",
+      "points": 7
+     },
+     {
+      "id": "fx-15",
+      "points": 3
+     },
+     {
+      "id": "fx-16",
+      "points": 4
+     },
+     {
+      "id": "fx-17",
+      "points": 6
+     },
+     {
+      "id": "fx-18",
+      "points": 3
+     },
+     {
+      "id": "fx-19",
+      "points": 3
+     },
+     {
+      "id": "fx-20",
+      "points": 4
+     },
+     {
+      "id": "fx-21",
+      "points": 4
+     },
+     {
+      "id": "fx-22",
+      "points": 5
+     },
+     {
+      "id": "fx-23",
+      "points": 4
+     },
+     {
+      "id": "fx-24",
+      "points": 4
+     },
+     {
+      "id": "fx-25",
+      "points": 4
+     }
+    ],
+    "total": 100
+   },
+   {
+    "type": "heading",
+    "text": "Part A · Limits and the derivative (Ch. 2) · 14 pts"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "fx-1",
+      "source": "Practice final",
+      "href": null,
+      "question": "<b>1.</b> (4) Find \\(\\displaystyle\\lim_{x\\to3}\\frac{x^2-9}{x^2-2x-3}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Factor the top and bottom.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{(x-3)(x+3)}{(x-3)(x+1)}=\\frac{x+3}{x+1}\\to\\frac64\\).</p><p class=\"ans\">\\(\\tfrac32\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac00",
+        "why": ""
+       },
+       {
+        "code": "\\frac{(x-3)(x+3)}{(x-3)(x+1)}",
+        "why": "Both have the factor \\(x-3\\)."
+       },
+       {
+        "code": "\\frac{x+3}{x+1}\\to\\frac{6}{4}=\\frac32",
+        "why": "",
+        "watch": [
+         [
+          "\\lim",
+          "3/2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "fx-2",
+      "source": "Practice final",
+      "href": null,
+      "question": "<b>2.</b> (4) Find \\(a\\) so that \\(f(x)=\\begin{cases}ax+1,&x<2\\\\x^2-a,&x\\ge2\\end{cases}\\) is continuous everywhere.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>The two pieces must meet at \\(x=2\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(2a+1=4-a\\Rightarrow3a=3\\Rightarrow a=1\\).</p><p class=\"ans\">\\(a=1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\lim_{x\\to2^-}=2a+1",
+        "why": ""
+       },
+       {
+        "code": "\\lim_{x\\to2^+}=f(2)=4-a",
+        "why": ""
+       },
+       {
+        "code": "2a+1=4-a\\Rightarrow a=1",
+        "why": "",
+        "watch": [
+         [
+          "a",
+          "1"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "fx-3",
+      "source": "Practice final",
+      "href": null,
+      "question": "<b>3.</b> (6) Use the <em>definition</em> of the derivative to find \\(f'(x)\\) for \\(f(x)=\\dfrac{1}{x+2}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\lim_{h\\to0}\\frac{f(x+h)-f(x)}h\\). Combine the two fractions first.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{\\frac1{x+h+2}-\\frac1{x+2}}h=\\frac{(x+2)-(x+h+2)}{h(x+h+2)(x+2)}=\\frac{-1}{(x+h+2)(x+2)}\\to\\frac{-1}{(x+2)^2}\\).</p><p class=\"ans\">\\(f'(x)=-\\dfrac{1}{(x+2)^2}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{f(x+h)-f(x)}{h}=\\frac{\\frac{1}{x+h+2}-\\frac{1}{x+2}}{h}",
+        "why": "Write the definition out."
+       },
+       {
+        "code": "=\\frac{(x+2)-(x+h+2)}{h(x+h+2)(x+2)}",
+        "why": "Common denominator."
+       },
+       {
+        "code": "=\\frac{-h}{h(x+h+2)(x+2)}",
+        "why": "The top simplifies to \\(-h\\)."
+       },
+       {
+        "code": "=\\frac{-1}{(x+h+2)(x+2)}",
+        "why": "Cancel \\(h\\)."
+       },
+       {
+        "code": "h\\to0:\\ -\\frac1{(x+2)^2}",
+        "why": "",
+        "watch": [
+         [
+          "f'",
+          "-1/(x+2)^2"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Part B · Differentiation rules (Ch. 3) · 30 pts"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "fx-4",
+      "source": "Practice final",
+      "href": null,
+      "question": "<b>4.</b> (3) Differentiate \\(y=x^3e^{2x}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Product rule, with the chain rule on \\(e^{2x}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(3x^2e^{2x}+2x^3e^{2x}\\).</p><p class=\"ans\">\\(x^2e^{2x}(3+2x)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y'=3x^2e^{2x}+x^3\\cdot2e^{2x}",
+        "why": ""
+       },
+       {
+        "code": "=x^2e^{2x}(3+2x)",
+        "why": "Factor."
+       }
+      ]
+     },
+     {
+      "id": "fx-5",
+      "source": "Practice final",
+      "href": null,
+      "question": "<b>5.</b> (3) Differentiate \\(y=\\dfrac{x^2+1}{x-1}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Low·d(high) − high·d(low), over low².</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{2x(x-1)-(x^2+1)}{(x-1)^2}=\\frac{x^2-2x-1}{(x-1)^2}\\).</p><p class=\"ans\">\\(\\dfrac{x^2-2x-1}{(x-1)^2}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{(x-1)(2x)-(x^2+1)(1)}{(x-1)^2}",
+        "why": ""
+       },
+       {
+        "code": "=\\frac{2x^2-2x-x^2-1}{(x-1)^2}",
+        "why": ""
+       },
+       {
+        "code": "=\\frac{x^2-2x-1}{(x-1)^2}",
+        "why": ""
+       }
+      ]
+     },
+     {
+      "id": "fx-6",
+      "source": "Practice final",
+      "href": null,
+      "question": "<b>6.</b> (3) Differentiate \\(y=\\sin^2(3x)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Three layers: square, sin, \\(3x\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(2\\sin3x\\cdot\\cos3x\\cdot3\\).</p><p class=\"ans\">\\(6\\sin3x\\cos3x\\ (=3\\sin6x)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=(\\sin3x)^2",
+        "why": "The outside is the square."
+       },
+       {
+        "code": "y'=2\\sin3x\\cdot\\cos3x\\cdot3",
+        "why": "Peel one layer at a time."
+       },
+       {
+        "code": "=6\\sin3x\\cos3x",
+        "why": ""
+       }
+      ]
+     },
+     {
+      "id": "fx-7",
+      "source": "Practice final",
+      "href": null,
+      "question": "<b>7.</b> (3) Differentiate \\(y=\\ln(x^2+e^x)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\((\\ln u)'=\\frac{u'}{u}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{2x+e^x}{x^2+e^x}\\).</p><p class=\"ans\">\\(\\dfrac{2x+e^x}{x^2+e^x}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=x^2+e^x,\\ u'=2x+e^x",
+        "why": ""
+       },
+       {
+        "code": "y'=\\frac{u'}{u}",
+        "why": ""
+       }
+      ]
+     },
+     {
+      "id": "fx-8",
+      "source": "Practice final",
+      "href": null,
+      "question": "<b>8.</b> (3) Differentiate \\(y=\\tan^{-1}(\\sqrt x)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\frac{u'}{1+u^2}\\) with \\(u=\\sqrt x\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{1/(2\\sqrt x)}{1+x}\\).</p><p class=\"ans\">\\(\\dfrac{1}{2\\sqrt x\\,(1+x)}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=\\sqrt x,\\ u'=\\tfrac1{2\\sqrt x},\\ u^2=x",
+        "why": ""
+       },
+       {
+        "code": "y'=\\frac{1}{2\\sqrt x(1+x)}",
+        "why": ""
+       }
+      ]
+     },
+     {
+      "id": "fx-9",
+      "source": "Practice final",
+      "href": null,
+      "question": "<b>9.</b> (4) Find \\(\\dfrac{dy}{dx}\\) at \\((1,2)\\) if \\(x^2+xy+y^2=7\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Implicit: \\((xy)'=y+xy'\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(2x+y+xy'+2yy'=0\\Rightarrow y'=-\\frac{2x+y}{x+2y}=-\\frac45\\).</p><p class=\"ans\">\\(-\\tfrac45\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "2x+(y+xy')+2yy'=0",
+        "why": "Product rule on \\(xy\\); chain rule on \\(y^2\\)."
+       },
+       {
+        "code": "y'(x+2y)=-(2x+y)",
+        "why": "Collect the \\(y'\\) terms."
+       },
+       {
+        "code": "y'=-\\frac{2+2}{1+4}=-\\frac45",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "-4/5"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "fx-10",
+      "source": "Practice final",
+      "href": null,
+      "question": "<b>10.</b> (3) Differentiate \\(y=x^{\\sin x}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Take ln of both sides first.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\ln y=\\sin x\\ln x\\Rightarrow\\frac{y'}{y}=\\cos x\\ln x+\\frac{\\sin x}{x}\\).</p><p class=\"ans\">\\(x^{\\sin x}\\big(\\cos x\\ln x+\\tfrac{\\sin x}{x}\\big)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\ln y=\\sin x\\,\\ln x",
+        "why": ""
+       },
+       {
+        "code": "\\tfrac{y'}{y}=\\cos x\\ln x+\\sin x\\cdot\\tfrac1x",
+        "why": "Product rule."
+       },
+       {
+        "code": "y'=x^{\\sin x}\\big(\\cos x\\ln x+\\tfrac{\\sin x}x\\big)",
+        "why": ""
+       }
+      ]
+     },
+     {
+      "id": "fx-11",
+      "source": "Practice final",
+      "href": null,
+      "question": "<b>11.</b> (4) A 13-ft ladder leans against a wall. The bottom slides away at 2 ft/s. How fast is the top sliding down when the bottom is 5 ft from the wall?",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(x^2+y^2=169\\). When \\(x=5\\), \\(y=12\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(2xx'+2yy'=0\\Rightarrow y'=-\\frac{5\\cdot2}{12}=-\\frac56\\).</p><p class=\"ans\">Sliding down at \\(\\tfrac56\\) ft/s</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x^2+y^2=169",
+        "why": ""
+       },
+       {
+        "code": "x=5\\Rightarrow y=12",
+        "why": "5-12-13 triangle."
+       },
+       {
+        "code": "2x\\,x'+2y\\,y'=0",
+        "why": "Differentiate in \\(t\\)."
+       },
+       {
+        "code": "y'=-\\frac{(5)(2)}{12}=-\\frac56",
+        "why": "Negative means moving down.",
+        "watch": [
+         [
+          "y'",
+          "-5/6\\text{ ft/s}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "fx-12",
+      "source": "Practice final",
+      "href": null,
+      "question": "<b>12.</b> (4) Use a linear approximation to estimate \\(\\sqrt{4.1}\\) (no calculator).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f(x)=\\sqrt x\\) at \\(a=4\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(L(x)=2+\\frac14(x-4)\\Rightarrow L(4.1)=2+0.025\\).</p><p class=\"ans\">\\(\\sqrt{4.1}\\approx2.025\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(4)=2,\\ f'(4)=\\tfrac{1}{2\\sqrt4}=\\tfrac14",
+        "why": ""
+       },
+       {
+        "code": "L(x)=2+\\tfrac14(x-4)",
+        "why": ""
+       },
+       {
+        "code": "L(4.1)=2+\\tfrac14(0.1)=2.025",
+        "why": "",
+        "watch": [
+         [
+          "\\approx",
+          "2.025"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Part C · Applications (Ch. 4) · 31 pts"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "fx-13",
+      "source": "Practice final",
+      "href": "4-1",
+      "question": "<b>13.</b> (5) Find the absolute max and min of \\(f(x)=x^3-3x^2+1\\) on \\([-1,3]\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Critical numbers \\(0,2\\); check them and both endpoints.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(-1)=-3\\), \\(f(0)=1\\), \\(f(2)=-3\\), \\(f(3)=1\\).</p><p class=\"ans\">Abs max \\(1\\) (at \\(x=0,3\\)); abs min \\(-3\\) (at \\(x=-1,2\\))</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'=3x(x-2)",
+        "why": "",
+        "watch": [
+         [
+          "\\text{crit}",
+          "0,\\ 2"
+         ]
+        ]
+       },
+       {
+        "code": "f(-1)=-1-3+1=-3",
+        "why": ""
+       },
+       {
+        "code": "f(0)=1,\\ f(2)=-3",
+        "why": ""
+       },
+       {
+        "code": "f(3)=27-27+1=1",
+        "why": ""
+       },
+       {
+        "code": "\\max=1,\\ \\min=-3",
+        "why": "Ties are allowed."
+       }
+      ]
+     },
+     {
+      "id": "fx-14",
+      "source": "Practice final",
+      "href": "4-3",
+      "question": "<b>14.</b> (7) For \\(f(x)=3x^5-5x^3\\): intervals of increase/decrease, local extremes, concavity, inflection points.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f'=15x^2(x^2-1)\\); \\(f''=30x(2x^2-1)\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'\\): \\(+,-,-,+\\) across \\(-1,0,1\\). Local max \\(f(-1)=2\\), local min \\(f(1)=-2\\), nothing at 0. \\(f''\\): \\(-,+,-,+\\) across \\(-\\frac1{\\sqrt2},0,\\frac1{\\sqrt2}\\).</p><p class=\"ans\">Inc \\((-\\infty,-1),(1,\\infty)\\), dec \\((-1,1)\\); max \\(2\\), min \\(-2\\); CD \\((-\\infty,-\\tfrac1{\\sqrt2}),(0,\\tfrac1{\\sqrt2})\\), CU otherwise; IPs \\((0,0),(\\pm\\tfrac1{\\sqrt2},\\mp\\tfrac{7\\sqrt2}8)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'=15x^4-15x^2=15x^2(x^2-1)",
+        "why": "",
+        "watch": [
+         [
+          "\\text{crit}",
+          "-1,0,1"
+         ]
+        ]
+       },
+       {
+        "code": "15x^2\\ge0",
+        "why": "The sign follows \\(x^2-1\\): no sign change at 0."
+       },
+       {
+        "code": "f(-1)=-3+5=2,\\ f(1)=-2",
+        "why": "",
+        "watch": [
+         [
+          "\\max",
+          "2"
+         ],
+         [
+          "\\min",
+          "-2"
+         ]
+        ]
+       },
+       {
+        "code": "f''=60x^3-30x=30x(2x^2-1)",
+        "why": ""
+       },
+       {
+        "code": "-\\big|_{-1/\\sqrt2}+\\big|_0-\\big|_{1/\\sqrt2}+",
+        "why": "Three sign flips."
+       },
+       {
+        "code": "f(\\tfrac1{\\sqrt2})=\\tfrac{3}{4\\sqrt2}-\\tfrac{5}{2\\sqrt2}=-\\tfrac{7\\sqrt2}{8}",
+        "why": "Odd function: the other one is \\(+\\frac{7\\sqrt2}8\\)."
+       }
+      ]
+     },
+     {
+      "id": "fx-15",
+      "source": "Practice final",
+      "href": "4-4",
+      "question": "<b>15.</b> (3) Find \\(\\displaystyle\\lim_{x\\to0}\\frac{e^{2x}-1}{\\sin x}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\frac00\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{2e^{2x}}{\\cos x}\\to2\\).</p><p class=\"ans\">\\(2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac00",
+        "why": ""
+       },
+       {
+        "code": "\\lim\\frac{2e^{2x}}{\\cos x}=\\frac21",
+        "why": ""
+       }
+      ]
+     },
+     {
+      "id": "fx-16",
+      "source": "Practice final",
+      "href": "4-4",
+      "question": "<b>16.</b> (4) Find \\(\\displaystyle\\lim_{x\\to\\infty}x^{1/x}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\infty^0\\). \\(\\ln y=\\frac{\\ln x}{x}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{\\ln x}x\\to\\frac{1/x}1\\to0\\), so \\(y\\to e^0=1\\).</p><p class=\"ans\">\\(1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\ln y=\\tfrac1x\\ln x",
+        "why": ""
+       },
+       {
+        "code": "\\lim\\frac{\\ln x}{x}=\\lim\\frac{1/x}{1}=0",
+        "why": "L'H."
+       },
+       {
+        "code": "y\\to e^0=1",
+        "why": ""
+       }
+      ]
+     },
+     {
+      "id": "fx-17",
+      "source": "Practice final",
+      "href": "4-7",
+      "question": "<b>17.</b> (6) A rectangle has its base on the x-axis and its upper corners on \\(y=12-x^2\\). Find the largest possible area.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Corner at \\((x,12-x^2)\\): width \\(2x\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(A=2x(12-x^2)=24x-2x^3\\). \\(A'=24-6x^2=0\\Rightarrow x=2\\). \\(A=4\\cdot8=32\\). \\(A''=-12x<0\\), so it's a max.</p><p class=\"ans\">\\(32\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "A=2x(12-x^2),\\ 0\\le x\\le\\sqrt{12}",
+        "why": ""
+       },
+       {
+        "code": "A'=24-6x^2=0\\Rightarrow x=2",
+        "why": ""
+       },
+       {
+        "code": "A(2)=4\\cdot8=32",
+        "why": "Endpoints give 0.",
+        "watch": [
+         [
+          "A_{\\max}",
+          "32"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "fx-18",
+      "source": "Practice final",
+      "href": "4-9",
+      "question": "<b>18.</b> (3) Find \\(f\\) if \\(f'(x)=3\\sqrt x+2\\) and \\(f(1)=5\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(3x^{1/2}\\to2x^{3/2}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f=2x^{3/2}+2x+C\\), \\(2+2+C=5\\Rightarrow C=1\\).</p><p class=\"ans\">\\(f(x)=2x^{3/2}+2x+1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f=2x^{3/2}+2x+C",
+        "why": ""
+       },
+       {
+        "code": "f(1)=4+C=5",
+        "why": "",
+        "watch": [
+         [
+          "C",
+          "1"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "fx-19",
+      "source": "Practice final",
+      "href": "4-8",
+      "question": "<b>19.</b> (3) Use one step of Newton's method on \\(x^3-x-1=0\\) with \\(x_1=1\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f'(x)=3x^2-1\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x_2=1-\\frac{-1}{2}=1.5\\).</p><p class=\"ans\">\\(x_2=1.5\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(1)=-1,\\ f'(1)=2",
+        "why": ""
+       },
+       {
+        "code": "x_2=1-\\tfrac{-1}{2}=1.5",
+        "why": "Simple numbers, since there's no calculator on the exam."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Part D · Integrals (Ch. 5) · 25 pts"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "fx-20",
+      "source": "Practice final",
+      "href": "5-1",
+      "question": "<b>20.</b> (4) Estimate the area under \\(f(x)=x^2+1\\) on \\([0,4]\\) with \\(R_4\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\Delta x=1\\); right ends \\(1,2,3,4\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(2+5+10+17=34\\).</p><p class=\"ans\">\\(R_4=34\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\Delta x=1",
+        "why": ""
+       },
+       {
+        "code": "f(1),f(2),f(3),f(4)=2,5,10,17",
+        "why": ""
+       },
+       {
+        "code": "R_4=1(34)=34",
+        "why": ""
+       }
+      ]
+     },
+     {
+      "id": "fx-21",
+      "source": "Practice final",
+      "href": "5-3",
+      "question": "<b>21.</b> (4) Find \\(\\dfrac{d}{dx}\\displaystyle\\int_1^{x^3}\\sqrt{1+t^2}\\,dt\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>FTC 1 with the chain rule.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\sqrt{1+x^6}\\cdot3x^2\\).</p><p class=\"ans\">\\(3x^2\\sqrt{1+x^6}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(g(x))=\\sqrt{1+(x^3)^2}",
+        "why": ""
+       },
+       {
+        "code": "\\cdot g'(x)=3x^2",
+        "why": ""
+       }
+      ]
+     },
+     {
+      "id": "fx-22",
+      "source": "Practice final",
+      "href": "5-3",
+      "question": "<b>22.</b> (5) Evaluate \\(\\displaystyle\\int_1^2\\Big(3x^2-\\frac{2}{x^2}\\Big)dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(-2x^{-2}\\to2x^{-1}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\([x^3+\\frac2x]_1^2=(8+1)-(1+2)=6\\).</p><p class=\"ans\">\\(6\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "F=x^3+\\tfrac2x",
+        "why": "\\(\\frac{-2x^{-1}}{-1}=2x^{-1}\\)."
+       },
+       {
+        "code": "F(2)=9,\\ F(1)=3",
+        "why": ""
+       },
+       {
+        "code": "9-3=6",
+        "why": ""
+       }
+      ]
+     },
+     {
+      "id": "fx-23",
+      "source": "Practice final",
+      "href": "5-5",
+      "question": "<b>23.</b> (4) Find \\(\\displaystyle\\int x(x^2-1)^4\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(u=x^2-1\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac12\\int u^4du=\\frac{u^5}{10}\\).</p><p class=\"ans\">\\(\\tfrac{(x^2-1)^5}{10}+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=x^2-1,\\ x\\,dx=\\tfrac12du",
+        "why": ""
+       },
+       {
+        "code": "\\tfrac12\\cdot\\tfrac{u^5}{5}+C",
+        "why": ""
+       }
+      ]
+     },
+     {
+      "id": "fx-24",
+      "source": "Practice final",
+      "href": "5-5",
+      "question": "<b>24.</b> (4) Evaluate \\(\\displaystyle\\int_0^{\\pi/2}\\sin x\\cos^2x\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(u=\\cos x\\), \\(du=-\\sin x\\,dx\\). Limits \\(1\\to0\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(-\\int_1^0u^2du=\\int_0^1u^2du=\\frac13\\).</p><p class=\"ans\">\\(\\tfrac13\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=\\cos x,\\ \\sin x\\,dx=-du",
+        "why": ""
+       },
+       {
+        "code": "x:0\\to\\tfrac\\pi2\\Rightarrow u:1\\to0",
+        "why": ""
+       },
+       {
+        "code": "-\\int_1^0u^2du=\\int_0^1u^2du=\\tfrac13",
+        "why": "Flipping the limits cancels the minus."
+       }
+      ]
+     },
+     {
+      "id": "fx-25",
+      "source": "Practice final",
+      "href": "5-4",
+      "question": "<b>25.</b> (4) A particle has \\(v(t)=t-2\\) on \\([0,4]\\). Find its displacement and total distance.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(v<0\\) before \\(t=2\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Displacement \\(\\int_0^4(t-2)dt=[\\frac{t^2}2-2t]_0^4=0\\). Distance: two triangles of area 2, so 4.</p><p class=\"ans\">Displacement \\(0\\); distance \\(4\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\int_0^4(t-2)dt=8-8=0",
+        "why": "Back where it started."
+       },
+       {
+        "code": "\\int_0^2|t-2|+\\int_2^4|t-2|=2+2",
+        "why": "Two triangles."
+       },
+       {
+        "code": "\\text{distance}=4",
+        "why": ""
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\">Below 80? Find the part where you lost the most points and go to its pages: <a href=\"/quiz-review/\">Quiz 3 &amp; 4 review</a> for Ch. 3, <a href=\"/quiz-5/\">Quiz 5</a> for Ch. 4, <a href=\"/5-1/\">§5.1–5.5</a> for Ch. 5.</p>"
+   }
+  ]
+ },
+ {
   "id": "s42",
   "slug": "4-2",
   "num": "§4.2",
@@ -10637,7 +11729,7 @@ export const sections: Section[] = [
   "blocks": [
    {
     "type": "prose",
-    "html": "<p class=\"callout\"><strong>Not on Quiz 5.</strong> Quiz 5 covers §4.3, 4.4, 4.5 and 4.7. Come back to this section after the quiz.</p>"
+    "html": "<p class=\"callout\"><strong>Not on Quiz 5</strong>, but it's on Midterm 3 and the final. Learn it after Quiz 5.</p>"
    },
    {
     "type": "prose",
@@ -10981,7 +12073,7 @@ export const sections: Section[] = [
   "blocks": [
    {
     "type": "prose",
-    "html": "<p class=\"callout\"><strong>Not on Quiz 5.</strong> Quiz 5 covers §4.3, 4.4, 4.5 and 4.7. Come back to this section after the quiz.</p>"
+    "html": "<p class=\"callout\"><strong>Not on Quiz 5</strong>, but it's on Midterm 3 and the final. Learn it after Quiz 5.</p>"
    },
    {
     "type": "prose",
@@ -11486,6 +12578,1530 @@ export const sections: Section[] = [
      {
       "title": "\\(\\sin\\) / \\(\\cos\\) signs",
       "html": "<p>\\(\\int\\sin x=-\\cos x\\) and \\(\\int\\cos x=+\\sin x\\). Differentiate your answer to check.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s51",
+  "slug": "5-1",
+  "num": "§5.1",
+  "unit": "later",
+  "title": "Areas and Distances",
+  "lede": "Estimate the area under a curve with rectangles: left, right and midpoint sums.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p>Chop \\([a,b]\\) into \\(n\\) strips of width \\(\\Delta x\\). Make each strip a rectangle whose height is \\(f\\) at one point of the strip. Add the areas. More strips give a better estimate, and in the limit you get the exact area (§5.2).</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Width and points</span>\\[\\Delta x=\\frac{b-a}{n},\\qquad x_i=a+i\\,\\Delta x\\]"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Right sum \\(R_n\\)</span><p>Heights at the right ends \\(x_1,\\dots,x_n\\): \\(R_n=\\Delta x\\,[f(x_1)+\\dots+f(x_n)]\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Left sum \\(L_n\\)</span><p>Heights at the left ends \\(x_0,\\dots,x_{n-1}\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Midpoint sum \\(M_n\\)</span><p>Heights at the middle of each strip, \\(\\bar x_i=\\frac{x_{i-1}+x_i}{2}\\). Usually the best of the three.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Over or under?</span><p>If \\(f\\) is <strong>increasing</strong>, the left sum underestimates and the right sum overestimates. For a decreasing \\(f\\) it's the reverse.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Distance</span><p>Distance ≈ Σ velocity × time step. Same idea with \\(v(t)\\) instead of \\(f(x)\\).</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p51-1",
+      "source": "Like §5.1 #1–13",
+      "href": null,
+      "question": "Estimate the area under \\(f(x)=x^2\\) on \\([0,2]\\) using \\(R_4\\) (4 rectangles, right endpoints).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\Delta x=\\frac{2-0}{4}=0.5\\). Right endpoints: \\(0.5,1,1.5,2\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(0.5\\,(0.25+1+2.25+4)=0.5(7.5)=3.75\\). The exact area is \\(\\frac83\\approx2.67\\); \\(R_4\\) overestimates because \\(x^2\\) is increasing.</p><p class=\"ans\">\\(R_4=3.75\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\Delta x=\\tfrac{2-0}{4}=\\tfrac12",
+        "why": "Width of each strip.",
+        "watch": [
+         [
+          "\\Delta x",
+          "0.5"
+         ]
+        ]
+       },
+       {
+        "code": "x_i:\\ 0.5,\\ 1,\\ 1.5,\\ 2",
+        "why": "Right ends of the strips."
+       },
+       {
+        "code": "f:\\ 0.25,\\ 1,\\ 2.25,\\ 4",
+        "why": "Square each one."
+       },
+       {
+        "code": "R_4=0.5(7.5)=3.75",
+        "why": "Width × (sum of heights).",
+        "watch": [
+         [
+          "R_4",
+          "3.75"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p51-2",
+      "source": "Like §5.1 #1–13",
+      "href": null,
+      "question": "Same function and interval: find \\(L_4\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Left endpoints: \\(0,0.5,1,1.5\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(0.5(0+0.25+1+2.25)=1.75\\). This underestimates. The exact area \\(\\frac83\\) lies between \\(L_4\\) and \\(R_4\\).</p><p class=\"ans\">\\(L_4=1.75\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x_i:\\ 0,\\ 0.5,\\ 1,\\ 1.5",
+        "why": "Left ends: start at \\(a\\), stop one short of \\(b\\)."
+       },
+       {
+        "code": "f:\\ 0,\\ 0.25,\\ 1,\\ 2.25",
+        "why": ""
+       },
+       {
+        "code": "L_4=0.5(3.5)=1.75",
+        "why": "",
+        "watch": [
+         [
+          "L_4",
+          "1.75"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p51-3",
+      "source": "Like §5.1 #1–13",
+      "href": null,
+      "question": "Estimate the area under \\(f(x)=x^3\\) on \\([0,2]\\) with \\(M_2\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Two strips of width 1. Midpoints \\(0.5\\) and \\(1.5\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(1\\cdot(0.125+3.375)=3.5\\). The exact area is 4.</p><p class=\"ans\">\\(M_2=3.5\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\Delta x=1,\\ \\ \\bar x=0.5,\\ 1.5",
+        "why": "Middles of \\([0,1]\\) and \\([1,2]\\)."
+       },
+       {
+        "code": "0.5^3=0.125,\\ \\ 1.5^3=3.375",
+        "why": ""
+       },
+       {
+        "code": "M_2=1(3.5)=3.5",
+        "why": "",
+        "watch": [
+         [
+          "M_2",
+          "3.5"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p51-4",
+      "source": "Like §5.1 #15–19",
+      "href": null,
+      "question": "A car's speed is measured every second: \\(t=0,1,2,3\\) s gives \\(v=2,4,7,9\\) m/s. Estimate the distance travelled in 3 seconds using left and right endpoints.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\Delta t=1\\). Left uses \\(t=0,1,2\\); right uses \\(t=1,2,3\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Left: \\(2+4+7=13\\) m. Right: \\(4+7+9=20\\) m. The speed is increasing, so the true distance is between them.</p><p class=\"ans\">Left \\(13\\) m, right \\(20\\) m</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\Delta t=1",
+        "why": ""
+       },
+       {
+        "code": "\\text{left: }(2+4+7)(1)=13",
+        "why": "Speed at the start of each second."
+       },
+       {
+        "code": "\\text{right: }(4+7+9)(1)=20",
+        "why": "Speed at the end of each second.",
+        "watch": [
+         [
+          "\\text{between}",
+          "13\\text{ and }20"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p51-5",
+      "source": "Like §5.1 #21–25",
+      "href": null,
+      "question": "Write the area under \\(f(x)=x^2\\) on \\([1,4]\\) as a limit of right sums. (Don't evaluate.)",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\Delta x=\\frac3n\\), \\(x_i=1+\\frac{3i}{n}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\displaystyle A=\\lim_{n\\to\\infty}\\sum_{i=1}^{n}\\Big(1+\\frac{3i}{n}\\Big)^2\\frac{3}{n}\\).</p><p class=\"ans\">\\(\\displaystyle\\lim_{n\\to\\infty}\\sum_{i=1}^n\\big(1+\\tfrac{3i}{n}\\big)^2\\tfrac3n\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\Delta x=\\tfrac{4-1}{n}=\\tfrac3n",
+        "why": ""
+       },
+       {
+        "code": "x_i=1+i\\cdot\\tfrac3n",
+        "why": "Start at \\(a=1\\) and take \\(i\\) steps."
+       },
+       {
+        "code": "f(x_i)\\Delta x=\\big(1+\\tfrac{3i}{n}\\big)^2\\cdot\\tfrac3n",
+        "why": "Height × width of the \\(i\\)-th rectangle."
+       },
+       {
+        "code": "A=\\lim_{n\\to\\infty}\\sum_{i=1}^n\\big(1+\\tfrac{3i}{n}\\big)^2\\tfrac3n",
+        "why": ""
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Off-by-one endpoints",
+      "html": "<p>Left sums use \\(x_0\\) to \\(x_{n-1}\\); right sums use \\(x_1\\) to \\(x_n\\). Write the list of x-values before plugging in.</p>"
+     },
+     {
+      "title": "Forgetting × Δx",
+      "html": "<p>Adding the heights isn't the area. Multiply by the width.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s52",
+  "slug": "5-2",
+  "num": "§5.2",
+  "unit": "later",
+  "title": "The Definite Integral",
+  "lede": "The exact area as a limit of Riemann sums, net signed area, and the properties of integrals.",
+  "blocks": [
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Definition</span>\\[\\int_a^b f(x)\\,dx=\\lim_{n\\to\\infty}\\sum_{i=1}^n f(x_i)\\,\\Delta x\\]"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Net signed area</span><p>Area above the x-axis counts \\(+\\); area below counts \\(-\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Sum formulas</span>\\[\\sum_{i=1}^n i=\\frac{n(n+1)}2,\\quad\\sum_{i=1}^n i^2=\\frac{n(n+1)(2n+1)}6\\]<p class=\"note\">\\(\\sum_{i=1}^n c=cn\\), and \\(\\sum i^3=\\big[\\frac{n(n+1)}2\\big]^2\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Properties</span><p>\\(\\int_a^b[f\\pm g]=\\int_a^bf\\pm\\int_a^bg\\) · \\(\\int_a^bcf=c\\int_a^bf\\) · \\(\\int_b^a=-\\int_a^b\\) · \\(\\int_a^a=0\\) · \\(\\int_a^c+\\int_c^b=\\int_a^b\\)</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Geometry shortcut</span><p>Lines and semicircles: use triangle, rectangle, trapezoid or circle area formulas directly.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p52-1",
+      "source": "Like §5.2 #33–40",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_0^3(2x+1)\\,dx\\) by interpreting it as an area.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Under a straight line from \\(x=0\\) to \\(3\\): a trapezoid.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Heights \\(f(0)=1\\) and \\(f(3)=7\\), width 3: \\(\\frac{1+7}{2}\\cdot3=12\\).</p><p class=\"ans\">\\(12\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(0)=1,\\ f(3)=7",
+        "why": "The two parallel sides."
+       },
+       {
+        "code": "A=\\tfrac{1+7}{2}\\cdot3",
+        "why": "Trapezoid: average height × width."
+       },
+       {
+        "code": "=12",
+        "why": "",
+        "watch": [
+         [
+          "\\int",
+          "12"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p52-2",
+      "source": "Like §5.2 #33–40",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_{-2}^{2}\\sqrt{4-x^2}\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(y=\\sqrt{4-x^2}\\) is the top half of a circle of radius 2.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Half of \\(\\pi r^2=4\\pi\\), so the integral is \\(2\\pi\\).</p><p class=\"ans\">\\(2\\pi\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=\\sqrt{4-x^2}\\Rightarrow x^2+y^2=4,\\ y\\ge0",
+        "why": "Upper semicircle, \\(r=2\\)."
+       },
+       {
+        "code": "\\tfrac12\\pi(2)^2=2\\pi",
+        "why": "",
+        "watch": [
+         [
+          "\\int",
+          "2\\pi"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p52-3",
+      "source": "Like §5.2 #33–40",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_0^4(x-2)\\,dx\\) using areas.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Part of the region is below the x-axis.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Triangle below the axis on \\([0,2]\\) with area 2 (counts \\(-2\\)); triangle above on \\([2,4]\\) with area 2. Net \\(0\\).</p><p class=\"ans\">\\(0\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "[0,2]:\\ -\\tfrac12(2)(2)=-2",
+        "why": "Below the axis counts negative."
+       },
+       {
+        "code": "[2,4]:\\ +\\tfrac12(2)(2)=2",
+        "why": ""
+       },
+       {
+        "code": "-2+2=0",
+        "why": "Net signed area.",
+        "watch": [
+         [
+          "\\int",
+          "0"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p52-4",
+      "source": "Like §5.2 #21–25",
+      "href": null,
+      "question": "Use the limit definition (right endpoints) to evaluate \\(\\displaystyle\\int_0^2x^2\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\Delta x=\\frac2n\\), \\(x_i=\\frac{2i}{n}\\). Use the formula for \\(\\sum i^2\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\sum\\frac{4i^2}{n^2}\\cdot\\frac2n=\\frac8{n^3}\\cdot\\frac{n(n+1)(2n+1)}6\\to\\frac{8\\cdot2}{6}=\\frac83\\).</p><p class=\"ans\">\\(\\tfrac83\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\Delta x=\\tfrac2n,\\ x_i=\\tfrac{2i}{n}",
+        "why": ""
+       },
+       {
+        "code": "\\sum_{i=1}^n\\Big(\\tfrac{2i}{n}\\Big)^2\\tfrac2n=\\tfrac{8}{n^3}\\sum i^2",
+        "why": "Pull out everything that doesn't depend on \\(i\\)."
+       },
+       {
+        "code": "=\\tfrac{8}{n^3}\\cdot\\tfrac{n(n+1)(2n+1)}{6}",
+        "why": "Sum of squares formula."
+       },
+       {
+        "code": "=\\tfrac{8}{6}\\cdot\\tfrac{n}{n}\\cdot\\tfrac{n+1}{n}\\cdot\\tfrac{2n+1}{n}",
+        "why": "Split up the three powers of \\(n\\) to take the limit."
+       },
+       {
+        "code": "\\to\\tfrac86\\cdot1\\cdot1\\cdot2=\\tfrac83",
+        "why": "\\(\\frac{n+1}n\\to1\\), \\(\\frac{2n+1}n\\to2\\).",
+        "watch": [
+         [
+          "\\int",
+          "8/3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p52-5",
+      "source": "Like §5.2 #47–55",
+      "href": null,
+      "question": "If \\(\\int_0^5f(x)\\,dx=10\\) and \\(\\int_0^2f(x)\\,dx=3\\), find \\(\\int_2^5f(x)\\,dx\\) and \\(\\int_5^2 2f(x)\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\int_0^2+\\int_2^5=\\int_0^5\\). Swapping the limits flips the sign.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\int_2^5f=10-3=7\\). \\(\\int_5^2 2f=-2\\cdot7=-14\\).</p><p class=\"ans\">\\(7\\) and \\(-14\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\int_0^2f+\\int_2^5f=\\int_0^5f",
+        "why": "Split the interval."
+       },
+       {
+        "code": "3+\\int_2^5f=10\\Rightarrow\\int_2^5f=7",
+        "why": "",
+        "watch": [
+         [
+          "\\int_2^5f",
+          "7"
+         ]
+        ]
+       },
+       {
+        "code": "\\int_5^2 2f=-2\\int_2^5f",
+        "why": "The constant comes out; reversed limits give a minus."
+       },
+       {
+        "code": "=-14",
+        "why": "",
+        "watch": [
+         [
+          "\\int_5^22f",
+          "-14"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p52-6",
+      "source": "Like §5.2 #17–20",
+      "href": null,
+      "question": "Write \\(\\displaystyle\\lim_{n\\to\\infty}\\sum_{i=1}^n\\frac1n\\Big(\\frac in\\Big)^3\\) as a definite integral and evaluate it.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Match it to \\(f(x_i)\\Delta x\\) with \\(\\Delta x=\\frac1n\\) and \\(x_i=\\frac in\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\Delta x=\\frac1n\\) on \\([0,1]\\), \\(f(x)=x^3\\): \\(\\int_0^1x^3\\,dx=\\frac14\\).</p><p class=\"ans\">\\(\\int_0^1x^3\\,dx=\\tfrac14\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\Delta x=\\tfrac1n\\Rightarrow b-a=1",
+        "why": ""
+       },
+       {
+        "code": "x_i=\\tfrac in\\Rightarrow a=0,\\ b=1",
+        "why": "\\(x_i=a+i\\Delta x\\)."
+       },
+       {
+        "code": "f(x)=x^3",
+        "why": ""
+       },
+       {
+        "code": "\\int_0^1x^3dx=\\tfrac14",
+        "why": "Using §5.3 to evaluate.",
+        "watch": [
+         [
+          "\\text{value}",
+          "1/4"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Net area vs total area",
+      "html": "<p>\\(\\int\\) gives <em>net</em> area. If the question says “total area”, split at the zeros and add absolute values.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s53",
+  "slug": "5-3",
+  "num": "§5.3",
+  "unit": "later",
+  "title": "The Fundamental Theorem of Calculus",
+  "lede": "Derivatives undo integrals (Part 1), and antiderivatives evaluate integrals (Part 2).",
+  "blocks": [
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">FTC Part 1</span>\\[\\frac{d}{dx}\\int_a^x f(t)\\,dt=f(x)\\]<p class=\"note\">Plug the upper limit into the integrand.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Part 1 with the chain rule</span>\\[\\frac{d}{dx}\\int_a^{g(x)}f(t)\\,dt=f(g(x))\\,g'(x)\\]<p class=\"note\">Variable in the lower limit? Flip the limits and add a minus sign.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">FTC Part 2</span>\\[\\int_a^bf(x)\\,dx=F(b)-F(a),\\quad F'=f\\]<p class=\"note\">No \\(+C\\) needed: it cancels.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Needs continuity</span><p>\\(f\\) must be continuous on \\([a,b]\\). \\(\\int_{-1}^1\\frac1{x^2}dx\\) can't be done with FTC.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p53-1",
+      "source": "Like §5.3 #7–18",
+      "href": null,
+      "question": "Find \\(g'(x)\\) for \\(g(x)=\\displaystyle\\int_1^x(t^2+1)^5\\,dt\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Part 1: replace \\(t\\) with \\(x\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(g'(x)=(x^2+1)^5\\).</p><p class=\"ans\">\\((x^2+1)^5\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "g(x)=\\int_1^xf(t)\\,dt",
+        "why": "The upper limit is plain \\(x\\)."
+       },
+       {
+        "code": "g'(x)=f(x)=(x^2+1)^5",
+        "why": "No integrating needed.",
+        "watch": [
+         [
+          "g'",
+          "(x^2+1)^5"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p53-2",
+      "source": "Like §5.3 #7–18",
+      "href": null,
+      "question": "Find \\(\\dfrac{dy}{dx}\\) for \\(y=\\displaystyle\\int_0^{x^2}\\sin t\\,dt\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>The upper limit is \\(x^2\\): plug it in, then multiply by its derivative.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\sin(x^2)\\cdot2x\\).</p><p class=\"ans\">\\(2x\\sin(x^2)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(g(x))=\\sin(x^2)",
+        "why": "Plug in the upper limit."
+       },
+       {
+        "code": "g'(x)=2x",
+        "why": "Chain rule."
+       },
+       {
+        "code": "y'=2x\\sin(x^2)",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "2x\\sin(x^2)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p53-3",
+      "source": "Like §5.3 #7–18",
+      "href": null,
+      "question": "Find \\(\\dfrac{dy}{dx}\\) for \\(y=\\displaystyle\\int_x^{3}e^{t^2}\\,dt\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(x\\) is in the <em>lower</em> limit. Flip the limits first.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(y=-\\int_3^xe^{t^2}dt\\Rightarrow y'=-e^{x^2}\\).</p><p class=\"ans\">\\(-e^{x^2}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=-\\int_3^{x}e^{t^2}dt",
+        "why": "Swapping the limits adds a minus."
+       },
+       {
+        "code": "y'=-e^{x^2}",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "-e^{x^2}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p53-4",
+      "source": "Like §5.3 #7–18",
+      "href": null,
+      "question": "Find \\(\\dfrac{dy}{dx}\\) for \\(y=\\displaystyle\\int_x^{x^2}t^3\\,dt\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Split at a constant: \\(\\int_x^{0}+\\int_0^{x^2}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\((x^2)^3\\cdot2x-x^3=2x^7-x^3\\).</p><p class=\"ans\">\\(2x^7-x^3\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=\\int_0^{x^2}t^3dt-\\int_0^{x}t^3dt",
+        "why": "Both limits move, so split at 0."
+       },
+       {
+        "code": "\\tfrac{d}{dx}\\int_0^{x^2}=(x^2)^3\\cdot2x=2x^7",
+        "why": "Chain rule."
+       },
+       {
+        "code": "\\tfrac{d}{dx}\\int_0^{x}=x^3",
+        "why": ""
+       },
+       {
+        "code": "y'=2x^7-x^3",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "2x^7-x^3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p53-5",
+      "source": "Like §5.3 #19–44",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_1^3(x^2-2x)\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Antiderivative \\(\\frac{x^3}3-x^2\\). Top minus bottom.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\big[\\frac{x^3}3-x^2\\big]_1^3=(9-9)-(\\frac13-1)=\\frac23\\).</p><p class=\"ans\">\\(\\tfrac23\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "F(x)=\\tfrac{x^3}{3}-x^2",
+        "why": ""
+       },
+       {
+        "code": "F(3)=9-9=0",
+        "why": ""
+       },
+       {
+        "code": "F(1)=\\tfrac13-1=-\\tfrac23",
+        "why": ""
+       },
+       {
+        "code": "F(3)-F(1)=0-(-\\tfrac23)=\\tfrac23",
+        "why": "Careful with the double negative.",
+        "watch": [
+         [
+          "\\int",
+          "2/3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p53-6",
+      "source": "Like §5.3 #19–44",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_0^{\\pi/2}\\cos x\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\int\\cos=\\sin\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\sin\\frac\\pi2-\\sin0=1\\).</p><p class=\"ans\">\\(1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "F=\\sin x",
+        "why": ""
+       },
+       {
+        "code": "\\sin\\tfrac\\pi2-\\sin0=1-0",
+        "why": "Unit circle values.",
+        "watch": [
+         [
+          "\\int",
+          "1"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p53-7",
+      "source": "Like §5.3 #19–44",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_1^4\\frac{1}{\\sqrt x}\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(x^{-1/2}\\to2x^{1/2}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(2\\sqrt4-2\\sqrt1=2\\).</p><p class=\"ans\">\\(2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x^{-1/2}\\to\\frac{x^{1/2}}{1/2}=2\\sqrt x",
+        "why": ""
+       },
+       {
+        "code": "2(2)-2(1)=2",
+        "why": "",
+        "watch": [
+         [
+          "\\int",
+          "2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p53-8",
+      "source": "Like §5.3 #19–44",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_0^1\\Big(e^x+\\frac{1}{1+x^2}\\Big)dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\int\\frac1{1+x^2}=\\tan^{-1}x\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\([e^x+\\tan^{-1}x]_0^1=(e+\\frac\\pi4)-(1+0)\\).</p><p class=\"ans\">\\(e-1+\\tfrac\\pi4\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "F=e^x+\\tan^{-1}x",
+        "why": ""
+       },
+       {
+        "code": "F(1)=e+\\tfrac\\pi4",
+        "why": "\\(\\tan^{-1}1=\\frac\\pi4\\)."
+       },
+       {
+        "code": "F(0)=1+0",
+        "why": "\\(e^0=1\\)."
+       },
+       {
+        "code": "e-1+\\tfrac\\pi4",
+        "why": "",
+        "watch": [
+         [
+          "\\int",
+          "e-1+\\pi/4"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Forgetting the chain rule in Part 1",
+      "html": "<p>Upper limit \\(x^2\\)? Multiply by \\(2x\\).</p>"
+     },
+     {
+      "title": "Bottom minus top",
+      "html": "<p>It's \\(F(b)-F(a)\\): upper limit first.</p>"
+     },
+     {
+      "title": "Discontinuous integrand",
+      "html": "<p>\\(\\int_{-1}^1\\frac{dx}{x^2}\\) is not \\(-2\\). FTC doesn't apply across \\(x=0\\).</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s54",
+  "slug": "5-4",
+  "num": "§5.4",
+  "unit": "later",
+  "title": "Indefinite Integrals and the Net Change Theorem",
+  "lede": "The ∫ notation for antiderivatives, and integrating a rate to get a total change.",
+  "blocks": [
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Indefinite integral</span><p>\\(\\int f(x)\\,dx=F(x)+C\\) means \\(F'=f\\). It's a family of functions, not a number.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Net Change Theorem</span>\\[\\int_a^bF'(x)\\,dx=F(b)-F(a)\\]<p class=\"note\">Integrating a rate gives the total change.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Displacement vs distance</span><p>Displacement \\(=\\int_a^bv\\,dt\\). Total distance \\(=\\int_a^b|v|\\,dt\\): split where \\(v=0\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Table</span><p>Same as §4.9: \\(x^n\\), \\(\\frac1x\\), \\(e^x\\), \\(\\sin\\), \\(\\cos\\), \\(\\sec^2\\), \\(\\sec\\tan\\), \\(\\frac1{1+x^2}\\), \\(\\frac1{\\sqrt{1-x^2}}\\).</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p54-1",
+      "source": "Like §5.4 #5–18",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\int\\Big(x^3-\\frac4x+\\sec^2x\\Big)dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Term by term.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{x^4}4-4\\ln|x|+\\tan x+C\\).</p><p class=\"ans\">\\(\\tfrac{x^4}{4}-4\\ln|x|+\\tan x+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x^3\\to\\tfrac{x^4}4",
+        "why": ""
+       },
+       {
+        "code": "-\\tfrac4x\\to-4\\ln|x|",
+        "why": ""
+       },
+       {
+        "code": "\\sec^2x\\to\\tan x",
+        "why": ""
+       },
+       {
+        "code": "+C",
+        "why": "Indefinite, so add \\(C\\)."
+       }
+      ]
+     },
+     {
+      "id": "p54-2",
+      "source": "Like §5.4 #5–18",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\int(1+\\sqrt x)^2\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Expand first: \\(1+2\\sqrt x+x\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x+\\frac43x^{3/2}+\\frac{x^2}2+C\\).</p><p class=\"ans\">\\(x+\\tfrac43x^{3/2}+\\tfrac{x^2}{2}+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "(1+\\sqrt x)^2=1+2x^{1/2}+x",
+        "why": "There's no chain rule backwards here, so expand."
+       },
+       {
+        "code": "2x^{1/2}\\to2\\cdot\\tfrac{x^{3/2}}{3/2}=\\tfrac43x^{3/2}",
+        "why": ""
+       },
+       {
+        "code": "x+\\tfrac43x^{3/2}+\\tfrac{x^2}2+C",
+        "why": ""
+       }
+      ]
+     },
+     {
+      "id": "p54-3",
+      "source": "Like §5.4 #5–18",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\int\\frac{\\sin\\theta}{\\cos^2\\theta}\\,d\\theta\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Rewrite as \\(\\frac{1}{\\cos\\theta}\\cdot\\frac{\\sin\\theta}{\\cos\\theta}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\int\\sec\\theta\\tan\\theta\\,d\\theta=\\sec\\theta+C\\).</p><p class=\"ans\">\\(\\sec\\theta+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{\\sin\\theta}{\\cos^2\\theta}=\\sec\\theta\\tan\\theta",
+        "why": "Trig rewrite."
+       },
+       {
+        "code": "\\int\\sec\\theta\\tan\\theta=\\sec\\theta+C",
+        "why": "Because \\((\\sec)'=\\sec\\tan\\)."
+       }
+      ]
+     },
+     {
+      "id": "p54-4",
+      "source": "Like §5.4 #35–45",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_{-1}^{2}|x|\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Split at 0, where \\(|x|\\) changes formula.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\int_{-1}^0(-x)dx+\\int_0^2x\\,dx=\\frac12+2=\\frac52\\).</p><p class=\"ans\">\\(\\tfrac52\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "|x|=-x\\ (x<0),\\ x\\ (x\\ge0)",
+        "why": ""
+       },
+       {
+        "code": "\\int_{-1}^0-x\\,dx=\\tfrac12",
+        "why": "A triangle with area \\(\\frac12\\)."
+       },
+       {
+        "code": "\\int_0^2x\\,dx=2",
+        "why": ""
+       },
+       {
+        "code": "\\tfrac12+2=\\tfrac52",
+        "why": "",
+        "watch": [
+         [
+          "\\int",
+          "5/2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p54-5",
+      "source": "Like §5.4 #59–63",
+      "href": null,
+      "question": "A particle moves with \\(v(t)=t^2-2t-3\\) m/s. Find (a) the displacement and (b) the total distance travelled on \\(2\\le t\\le4\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(v=(t-3)(t+1)\\): negative on \\([2,3)\\), positive on \\((3,4]\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(F=\\frac{t^3}3-t^2-3t\\). Displacement \\(F(4)-F(2)=\\frac23\\). \\(\\int_2^3v=-\\frac53\\), \\(\\int_3^4v=\\frac73\\), so the distance is \\(\\frac53+\\frac73=4\\).</p><p class=\"ans\">(a) \\(\\tfrac23\\) m (b) \\(4\\) m</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "F(t)=\\tfrac{t^3}3-t^2-3t",
+        "why": ""
+       },
+       {
+        "code": "F(4)-F(2)=-\\tfrac{20}{3}-(-\\tfrac{22}{3})=\\tfrac23",
+        "why": "\\(F(4)=\\frac{64}3-28\\), \\(F(2)=\\frac83-10\\).",
+        "watch": [
+         [
+          "\\text{disp}",
+          "2/3"
+         ]
+        ]
+       },
+       {
+        "code": "v=(t-3)(t+1)=0\\Rightarrow t=3",
+        "why": "Where it turns around."
+       },
+       {
+        "code": "\\int_2^3v=F(3)-F(2)=-9+\\tfrac{22}3=-\\tfrac53",
+        "why": "Moving backwards."
+       },
+       {
+        "code": "\\int_3^4v=-\\tfrac{20}3+9=\\tfrac73",
+        "why": "Moving forwards."
+       },
+       {
+        "code": "\\tfrac53+\\tfrac73=4",
+        "why": "Distance adds the sizes.",
+        "watch": [
+         [
+          "\\text{dist}",
+          "4"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p54-6",
+      "source": "Like §5.4 #65–70",
+      "href": null,
+      "question": "Water flows into a tank at \\(r(t)=100-4t\\) liters per minute for \\(0\\le t\\le10\\). How much water enters the tank?",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Net change = ∫ rate.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\int_0^{10}(100-4t)dt=[100t-2t^2]_0^{10}=1000-200=800\\) L.</p><p class=\"ans\">\\(800\\) L</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\int_0^{10}r(t)\\,dt",
+        "why": "Net Change Theorem."
+       },
+       {
+        "code": "[100t-2t^2]_0^{10}",
+        "why": ""
+       },
+       {
+        "code": "1000-200=800",
+        "why": "",
+        "watch": [
+         [
+          "\\text{water}",
+          "800\\text{ L}"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Distance = displacement",
+      "html": "<p>Only when \\(v\\) never changes sign. Find where \\(v=0\\) first.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s55",
+  "slug": "5-5",
+  "num": "§5.5",
+  "unit": "later",
+  "title": "The Substitution Rule",
+  "lede": "u-substitution: the chain rule backwards. Spot the inside function and its derivative.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<ol class=\"steps\"><li>Pick \\(u\\) = the <strong>inside</strong> function (under a power, root, exponent, or in a denominator).</li><li>Find \\(du=u'\\,dx\\). Its pieces should already be in the integral (up to a constant).</li><li>Rewrite everything in \\(u\\) and integrate.</li><li>Put \\(x\\) back. For a definite integral, change the limits to \\(u\\)-values instead.</li></ol>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Substitution</span>\\[\\int f(g(x))g'(x)\\,dx=\\int f(u)\\,du\\]"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Definite version</span>\\[\\int_a^bf(g(x))g'(x)\\,dx=\\int_{g(a)}^{g(b)}f(u)\\,du\\]"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Symmetry</span><p>On \\([-a,a]\\): an <strong>odd</strong> \\(f\\) gives 0; an <strong>even</strong> \\(f\\) gives \\(2\\int_0^af\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Useful results</span><p>\\(\\int\\tan x\\,dx=\\ln|\\sec x|+C\\) · \\(\\int e^{kx}dx=\\frac1ke^{kx}+C\\) · \\(\\int\\cos(kx)dx=\\frac1k\\sin(kx)+C\\)</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p55-1",
+      "source": "Like §5.5 #1–40",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\int2x(x^2+1)^5\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(u=x^2+1\\), \\(du=2x\\,dx\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\int u^5du=\\frac{u^6}6\\).</p><p class=\"ans\">\\(\\tfrac{(x^2+1)^6}{6}+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=x^2+1,\\ du=2x\\,dx",
+        "why": "The \\(2x\\,dx\\) is exactly \\(du\\)."
+       },
+       {
+        "code": "\\int u^5\\,du=\\tfrac{u^6}{6}+C",
+        "why": ""
+       },
+       {
+        "code": "=\\tfrac{(x^2+1)^6}{6}+C",
+        "why": "Put \\(x\\) back."
+       }
+      ]
+     },
+     {
+      "id": "p55-2",
+      "source": "Like §5.5 #1–40",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\int x^2\\sqrt{x^3+1}\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(u=x^3+1\\), \\(du=3x^2dx\\Rightarrow x^2dx=\\frac13du\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac13\\int u^{1/2}du=\\frac13\\cdot\\frac23u^{3/2}\\).</p><p class=\"ans\">\\(\\tfrac29(x^3+1)^{3/2}+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=x^3+1,\\ du=3x^2dx",
+        "why": ""
+       },
+       {
+        "code": "x^2dx=\\tfrac13du",
+        "why": "Fix the missing constant."
+       },
+       {
+        "code": "\\tfrac13\\int u^{1/2}du=\\tfrac13\\cdot\\tfrac23u^{3/2}",
+        "why": ""
+       },
+       {
+        "code": "=\\tfrac29(x^3+1)^{3/2}+C",
+        "why": ""
+       }
+      ]
+     },
+     {
+      "id": "p55-3",
+      "source": "Like §5.5 #1–40",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\int\\cos(3x)\\,dx\\) and \\(\\displaystyle\\int e^{5x}\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(u=3x\\) and \\(u=5x\\): you divide by the constant.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac13\\sin3x+C\\) and \\(\\frac15e^{5x}+C\\).</p><p class=\"ans\">\\(\\tfrac13\\sin3x+C,\\ \\ \\tfrac15e^{5x}+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=3x,\\ dx=\\tfrac13du",
+        "why": ""
+       },
+       {
+        "code": "\\tfrac13\\int\\cos u\\,du=\\tfrac13\\sin3x+C",
+        "why": ""
+       },
+       {
+        "code": "\\int e^{5x}dx=\\tfrac15e^{5x}+C",
+        "why": "Same idea. Check: differentiating gives back \\(e^{5x}\\)."
+       }
+      ]
+     },
+     {
+      "id": "p55-4",
+      "source": "Like §5.5 #1–40",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\int\\frac{\\ln x}{x}\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(u=\\ln x\\), \\(du=\\frac1xdx\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\int u\\,du=\\frac{u^2}2\\).</p><p class=\"ans\">\\(\\tfrac{(\\ln x)^2}{2}+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=\\ln x,\\ du=\\tfrac{dx}{x}",
+        "why": ""
+       },
+       {
+        "code": "\\int u\\,du=\\tfrac{u^2}2+C",
+        "why": ""
+       },
+       {
+        "code": "=\\tfrac{(\\ln x)^2}{2}+C",
+        "why": ""
+       }
+      ]
+     },
+     {
+      "id": "p55-5",
+      "source": "Like §5.5 #1–40",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\int\\frac{x}{x^2+4}\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(u=x^2+4\\), \\(x\\,dx=\\frac12du\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac12\\int\\frac{du}u=\\frac12\\ln|u|\\).</p><p class=\"ans\">\\(\\tfrac12\\ln(x^2+4)+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=x^2+4,\\ du=2x\\,dx",
+        "why": ""
+       },
+       {
+        "code": "\\tfrac12\\int\\tfrac1u\\,du=\\tfrac12\\ln|u|+C",
+        "why": ""
+       },
+       {
+        "code": "=\\tfrac12\\ln(x^2+4)+C",
+        "why": "\\(x^2+4>0\\), so no absolute value is needed."
+       }
+      ]
+     },
+     {
+      "id": "p55-6",
+      "source": "Like §5.5 #1–40",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\int\\tan x\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\tan x=\\frac{\\sin x}{\\cos x}\\). Let \\(u=\\cos x\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(-\\int\\frac{du}{u}=-\\ln|\\cos x|=\\ln|\\sec x|+C\\).</p><p class=\"ans\">\\(\\ln|\\sec x|+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\int\\frac{\\sin x}{\\cos x}dx",
+        "why": ""
+       },
+       {
+        "code": "u=\\cos x,\\ du=-\\sin x\\,dx",
+        "why": "Note the minus."
+       },
+       {
+        "code": "-\\int\\tfrac{du}{u}=-\\ln|\\cos x|+C",
+        "why": ""
+       },
+       {
+        "code": "=\\ln|\\sec x|+C",
+        "why": "Log rule: \\(-\\ln a=\\ln\\frac1a\\)."
+       }
+      ]
+     },
+     {
+      "id": "p55-7",
+      "source": "Like §5.5 #53–73",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_0^1xe^{x^2}\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(u=x^2\\). Change the limits: \\(x=0\\to u=0\\), \\(x=1\\to u=1\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac12\\int_0^1e^u\\,du=\\frac12(e-1)\\).</p><p class=\"ans\">\\(\\tfrac12(e-1)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=x^2,\\ x\\,dx=\\tfrac12du",
+        "why": ""
+       },
+       {
+        "code": "x:0\\to1\\ \\Rightarrow\\ u:0\\to1",
+        "why": "New limits, so you never go back to \\(x\\)."
+       },
+       {
+        "code": "\\tfrac12[e^u]_0^1=\\tfrac12(e-1)",
+        "why": "",
+        "watch": [
+         [
+          "\\int",
+          "(e-1)/2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p55-8",
+      "source": "Like §5.5 #53–73",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_0^{\\pi/4}\\sec^2x\\tan x\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(u=\\tan x\\), \\(du=\\sec^2x\\,dx\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Limits \\(0\\to1\\): \\(\\int_0^1u\\,du=\\frac12\\).</p><p class=\"ans\">\\(\\tfrac12\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=\\tan x,\\ du=\\sec^2x\\,dx",
+        "why": ""
+       },
+       {
+        "code": "x:0\\to\\tfrac\\pi4\\Rightarrow u:0\\to1",
+        "why": "\\(\\tan\\frac\\pi4=1\\)."
+       },
+       {
+        "code": "\\int_0^1u\\,du=\\tfrac12",
+        "why": "",
+        "watch": [
+         [
+          "\\int",
+          "1/2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p55-9",
+      "source": "Like §5.5 #75–80",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_{-2}^{2}x^3\\cos x\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Is the integrand odd or even?</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\((-x)^3\\cos(-x)=-x^3\\cos x\\): odd, on a symmetric interval, so the integral is \\(0\\).</p><p class=\"ans\">\\(0\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(-x)=(-x)^3\\cos(-x)=-x^3\\cos x",
+        "why": "\\(\\cos\\) is even, \\(x^3\\) is odd: the product is odd."
+       },
+       {
+        "code": "\\int_{-a}^a\\text{odd}=0",
+        "why": "The positive and negative areas cancel.",
+        "watch": [
+         [
+          "\\int",
+          "0"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Leaving x in the u-integral",
+      "html": "<p>Everything must turn into \\(u\\), including \\(dx\\). If an \\(x\\) is left over, pick a different \\(u\\).</p>"
+     },
+     {
+      "title": "Old limits after substituting",
+      "html": "<p>For definite integrals, either change the limits to \\(u\\)-values or substitute \\(x\\) back. Don't mix them.</p>"
      }
     ]
    }
@@ -15669,7 +18285,7 @@ export const sections: Section[] = [
       "explain": "<p>\\(P=x(20-x)\\), \\(P'=0\\) at \\(x=10\\), so \\(10\\cdot10=100\\).</p>"
      },
      {
-      "question": "<b>11.</b> Newton's method for \\(f(x)=x^2-5\\) with \\(x_1=2\\) gives \\(x_2=\\)",
+      "question": "<b>1.</b> Newton's method for \\(f(x)=x^2-5\\) with \\(x_1=2\\) gives \\(x_2=\\)",
       "unit": "later",
       "options": [
        {
@@ -15692,7 +18308,7 @@ export const sections: Section[] = [
       "explain": "<p>\\(x_2=2-\\frac{-1}{4}=2.25\\).</p>"
      },
      {
-      "question": "<b>12.</b> The most general antiderivative of \\(\\cos x+3x^2\\) is…",
+      "question": "<b>2.</b> The most general antiderivative of \\(\\cos x+3x^2\\) is…",
       "unit": "later",
       "options": [
        {
@@ -15715,7 +18331,7 @@ export const sections: Section[] = [
       "explain": "<p>\\(\\cos\\to\\sin\\), \\(3x^2\\to x^3\\), and don't forget \\(+C\\).</p>"
      },
      {
-      "question": "<b>13.</b> If \\(f'(x)=\\frac1x\\) and \\(f(1)=2\\), then \\(f(x)=\\)",
+      "question": "<b>3.</b> If \\(f'(x)=\\frac1x\\) and \\(f(1)=2\\), then \\(f(x)=\\)",
       "unit": "later",
       "options": [
        {
@@ -15738,7 +18354,7 @@ export const sections: Section[] = [
       "explain": "<p>\\(f=\\ln|x|+C\\), and \\(\\ln1=0\\), so \\(C=2\\).</p>"
      },
      {
-      "question": "<b>14.</b> \\(a(t)=4\\), \\(v(0)=1\\). Then \\(v(t)=\\)",
+      "question": "<b>4.</b> \\(a(t)=4\\), \\(v(0)=1\\). Then \\(v(t)=\\)",
       "unit": "later",
       "options": [
        {
@@ -15759,6 +18375,190 @@ export const sections: Section[] = [
        }
       ],
       "explain": "<p>\\(v=4t+C\\), \\(C=v(0)=1\\).</p>"
+     },
+     {
+      "question": "<b>5.</b> \\(R_2\\) for \\(f(x)=x\\) on \\([0,2]\\) is…",
+      "unit": "later",
+      "options": [
+       {
+        "html": "\\(1\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(2\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(3\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(4\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>\\(\\Delta x=1\\), heights \\(f(1)+f(2)=3\\).</p>"
+     },
+     {
+      "question": "<b>6.</b> \\(\\int_0^2(x-1)\\,dx=\\)",
+      "unit": "later",
+      "options": [
+       {
+        "html": "\\(-1\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(0\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(1\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(2\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>Equal triangles below and above the axis cancel.</p>"
+     },
+     {
+      "question": "<b>7.</b> \\(\\frac{d}{dx}\\int_0^{x}\\cos(t^2)\\,dt=\\)",
+      "unit": "later",
+      "options": [
+       {
+        "html": "\\(\\sin(x^2)\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\cos(x^2)\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(2x\\cos(x^2)\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(-\\sin(x^2)\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>FTC 1: plug in the upper limit.</p>"
+     },
+     {
+      "question": "<b>8.</b> \\(\\frac{d}{dx}\\int_1^{x^2}\\frac{dt}{t}=\\)",
+      "unit": "later",
+      "options": [
+       {
+        "html": "\\(\\frac1{x^2}\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\frac2x\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(2x\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\frac1x\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>\\(\\frac1{x^2}\\cdot2x=\\frac2x\\).</p>"
+     },
+     {
+      "question": "<b>9.</b> \\(\\int_0^1 3x^2\\,dx=\\)",
+      "unit": "later",
+      "options": [
+       {
+        "html": "\\(1\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(3\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(6\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\tfrac13\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>\\([x^3]_0^1=1\\).</p>"
+     },
+     {
+      "question": "<b>10.</b> For \\(\\int 2x\\cos(x^2)\\,dx\\), the best \\(u\\) is…",
+      "unit": "later",
+      "options": [
+       {
+        "html": "\\(2x\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\cos x\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(x^2\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(\\cos(x^2)\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>The inside function, whose derivative \\(2x\\) is sitting right there.</p>"
+     },
+     {
+      "question": "<b>11.</b> \\(\\int e^{3x}\\,dx=\\)",
+      "unit": "later",
+      "options": [
+       {
+        "html": "\\(e^{3x}+C\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(3e^{3x}+C\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\tfrac13e^{3x}+C\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(\\tfrac{e^{3x+1}}{3x+1}+C\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>Divide by the inside constant.</p>"
+     },
+     {
+      "question": "<b>12.</b> \\(\\int_{-1}^{1}x^5\\,dx=\\)",
+      "unit": "later",
+      "options": [
+       {
+        "html": "\\(0\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(\\tfrac13\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\tfrac23\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(2\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>Odd function on a symmetric interval.</p>"
      }
     ]
    }
@@ -16449,6 +19249,56 @@ export const sections: Section[] = [
       "front": "Does \\(f'(c)=0\\) guarantee a max or min?",
       "back": "No. \\(f(x)=x^3\\) at \\(c=0\\)",
       "tag": "Q4 · max/min"
+     },
+     {
+      "front": "\\(\\Delta x\\), \\(x_i\\)",
+      "back": "\\(\\Delta x=\\frac{b-a}n\\), \\(x_i=a+i\\Delta x\\)",
+      "tag": "Later · 5.1"
+     },
+     {
+      "front": "Left vs right sum (increasing \\(f\\))",
+      "back": "Left underestimates, right overestimates",
+      "tag": "Later · 5.1"
+     },
+     {
+      "front": "\\(\\int_a^bf\\,dx\\) definition",
+      "back": "\\(\\lim_{n\\to\\infty}\\sum_{i=1}^nf(x_i)\\Delta x\\)",
+      "tag": "Later · 5.2"
+     },
+     {
+      "front": "\\(\\sum i\\) / \\(\\sum i^2\\)",
+      "back": "\\(\\frac{n(n+1)}2\\) / \\(\\frac{n(n+1)(2n+1)}6\\)",
+      "tag": "Later · 5.2"
+     },
+     {
+      "front": "FTC Part 1",
+      "back": "\\(\\frac{d}{dx}\\int_a^{g(x)}f(t)dt=f(g(x))g'(x)\\)",
+      "tag": "Later · 5.3"
+     },
+     {
+      "front": "FTC Part 2",
+      "back": "\\(\\int_a^bf=F(b)-F(a)\\)",
+      "tag": "Later · 5.3"
+     },
+     {
+      "front": "Displacement / distance",
+      "back": "\\(\\int v\\,dt\\) / \\(\\int|v|\\,dt\\)",
+      "tag": "Later · 5.4"
+     },
+     {
+      "front": "u-substitution",
+      "back": "\\(u\\) = inside, \\(du=u'dx\\), change the limits for definite integrals",
+      "tag": "Later · 5.5"
+     },
+     {
+      "front": "\\(\\int_{-a}^a\\) odd / even",
+      "back": "\\(0\\) / \\(2\\int_0^a\\)",
+      "tag": "Later · 5.5"
+     },
+     {
+      "front": "\\(\\int\\tan x\\,dx\\)",
+      "back": "\\(\\ln|\\sec x|+C\\)",
+      "tag": "Later · 5.5"
      }
     ]
    },
@@ -17233,7 +20083,7 @@ export const sections: Section[] = [
    },
    {
     "type": "heading",
-    "text": "Later · §4.8–4.9 (not on Quiz 5)",
+    "text": "Midterm 3 & final · §4.8–5.5",
     "id": "later"
    },
    {
@@ -17252,6 +20102,41 @@ export const sections: Section[] = [
       "details": "<p><strong>Table:</strong></p><ul><li>\\(e^x\\to e^x\\)</li><li>\\(\\sec^2x\\to\\tan x\\), \\(\\sec x\\tan x\\to\\sec x\\)</li><li>\\(\\frac1{1+x^2}\\to\\tan^{-1}x\\), \\(\\frac1{\\sqrt{1-x^2}}\\to\\sin^{-1}x\\)</li><li>\\(\\cosh x\\to\\sinh x\\), \\(\\sinh x\\to\\cosh x\\)</li></ul><p><strong>Split fractions first:</strong> \\(\\frac{x^2+3x-1}{x}=x+3-\\frac1x\\).</p><p><strong>Initial value:</strong> antidifferentiate with \\(+C\\), then plug in the point. Given \\(f''\\)? Two constants, \\(C\\) and \\(D\\).</p><p><strong>Motion:</strong> \\(a\\to v\\to s\\), using \\(v(0)\\) then \\(s(0)\\).</p>",
       "href": "/4-9/",
       "linkLabel": "Open §4.9"
+     },
+     {
+      "title": "Riemann sums (5.1)",
+      "html": "\\[\\Delta x=\\frac{b-a}{n},\\ x_i=a+i\\Delta x\\]<p class='note'>Right: \\(x_1..x_n\\) · left: \\(x_0..x_{n-1}\\) · midpoint: centres</p>",
+      "details": "<p>Area ≈ Δx × (sum of the heights). For an increasing \\(f\\), \\(L_n\\) is too small and \\(R_n\\) is too big. Distance ≈ Σ v·Δt.</p><p><strong>Example:</strong> \\(x^2\\) on \\([0,2]\\), \\(R_4=0.5(0.25+1+2.25+4)=3.75\\).</p>",
+      "href": "/5-1/",
+      "linkLabel": "Open §5.1"
+     },
+     {
+      "title": "Definite integral (5.2)",
+      "html": "<p>Net signed area. \\(\\int_b^a=-\\int_a^b\\), \\(\\int_a^c+\\int_c^b=\\int_a^b\\).</p>",
+      "details": "<p>\\(\\int_a^bf=\\lim\\sum f(x_i)\\Delta x\\). Sums: \\(\\sum i=\\frac{n(n+1)}2\\), \\(\\sum i^2=\\frac{n(n+1)(2n+1)}6\\).</p><p>Geometry: triangles, trapezoids, semicircles \\(\\int_{-r}^r\\sqrt{r^2-x^2}=\\frac{\\pi r^2}2\\).</p>",
+      "href": "/5-2/",
+      "linkLabel": "Open §5.2"
+     },
+     {
+      "title": "FTC (5.3)",
+      "html": "<p>Part 1: \\(\\frac{d}{dx}\\int_a^{g(x)}f=f(g(x))g'(x)\\)</p><p class='note'>Part 2: \\(\\int_a^bf=F(b)-F(a)\\)</p>",
+      "details": "<p>Variable in the lower limit: flip the limits and add a minus. Both limits vary: split at a constant.</p><p>Part 2 needs \\(f\\) continuous on \\([a,b]\\).</p>",
+      "href": "/5-3/",
+      "linkLabel": "Open §5.3"
+     },
+     {
+      "title": "Net change (5.4)",
+      "html": "<p>\\(\\int_a^bF'=F(b)-F(a)\\). Displacement \\(\\int v\\); distance \\(\\int|v|\\).</p>",
+      "details": "<p>For distance, find where \\(v=0\\), split there, and add the absolute values of each piece.</p>",
+      "href": "/5-4/",
+      "linkLabel": "Open §5.4"
+     },
+     {
+      "title": "Substitution (5.5)",
+      "html": "<p>\\(u\\) = inside, \\(du=u'\\,dx\\). Definite? Change the limits.</p><p class='note'>Odd on \\([-a,a]\\) → 0</p>",
+      "details": "<ol class='steps'><li>Choose \\(u\\) (under a power, root, exp, or denominator).</li><li>\\(du=u'dx\\); fix any constant.</li><li>Integrate in \\(u\\).</li><li>Back to \\(x\\), or use the new limits.</li></ol><p>\\(\\int\\tan x=\\ln|\\sec x|\\), \\(\\int e^{kx}=\\frac1ke^{kx}\\).</p>",
+      "href": "/5-5/",
+      "linkLabel": "Open §5.5"
      }
     ]
    }

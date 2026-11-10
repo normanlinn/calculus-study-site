@@ -47,6 +47,7 @@ export default function Home() {
         <HeroFade delay={0.45}>
           <div className="countdowns">
             <Link href="/quiz-5/"><Countdown target="2026-11-12" label="Quiz 5" /></Link>
+            <Link href="/final/"><Countdown target="2026-12-08" label="Final" /></Link>
           </div>
         </HeroFade>
         <HeroGraph />
@@ -61,12 +62,12 @@ export default function Home() {
       </section>
       <h2 className="unit-head">Quiz 5 · §4.3, 4.4, 4.5, 4.7 <span>Thu, Nov 12</span></h2>
       <Cards list={q5} />
+      <h2 className="unit-head">Midterm 3 &amp; final · §4.8–5.5 <span>Dec 1 · Dec 8</span></h2>
+      <Cards list={later} />
       <h2 className="unit-head">Quiz 4 · §3.6–4.1 <span>Midterm 2 review</span></h2>
       <Cards list={q4} />
       <h2 className="unit-head">Quiz 3 · §2.8–3.5 <span>Midterm 2 review</span></h2>
       <Cards list={q3} />
-      <h2 className="unit-head">Later · §4.2, 4.8, 4.9 <span>Not on Quiz 5</span></h2>
-      <Cards list={later} />
       <h2 className="unit-head">Study tools</h2>
       <Cards list={tools} />
     </>
