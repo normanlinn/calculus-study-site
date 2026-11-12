@@ -2049,6 +2049,10 @@ export const sections: Section[] = [
         "html": "<p>Square the inside: \\((e^x)^2=e^{2x}\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Read the structure first, like reading a function call: the <b>outer</b> function is \\(\\tan^{-1}(\\,\\cdot\\,)\\) and the <b>inner</b> one is what sits in the parentheses. Name the inside \\(u\\).</p>\\[\\displaystyle y=\\tan^{-1}\\big(e^x\\big)\\]<p><strong>Step 2.</strong> The derivative of \\(e^x\\) is itself, \\(e^x\\). That never changes.</p>\\[\\displaystyle u'=e^x\\]<p><strong>Step 3.</strong> The formula needs \\(u^2\\) in the denominator, so square the inside now. Square the <i>whole</i> inside, not just part of it.</p>\\[\\displaystyle u^2=e^{2x}\\]<p><strong>Step 4.</strong> Rule: \\(\\dfrac{d}{dx}\\tan^{-1}u=\\dfrac{u'}{1+u^2}\\). It is the chain rule built in: the \\(u'\\) on top is the derivative of the inside.</p>\\[\\displaystyle y'=\\frac{u'}{1+u^2}\\]<p><strong>Step 5.</strong> Substitute the values from the Watch panel: \\(u'\\) on top, \\(1+u^2\\) on the bottom. Nothing new happens here; it is pure plugging in.</p>\\[\\displaystyle y'=\\frac{e^x}{1+e^{2x}}\\]<p><strong>Step 6.</strong> Already simplest. Common trap: \\((e^x)^2=e^{2x}\\), <b>not</b> \\(e^{x^2}\\). Exponent rule: \\((e^a)^b=e^{ab}\\).</p>\\[\\displaystyle y'=\\frac{e^x}{1+e^{2x}}\\]<p><strong>What you found:</strong></p><ul><li>\\(u=e^x\\)</li><li>\\(u'=e^x\\)</li><li>\\(u^2=e^{2x}\\)</li><li>\\(y'=\\frac{e^x}{1+e^{2x}}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(u=e^x\\), \\(u'=e^x\\), \\(u^2=e^{2x}\\).</p><p class=\"ans\">\\(y'=\\dfrac{e^x}{1+e^{2x}}\\)</p>"
        }
@@ -2121,6 +2125,10 @@ export const sections: Section[] = [
         "html": "<p>Don't forget to square the 3 as well.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Read the structure first, like reading a function call: the <b>outer</b> function is \\(\\tan^{-1}(\\,\\cdot\\,)\\) and the <b>inner</b> one is what sits in the parentheses. Name the inside \\(u\\).</p>\\[\\displaystyle f=\\tan^{-1}\\big(3x\\big)\\]<p><strong>Step 2.</strong> Derivative of \\(3x\\) is \\(3\\) (the slope of a line).</p>\\[\\displaystyle u'=3\\]<p><strong>Step 3.</strong> The formula needs \\(u^2\\) in the denominator, so square the inside now. Square the <i>whole</i> inside, not just part of it.</p>\\[\\displaystyle u^2=9x^2\\]<p><strong>Step 4.</strong> Rule: \\(\\dfrac{d}{dx}\\tan^{-1}u=\\dfrac{u'}{1+u^2}\\). It is the chain rule built in: the \\(u'\\) on top is the derivative of the inside.</p>\\[\\displaystyle y'=\\frac{u'}{1+u^2}\\]<p><strong>Step 5.</strong> Substitute the values from the Watch panel: \\(u'\\) on top, \\(1+u^2\\) on the bottom. Nothing new happens here; it is pure plugging in.</p>\\[\\displaystyle y'=\\frac{3}{1+9x^2}\\]<p><strong>Step 6.</strong> Done. Trap: \\((3x)^2=9x^2\\), not \\(3x^2\\). The 3 gets squared too.</p>\\[\\displaystyle y'=\\frac{3}{1+9x^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(u=3x\\)</li><li>\\(u'=3\\)</li><li>\\(u^2=9x^2\\)</li><li>\\(y'=\\frac{3}{1+9x^2}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(u=3x\\), \\(u'=3\\), \\(u^2=9x^2\\).</p><p class=\"ans\">\\(f'(x)=\\dfrac{3}{1+9x^2}\\)</p>"
        }
@@ -2188,6 +2196,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find \\(y'\\) if \\(y=\\tan^{-1}(\\sqrt x)\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Read the structure first, like reading a function call: the <b>outer</b> function is \\(\\tan^{-1}(\\,\\cdot\\,)\\) and the <b>inner</b> one is what sits in the parentheses. Name the inside \\(u\\).</p>\\[\\displaystyle y=\\tan^{-1}\\big(\\sqrt x\\big)\\]<p><strong>Step 2.</strong> \\(\\sqrt x=x^{1/2}\\), power rule: \\(\\tfrac12x^{-1/2}=\\dfrac{1}{2\\sqrt x}\\). Memorize this one; it appears constantly.</p>\\[\\displaystyle u'=\\frac{1}{2\\sqrt x}\\]<p><strong>Step 3.</strong> The formula needs \\(u^2\\) in the denominator, so square the inside now. Square the <i>whole</i> inside, not just part of it.</p>\\[\\displaystyle u^2=x\\]<p><strong>Step 4.</strong> Rule: \\(\\dfrac{d}{dx}\\tan^{-1}u=\\dfrac{u'}{1+u^2}\\). It is the chain rule built in: the \\(u'\\) on top is the derivative of the inside.</p>\\[\\displaystyle y'=\\frac{u'}{1+u^2}\\]<p><strong>Step 5.</strong> Substitute the values from the Watch panel: \\(u'\\) on top, \\(1+u^2\\) on the bottom. Nothing new happens here; it is pure plugging in.</p>\\[\\displaystyle y'=\\frac{\\frac{1}{2\\sqrt x}}{1+x}\\]<p><strong>Step 6.</strong> A fraction on top of a fraction: dividing by \\((1+x)\\) is the same as multiplying the denominator by it, so \\(\\dfrac{1}{2\\sqrt x\\,(1+x)}\\).</p>\\[\\displaystyle y'=\\frac{1}{2\\sqrt x\\,(1+x)}\\]<p><strong>What you found:</strong></p><ul><li>\\(u=\\sqrt x\\)</li><li>\\(u'=\\frac{1}{2\\sqrt x}\\)</li><li>\\(u^2=x\\)</li><li>\\(y'=\\frac{1}{2\\sqrt x\\,(1+x)}\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\(u=\\sqrt x\\), \\(u'=\\frac{1}{2\\sqrt x}\\), \\(u^2=x\\).</p><p>\\(y'=\\dfrac{\\frac{1}{2\\sqrt x}}{1+x}\\).</p><p class=\"ans\">\\(y'=\\dfrac{1}{2\\sqrt x\\,(1+x)}\\)</p>"
@@ -2257,6 +2269,10 @@ export const sections: Section[] = [
       "question": "Find \\(y'\\) if \\(y=\\tan^{-1}(\\ln x)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Read the structure first, like reading a function call: the <b>outer</b> function is \\(\\tan^{-1}(\\,\\cdot\\,)\\) and the <b>inner</b> one is what sits in the parentheses. Name the inside \\(u\\).</p>\\[\\displaystyle y=\\tan^{-1}\\big(\\ln x\\big)\\]<p><strong>Step 2.</strong> Derivative of \\(\\ln x\\) is \\(\\dfrac1x\\).</p>\\[\\displaystyle u'=\\frac1x\\]<p><strong>Step 3.</strong> The formula needs \\(u^2\\) in the denominator, so square the inside now. Square the <i>whole</i> inside, not just part of it.</p>\\[\\displaystyle u^2=(\\ln x)^2\\]<p><strong>Step 4.</strong> Rule: \\(\\dfrac{d}{dx}\\tan^{-1}u=\\dfrac{u'}{1+u^2}\\). It is the chain rule built in: the \\(u'\\) on top is the derivative of the inside.</p>\\[\\displaystyle y'=\\frac{u'}{1+u^2}\\]<p><strong>Step 5.</strong> Substitute the values from the Watch panel: \\(u'\\) on top, \\(1+u^2\\) on the bottom. Nothing new happens here; it is pure plugging in.</p>\\[\\displaystyle y'=\\frac{1/x}{1+(\\ln x)^2}\\]<p><strong>Step 6.</strong> Move the \\(x\\) from the small fraction into the main denominator. Note \\((\\ln x)^2\\) is <b>not</b> \\(\\ln(x^2)\\); keep the parentheses.</p>\\[\\displaystyle y'=\\frac{1}{x\\big(1+(\\ln x)^2\\big)}\\]<p><strong>What you found:</strong></p><ul><li>\\(u=\\ln x\\)</li><li>\\(u'=\\frac1x\\)</li><li>\\(u^2=(\\ln x)^2\\)</li><li>\\(y'=\\frac{1}{x\\big(1+(\\ln x)^2\\big)}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(u=\\ln x\\), \\(u'=\\frac1x\\), \\(u^2=(\\ln x)^2\\).</p><p class=\"ans\">\\(y'=\\dfrac{1}{x\\,\\big(1+(\\ln x)^2\\big)}\\)</p>"
        }
@@ -2324,6 +2340,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find \\(y'\\) if \\(y=\\tan^{-1}(x^2)\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Read the structure first, like reading a function call: the <b>outer</b> function is \\(\\tan^{-1}(\\,\\cdot\\,)\\) and the <b>inner</b> one is what sits in the parentheses. Name the inside \\(u\\).</p>\\[\\displaystyle y=\\tan^{-1}\\big(x^2\\big)\\]<p><strong>Step 2.</strong> Power rule: \\(x^2\\to2x\\).</p>\\[\\displaystyle u'=2x\\]<p><strong>Step 3.</strong> The formula needs \\(u^2\\) in the denominator, so square the inside now. Square the <i>whole</i> inside, not just part of it.</p>\\[\\displaystyle u^2=x^4\\]<p><strong>Step 4.</strong> Rule: \\(\\dfrac{d}{dx}\\tan^{-1}u=\\dfrac{u'}{1+u^2}\\). It is the chain rule built in: the \\(u'\\) on top is the derivative of the inside.</p>\\[\\displaystyle y'=\\frac{u'}{1+u^2}\\]<p><strong>Step 5.</strong> Substitute the values from the Watch panel: \\(u'\\) on top, \\(1+u^2\\) on the bottom. Nothing new happens here; it is pure plugging in.</p>\\[\\displaystyle y'=\\frac{2x}{1+x^4}\\]<p><strong>Step 6.</strong> Done. \\((x^2)^2=x^4\\): powers multiply.</p>\\[\\displaystyle y'=\\frac{2x}{1+x^4}\\]<p><strong>What you found:</strong></p><ul><li>\\(u=x^2\\)</li><li>\\(u'=2x\\)</li><li>\\(u^2=x^4\\)</li><li>\\(y'=\\frac{2x}{1+x^4}\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\(u=x^2\\), \\(u'=2x\\), \\(u^2=x^4\\).</p><p class=\"ans\">\\(y'=\\dfrac{2x}{1+x^4}\\)</p>"
@@ -2397,6 +2417,10 @@ export const sections: Section[] = [
         "html": "<p>What's computed last? Here it's the square, not the arctan.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Careful: this time the <b>outer</b> operation is squaring and the <b>inner</b> one is \\(\\tan^{-1}x\\). The last thing you would do on a calculator is square, so squaring is the outside.</p>\\[\\displaystyle y=\\big(\\tan^{-1}x\\big)^2\\]<p><strong>Step 2.</strong> Chain rule with the power rule: bring the 2 down, lower the power by one, keep the inside unchanged, then multiply by the derivative of the inside.</p>\\[\\displaystyle y'=2\\big(\\tan^{-1}x\\big)^{1}\\cdot\\big(\\tan^{-1}x\\big)'\\]<p><strong>Step 3.</strong> Basic arctan derivative (here \\(u=x\\), so \\(u'=1\\)).</p>\\[\\displaystyle \\big(\\tan^{-1}x\\big)'=\\frac{1}{1+x^2}\\]<p><strong>Step 4.</strong> Multiply the pieces together and write as one fraction.</p>\\[\\displaystyle y'=\\frac{2\\tan^{-1}x}{1+x^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{outer}:\\ (\\ )^2\\)</li><li>\\(\\text{inner}:\\ \\tan^{-1}x\\)</li><li>\\((\\tan^{-1}x)'=\\frac{1}{1+x^2}\\)</li><li>\\(y'=\\frac{2\\tan^{-1}x}{1+x^2}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Outside is squaring; inside is \\(\\tan^{-1}x\\).</p><p>\\(y'=2\\tan^{-1}x\\cdot\\frac{1}{1+x^2}\\).</p><p class=\"ans\">\\(y'=\\dfrac{2\\tan^{-1}x}{1+x^2}\\)</p>"
        }
@@ -2448,6 +2472,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find \\(y'\\) if \\(y=x\\tan^{-1}x\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Two functions <b>multiplied</b> together means product rule. Label them \\(f\\) and \\(g\\).</p>\\[\\displaystyle y=\\underbrace{x}_{f}\\cdot\\underbrace{\\tan^{-1}x}_{g}\\]<p><strong>Step 2.</strong> Differentiate each piece on its own before combining. This keeps the bookkeeping clean.</p>\\[\\begin{gathered}\\displaystyle f'=1\\\\\\displaystyle g'=\\frac{1}{1+x^2}\\end{gathered}\\]<p><strong>Step 3.</strong> Product rule: derivative of the first times the second, plus the first times derivative of the second.</p>\\[\\displaystyle y'=f'g+fg'\\]<p><strong>Step 4.</strong> Plug in from the Watch panel.</p>\\[\\displaystyle y'=1\\cdot\\tan^{-1}x+x\\cdot\\frac{1}{1+x^2}\\]<p><strong>Step 5.</strong> Clean up the \\(1\\cdot\\) and merge \\(x\\) into the fraction.</p>\\[\\displaystyle y'=\\tan^{-1}x+\\frac{x}{1+x^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(f=x\\)</li><li>\\(g=\\tan^{-1}x\\)</li><li>\\(f'=1\\)</li><li>\\(g'=\\frac{1}{1+x^2}\\)</li><li>\\(y'=\\tan^{-1}x+\\frac{x}{1+x^2}\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>Product rule: \\(x\\cdot\\frac{1}{1+x^2}+\\tan^{-1}x\\cdot1\\).</p><p class=\"ans\">\\(y'=\\tan^{-1}x+\\dfrac{x}{1+x^2}\\)</p>"
@@ -2513,6 +2541,10 @@ export const sections: Section[] = [
         "html": "<p>After plugging in, clear the small fractions by multiplying top and bottom by \\(x^2\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Outer \\(\\tan^{-1}\\), inner \\(u=\\frac1x=x^{-1}\\).</p>\\[\\displaystyle y=\\tan^{-1}\\Big(\\frac1x\\Big)\\]<p><strong>Step 2.</strong> Power rule on \\(x^{-1}\\): bring down \\(-1\\), subtract one from the exponent to get \\(-2\\).</p>\\[\\displaystyle u'=-x^{-2}=-\\frac{1}{x^2}\\]<p><strong>Step 3.</strong> Square the inside.</p>\\[\\displaystyle u^2=\\frac{1}{x^2}\\]<p><strong>Step 4.</strong> Rule: \\(\\dfrac{d}{dx}\\tan^{-1}u=\\dfrac{u'}{1+u^2}\\). It is the chain rule built in: the \\(u'\\) on top is the derivative of the inside.</p>\\[\\displaystyle y'=\\frac{-1/x^2}{1+1/x^2}\\]<p><strong>Step 5.</strong> Compound fraction trick: multiply top and bottom by \\(x^2\\), the common denominator of the small fractions. Top: \\(-1\\). Bottom: \\(x^2+1\\).</p>\\[\\displaystyle y'=\\frac{-1/x^2}{1+1/x^2}\\cdot\\frac{x^2}{x^2}=\\frac{-1}{x^2+1}\\]<p><strong>Step 6.</strong> Interesting: this is exactly the negative of \\((\\tan^{-1}x)'\\). That is why \\(\\tan^{-1}x+\\tan^{-1}(1/x)\\) is constant for \\(x>0\\).</p>\\[\\displaystyle y'=-\\frac{1}{1+x^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(u=x^{-1}\\)</li><li>\\(u'=-\\frac{1}{x^2}\\)</li><li>\\(u^2=\\frac1{x^2}\\)</li><li>\\(y'=-\\frac1{1+x^2}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(u=\\frac1x\\), \\(u'=-\\frac1{x^2}\\), \\(u^2=\\frac{1}{x^2}\\).</p><p>\\(y'=\\dfrac{-1/x^2}{1+1/x^2}\\). Multiply top and bottom by \\(x^2\\): \\(\\dfrac{-1}{x^2+1}\\).</p><p class=\"ans\">\\(y'=-\\dfrac{1}{1+x^2}\\)</p>"
        }
@@ -2575,6 +2607,10 @@ export const sections: Section[] = [
       "question": "Find \\(f'(x)\\) if \\(f(x)=\\sin^{-1}(5x)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Outer \\(\\sin^{-1}\\), inner \\(u=5x\\).</p>\\[\\displaystyle f=\\sin^{-1}(5x)\\]<p><strong>Step 2.</strong> Collect both things the formula needs. Square <i>all</i> of \\(5x\\): \\(25x^2\\).</p>\\[\\begin{gathered}\\displaystyle u'=5\\\\\\displaystyle u^2=25x^2\\end{gathered}\\]<p><strong>Step 3.</strong> Rule: \\(\\dfrac{d}{dx}\\sin^{-1}u=\\dfrac{u'}{\\sqrt{1-u^2}}\\). Again the \\(u'\\) on top is the chain rule.</p>\\[\\displaystyle f'=\\frac{u'}{\\sqrt{1-u^2}}\\]<p><strong>Step 4.</strong> Substitute. Done.</p>\\[\\displaystyle f'=\\frac{5}{\\sqrt{1-25x^2}}\\]<p><strong>What you found:</strong></p><ul><li>\\(u=5x\\)</li><li>\\(u'=5\\)</li><li>\\(u^2=25x^2\\)</li><li>\\(f'=\\frac5{\\sqrt{1-25x^2}}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(u=5x\\), \\(u'=5\\), \\(u^2=25x^2\\).</p><p class=\"ans\">\\(f'(x)=\\dfrac{5}{\\sqrt{1-25x^2}}\\)</p>"
        }
@@ -2626,6 +2662,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find \\(g'(x)\\) if \\(g(x)=\\cos^{-1}\\sqrt x\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Outer \\(\\cos^{-1}\\), inner \\(u=\\sqrt x\\).</p>\\[\\displaystyle g=\\cos^{-1}\\sqrt x\\]<p><strong>Step 2.</strong> Square root derivative, and squaring a square root gives back \\(x\\).</p>\\[\\begin{gathered}\\displaystyle u'=\\frac{1}{2\\sqrt x}\\\\\\displaystyle u^2=x\\end{gathered}\\]<p><strong>Step 3.</strong> Rule: \\(\\cos^{-1}\\) is the same as \\(\\sin^{-1}\\) but with a <b>minus</b>. Memory trick: every “co” inverse (\\(\\cos^{-1},\\cot^{-1},\\csc^{-1}\\)) gets a minus.</p>\\[\\displaystyle g'=-\\frac{u'}{\\sqrt{1-u^2}}\\]<p><strong>Step 4.</strong> Substitute.</p>\\[\\displaystyle g'=-\\frac{\\frac{1}{2\\sqrt x}}{\\sqrt{1-x}}\\]<p><strong>Step 5.</strong> Push the \\(2\\sqrt x\\) into the denominator.</p>\\[\\displaystyle g'=-\\frac{1}{2\\sqrt x\\,\\sqrt{1-x}}\\]<p><strong>What you found:</strong></p><ul><li>\\(u=\\sqrt x\\)</li><li>\\(u'=\\frac1{2\\sqrt x}\\)</li><li>\\(u^2=x\\)</li><li>\\(g'=-\\frac1{2\\sqrt x\\sqrt{1-x}}\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\(u=\\sqrt x\\), \\(u'=\\frac1{2\\sqrt x}\\), \\(u^2=x\\).</p><p>\\(\\cos^{-1}\\) has a minus: \\(g'=-\\dfrac{u'}{\\sqrt{1-u^2}}\\).</p><p class=\"ans\">\\(g'(x)=-\\dfrac{1}{2\\sqrt x\\,\\sqrt{1-x}}\\)</p>"
@@ -2683,6 +2723,10 @@ export const sections: Section[] = [
       "question": "Find \\(h'(x)\\) if \\(h(x)=(\\sin^{-1}x)\\ln x\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> A product, so product rule.</p>\\[\\displaystyle h=\\underbrace{\\sin^{-1}x}_{f}\\cdot\\underbrace{\\ln x}_{g}\\]<p><strong>Step 2.</strong> Two basic derivatives you must know cold.</p>\\[\\begin{gathered}\\displaystyle f'=\\frac{1}{\\sqrt{1-x^2}}\\\\\\displaystyle g'=\\frac1x\\end{gathered}\\]<p><strong>Step 3.</strong> Product rule.</p>\\[\\displaystyle h'=f'g+fg'\\]<p><strong>Step 4.</strong> Plug in and write each term as one fraction.</p>\\[\\displaystyle h'=\\frac{\\ln x}{\\sqrt{1-x^2}}+\\frac{\\sin^{-1}x}{x}\\]<p><strong>What you found:</strong></p><ul><li>\\(f=\\sin^{-1}x\\)</li><li>\\(g=\\ln x\\)</li><li>\\(f'=\\frac1{\\sqrt{1-x^2}}\\)</li><li>\\(g'=\\frac1x\\)</li><li>\\(h'=\\frac{\\ln x}{\\sqrt{1-x^2}}+\\frac{\\sin^{-1}x}{x}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Product rule: \\(\\frac{1}{\\sqrt{1-x^2}}\\cdot\\ln x+\\sin^{-1}x\\cdot\\frac1x\\).</p><p class=\"ans\">\\(h'(x)=\\dfrac{\\ln x}{\\sqrt{1-x^2}}+\\dfrac{\\sin^{-1}x}{x}\\)</p>"
        }
@@ -2739,6 +2783,10 @@ export const sections: Section[] = [
       "question": "Find \\(g'(t)\\) if \\(g(t)=\\ln\\big(\\tan^{-1}(t^4)\\big)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Three layers, outside to inside: \\(\\ln\\) → \\(\\tan^{-1}\\) → \\(t^4\\). Peel them one at a time like an onion. Call the middle layer \\(w=\\tan^{-1}(t^4)\\).</p>\\[\\displaystyle g=\\ln\\Big(\\tan^{-1}\\big(t^4\\big)\\Big)\\]<p><strong>Step 2.</strong> Rule: \\((\\ln w)'=\\dfrac{w'}{w}\\). So the whole problem reduces to finding \\(w'\\).</p>\\[\\displaystyle g'=\\frac{w'}{w}\\]<p><strong>Step 3.</strong> \\(w\\) is itself an arctan of something, so use the arctan chain rule with inner \\(t^4\\): derivative \\(4t^3\\), square \\(t^8\\).</p>\\[\\displaystyle w'=\\frac{(t^4)'}{1+(t^4)^2}=\\frac{4t^3}{1+t^8}\\]<p><strong>Step 4.</strong> Substitute \\(w'\\) and \\(w\\).</p>\\[\\displaystyle g'=\\frac{4t^3/(1+t^8)}{\\tan^{-1}(t^4)}\\]<p><strong>Step 5.</strong> Combine into one fraction.</p>\\[\\displaystyle g'=\\frac{4t^3}{(1+t^8)\\tan^{-1}(t^4)}\\]<p><strong>What you found:</strong></p><ul><li>\\(w=\\tan^{-1}(t^4)\\)</li><li>\\(w'=\\frac{4t^3}{1+t^8}\\)</li><li>\\(g'=\\frac{4t^3}{(1+t^8)\\tan^{-1}(t^4)}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Three layers: \\(\\ln\\) → \\(\\tan^{-1}\\) → \\(t^4\\).</p><p>\\(\\ln w\\to\\frac{w'}{w}\\) with \\(w=\\tan^{-1}(t^4)\\), and \\(w'=\\dfrac{4t^3}{1+t^8}\\).</p><p class=\"ans\">\\(g'(t)=\\dfrac{4t^3}{(1+t^8)\\tan^{-1}(t^4)}\\)</p>"
        }
@@ -2791,6 +2839,10 @@ export const sections: Section[] = [
       "question": "Find \\(f'(z)\\) if \\(f(z)=e^{\\sin^{-1}(z^2)}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Outer: \\(e^{(\\,\\cdot\\,)}\\). Middle: \\(w=\\sin^{-1}(z^2)\\). Inner: \\(z^2\\).</p>\\[\\displaystyle f=e^{\\sin^{-1}(z^2)}\\]<p><strong>Step 2.</strong> Rule: \\((e^w)'=e^w\\cdot w'\\). The exponential copies itself, then multiplies by the derivative of the exponent.</p>\\[\\displaystyle f'=e^{w}\\cdot w'\\]<p><strong>Step 3.</strong> Arcsin chain rule with inner \\(z^2\\): derivative \\(2z\\), square \\(z^4\\).</p>\\[\\displaystyle w'=\\frac{2z}{\\sqrt{1-(z^2)^2}}=\\frac{2z}{\\sqrt{1-z^4}}\\]<p><strong>Step 4.</strong> Multiply \\(e^w\\) by \\(w'\\).</p>\\[\\displaystyle f'=\\frac{2z\\,e^{\\sin^{-1}(z^2)}}{\\sqrt{1-z^4}}\\]<p><strong>What you found:</strong></p><ul><li>\\(w=\\sin^{-1}(z^2)\\)</li><li>\\(w'=\\frac{2z}{\\sqrt{1-z^4}}\\)</li><li>\\(f'=\\frac{2ze^{\\sin^{-1}(z^2)}}{\\sqrt{1-z^4}}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\((e^w)'=e^w\\cdot w'\\) with \\(w=\\sin^{-1}(z^2)\\).</p><p>\\(w'=\\dfrac{2z}{\\sqrt{1-z^4}}\\).</p><p class=\"ans\">\\(f'(z)=\\dfrac{2z\\,e^{\\sin^{-1}(z^2)}}{\\sqrt{1-z^4}}\\)</p>"
        }
@@ -2838,6 +2890,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find \\(R'(t)\\) if \\(R(t)=\\sin^{-1}\\!\\left(\\dfrac1t\\right)\\), for \\(t>1\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Outer \\(\\sin^{-1}\\), inner \\(u=\\frac1t\\).</p>\\[\\displaystyle R=\\sin^{-1}\\Big(\\frac1t\\Big)\\]<p><strong>Step 2.</strong> Power rule on \\(t^{-1}\\).</p>\\[\\displaystyle u'=-\\frac1{t^2}\\]<p><strong>Step 3.</strong> Build the expression under the root first and combine it over one denominator. This is what makes the simplification possible.</p>\\[\\displaystyle 1-u^2=1-\\frac1{t^2}=\\frac{t^2-1}{t^2}\\]<p><strong>Step 4.</strong> Root of top over root of bottom; \\(\\sqrt{t^2}=|t|=t\\) because the problem says \\(t>1\\).</p>\\[\\displaystyle \\sqrt{1-u^2}=\\frac{\\sqrt{t^2-1}}{t}\\]<p><strong>Step 5.</strong> Rule: \\(\\dfrac{d}{dx}\\sin^{-1}u=\\dfrac{u'}{\\sqrt{1-u^2}}\\). Again the \\(u'\\) on top is the chain rule.</p>\\[\\displaystyle R'=\\frac{-1/t^2}{\\sqrt{t^2-1}/t}\\]<p><strong>Step 6.</strong> Dividing by a fraction = multiplying by its flip. One \\(t\\) cancels.</p>\\[\\displaystyle R'=-\\frac1{t^2}\\cdot\\frac{t}{\\sqrt{t^2-1}}=-\\frac{1}{t\\sqrt{t^2-1}}\\]<p><strong>What you found:</strong></p><ul><li>\\(u=\\frac1t\\)</li><li>\\(u'=-\\frac1{t^2}\\)</li><li>\\(1-u^2=\\frac{t^2-1}{t^2}\\)</li><li>\\(\\sqrt{1-u^2}=\\frac{\\sqrt{t^2-1}}t\\)</li><li>\\(R'=-\\frac1{t\\sqrt{t^2-1}}\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\(u=\\frac1t\\), \\(u'=-\\frac1{t^2}\\), \\(1-u^2=1-\\frac1{t^2}=\\frac{t^2-1}{t^2}\\).</p><p>\\(\\sqrt{1-u^2}=\\frac{\\sqrt{t^2-1}}{t}\\) (for \\(t>0\\)). So \\(R'=\\dfrac{-1/t^2}{\\sqrt{t^2-1}/t}\\).</p><p class=\"ans\">\\(R'(t)=-\\dfrac{1}{t\\sqrt{t^2-1}}\\)</p>"
@@ -2907,6 +2963,10 @@ export const sections: Section[] = [
       "question": "Find \\(y'\\) if \\(y=x\\sin^{-1}x+\\sqrt{1-x^2}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> A sum: differentiate each term separately. \\(A\\) needs the product rule, \\(B\\) needs the chain rule.</p>\\[\\displaystyle y=\\underbrace{x\\sin^{-1}x}_{A}+\\underbrace{\\sqrt{1-x^2}}_{B}\\]<p><strong>Step 2.</strong> Product rule on \\(x\\cdot\\sin^{-1}x\\).</p>\\[\\displaystyle A'=1\\cdot\\sin^{-1}x+x\\cdot\\frac{1}{\\sqrt{1-x^2}}\\]<p><strong>Step 3.</strong> Chain rule on \\(\\sqrt{u}\\) with \\(u=1-x^2\\): \\((\\sqrt u)'=\\frac{u'}{2\\sqrt u}\\), \\(u'=-2x\\). The 2s cancel.</p>\\[\\displaystyle B'=\\frac{1}{2\\sqrt{1-x^2}}\\cdot(-2x)=-\\frac{x}{\\sqrt{1-x^2}}\\]<p><strong>Step 4.</strong> Add \\(A'+B'\\).</p>\\[\\displaystyle y'=\\sin^{-1}x+\\frac{x}{\\sqrt{1-x^2}}-\\frac{x}{\\sqrt{1-x^2}}\\]<p><strong>Step 5.</strong> The fractions are equal and opposite, so they cancel. Clean answers like this are a sign you did it right.</p>\\[\\displaystyle y'=\\sin^{-1}x\\]<p><strong>What you found:</strong></p><ul><li>\\(A'=\\sin^{-1}x+\\frac{x}{\\sqrt{1-x^2}}\\)</li><li>\\(B'=-\\frac{x}{\\sqrt{1-x^2}}\\)</li><li>\\(y'=\\sin^{-1}x\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Product rule on the first term: \\(\\sin^{-1}x+\\dfrac{x}{\\sqrt{1-x^2}}\\).</p><p>Chain rule on the second: \\(\\dfrac{-2x}{2\\sqrt{1-x^2}}=-\\dfrac{x}{\\sqrt{1-x^2}}\\).</p><p>They cancel.</p><p class=\"ans\">\\(y'=\\sin^{-1}x\\)</p>"
        }
@@ -2958,6 +3018,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find \\(h'(t)\\) if \\(h(t)=\\cot^{-1}(t)+\\cot^{-1}(1/t)\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> A sum of two arccot terms. Differentiate each.</p>\\[\\displaystyle h=\\cot^{-1}t+\\cot^{-1}\\Big(\\frac1t\\Big)\\]<p><strong>Step 2.</strong> Rule: arccot is arctan with a minus (it is a “co” function).</p>\\[\\displaystyle \\big(\\cot^{-1}u\\big)'=-\\frac{u'}{1+u^2}\\]<p><strong>Step 3.</strong> First term: \\(u=t\\), \\(u'=1\\).</p>\\[\\displaystyle \\big(\\cot^{-1}t\\big)'=-\\frac{1}{1+t^2}\\]<p><strong>Step 4.</strong> Second term: \\(u=\\frac1t\\), \\(u'=-\\frac1{t^2}\\). The two minuses make a plus; multiply top and bottom by \\(t^2\\).</p>\\[\\displaystyle \\Big(\\cot^{-1}\\tfrac1t\\Big)'=-\\frac{-1/t^2}{1+1/t^2}=\\frac{1}{t^2+1}\\]<p><strong>Step 5.</strong> They cancel. Derivative zero means \\(h\\) is constant on each interval of its domain (\\(t>0\\) and \\(t<0\\) separately).</p>\\[\\displaystyle h'=0\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{term 1}':\\ -\\frac1{1+t^2}\\)</li><li>\\(\\text{term 2}':\\ \\frac1{1+t^2}\\)</li><li>\\(h'=0\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\((\\cot^{-1}u)'=-\\dfrac{u'}{1+u^2}\\).</p><p>First term: \\(-\\dfrac{1}{1+t^2}\\). Second: \\(-\\dfrac{-1/t^2}{1+1/t^2}=\\dfrac{1}{t^2+1}\\).</p><p class=\"ans\">\\(h'(t)=0\\) (so \\(h\\) is constant on each side of 0)</p>"
@@ -3011,6 +3075,10 @@ export const sections: Section[] = [
       "question": "Find the tangent line to \\(y=\\tan^{-1}x\\) at \\(x=1\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> A tangent line needs a <b>point</b> and a <b>slope</b>. Point first: which angle has tangent 1? \\(45^\\circ=\\frac\\pi4\\).</p>\\[\\displaystyle y_0=\\tan^{-1}(1)=\\frac\\pi4\\]<p><strong>Step 2.</strong> Derivative of arctan.</p>\\[\\displaystyle y'=\\frac{1}{1+x^2}\\]<p><strong>Step 3.</strong> Slope = derivative evaluated at \\(x=1\\).</p>\\[\\displaystyle m=y'(1)=\\frac{1}{1+1}=\\frac12\\]<p><strong>Step 4.</strong> Point-slope form \\(y-y_0=m(x-x_0)\\).</p>\\[\\displaystyle y-\\frac\\pi4=\\frac12(x-1)\\]<p><strong>Step 5.</strong> Optional: solve for \\(y\\). Either form is accepted.</p>\\[\\displaystyle y=\\frac12x-\\frac12+\\frac\\pi4\\]<p><strong>What you found:</strong></p><ul><li>\\((x_0,y_0)=(1,\\tfrac\\pi4)\\)</li><li>\\(m=\\tfrac12\\)</li><li>\\(\\text{line}:\\ y=\\tfrac12(x-1)+\\tfrac\\pi4\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Point: \\(\\tan^{-1}1=\\frac\\pi4\\).</p><p>Slope: \\(\\frac{1}{1+1^2}=\\frac12\\).</p><p class=\"ans\">\\(y=\\frac12(x-1)+\\frac\\pi4\\)</p>"
        }
@@ -3062,6 +3130,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find the slope of \\(y=\\tan^{-1}(e^{2x})\\) at \\(x=0\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Outer arctan, inner \\(e^{2x}\\).</p>\\[\\displaystyle u=e^{2x}\\]<p><strong>Step 2.</strong> Chain rule on \\(e^{2x}\\) brings out the 2. Squaring doubles the exponent.</p>\\[\\begin{gathered}\\displaystyle u'=2e^{2x}\\\\\\displaystyle u^2=e^{4x}\\end{gathered}\\]<p><strong>Step 3.</strong> Rule: \\(\\dfrac{d}{dx}\\tan^{-1}u=\\dfrac{u'}{1+u^2}\\). It is the chain rule built in: the \\(u'\\) on top is the derivative of the inside.</p>\\[\\displaystyle y'=\\frac{2e^{2x}}{1+e^{4x}}\\]<p><strong>Step 4.</strong> Only now plug in \\(x=0\\). Always differentiate first, then substitute. \\(e^0=1\\).</p>\\[\\displaystyle y'(0)=\\frac{2e^0}{1+e^0}=\\frac{2}{2}=1\\]<p><strong>What you found:</strong></p><ul><li>\\(u=e^{2x}\\)</li><li>\\(u'=2e^{2x}\\)</li><li>\\(u^2=e^{4x}\\)</li><li>\\(\\text{slope}:\\ 1\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\(u=e^{2x}\\), \\(u'=2e^{2x}\\), \\(u^2=e^{4x}\\). So \\(y'=\\dfrac{2e^{2x}}{1+e^{4x}}\\).</p><p>At \\(x=0\\): \\(\\frac{2}{1+1}\\).</p><p class=\"ans\">Slope \\(=1\\)</p>"
@@ -3119,6 +3191,10 @@ export const sections: Section[] = [
         "html": "<p>Rewrite \\(y=\\sin^{-1}x\\) as \\(\\sin y=x\\), then differentiate implicitly.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Strategy for every inverse-function proof: undo the inverse. If \\(y\\) is the angle whose sine is \\(x\\), then \\(\\sin y=x\\). The range of arcsin is \\([-\\frac\\pi2,\\frac\\pi2]\\); we will need it.</p>\\[\\begin{gathered}\\displaystyle y=\\sin^{-1}x\\iff \\sin y=x\\\\\\displaystyle -\\tfrac\\pi2\\le y\\le\\tfrac\\pi2\\end{gathered}\\]<p><strong>Step 2.</strong> Differentiate both sides with respect to \\(x\\). Left side uses the chain rule because \\(y\\) depends on \\(x\\) (implicit differentiation).</p>\\[\\displaystyle \\cos y\\cdot y'=1\\]<p><strong>Step 3.</strong> Solve for \\(y'\\). But the answer must be in terms of \\(x\\), not \\(y\\).</p>\\[\\displaystyle y'=\\frac{1}{\\cos y}\\]<p><strong>Step 4.</strong> Pythagorean identity \\(\\sin^2y+\\cos^2y=1\\). We take the <b>positive</b> root because \\(\\cos y\\ge0\\) when \\(y\\in[-\\frac\\pi2,\\frac\\pi2]\\). That is why the range mattered.</p>\\[\\displaystyle \\cos y=\\sqrt{1-\\sin^2y}\\]<p><strong>Step 5.</strong> Replace \\(\\sin y\\) with \\(x\\) (from line 1).</p>\\[\\displaystyle \\cos y=\\sqrt{1-x^2}\\]<p><strong>Step 6.</strong> Substitute into line 3. Proof complete.</p>\\[\\displaystyle \\frac{d}{dx}\\sin^{-1}x=\\frac{1}{\\sqrt{1-x^2}}\\ \\ \\checkmark\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=\\frac1{\\sqrt{1-x^2}}\\)</li><li>\\(\\cos y=\\sqrt{1-x^2}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Let \\(y=\\sin^{-1}x\\), so \\(\\sin y=x\\) with \\(-\\frac\\pi2\\le y\\le\\frac\\pi2\\).</p><p>Differentiate implicitly: \\(\\cos y\\cdot y'=1\\Rightarrow y'=\\dfrac{1}{\\cos y}\\).</p><p>On \\([-\\frac\\pi2,\\frac\\pi2]\\), \\(\\cos y\\ge0\\), so \\(\\cos y=\\sqrt{1-\\sin^2y}=\\sqrt{1-x^2}\\).</p><p class=\"ans\">\\(\\dfrac{d}{dx}\\sin^{-1}x=\\dfrac{1}{\\sqrt{1-x^2}}\\) ✓</p>"
        }
@@ -3174,6 +3250,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Prove that \\(\\dfrac{d}{dx}\\cos^{-1}x=-\\dfrac{1}{\\sqrt{1-x^2}}\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Undo the inverse. Range of arccos is \\([0,\\pi]\\).</p>\\[\\begin{gathered}\\displaystyle y=\\cos^{-1}x\\iff\\cos y=x\\\\\\displaystyle 0\\le y\\le\\pi\\end{gathered}\\]<p><strong>Step 2.</strong> Differentiate implicitly. \\((\\cos y)'=-\\sin y\\cdot y'\\).</p>\\[\\displaystyle -\\sin y\\cdot y'=1\\]<p><strong>Step 3.</strong> Solve for \\(y'\\).</p>\\[\\displaystyle y'=-\\frac{1}{\\sin y}\\]<p><strong>Step 4.</strong> Positive root because \\(\\sin y\\ge0\\) on \\([0,\\pi]\\) (upper half of the unit circle). Then \\(\\cos y=x\\).</p>\\[\\displaystyle \\sin y=\\sqrt{1-\\cos^2y}=\\sqrt{1-x^2}\\]<p><strong>Step 5.</strong> Substitute. The minus came from \\((\\cos y)'=-\\sin y\\).</p>\\[\\displaystyle \\frac{d}{dx}\\cos^{-1}x=-\\frac{1}{\\sqrt{1-x^2}}\\ \\ \\checkmark\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=-\\frac1{\\sqrt{1-x^2}}\\)</li><li>\\(\\sin y=\\sqrt{1-x^2}\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>Let \\(y=\\cos^{-1}x\\), so \\(\\cos y=x\\) with \\(0\\le y\\le\\pi\\).</p><p>Differentiate: \\(-\\sin y\\cdot y'=1\\Rightarrow y'=-\\dfrac{1}{\\sin y}\\).</p><p>On \\([0,\\pi]\\), \\(\\sin y\\ge0\\), so \\(\\sin y=\\sqrt{1-\\cos^2y}=\\sqrt{1-x^2}\\).</p><p class=\"ans\">\\(\\dfrac{d}{dx}\\cos^{-1}x=-\\dfrac{1}{\\sqrt{1-x^2}}\\) ✓</p>"
@@ -3282,6 +3362,10 @@ export const sections: Section[] = [
       "question": "Differentiate \\(f(x)=\\sin(\\ln x)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Read the structure: outer \\(\\sin(\\,\\cdot\\,)\\), inner \\(u=\\ln x\\).</p>\\[\\displaystyle f=\\sin(\\ln x)\\]<p><strong>Step 2.</strong> Derivative of \\(\\ln x\\).</p>\\[\\displaystyle u'=\\frac1x\\]<p><strong>Step 3.</strong> Chain rule: derivative of the outside (evaluated at the untouched inside) times derivative of the inside.</p>\\[\\displaystyle (\\sin u)'=\\cos u\\cdot u'\\]<p><strong>Step 4.</strong> Plug in \\(u\\) and \\(u'\\). Keep \\(\\ln x\\) inside the cosine; do not differentiate it there.</p>\\[\\displaystyle f'=\\cos(\\ln x)\\cdot\\frac1x\\]<p><strong>Step 5.</strong> Tidy into one fraction.</p>\\[\\displaystyle f'=\\frac{\\cos(\\ln x)}{x}\\]<p><strong>What you found:</strong></p><ul><li>\\(u=\\ln x\\)</li><li>\\(u'=\\frac1x\\)</li><li>\\(f'=\\frac{\\cos(\\ln x)}x\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Outside \\(\\sin u\\), inside \\(u=\\ln x\\), \\(u'=\\tfrac1x\\).</p><p class=\"ans\">\\(f'(x)=\\dfrac{\\cos(\\ln x)}{x}\\)</p>"
        }
@@ -3338,6 +3422,10 @@ export const sections: Section[] = [
         "html": "<p>Split the product with \\(\\ln(ab)=\\ln a+\\ln b\\), and remember \\(\\ln e^{k}=k\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Before differentiating a log, ask: can log laws make it simpler? A product inside a log splits into a sum.</p>\\[\\displaystyle g=\\ln\\big(x\\,e^{-2x}\\big)\\]<p><strong>Step 2.</strong> Log law: \\(\\ln(ab)=\\ln a+\\ln b\\).</p>\\[\\displaystyle g=\\ln x+\\ln e^{-2x}\\]<p><strong>Step 3.</strong> \\(\\ln\\) and \\(e\\) undo each other: \\(\\ln e^{k}=k\\).</p>\\[\\displaystyle g=\\ln x-2x\\]<p><strong>Step 4.</strong> Now it is easy: \\((\\ln x)'=\\frac1x\\), \\((-2x)'=-2\\). No chain or product rule needed.</p>\\[\\displaystyle g'=\\frac1x-2\\]<p><strong>What you found:</strong></p><ul><li>\\(g=\\ln x-2x\\)</li><li>\\(g'=\\frac1x-2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Log laws first: \\(g(x)=\\ln x+\\ln e^{-2x}=\\ln x-2x\\).</p><p class=\"ans\">\\(g'(x)=\\dfrac1x-2\\)</p>"
        }
@@ -3379,6 +3467,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Differentiate \\(y=\\log_8(x^2+3x)\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> A log with base 8, not \\(e\\). Inner \\(u=x^2+3x\\).</p>\\[\\displaystyle y=\\log_8\\big(x^2+3x\\big)\\]<p><strong>Step 2.</strong> Power rule term by term.</p>\\[\\displaystyle u'=2x+3\\]<p><strong>Step 3.</strong> Rule: same as \\(\\ln\\) but divide by an extra \\(\\ln b\\). Reason: \\(\\log_b u=\\frac{\\ln u}{\\ln b}\\), and \\(\\ln b\\) is just a constant.</p>\\[\\displaystyle \\big(\\log_b u\\big)'=\\frac{u'}{u\\,\\ln b}\\]<p><strong>Step 4.</strong> Substitute with \\(b=8\\).</p>\\[\\displaystyle y'=\\frac{2x+3}{(x^2+3x)\\ln8}\\]<p><strong>What you found:</strong></p><ul><li>\\(u=x^2+3x\\)</li><li>\\(u'=2x+3\\)</li><li>\\(y'=\\frac{2x+3}{(x^2+3x)\\ln8}\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\(\\dfrac{d}{dx}\\log_b u=\\dfrac{u'}{u\\ln b}\\), with \\(u=x^2+3x\\), \\(u'=2x+3\\).</p><p class=\"ans\">\\(y'=\\dfrac{2x+3}{(x^2+3x)\\ln 8}\\)</p>"
@@ -3428,6 +3520,10 @@ export const sections: Section[] = [
       "question": "Differentiate \\(F(s)=\\ln(\\ln s)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Log of a log. Outer \\(\\ln\\), inner \\(u=\\ln s\\).</p>\\[\\displaystyle F=\\ln(\\ln s)\\]<p><strong>Step 2.</strong> Derivative of the inner log.</p>\\[\\displaystyle u'=\\frac1s\\]<p><strong>Step 3.</strong> Rule \\((\\ln u)'=\\frac{u'}{u}\\).</p>\\[\\displaystyle F'=\\frac{u'}{u}=\\frac{1/s}{\\ln s}\\]<p><strong>Step 4.</strong> Move the \\(s\\) down.</p>\\[\\displaystyle F'=\\frac{1}{s\\ln s}\\]<p><strong>What you found:</strong></p><ul><li>\\(u=\\ln s\\)</li><li>\\(u'=\\frac1s\\)</li><li>\\(F'=\\frac1{s\\ln s}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Inside \\(u=\\ln s\\), \\(u'=\\tfrac1s\\). So \\(F'=\\dfrac{1/s}{\\ln s}\\).</p><p class=\"ans\">\\(F'(s)=\\dfrac{1}{s\\ln s}\\)</p>"
        }
@@ -3475,6 +3571,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Differentiate \\(T(z)=2^z\\log_2 z\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> A product, so product rule.</p>\\[\\displaystyle T=\\underbrace{2^z}_{f}\\cdot\\underbrace{\\log_2z}_{g}\\]<p><strong>Step 2.</strong> Rule: \\((b^z)'=b^z\\ln b\\). Like \\(e^z\\), but with an extra \\(\\ln b\\) multiplied.</p>\\[\\displaystyle f'=2^z\\ln2\\]<p><strong>Step 3.</strong> Rule: \\((\\log_b z)'=\\frac1{z\\ln b}\\). Notice: exponentials <b>multiply</b> by \\(\\ln b\\), logs <b>divide</b> by it.</p>\\[\\displaystyle g'=\\frac{1}{z\\ln2}\\]<p><strong>Step 4.</strong> Product rule.</p>\\[\\displaystyle T'=f'g+fg'\\]<p><strong>Step 5.</strong> Substitute.</p>\\[\\displaystyle T'=2^z\\ln2\\,\\log_2z+\\frac{2^z}{z\\ln2}\\]<p><strong>What you found:</strong></p><ul><li>\\(f=2^z\\)</li><li>\\(g=\\log_2 z\\)</li><li>\\(f'=2^z\\ln2\\)</li><li>\\(g'=\\frac1{z\\ln2}\\)</li><li>\\(T'=2^z\\ln2\\log_2z+\\frac{2^z}{z\\ln2}\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>Product rule with \\((2^z)'=2^z\\ln2\\) and \\((\\log_2 z)'=\\dfrac{1}{z\\ln 2}\\).</p><p class=\"ans\">\\(T'(z)=2^z\\ln 2\\,\\log_2 z+\\dfrac{2^z}{z\\ln 2}\\)</p>"
@@ -3538,6 +3638,10 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=\\ln|3-2x^5|\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Absolute value inside \\(\\ln\\). Good news: \\(\\ln|u|\\) has the same derivative as \\(\\ln u\\), namely \\(\\frac{u'}{u}\\).</p>\\[\\displaystyle y=\\ln|3-2x^5|\\]<p><strong>Step 2.</strong> \\((-2x^5)'=-2\\cdot5x^4\\).</p>\\[\\displaystyle u'=-10x^4\\]<p><strong>Step 3.</strong> Apply \\(\\frac{u'}{u}\\). Drop the absolute value bars in the answer.</p>\\[\\displaystyle y'=\\frac{-10x^4}{3-2x^5}\\]<p><strong>Step 4.</strong> Optional: multiply top and bottom by \\(-1\\) to remove the leading minus.</p>\\[\\displaystyle y'=\\frac{10x^4}{2x^5-3}\\]<p><strong>What you found:</strong></p><ul><li>\\(u=3-2x^5\\)</li><li>\\(u'=-10x^4\\)</li><li>\\(y'=\\frac{10x^4}{2x^5-3}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\ln|u|\\) has the same derivative \\(\\dfrac{u'}{u}\\). Here \\(u'=-10x^4\\).</p><p class=\"ans\">\\(y'=\\dfrac{-10x^4}{3-2x^5}=\\dfrac{10x^4}{2x^5-3}\\)</p>"
        }
@@ -3590,6 +3694,10 @@ export const sections: Section[] = [
         "html": "<p>Factor \\(e^{-x}\\) out of the inside, then use log laws.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Messy inside. Look for a common factor first.</p>\\[\\displaystyle y=\\ln\\big(e^{-x}+xe^{-x}\\big)\\]<p><strong>Step 2.</strong> Factor out \\(e^{-x}\\).</p>\\[\\displaystyle y=\\ln\\big(e^{-x}(1+x)\\big)\\]<p><strong>Step 3.</strong> Log of a product splits; \\(\\ln e^{-x}=-x\\).</p>\\[\\displaystyle y=\\ln e^{-x}+\\ln(1+x)=-x+\\ln(1+x)\\]<p><strong>Step 4.</strong> Differentiate the simpler form term by term.</p>\\[\\displaystyle y'=-1+\\frac{1}{1+x}\\]<p><strong>Step 5.</strong> Common denominator.</p>\\[\\displaystyle y'=\\frac{-(1+x)+1}{1+x}\\]<p><strong>Step 6.</strong> Simplify the top: \\(-1-x+1=-x\\).</p>\\[\\displaystyle y'=-\\frac{x}{1+x}\\]<p><strong>What you found:</strong></p><ul><li>\\(y=-x+\\ln(1+x)\\)</li><li>\\(y'=-\\frac{x}{1+x}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Factor inside: \\(e^{-x}(1+x)\\). Then \\(y=\\ln e^{-x}+\\ln(1+x)=-x+\\ln(1+x)\\).</p><p>\\(y'=-1+\\dfrac{1}{1+x}=\\dfrac{-(1+x)+1}{1+x}\\).</p><p class=\"ans\">\\(y'=-\\dfrac{x}{1+x}\\)</p>"
        }
@@ -3639,6 +3747,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find \\(y'\\) and \\(y''\\) for \\(y=\\sqrt{x}\\,\\ln x\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product rule for \\(y'\\).</p>\\[\\displaystyle y=\\underbrace{\\sqrt x}_{f}\\cdot\\underbrace{\\ln x}_{g}\\]<p><strong>Step 2.</strong> \\(f'g+fg'\\).</p>\\[\\displaystyle y'=\\frac{\\ln x}{2\\sqrt x}+\\sqrt x\\cdot\\frac1x\\]<p><strong>Step 3.</strong> Simplify the second term and rewrite it over \\(2\\sqrt x\\) so the fractions can be added.</p>\\[\\displaystyle \\sqrt x\\cdot\\frac1x=\\frac{1}{\\sqrt x}=\\frac{2}{2\\sqrt x}\\]<p><strong>Step 4.</strong> Add the numerators.</p>\\[\\displaystyle y'=\\frac{\\ln x+2}{2\\sqrt x}\\]<p><strong>Step 5.</strong> Quotient rule on \\(y'\\): (bottom·top′ − top·bottom′)/bottom². Top′ \\(=\\frac1x\\), bottom′ \\(=(2\\sqrt x)'=\\frac1{\\sqrt x}\\).</p>\\[\\displaystyle y''=\\frac{\\frac1x\\cdot2\\sqrt x-(\\ln x+2)\\cdot\\frac1{\\sqrt x}}{(2\\sqrt x)^2}\\]<p><strong>Step 6.</strong> \\(\\frac1x\\cdot2\\sqrt x=\\frac2{\\sqrt x}\\). Then \\(2-(\\ln x+2)=-\\ln x\\).</p>\\[\\displaystyle =\\frac{\\frac{2}{\\sqrt x}-\\frac{\\ln x+2}{\\sqrt x}}{4x}=\\frac{-\\ln x}{\\sqrt x\\cdot4x}\\]<p><strong>Step 7.</strong> \\(x\\sqrt x=x^{3/2}\\).</p>\\[\\displaystyle y''=-\\frac{\\ln x}{4x^{3/2}}\\]<p><strong>What you found:</strong></p><ul><li>\\(f'=\\frac1{2\\sqrt x}\\)</li><li>\\(g'=\\frac1x\\)</li><li>\\(y'=\\frac{\\ln x+2}{2\\sqrt x}\\)</li><li>\\(y''=-\\frac{\\ln x}{4x^{3/2}}\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\(y'=\\dfrac{1}{2\\sqrt x}\\ln x+\\sqrt x\\cdot\\dfrac1x=\\dfrac{\\ln x+2}{2\\sqrt x}\\).</p><p>Quotient rule: \\(y''=\\dfrac{\\frac1x\\cdot2\\sqrt x-(\\ln x+2)\\cdot\\frac{1}{\\sqrt x}}{4x}=\\dfrac{2-\\ln x-2}{4x\\sqrt x}\\).</p><p class=\"ans\">\\(y'=\\dfrac{\\ln x+2}{2\\sqrt x}\\), \\(y''=-\\dfrac{\\ln x}{4x^{3/2}}\\)</p>"
@@ -3704,6 +3816,10 @@ export const sections: Section[] = [
       "question": "Differentiate \\(f(x)=\\ln(x^2-2x)\\) and find the domain of \\(f\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Two tasks: derivative and domain. Inner \\(u=x^2-2x\\).</p>\\[\\displaystyle f=\\ln(x^2-2x)\\]<p><strong>Step 2.</strong> \\(\\frac{u'}{u}\\), then factor top and bottom.</p>\\[\\displaystyle f'=\\frac{2x-2}{x^2-2x}=\\frac{2(x-1)}{x(x-2)}\\]<p><strong>Step 3.</strong> Domain: you can only take \\(\\ln\\) of a <b>positive</b> number, so the inside must be \\(>0\\).</p>\\[\\displaystyle \\text{need } x(x-2)>0\\]<p><strong>Step 4.</strong> Sign chart: zeros at 0 and 2. Test \\(x=-1\\): \\((-)(-)>0\\) ✓. Test \\(x=1\\): \\((+)(-)<0\\) ✗. Test \\(x=3\\): \\((+)(+)>0\\) ✓.</p>\\[\\displaystyle x<0\\ \\text{ or }\\ x>2\\]<p><strong>Step 5.</strong> Write in interval notation.</p>\\[\\displaystyle \\text{Domain}=(-\\infty,0)\\cup(2,\\infty)\\]<p><strong>What you found:</strong></p><ul><li>\\(u=x^2-2x\\)</li><li>\\(u'=2x-2\\)</li><li>\\(f'=\\frac{2(x-1)}{x(x-2)}\\)</li><li>\\(\\text{domain}:\\ (-\\infty,0)\\cup(2,\\infty)\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'(x)=\\dfrac{2x-2}{x^2-2x}\\).</p><p>Domain: need \\(x^2-2x=x(x-2)>0\\), which happens when \\(x<0\\) or \\(x>2\\).</p><p class=\"ans\">\\(f'(x)=\\dfrac{2(x-1)}{x(x-2)}\\); domain \\((-\\infty,0)\\cup(2,\\infty)\\)</p>"
        }
@@ -3760,6 +3876,10 @@ export const sections: Section[] = [
       "question": "Find the tangent line to \\(y=\\ln(x^2-3x+1)\\) at \\((3,0)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Tangent line needs a slope. \\(\\frac{u'}{u}\\) with \\(u=x^2-3x+1\\).</p>\\[\\displaystyle y'=\\frac{2x-3}{x^2-3x+1}\\]<p><strong>Step 2.</strong> Evaluate at the point's \\(x\\)-value.</p>\\[\\displaystyle m=y'(3)=\\frac{6-3}{9-9+1}=3\\]<p><strong>Step 3.</strong> Point-slope with \\((3,0)\\).</p>\\[\\displaystyle y-0=3(x-3)\\]<p><strong>Step 4.</strong> Simplify.</p>\\[\\displaystyle y=3x-9\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=\\frac{2x-3}{x^2-3x+1}\\)</li><li>\\(m=3\\)</li><li>\\(\\text{line}:\\ y=3x-9\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(y'=\\dfrac{2x-3}{x^2-3x+1}\\). At \\(x=3\\): \\(\\dfrac{3}{1}=3\\).</p><p>\\(y-0=3(x-3)\\).</p><p class=\"ans\">\\(y=3x-9\\)</p>"
        }
@@ -3808,6 +3928,10 @@ export const sections: Section[] = [
       "question": "Let \\(f(x)=cx+\\ln(\\cos x)\\). For what \\(c\\) is \\(f'(\\pi/4)=6\\)?",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(c\\) is an unknown constant. Differentiate as usual, treating \\(c\\) like a number.</p>\\[\\displaystyle f=cx+\\ln(\\cos x)\\]<p><strong>Step 2.</strong> \\(\\frac{u'}{u}\\) with \\(u=\\cos x\\), \\(u'=-\\sin x\\). Sine over cosine is tangent.</p>\\[\\displaystyle \\big(\\ln\\cos x\\big)'=\\frac{-\\sin x}{\\cos x}=-\\tan x\\]<p><strong>Step 3.</strong> \\((cx)'=c\\).</p>\\[\\displaystyle f'=c-\\tan x\\]<p><strong>Step 4.</strong> \\(\\tan\\frac\\pi4=1\\). Set equal to the given 6.</p>\\[\\displaystyle f'(\\tfrac\\pi4)=c-1=6\\]<p><strong>Step 5.</strong> Solve.</p>\\[\\displaystyle c=7\\]<p><strong>What you found:</strong></p><ul><li>\\(f'=c-\\tan x\\)</li><li>\\(c=7\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'(x)=c+\\dfrac{-\\sin x}{\\cos x}=c-\\tan x\\).</p><p>\\(f'(\\pi/4)=c-1=6\\).</p><p class=\"ans\">\\(c=7\\)</p>"
        }
@@ -3854,6 +3978,10 @@ export const sections: Section[] = [
       "question": "Use logarithmic differentiation: \\(y=(x^2+2)^2(x^4+4)^4\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Logarithmic differentiation: take \\(\\ln\\) of both sides. Why? Logs turn products into sums and powers into multipliers, which are much easier to differentiate.</p>\\[\\displaystyle \\ln y=\\ln\\!\\big[(x^2+2)^2(x^4+4)^4\\big]\\]<p><strong>Step 2.</strong> Log laws: \\(\\ln(ab)=\\ln a+\\ln b\\) and \\(\\ln a^n=n\\ln a\\).</p>\\[\\displaystyle \\ln y=2\\ln(x^2+2)+4\\ln(x^4+4)\\]<p><strong>Step 3.</strong> Differentiate both sides. Left: \\((\\ln y)'=\\frac{y'}{y}\\) (chain rule, since \\(y\\) depends on \\(x\\)). Right: \\(\\frac{u'}{u}\\) for each log.</p>\\[\\displaystyle \\frac{y'}{y}=2\\cdot\\frac{2x}{x^2+2}+4\\cdot\\frac{4x^3}{x^4+4}\\]<p><strong>Step 4.</strong> Multiply both sides by \\(y\\).</p>\\[\\displaystyle y'=y\\left(\\frac{4x}{x^2+2}+\\frac{16x^3}{x^4+4}\\right)\\]<p><strong>Step 5.</strong> Replace \\(y\\) with the original function. Always do this last step.</p>\\[\\displaystyle y'=(x^2+2)^2(x^4+4)^4\\left(\\frac{4x}{x^2+2}+\\frac{16x^3}{x^4+4}\\right)\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=y\\left(\\frac{4x}{x^2+2}+\\frac{16x^3}{x^4+4}\\right)\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\ln y=2\\ln(x^2+2)+4\\ln(x^4+4)\\)</p><p>\\(\\dfrac{y'}{y}=\\dfrac{4x}{x^2+2}+\\dfrac{16x^3}{x^4+4}\\)</p><p class=\"ans\">\\(y'=(x^2+2)^2(x^4+4)^4\\left(\\dfrac{4x}{x^2+2}+\\dfrac{16x^3}{x^4+4}\\right)\\)</p>"
        }
@@ -3898,6 +4026,10 @@ export const sections: Section[] = [
         "html": "<p>Variable base and variable exponent: take ln of both sides.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Variable in the base <b>and</b> the exponent. Power rule (needs a constant exponent) and exponential rule (needs a constant base) both fail. Only log differentiation works.</p>\\[\\displaystyle y=x^{\\sin x}\\]<p><strong>Step 2.</strong> Take \\(\\ln\\); the exponent comes down in front.</p>\\[\\displaystyle \\ln y=\\sin x\\cdot\\ln x\\]<p><strong>Step 3.</strong> Left: implicit. Right: product rule on \\(\\sin x\\cdot\\ln x\\).</p>\\[\\displaystyle \\frac{y'}{y}=\\cos x\\ln x+\\sin x\\cdot\\frac1x\\]<p><strong>Step 4.</strong> Multiply by \\(y=x^{\\sin x}\\).</p>\\[\\displaystyle y'=x^{\\sin x}\\left(\\cos x\\ln x+\\frac{\\sin x}{x}\\right)\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=x^{\\sin x}\\left(\\cos x\\ln x+\\frac{\\sin x}x\\right)\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\ln y=\\sin x\\,\\ln x\\).</p><p>\\(\\dfrac{y'}{y}=\\cos x\\ln x+\\dfrac{\\sin x}{x}\\) (product rule).</p><p class=\"ans\">\\(y'=x^{\\sin x}\\left(\\cos x\\ln x+\\dfrac{\\sin x}{x}\\right)\\)</p>"
        }
@@ -3934,6 +4066,10 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=x^{\\ln x}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Variable base and variable exponent: log differentiation.</p>\\[\\displaystyle y=x^{\\ln x}\\]<p><strong>Step 2.</strong> Bring the exponent down.</p>\\[\\displaystyle \\ln y=\\ln x\\cdot\\ln x=(\\ln x)^2\\]<p><strong>Step 3.</strong> Chain rule on \\((\\ln x)^2\\): power rule on the outside, times \\((\\ln x)'=\\frac1x\\).</p>\\[\\displaystyle \\frac{y'}{y}=2\\ln x\\cdot\\frac1x\\]<p><strong>Step 4.</strong> Multiply by \\(y\\).</p>\\[\\displaystyle y'=\\frac{2\\ln x}{x}\\,x^{\\ln x}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=\\frac{2\\ln x}x\\,x^{\\ln x}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\ln y=\\ln x\\cdot\\ln x=(\\ln x)^2\\).</p><p>\\(\\dfrac{y'}{y}=\\dfrac{2\\ln x}{x}\\).</p><p class=\"ans\">\\(y'=\\dfrac{2\\ln x}{x}\\,x^{\\ln x}\\)</p>"
        }
@@ -3969,6 +4105,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find \\(y'\\) if \\(y=\\ln(x^2+y^2)\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(y\\) appears on both sides, so this is <b>implicit</b> differentiation. Every time you differentiate something with \\(y\\), multiply by \\(y'\\).</p>\\[\\displaystyle y=\\ln(x^2+y^2)\\]<p><strong>Step 2.</strong> Right side: \\(\\frac{u'}{u}\\) with \\(u=x^2+y^2\\), \\(u'=2x+2yy'\\).</p>\\[\\displaystyle y'=\\frac{2x+2y\\,y'}{x^2+y^2}\\]<p><strong>Step 3.</strong> Clear the fraction by multiplying both sides by \\(x^2+y^2\\).</p>\\[\\displaystyle y'(x^2+y^2)=2x+2y\\,y'\\]<p><strong>Step 4.</strong> Collect all \\(y'\\) terms on one side.</p>\\[\\displaystyle y'(x^2+y^2)-2y\\,y'=2x\\]<p><strong>Step 5.</strong> Factor out \\(y'\\).</p>\\[\\displaystyle y'(x^2+y^2-2y)=2x\\]<p><strong>Step 6.</strong> Divide.</p>\\[\\displaystyle y'=\\frac{2x}{x^2+y^2-2y}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=\\frac{2x}{x^2+y^2-2y}\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>Implicit: \\(y'=\\dfrac{2x+2yy'}{x^2+y^2}\\).</p><p>Multiply out: \\(y'(x^2+y^2)=2x+2yy'\\Rightarrow y'(x^2+y^2-2y)=2x\\).</p><p class=\"ans\">\\(y'=\\dfrac{2x}{x^2+y^2-2y}\\)</p>"
@@ -4013,6 +4153,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find a formula for \\(f^{(n)}(x)\\) if \\(f(x)=\\ln(x-1)\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Find a pattern by computing several derivatives. Write in power form so the power rule is easy.</p>\\[\\displaystyle f'=(x-1)^{-1}\\]<p><strong>Step 2.</strong> Power rule: bring down \\(-1\\).</p>\\[\\displaystyle f''=-1\\,(x-1)^{-2}\\]<p><strong>Step 3.</strong> Bring down \\(-2\\).</p>\\[\\displaystyle f'''=(-1)(-2)(x-1)^{-3}=2(x-1)^{-3}\\]<p><strong>Step 4.</strong> Bring down \\(-3\\).</p>\\[\\displaystyle f^{(4)}=2(-3)(x-1)^{-4}=-6(x-1)^{-4}\\]<p><strong>Step 5.</strong> Spot the pattern: signs alternate starting with \\(+\\) at \\(n=1\\); sizes are \\(0!,1!,2!,3!\\). The exponent is always \\(-n\\).</p>\\[\\begin{gathered}\\displaystyle 1\\\\\\displaystyle -1\\\\\\displaystyle 2\\\\\\displaystyle -6\\ =\\ (-1)^{n-1}(n-1)!\\end{gathered}\\]<p><strong>Step 6.</strong> Write the general formula. Check with \\(n=3\\): \\(\\frac{(+1)(2)}{(x-1)^3}\\) ✓.</p>\\[\\displaystyle f^{(n)}(x)=\\frac{(-1)^{n-1}(n-1)!}{(x-1)^n}\\]<p><strong>What you found:</strong></p><ul><li>\\(f'=(x-1)^{-1}\\)</li><li>\\(f''=-(x-1)^{-2}\\)</li><li>\\(f'''=2(x-1)^{-3}\\)</li><li>\\(f^{(4)}=-6(x-1)^{-4}\\)</li><li>\\(f^{(n)}=\\frac{(-1)^{n-1}(n-1)!}{(x-1)^n}\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\(f'=(x-1)^{-1}\\), \\(f''=-(x-1)^{-2}\\), \\(f'''=2(x-1)^{-3}\\), \\(f^{(4)}=-6(x-1)^{-4}\\).</p><p>Signs alternate and the constants are \\(0!,1!,2!,3!,\\dots\\)</p><p class=\"ans\">\\(f^{(n)}(x)=\\dfrac{(-1)^{n-1}(n-1)!}{(x-1)^n}\\)</p>"
@@ -4185,6 +4329,10 @@ export const sections: Section[] = [
       "question": "(a) \\(V\\) is the volume of a cube with edge \\(x\\). Find \\(\\frac{dV}{dt}\\) in terms of \\(\\frac{dx}{dt}\\). (b) If the edge grows at 4 cm/s, how fast is the volume growing when the edge is 15 cm?",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Step 1 of every related-rates problem: write the equation that connects the quantities. Cube volume = edge cubed.</p>\\[\\displaystyle V=x^3\\]<p><strong>Step 2.</strong> Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on. Power rule on \\(x^3\\), then multiply by \\(\\frac{dx}{dt}\\) because \\(x\\) depends on \\(t\\). This is part (a).</p>\\[\\displaystyle \\frac{dV}{dt}=3x^2\\frac{dx}{dt}\\]<p><strong>Step 3.</strong> List what is known at the moment in question.</p>\\[\\begin{gathered}\\displaystyle x=15\\\\\\displaystyle \\frac{dx}{dt}=4\\end{gathered}\\]<p><strong>Step 4.</strong> Only now plug in the numbers for this instant. Golden rule of related rates: <b>differentiate first, substitute second</b>. Plugging in too early turns variables into constants and their rates become 0.</p>\\[\\displaystyle \\frac{dV}{dt}=3(15)^2(4)=3\\cdot225\\cdot4\\]<p><strong>Step 5.</strong> Units: volume per time.</p>\\[\\displaystyle \\frac{dV}{dt}=2700\\ \\text{cm}^3/\\text{s}\\]<p><strong>What you found:</strong></p><ul><li>\\(V=x^3\\)</li><li>\\(x=15\\)</li><li>\\(dx/dt=4\\)</li><li>\\(dV/dt=2700\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>(a) \\(V=x^3\\Rightarrow\\frac{dV}{dt}=3x^2\\frac{dx}{dt}\\).</p><p>(b) \\(3(15)^2(4)=2700\\).</p><p class=\"ans\">(a) \\(\\frac{dV}{dt}=3x^2\\frac{dx}{dt}\\) (b) \\(2700\\text{ cm}^3/\\text{s}\\)</p>"
        }
@@ -4245,6 +4393,10 @@ export const sections: Section[] = [
         "html": "<p>Convert the area into a side length first.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Equation linking area and side.</p>\\[\\displaystyle A=s^2\\]<p><strong>Step 2.</strong> Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on.</p>\\[\\displaystyle \\frac{dA}{dt}=2s\\frac{ds}{dt}\\]<p><strong>Step 3.</strong> The problem gives the area, but the formula needs the side. Convert first.</p>\\[\\displaystyle A=16\\Rightarrow s=4\\]<p><strong>Step 4.</strong> Only now plug in the numbers for this instant. Golden rule of related rates: <b>differentiate first, substitute second</b>. Plugging in too early turns variables into constants and their rates become 0.</p>\\[\\displaystyle \\frac{dA}{dt}=2(4)(6)=48\\ \\text{cm}^2/\\text{s}\\]<p><strong>What you found:</strong></p><ul><li>\\(A=s^2\\)</li><li>\\(s=4\\)</li><li>\\(ds/dt=6\\)</li><li>\\(dA/dt=48\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(A=s^2\\Rightarrow\\frac{dA}{dt}=2s\\frac{ds}{dt}\\).</p><p>Area 16 means \\(s=4\\): \\(2(4)(6)=48\\).</p><p class=\"ans\">\\(48\\text{ cm}^2/\\text{s}\\)</p>"
        }
@@ -4296,6 +4448,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "A ball's radius grows at 2 cm/min. How fast is its surface area growing when \\(r=8\\) cm?",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Surface area of a sphere.</p>\\[\\displaystyle S=4\\pi r^2\\]<p><strong>Step 2.</strong> Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on. \\(4\\pi\\) is a constant multiplier.</p>\\[\\displaystyle \\frac{dS}{dt}=8\\pi r\\frac{dr}{dt}\\]<p><strong>Step 3.</strong> Known values at this moment.</p>\\[\\begin{gathered}\\displaystyle r=8\\\\\\displaystyle \\frac{dr}{dt}=2\\end{gathered}\\]<p><strong>Step 4.</strong> Only now plug in the numbers for this instant. Golden rule of related rates: <b>differentiate first, substitute second</b>. Plugging in too early turns variables into constants and their rates become 0.</p>\\[\\displaystyle \\frac{dS}{dt}=8\\pi(8)(2)=128\\pi\\approx402\\ \\text{cm}^2/\\text{min}\\]<p><strong>What you found:</strong></p><ul><li>\\(S=4\\pi r^2\\)</li><li>\\(r=8\\)</li><li>\\(dr/dt=2\\)</li><li>\\(dS/dt=128\\pi\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\(S=4\\pi r^2\\Rightarrow\\frac{dS}{dt}=8\\pi r\\frac{dr}{dt}=8\\pi(8)(2)\\).</p><p class=\"ans\">\\(128\\pi\\approx402\\text{ cm}^2/\\text{min}\\)</p>"
@@ -4349,6 +4505,10 @@ export const sections: Section[] = [
       "question": "A cylindrical tank of radius 5 m fills at 3 m³/min. How fast is the water height rising?",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Cylinder volume.</p>\\[\\displaystyle V=\\pi r^2h\\]<p><strong>Step 2.</strong> The radius of the tank is <b>fixed</b> at 5, so substitute it before differentiating. That is allowed because \\(r\\) never changes. Only things that vary must stay as variables.</p>\\[\\displaystyle V=25\\pi h\\]<p><strong>Step 3.</strong> Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on.</p>\\[\\displaystyle \\frac{dV}{dt}=25\\pi\\frac{dh}{dt}\\]<p><strong>Step 4.</strong> Fill rate \\(\\frac{dV}{dt}=3\\).</p>\\[\\displaystyle 3=25\\pi\\frac{dh}{dt}\\]<p><strong>Step 5.</strong> Solve.</p>\\[\\displaystyle \\frac{dh}{dt}=\\frac{3}{25\\pi}\\approx0.038\\ \\text{m/min}\\]<p><strong>What you found:</strong></p><ul><li>\\(V=25\\pi h\\)</li><li>\\(dV/dt=3\\)</li><li>\\(dh/dt=\\frac3{25\\pi}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(V=\\pi r^2h=25\\pi h\\) (radius fixed).</p><p>\\(\\frac{dV}{dt}=25\\pi\\frac{dh}{dt}\\Rightarrow3=25\\pi\\frac{dh}{dt}\\).</p><p class=\"ans\">\\(\\frac{dh}{dt}=\\frac{3}{25\\pi}\\approx0.038\\text{ m/min}\\)</p>"
        }
@@ -4401,6 +4561,10 @@ export const sections: Section[] = [
       "question": "\\(4x^2+9y^2=25\\), with \\(x,y\\) functions of \\(t\\). (a) If \\(\\frac{dy}{dt}=\\frac13\\), find \\(\\frac{dx}{dt}\\) at \\((2,1)\\). (b) If \\(\\frac{dx}{dt}=3\\), find \\(\\frac{dy}{dt}\\) at \\((-2,1)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Both \\(x\\) and \\(y\\) are functions of \\(t\\).</p>\\[\\displaystyle 4x^2+9y^2=25\\]<p><strong>Step 2.</strong> Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on. The constant 25 differentiates to 0.</p>\\[\\displaystyle 8x\\frac{dx}{dt}+18y\\frac{dy}{dt}=0\\]<p><strong>Step 3.</strong> Part (a): at \\((2,1)\\) with \\(\\frac{dy}{dt}=\\frac13\\).</p>\\[\\displaystyle (a)\\ \\ 8(2)\\frac{dx}{dt}+18(1)\\Big(\\frac13\\Big)=0\\]<p><strong>Step 4.</strong> Solve.</p>\\[\\displaystyle 16\\frac{dx}{dt}+6=0\\Rightarrow\\frac{dx}{dt}=-\\frac38\\]<p><strong>Step 5.</strong> Part (b): at \\((-2,1)\\) with \\(\\frac{dx}{dt}=3\\).</p>\\[\\displaystyle (b)\\ \\ 8(-2)(3)+18(1)\\frac{dy}{dt}=0\\]<p><strong>Step 6.</strong> Solve and reduce.</p>\\[\\displaystyle -48+18\\frac{dy}{dt}=0\\Rightarrow\\frac{dy}{dt}=\\frac{48}{18}=\\frac83\\]<p><strong>What you found:</strong></p><ul><li>\\((a)\\ dx/dt=-\\tfrac38\\)</li><li>\\((b)\\ dy/dt=\\tfrac83\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Differentiate: \\(8x\\frac{dx}{dt}+18y\\frac{dy}{dt}=0\\).</p><p>(a) \\(16\\frac{dx}{dt}+18(1)\\left(\\frac13\\right)=0\\Rightarrow\\frac{dx}{dt}=-\\frac{6}{16}\\).</p><p>(b) \\(8(-2)(3)+18(1)\\frac{dy}{dt}=0\\Rightarrow\\frac{dy}{dt}=\\frac{48}{18}\\).</p><p class=\"ans\">(a) \\(-\\frac38\\) (b) \\(\\frac83\\)</p>"
        }
@@ -4450,6 +4614,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "A plane at altitude 2 km flies at 800 km/h and passes directly over a radar station. How fast is its distance from the station growing when that distance is 3 km?",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Draw it: a right triangle with vertical leg 2 (altitude, constant), horizontal leg \\(x\\) (ground distance, changing), hypotenuse \\(s\\) (distance to station). Pythagoras.</p>\\[\\displaystyle x^2+2^2=s^2\\]<p><strong>Step 2.</strong> Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on. The \\(2^2\\) is a constant, derivative 0.</p>\\[\\displaystyle 2x\\frac{dx}{dt}=2s\\frac{ds}{dt}\\]<p><strong>Step 3.</strong> Solve for the rate we want.</p>\\[\\displaystyle \\frac{ds}{dt}=\\frac{x}{s}\\frac{dx}{dt}\\]<p><strong>Step 4.</strong> We need \\(x\\) at the moment \\(s=3\\): use the original equation (not the differentiated one).</p>\\[\\displaystyle s=3\\Rightarrow x=\\sqrt{9-4}=\\sqrt5\\]<p><strong>Step 5.</strong> Only now plug in the numbers for this instant. Golden rule of related rates: <b>differentiate first, substitute second</b>. Plugging in too early turns variables into constants and their rates become 0.</p>\\[\\displaystyle \\frac{ds}{dt}=\\frac{\\sqrt5}{3}(800)=\\frac{800\\sqrt5}{3}\\approx596\\ \\text{km/h}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\dot x=800\\)</li><li>\\(s=3\\)</li><li>\\(x=\\sqrt5\\)</li><li>\\(ds/dt=\\frac{800\\sqrt5}3\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>Horizontal distance \\(x\\), straight-line distance \\(s\\): \\(x^2+2^2=s^2\\).</p><p>\\(2x\\dot x=2s\\dot s\\Rightarrow\\dot s=\\frac{x}{s}\\dot x\\).</p><p>When \\(s=3\\): \\(x=\\sqrt{9-4}=\\sqrt5\\). \\(\\dot s=\\frac{\\sqrt5}{3}(800)\\).</p><p class=\"ans\">\\(\\frac{800\\sqrt5}{3}\\approx596\\text{ km/h}\\)</p>"
@@ -4511,6 +4679,10 @@ export const sections: Section[] = [
         "html": "<p>Draw the big triangle (pole) and the small one (man). They share the angle at the shadow tip.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Draw it: pole (height 6) at 0, man (height 2) at \\(x\\), shadow tip at \\(s\\). The big triangle (pole to tip) and small triangle (man to tip) are similar, so height/base ratios match. The man's shadow length is \\(s-x\\).</p>\\[\\displaystyle \\frac{s}{6}=\\frac{s-x}{2}\\]<p><strong>Step 2.</strong> Cross-multiply and solve for \\(s\\). Now \\(s\\) depends only on \\(x\\).</p>\\[\\displaystyle 2s=6s-6x\\Rightarrow s=\\tfrac32x\\]<p><strong>Step 3.</strong> Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on.</p>\\[\\displaystyle \\frac{ds}{dt}=\\frac32\\frac{dx}{dt}\\]<p><strong>Step 4.</strong> Plug in his walking speed. The answer has no \\(x\\) in it, so the “10 m” was extra information.</p>\\[\\displaystyle \\frac{ds}{dt}=\\frac32(1.5)=2.25\\ \\text{m/s}\\]<p><strong>What you found:</strong></p><ul><li>\\(s=\\tfrac32x\\)</li><li>\\(ds/dt=2.25\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Man at distance \\(x\\), shadow tip at \\(s\\). Similar triangles: \\(\\frac{s}{6}=\\frac{s-x}{2}\\Rightarrow 2s=6s-6x\\Rightarrow s=\\frac32x\\).</p><p>\\(\\frac{ds}{dt}=\\frac32\\frac{dx}{dt}=\\frac32(1.5)\\).</p><p class=\"ans\">\\(2.25\\text{ m/s}\\) (the same at every distance, so the “10 m” isn't needed)</p>"
        }
@@ -4552,6 +4724,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Two cars leave the same point. One drives south at 30 km/h, the other west at 72 km/h. How fast is the distance between them growing 2 hours later?",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> West and south are perpendicular, so the distance \\(z\\) between the cars is the hypotenuse. \\(x\\) = west car's distance, \\(y\\) = south car's.</p>\\[\\displaystyle z^2=x^2+y^2\\]<p><strong>Step 2.</strong> Positions after 2 hours: distance = speed × time.</p>\\[\\begin{gathered}\\displaystyle x=72(2)=144\\\\\\displaystyle y=30(2)=60\\end{gathered}\\]<p><strong>Step 3.</strong> Find \\(z\\) at that moment from the original equation.</p>\\[\\displaystyle z=\\sqrt{144^2+60^2}=156\\]<p><strong>Step 4.</strong> Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on.</p>\\[\\displaystyle 2z\\frac{dz}{dt}=2x\\frac{dx}{dt}+2y\\frac{dy}{dt}\\]<p><strong>Step 5.</strong> Cancel the 2s, divide by \\(z\\), plug in.</p>\\[\\displaystyle \\frac{dz}{dt}=\\frac{144(72)+60(30)}{156}=\\frac{12168}{156}\\]<p><strong>Step 6.</strong> Arithmetic.</p>\\[\\displaystyle \\frac{dz}{dt}=78\\ \\text{km/h}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\dot x=72\\)</li><li>\\(\\dot y=30\\)</li><li>\\(x=144\\)</li><li>\\(y=60\\)</li><li>\\(z=156\\)</li><li>\\(dz/dt=78\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>After 2 h: \\(x=144\\), \\(y=60\\), \\(z=\\sqrt{144^2+60^2}=156\\).</p><p>\\(z\\dot z=x\\dot x+y\\dot y\\Rightarrow\\dot z=\\frac{144(72)+60(30)}{156}=\\frac{12168}{156}\\).</p><p class=\"ans\">\\(78\\text{ km/h}\\)</p>"
@@ -4623,6 +4799,10 @@ export const sections: Section[] = [
       "question": "A triangle's altitude grows at 1 cm/min and its area at 2 cm²/min. How fast is the base changing when the altitude is 10 cm and the area is 100 cm²?",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Triangle area. Both \\(b\\) and \\(h\\) change, so both stay as variables.</p>\\[\\displaystyle A=\\tfrac12bh\\]<p><strong>Step 2.</strong> We will need \\(b\\) at this moment; get it from the area formula.</p>\\[\\displaystyle b=\\frac{2A}{h}=\\frac{2(100)}{10}=20\\]<p><strong>Step 3.</strong> Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on. \\(b\\cdot h\\) is a <b>product</b> of two changing things, so use the product rule.</p>\\[\\displaystyle \\frac{dA}{dt}=\\frac12\\Big(\\frac{db}{dt}h+b\\frac{dh}{dt}\\Big)\\]<p><strong>Step 4.</strong> Only now plug in the numbers for this instant. Golden rule of related rates: <b>differentiate first, substitute second</b>. Plugging in too early turns variables into constants and their rates become 0.</p>\\[\\displaystyle 2=\\frac12\\Big(10\\frac{db}{dt}+20\\cdot1\\Big)\\]<p><strong>Step 5.</strong> Multiply by 2, then solve. Negative means the base is <b>shrinking</b>.</p>\\[\\displaystyle 4=10\\frac{db}{dt}+20\\Rightarrow\\frac{db}{dt}=-1.6\\]<p><strong>What you found:</strong></p><ul><li>\\(b=20\\)</li><li>\\(h=10\\)</li><li>\\(dh/dt=1\\)</li><li>\\(dA/dt=2\\)</li><li>\\(db/dt=-1.6\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(A=\\frac12bh\\). At that moment \\(b=\\frac{2A}{h}=20\\).</p><p>Product rule: \\(\\frac{dA}{dt}=\\frac12\\left(\\frac{db}{dt}h+b\\frac{dh}{dt}\\right)\\Rightarrow2=\\frac12\\left(10\\frac{db}{dt}+20\\right)\\).</p><p>\\(4=10\\frac{db}{dt}+20\\Rightarrow\\frac{db}{dt}=-1.6\\).</p><p class=\"ans\">\\(-1.6\\text{ cm/min}\\) (the base is shrinking)</p>"
        }
@@ -4681,6 +4861,10 @@ export const sections: Section[] = [
       "question": "Using \\(d=4.9t^2\\): a woman drops a stone off a cliff, then drops a second one exactly 1 s later. One second after that, how fast is the distance between the stones changing?",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Stone 1 has fallen for \\(t\\) seconds; stone 2 started 1 s later, so it has fallen for \\(t-1\\) seconds.</p>\\[\\begin{gathered}\\displaystyle d_1=4.9t^2\\\\\\displaystyle d_2=4.9(t-1)^2\\end{gathered}\\]<p><strong>Step 2.</strong> The gap between them is the difference.</p>\\[\\displaystyle D=d_1-d_2=4.9t^2-4.9(t-1)^2\\]<p><strong>Step 3.</strong> Differentiate; chain rule on \\((t-1)^2\\) gives \\(2(t-1)\\cdot1\\).</p>\\[\\displaystyle \\frac{dD}{dt}=9.8t-9.8(t-1)\\]<p><strong>Step 4.</strong> The \\(t\\)s cancel: the gap grows at a constant 9.8 m/s at every moment, including the one asked about.</p>\\[\\displaystyle \\frac{dD}{dt}=9.8\\ \\text{m/s}\\]<p><strong>What you found:</strong></p><ul><li>\\(D=4.9t^2-4.9(t-1)^2\\)</li><li>\\(dD/dt=9.8\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>First stone has fallen \\(4.9t^2\\), second \\(4.9(t-1)^2\\). Gap \\(D=4.9t^2-4.9(t-1)^2\\).</p><p>\\(\\frac{dD}{dt}=9.8t-9.8(t-1)=9.8\\).</p><p class=\"ans\">\\(9.8\\text{ m/s}\\), constant at every moment</p>"
        }
@@ -4722,6 +4906,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "An inverted cone (height 6 m, top diameter 4 m) leaks 10,000 cm³/min while water is pumped in at a constant rate. The level rises 20 cm/min when the water is 2 m deep. Find the pumping rate.",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Work in cm (the leak is in cm³). Similar triangles: the water cone has the same shape as the tank, radius 200 to height 600. This removes \\(r\\), leaving one variable.</p>\\[\\displaystyle \\frac rh=\\frac{200}{600}\\Rightarrow r=\\frac h3\\]<p><strong>Step 2.</strong> Cone volume, with \\(r\\) replaced.</p>\\[\\displaystyle V=\\frac13\\pi r^2h=\\frac13\\pi\\frac{h^2}9h=\\frac{\\pi h^3}{27}\\]<p><strong>Step 3.</strong> Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on. \\(\\frac{3}{27}=\\frac19\\).</p>\\[\\displaystyle \\frac{dV}{dt}=\\frac{\\pi h^2}{9}\\frac{dh}{dt}\\]<p><strong>Step 4.</strong> Only now plug in the numbers for this instant. Golden rule of related rates: <b>differentiate first, substitute second</b>. Plugging in too early turns variables into constants and their rates become 0. \\(h=200\\) cm, \\(\\frac{dh}{dt}=20\\).</p>\\[\\displaystyle \\frac{dV}{dt}=\\frac{\\pi(200)^2}{9}(20)\\approx279{,}253\\]<p><strong>Step 5.</strong> The net change in volume is pumped in minus leaked out. \\(C\\) is the pumping rate.</p>\\[\\displaystyle \\frac{dV}{dt}=C-10{,}000\\]<p><strong>Step 6.</strong> Solve for \\(C\\).</p>\\[\\displaystyle C\\approx289{,}253\\ \\text{cm}^3/\\text{min}\\]<p><strong>What you found:</strong></p><ul><li>\\(r=h/3\\)</li><li>\\(V=\\frac{\\pi h^3}{27}\\)</li><li>\\(dV/dt=\\approx279{,}253\\)</li><li>\\(C=\\approx289{,}253\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>Work in cm: \\(\\frac rh=\\frac{200}{600}\\Rightarrow r=\\frac h3\\), so \\(V=\\frac13\\pi\\frac{h^2}{9}h=\\frac{\\pi h^3}{27}\\).</p><p>\\(\\frac{dV}{dt}=\\frac{\\pi h^2}{9}\\frac{dh}{dt}=\\frac{\\pi(200)^2}{9}(20)\\approx279{,}253\\text{ cm}^3/\\text{min}\\).</p><p>Net rate = pumped in − leaking out: \\(C-10{,}000=279{,}253\\).</p><p class=\"ans\">\\(C\\approx289{,}253\\text{ cm}^3/\\text{min}\\)</p>"
@@ -4785,6 +4973,10 @@ export const sections: Section[] = [
       "question": "Gravel falls onto a conical pile at 3 m³/min. The base diameter always equals the height. How fast is the height growing when the pile is 3 m high?",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Diameter equals height, so the radius is half the height. Use this to eliminate \\(r\\).</p>\\[\\displaystyle d=h\\Rightarrow r=\\frac h2\\]<p><strong>Step 2.</strong> Cone volume in terms of \\(h\\) only.</p>\\[\\displaystyle V=\\frac13\\pi\\Big(\\frac h2\\Big)^2h=\\frac{\\pi h^3}{12}\\]<p><strong>Step 3.</strong> Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on.</p>\\[\\displaystyle \\frac{dV}{dt}=\\frac{\\pi h^2}{4}\\frac{dh}{dt}\\]<p><strong>Step 4.</strong> Only now plug in the numbers for this instant. Golden rule of related rates: <b>differentiate first, substitute second</b>. Plugging in too early turns variables into constants and their rates become 0. \\(h=3\\), \\(\\frac{dV}{dt}=3\\).</p>\\[\\displaystyle 3=\\frac{\\pi(9)}{4}\\frac{dh}{dt}\\]<p><strong>Step 5.</strong> Solve.</p>\\[\\displaystyle \\frac{dh}{dt}=\\frac{4}{3\\pi}\\approx0.42\\ \\text{m/min}\\]<p><strong>What you found:</strong></p><ul><li>\\(r=h/2\\)</li><li>\\(V=\\frac{\\pi h^3}{12}\\)</li><li>\\(dh/dt=\\frac4{3\\pi}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Diameter = \\(h\\), so \\(r=\\frac h2\\) and \\(V=\\frac13\\pi\\frac{h^2}{4}h=\\frac{\\pi h^3}{12}\\).</p><p>\\(\\frac{dV}{dt}=\\frac{\\pi h^2}{4}\\frac{dh}{dt}\\Rightarrow3=\\frac{9\\pi}{4}\\frac{dh}{dt}\\).</p><p class=\"ans\">\\(\\frac{dh}{dt}=\\frac{4}{3\\pi}\\approx0.42\\text{ m/min}\\)</p>"
        }
@@ -4837,6 +5029,10 @@ export const sections: Section[] = [
       "question": "The sides of an equilateral triangle grow at 10 cm/min. How fast is the area growing when the sides are 30 cm?",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Area of an equilateral triangle with side \\(s\\) (memorize it, or derive: base \\(s\\), height \\(\\frac{\\sqrt3}2s\\)).</p>\\[\\displaystyle A=\\frac{\\sqrt3}{4}s^2\\]<p><strong>Step 2.</strong> Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on.</p>\\[\\displaystyle \\frac{dA}{dt}=\\frac{\\sqrt3}{2}s\\frac{ds}{dt}\\]<p><strong>Step 3.</strong> Only now plug in the numbers for this instant. Golden rule of related rates: <b>differentiate first, substitute second</b>. Plugging in too early turns variables into constants and their rates become 0.</p>\\[\\displaystyle \\frac{dA}{dt}=\\frac{\\sqrt3}{2}(30)(10)=150\\sqrt3\\approx259.8\\]<p><strong>What you found:</strong></p><ul><li>\\(dA/dt=150\\sqrt3\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(A=\\frac{\\sqrt3}{4}s^2\\Rightarrow\\frac{dA}{dt}=\\frac{\\sqrt3}{2}s\\frac{ds}{dt}=\\frac{\\sqrt3}{2}(30)(10)\\).</p><p class=\"ans\">\\(150\\sqrt3\\approx259.8\\text{ cm}^2/\\text{min}\\)</p>"
        }
@@ -4871,6 +5067,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Three directions at right angles: \\(D^2=x^2+y^2+z^2\\), and the height \\(z=25\\) stays fixed.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> 3D distance: drone east \\(x\\), car north \\(y\\), height 25 (constant). It is Pythagoras with three perpendicular directions.</p>\\[\\displaystyle D^2=x^2+y^2+25^2\\]<p><strong>Step 2.</strong> Positions after 5 s.</p>\\[\\begin{gathered}\\displaystyle x=6(5)=30\\\\\\displaystyle y=20(5)=100\\end{gathered}\\]<p><strong>Step 3.</strong> Distance at that moment.</p>\\[\\displaystyle D=\\sqrt{900+10000+625}=\\sqrt{11525}\\approx107.35\\]<p><strong>Step 4.</strong> Differentiate both sides with respect to <b>time</b> \\(t\\). Every variable that changes gets its own rate attached by the chain rule: \\(x\\to\\frac{dx}{dt}\\), and so on. The 25 is constant, derivative 0.</p>\\[\\displaystyle 2D\\dot D=2x\\dot x+2y\\dot y\\]<p><strong>Step 5.</strong> Only now plug in the numbers for this instant. Golden rule of related rates: <b>differentiate first, substitute second</b>. Plugging in too early turns variables into constants and their rates become 0.</p>\\[\\displaystyle \\dot D=\\frac{30(6)+100(20)}{107.35}=\\frac{2180}{107.35}\\approx20.3\\ \\text{m/s}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\dot x=6\\)</li><li>\\(\\dot y=20\\)</li><li>\\(x=30\\)</li><li>\\(y=100\\)</li><li>\\(D=107.35\\)</li><li>\\(dD/dt=\\approx20.3\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -5038,6 +5238,10 @@ export const sections: Section[] = [
       "question": "Find the linearization of \\(f(x)=x^3-x^2+3\\) at \\(a=-2\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Ingredient 1: the height at \\(a=-2\\). Careful with signs: \\((-2)^3=-8\\), \\((-2)^2=4\\).</p>\\[\\displaystyle f(-2)=-8-4+3=-9\\]<p><strong>Step 2.</strong> Ingredient 2: the derivative.</p>\\[\\displaystyle f'(x)=3x^2-2x\\]<p><strong>Step 3.</strong> Slope at \\(a\\).</p>\\[\\displaystyle f'(-2)=12+4=16\\]<p><strong>Step 4.</strong> Linearization formula: \\(L(x)=f(a)+f'(a)(x-a)\\). It is just the tangent line at \\(x=a\\): start at height \\(f(a)\\), move with slope \\(f'(a)\\).</p>\\[\\displaystyle L(x)=-9+16(x+2)\\]<p><strong>Step 5.</strong> Expand: \\(16x+32-9\\).</p>\\[\\displaystyle L(x)=16x+23\\]<p><strong>What you found:</strong></p><ul><li>\\(f(a)=-9\\)</li><li>\\(f'(a)=16\\)</li><li>\\(L(x)=16x+23\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f(-2)=-8-4+3=-9\\).</p><p>\\(f'(x)=3x^2-2x\\Rightarrow f'(-2)=12+4=16\\).</p><p>\\(L(x)=-9+16(x+2)\\).</p><p class=\"ans\">\\(L(x)=16x+23\\)</p>"
        }
@@ -5090,6 +5294,10 @@ export const sections: Section[] = [
       "question": "Find the linearization of \\(f(x)=\\sqrt[3]{x}\\) at \\(a=8\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Height at \\(a=8\\).</p>\\[\\displaystyle f(8)=\\sqrt[3]8=2\\]<p><strong>Step 2.</strong> Power rule on \\(x^{1/3}\\).</p>\\[\\displaystyle f'(x)=\\tfrac13x^{-2/3}\\]<p><strong>Step 3.</strong> \\(8^{2/3}=(\\sqrt[3]8)^2=4\\). Take the root first, then square.</p>\\[\\displaystyle f'(8)=\\frac13\\cdot\\frac{1}{8^{2/3}}=\\frac13\\cdot\\frac14=\\frac1{12}\\]<p><strong>Step 4.</strong> Linearization formula: \\(L(x)=f(a)+f'(a)(x-a)\\). It is just the tangent line at \\(x=a\\): start at height \\(f(a)\\), move with slope \\(f'(a)\\).</p>\\[\\displaystyle L(x)=2+\\frac1{12}(x-8)\\]<p><strong>What you found:</strong></p><ul><li>\\(f(a)=2\\)</li><li>\\(f'(a)=\\frac1{12}\\)</li><li>\\(L(x)=2+\\frac1{12}(x-8)\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f(8)=2\\). \\(f'(x)=\\frac13x^{-2/3}\\Rightarrow f'(8)=\\frac13\\cdot\\frac14=\\frac1{12}\\).</p><p class=\"ans\">\\(L(x)=2+\\frac{1}{12}(x-8)\\)</p>"
        }
@@ -5140,6 +5348,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Which \\(x\\) makes \\(\\sqrt{1-x}=\\sqrt{0.9}\\)?</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Height at \\(a=0\\).</p>\\[\\displaystyle f(0)=\\sqrt1=1\\]<p><strong>Step 2.</strong> Chain rule: \\((\\sqrt u)'=\\frac{u'}{2\\sqrt u}\\) with \\(u'=-1\\).</p>\\[\\displaystyle f'(x)=\\frac{-1}{2\\sqrt{1-x}}\\]<p><strong>Step 3.</strong> Slope at 0.</p>\\[\\displaystyle f'(0)=-\\frac12\\]<p><strong>Step 4.</strong> Linearization formula: \\(L(x)=f(a)+f'(a)(x-a)\\). It is just the tangent line at \\(x=a\\): start at height \\(f(a)\\), move with slope \\(f'(a)\\).</p>\\[\\displaystyle L(x)=1-\\frac x2\\]<p><strong>Step 5.</strong> Match: \\(\\sqrt{1-x}=\\sqrt{0.9}\\) means \\(x=0.1\\). Plug into \\(L\\), not \\(f\\).</p>\\[\\displaystyle \\sqrt{0.9}=f(0.1)\\approx1-0.05=0.95\\]<p><strong>Step 6.</strong> Same idea, \\(x=0.01\\). Closer to \\(a\\) means a more accurate estimate.</p>\\[\\displaystyle \\sqrt{0.99}=f(0.01)\\approx1-0.005=0.995\\]<p><strong>What you found:</strong></p><ul><li>\\(f(a)=1\\)</li><li>\\(f'(a)=-\\frac12\\)</li><li>\\(L(x)=1-\\frac x2\\)</li><li>\\(\\sqrt{0.9}=0.95\\)</li><li>\\(\\sqrt{0.99}=0.995\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -5208,6 +5420,10 @@ export const sections: Section[] = [
       "question": "Verify \\(\\tan^{-1}x\\approx x\\) at \\(a=0\\). For which \\(x\\) is it accurate to within 0.1?",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Height at 0.</p>\\[\\displaystyle f(0)=\\tan^{-1}0=0\\]<p><strong>Step 2.</strong> Slope at 0.</p>\\[\\displaystyle f'(0)=\\frac1{1+0}=1\\]<p><strong>Step 3.</strong> Linearization formula: \\(L(x)=f(a)+f'(a)(x-a)\\). It is just the tangent line at \\(x=a\\): start at height \\(f(a)\\), move with slope \\(f'(a)\\). So \\(\\tan^{-1}x\\approx x\\) near 0, as claimed.</p>\\[\\displaystyle L(x)=0+1(x-0)=x\\ \\ \\checkmark\\]<p><strong>Step 4.</strong> “Accurate within 0.1” means the gap between the line and the curve is less than 0.1.</p>\\[\\displaystyle |x-\\tan^{-1}x|<0.1\\]<p><strong>Step 5.</strong> Can't solve by algebra; graph \\(y=x-\\tan^{-1}x\\) and \\(y=\\pm0.1\\) and read off the crossings, about \\(x\\approx\\pm0.73\\).</p>\\[\\displaystyle -0.73<x<0.73\\]<p><strong>What you found:</strong></p><ul><li>\\(f(a)=0\\)</li><li>\\(f'(a)=1\\)</li><li>\\(\\text{range}:\\ |x|<0.73\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f(0)=0\\), \\(f'(x)=\\frac1{1+x^2}\\Rightarrow f'(0)=1\\). So \\(L(x)=x\\). ✓</p><p>We need \\(|x-\\tan^{-1}x|<0.1\\). Graphing (or solving numerically) gives about \\(|x|<0.73\\).</p><p class=\"ans\">Accurate to within 0.1 for about \\(-0.73<x<0.73\\)</p>"
        }
@@ -5260,6 +5476,10 @@ export const sections: Section[] = [
       "question": "Find the differential of \\(y=e^{5x}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Chain rule on \\(e^{5x}\\).</p>\\[\\displaystyle y'=5e^{5x}\\]<p><strong>Step 2.</strong> Differential: \\(dy=f'(x)\\,dx\\). It is the derivative with the \\(dx\\) “multiplied across”. Find \\(y'\\), then attach \\(dx\\).</p>\\[\\displaystyle dy=5e^{5x}\\,dx\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=5e^{5x}\\)</li><li>\\(dy=5e^{5x}dx\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(dy=y'\\,dx\\) with \\(y'=5e^{5x}\\).</p><p class=\"ans\">\\(dy=5e^{5x}\\,dx\\)</p>"
        }
@@ -5293,6 +5513,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find the differential of \\(y=\\dfrac{1+2u}{1+3u}\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Quotient rule: (bottom·top′ − top·bottom′)/bottom². Top′ = 2, bottom′ = 3.</p>\\[\\displaystyle y'=\\frac{2(1+3u)-(1+2u)(3)}{(1+3u)^2}\\]<p><strong>Step 2.</strong> Expand the numerator; the \\(u\\) terms cancel.</p>\\[\\displaystyle =\\frac{2+6u-3-6u}{(1+3u)^2}=\\frac{-1}{(1+3u)^2}\\]<p><strong>Step 3.</strong> Differential: \\(dy=f'(x)\\,dx\\). It is the derivative with the \\(dx\\) “multiplied across”. Find \\(y'\\), then attach \\(dx\\). Here the variable is \\(u\\), so attach \\(du\\).</p>\\[\\displaystyle dy=-\\frac{du}{(1+3u)^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=\\frac{-1}{(1+3u)^2}\\)</li><li>\\(dy=-\\frac{du}{(1+3u)^2}\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>Quotient rule: \\(y'=\\frac{2(1+3u)-3(1+2u)}{(1+3u)^2}=\\frac{-1}{(1+3u)^2}\\).</p><p class=\"ans\">\\(dy=-\\dfrac{du}{(1+3u)^2}\\)</p>"
@@ -5332,6 +5556,10 @@ export const sections: Section[] = [
       "question": "Find the differential of \\(y=\\ln(\\sin\\theta)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\((\\ln u)'=\\frac{u'}{u}\\) with \\(u=\\sin\\theta\\).</p>\\[\\displaystyle y'=\\frac{\\cos\\theta}{\\sin\\theta}=\\cot\\theta\\]<p><strong>Step 2.</strong> Differential: \\(dy=f'(x)\\,dx\\). It is the derivative with the \\(dx\\) “multiplied across”. Find \\(y'\\), then attach \\(dx\\).</p>\\[\\displaystyle dy=\\cot\\theta\\,d\\theta\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=\\cot\\theta\\)</li><li>\\(dy=\\cot\\theta\\,d\\theta\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(y'=\\frac{\\cos\\theta}{\\sin\\theta}=\\cot\\theta\\).</p><p class=\"ans\">\\(dy=\\cot\\theta\\,d\\theta\\)</p>"
        }
@@ -5365,6 +5593,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "(a) Find \\(dy\\) for \\(y=e^{x/10}\\). (b) Evaluate it at \\(x=0\\), \\(dx=0.1\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Chain rule: inside \\(\\frac{x}{10}\\) has derivative \\(\\frac1{10}\\).</p>\\[\\displaystyle y'=\\frac1{10}e^{x/10}\\]<p><strong>Step 2.</strong> Differential: \\(dy=f'(x)\\,dx\\). It is the derivative with the \\(dx\\) “multiplied across”. Find \\(y'\\), then attach \\(dx\\). This is part (a).</p>\\[\\displaystyle dy=\\frac1{10}e^{x/10}\\,dx\\]<p><strong>Step 3.</strong> Part (b): plug in \\(x=0\\), \\(dx=0.1\\).</p>\\[\\displaystyle dy=\\frac1{10}e^{0}(0.1)=0.01\\]<p><strong>What you found:</strong></p><ul><li>\\(dy=0.01\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>(a) \\(dy=\\frac1{10}e^{x/10}dx\\).</p><p>(b) \\(\\frac1{10}(1)(0.1)\\).</p><p class=\"ans\">(a) \\(dy=\\frac{1}{10}e^{x/10}dx\\) (b) \\(dy=0.01\\)</p>"
@@ -5404,6 +5636,10 @@ export const sections: Section[] = [
       "question": "(a) Find \\(dy\\) for \\(y=\\sqrt{3+x^2}\\). (b) Evaluate at \\(x=1\\), \\(dx=-0.1\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\((\\sqrt u)'=\\frac{u'}{2\\sqrt u}\\), \\(u'=2x\\).</p>\\[\\displaystyle y'=\\frac{2x}{2\\sqrt{3+x^2}}=\\frac{x}{\\sqrt{3+x^2}}\\]<p><strong>Step 2.</strong> Differential: \\(dy=f'(x)\\,dx\\). It is the derivative with the \\(dx\\) “multiplied across”. Find \\(y'\\), then attach \\(dx\\). Part (a).</p>\\[\\displaystyle dy=\\frac{x}{\\sqrt{3+x^2}}\\,dx\\]<p><strong>Step 3.</strong> Part (b): \\(x=1\\), \\(dx=-0.1\\).</p>\\[\\displaystyle dy=\\frac{1}{\\sqrt4}(-0.1)=\\frac12(-0.1)=-0.05\\]<p><strong>What you found:</strong></p><ul><li>\\(dy=-0.05\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>(a) \\(dy=\\frac{x}{\\sqrt{3+x^2}}dx\\).</p><p>(b) \\(\\frac{1}{2}(-0.1)\\).</p><p class=\"ans\">(a) \\(dy=\\dfrac{x\\,dx}{\\sqrt{3+x^2}}\\) (b) \\(dy=-0.05\\)</p>"
        }
@@ -5441,6 +5677,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Compute \\(\\Delta y\\) and \\(dy\\) for \\(y=x^2-4x\\), \\(x=3\\), \\(\\Delta x=0.5\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Two different things: \\(\\Delta y\\) is the <b>actual</b> change in the function. \\(dy\\) is the change predicted by the tangent line.</p>\\[\\displaystyle \\Delta y=f(3.5)-f(3)\\]<p><strong>Step 2.</strong> Evaluate both.</p>\\[\\begin{gathered}\\displaystyle f(3.5)=12.25-14=-1.75\\\\\\displaystyle f(3)=9-12=-3\\end{gathered}\\]<p><strong>Step 3.</strong> Subtract.</p>\\[\\displaystyle \\Delta y=-1.75-(-3)=1.25\\]<p><strong>Step 4.</strong> Differential: \\(dy=f'(x)\\,dx\\). It is the derivative with the \\(dx\\) “multiplied across”. Find \\(y'\\), then attach \\(dx\\).</p>\\[\\displaystyle dy=f'(x)\\,dx=(2x-4)\\,dx\\]<p><strong>Step 5.</strong> \\(x=3\\), \\(dx=\\Delta x=0.5\\). The tangent underestimates here because the parabola curves upward.</p>\\[\\displaystyle dy=(6-4)(0.5)=1\\]<p><strong>What you found:</strong></p><ul><li>\\(\\Delta y=1.25\\)</li><li>\\(dy=1\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\(\\Delta y=f(3.5)-f(3)=(12.25-14)-(9-12)=-1.75+3=1.25\\).</p><p>\\(dy=(2x-4)dx=(2)(0.5)=1\\).</p><p class=\"ans\">\\(\\Delta y=1.25\\), \\(dy=1\\)</p>"
@@ -5488,6 +5728,10 @@ export const sections: Section[] = [
       "question": "Compute \\(\\Delta y\\) and \\(dy\\) for \\(y=\\sqrt{x-2}\\), \\(x=3\\), \\(\\Delta x=0.8\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Actual change: new value minus old value.</p>\\[\\displaystyle \\Delta y=\\sqrt{3.8-2}-\\sqrt{3-2}=\\sqrt{1.8}-1\\]<p><strong>Step 2.</strong> Calculator for \\(\\sqrt{1.8}\\).</p>\\[\\displaystyle \\Delta y\\approx1.342-1=0.342\\]<p><strong>Step 3.</strong> Differential: \\(dy=f'(x)\\,dx\\). It is the derivative with the \\(dx\\) “multiplied across”. Find \\(y'\\), then attach \\(dx\\).</p>\\[\\displaystyle dy=\\frac{1}{2\\sqrt{x-2}}\\,dx\\]<p><strong>Step 4.</strong> Plug in \\(x=3\\), \\(dx=0.8\\). The square root bends down, so the tangent overestimates.</p>\\[\\displaystyle dy=\\frac{1}{2(1)}(0.8)=0.4\\]<p><strong>What you found:</strong></p><ul><li>\\(\\Delta y=0.342\\)</li><li>\\(dy=0.4\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\Delta y=\\sqrt{1.8}-\\sqrt1\\approx0.342\\).</p><p>\\(dy=\\frac{1}{2\\sqrt{x-2}}dx=\\frac12(0.8)=0.4\\).</p><p class=\"ans\">\\(\\Delta y\\approx0.342\\), \\(dy=0.4\\)</p>"
        }
@@ -5529,6 +5773,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Use a linear approximation to estimate \\((1.999)^4\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Pick a function \\(f\\) and a nearby “nice” point \\(a\\) where you know the exact value. 1.999 is very close to 2, and \\(2^4\\) is easy.</p>\\[\\begin{gathered}\\displaystyle f(x)=x^4\\\\\\displaystyle a=2\\end{gathered}\\]<p><strong>Step 2.</strong> Gather the height and slope at \\(a\\).</p>\\[\\begin{gathered}\\displaystyle f(2)=16\\\\\\displaystyle f'(x)=4x^3\\Rightarrow f'(2)=32\\end{gathered}\\]<p><strong>Step 3.</strong> Linearization formula: \\(L(x)=f(a)+f'(a)(x-a)\\). It is just the tangent line at \\(x=a\\): start at height \\(f(a)\\), move with slope \\(f'(a)\\).</p>\\[\\displaystyle L(x)=16+32(x-2)\\]<p><strong>Step 4.</strong> \\(x-a=-0.001\\).</p>\\[\\displaystyle L(1.999)=16+32(-0.001)=15.968\\]<p><strong>What you found:</strong></p><ul><li>\\(f(a)=16\\)</li><li>\\(f'(a)=32\\)</li><li>\\((1.999)^4=\\approx15.968\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\(f(x)=x^4\\), \\(a=2\\): \\(f(2)=16\\), \\(f'(2)=4(8)=32\\).</p><p>\\(L(1.999)=16+32(-0.001)\\).</p><p class=\"ans\">\\((1.999)^4\\approx15.968\\)</p>"
@@ -5576,6 +5824,10 @@ export const sections: Section[] = [
       "question": "Use a linear approximation to estimate \\(\\sqrt[3]{1001}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Pick a function \\(f\\) and a nearby “nice” point \\(a\\) where you know the exact value. \\(\\sqrt[3]{1000}=10\\).</p>\\[\\begin{gathered}\\displaystyle f(x)=\\sqrt[3]x\\\\\\displaystyle a=1000\\end{gathered}\\]<p><strong>Step 2.</strong> \\(1000^{2/3}=10^2=100\\).</p>\\[\\displaystyle f'(x)=\\frac{1}{3x^{2/3}}\\Rightarrow f'(1000)=\\frac1{3\\cdot100}=\\frac1{300}\\]<p><strong>Step 3.</strong> Linearization formula: \\(L(x)=f(a)+f'(a)(x-a)\\). It is just the tangent line at \\(x=a\\): start at height \\(f(a)\\), move with slope \\(f'(a)\\).</p>\\[\\displaystyle L(1001)=10+\\frac1{300}(1)\\]<p><strong>Step 4.</strong> \\(\\frac1{300}\\approx0.0033\\).</p>\\[\\displaystyle \\sqrt[3]{1001}\\approx10.0033\\]<p><strong>What you found:</strong></p><ul><li>\\(f(a)=10\\)</li><li>\\(f'(a)=\\frac1{300}\\)</li><li>\\(\\sqrt[3]{1001}=\\approx10.0033\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f(x)=\\sqrt[3]{x}\\), \\(a=1000\\): \\(f(1000)=10\\), \\(f'(1000)=\\frac{1}{3(1000)^{2/3}}=\\frac1{300}\\).</p><p>\\(L(1001)=10+\\frac{1}{300}(1)\\).</p><p class=\"ans\">\\(\\sqrt[3]{1001}\\approx10.0033\\)</p>"
        }
@@ -5622,6 +5874,10 @@ export const sections: Section[] = [
       "question": "Use a linear approximation to estimate \\(e^{0.1}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Pick a function \\(f\\) and a nearby “nice” point \\(a\\) where you know the exact value. \\(e^0=1\\).</p>\\[\\begin{gathered}\\displaystyle f(x)=e^x\\\\\\displaystyle a=0\\end{gathered}\\]<p><strong>Step 2.</strong> \\(e^x\\) is its own derivative.</p>\\[\\begin{gathered}\\displaystyle f(0)=1\\\\\\displaystyle f'(0)=e^0=1\\end{gathered}\\]<p><strong>Step 3.</strong> Linearization formula: \\(L(x)=f(a)+f'(a)(x-a)\\). It is just the tangent line at \\(x=a\\): start at height \\(f(a)\\), move with slope \\(f'(a)\\).</p>\\[\\displaystyle L(x)=1+x\\]<p><strong>Step 4.</strong> True value 1.10517…, very close.</p>\\[\\displaystyle e^{0.1}\\approx1.1\\]<p><strong>What you found:</strong></p><ul><li>\\(f(a)=1\\)</li><li>\\(f'(a)=1\\)</li><li>\\(e^{0.1}=\\approx1.1\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f(x)=e^x\\) at \\(a=0\\): \\(L(x)=1+x\\).</p><p class=\"ans\">\\(e^{0.1}\\approx1.1\\) (the true value is 1.10517…)</p>"
        }
@@ -5667,6 +5923,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Explain why \\(\\ln1.04\\approx0.04\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Pick a function \\(f\\) and a nearby “nice” point \\(a\\) where you know the exact value. \\(\\ln1=0\\).</p>\\[\\begin{gathered}\\displaystyle f(x)=\\ln x\\\\\\displaystyle a=1\\end{gathered}\\]<p><strong>Step 2.</strong> Height and slope.</p>\\[\\begin{gathered}\\displaystyle f(1)=0\\\\\\displaystyle f'(1)=\\frac11=1\\end{gathered}\\]<p><strong>Step 3.</strong> Linearization formula: \\(L(x)=f(a)+f'(a)(x-a)\\). It is just the tangent line at \\(x=a\\): start at height \\(f(a)\\), move with slope \\(f'(a)\\).</p>\\[\\displaystyle L(x)=0+1(x-1)=x-1\\]<p><strong>Step 4.</strong> That is the explanation: near 1, \\(\\ln x\\) is almost the line \\(x-1\\).</p>\\[\\displaystyle \\ln1.04\\approx L(1.04)=0.04\\]<p><strong>What you found:</strong></p><ul><li>\\(f(a)=0\\)</li><li>\\(f'(a)=1\\)</li><li>\\(\\ln1.04=\\approx0.04\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>Linearize \\(f(x)=\\ln x\\) at \\(a=1\\): \\(f(1)=0\\), \\(f'(1)=1\\), so \\(L(x)=x-1\\).</p><p>\\(\\ln1.04\\approx L(1.04)=0.04\\).</p><p class=\"ans\">Because near \\(x=1\\), \\(\\ln x\\approx x-1\\)</p>"
@@ -5834,6 +6094,10 @@ export const sections: Section[] = [
       "question": "Find (a) \\(\\sinh0\\) (b) \\(\\cosh0\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Definitions: \\(\\sinh x=\\dfrac{e^x-e^{-x}}{2}\\) (minus), \\(\\cosh x=\\dfrac{e^x+e^{-x}}{2}\\) (plus). Every hyperbolic question starts from these.</p>\\[\\displaystyle \\sinh0=\\frac{e^0-e^{-0}}{2}\\]<p><strong>Step 2.</strong> \\(e^0=1\\).</p>\\[\\displaystyle =\\frac{1-1}{2}=0\\]<p><strong>Step 3.</strong> Same idea with the plus sign. Like \\(\\sin0=0\\), \\(\\cos0=1\\).</p>\\[\\displaystyle \\cosh0=\\frac{1+1}{2}=1\\]<p><strong>What you found:</strong></p><ul><li>\\(\\sinh0=0\\)</li><li>\\(\\cosh0=1\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>(a) \\(\\frac{1-1}{2}=0\\). (b) \\(\\frac{1+1}{2}=1\\).</p><p class=\"ans\">(a) 0 (b) 1</p>"
        }
@@ -5871,6 +6135,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find (a) \\(\\cosh(\\ln5)\\) (b) \\(\\cosh5\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Definitions: \\(\\sinh x=\\dfrac{e^x-e^{-x}}{2}\\) (minus), \\(\\cosh x=\\dfrac{e^x+e^{-x}}{2}\\) (plus). Every hyperbolic question starts from these.</p>\\[\\displaystyle \\cosh(\\ln5)=\\frac{e^{\\ln5}+e^{-\\ln5}}{2}\\]<p><strong>Step 2.</strong> \\(e\\) and \\(\\ln\\) cancel. A minus in the exponent means reciprocal: \\(e^{-\\ln5}=\\frac1{e^{\\ln5}}\\).</p>\\[\\begin{gathered}\\displaystyle e^{\\ln5}=5\\\\\\displaystyle e^{-\\ln5}=\\frac15\\end{gathered}\\]<p><strong>Step 3.</strong> Simplify.</p>\\[\\displaystyle \\cosh(\\ln5)=\\frac{5+\\frac15}{2}=\\frac{26/5}{2}=\\frac{13}5\\]<p><strong>Step 4.</strong> No log to cancel here, so use a calculator.</p>\\[\\displaystyle \\cosh5=\\frac{e^5+e^{-5}}{2}\\approx74.21\\]<p><strong>What you found:</strong></p><ul><li>\\(\\cosh(\\ln5)=\\frac{13}5\\)</li><li>\\(\\cosh5=\\approx74.21\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>(a) \\(\\frac{5+1/5}{2}=\\frac{13}{5}\\).</p><p>(b) \\(\\frac{e^5+e^{-5}}{2}\\approx74.21\\).</p><p class=\"ans\">(a) \\(\\frac{13}{5}\\) (b) \\(\\approx74.21\\)</p>"
@@ -5914,6 +6182,10 @@ export const sections: Section[] = [
       "question": "Find (a) \\(\\operatorname{sech}0\\) (b) \\(\\cosh^{-1}1\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\operatorname{sech}\\) is the reciprocal of \\(\\cosh\\), just as \\(\\sec=\\frac1{\\cos}\\).</p>\\[\\displaystyle \\operatorname{sech}0=\\frac1{\\cosh0}=\\frac11=1\\]<p><strong>Step 2.</strong> Inverse means: which \\(y\\ge0\\) has \\(\\cosh y=1\\)?</p>\\[\\begin{gathered}\\displaystyle y=\\cosh^{-1}1\\iff\\cosh y=1\\\\\\displaystyle y\\ge0\\end{gathered}\\]<p><strong>Step 3.</strong> \\(\\cosh\\) has its minimum value 1 at 0 (it is shaped like a U).</p>\\[\\displaystyle \\cosh y\\ge1\\text{, with equality only at }y=0\\]<p><strong>What you found:</strong></p><ul><li>\\(\\operatorname{sech}0=1\\)</li><li>\\(\\cosh^{-1}1=0\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>(a) \\(\\frac{1}{\\cosh0}=1\\).</p><p>(b) \\(\\cosh y=1\\) only when \\(y=0\\).</p><p class=\"ans\">(a) 1 (b) 0</p>"
        }
@@ -5952,13 +6224,17 @@ export const sections: Section[] = [
       "question": "Write \\(8\\sinh x+5\\cosh x\\) in terms of \\(e^x\\) and \\(e^{-x}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Definitions: \\(\\sinh x=\\dfrac{e^x-e^{-x}}{2}\\) (minus), \\(\\cosh x=\\dfrac{e^x+e^{-x}}{2}\\) (plus). Every hyperbolic question starts from these.</p>\\[\\displaystyle 8\\sinh x+5\\cosh x=4(e^x-e^{-x})+\\tfrac52(e^x+e^{-x})\\]<p><strong>Step 2.</strong> Distribute: \\(\\frac82=4\\), \\(\\frac52\\) stays.</p>\\[\\displaystyle =4e^x-4e^{-x}+\\tfrac52e^x+\\tfrac52e^{-x}\\]<p><strong>Step 3.</strong> Combine like terms: \\(4+\\frac52=\\frac{13}2\\) and \\(-4+\\frac52=-\\frac32\\).</p>\\[\\displaystyle =\\tfrac{13}2e^x-\\tfrac32e^{-x}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{result}:\\ \\tfrac{13}2e^x-\\tfrac32e^{-x}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(8\\cdot\\frac{e^x-e^{-x}}{2}+5\\cdot\\frac{e^x+e^{-x}}{2}=4e^x-4e^{-x}+\\frac52e^x+\\frac52e^{-x}\\).</p><p class=\"ans\">\\(\\frac{13}{2}e^x-\\frac32e^{-x}\\)</p>"
        }
       ],
       "debug": [
        {
-        "code": "8\\sinh x+5\\cosh x=8\\cdot\\frac{e^x-e^{-x}}2+5\\cdot\\frac{e^x+e^{-x}}2",
+        "code": "8\\sinh x+5\\cosh x=4(e^x-e^{-x})+\\tfrac52(e^x+e^{-x})",
         "why": "Definitions: \\(\\sinh x=\\dfrac{e^x-e^{-x}}{2}\\) (minus), \\(\\cosh x=\\dfrac{e^x+e^{-x}}{2}\\) (plus). Every hyperbolic question starts from these."
        },
        {
@@ -5983,6 +6259,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Write \\(\\sinh(\\ln x)\\) as a rational function of \\(x\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Definitions: \\(\\sinh x=\\dfrac{e^x-e^{-x}}{2}\\) (minus), \\(\\cosh x=\\dfrac{e^x+e^{-x}}{2}\\) (plus). Every hyperbolic question starts from these.</p>\\[\\displaystyle \\sinh(\\ln x)=\\frac{e^{\\ln x}-e^{-\\ln x}}2\\]<p><strong>Step 2.</strong> \\(e^{\\ln x}=x\\), \\(e^{-\\ln x}=\\frac1x\\).</p>\\[\\displaystyle =\\frac{x-\\frac1x}{2}\\]<p><strong>Step 3.</strong> Combine the top over \\(x\\), then divide by 2.</p>\\[\\displaystyle =\\frac{\\frac{x^2-1}{x}}{2}=\\frac{x^2-1}{2x}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\sinh(\\ln x)=\\frac{x^2-1}{2x}\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\(\\frac{e^{\\ln x}-e^{-\\ln x}}{2}=\\frac{x-\\frac1x}{2}\\).</p><p class=\"ans\">\\(\\dfrac{x^2-1}{2x}\\)</p>"
@@ -6016,6 +6296,10 @@ export const sections: Section[] = [
       "question": "Prove \\(\\cosh x+\\sinh x=e^x\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Proof strategy for hyperbolic identities: replace every hyperbolic function by its exponential definition, then simplify with algebra.</p>\\[\\displaystyle \\cosh x+\\sinh x=\\frac{e^x+e^{-x}}2+\\frac{e^x-e^{-x}}2\\]<p><strong>Step 2.</strong> Same denominator, so add the tops: the \\(e^{-x}\\) terms cancel.</p>\\[\\displaystyle =\\frac{2e^x}{2}\\]<p><strong>Step 3.</strong> Done.</p>\\[\\displaystyle =e^x\\ \\ \\checkmark\\]</div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\frac{e^x+e^{-x}}{2}+\\frac{e^x-e^{-x}}{2}=\\frac{2e^x}{2}\\).</p><p class=\"ans\">\\(=e^x\\) ✓</p>"
        }
@@ -6041,6 +6325,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Prove \\(\\sinh2x=2\\sinh x\\cosh x\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Start from the more complicated side (the right) and use the definitions.</p>\\[\\displaystyle 2\\sinh x\\cosh x=2\\cdot\\frac{e^x-e^{-x}}2\\cdot\\frac{e^x+e^{-x}}2\\]<p><strong>Step 2.</strong> \\(2\\cdot\\frac12\\cdot\\frac12=\\frac12\\).</p>\\[\\displaystyle =\\frac{(e^x-e^{-x})(e^x+e^{-x})}{2}\\]<p><strong>Step 3.</strong> Difference of squares \\((a-b)(a+b)=a^2-b^2\\), with \\((e^x)^2=e^{2x}\\).</p>\\[\\displaystyle =\\frac{e^{2x}-e^{-2x}}{2}\\]<p><strong>Step 4.</strong> That is the definition of \\(\\sinh\\) with input \\(2x\\).</p>\\[\\displaystyle =\\sinh2x\\ \\ \\checkmark\\]</div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>Right side: \\(2\\cdot\\frac{e^x-e^{-x}}{2}\\cdot\\frac{e^x+e^{-x}}{2}=\\frac{e^{2x}-e^{-2x}}{2}\\) (difference of squares).</p><p class=\"ans\">\\(=\\sinh2x\\) ✓</p>"
@@ -6074,6 +6362,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Use \\(\\cosh^2x-\\sinh^2x=1\\). For \\(x>0\\), \\(\\sinh x\\) is positive.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The key hyperbolic identity (like \\(\\cos^2+\\sin^2=1\\) but with a <b>minus</b>).</p>\\[\\displaystyle \\cosh^2x-\\sinh^2x=1\\]<p><strong>Step 2.</strong> Solve for \\(\\sinh^2x\\).</p>\\[\\displaystyle \\sinh^2x=\\frac{25}9-1=\\frac{16}9\\]<p><strong>Step 3.</strong> Take the positive root because \\(x>0\\) makes \\(\\sinh x>0\\).</p>\\[\\displaystyle \\sinh x=\\frac43\\]<p><strong>Step 4.</strong> Same definition as tangent.</p>\\[\\displaystyle \\tanh x=\\frac{\\sinh x}{\\cosh x}=\\frac{4/3}{5/3}=\\frac45\\]<p><strong>Step 5.</strong> The other three are reciprocals of cosh, sinh and tanh: flip each fraction.</p>\\[\\begin{gathered}\\displaystyle \\operatorname{sech}x=\\tfrac35\\\\\\displaystyle \\operatorname{csch}x=\\tfrac34\\\\\\displaystyle \\coth x=\\tfrac54\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\cosh x=\\frac53\\)</li><li>\\(\\sinh x=\\frac43\\)</li><li>\\(\\tanh x=\\frac45\\)</li><li>\\(\\operatorname{sech}x=\\frac35\\)</li><li>\\(\\operatorname{csch}x=\\frac34\\)</li><li>\\(\\coth x=\\frac54\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -6142,6 +6434,10 @@ export const sections: Section[] = [
       "question": "Find \\(\\lim_{x\\to\\infty}\\tanh x\\), \\(\\lim_{x\\to-\\infty}\\tanh x\\), \\(\\lim_{x\\to\\infty}\\operatorname{sech}x\\) and \\(\\lim_{x\\to\\infty}\\frac{\\sinh x}{e^x}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Write in exponentials.</p>\\[\\displaystyle \\tanh x=\\frac{e^x-e^{-x}}{e^x+e^{-x}}\\]<p><strong>Step 2.</strong> For large \\(x\\), \\(e^{-x}\\) is tiny, so only \\(e^x\\) matters.</p>\\[\\displaystyle x\\to\\infty:\\ e^{-x}\\to0\\Rightarrow\\tanh x\\to\\frac{e^x}{e^x}=1\\]<p><strong>Step 3.</strong> Now \\(e^x\\) is tiny and \\(e^{-x}\\) dominates.</p>\\[\\displaystyle x\\to-\\infty:\\ e^{x}\\to0\\Rightarrow\\tanh x\\to\\frac{-e^{-x}}{e^{-x}}=-1\\]<p><strong>Step 4.</strong> Denominator grows without bound, so the fraction goes to 0.</p>\\[\\displaystyle \\operatorname{sech}x=\\frac{2}{e^x+e^{-x}}\\to0\\]<p><strong>Step 5.</strong> Divide each term by \\(e^x\\); \\(e^{-2x}\\to0\\).</p>\\[\\displaystyle \\frac{\\sinh x}{e^x}=\\frac{e^x-e^{-x}}{2e^x}=\\frac{1-e^{-2x}}{2}\\to\\frac12\\]<p><strong>What you found:</strong></p><ul><li>\\(\\lim_{+\\infty}\\tanh=1\\)</li><li>\\(\\lim_{-\\infty}\\tanh=-1\\)</li><li>\\(\\lim\\operatorname{sech}=0\\)</li><li>\\(\\lim\\frac{\\sinh x}{e^x}=\\frac12\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\tanh x=\\frac{e^x-e^{-x}}{e^x+e^{-x}}\\). As \\(x\\to\\infty\\), \\(e^{-x}\\to0\\) so it \\(\\to\\frac{e^x}{e^x}=1\\). As \\(x\\to-\\infty\\), \\(e^x\\to0\\) so it \\(\\to\\frac{-e^{-x}}{e^{-x}}=-1\\).</p><p>\\(\\operatorname{sech}x=\\frac{2}{e^x+e^{-x}}\\to0\\).</p><p>\\(\\frac{\\sinh x}{e^x}=\\frac{1-e^{-2x}}{2}\\to\\frac12\\).</p><p class=\"ans\">\\(1\\), \\(-1\\), \\(0\\), \\(\\frac12\\)</p>"
        }
@@ -6200,6 +6496,10 @@ export const sections: Section[] = [
       "question": "Differentiate \\(f(x)=\\cosh3x\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Outer \\(\\cosh\\), inner \\(3x\\).</p>\\[\\begin{gathered}\\displaystyle f=\\cosh(3x)\\\\\\displaystyle u=3x\\\\\\displaystyle u'=3\\end{gathered}\\]<p><strong>Step 2.</strong> Hyperbolic derivatives: \\((\\sinh u)'=\\cosh u\\cdot u'\\) and \\((\\cosh u)'=\\sinh u\\cdot u'\\). <b>No minus signs</b> (unlike \\(\\cos\\)).</p>\\[\\displaystyle f'=\\sinh(3x)\\cdot3\\]<p><strong>Step 3.</strong> Tidy.</p>\\[\\displaystyle f'=3\\sinh3x\\]<p><strong>What you found:</strong></p><ul><li>\\(u'=3\\)</li><li>\\(f'=3\\sinh3x\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Chain rule, no minus sign.</p><p class=\"ans\">\\(f'(x)=3\\sinh3x\\)</p>"
        }
@@ -6238,6 +6538,10 @@ export const sections: Section[] = [
       "question": "Differentiate \\(h(x)=\\sinh(x^2)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Outer \\(\\sinh\\), inner \\(x^2\\).</p>\\[\\begin{gathered}\\displaystyle h=\\sinh(x^2)\\\\\\displaystyle u=x^2\\\\\\displaystyle u'=2x\\end{gathered}\\]<p><strong>Step 2.</strong> Hyperbolic derivatives: \\((\\sinh u)'=\\cosh u\\cdot u'\\) and \\((\\cosh u)'=\\sinh u\\cdot u'\\). <b>No minus signs</b> (unlike \\(\\cos\\)).</p>\\[\\displaystyle h'=\\cosh(x^2)\\cdot2x\\]<p><strong>Step 3.</strong> Put the polynomial factor in front.</p>\\[\\displaystyle h'=2x\\cosh(x^2)\\]<p><strong>What you found:</strong></p><ul><li>\\(u'=2x\\)</li><li>\\(h'=2x\\cosh(x^2)\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Outside \\(\\sinh u\\to\\cosh u\\), inside \\(x^2\\to2x\\).</p><p class=\"ans\">\\(h'(x)=2x\\cosh(x^2)\\)</p>"
        }
@@ -6275,6 +6579,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Differentiate \\(G(t)=\\sinh(\\ln t)\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Outer \\(\\sinh\\), inner \\(\\ln t\\).</p>\\[\\begin{gathered}\\displaystyle G=\\sinh(\\ln t)\\\\\\displaystyle u=\\ln t\\\\\\displaystyle u'=\\tfrac1t\\end{gathered}\\]<p><strong>Step 2.</strong> Hyperbolic derivatives: \\((\\sinh u)'=\\cosh u\\cdot u'\\) and \\((\\cosh u)'=\\sinh u\\cdot u'\\). <b>No minus signs</b> (unlike \\(\\cos\\)).</p>\\[\\displaystyle G'=\\cosh(\\ln t)\\cdot\\frac1t\\]<p><strong>Step 3.</strong> Bonus simplification: use the definition, \\(e^{\\ln t}=t\\).</p>\\[\\displaystyle \\cosh(\\ln t)=\\frac{t+\\frac1t}{2}=\\frac{t^2+1}{2t}\\]<p><strong>Step 4.</strong> Multiply.</p>\\[\\displaystyle G'=\\frac{t^2+1}{2t}\\cdot\\frac1t=\\frac{t^2+1}{2t^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(u'=\\frac1t\\)</li><li>\\(G'=\\frac{t^2+1}{2t^2}\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\(G'(t)=\\cosh(\\ln t)\\cdot\\frac1t\\).</p><p>Simplify: \\(\\cosh(\\ln t)=\\frac{t+1/t}{2}=\\frac{t^2+1}{2t}\\).</p><p class=\"ans\">\\(G'(t)=\\dfrac{\\cosh(\\ln t)}{t}=\\dfrac{t^2+1}{2t^2}\\)</p>"
@@ -6317,6 +6625,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Differentiate \\(y=\\operatorname{sech}x\\tanh x\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product rule.</p>\\[\\displaystyle y=\\underbrace{\\operatorname{sech}x}_{f}\\cdot\\underbrace{\\tanh x}_{g}\\]<p><strong>Step 2.</strong> Table: \\((\\operatorname{sech}x)'=-\\operatorname{sech}x\\tanh x\\) (one of the few hyperbolic derivatives with a minus), \\((\\tanh x)'=\\operatorname{sech}^2x\\).</p>\\[\\begin{gathered}\\displaystyle f'=-\\operatorname{sech}x\\tanh x\\\\\\displaystyle g'=\\operatorname{sech}^2x\\end{gathered}\\]<p><strong>Step 3.</strong> \\(f'g+fg'\\).</p>\\[\\displaystyle y'=-\\operatorname{sech}x\\tanh^2x+\\operatorname{sech}^3x\\]<p><strong>Step 4.</strong> Factor out \\(\\operatorname{sech}x\\).</p>\\[\\displaystyle y'=\\operatorname{sech}x\\big(\\operatorname{sech}^2x-\\tanh^2x\\big)\\]<p><strong>What you found:</strong></p><ul><li>\\(f=\\operatorname{sech}x\\)</li><li>\\(g=\\tanh x\\)</li><li>\\(f'=-\\operatorname{sech}x\\tanh x\\)</li><li>\\(g'=\\operatorname{sech}^2x\\)</li><li>\\(y'=\\operatorname{sech}x(\\operatorname{sech}^2x-\\tanh^2x)\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>Product rule: \\((-\\operatorname{sech}x\\tanh x)\\tanh x+\\operatorname{sech}x\\cdot\\operatorname{sech}^2x\\).</p><p class=\"ans\">\\(y'=\\operatorname{sech}x\\,(\\operatorname{sech}^2x-\\tanh^2x)\\)</p>"
@@ -6373,6 +6685,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Differentiate \\(g(t)=t\\coth\\sqrt{t^2+1}\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product rule, and \\(h\\) needs the chain rule inside it.</p>\\[\\displaystyle g=\\underbrace{t}_{f}\\cdot\\underbrace{\\coth\\sqrt{t^2+1}}_{h}\\]<p><strong>Step 2.</strong> Inner of \\(h\\): \\((\\sqrt w)'=\\frac{w'}{2\\sqrt w}\\) with \\(w'=2t\\).</p>\\[\\begin{gathered}\\displaystyle u=\\sqrt{t^2+1}\\\\\\displaystyle u'=\\frac{t}{\\sqrt{t^2+1}}\\end{gathered}\\]<p><strong>Step 3.</strong> Table: \\((\\coth u)'=-\\operatorname{csch}^2u\\cdot u'\\).</p>\\[\\displaystyle h'=-\\operatorname{csch}^2u\\cdot u'\\]<p><strong>Step 4.</strong> Product rule \\(f'h+fh'\\).</p>\\[\\displaystyle g'=1\\cdot\\coth u+t\\cdot\\Big(-\\operatorname{csch}^2u\\Big)\\frac{t}{\\sqrt{t^2+1}}\\]<p><strong>Step 5.</strong> Substitute \\(u\\) back and combine \\(t\\cdot t=t^2\\).</p>\\[\\displaystyle g'=\\coth\\sqrt{t^2+1}-\\frac{t^2\\operatorname{csch}^2\\sqrt{t^2+1}}{\\sqrt{t^2+1}}\\]<p><strong>What you found:</strong></p><ul><li>\\(u=\\sqrt{t^2+1}\\)</li><li>\\(u'=\\frac{t}{\\sqrt{t^2+1}}\\)</li><li>\\(g'=\\coth u-\\frac{t^2\\operatorname{csch}^2u}{u}\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>Product rule. Derivative of \\(\\coth u\\) is \\(-\\operatorname{csch}^2u\\cdot u'\\) with \\(u=\\sqrt{t^2+1}\\), \\(u'=\\frac{t}{\\sqrt{t^2+1}}\\).</p><p>\\(g'=\\coth\\sqrt{t^2+1}+t\\cdot\\left(-\\operatorname{csch}^2\\sqrt{t^2+1}\\right)\\frac{t}{\\sqrt{t^2+1}}\\).</p><p class=\"ans\">\\(g'(t)=\\coth\\sqrt{t^2+1}-\\dfrac{t^2\\operatorname{csch}^2\\sqrt{t^2+1}}{\\sqrt{t^2+1}}\\)</p>"
@@ -6527,6 +6843,10 @@ export const sections: Section[] = [
         "html": "<p>Is the right endpoint included? The interval isn't closed, so the Extreme Value Theorem doesn't apply.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Read the interval carefully: \\(0\\) is <b>included</b> (\\(\\le\\)) but \\(\\frac\\pi2\\) is <b>not</b> (\\(<\\)).</p>\\[\\begin{gathered}\\displaystyle f(x)=\\sin x\\\\\\displaystyle 0\\le x<\\tfrac\\pi2\\end{gathered}\\]<p><strong>Step 2.</strong> Positive derivative, so \\(\\sin x\\) is strictly increasing the whole time.</p>\\[\\displaystyle f'(x)=\\cos x>0\\ \\text{ on }[0,\\tfrac\\pi2)\\]<p><strong>Step 3.</strong> Increasing function: smallest value at the start.</p>\\[\\displaystyle \\text{min at the left end: }f(0)=0\\]<p><strong>Step 4.</strong> The max would be at \\(\\frac\\pi2\\), but that point is excluded. You can get as close to 1 as you like, yet no \\(x\\) gives exactly 1, so <b>no absolute max</b>.</p>\\[\\displaystyle \\sin x\\to1\\text{ but never reaches it}\\]<p><strong>Step 5.</strong> A local extreme needs a turnaround (the graph going up then down, or vice versa) at an interior point. Strictly increasing never turns around.</p>\\[\\displaystyle \\text{no local max or min}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{abs min}:\\ f(0)=0\\)</li><li>\\(\\text{abs max}:\\ \\text{none}\\)</li><li>\\(\\text{local}:\\ \\text{none}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>On this interval \\(\\sin x\\) increases from \\(\\sin0=0\\) toward 1, but \\(x=\\pi/2\\) is <em>not included</em>, so it never reaches 1.</p><p class=\"ans\">Absolute min \\(f(0)=0\\); no absolute max; no local max or min</p>"
        }
@@ -6578,6 +6898,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Sketch \\(f(x)=\\ln x\\) on \\(0<x\\le2\\) and find its absolute and local extreme values.",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(2\\) is included, \\(0\\) is not (and \\(\\ln0\\) is undefined anyway).</p>\\[\\begin{gathered}\\displaystyle f(x)=\\ln x\\\\\\displaystyle 0<x\\le2\\end{gathered}\\]<p><strong>Step 2.</strong> Always increasing.</p>\\[\\displaystyle f'(x)=\\frac1x>0\\]<p><strong>Step 3.</strong> Increasing function, included right endpoint: that is the biggest value.</p>\\[\\displaystyle \\text{max at the right end: }f(2)=\\ln2\\]<p><strong>Step 4.</strong> Going left, the values drop without bound, so there is <b>no absolute min</b>.</p>\\[\\displaystyle x\\to0^+\\Rightarrow\\ln x\\to-\\infty\\]<p><strong>Step 5.</strong> No turnaround points.</p>\\[\\displaystyle \\text{no local extremes}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{abs max}:\\ \\ln2\\)</li><li>\\(\\text{abs min}:\\ \\text{none}\\)</li><li>\\(\\text{local}:\\ \\text{none}\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\(\\ln x\\) increases. It reaches \\(\\ln2\\) at the included endpoint 2, but drops toward \\(-\\infty\\) as \\(x\\to0^+\\).</p><p class=\"ans\">Absolute max \\(f(2)=\\ln2\\); no absolute min; no local extremes</p>"
@@ -6631,6 +6955,10 @@ export const sections: Section[] = [
       "question": "Find the critical numbers of \\(f(x)=3x^2+x-2\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Critical number: a point <b>in the domain</b> of \\(f\\) where \\(f'=0\\) or \\(f'\\) does not exist. Recipe: find \\(f'\\), factor it, set the top \\(=0\\), and check where the bottom \\(=0\\).</p>\\[\\displaystyle f'(x)=6x+1\\]<p><strong>Step 2.</strong> A polynomial derivative exists everywhere, so the only critical numbers come from \\(f'=0\\).</p>\\[\\displaystyle 6x+1=0\\]<p><strong>Step 3.</strong> Solve.</p>\\[\\displaystyle x=-\\tfrac16\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{c.n.}:\\ -\\tfrac16\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'(x)=6x+1=0\\).</p><p class=\"ans\">\\(x=-\\frac16\\)</p>"
        }
@@ -6662,6 +6990,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find the critical numbers of \\(f(x)=3x^4+8x^3-48x^2\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Critical number: a point <b>in the domain</b> of \\(f\\) where \\(f'=0\\) or \\(f'\\) does not exist. Recipe: find \\(f'\\), factor it, set the top \\(=0\\), and check where the bottom \\(=0\\).</p>\\[\\displaystyle f'(x)=12x^3+24x^2-96x\\]<p><strong>Step 2.</strong> Factor out the GCF \\(12x\\) first. Never divide by \\(x\\); you would lose the solution \\(x=0\\).</p>\\[\\displaystyle =12x\\,(x^2+2x-8)\\]<p><strong>Step 3.</strong> Factor the quadratic: two numbers that multiply to \\(-8\\) and add to \\(2\\): \\(4\\) and \\(-2\\).</p>\\[\\displaystyle =12x\\,(x+4)(x-2)\\]<p><strong>Step 4.</strong> Set each factor to zero.</p>\\[\\begin{gathered}\\displaystyle x=-4\\\\\\displaystyle 0\\\\\\displaystyle 2\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{c.n.}:\\ -4,0,2\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\(f'(x)=12x^3+24x^2-96x=12x(x^2+2x-8)=12x(x+4)(x-2)\\).</p><p class=\"ans\">\\(x=-4,\\ 0,\\ 2\\)</p>"
@@ -6699,6 +7031,10 @@ export const sections: Section[] = [
       "question": "Find the critical numbers of \\(g(t)=t^5+5t^3+50t\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Critical number: a point <b>in the domain</b> of \\(f\\) where \\(f'=0\\) or \\(f'\\) does not exist. Recipe: find \\(f'\\), factor it, set the top \\(=0\\), and check where the bottom \\(=0\\).</p>\\[\\displaystyle g'(t)=5t^4+15t^2+50\\]<p><strong>Step 2.</strong> Even powers are never negative, so the smallest \\(g'\\) can be is 50.</p>\\[\\begin{gathered}\\displaystyle 5t^4\\ge0\\\\\\displaystyle 15t^2\\ge0\\Rightarrow g'(t)\\ge50\\end{gathered}\\]<p><strong>Step 3.</strong> Neither condition for a critical number ever happens.</p>\\[\\displaystyle g'(t)\\ne0\\text{ and is defined everywhere}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{c.n.}:\\ \\text{none}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(g'(t)=5t^4+15t^2+50\\). Every term is \\(\\ge0\\) and the constant is 50, so \\(g'(t)\\ge50>0\\). It's never 0 and always defined.</p><p class=\"ans\">No critical numbers</p>"
        }
@@ -6730,6 +7066,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find the critical numbers of \\(g(y)=\\dfrac{y-1}{y^2-y+1}\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Quotient rule: (bottom·top′ − top·bottom′)/bottom².</p>\\[\\displaystyle g'(y)=\\frac{(y^2-y+1)(1)-(y-1)(2y-1)}{(y^2-y+1)^2}\\]<p><strong>Step 2.</strong> Expand \\((y-1)(2y-1)=2y^2-3y+1\\), then subtract. Distribute the minus to every term.</p>\\[\\displaystyle \\text{top}=y^2-y+1-(2y^2-3y+1)=-y^2+2y\\]<p><strong>Step 3.</strong> Factor the top.</p>\\[\\displaystyle g'(y)=\\frac{-y(y-2)}{(y^2-y+1)^2}\\]<p><strong>Step 4.</strong> Check the bottom: negative discriminant means no real roots, so \\(g'\\) is defined everywhere.</p>\\[\\displaystyle y^2-y+1=0\\text{ has }\\Delta=1-4<0\\]<p><strong>Step 5.</strong> Top = 0.</p>\\[\\begin{gathered}\\displaystyle y=0\\\\\\displaystyle 2\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(g'=\\frac{-y(y-2)}{(y^2-y+1)^2}\\)</li><li>\\(\\text{c.n.}:\\ 0,2\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>Quotient rule numerator: \\((y^2-y+1)-(y-1)(2y-1)=y^2-y+1-(2y^2-3y+1)=-y^2+2y\\).</p><p>\\(g'(y)=\\dfrac{-y(y-2)}{(y^2-y+1)^2}\\). The denominator is never 0 (its discriminant is negative).</p><p class=\"ans\">\\(y=0\\) and \\(y=2\\)</p>"
@@ -6777,6 +7117,10 @@ export const sections: Section[] = [
       "question": "Find the critical numbers of \\(p(x)=\\dfrac{x^2+2}{2x-1}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Quotient rule.</p>\\[\\displaystyle p'(x)=\\frac{2x(2x-1)-2(x^2+2)}{(2x-1)^2}\\]<p><strong>Step 2.</strong> Expand the top.</p>\\[\\displaystyle =\\frac{4x^2-2x-2x^2-4}{(2x-1)^2}=\\frac{2x^2-2x-4}{(2x-1)^2}\\]<p><strong>Step 3.</strong> Factor: \\(2(x^2-x-2)\\).</p>\\[\\displaystyle =\\frac{2(x-2)(x+1)}{(2x-1)^2}\\]<p><strong>Step 4.</strong> \\(p'\\) is undefined at \\(\\frac12\\), but so is \\(p\\) itself. A critical number must be in the domain, so \\(\\frac12\\) does not count. This is the trap of the problem.</p>\\[\\displaystyle x=\\tfrac12\\ \\text{is NOT in the domain of }p\\]<p><strong>Step 5.</strong> Top = 0.</p>\\[\\begin{gathered}\\displaystyle x=-1\\\\\\displaystyle 2\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(p'=\\frac{2(x-2)(x+1)}{(2x-1)^2}\\)</li><li>\\(\\text{c.n.}:\\ -1,2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(p'(x)=\\dfrac{2x(2x-1)-2(x^2+2)}{(2x-1)^2}=\\dfrac{2x^2-2x-4}{(2x-1)^2}=\\dfrac{2(x-2)(x+1)}{(2x-1)^2}\\).</p><p>\\(p'\\) is undefined at \\(x=\\frac12\\), but \\(\\frac12\\) is <strong>not in the domain</strong> of \\(p\\), so it isn't a critical number.</p><p class=\"ans\">\\(x=-1\\) and \\(x=2\\)</p>"
        }
@@ -6823,6 +7167,10 @@ export const sections: Section[] = [
       "question": "Find the critical numbers of \\(h(t)=t^{3/4}-2t^{1/4}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Power rule on each term. Domain: \\(t\\ge0\\) (fourth roots).</p>\\[\\displaystyle h'(t)=\\tfrac34t^{-1/4}-\\tfrac12t^{-3/4}\\]<p><strong>Step 2.</strong> Combine over the common denominator \\(4t^{3/4}\\): multiply the first term by \\(\\frac{t^{3/4}}{t^{3/4}}\\), giving \\(t^{-1/4+3/4}=t^{1/2}\\) on top.</p>\\[\\displaystyle =\\frac{3t^{1/2}-2}{4t^{3/4}}\\]<p><strong>Step 3.</strong> Top = 0: \\(\\sqrt t=\\frac23\\), square both sides.</p>\\[\\displaystyle 3\\sqrt t-2=0\\Rightarrow t=\\tfrac49\\]<p><strong>Step 4.</strong> \\(h'\\) undefined at 0, and \\(0\\) <b>is</b> in the domain of \\(h\\), so it counts.</p>\\[\\displaystyle t=0:\\ \\text{denominator}=0\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{c.n.}:\\ 0,\\tfrac49\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(h'(t)=\\frac34t^{-1/4}-\\frac12t^{-3/4}=\\dfrac{3t^{1/2}-2}{4t^{3/4}}\\).</p><p>Zero when \\(\\sqrt t=\\frac23\\Rightarrow t=\\frac49\\). Undefined at \\(t=0\\), which is in the domain (\\(t\\ge0\\)).</p><p class=\"ans\">\\(t=0\\) and \\(t=\\frac49\\)</p>"
        }
@@ -6858,6 +7206,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find the critical numbers of \\(F(x)=x^{4/5}(x-4)^2\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product rule; chain rule on \\((x-4)^2\\).</p>\\[\\displaystyle F'=\\tfrac45x^{-1/5}(x-4)^2+x^{4/5}\\cdot2(x-4)\\]<p><strong>Step 2.</strong> Factor out the <b>lowest</b> power of each common piece: \\(x^{-1/5}\\) and \\((x-4)^1\\). (\\(x^{4/5}=x^{-1/5}\\cdot x\\).)</p>\\[\\displaystyle =x^{-1/5}(x-4)\\Big[\\tfrac45(x-4)+2x\\Big]\\]<p><strong>Step 3.</strong> Simplify the bracket.</p>\\[\\displaystyle \\tfrac45(x-4)+2x=\\frac{4x-16+10x}{5}=\\frac{14x-16}5\\]<p><strong>Step 4.</strong> Move \\(x^{-1/5}\\) to the bottom; factor 2 from \\(14x-16\\).</p>\\[\\displaystyle F'(x)=\\frac{2(x-4)(7x-8)}{5x^{1/5}}\\]<p><strong>Step 5.</strong> Top = 0 gives \\(4\\) and \\(\\frac87\\); bottom = 0 gives \\(0\\), which is in the domain.</p>\\[\\begin{gathered}\\displaystyle x=0\\\\\\displaystyle \\tfrac87\\\\\\displaystyle 4\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(F'=\\frac{2(x-4)(7x-8)}{5x^{1/5}}\\)</li><li>\\(\\text{c.n.}:\\ 0,\\tfrac87,4\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\(F'=\\frac45x^{-1/5}(x-4)^2+2x^{4/5}(x-4)=x^{-1/5}(x-4)\\left[\\frac45(x-4)+2x\\right]\\).</p><p>Bracket: \\(\\frac{14x-16}{5}\\). So \\(F'(x)=\\dfrac{2(x-4)(7x-8)}{5x^{1/5}}\\).</p><p class=\"ans\">\\(x=0,\\ \\frac87,\\ 4\\)</p>"
@@ -6905,6 +7257,10 @@ export const sections: Section[] = [
       "question": "Find the critical numbers of \\(f(x)=x^{1/3}(4-x)^{2/3}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product rule; the \\((-1)\\) is the chain rule on \\(4-x\\).</p>\\[\\displaystyle f'=\\tfrac13x^{-2/3}(4-x)^{2/3}+x^{1/3}\\cdot\\tfrac23(4-x)^{-1/3}(-1)\\]<p><strong>Step 2.</strong> Common denominator \\(3x^{2/3}(4-x)^{1/3}\\). First term needs one more \\((4-x)\\) on top, second needs one more \\(x\\).</p>\\[\\displaystyle =\\frac{(4-x)-2x}{3x^{2/3}(4-x)^{1/3}}\\]<p><strong>Step 3.</strong> Simplify the top.</p>\\[\\displaystyle =\\frac{4-3x}{3x^{2/3}(4-x)^{1/3}}\\]<p><strong>Step 4.</strong> Top = 0.</p>\\[\\displaystyle 4-3x=0\\Rightarrow x=\\tfrac43\\]<p><strong>Step 5.</strong> Bottom = 0 at both. Cube roots are defined for all \\(x\\), so both are in the domain and count.</p>\\[\\begin{gathered}\\displaystyle x=0\\\\\\displaystyle x=4\\ \\ (f'\\text{ undefined})\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(f'=\\frac{4-3x}{3x^{2/3}(4-x)^{1/3}}\\)</li><li>\\(\\text{c.n.}:\\ 0,\\tfrac43,4\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'=\\frac13x^{-2/3}(4-x)^{2/3}-\\frac23x^{1/3}(4-x)^{-1/3}=\\dfrac{(4-x)-2x}{3x^{2/3}(4-x)^{1/3}}\\).</p><p>\\(f'=0\\) at \\(x=\\frac43\\); undefined at \\(x=0\\) and \\(x=4\\) (both in the domain).</p><p class=\"ans\">\\(x=0,\\ \\frac43,\\ 4\\)</p>"
        }
@@ -6951,6 +7307,10 @@ export const sections: Section[] = [
       "question": "Find the critical numbers of \\(f(\\theta)=2\\cos\\theta+\\sin^2\\theta\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\((2\\cos\\theta)'=-2\\sin\\theta\\); chain rule \\((\\sin^2\\theta)'=2\\sin\\theta\\cos\\theta\\).</p>\\[\\displaystyle f'(\\theta)=-2\\sin\\theta+2\\sin\\theta\\cos\\theta\\]<p><strong>Step 2.</strong> Factor out \\(2\\sin\\theta\\). Never divide by \\(\\sin\\theta\\) (you would lose solutions).</p>\\[\\displaystyle =2\\sin\\theta(\\cos\\theta-1)\\]<p><strong>Step 3.</strong> First factor.</p>\\[\\displaystyle \\sin\\theta=0\\Rightarrow\\theta=n\\pi\\]<p><strong>Step 4.</strong> Second factor. These are already included in \\(n\\pi\\).</p>\\[\\displaystyle \\cos\\theta=1\\Rightarrow\\theta=2n\\pi\\]<p><strong>Step 5.</strong> Combined answer.</p>\\[\\begin{gathered}\\displaystyle \\theta=n\\pi\\\\\\displaystyle n\\in\\mathbb Z\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{c.n.}:\\ n\\pi\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'(\\theta)=-2\\sin\\theta+2\\sin\\theta\\cos\\theta=2\\sin\\theta(\\cos\\theta-1)\\).</p><p>Zero when \\(\\sin\\theta=0\\) or \\(\\cos\\theta=1\\). Both happen exactly at multiples of \\(\\pi\\).</p><p class=\"ans\">\\(\\theta=n\\pi\\), \\(n\\) any integer</p>"
        }
@@ -6990,6 +7350,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find the critical numbers of \\(g(x)=x^2\\ln x\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Because of \\(\\ln x\\). Remember this; it rules out candidates later.</p>\\[\\displaystyle \\text{Domain: }x>0\\]<p><strong>Step 2.</strong> Product rule.</p>\\[\\displaystyle g'(x)=2x\\ln x+x^2\\cdot\\frac1x=2x\\ln x+x\\]<p><strong>Step 3.</strong> Factor out \\(x\\).</p>\\[\\displaystyle =x(2\\ln x+1)\\]<p><strong>Step 4.</strong> First factor is 0 only at \\(x=0\\), outside the domain.</p>\\[\\displaystyle x=0\\ \\text{rejected (not in domain)}\\]<p><strong>Step 5.</strong> Exponentiate both sides to undo \\(\\ln\\).</p>\\[\\displaystyle 2\\ln x+1=0\\Rightarrow\\ln x=-\\tfrac12\\Rightarrow x=e^{-1/2}\\]<p><strong>What you found:</strong></p><ul><li>\\(g'=x(2\\ln x+1)\\)</li><li>\\(\\text{c.n.}:\\ \\frac1{\\sqrt e}\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>Domain \\(x>0\\). \\(g'(x)=2x\\ln x+x=x(2\\ln x+1)\\).</p><p>\\(x\\neq0\\), so \\(2\\ln x+1=0\\Rightarrow\\ln x=-\\frac12\\).</p><p class=\"ans\">\\(x=e^{-1/2}=\\frac{1}{\\sqrt e}\\)</p>"
@@ -7036,6 +7400,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find the absolute max and min of \\(f(x)=12+4x-x^2\\) on \\([0,5]\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Closed Interval Method: the absolute max and min on \\([a,b]\\) can only happen at critical numbers inside the interval or at the two endpoints. Make a list and evaluate \\(f\\) at each. Step 1: critical numbers. \\(2\\in[0,5]\\) ✓</p>\\[\\displaystyle f'(x)=4-2x=0\\Rightarrow x=2\\]<p><strong>Step 2.</strong> Step 2: endpoints plus critical numbers.</p>\\[\\begin{gathered}\\displaystyle \\text{candidates: }0\\\\\\displaystyle 2\\\\\\displaystyle 5\\end{gathered}\\]<p><strong>Step 3.</strong> Step 3: evaluate the <b>original</b> \\(f\\) (not \\(f'\\)) at each.</p>\\[\\begin{gathered}\\displaystyle f(0)=12\\\\\\displaystyle f(2)=12+8-4=16\\\\\\displaystyle f(5)=12+20-25=7\\end{gathered}\\]<p><strong>Step 4.</strong> Step 4: biggest and smallest from the list.</p>\\[\\begin{gathered}\\displaystyle \\max=f(2)=16\\\\\\displaystyle \\min=f(5)=7\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{check}:\\ 0,2,5\\)</li><li>\\(f(0)=12\\)</li><li>\\(f(2)=16\\)</li><li>\\(f(5)=7\\)</li><li>\\(\\max=16\\)</li><li>\\(\\min=7\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\(f'=4-2x=0\\Rightarrow x=2\\).</p><p>\\(f(0)=12\\), \\(f(2)=16\\), \\(f(5)=7\\).</p><p class=\"ans\">Max \\(f(2)=16\\); min \\(f(5)=7\\)</p>"
@@ -7096,6 +7464,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find the absolute max and min of \\(f(x)=2x^3-3x^2-12x+1\\) on \\([-2,3]\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Closed Interval Method: the absolute max and min on \\([a,b]\\) can only happen at critical numbers inside the interval or at the two endpoints. Make a list and evaluate \\(f\\) at each. Find and factor \\(f'\\).</p>\\[\\displaystyle f'=6x^2-6x-12=6(x-2)(x+1)\\]<p><strong>Step 2.</strong> Both are inside the interval, so keep both.</p>\\[\\begin{gathered}\\displaystyle x=-1\\\\\\displaystyle 2\\ \\in[-2,3]\\ \\checkmark\\end{gathered}\\]<p><strong>Step 3.</strong> Add the endpoints.</p>\\[\\begin{gathered}\\displaystyle \\text{candidates: }-2\\\\\\displaystyle -1\\\\\\displaystyle 2\\\\\\displaystyle 3\\end{gathered}\\]<p><strong>Step 4.</strong> Evaluate carefully with signs.</p>\\[\\begin{gathered}\\displaystyle f(-2)=-16-12+24+1=-3\\\\\\displaystyle f(-1)=-2-3+12+1=8\\end{gathered}\\]<p><strong>Step 5.</strong> Keep going.</p>\\[\\begin{gathered}\\displaystyle f(2)=16-12-24+1=-19\\\\\\displaystyle f(3)=54-27-36+1=-8\\end{gathered}\\]<p><strong>Step 6.</strong> Compare.</p>\\[\\begin{gathered}\\displaystyle \\max=f(-1)=8\\\\\\displaystyle \\min=f(2)=-19\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(f(-2)=-3\\)</li><li>\\(f(-1)=8\\)</li><li>\\(f(2)=-19\\)</li><li>\\(f(3)=-8\\)</li><li>\\(\\max=8\\)</li><li>\\(\\min=-19\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\(f'=6x^2-6x-12=6(x-2)(x+1)\\Rightarrow x=-1,2\\).</p><p>\\(f(-2)=-3\\), \\(f(-1)=8\\), \\(f(2)=-19\\), \\(f(3)=-8\\).</p><p class=\"ans\">Max \\(f(-1)=8\\); min \\(f(2)=-19\\)</p>"
@@ -7165,6 +7537,10 @@ export const sections: Section[] = [
       "question": "Find the absolute max and min of \\(f(x)=3x^4-4x^3-12x^2+1\\) on \\([-2,3]\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Closed Interval Method: the absolute max and min on \\([a,b]\\) can only happen at critical numbers inside the interval or at the two endpoints. Make a list and evaluate \\(f\\) at each.</p>\\[\\displaystyle f'=12x^3-12x^2-24x=12x(x-2)(x+1)\\]<p><strong>Step 2.</strong> All three are in \\([-2,3]\\).</p>\\[\\begin{gathered}\\displaystyle x=-1\\\\\\displaystyle 0\\\\\\displaystyle 2\\end{gathered}\\]<p><strong>Step 3.</strong> \\((-2)^4=16\\), \\((-2)^3=-8\\).</p>\\[\\begin{gathered}\\displaystyle f(-2)=48+32-48+1=33\\\\\\displaystyle f(-1)=3+4-12+1=-4\\end{gathered}\\]<p><strong>Step 4.</strong> Evaluate the rest.</p>\\[\\begin{gathered}\\displaystyle f(0)=1\\\\\\displaystyle f(2)=48-32-48+1=-31\\\\\\displaystyle f(3)=243-108-108+1=28\\end{gathered}\\]<p><strong>Step 5.</strong> The max is at an <b>endpoint</b>. That is why you must never skip the endpoints.</p>\\[\\begin{gathered}\\displaystyle \\max=f(-2)=33\\\\\\displaystyle \\min=f(2)=-31\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(f(-2)=33\\)</li><li>\\(f(-1)=-4\\)</li><li>\\(f(0)=1\\)</li><li>\\(f(2)=-31\\)</li><li>\\(f(3)=28\\)</li><li>\\(\\max=33\\)</li><li>\\(\\min=-31\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'=12x^3-12x^2-24x=12x(x-2)(x+1)\\Rightarrow x=-1,0,2\\).</p><p>\\(f(-2)=33\\), \\(f(-1)=-4\\), \\(f(0)=1\\), \\(f(2)=-31\\), \\(f(3)=28\\).</p><p class=\"ans\">Max \\(f(-2)=33\\) (an endpoint!); min \\(f(2)=-31\\)</p>"
        }
@@ -7233,6 +7609,10 @@ export const sections: Section[] = [
       "question": "Find the absolute max and min of \\(f(x)=x+\\frac1x\\) on \\([0.2,4]\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Closed Interval Method: the absolute max and min on \\([a,b]\\) can only happen at critical numbers inside the interval or at the two endpoints. Make a list and evaluate \\(f\\) at each.</p>\\[\\displaystyle f'=1-\\frac1{x^2}=0\\Rightarrow x^2=1\\]<p><strong>Step 2.</strong> Throw away \\(-1\\): it is outside the interval.</p>\\[\\begin{gathered}\\displaystyle x=\\pm1\\\\\\displaystyle \\text{only }x=1\\in[0.2,4]\\end{gathered}\\]<p><strong>Step 3.</strong> Endpoints and the critical number.</p>\\[\\begin{gathered}\\displaystyle f(0.2)=0.2+5=5.2\\\\\\displaystyle f(1)=2\\\\\\displaystyle f(4)=4.25\\end{gathered}\\]<p><strong>Step 4.</strong> Compare.</p>\\[\\begin{gathered}\\displaystyle \\max=f(0.2)=5.2\\\\\\displaystyle \\min=f(1)=2\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(f(0.2)=5.2\\)</li><li>\\(f(1)=2\\)</li><li>\\(f(4)=4.25\\)</li><li>\\(\\max=5.2\\)</li><li>\\(\\min=2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'=1-\\frac1{x^2}=0\\Rightarrow x=\\pm1\\); only \\(x=1\\) is in the interval.</p><p>\\(f(0.2)=5.2\\), \\(f(1)=2\\), \\(f(4)=4.25\\).</p><p class=\"ans\">Max \\(f(0.2)=5.2\\); min \\(f(1)=2\\)</p>"
        }
@@ -7287,6 +7667,10 @@ export const sections: Section[] = [
       "question": "Find the absolute max and min of \\(f(t)=t-\\sqrt[3]{t}\\) on \\([-1,4]\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Closed Interval Method: the absolute max and min on \\([a,b]\\) can only happen at critical numbers inside the interval or at the two endpoints. Make a list and evaluate \\(f\\) at each. \\(\\sqrt[3]t=t^{1/3}\\).</p>\\[\\displaystyle f'=1-\\tfrac13t^{-2/3}\\]<p><strong>Step 2.</strong> Raise both sides to the \\(\\frac32\\) power; even root on \\(t^{2/3}\\) gives \\(\\pm\\).</p>\\[\\begin{gathered}\\displaystyle f'=0\\Rightarrow t^{2/3}=\\tfrac13\\\\\\displaystyle t=\\pm\\Big(\\tfrac13\\Big)^{3/2}=\\pm\\tfrac{1}{3\\sqrt3}\\approx\\pm0.192\\end{gathered}\\]<p><strong>Step 3.</strong> \\(t^{-2/3}\\) blows up at 0, which is in \\([-1,4]\\). So 0 is also a critical number.</p>\\[\\displaystyle f'\\text{ undefined at }t=0\\]<p><strong>Step 4.</strong> Evaluate. \\(\\sqrt[3]{-1}=-1\\).</p>\\[\\begin{gathered}\\displaystyle f(-1)=0\\\\\\displaystyle f(-0.192)\\approx0.385\\\\\\displaystyle f(0)=0\\end{gathered}\\]<p><strong>Step 5.</strong> The rest.</p>\\[\\begin{gathered}\\displaystyle f(0.192)\\approx-0.385\\\\\\displaystyle f(4)=4-\\sqrt[3]4\\approx2.41\\end{gathered}\\]<p><strong>Step 6.</strong> Compare. Note \\(\\frac1{3\\sqrt3}=\\frac{\\sqrt3}9\\).</p>\\[\\begin{gathered}\\displaystyle \\max=f(4)\\approx2.41\\\\\\displaystyle \\min=f\\big(\\tfrac{\\sqrt3}9\\big)=-\\tfrac{2\\sqrt3}9\\approx-0.385\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(f(-1)=0\\)</li><li>\\(f(-0.192)=0.385\\)</li><li>\\(f(0)=0\\)</li><li>\\(f(0.192)=-0.385\\)</li><li>\\(f(4)=2.41\\)</li><li>\\(\\max=4-\\sqrt[3]4\\)</li><li>\\(\\min=-\\tfrac{2\\sqrt3}9\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'=1-\\frac13t^{-2/3}\\). Zero when \\(t^{2/3}=\\frac13\\Rightarrow t=\\pm\\frac{1}{3\\sqrt3}\\approx\\pm0.192\\). Undefined at \\(t=0\\).</p><p>\\(f(-1)=0\\), \\(f(-0.192)\\approx0.385\\), \\(f(0)=0\\), \\(f(0.192)\\approx-0.385\\), \\(f(4)=4-\\sqrt[3]4\\approx2.413\\).</p><p class=\"ans\">Max \\(f(4)=4-\\sqrt[3]{4}\\approx2.41\\); min \\(f\\!\\left(\\tfrac{\\sqrt3}{9}\\right)=-\\tfrac{2\\sqrt3}{9}\\approx-0.385\\)</p>"
        }
@@ -7297,7 +7681,7 @@ export const sections: Section[] = [
         "why": "Closed Interval Method: the absolute max and min on \\([a,b]\\) can only happen at critical numbers inside the interval or at the two endpoints. Make a list and evaluate \\(f\\) at each. \\(\\sqrt[3]t=t^{1/3}\\)."
        },
        {
-        "code": "f'=0\\Rightarrow t^{2/3}=\\tfrac13\\Rightarrow t=\\pm\\Big(\\tfrac13\\Big)^{3/2}=\\pm\\tfrac{1}{3\\sqrt3}\\approx\\pm0.192",
+        "code": "f'=0\\Rightarrow t^{2/3}=\\tfrac13,\\ \\ t=\\pm\\Big(\\tfrac13\\Big)^{3/2}=\\pm\\tfrac{1}{3\\sqrt3}\\approx\\pm0.192",
         "why": "Raise both sides to the \\(\\frac32\\) power; even root on \\(t^{2/3}\\) gives \\(\\pm\\)."
        },
        {
@@ -7363,6 +7747,10 @@ export const sections: Section[] = [
         "html": "<p>Write \\(\\cos2t=1-2\\sin^2t\\) to get a quadratic in \\(\\sin t\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Closed Interval Method: the absolute max and min on \\([a,b]\\) can only happen at critical numbers inside the interval or at the two endpoints. Make a list and evaluate \\(f\\) at each. Chain rule on \\(\\sin2t\\) gives \\(2\\cos2t\\).</p>\\[\\displaystyle f'=-2\\sin t+2\\cos2t\\]<p><strong>Step 2.</strong> Rewrite \\(\\cos2t=1-2\\sin^2t\\) so everything is in \\(\\sin t\\).</p>\\[\\displaystyle =-2\\sin t+2(1-2\\sin^2t)\\]<p><strong>Step 3.</strong> It is a quadratic in \\(\\sin t\\); factor it.</p>\\[\\displaystyle =-2(2\\sin^2t+\\sin t-1)\\]<p><strong>Step 4.</strong> Factor it like \\(2u^2+u-1=(2u-1)(u+1)\\) with \\(u=\\sin t\\).</p>\\[\\displaystyle =-2(2\\sin t-1)(\\sin t+1)\\]<p><strong>Step 5.</strong> In \\([0,\\frac\\pi2]\\) only. (\\(\\sin t=-1\\) has no solution there.)</p>\\[\\displaystyle \\sin t=\\tfrac12\\Rightarrow t=\\tfrac\\pi6\\]<p><strong>Step 6.</strong> \\(2\\cos\\frac\\pi6=\\sqrt3\\), \\(\\sin\\frac\\pi3=\\frac{\\sqrt3}2\\).</p>\\[\\begin{gathered}\\displaystyle f(0)=2\\\\\\displaystyle f(\\tfrac\\pi6)=\\sqrt3+\\tfrac{\\sqrt3}2=\\tfrac{3\\sqrt3}2\\approx2.60\\\\\\displaystyle f(\\tfrac\\pi2)=0\\end{gathered}\\]<p><strong>Step 7.</strong> Compare.</p>\\[\\begin{gathered}\\displaystyle \\max=\\tfrac{3\\sqrt3}2\\\\\\displaystyle \\min=0\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(f(0)=2\\)</li><li>\\(f(\\pi/6)=2.60\\)</li><li>\\(f(\\pi/2)=0\\)</li><li>\\(\\max=\\tfrac{3\\sqrt3}2\\)</li><li>\\(\\min=0\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'=-2\\sin t+2\\cos2t=-2\\sin t+2(1-2\\sin^2t)=-2(2\\sin t-1)(\\sin t+1)\\).</p><p>In \\([0,\\pi/2]\\): \\(\\sin t=\\frac12\\Rightarrow t=\\frac\\pi6\\).</p><p>\\(f(0)=2\\), \\(f(\\frac\\pi6)=\\sqrt3+\\frac{\\sqrt3}{2}=\\frac{3\\sqrt3}{2}\\approx2.60\\), \\(f(\\frac\\pi2)=0\\).</p><p class=\"ans\">Max \\(f(\\frac\\pi6)=\\frac{3\\sqrt3}{2}\\); min \\(f(\\frac\\pi2)=0\\)</p>"
        }
@@ -7377,8 +7765,12 @@ export const sections: Section[] = [
         "why": "Rewrite \\(\\cos2t=1-2\\sin^2t\\) so everything is in \\(\\sin t\\)."
        },
        {
-        "code": "=-2(2\\sin^2t+\\sin t-1)=-2(2\\sin t-1)(\\sin t+1)",
+        "code": "=-2(2\\sin^2t+\\sin t-1)",
         "why": "It is a quadratic in \\(\\sin t\\); factor it."
+       },
+       {
+        "code": "=-2(2\\sin t-1)(\\sin t+1)",
+        "why": "Factor it like \\(2u^2+u-1=(2u-1)(u+1)\\) with \\(u=\\sin t\\)."
        },
        {
         "code": "\\sin t=\\tfrac12\\Rightarrow t=\\tfrac\\pi6",
@@ -7424,6 +7816,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find the absolute max and min of \\(f(x)=x^{-2}\\ln x\\) on \\([\\frac12,4]\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Closed Interval Method: the absolute max and min on \\([a,b]\\) can only happen at critical numbers inside the interval or at the two endpoints. Make a list and evaluate \\(f\\) at each. Product rule on \\(x^{-2}\\cdot\\ln x\\).</p>\\[\\displaystyle f'=-2x^{-3}\\ln x+x^{-2}\\cdot\\frac1x\\]<p><strong>Step 2.</strong> Combine: \\(x^{-3}(1-2\\ln x)\\).</p>\\[\\displaystyle =\\frac{1-2\\ln x}{x^3}\\]<p><strong>Step 3.</strong> In the interval ✓.</p>\\[\\displaystyle 1-2\\ln x=0\\Rightarrow x=e^{1/2}=\\sqrt e\\approx1.65\\]<p><strong>Step 4.</strong> Evaluate. \\(\\ln\\sqrt e=\\frac12\\), \\((\\sqrt e)^2=e\\).</p>\\[\\begin{gathered}\\displaystyle f(\\tfrac12)=4\\ln\\tfrac12\\approx-2.77\\\\\\displaystyle f(\\sqrt e)=\\frac{1/2}{e}\\approx0.184\\\\\\displaystyle f(4)=\\frac{\\ln4}{16}\\approx0.087\\end{gathered}\\]<p><strong>Step 5.</strong> \\(4\\ln\\frac12=-4\\ln2\\).</p>\\[\\begin{gathered}\\displaystyle \\max=\\frac1{2e}\\\\\\displaystyle \\min=-4\\ln2\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(f(1/2)=-2.77\\)</li><li>\\(f(\\sqrt e)=0.184\\)</li><li>\\(f(4)=0.087\\)</li><li>\\(\\max=\\frac1{2e}\\)</li><li>\\(\\min=-4\\ln2\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\(f'=-2x^{-3}\\ln x+x^{-3}=\\dfrac{1-2\\ln x}{x^3}\\Rightarrow x=\\sqrt e\\approx1.65\\).</p><p>\\(f(\\frac12)=4\\ln\\frac12\\approx-2.77\\), \\(f(\\sqrt e)=\\frac{1/2}{e}\\approx0.184\\), \\(f(4)=\\frac{\\ln4}{16}\\approx0.087\\).</p><p class=\"ans\">Max \\(f(\\sqrt e)=\\frac{1}{2e}\\); min \\(f(\\frac12)=-4\\ln2\\)</p>"
@@ -7482,6 +7878,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find the absolute max and min of \\(f(x)=\\ln(x^2+x+1)\\) on \\([-1,1]\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Closed Interval Method: the absolute max and min on \\([a,b]\\) can only happen at critical numbers inside the interval or at the two endpoints. Make a list and evaluate \\(f\\) at each. \\(\\frac{u'}{u}\\). The bottom is never 0 (negative discriminant).</p>\\[\\displaystyle f'=\\frac{2x+1}{x^2+x+1}\\]<p><strong>Step 2.</strong> In \\([-1,1]\\) ✓.</p>\\[\\displaystyle 2x+1=0\\Rightarrow x=-\\tfrac12\\]<p><strong>Step 3.</strong> \\(\\frac14-\\frac12+1=\\frac34\\).</p>\\[\\begin{gathered}\\displaystyle f(-1)=\\ln1=0\\\\\\displaystyle f(-\\tfrac12)=\\ln\\tfrac34\\approx-0.288\\\\\\displaystyle f(1)=\\ln3\\approx1.10\\end{gathered}\\]<p><strong>Step 4.</strong> Compare.</p>\\[\\begin{gathered}\\displaystyle \\max=\\ln3\\\\\\displaystyle \\min=\\ln\\tfrac34\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(f(-1)=0\\)</li><li>\\(f(-1/2)=-0.288\\)</li><li>\\(f(1)=1.10\\)</li><li>\\(\\max=\\ln3\\)</li><li>\\(\\min=\\ln\\tfrac34\\)</li></ul></div>"
+       },
        {
         "label": "Full solution",
         "html": "<p>\\(f'=\\frac{2x+1}{x^2+x+1}=0\\Rightarrow x=-\\frac12\\).</p><p>\\(f(-1)=\\ln1=0\\), \\(f(-\\frac12)=\\ln\\frac34\\approx-0.288\\), \\(f(1)=\\ln3\\approx1.10\\).</p><p class=\"ans\">Max \\(f(1)=\\ln3\\); min \\(f(-\\frac12)=\\ln\\frac34\\)</p>"
@@ -7734,6 +8134,10 @@ export const sections: Section[] = [
         "html": "<p>Factor \\(f'(x)=6x^2-6x-12\\) by pulling out 6 first.</p>"
        },
        {
+        "label": "Sign-map walkthrough",
+        "html": "<div class=\"walk\"><p>The domain is all real numbers, so your number line runs from \\(-\\infty\\) to \\(\\infty\\).</p><p><strong>1. Intervals of increase &amp; decrease</strong></p><p><em>Step 1: Find \\(f'(x)\\) and set it to zero</em></p>\\[f'(x)=6x^2-6x-12=6(x-2)(x+1)\\]\\[6(x-2)(x+1)=0\\implies x=-1,\\ x=2\\]<p><em>Step 2: Build the sign map</em> Put the critical numbers between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      |      (∞)\n         -1      2</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f'(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,-1)\\), test \\(x=-2\\):\\[\\begin{aligned}f'(-2)&=6(-4)(-1)\\\\&=24\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((-1,2)\\), test \\(x=0\\):\\[\\begin{aligned}f'(0)&=6(-2)(1)\\\\&=-12\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((2,\\infty)\\), test \\(x=3\\):\\[\\begin{aligned}f'(3)&=6(1)(4)\\\\&=24\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f'(x)\\) is:</p>\\[+\\;\\Big\\vert{}_{-1}\\;-\\;\\Big\\vert{}_{2}\\;+\\]<ul><li><strong>Increasing:</strong> \\((-\\infty,-1)\\) and \\((2,\\infty)\\)</li><li><strong>Decreasing:</strong> \\((-1,2)\\)</li></ul><p><strong>2. Local extreme values</strong></p><p>Read the sign changes from your map:</p><ul><li>At \\(x=-1\\): \\(+\\to-\\) (up then down), a <strong>local maximum</strong>. Plug into \\(f\\):\\[f(-1)=-2-3+12=\\mathbf{7}\\]</li><li>At \\(x=2\\): \\(-\\to+\\) (down then up), a <strong>local minimum</strong>:\\[f(2)=16-12-24=\\mathbf{-20}\\]</li></ul><p><strong>3. Concavity &amp; inflection points</strong></p><p><em>Step 1: Find \\(f''(x)\\) and set it to zero</em></p>\\[f''(x)=12x-6\\]\\[12x-6=0\\implies x=\\tfrac12\\]<p><em>Step 2: Build the sign map</em> Put \\(\\tfrac12\\) between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      (∞)\n         1/2</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f''(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,\\tfrac12)\\), test \\(x=0\\):\\[\\begin{aligned}f''(0)&=0-6\\\\&=-6\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((\\tfrac12,\\infty)\\), test \\(x=1\\):\\[\\begin{aligned}f''(1)&=12-6\\\\&=6\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f''(x)\\) is:</p>\\[-\\;\\Big\\vert{}_{\\frac12}\\;+\\]<ul><li><strong>Concave down:</strong> \\((-\\infty,\\tfrac12)\\)</li><li><strong>Concave up:</strong> \\((\\tfrac12,\\infty)\\)</li></ul><p><em>Inflection point(s)</em></p><p>The concavity flips at \\(x=\\tfrac12\\), so it's a real inflection point. Plug into \\(f\\):</p>\\[f(\\tfrac12)=\\tfrac14-\\tfrac34-6=-\\tfrac{13}{2}\\]<p class=\"ans\">Inflection point \\((\\tfrac12,-\\tfrac{13}2)\\)</p></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'=6(x-2)(x+1)\\). Increasing on \\((-\\infty,-1)\\) and \\((2,\\infty)\\); decreasing on \\((-1,2)\\). \\(f(-1)=-2-3+12=7\\) and \\(f(2)=16-12-24=-20\\). \\(f''=12x-6\\) changes sign at \\(x=\\tfrac12\\), where \\(f(\\tfrac12)=\\tfrac14-\\tfrac34-6=-\\tfrac{13}2\\).</p><p class=\"ans\">Inc \\((-\\infty,-1),(2,\\infty)\\); dec \\((-1,2)\\); loc max \\(7\\), loc min \\(-20\\); CD \\((-\\infty,\\tfrac12)\\), CU \\((\\tfrac12,\\infty)\\); IP \\((\\tfrac12,-\\tfrac{13}2)\\)</p>"
        }
@@ -7836,6 +8240,10 @@ export const sections: Section[] = [
         "html": "<p>\\(f'(x)=4x^3-4x=4x(x-1)(x+1)\\) has three cut points.</p>"
        },
        {
+        "label": "Sign-map walkthrough",
+        "html": "<div class=\"walk\"><p>The domain is all real numbers, so your number line runs from \\(-\\infty\\) to \\(\\infty\\).</p><p><strong>1. Intervals of increase &amp; decrease</strong></p><p><em>Step 1: Find \\(f'(x)\\) and set it to zero</em></p>\\[f'(x)=4x^3-4x=4x(x-1)(x+1)\\]\\[x=-1,\\ 0,\\ 1\\]<p><em>Step 2: Build the sign map</em> Put the critical numbers between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      |      |      (∞)\n         -1      0      1</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f'(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,-1)\\), test \\(x=-2\\):\\[\\begin{aligned}f'(-2)&=4(-2)(-3)(-1)\\\\&=-24\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((-1,0)\\), test \\(x=-\\tfrac12\\):\\[\\begin{aligned}f'(-\\tfrac12)&=4(-\\tfrac12)(-\\tfrac32)(\\tfrac12)\\\\&=\\tfrac32\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((0,1)\\), test \\(x=\\tfrac12\\):\\[\\begin{aligned}f'(\\tfrac12)&=4(\\tfrac12)(-\\tfrac12)(\\tfrac32)\\\\&=-\\tfrac32\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 4:</strong> \\((1,\\infty)\\), test \\(x=2\\):\\[\\begin{aligned}f'(2)&=4(2)(1)(3)\\\\&=24\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f'(x)\\) is:</p>\\[-\\;\\Big\\vert{}_{-1}\\;+\\;\\Big\\vert{}_{0}\\;-\\;\\Big\\vert{}_{1}\\;+\\]<ul><li><strong>Decreasing:</strong> \\((-\\infty,-1)\\) and \\((0,1)\\)</li><li><strong>Increasing:</strong> \\((-1,0)\\) and \\((1,\\infty)\\)</li></ul><p><strong>2. Local extreme values</strong></p><p>Read the sign changes from your map:</p><ul><li>At \\(x=\\pm1\\): \\(-\\to+\\), <strong>local minimums</strong>:\\[f(\\pm1)=1-2+3=\\mathbf{2}\\]</li><li>At \\(x=0\\): \\(+\\to-\\), a <strong>local maximum</strong>:\\[f(0)=\\mathbf{3}\\]</li></ul><p><strong>3. Concavity &amp; inflection points</strong></p><p><em>Step 1: Find \\(f''(x)\\) and set it to zero</em></p>\\[f''(x)=12x^2-4\\]\\[12x^2=4\\implies x=\\pm\\tfrac{1}{\\sqrt3}\\approx\\pm0.58\\]<p><em>Step 2: Build the sign map</em> Put \\(\\pm\\tfrac1{\\sqrt3}\\) between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      |      (∞)\n        -1/√3  1/√3</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f''(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,-\\tfrac1{\\sqrt3})\\), test \\(x=-1\\):\\[\\begin{aligned}f''(-1)&=12-4\\\\&=8\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((-\\tfrac1{\\sqrt3},\\tfrac1{\\sqrt3})\\), test \\(x=0\\):\\[\\begin{aligned}f''(0)&=0-4\\\\&=-4\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((\\tfrac1{\\sqrt3},\\infty)\\), test \\(x=1\\):\\[\\begin{aligned}f''(1)&=12-4\\\\&=8\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f''(x)\\) is:</p>\\[+\\;\\Big\\vert{}_{-\\frac1{\\sqrt3}}\\;-\\;\\Big\\vert{}_{\\frac1{\\sqrt3}}\\;+\\]<ul><li><strong>Concave up:</strong> \\((-\\infty,-\\tfrac1{\\sqrt3})\\) and \\((\\tfrac1{\\sqrt3},\\infty)\\)</li><li><strong>Concave down:</strong> \\((-\\tfrac1{\\sqrt3},\\tfrac1{\\sqrt3})\\)</li></ul><p><em>Inflection point(s)</em></p><p>Both flip, so both are inflection points. With \\(x^2=\\tfrac13\\) and \\(x^4=\\tfrac19\\):</p>\\[f(\\pm\\tfrac1{\\sqrt3})=\\tfrac19-\\tfrac23+3=\\tfrac{22}9\\]<p class=\"ans\">Inflection points \\((\\pm\\tfrac1{\\sqrt3},\\tfrac{22}9)\\)</p></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Signs of \\(f'\\): \\(-,+,-,+\\) across \\(-1,0,1\\). So local min \\(f(\\pm1)=2\\) and local max \\(f(0)=3\\). \\(f''=12x^2-4=0\\Rightarrow x=\\pm\\tfrac1{\\sqrt3}\\), and \\(f(\\pm\\tfrac1{\\sqrt3})=\\tfrac19-\\tfrac23+3=\\tfrac{22}9\\).</p><p class=\"ans\">Dec \\((-\\infty,-1),(0,1)\\); inc \\((-1,0),(1,\\infty)\\); loc min \\(2\\), loc max \\(3\\); CU \\(|x|>\\tfrac1{\\sqrt3}\\), CD \\(|x|<\\tfrac1{\\sqrt3}\\); IPs \\((\\pm\\tfrac1{\\sqrt3},\\tfrac{22}9)\\)</p>"
        }
@@ -7904,6 +8312,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Product rule, then factor out \\(e^x\\). Remember that \\(e^x\\) is always positive.</p>"
+       },
+       {
+        "label": "Sign-map walkthrough",
+        "html": "<div class=\"walk\"><p>The domain is all real numbers, so your number line runs from \\(-\\infty\\) to \\(\\infty\\).</p><p><strong>1. Intervals of increase &amp; decrease</strong></p><p><em>Step 1: Find \\(f'(x)\\) and set it to zero</em></p>\\[f'(x)=e^x+xe^x=e^x(1+x)\\]\\[e^x(1+x)=0\\implies x=-1\\]<p>\\(e^x\\) is never 0, so only \\(1+x=0\\) counts.</p><p><em>Step 2: Build the sign map</em> Put the critical numbers between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      (∞)\n         -1</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f'(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,-1)\\), test \\(x=-2\\):\\[\\begin{aligned}f'(-2)&=e^{-2}(-1)\\\\&=-\\tfrac1{e^2}\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((-1,\\infty)\\), test \\(x=0\\):\\[\\begin{aligned}f'(0)&=e^0(1)\\\\&=1\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f'(x)\\) is:</p>\\[-\\;\\Big\\vert{}_{-1}\\;+\\]<ul><li><strong>Decreasing:</strong> \\((-\\infty,-1)\\)</li><li><strong>Increasing:</strong> \\((-1,\\infty)\\)</li></ul><p><strong>2. Local extreme values</strong></p><p>Read the sign changes from your map:</p><ul><li>At \\(x=-1\\): \\(-\\to+\\), a <strong>local minimum</strong>:\\[f(-1)=-e^{-1}=\\mathbf{-\\tfrac1e}\\]</li></ul><p><strong>3. Concavity &amp; inflection points</strong></p><p><em>Step 1: Find \\(f''(x)\\) and set it to zero</em></p>\\[f''(x)=e^x(1+x)+e^x=e^x(2+x)\\]\\[x=-2\\]<p><em>Step 2: Build the sign map</em> Put \\(-2\\) between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      (∞)\n         -2</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f''(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,-2)\\), test \\(x=-3\\):\\[\\begin{aligned}f''(-3)&=e^{-3}(-1)\\\\&=-\\tfrac1{e^3}\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((-2,\\infty)\\), test \\(x=0\\):\\[\\begin{aligned}f''(0)&=e^0(2)\\\\&=2\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f''(x)\\) is:</p>\\[-\\;\\Big\\vert{}_{-2}\\;+\\]<ul><li><strong>Concave down:</strong> \\((-\\infty,-2)\\)</li><li><strong>Concave up:</strong> \\((-2,\\infty)\\)</li></ul><p><em>Inflection point(s)</em></p>\\[f(-2)=-2e^{-2}\\]<p class=\"ans\">Inflection point \\((-2,-\\tfrac2{e^2})\\)</p></div>"
        },
        {
         "label": "Full solution",
@@ -7976,6 +8388,10 @@ export const sections: Section[] = [
         "html": "<p>The domain is \\(x>0\\). Then \\(f'(x)=\\ln x+1\\).</p>"
        },
        {
+        "label": "Sign-map walkthrough",
+        "html": "<div class=\"walk\"><p>Treat \\(0\\) and \\(\\infty\\) as the left and right walls of your number line. Every interval you build must stay strictly inside \\((0,\\infty)\\).</p><p><strong>1. Intervals of increase &amp; decrease</strong></p><p><em>Step 1: Find \\(f'(x)\\) and set it to zero</em></p>\\[f'(x)=1\\cdot\\ln x+x\\cdot\\tfrac1x=\\ln x+1\\]\\[\\ln x=-1\\implies x=e^{-1}=\\tfrac1e\\]<p>The domain of \\(\\ln x\\) is \\(x>0\\), which is why the left wall is \\(0\\).</p><p><em>Step 2: Build the sign map</em> Put the critical numbers between the walls \\(0\\) and \\(\\infty\\):</p><pre class=\"signline\">(0)      |      (∞)\n        1/e</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f'(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((0,\\tfrac1e)\\), test \\(x=e^{-2}\\):\\[\\begin{aligned}f'(e^{-2})&=-2+1\\\\&=-1\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((\\tfrac1e,\\infty)\\), test \\(x=1\\):\\[\\begin{aligned}f'(1)&=0+1\\\\&=1\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f'(x)\\) is:</p>\\[-\\;\\Big\\vert{}_{\\frac1e}\\;+\\]<ul><li><strong>Decreasing:</strong> \\((0,\\tfrac1e)\\)</li><li><strong>Increasing:</strong> \\((\\tfrac1e,\\infty)\\)</li></ul><p><strong>2. Local extreme values</strong></p><p>Read the sign changes from your map:</p><ul><li>At \\(x=\\tfrac1e\\): \\(-\\to+\\), a <strong>local minimum</strong>:\\[f(\\tfrac1e)=\\tfrac1e\\ln\\tfrac1e=\\tfrac1e(-1)=\\mathbf{-\\tfrac1e}\\]</li></ul><p><strong>3. Concavity &amp; inflection points</strong></p><p><em>Step 1: Find \\(f''(x)\\) and set it to zero</em></p>\\[f''(x)=\\tfrac1x\\]<p>\\(\\frac1x\\) is never 0, and it's only undefined at \\(x=0\\), which is the wall itself.</p><p><em>Step 2: Sign map</em> Nothing to cut at, so there's one section, \\((0,\\infty)\\).</p><p>Pick one easy \\(x\\) in each section and plug it into \\(f''(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((0,\\infty)\\), test \\(x=1\\):\\[\\begin{aligned}f''(1)&=\\tfrac11\\\\&=1\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f''(x)\\) is:</p>\\[+\\]<ul><li><strong>Concave up:</strong> \\((0,\\infty)\\), the whole domain</li></ul><p><em>Inflection point(s)</em></p><p class=\"ans\">No inflection point: the sign never flips.</p></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\ln x+1=0\\Rightarrow x=e^{-1}\\). \\(f'<0\\) on \\((0,\\tfrac1e)\\) and \\(f'>0\\) after, so local min \\(f(\\tfrac1e)=-\\tfrac1e\\). \\(f''=\\tfrac1x>0\\): concave up everywhere, no inflection point.</p><p class=\"ans\">Dec \\((0,\\tfrac1e)\\), inc \\((\\tfrac1e,\\infty)\\); loc min \\(-\\tfrac1e\\); CU on \\((0,\\infty)\\); no IP</p>"
        }
@@ -8034,6 +8450,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Quotient rule: low·d(high) − high·d(low), over low².</p>"
+       },
+       {
+        "label": "Sign-map walkthrough",
+        "html": "<div class=\"walk\"><p>The domain is all real numbers, so your number line runs from \\(-\\infty\\) to \\(\\infty\\).</p><p><strong>1. Intervals of increase &amp; decrease</strong></p><p><em>Step 1: Find \\(f'(x)\\) and set it to zero</em></p>\\[f'(x)=\\frac{1-x^2}{(x^2+1)^2}\\]\\[1-x^2=0\\implies x=\\pm1\\]<p>The bottom \\((x^2+1)^2\\) is always positive, so only the top decides the sign.</p><p><em>Step 2: Build the sign map</em> Put the critical numbers between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      |      (∞)\n         -1      1</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f'(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,-1)\\), test \\(x=-2\\):\\[\\begin{aligned}f'(-2)&=\\tfrac{1-4}{25}\\\\&=-\\tfrac{3}{25}\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((-1,1)\\), test \\(x=0\\):\\[\\begin{aligned}f'(0)&=\\tfrac{1-0}{1}\\\\&=1\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((1,\\infty)\\), test \\(x=2\\):\\[\\begin{aligned}f'(2)&=\\tfrac{1-4}{25}\\\\&=-\\tfrac3{25}\\implies\\mathbf{-}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f'(x)\\) is:</p>\\[-\\;\\Big\\vert{}_{-1}\\;+\\;\\Big\\vert{}_{1}\\;-\\]<ul><li><strong>Decreasing:</strong> \\((-\\infty,-1)\\) and \\((1,\\infty)\\)</li><li><strong>Increasing:</strong> \\((-1,1)\\)</li></ul><p><strong>2. Local extreme values</strong></p><p>Read the sign changes from your map:</p><ul><li>At \\(x=-1\\): \\(-\\to+\\), a <strong>local minimum</strong>:\\[f(-1)=\\tfrac{-1}{2}=\\mathbf{-\\tfrac12}\\]</li><li>At \\(x=1\\): \\(+\\to-\\), a <strong>local maximum</strong>:\\[f(1)=\\mathbf{\\tfrac12}\\]</li></ul><p><strong>3. Concavity &amp; inflection points</strong></p><p><em>Step 1: Find \\(f''(x)\\) and set it to zero</em></p>\\[f''(x)=\\frac{2x(x^2-3)}{(x^2+1)^3}\\]\\[2x(x^2-3)=0\\implies x=0,\\ \\pm\\sqrt3\\]<p><em>Step 2: Build the sign map</em> Put \\(-\\sqrt3,\\ 0,\\ \\sqrt3\\) between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      |      |      (∞)\n         -√3     0     √3</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f''(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,-\\sqrt3)\\), test \\(x=-2\\):\\[\\begin{aligned}f''(-2)&=\\tfrac{2(-2)(1)}{125}\\\\&=-\\tfrac4{125}\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((-\\sqrt3,0)\\), test \\(x=-1\\):\\[\\begin{aligned}f''(-1)&=\\tfrac{2(-1)(-2)}{8}\\\\&=\\tfrac12\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((0,\\sqrt3)\\), test \\(x=1\\):\\[\\begin{aligned}f''(1)&=\\tfrac{2(1)(-2)}{8}\\\\&=-\\tfrac12\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 4:</strong> \\((\\sqrt3,\\infty)\\), test \\(x=2\\):\\[\\begin{aligned}f''(2)&=\\tfrac{2(2)(1)}{125}\\\\&=\\tfrac4{125}\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f''(x)\\) is:</p>\\[-\\;\\Big\\vert{}_{-\\sqrt3}\\;+\\;\\Big\\vert{}_{0}\\;-\\;\\Big\\vert{}_{\\sqrt3}\\;+\\]<ul><li><strong>Concave down:</strong> \\((-\\infty,-\\sqrt3)\\) and \\((0,\\sqrt3)\\)</li><li><strong>Concave up:</strong> \\((-\\sqrt3,0)\\) and \\((\\sqrt3,\\infty)\\)</li></ul><p><em>Inflection point(s)</em></p><p>All three flip, so all three are inflection points:</p>\\[f(0)=0,\\quad f(\\pm\\sqrt3)=\\tfrac{\\pm\\sqrt3}{3+1}=\\pm\\tfrac{\\sqrt3}4\\]<p class=\"ans\">\\((0,0)\\), \\((\\sqrt3,\\tfrac{\\sqrt3}4)\\), \\((-\\sqrt3,-\\tfrac{\\sqrt3}4)\\)</p></div>"
        },
        {
         "label": "Full solution",
@@ -8104,6 +8524,10 @@ export const sections: Section[] = [
         "html": "<p>Find the critical numbers, then plug each one into \\(f''\\).</p>"
        },
        {
+        "label": "Sign-map walkthrough",
+        "html": "<div class=\"walk\"><p>The domain is all real numbers, so your number line runs from \\(-\\infty\\) to \\(\\infty\\).</p><p><strong>1. Intervals of increase &amp; decrease</strong></p><p><em>Step 1: Find \\(f'(x)\\) and set it to zero</em></p>\\[f'(x)=5x^4-5=5(x^2-1)(x^2+1)\\]\\[x=\\pm1\\]<p>\\(x^2+1\\) is never 0.</p><p><em>Step 2: Build the sign map</em> Put the critical numbers between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      |      (∞)\n         -1      1</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f'(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,-1)\\), test \\(x=-2\\):\\[\\begin{aligned}f'(-2)&=5(16)-5\\\\&=75\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((-1,1)\\), test \\(x=0\\):\\[\\begin{aligned}f'(0)&=0-5\\\\&=-5\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((1,\\infty)\\), test \\(x=2\\):\\[\\begin{aligned}f'(2)&=80-5\\\\&=75\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f'(x)\\) is:</p>\\[+\\;\\Big\\vert{}_{-1}\\;-\\;\\Big\\vert{}_{1}\\;+\\]<ul><li><strong>Increasing:</strong> \\((-\\infty,-1)\\) and \\((1,\\infty)\\)</li><li><strong>Decreasing:</strong> \\((-1,1)\\)</li></ul><p><strong>2. Local extreme values</strong></p><p>Read the sign changes from your map:</p><ul><li>At \\(x=-1\\): \\(+\\to-\\), <strong>local max</strong>:\\[f(-1)=-1+5+3=\\mathbf{7}\\]<p>Second Derivative Test agrees: \\(f''(-1)=20(-1)^3=-20<0\\) (cap).</p></li><li>At \\(x=1\\): \\(-\\to+\\), <strong>local min</strong>:\\[f(1)=1-5+3=\\mathbf{-1}\\]<p>\\(f''(1)=20>0\\) (cup). Same answer both ways.</p></li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'=5x^4-5=5(x^2-1)(x^2+1)\\Rightarrow x=\\pm1\\). \\(f''=20x^3\\): \\(f''(1)=20>0\\) (min) and \\(f''(-1)=-20<0\\) (max).</p><p class=\"ans\">Local max \\(f(-1)=7\\); local min \\(f(1)=-1\\)</p>"
        }
@@ -8162,6 +8586,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(f'(x)=1-2\\cos x=0\\) when \\(\\cos x=\\tfrac12\\).</p>"
+       },
+       {
+        "label": "Sign-map walkthrough",
+        "html": "<div class=\"walk\"><p>Treat \\(0\\) and \\(2\\pi\\) as the left and right walls of your number line. Every interval you build must stay strictly inside \\((0,2\\pi)\\).</p><p><strong>1. Intervals of increase &amp; decrease</strong></p><p><em>Step 1: Find \\(f'(x)\\) and set it to zero</em></p>\\[f'(x)=1-2\\cos x\\]\\[1-2\\cos x=0\\implies\\cos x=\\tfrac12\\]<p>On the unit circle between \\(0\\) and \\(2\\pi\\), \\(\\cos x=\\tfrac12\\) in Quadrant I and Quadrant IV: \\(x=\\tfrac\\pi3\\) and \\(x=\\tfrac{5\\pi}3\\).</p><p><em>Step 2: Build the sign map</em> Put the critical numbers between the walls \\(0\\) and \\(2\\pi\\):</p><pre class=\"signline\">(0)      |      |      (2π)\n        π/3   5π/3</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f'(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((0,\\tfrac\\pi3)\\), test \\(x=\\tfrac\\pi6\\):\\[\\begin{aligned}f'(\\tfrac\\pi6)&=1-2\\cos\\tfrac\\pi6\\\\&=1-2\\big(\\tfrac{\\sqrt3}2\\big)\\\\&=1-\\sqrt3\\approx-0.73\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((\\tfrac\\pi3,\\tfrac{5\\pi}3)\\), test \\(x=\\pi\\):\\[\\begin{aligned}f'(\\pi)&=1-2\\cos\\pi\\\\&=1-2(-1)\\\\&=3\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((\\tfrac{5\\pi}3,2\\pi)\\), test \\(x=\\tfrac{11\\pi}6\\):\\[\\begin{aligned}f'(\\tfrac{11\\pi}6)&=1-2\\cos\\tfrac{11\\pi}6\\\\&=1-2\\big(\\tfrac{\\sqrt3}2\\big)\\\\&=1-\\sqrt3\\approx-0.73\\implies\\mathbf{-}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f'(x)\\) is:</p>\\[-\\;\\Big\\vert{}_{\\frac\\pi3}\\;+\\;\\Big\\vert{}_{\\frac{5\\pi}3}\\;-\\]<ul><li><strong>Decreasing:</strong> \\((0,\\tfrac\\pi3)\\) and \\((\\tfrac{5\\pi}3,2\\pi)\\)</li><li><strong>Increasing:</strong> \\((\\tfrac\\pi3,\\tfrac{5\\pi}3)\\)</li></ul><p><strong>2. Local extreme values</strong></p><p>Read the sign changes from your map:</p><ul><li>At \\(x=\\tfrac\\pi3\\): the graph switches from decreasing \\((-)\\) to increasing \\((+)\\), a <strong>local minimum</strong>. Plug into \\(f(x)=x-2\\sin x\\):\\[f(\\tfrac\\pi3)=\\tfrac\\pi3-2\\sin\\tfrac\\pi3\\]\\[=\\tfrac\\pi3-2\\big(\\tfrac{\\sqrt3}2\\big)=\\mathbf{\\tfrac\\pi3-\\sqrt3}\\]</li><li>At \\(x=\\tfrac{5\\pi}3\\): increasing \\((+)\\) to decreasing \\((-)\\), a <strong>local maximum</strong>:\\[f(\\tfrac{5\\pi}3)=\\tfrac{5\\pi}3-2\\sin\\tfrac{5\\pi}3\\]\\[=\\tfrac{5\\pi}3-2\\big(-\\tfrac{\\sqrt3}2\\big)=\\mathbf{\\tfrac{5\\pi}3+\\sqrt3}\\]</li></ul><p><strong>3. Concavity &amp; inflection points</strong></p><p><em>Step 1: Find \\(f''(x)\\) and set it to zero</em></p>\\[f''(x)=2\\sin x\\]\\[2\\sin x=0\\implies\\sin x=0\\]<p>Remember the derivative of \\(-\\cos x\\) is \\(+\\sin x\\). Strictly inside \\((0,2\\pi)\\), \\(\\sin x=0\\) at only one angle: \\(x=\\pi\\).</p><p><em>Step 2: Build the sign map</em> Put \\(\\pi\\) between the walls \\(0\\) and \\(2\\pi\\):</p><pre class=\"signline\">(0)      |      (2π)\n         π</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f''(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((0,\\pi)\\), test \\(x=\\tfrac\\pi2\\):\\[\\begin{aligned}f''(\\tfrac\\pi2)&=2\\sin\\tfrac\\pi2\\\\&=2(1)\\\\&=2\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((\\pi,2\\pi)\\), test \\(x=\\tfrac{3\\pi}2\\):\\[\\begin{aligned}f''(\\tfrac{3\\pi}2)&=2\\sin\\tfrac{3\\pi}2\\\\&=2(-1)\\\\&=-2\\implies\\mathbf{-}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f''(x)\\) is:</p>\\[+\\;\\Big\\vert{}_{\\pi}\\;-\\]<ul><li><strong>Concave up:</strong> \\((0,\\pi)\\)</li><li><strong>Concave down:</strong> \\((\\pi,2\\pi)\\)</li></ul><p><em>Inflection point(s)</em></p><p>The concavity flips from \\(+\\) to \\(-\\) at \\(x=\\pi\\), so it's a confirmed inflection point. Plug into \\(f\\):</p>\\[f(\\pi)=\\pi-2\\sin\\pi=\\pi-2(0)=\\pi\\]<p class=\"ans\">Inflection point \\((\\pi,\\pi)\\)</p></div>"
        },
        {
         "label": "Full solution",
@@ -8238,6 +8666,10 @@ export const sections: Section[] = [
         "html": "<p>Expand to \\(x^{4/3}+4x^{1/3}\\) before differentiating, then factor out the lowest power.</p>"
        },
        {
+        "label": "Sign-map walkthrough",
+        "html": "<div class=\"walk\"><p>The domain is all real numbers, so your number line runs from \\(-\\infty\\) to \\(\\infty\\).</p><p><strong>1. Intervals of increase &amp; decrease</strong></p><p><em>Step 1: Find \\(f'(x)\\) and set it to zero</em></p>\\[f'(x)=\\tfrac43x^{1/3}+\\tfrac43x^{-2/3}=\\tfrac43x^{-2/3}(x+1)\\]\\[f'=0\\text{ at }x=-1;\\ \\ f'\\text{ undefined at }x=0\\]<p>\\(x^{-2/3}=\\frac{1}{(\\sqrt[3]x)^2}\\) blows up at 0, but \\(f(0)=0\\) exists, so 0 is a critical number too.</p><p><em>Step 2: Build the sign map</em> Put the critical numbers between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      |      (∞)\n         -1      0</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f'(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,-1)\\), test \\(x=-8\\):\\[\\begin{aligned}f'(-8)&=\\tfrac43\\cdot\\tfrac{1}{(-2)^2}\\cdot(-7)\\\\&=-\\tfrac73\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((-1,0)\\), test \\(x=-\\tfrac18\\):\\[\\begin{aligned}f'(-\\tfrac18)&=\\tfrac43\\cdot\\tfrac{1}{(-\\frac12)^2}\\cdot\\tfrac78\\\\&=\\tfrac{14}3\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((0,\\infty)\\), test \\(x=1\\):\\[\\begin{aligned}f'(1)&=\\tfrac43(1)(2)\\\\&=\\tfrac83\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f'(x)\\) is:</p>\\[-\\;\\Big\\vert{}_{-1}\\;+\\;\\Big\\vert{}_{0}\\;+\\]<ul><li><strong>Decreasing:</strong> \\((-\\infty,-1)\\)</li><li><strong>Increasing:</strong> \\((-1,\\infty)\\)</li></ul><p><strong>2. Local extreme values</strong></p><p>Read the sign changes from your map:</p><ul><li>At \\(x=-1\\): \\(-\\to+\\), a <strong>local minimum</strong>:\\[f(-1)=(-1)(3)=\\mathbf{-3}\\]</li><li>At \\(x=0\\): \\(+\\to+\\), no sign change, so <strong>no extremum</strong> (just a vertical tangent).</li></ul><p><strong>3. Concavity &amp; inflection points</strong></p><p><em>Step 1: Find \\(f''(x)\\) and set it to zero</em></p>\\[f''(x)=\\tfrac49x^{-2/3}-\\tfrac89x^{-5/3}=\\tfrac49x^{-5/3}(x-2)\\]\\[f''=0\\text{ at }x=2;\\ \\ \\text{undefined at }x=0\\]<p><em>Step 2: Build the sign map</em> Put \\(0\\) and \\(2\\) between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      |      (∞)\n          0      2</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f''(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,0)\\), test \\(x=-1\\):\\[\\begin{aligned}f''(-1)&=\\tfrac49(-1)(-3)\\\\&=\\tfrac43\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((0,2)\\), test \\(x=1\\):\\[\\begin{aligned}f''(1)&=\\tfrac49(1)(-1)\\\\&=-\\tfrac49\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((2,\\infty)\\), test \\(x=8\\):\\[\\begin{aligned}f''(8)&=\\tfrac49\\cdot\\tfrac1{32}\\cdot6\\\\&=\\tfrac1{12}\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f''(x)\\) is:</p>\\[+\\;\\Big\\vert{}_{0}\\;-\\;\\Big\\vert{}_{2}\\;+\\]<ul><li><strong>Concave up:</strong> \\((-\\infty,0)\\) and \\((2,\\infty)\\)</li><li><strong>Concave down:</strong> \\((0,2)\\)</li></ul><p><em>Inflection point(s)</em></p>\\[f(0)=0,\\qquad f(2)=\\sqrt[3]2\\,(6)=6\\sqrt[3]2\\]<p class=\"ans\">Inflection points \\((0,0)\\) and \\((2,6\\sqrt[3]2)\\)</p></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'=\\tfrac43x^{1/3}+\\tfrac43x^{-2/3}=\\tfrac43x^{-2/3}(x+1)\\). Critical numbers are \\(-1\\) (\\(f'=0\\)) and \\(0\\) (\\(f'\\) undefined). \\(x^{-2/3}>0\\), so the sign follows \\(x+1\\): there is a local min at \\(-1\\) and nothing at \\(0\\). \\(f''=\\tfrac49x^{-5/3}(x-2)\\) changes sign at \\(0\\) and \\(2\\).</p><p class=\"ans\">Dec \\((-\\infty,-1)\\), inc \\((-1,\\infty)\\); loc min \\(f(-1)=-3\\); CU \\((-\\infty,0),(2,\\infty)\\), CD \\((0,2)\\); IPs \\((0,0),(2,6\\sqrt[3]2)\\)</p>"
        }
@@ -8310,6 +8742,10 @@ export const sections: Section[] = [
         "html": "<p>Chain rule: \\(f'=-2xe^{-x^2}\\). For \\(f''\\) use the product rule.</p>"
        },
        {
+        "label": "Sign-map walkthrough",
+        "html": "<div class=\"walk\"><p>The domain is all real numbers, so your number line runs from \\(-\\infty\\) to \\(\\infty\\).</p><p><strong>1. Intervals of increase &amp; decrease</strong></p><p><em>Step 1: Find \\(f'(x)\\) and set it to zero</em></p>\\[f'(x)=-2xe^{-x^2}\\]\\[x=0\\]<p>\\(e^{-x^2}>0\\) always, so the sign comes from \\(-2x\\).</p><p><em>Step 2: Build the sign map</em> Put the critical numbers between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      (∞)\n          0</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f'(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,0)\\), test \\(x=-1\\):\\[\\begin{aligned}f'(-1)&=-2(-1)e^{-1}\\\\&=\\tfrac2e\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((0,\\infty)\\), test \\(x=1\\):\\[\\begin{aligned}f'(1)&=-2(1)e^{-1}\\\\&=-\\tfrac2e\\implies\\mathbf{-}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f'(x)\\) is:</p>\\[+\\;\\Big\\vert{}_{0}\\;-\\]<ul><li><strong>Increasing:</strong> \\((-\\infty,0)\\)</li><li><strong>Decreasing:</strong> \\((0,\\infty)\\)</li></ul><p><strong>2. Local extreme values</strong></p><p>Read the sign changes from your map:</p><ul><li>At \\(x=0\\): \\(+\\to-\\), a <strong>local maximum</strong>:\\[f(0)=e^0=\\mathbf{1}\\]</li></ul><p><strong>3. Concavity &amp; inflection points</strong></p><p><em>Step 1: Find \\(f''(x)\\) and set it to zero</em></p>\\[f''(x)=(4x^2-2)e^{-x^2}\\]\\[4x^2=2\\implies x=\\pm\\tfrac1{\\sqrt2}\\approx\\pm0.71\\]<p><em>Step 2: Build the sign map</em> Put \\(\\pm\\tfrac1{\\sqrt2}\\) between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      |      (∞)\n        -1/√2  1/√2</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f''(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,-\\tfrac1{\\sqrt2})\\), test \\(x=-1\\):\\[\\begin{aligned}f''(-1)&=(4-2)e^{-1}\\\\&=\\tfrac2e\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((-\\tfrac1{\\sqrt2},\\tfrac1{\\sqrt2})\\), test \\(x=0\\):\\[\\begin{aligned}f''(0)&=(0-2)(1)\\\\&=-2\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((\\tfrac1{\\sqrt2},\\infty)\\), test \\(x=1\\):\\[\\begin{aligned}f''(1)&=(4-2)e^{-1}\\\\&=\\tfrac2e\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f''(x)\\) is:</p>\\[+\\;\\Big\\vert{}_{-\\frac1{\\sqrt2}}\\;-\\;\\Big\\vert{}_{\\frac1{\\sqrt2}}\\;+\\]<ul><li><strong>Concave up:</strong> \\((-\\infty,-\\tfrac1{\\sqrt2})\\) and \\((\\tfrac1{\\sqrt2},\\infty)\\)</li><li><strong>Concave down:</strong> \\((-\\tfrac1{\\sqrt2},\\tfrac1{\\sqrt2})\\)</li></ul><p><em>Inflection point(s)</em></p>\\[f(\\pm\\tfrac1{\\sqrt2})=e^{-1/2}\\]<p class=\"ans\">Inflection points \\((\\pm\\tfrac1{\\sqrt2},e^{-1/2})\\)</p></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'=-2xe^{-x^2}\\): positive for \\(x<0\\), negative for \\(x>0\\), so the max is \\(f(0)=1\\). \\(f''=(4x^2-2)e^{-x^2}\\) is zero at \\(x=\\pm\\tfrac1{\\sqrt2}\\).</p><p class=\"ans\">Loc max \\(f(0)=1\\); CU \\(|x|>\\tfrac1{\\sqrt2}\\), CD \\(|x|<\\tfrac1{\\sqrt2}\\); IPs \\((\\pm\\tfrac1{\\sqrt2},e^{-1/2})\\)</p>"
        }
@@ -8368,6 +8804,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Translate each clue into one fact about the picture, then join them up.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Odd function: symmetric about the origin, and \\(f(0)=0\\). Do the right half, then rotate it.</p>\\[\\displaystyle f(-x)=-f(x)\\]<p><strong>Step 2.</strong> Up, then down: a local max at \\(x=2\\).</p>\\[\\begin{gathered}\\displaystyle f'>0\\text{ on }(0,2)\\\\\\displaystyle f'<0\\text{ on }(2,\\infty)\\end{gathered}\\]<p><strong>Step 3.</strong> Bending like a cap through the peak.</p>\\[\\displaystyle f''<0\\text{ on }(0,3)\\]<p><strong>Step 4.</strong> The bend switches at \\(x=3\\): an inflection point while still falling.</p>\\[\\displaystyle f''>0\\text{ on }(3,\\infty)\\]<p><strong>Step 5.</strong> The graph flattens onto the x-axis: horizontal asymptote \\(y=0\\).</p>\\[\\displaystyle \\lim_{x\\to\\infty}f(x)=0\\]<p><strong>Step 6.</strong> Valley at \\(x=-2\\), IP at \\(x=-3\\), and the left end also goes to \\(0\\).</p>\\[\\displaystyle \\text{rotate }180^\\circ\\]<p><strong>What you found:</strong></p><ul><li>\\(x=2=\\text{peak}\\)</li><li>\\(x=3=\\text{IP}\\)</li><li>\\(x=-2=\\text{valley}\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -8521,6 +8961,10 @@ export const sections: Section[] = [
         "html": "<p>Plug in first: what form is it?</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Always check the form before using the rule.</p>\\[\\displaystyle \\frac{1-1}{1-1}=\\frac00\\]<p><strong>Step 2.</strong> Differentiate the top and the bottom separately.</p>\\[\\displaystyle \\lim\\frac{(x^2-1)'}{(x^2-x)'}=\\lim\\frac{2x}{2x-1}\\]<p><strong>Step 3.</strong> Now plugging in works.</p>\\[\\displaystyle \\frac{2(1)}{2(1)-1}=2\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{form}:\\ 0/0\\)</li><li>\\(\\text{limit}:\\ 2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\frac00\\). L'H: \\(\\frac{2x}{2x-1}\\to\\frac{2}{1}=2\\). Factoring also works: \\(\\frac{(x-1)(x+1)}{x(x-1)}=\\frac{x+1}{x}\\to2\\).</p><p class=\"ans\">\\(2\\)</p>"
        }
@@ -8563,6 +9007,10 @@ export const sections: Section[] = [
         "html": "<p>\\(\\frac00\\). Chain rule on both: \\((\\tan3x)'=3\\sec^23x\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Indeterminate.</p>\\[\\displaystyle \\frac{\\tan0}{\\sin0}=\\frac00\\]<p><strong>Step 2.</strong> Chain rule brings out the 3 and the 5.</p>\\[\\displaystyle \\lim\\frac{3\\sec^23x}{5\\cos5x}\\]<p><strong>Step 3.</strong> \\(\\sec0=\\cos0=1\\).</p>\\[\\displaystyle \\frac{3\\sec^20}{5\\cos0}=\\frac{3}{5}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{form}:\\ 0/0\\)</li><li>\\(\\text{limit}:\\ 3/5\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>L'H: \\(\\frac{3\\sec^2 3x}{5\\cos5x}\\to\\frac{3\\cdot1}{5\\cdot1}=\\frac35\\).</p><p class=\"ans\">\\(\\tfrac35\\)</p>"
        }
@@ -8603,6 +9051,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>You will need l'Hospital three times. Check the form each time.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\frac{0-0}{0}\\]<p><strong>Step 2.</strong> L'H #1. Plugging in gives \\(\\frac{1-1}{0}\\): still \\(\\frac00\\).</p>\\[\\displaystyle \\lim\\frac{\\cos x-1}{3x^2}\\]<p><strong>Step 3.</strong> L'H #2. Still \\(\\frac00\\).</p>\\[\\displaystyle \\lim\\frac{-\\sin x}{6x}\\]<p><strong>Step 4.</strong> L'H #3. Now it plugs in.</p>\\[\\displaystyle \\lim\\frac{-\\cos x}{6}=-\\frac16\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{form}:\\ 0/0\\)</li><li>\\(\\text{limit}:\\ -1/6\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -8651,6 +9103,10 @@ export const sections: Section[] = [
         "html": "<p>\\(\\frac\\infty\\infty\\). After l'Hospital, simplify the complex fraction.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Both blow up.</p>\\[\\displaystyle \\frac{\\infty}{\\infty}\\]<p><strong>Step 2.</strong> \\((\\ln x)'=\\tfrac1x\\), \\((x^{1/2})'=\\tfrac12x^{-1/2}\\).</p>\\[\\displaystyle \\lim\\frac{1/x}{\\tfrac{1}{2}x^{-1/2}}\\]<p><strong>Step 3.</strong> Flip and multiply, then cancel.</p>\\[\\displaystyle =\\lim\\frac{2\\sqrt x}{x}=\\lim\\frac{2}{\\sqrt x}\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle \\frac{2}{\\infty}=0\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{form}:\\ \\infty/\\infty\\)</li><li>\\(\\text{limit}:\\ 0\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\frac{1/x}{1/(2\\sqrt x)}=\\frac{2\\sqrt x}{x}=\\frac{2}{\\sqrt x}\\to0\\). Powers of \\(x\\) beat logs.</p><p class=\"ans\">\\(0\\)</p>"
        }
@@ -8695,6 +9151,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(\\infty\\cdot0\\). Rewrite it as \\(\\frac{x^2}{e^x}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> A product. l'Hospital needs a fraction.</p>\\[\\displaystyle \\infty\\cdot0\\]<p><strong>Step 2.</strong> \\(e^{-x}=\\frac1{e^x}\\). Now it's \\(\\frac\\infty\\infty\\).</p>\\[\\displaystyle \\frac{x^2}{e^{x}}\\]<p><strong>Step 3.</strong> L'H #1. Still \\(\\frac\\infty\\infty\\).</p>\\[\\displaystyle \\lim\\frac{2x}{e^x}\\]<p><strong>Step 4.</strong> L'H #2.</p>\\[\\displaystyle \\lim\\frac{2}{e^x}=0\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{form}:\\ \\infty\\cdot0\\)</li><li>\\(\\text{limit}:\\ 0\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -8743,6 +9203,10 @@ export const sections: Section[] = [
         "html": "<p>\\(0\\cdot(-\\infty)\\). Keep \\(\\ln x\\) on top: \\(\\frac{\\ln x}{1/x}\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Indeterminate product.</p>\\[\\displaystyle 0\\cdot(-\\infty)\\]<p><strong>Step 2.</strong> Move \\(x\\) to the bottom as \\(\\frac1x\\). This is \\(\\frac{-\\infty}{\\infty}\\).</p>\\[\\displaystyle \\lim\\frac{\\ln x}{x^{-1}}\\]<p><strong>Step 3.</strong> L'H. Derivative of \\(x^{-1}\\) is \\(-x^{-2}\\).</p>\\[\\displaystyle \\lim\\frac{1/x}{-1/x^{2}}\\]<p><strong>Step 4.</strong> \\(\\frac1x\\cdot(-x^2)=-x\\).</p>\\[\\displaystyle =\\lim(-x)=0\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{form}:\\ 0\\cdot\\infty\\)</li><li>\\(\\text{limit}:\\ 0\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\frac{1/x}{-1/x^2}=-x\\to0\\).</p><p class=\"ans\">\\(0\\)</p>"
        }
@@ -8787,6 +9251,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(\\infty-\\infty\\). Combine over the common denominator \\(x(e^x-1)\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\infty-\\infty\\]<p><strong>Step 2.</strong> One fraction.</p>\\[\\displaystyle \\frac{(e^x-1)-x}{x(e^x-1)}\\]<p><strong>Step 3.</strong> L'H. The bottom uses the product rule: \\((x(e^x-1))'=(e^x-1)+xe^x\\).</p>\\[\\displaystyle \\lim\\frac{e^x-1}{(e^x-1)+xe^x}\\]<p><strong>Step 4.</strong> Still \\(\\frac00\\), so L'H again.</p>\\[\\displaystyle \\lim\\frac{e^x}{e^x+e^x+xe^x}\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle \\frac{1}{1+1+0}=\\frac12\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{form}:\\ \\infty-\\infty\\)</li><li>\\(\\text{limit}:\\ 1/2\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -8839,6 +9307,10 @@ export const sections: Section[] = [
         "html": "<p>\\(0^0\\). Let \\(y=x^x\\) and take \\(\\ln\\) of both sides.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Indeterminate power.</p>\\[\\displaystyle 0^0\\]<p><strong>Step 2.</strong> Log rule: the exponent comes down.</p>\\[\\displaystyle \\ln y=\\ln x^x=x\\ln x\\]<p><strong>Step 3.</strong> Exactly problem #6.</p>\\[\\displaystyle \\lim_{x\\to0^+}x\\ln x=0\\]<p><strong>Step 4.</strong> Undo the ln. Don't stop at 0! The question was about \\(y\\), not \\(\\ln y\\).</p>\\[\\displaystyle y\\to e^{0}=1\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{form}:\\ 0^0\\)</li><li>\\(\\lim\\ln y=0\\)</li><li>\\(\\text{limit}:\\ 1\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\ln y=x\\ln x\\to0\\) (from #6). So \\(y\\to e^0=1\\).</p><p class=\"ans\">\\(1\\)</p>"
        }
@@ -8889,6 +9361,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(1^\\infty\\). \\(\\ln y=\\cot x\\,\\ln(1+\\sin4x)=\\frac{\\ln(1+\\sin4x)}{\\tan x}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Base → 1, exponent → ∞.</p>\\[\\displaystyle 1^{\\infty}\\]<p><strong>Step 2.</strong> Bring the exponent down.</p>\\[\\displaystyle \\ln y=\\cot x\\cdot\\ln(1+\\sin4x)\\]<p><strong>Step 3.</strong> \\(\\cot x=\\frac1{\\tan x}\\). Now it's \\(\\frac00\\).</p>\\[\\displaystyle =\\frac{\\ln(1+\\sin4x)}{\\tan x}\\]<p><strong>Step 4.</strong> L'H. The top is a chain rule: \\(\\frac{1}{u}\\cdot u'\\).</p>\\[\\displaystyle \\lim\\frac{\\frac{4\\cos4x}{1+\\sin4x}}{\\sec^2x}\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle \\frac{4\\cdot1/1}{1}=4\\]<p><strong>Step 6.</strong></p>\\[\\displaystyle y\\to e^4\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{form}:\\ 1^\\infty\\)</li><li>\\(\\lim\\ln y=4\\)</li><li>\\(\\text{limit}:\\ e^4\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -8951,6 +9427,10 @@ export const sections: Section[] = [
         "html": "<p>\\(1^\\infty\\). Write \\(\\ln y\\) as \\(\\frac{\\ln(1+3/x)}{1/x}\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle 1^\\infty\\]<p><strong>Step 2.</strong> Move \\(x\\) down as \\(\\frac1x\\): \\(\\frac00\\).</p>\\[\\displaystyle \\ln y=x\\ln(1+\\tfrac3x)=\\frac{\\ln(1+3x^{-1})}{x^{-1}}\\]<p><strong>Step 3.</strong> L'H. The chain rule on top gives \\(-3x^{-2}\\).</p>\\[\\displaystyle \\frac{\\frac{1}{1+3/x}\\cdot(-3x^{-2})}{-x^{-2}}\\]<p><strong>Step 4.</strong> The \\(-x^{-2}\\) cancels.</p>\\[\\displaystyle =\\frac{3}{1+3/x}\\to3\\]<p><strong>Step 5.</strong> Shortcut to remember: \\((1+\\tfrac ax)^x\\to e^a\\).</p>\\[\\displaystyle y\\to e^3\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{form}:\\ 1^\\infty\\)</li><li>\\(\\lim\\ln y=3\\)</li><li>\\(\\text{limit}:\\ e^3\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>L'H on \\(\\frac{\\ln(1+3x^{-1})}{x^{-1}}\\): \\(\\frac{\\frac{-3x^{-2}}{1+3/x}}{-x^{-2}}=\\frac{3}{1+3/x}\\to3\\). So \\(y\\to e^3\\).</p><p class=\"ans\">\\(e^3\\)</p>"
        }
@@ -9005,6 +9485,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Plug in before you do anything.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Plug in: \\(\\cos\\pi=-1\\).</p>\\[\\displaystyle \\frac{\\sin\\pi}{1-\\cos\\pi}=\\frac{0}{1-(-1)}\\]<p><strong>Step 2.</strong> Zero over a nonzero number is just 0. Done.</p>\\[\\displaystyle =\\frac02=0\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{form}:\\ 0/2\\)</li><li>\\(\\text{limit}:\\ 0\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -9109,6 +9593,10 @@ export const sections: Section[] = [
         "html": "<p>\\(y'=3x(x+2)\\), \\(y''=6x+6\\).</p>"
        },
        {
+        "label": "Sign-map walkthrough",
+        "html": "<div class=\"walk\"><p>The domain is all real numbers, so your number line runs from \\(-\\infty\\) to \\(\\infty\\).</p><p><strong>1. Intervals of increase &amp; decrease</strong></p><p><em>Step 1: Find \\(f'(x)\\) and set it to zero</em></p>\\[y'=3x^2+6x=3x(x+2)\\]\\[x=-2,\\ x=0\\]<p><em>Step 2: Build the sign map</em> Put the critical numbers between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      |      (∞)\n         -2      0</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f'(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,-2)\\), test \\(x=-3\\):\\[\\begin{aligned}y'(-3)&=3(-3)(-1)\\\\&=9\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((-2,0)\\), test \\(x=-1\\):\\[\\begin{aligned}y'(-1)&=3(-1)(1)\\\\&=-3\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((0,\\infty)\\), test \\(x=1\\):\\[\\begin{aligned}y'(1)&=3(1)(3)\\\\&=9\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f'(x)\\) is:</p>\\[+\\;\\Big\\vert{}_{-2}\\;-\\;\\Big\\vert{}_{0}\\;+\\]<ul><li><strong>Increasing:</strong> \\((-\\infty,-2)\\) and \\((0,\\infty)\\)</li><li><strong>Decreasing:</strong> \\((-2,0)\\)</li></ul><p><strong>2. Local extreme values</strong></p><p>Read the sign changes from your map:</p><ul><li>At \\(x=-2\\): \\(+\\to-\\), <strong>local max</strong>:\\[y(-2)=-8+12=\\mathbf{4}\\]</li><li>At \\(x=0\\): \\(-\\to+\\), <strong>local min</strong>:\\[y(0)=\\mathbf{0}\\]</li></ul><p><strong>3. Concavity &amp; inflection points</strong></p><p><em>Step 1: Find \\(f''(x)\\) and set it to zero</em></p>\\[y''=6x+6\\]\\[x=-1\\]<p><em>Step 2: Build the sign map</em> Put \\(-1\\) between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      (∞)\n         -1</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f''(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,-1)\\), test \\(x=-2\\):\\[\\begin{aligned}y''(-2)&=-12+6\\\\&=-6\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((-1,\\infty)\\), test \\(x=0\\):\\[\\begin{aligned}y''(0)&=0+6\\\\&=6\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f''(x)\\) is:</p>\\[-\\;\\Big\\vert{}_{-1}\\;+\\]<ul><li><strong>Concave down:</strong> \\((-\\infty,-1)\\)</li><li><strong>Concave up:</strong> \\((-1,\\infty)\\)</li></ul><p><em>Inflection point(s)</em></p>\\[y(-1)=-1+3=2\\]<p class=\"ans\">Inflection point \\((-1,2)\\)</p></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Domain ℝ. Intercepts: \\(x^2(x+3)=0\\Rightarrow x=0,-3\\); \\(y\\)-int \\(0\\). No symmetry, no asymptotes. \\(y'=3x(x+2)\\): inc \\((-\\infty,-2)\\), dec \\((-2,0)\\), inc \\((0,\\infty)\\). Local max \\((-2,4)\\), local min \\((0,0)\\). \\(y''=6(x+1)\\): CD \\((-\\infty,-1)\\), CU \\((-1,\\infty)\\), IP \\((-1,2)\\).</p><p class=\"ans\">Max \\((-2,4)\\), min \\((0,0)\\), IP \\((-1,2)\\), x-intercepts \\(-3,0\\)</p>"
        }
@@ -9177,6 +9665,10 @@ export const sections: Section[] = [
         "html": "<p>\\(y'=4x^2(x-3)\\). The \\(x^2\\) factor doesn't change sign.</p>"
        },
        {
+        "label": "Sign-map walkthrough",
+        "html": "<div class=\"walk\"><p>The domain is all real numbers, so your number line runs from \\(-\\infty\\) to \\(\\infty\\).</p><p><strong>1. Intervals of increase &amp; decrease</strong></p><p><em>Step 1: Find \\(f'(x)\\) and set it to zero</em></p>\\[y'=4x^3-12x^2=4x^2(x-3)\\]\\[x=0,\\ x=3\\]<p><em>Step 2: Build the sign map</em> Put the critical numbers between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      |      (∞)\n          0      3</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f'(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,0)\\), test \\(x=-1\\):\\[\\begin{aligned}y'(-1)&=4(1)(-4)\\\\&=-16\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((0,3)\\), test \\(x=1\\):\\[\\begin{aligned}y'(1)&=4(1)(-2)\\\\&=-8\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((3,\\infty)\\), test \\(x=4\\):\\[\\begin{aligned}y'(4)&=4(16)(1)\\\\&=64\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f'(x)\\) is:</p>\\[-\\;\\Big\\vert{}_{0}\\;-\\;\\Big\\vert{}_{3}\\;+\\]<ul><li><strong>Decreasing:</strong> \\((-\\infty,0)\\) and \\((0,3)\\), so all of \\((-\\infty,3)\\)</li><li><strong>Increasing:</strong> \\((3,\\infty)\\)</li></ul><p><strong>2. Local extreme values</strong></p><p>Read the sign changes from your map:</p><ul><li>At \\(x=0\\): \\(-\\to-\\), no sign change, so <strong>no extremum</strong> (a flat spot).</li><li>At \\(x=3\\): \\(-\\to+\\), <strong>local min</strong>:\\[y(3)=81-108=\\mathbf{-27}\\]</li></ul><p><strong>3. Concavity &amp; inflection points</strong></p><p><em>Step 1: Find \\(f''(x)\\) and set it to zero</em></p>\\[y''=12x^2-24x=12x(x-2)\\]\\[x=0,\\ x=2\\]<p><em>Step 2: Build the sign map</em> Put \\(0\\) and \\(2\\) between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      |      (∞)\n          0      2</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f''(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,0)\\), test \\(x=-1\\):\\[\\begin{aligned}y''(-1)&=12(-1)(-3)\\\\&=36\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((0,2)\\), test \\(x=1\\):\\[\\begin{aligned}y''(1)&=12(1)(-1)\\\\&=-12\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((2,\\infty)\\), test \\(x=3\\):\\[\\begin{aligned}y''(3)&=12(3)(1)\\\\&=36\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f''(x)\\) is:</p>\\[+\\;\\Big\\vert{}_{0}\\;-\\;\\Big\\vert{}_{2}\\;+\\]<ul><li><strong>Concave up:</strong> \\((-\\infty,0)\\) and \\((2,\\infty)\\)</li><li><strong>Concave down:</strong> \\((0,2)\\)</li></ul><p><em>Inflection point(s)</em></p>\\[y(0)=0,\\qquad y(2)=16-32=-16\\]<p class=\"ans\">Inflection points \\((0,0)\\) and \\((2,-16)\\)</p></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Intercepts \\(x^3(x-4)=0\\Rightarrow0,4\\). \\(y'=4x^2(x-3)\\): negative for \\(x<3\\) (except at 0), positive after. Only one local min, \\((3,-27)\\); \\(x=0\\) is a flat spot, not an extremum. \\(y''=12x(x-2)\\): CU \\((-\\infty,0)\\), CD \\((0,2)\\), CU \\((2,\\infty)\\). IPs \\((0,0)\\) and \\((2,-16)\\).</p><p class=\"ans\">Min \\((3,-27)\\); IPs \\((0,0),(2,-16)\\); x-intercepts \\(0,4\\)</p>"
        }
@@ -9235,6 +9727,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Vertical asymptotes where \\(x^2-9=0\\). Is the function odd?</p>"
+       },
+       {
+        "label": "Sign-map walkthrough",
+        "html": "<div class=\"walk\"><p>The domain is all real numbers, so your number line runs from \\(-\\infty\\) to \\(\\infty\\).</p><p><strong>1. Intervals of increase &amp; decrease</strong></p><p><em>Step 1: Find \\(f'(x)\\) and set it to zero</em></p>\\[y'=\\frac{-(x^2+9)}{(x^2-9)^2}\\]<p>The top is never 0 and the function isn't defined at \\(\\pm3\\), so there are no critical numbers. But \\(x=\\pm3\\) still cut the number line (vertical asymptotes).</p><p><em>Step 2: Build the sign map</em> Put the asymptotes between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      ‖      ‖      (∞)\n         -3      3</pre><p class=\"note\">‖ = not in the domain (vertical asymptote). The sign can still flip there, so it's a cut point.</p><p>Pick one easy \\(x\\) in each section and plug it into \\(f'(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,-3)\\), test \\(x=-4\\):\\[\\begin{aligned}y'(-4)&=\\tfrac{-25}{49}\\\\&=-\\tfrac{25}{49}\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((-3,3)\\), test \\(x=0\\):\\[\\begin{aligned}y'(0)&=\\tfrac{-9}{81}\\\\&=-\\tfrac19\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((3,\\infty)\\), test \\(x=4\\):\\[\\begin{aligned}y'(4)&=\\tfrac{-25}{49}\\\\&=-\\tfrac{25}{49}\\implies\\mathbf{-}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f'(x)\\) is:</p>\\[-\\;\\Big\\Vert{}_{-3}\\;-\\;\\Big\\Vert{}_{3}\\;-\\]<ul><li><strong>Decreasing:</strong> \\((-\\infty,-3)\\), \\((-3,3)\\) and \\((3,\\infty)\\)</li><li><strong>Increasing:</strong> nowhere</li></ul><p><strong>2. Local extreme values</strong></p><p>Read the sign changes from your map:</p><ul><li>The sign never changes from \\(-\\), so there are <strong>no local extremes</strong>.</li></ul><p><strong>3. Concavity &amp; inflection points</strong></p><p><em>Step 1: Find \\(f''(x)\\) and set it to zero</em></p>\\[y''=\\frac{2x(x^2+27)}{(x^2-9)^3}\\]\\[\\text{top}=0\\text{ at }x=0\\]<p>\\(x^2+27>0\\) always. Cut at \\(x=0\\) and at the asymptotes \\(\\pm3\\).</p><p><em>Step 2: Build the sign map</em> Put \\(-3,\\ 0,\\ 3\\) between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      ‖      |      ‖      (∞)\n         -3      0      3</pre><p class=\"note\">‖ = not in the domain (vertical asymptote). The sign can still flip there, so it's a cut point.</p><p>Pick one easy \\(x\\) in each section and plug it into \\(f''(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,-3)\\), test \\(x=-4\\):\\[\\begin{aligned}y''(-4)&=\\tfrac{2(-4)(43)}{7^3}\\\\&=-\\tfrac{344}{343}\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((-3,0)\\), test \\(x=-1\\):\\[\\begin{aligned}y''(-1)&=\\tfrac{2(-1)(28)}{(-8)^3}\\\\&=\\tfrac{7}{64}\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((0,3)\\), test \\(x=1\\):\\[\\begin{aligned}y''(1)&=\\tfrac{2(1)(28)}{(-8)^3}\\\\&=-\\tfrac7{64}\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 4:</strong> \\((3,\\infty)\\), test \\(x=4\\):\\[\\begin{aligned}y''(4)&=\\tfrac{2(4)(43)}{7^3}\\\\&=\\tfrac{344}{343}\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f''(x)\\) is:</p>\\[-\\;\\Big\\Vert{}_{-3}\\;+\\;\\Big\\vert{}_{0}\\;-\\;\\Big\\Vert{}_{3}\\;+\\]<ul><li><strong>Concave down:</strong> \\((-\\infty,-3)\\) and \\((0,3)\\)</li><li><strong>Concave up:</strong> \\((-3,0)\\) and \\((3,\\infty)\\)</li></ul><p><em>Inflection point(s)</em></p><p>The flips at \\(\\pm3\\) happen at asymptotes, so they aren't points on the graph. Only \\(x=0\\) counts:</p>\\[y(0)=0\\]<p class=\"ans\">Inflection point \\((0,0)\\)</p></div>"
        },
        {
         "label": "Full solution",
@@ -9317,6 +9813,10 @@ export const sections: Section[] = [
         "html": "<p>VA at \\(x=0\\). What does \\(e^x/x\\) do as \\(x\\to-\\infty\\)?</p>"
        },
        {
+        "label": "Sign-map walkthrough",
+        "html": "<div class=\"walk\"><p>The domain is all real numbers, so your number line runs from \\(-\\infty\\) to \\(\\infty\\).</p><p><strong>1. Intervals of increase &amp; decrease</strong></p><p><em>Step 1: Find \\(f'(x)\\) and set it to zero</em></p>\\[y'=\\frac{e^x(x-1)}{x^2}\\]\\[x=1\\]<p>\\(x=0\\) isn't in the domain (vertical asymptote), but it still cuts the line.</p><p><em>Step 2: Build the sign map</em> Put the asymptote and the critical number between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      ‖      |      (∞)\n          0      1</pre><p class=\"note\">‖ = not in the domain (vertical asymptote). The sign can still flip there, so it's a cut point.</p><p>Pick one easy \\(x\\) in each section and plug it into \\(f'(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,0)\\), test \\(x=-1\\):\\[\\begin{aligned}y'(-1)&=\\tfrac{e^{-1}(-2)}{1}\\\\&=-\\tfrac2e\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((0,1)\\), test \\(x=\\tfrac12\\):\\[\\begin{aligned}y'(\\tfrac12)&=\\tfrac{e^{1/2}(-\\frac12)}{\\frac14}\\\\&=-2\\sqrt e\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((1,\\infty)\\), test \\(x=2\\):\\[\\begin{aligned}y'(2)&=\\tfrac{e^2(1)}{4}\\\\&=\\tfrac{e^2}4\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f'(x)\\) is:</p>\\[-\\;\\Big\\Vert{}_{0}\\;-\\;\\Big\\vert{}_{1}\\;+\\]<ul><li><strong>Decreasing:</strong> \\((-\\infty,0)\\) and \\((0,1)\\)</li><li><strong>Increasing:</strong> \\((1,\\infty)\\)</li></ul><p><strong>2. Local extreme values</strong></p><p>Read the sign changes from your map:</p><ul><li>At \\(x=1\\): \\(-\\to+\\), <strong>local min</strong>:\\[y(1)=\\tfrac{e}{1}=\\mathbf{e}\\]</li></ul><p><strong>3. Concavity &amp; inflection points</strong></p><p><em>Step 1: Find \\(f''(x)\\) and set it to zero</em></p>\\[y''=\\frac{e^x(x^2-2x+2)}{x^3}\\]<p>\\(x^2-2x+2=(x-1)^2+1>0\\) is never 0. The only cut is the asymptote \\(x=0\\).</p><p><em>Step 2: Build the sign map</em> Put the asymptote between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      ‖      (∞)\n          0</pre><p class=\"note\">‖ = not in the domain (vertical asymptote). The sign can still flip there, so it's a cut point.</p><p>Pick one easy \\(x\\) in each section and plug it into \\(f''(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,0)\\), test \\(x=-1\\):\\[\\begin{aligned}y''(-1)&=\\tfrac{e^{-1}(5)}{-1}\\\\&=-\\tfrac5e\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((0,\\infty)\\), test \\(x=1\\):\\[\\begin{aligned}y''(1)&=\\tfrac{e(1)}{1}\\\\&=e\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f''(x)\\) is:</p>\\[-\\;\\Big\\Vert{}_{0}\\;+\\]<ul><li><strong>Concave down:</strong> \\((-\\infty,0)\\)</li><li><strong>Concave up:</strong> \\((0,\\infty)\\)</li></ul><p><em>Inflection point(s)</em></p><p class=\"ans\">No inflection point: the flip is at the asymptote, which isn't on the graph.</p></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Domain \\(x\\ne0\\). No intercepts. VA \\(x=0\\) (\\(\\to+\\infty\\) from the right, \\(-\\infty\\) from the left). HA \\(y=0\\) as \\(x\\to-\\infty\\). \\(y'=\\frac{e^x(x-1)}{x^2}\\): dec on \\((-\\infty,0)\\) and \\((0,1)\\), inc on \\((1,\\infty)\\). Local min \\((1,e)\\). \\(x^2-2x+2>0\\) always, so CU for \\(x>0\\) and CD for \\(x<0\\). No IP.</p><p class=\"ans\">VA \\(x=0\\), HA \\(y=0\\) (left side), min \\((1,e)\\), CD \\(x<0\\), CU \\(x>0\\)</p>"
        }
@@ -9387,6 +9887,10 @@ export const sections: Section[] = [
         "html": "<p>Long division: \\(\\frac{x^2}{x-1}=x+1+\\frac{1}{x-1}\\).</p>"
        },
        {
+        "label": "Sign-map walkthrough",
+        "html": "<div class=\"walk\"><p>The domain is all real numbers, so your number line runs from \\(-\\infty\\) to \\(\\infty\\).</p><p><strong>1. Intervals of increase &amp; decrease</strong></p><p><em>Step 1: Find \\(f'(x)\\) and set it to zero</em></p>\\[y'=\\frac{x(x-2)}{(x-1)^2}\\]\\[x=0,\\ x=2\\]<p>\\(x=1\\) is the vertical asymptote, so it's a cut point too.</p><p><em>Step 2: Build the sign map</em> Put the critical numbers and the asymptote between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      ‖      |      (∞)\n          0      1      2</pre><p class=\"note\">‖ = not in the domain (vertical asymptote). The sign can still flip there, so it's a cut point.</p><p>Pick one easy \\(x\\) in each section and plug it into \\(f'(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,0)\\), test \\(x=-1\\):\\[\\begin{aligned}y'(-1)&=\\tfrac{(-1)(-3)}{4}\\\\&=\\tfrac34\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((0,1)\\), test \\(x=\\tfrac12\\):\\[\\begin{aligned}y'(\\tfrac12)&=\\tfrac{(\\frac12)(-\\frac32)}{\\frac14}\\\\&=-3\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((1,2)\\), test \\(x=\\tfrac32\\):\\[\\begin{aligned}y'(\\tfrac32)&=\\tfrac{(\\frac32)(-\\frac12)}{\\frac14}\\\\&=-3\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 4:</strong> \\((2,\\infty)\\), test \\(x=3\\):\\[\\begin{aligned}y'(3)&=\\tfrac{(3)(1)}{4}\\\\&=\\tfrac34\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f'(x)\\) is:</p>\\[+\\;\\Big\\vert{}_{0}\\;-\\;\\Big\\Vert{}_{1}\\;-\\;\\Big\\vert{}_{2}\\;+\\]<ul><li><strong>Increasing:</strong> \\((-\\infty,0)\\) and \\((2,\\infty)\\)</li><li><strong>Decreasing:</strong> \\((0,1)\\) and \\((1,2)\\)</li></ul><p><strong>2. Local extreme values</strong></p><p>Read the sign changes from your map:</p><ul><li>At \\(x=0\\): \\(+\\to-\\), <strong>local max</strong>:\\[y(0)=\\mathbf{0}\\]</li><li>At \\(x=2\\): \\(-\\to+\\), <strong>local min</strong>:\\[y(2)=\\tfrac41=\\mathbf{4}\\]</li></ul><p><strong>3. Concavity &amp; inflection points</strong></p><p><em>Step 1: Find \\(f''(x)\\) and set it to zero</em></p>\\[y''=\\frac{2}{(x-1)^3}\\]<p>Never 0. The only cut is the asymptote \\(x=1\\).</p><p><em>Step 2: Build the sign map</em> Put the asymptote between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      ‖      (∞)\n          1</pre><p class=\"note\">‖ = not in the domain (vertical asymptote). The sign can still flip there, so it's a cut point.</p><p>Pick one easy \\(x\\) in each section and plug it into \\(f''(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,1)\\), test \\(x=0\\):\\[\\begin{aligned}y''(0)&=\\tfrac{2}{(-1)^3}\\\\&=-2\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((1,\\infty)\\), test \\(x=2\\):\\[\\begin{aligned}y''(2)&=\\tfrac2{1}\\\\&=2\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f''(x)\\) is:</p>\\[-\\;\\Big\\Vert{}_{1}\\;+\\]<ul><li><strong>Concave down:</strong> \\((-\\infty,1)\\)</li><li><strong>Concave up:</strong> \\((1,\\infty)\\)</li></ul><p><em>Inflection point(s)</em></p><p class=\"ans\">No inflection point (the flip is at the asymptote).</p></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Domain \\(x\\ne1\\); intercept \\((0,0)\\). VA \\(x=1\\). Slant asymptote \\(y=x+1\\). \\(y'=\\frac{x(x-2)}{(x-1)^2}\\): inc \\((-\\infty,0)\\), dec \\((0,1)\\) and \\((1,2)\\), inc \\((2,\\infty)\\). Local max \\((0,0)\\), local min \\((2,4)\\). \\(y''=\\frac2{(x-1)^3}\\): CD for \\(x<1\\), CU for \\(x>1\\).</p><p class=\"ans\">VA \\(x=1\\), slant \\(y=x+1\\), max \\((0,0)\\), min \\((2,4)\\), no IP</p>"
        }
@@ -9447,6 +9951,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Domain \\(x>0\\). \\(y'=1-\\frac1x\\).</p>"
+       },
+       {
+        "label": "Sign-map walkthrough",
+        "html": "<div class=\"walk\"><p>Treat \\(0\\) and \\(\\infty\\) as the left and right walls of your number line. Every interval you build must stay strictly inside \\((0,\\infty)\\).</p><p><strong>1. Intervals of increase &amp; decrease</strong></p><p><em>Step 1: Find \\(f'(x)\\) and set it to zero</em></p>\\[y'=1-\\tfrac1x=\\frac{x-1}{x}\\]\\[x=1\\]<p>\\(\\ln x\\) needs \\(x>0\\), so the left wall is \\(0\\).</p><p><em>Step 2: Build the sign map</em> Put the critical numbers between the walls \\(0\\) and \\(\\infty\\):</p><pre class=\"signline\">(0)      |      (∞)\n         1</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f'(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((0,1)\\), test \\(x=\\tfrac12\\):\\[\\begin{aligned}y'(\\tfrac12)&=\\tfrac{-\\frac12}{\\frac12}\\\\&=-1\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((1,\\infty)\\), test \\(x=2\\):\\[\\begin{aligned}y'(2)&=\\tfrac{1}{2}\\\\&=\\tfrac12\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f'(x)\\) is:</p>\\[-\\;\\Big\\vert{}_{1}\\;+\\]<ul><li><strong>Decreasing:</strong> \\((0,1)\\)</li><li><strong>Increasing:</strong> \\((1,\\infty)\\)</li></ul><p><strong>2. Local extreme values</strong></p><p>Read the sign changes from your map:</p><ul><li>At \\(x=1\\): \\(-\\to+\\), <strong>local min</strong>:\\[y(1)=1-\\ln1=\\mathbf{1}\\]</li></ul><p><strong>3. Concavity &amp; inflection points</strong></p><p><em>Step 1: Find \\(f''(x)\\) and set it to zero</em></p>\\[y''=\\tfrac{1}{x^2}\\]<p>Never 0 on \\((0,\\infty)\\).</p><p><em>Step 2: Sign map</em> Nothing to cut at, so there's one section, \\((0,\\infty)\\).</p><p>Pick one easy \\(x\\) in each section and plug it into \\(f''(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((0,\\infty)\\), test \\(x=1\\):\\[\\begin{aligned}y''(1)&=\\tfrac11\\\\&=1\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f''(x)\\) is:</p>\\[+\\]<ul><li><strong>Concave up:</strong> \\((0,\\infty)\\)</li></ul><p><em>Inflection point(s)</em></p><p class=\"ans\">No inflection point.</p></div>"
        },
        {
         "label": "Full solution",
@@ -9557,6 +10065,10 @@ export const sections: Section[] = [
         "html": "<p>Product \\(P=x\\,y\\) with \\(y=100-x\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Constraint.</p>\\[\\displaystyle x+y=100\\]<p><strong>Step 2.</strong> Objective, now in one variable.</p>\\[\\displaystyle P=xy=x(100-x)\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle P'(x)=100-2x=0\\]<p><strong>Step 4.</strong> Concave down, so it's the top.</p>\\[\\displaystyle P''=-2<0\\Rightarrow\\text{max}\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle y=100-50=50\\]<p><strong>What you found:</strong></p><ul><li>\\(y=100-x\\)</li><li>\\(x=50\\)</li><li>\\(\\text{numbers}:\\ 50,\\ 50\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(P(x)=x(100-x)=100x-x^2\\) on \\(0<x<100\\). \\(P'=100-2x=0\\Rightarrow x=50\\). \\(P''=-2<0\\), so it's a max.</p><p class=\"ans\">\\(50\\) and \\(50\\)</p>"
        }
@@ -9613,6 +10125,10 @@ export const sections: Section[] = [
         "html": "<p>\\(y=\\frac{100}{x}\\). Minimise \\(S=x+\\frac{100}{x}\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Constraint.</p>\\[\\displaystyle xy=100\\Rightarrow y=\\tfrac{100}{x}\\]<p><strong>Step 2.</strong> Objective. Domain \\(x>0\\).</p>\\[\\displaystyle S=x+\\tfrac{100}{x}\\]<p><strong>Step 3.</strong> \\(x^2=100\\), so \\(x=10\\) (positive).</p>\\[\\displaystyle S'=1-\\tfrac{100}{x^2}=0\\]<p><strong>Step 4.</strong> Concave up, so it's a min.</p>\\[\\displaystyle S''=\\tfrac{200}{x^3}>0\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle y=\\tfrac{100}{10}=10\\]<p><strong>What you found:</strong></p><ul><li>\\(x=10\\)</li><li>\\(\\text{numbers}:\\ 10,\\ 10\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(S'=1-\\frac{100}{x^2}=0\\Rightarrow x=10\\). \\(S''=\\frac{200}{x^3}>0\\), so it's a min. \\(y=10\\).</p><p class=\"ans\">\\(10\\) and \\(10\\)</p>"
        }
@@ -9663,6 +10179,10 @@ export const sections: Section[] = [
         "html": "<p>Minimise \\(f(x)=x+\\frac1x\\) for \\(x>0\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Objective.</p>\\[\\begin{gathered}\\displaystyle f(x)=x+x^{-1}\\\\\\displaystyle x>0\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f'(x)=1-x^{-2}=0\\]<p><strong>Step 3.</strong> Min.</p>\\[\\displaystyle f''(1)=2>0\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f(1)=1+1=2\\]<p><strong>What you found:</strong></p><ul><li>\\(x=1\\)</li><li>\\(\\text{min sum}:\\ 2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'=1-\\frac1{x^2}=0\\Rightarrow x=1\\). \\(f''=\\frac2{x^3}>0\\), so it's a min. The smallest sum is 2.</p><p class=\"ans\">\\(x=1\\) (sum \\(=2\\))</p>"
        }
@@ -9707,6 +10227,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Two sides of length \\(x\\) (perpendicular to the river) and one side \\(y\\): \\(2x+y=2400\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Three sides of fence, since the river is the fourth.</p>\\[\\displaystyle 2x+y=2400\\]<p><strong>Step 2.</strong> Objective in one variable.</p>\\[\\displaystyle A=x(2400-2x)\\]<p><strong>Step 3.</strong> Lengths can't be negative. This is a closed interval, so check the endpoints too.</p>\\[\\displaystyle 0\\le x\\le1200\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle A'=2400-4x=0\\Rightarrow x=600\\]<p><strong>Step 5.</strong> The endpoints give zero area, so \\(x=600\\) wins.</p>\\[\\displaystyle A(0)=A(1200)=0\\]<p><strong>Step 6.</strong></p>\\[\\begin{gathered}\\displaystyle y=1200\\\\\\displaystyle A=720{,}000\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(y=2400-2x\\)</li><li>\\(x=600\\)</li><li>\\(\\text{dims}:\\ 600\\times1200\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -9769,6 +10293,10 @@ export const sections: Section[] = [
         "html": "<p>Base \\(x\\times x\\), height \\(h\\). Material \\(=x^2+4xh\\); volume \\(x^2h=32000\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Constraint (volume).</p>\\[\\displaystyle x^2h=32000\\Rightarrow h=\\tfrac{32000}{x^2}\\]<p><strong>Step 2.</strong> Bottom + 4 sides (open top).</p>\\[\\displaystyle S=x^2+4xh\\]<p><strong>Step 3.</strong> Substitute \\(h\\): \\(4x\\cdot\\frac{32000}{x^2}\\).</p>\\[\\displaystyle S=x^2+\\tfrac{128000}{x}\\]<p><strong>Step 4.</strong> Multiply by \\(x^2\\): \\(2x^3=128000\\).</p>\\[\\displaystyle S'=2x-\\tfrac{128000}{x^2}=0\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle x^3=64000\\Rightarrow x=40\\]<p><strong>Step 6.</strong> Min.</p>\\[\\displaystyle S''=2+\\tfrac{256000}{x^3}>0\\]<p><strong>Step 7.</strong></p>\\[\\displaystyle h=\\tfrac{32000}{1600}=20\\]<p><strong>What you found:</strong></p><ul><li>\\(x=40\\)</li><li>\\(\\text{dims}:\\ 40\\times40\\times20\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(h=\\frac{32000}{x^2}\\), so \\(S=x^2+\\frac{128000}{x}\\). \\(S'=2x-\\frac{128000}{x^2}=0\\Rightarrow x^3=64000\\Rightarrow x=40\\), \\(h=20\\). \\(S''>0\\), so it's a min.</p><p class=\"ans\">Base \\(40\\times40\\) cm, height \\(20\\) cm</p>"
        }
@@ -9827,6 +10355,10 @@ export const sections: Section[] = [
         "html": "<p>Minimise \\(d^2=x^2+y^2=x^2+(2x+3)^2\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Distance squared to the origin.</p>\\[\\displaystyle d^2=(x-0)^2+(y-0)^2\\]<p><strong>Step 2.</strong> Use the line to eliminate \\(y\\).</p>\\[\\displaystyle D=x^2+(2x+3)^2=5x^2+12x+9\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle D'=10x+12=0\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle y=2(-\\tfrac65)+3=\\tfrac35\\]<p><strong>What you found:</strong></p><ul><li>\\(x=-6/5\\)</li><li>\\(\\text{point}:\\ (-6/5,\\ 3/5)\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(D=5x^2+12x+9\\). \\(D'=10x+12=0\\Rightarrow x=-\\tfrac65\\), \\(y=-\\tfrac{12}5+3=\\tfrac35\\). \\(D''=10>0\\), so it's a min.</p><p class=\"ans\">\\(\\left(-\\tfrac65,\\tfrac35\\right)\\)</p>"
        }
@@ -9873,6 +10405,10 @@ export const sections: Section[] = [
         "html": "<p>Write \\(x=\\frac{y^2}{2}\\) and minimise \\(d^2\\) as a function of \\(y\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Solving for \\(x\\) is easier than for \\(y\\).</p>\\[\\displaystyle x=\\tfrac{y^2}{2}\\]<p><strong>Step 2.</strong> Squared distance to \\((1,4)\\).</p>\\[\\displaystyle D=\\big(\\tfrac{y^2}{2}-1\\big)^2+(y-4)^2\\]<p><strong>Step 3.</strong> Chain rule on both squares.</p>\\[\\displaystyle D'=2\\big(\\tfrac{y^2}2-1\\big)(y)+2(y-4)\\]<p><strong>Step 4.</strong> Expand. The \\(2y\\) terms cancel.</p>\\[\\displaystyle =y^3-2y+2y-8=y^3-8\\]<p><strong>Step 5.</strong></p>\\[\\begin{gathered}\\displaystyle y^3=8\\Rightarrow y=2\\\\\\displaystyle x=2\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{point}:\\ (2,2)\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(D(y)=(\\tfrac{y^2}2-1)^2+(y-4)^2\\). \\(D'=2(\\tfrac{y^2}2-1)y+2(y-4)=y^3-8=0\\Rightarrow y=2\\), \\(x=2\\). \\(D'\\) changes \\(-\\to+\\), so it's a min.</p><p class=\"ans\">\\((2,2)\\)</p>"
        }
@@ -9915,6 +10451,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Corner at \\((x,y)\\) on the circle: width \\(2x\\), height \\(2y\\), \\(y=\\sqrt{25-x^2}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The corner sits on the circle.</p>\\[\\displaystyle x^2+y^2=25\\]<p><strong>Step 2.</strong> Width times height, with \\(0\\le x\\le5\\).</p>\\[\\displaystyle A=(2x)(2y)=4x\\sqrt{25-x^2}\\]<p><strong>Step 3.</strong> Product rule plus chain rule.</p>\\[\\displaystyle A'=4\\sqrt{25-x^2}+4x\\cdot\\frac{-x}{\\sqrt{25-x^2}}\\]<p><strong>Step 4.</strong> Common denominator.</p>\\[\\displaystyle A'=\\frac{4(25-x^2)-4x^2}{\\sqrt{25-x^2}}\\]<p><strong>Step 5.</strong> Top = 0.</p>\\[\\displaystyle =\\frac{4(25-2x^2)}{\\sqrt{25-x^2}}=0\\]<p><strong>Step 6.</strong> Endpoints give \\(A=0\\), so this is the max.</p>\\[\\displaystyle x^2=\\tfrac{25}{2}\\Rightarrow x=\\tfrac{5}{\\sqrt2}\\]<p><strong>Step 7.</strong> Width \\(=\\) height \\(=\\tfrac{10}{\\sqrt2}=5\\sqrt2\\).</p>\\[\\displaystyle y=\\sqrt{25-\\tfrac{25}2}=\\tfrac5{\\sqrt2}\\]<p><strong>What you found:</strong></p><ul><li>\\(y=\\sqrt{25-x^2}\\)</li><li>\\(x=5/\\sqrt2\\)</li><li>\\(\\text{area}:\\ 50\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -10051,6 +10591,10 @@ export const sections: Section[] = [
         "html": "<p>Term by term: add one to each power and divide by the new power.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Power 3 becomes 4, divide by 4.</p>\\[\\displaystyle 4x^3\\to\\frac{4x^4}{4}=x^4\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle -6x\\to-\\frac{6x^2}{2}=-3x^2\\]<p><strong>Step 3.</strong> A constant picks up an \\(x\\).</p>\\[\\displaystyle 2\\to2x\\]<p><strong>Step 4.</strong> Check: \\(F'=4x^3-6x+2\\). ✓</p>\\[\\displaystyle F=x^4-3x^2+2x+C\\]<p><strong>What you found:</strong></p><ul><li>\\(F=x^4-3x^2+2x+C\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\frac{4x^4}{4}-\\frac{6x^2}{2}+2x+C\\).</p><p class=\"ans\">\\(F(x)=x^4-3x^2+2x+C\\)</p>"
        }
@@ -10089,6 +10633,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(\\sqrt x=x^{1/2}\\). And \\(\\frac1x\\) is the special case.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\tfrac12+1=\\tfrac32\\).</p>\\[\\displaystyle x^{1/2}\\to\\frac{x^{3/2}}{3/2}\\]<p><strong>Step 2.</strong> Dividing by \\(\\tfrac32\\) is multiplying by \\(\\tfrac23\\).</p>\\[\\displaystyle =\\tfrac23x^{3/2}\\]<p><strong>Step 3.</strong> The power rule would divide by 0 here, so use the special case.</p>\\[\\displaystyle \\tfrac1x\\to\\ln|x|\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle F=\\tfrac23x^{3/2}+\\ln|x|+C\\]<p><strong>What you found:</strong></p><ul><li>\\(F=\\tfrac23x^{3/2}+\\ln|x|+C\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -10131,6 +10679,10 @@ export const sections: Section[] = [
         "html": "<p>\\(\\frac{3}{x^2}=3x^{-2}\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(-2+1=-1\\). Divide by \\(-1\\).</p>\\[\\displaystyle 3x^{-2}\\to\\frac{3x^{-1}}{-1}=-\\tfrac{3}{x}\\]<p><strong>Step 2.</strong> Because \\((\\tan x)'=\\sec^2x\\).</p>\\[\\displaystyle -5\\sec^2x\\to-5\\tan x\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle F=-\\tfrac3x-5\\tan x+C\\]<p><strong>What you found:</strong></p><ul><li>\\(F=-3/x-5\\tan x+C\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(3x^{-2}\\to\\frac{3x^{-1}}{-1}=-\\frac3x\\). \\(\\sec^2x\\to\\tan x\\).</p><p class=\"ans\">\\(F(x)=-\\dfrac3x-5\\tan x+C\\)</p>"
        }
@@ -10165,6 +10717,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>There's no quotient rule backwards. Split the fraction first.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Divide every term by \\(x\\).</p>\\[\\displaystyle \\frac{x^2}{x}+\\frac{3x}{x}-\\frac1x=x+3-\\frac1x\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle x\\to\\tfrac{x^2}{2}\\\\\\displaystyle 3\\to3x\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle -\\tfrac1x\\to-\\ln|x|\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle F=\\tfrac{x^2}2+3x-\\ln|x|+C\\]<p><strong>What you found:</strong></p><ul><li>\\(F=\\tfrac{x^2}2+3x-\\ln|x|+C\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -10207,6 +10763,10 @@ export const sections: Section[] = [
         "html": "<p>\\(\\frac1{1+x^2}\\) is the derivative of \\(\\tan^{-1}x\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(e^x\\) is its own antiderivative.</p>\\[\\displaystyle 2e^x\\to2e^x\\]<p><strong>Step 2.</strong> Inverse-tan pattern.</p>\\[\\displaystyle \\frac{4}{1+x^2}\\to4\\tan^{-1}x\\]<p><strong>Step 3.</strong> Since \\((\\cos x)'=-\\sin x\\). The signs are tricky, so check by differentiating.</p>\\[\\displaystyle -\\sin x\\to\\cos x\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle F=2e^x+4\\tan^{-1}x+\\cos x+C\\]<p><strong>What you found:</strong></p><ul><li>\\(F=2e^x+4\\tan^{-1}x+\\cos x+C\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(2e^x\\to2e^x\\); \\(\\frac4{1+x^2}\\to4\\tan^{-1}x\\); \\(-\\sin x\\to\\cos x\\).</p><p class=\"ans\">\\(F(x)=2e^x+4\\tan^{-1}x+\\cos x+C\\)</p>"
        }
@@ -10245,6 +10805,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Antidifferentiate with \\(+C\\), then plug in \\(x=1\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(6\\cdot\\frac{x^3}{3}\\) and \\(4\\cdot\\frac{x^2}{2}\\).</p>\\[\\displaystyle f(x)=2x^3-2x^2+C\\]<p><strong>Step 2.</strong> Use the condition.</p>\\[\\displaystyle f(1)=2-2+C=5\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle C=5\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f(x)=2x^3-2x^2+5\\]<p><strong>What you found:</strong></p><ul><li>\\(C=5\\)</li><li>\\(f=2x^3-2x^2+5\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -10291,6 +10855,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Two steps: \\(f''\\to f'\\) (find \\(C\\)), then \\(f'\\to f\\) (find \\(D\\)).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> First antiderivative.</p>\\[\\displaystyle f'(x)=4x^3+3x^2+C\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f'(0)=C=1\\]<p><strong>Step 3.</strong> Antidifferentiate \\(4x^3+3x^2+1\\).</p>\\[\\displaystyle f(x)=x^4+x^3+x+D\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f(0)=D=3\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle f(x)=x^4+x^3+x+3\\]<p><strong>What you found:</strong></p><ul><li>\\(C=1\\)</li><li>\\(D=3\\)</li><li>\\(f=x^4+x^3+x+3\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -10349,6 +10917,10 @@ export const sections: Section[] = [
         "html": "<p>\\(f=2\\sin x+\\tan x+C\\). Then use \\(\\sin\\frac\\pi3=\\frac{\\sqrt3}2\\) and \\(\\tan\\frac\\pi3=\\sqrt3\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle f(x)=2\\sin x+\\tan x+C\\]<p><strong>Step 2.</strong> Exact values.</p>\\[\\displaystyle f(\\tfrac\\pi3)=2\\cdot\\tfrac{\\sqrt3}{2}+\\sqrt3+C\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle 2\\sqrt3+C=4\\Rightarrow C=4-2\\sqrt3\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f=2\\sin x+\\tan x+4-2\\sqrt3\\]<p><strong>What you found:</strong></p><ul><li>\\(C=4-2\\sqrt3\\)</li><li>\\(f=2\\sin x+\\tan x+4-2\\sqrt3\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f(\\tfrac\\pi3)=\\sqrt3+\\sqrt3+C=4\\Rightarrow C=4-2\\sqrt3\\).</p><p class=\"ans\">\\(f(x)=2\\sin x+\\tan x+4-2\\sqrt3\\)</p>"
        }
@@ -10395,6 +10967,10 @@ export const sections: Section[] = [
         "html": "<p>\\(v=\\int a\\), then \\(s=\\int v\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Antiderivative of the acceleration.</p>\\[\\displaystyle v(t)=3t^2+2t+C\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle v(0)=C=-3\\]<p><strong>Step 3.</strong> Antiderivative of the velocity.</p>\\[\\displaystyle s(t)=t^3+t^2-3t+D\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle s(0)=D=1\\]<p><strong>What you found:</strong></p><ul><li>\\(v=3t^2+2t-3\\)</li><li>\\(s=t^3+t^2-3t+1\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(v=3t^2+2t+C\\), \\(v(0)=C=-3\\). \\(s=t^3+t^2-3t+D\\), \\(s(0)=D=1\\).</p><p class=\"ans\">\\(s(t)=t^3+t^2-3t+1\\)</p>"
        }
@@ -10439,6 +11015,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>“Dropped” means \\(v(0)=0\\). \\(s(0)=450\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Dropped, not thrown: starts at rest.</p>\\[\\begin{gathered}\\displaystyle v(t)=-9.8t+C\\\\\\displaystyle v(0)=0\\end{gathered}\\]<p><strong>Step 2.</strong> \\(-9.8\\cdot\\frac{t^2}{2}\\).</p>\\[\\begin{gathered}\\displaystyle s(t)=-4.9t^2+D\\\\\\displaystyle s(0)=450\\end{gathered}\\]<p><strong>Step 3.</strong> Hits the ground when the height is 0.</p>\\[\\displaystyle 450-4.9t^2=0\\]<p><strong>Step 4.</strong> Take the positive root.</p>\\[\\displaystyle t=\\sqrt{450/4.9}\\approx9.58\\text{ s}\\]<p><strong>What you found:</strong></p><ul><li>\\(v=-9.8t\\)</li><li>\\(s=450-4.9t^2\\)</li><li>\\(t=9.58\\text{ s}\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -10578,6 +11158,10 @@ export const sections: Section[] = [
         "html": "<p>\\(f'(x)=3x^2-12x+9\\). Pull out 3, then factor.</p>"
        },
        {
+        "label": "Sign-map walkthrough",
+        "html": "<div class=\"walk\"><p>The domain is all real numbers, so your number line runs from \\(-\\infty\\) to \\(\\infty\\).</p><p><strong>1. Intervals of increase &amp; decrease</strong></p><p><em>Step 1: Find \\(f'(x)\\) and set it to zero</em></p>\\[f'(x)=3x^2-12x+9=3(x-1)(x-3)\\]\\[x=1,\\ x=3\\]<p><em>Step 2: Build the sign map</em> Put the critical numbers between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      |      (∞)\n          1      3</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f'(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,1)\\), test \\(x=0\\):\\[\\begin{aligned}f'(0)&=3(-1)(-3)\\\\&=9\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((1,3)\\), test \\(x=2\\):\\[\\begin{aligned}f'(2)&=3(1)(-1)\\\\&=-3\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((3,\\infty)\\), test \\(x=4\\):\\[\\begin{aligned}f'(4)&=3(3)(1)\\\\&=9\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f'(x)\\) is:</p>\\[+\\;\\Big\\vert{}_{1}\\;-\\;\\Big\\vert{}_{3}\\;+\\]<ul><li><strong>Increasing:</strong> \\((-\\infty,1)\\) and \\((3,\\infty)\\)</li><li><strong>Decreasing:</strong> \\((1,3)\\)</li></ul><p><strong>2. Local extreme values</strong></p><p>Read the sign changes from your map:</p><ul><li>At \\(x=1\\): \\(+\\to-\\), <strong>local max</strong>:\\[f(1)=1-6+9+1=\\mathbf{5}\\]</li><li>At \\(x=3\\): \\(-\\to+\\), <strong>local min</strong>:\\[f(3)=27-54+27+1=\\mathbf{1}\\]</li></ul><p><strong>3. Concavity &amp; inflection points</strong></p><p><em>Step 1: Find \\(f''(x)\\) and set it to zero</em></p>\\[f''(x)=6x-12\\]\\[x=2\\]<p><em>Step 2: Build the sign map</em> Put \\(2\\) between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      (∞)\n          2</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f''(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,2)\\), test \\(x=0\\):\\[\\begin{aligned}f''(0)&=0-12\\\\&=-12\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((2,\\infty)\\), test \\(x=3\\):\\[\\begin{aligned}f''(3)&=18-12\\\\&=6\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f''(x)\\) is:</p>\\[-\\;\\Big\\vert{}_{2}\\;+\\]<ul><li><strong>Concave down:</strong> \\((-\\infty,2)\\)</li><li><strong>Concave up:</strong> \\((2,\\infty)\\)</li></ul><p><em>Inflection point(s)</em></p>\\[f(2)=8-24+18+1=3\\]<p class=\"ans\">Inflection point \\((2,3)\\)</p></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'=3(x-1)(x-3)\\): \\(+,-,+\\). \\(f(1)=5\\), \\(f(3)=1\\). \\(f''=6x-12\\) flips at \\(x=2\\), \\(f(2)=3\\).</p><p class=\"ans\">Inc \\((-\\infty,1),(3,\\infty)\\); dec \\((1,3)\\); loc max \\(5\\), loc min \\(1\\); CD \\((-\\infty,2)\\), CU \\((2,\\infty)\\); IP \\((2,3)\\)</p>"
        }
@@ -10642,6 +11226,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Critical numbers from \\(4x(x^2-4)=0\\). Then plug each one into \\(f''\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle f'(x)=4x^3-16x=4x(x-2)(x+2)\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f''(x)=12x^2-16\\]<p><strong>Step 3.</strong> Cup: local min.</p>\\[\\displaystyle f''(\\pm2)=48-16=32>0\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f(\\pm2)=16-32=-16\\]<p><strong>Step 5.</strong> Cap: local max.</p>\\[\\displaystyle f''(0)=-16<0\\]<p><strong>Step 6.</strong></p>\\[\\displaystyle f(0)=0\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{crit}:\\ 0,\\pm2\\)</li><li>\\(\\text{loc min}:\\ -16\\)</li><li>\\(\\text{loc max}:\\ 0\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -10713,6 +11301,10 @@ export const sections: Section[] = [
         "html": "<p>\\(\\frac00\\). You'll need l'Hospital twice.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\frac{1-1}{0}=\\frac00\\]<p><strong>Step 2.</strong> Chain rule: \\((\\cos2x)'=-2\\sin2x\\), so minus that is \\(+2\\sin2x\\).</p>\\[\\displaystyle \\lim\\frac{2\\sin2x}{2x}\\]<p><strong>Step 3.</strong> Still \\(\\frac00\\), so L'H again.</p>\\[\\displaystyle \\lim\\frac{4\\cos2x}{2}\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle \\frac{4}{2}=2\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{form}:\\ 0/0\\)</li><li>\\(\\text{limit}:\\ 2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>L'H: \\(\\frac{2\\sin2x}{2x}\\) (still \\(\\frac00\\)). L'H again: \\(\\frac{4\\cos2x}{2}\\to2\\).</p><p class=\"ans\">\\(2\\)</p>"
        }
@@ -10757,6 +11349,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(0\\cdot(-\\infty)\\). Write it as \\(\\frac{\\ln x}{\\csc x}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle 0\\cdot(-\\infty)\\]<p><strong>Step 2.</strong> \\(\\sin x=\\frac{1}{\\csc x}\\). Now it's \\(\\frac{-\\infty}{\\infty}\\).</p>\\[\\displaystyle \\frac{\\ln x}{\\csc x}\\]<p><strong>Step 3.</strong> L'H. \\((\\csc x)'=-\\csc x\\cot x\\).</p>\\[\\displaystyle \\frac{1/x}{-\\csc x\\cot x}\\]<p><strong>Step 4.</strong> Flip: \\(\\frac{1}{\\csc x\\cot x}=\\sin x\\cdot\\frac{\\sin x}{\\cos x}\\).</p>\\[\\displaystyle =-\\frac{\\sin x}{x}\\cdot\\frac{\\sin x}{\\cos x}\\]<p><strong>Step 5.</strong> \\(\\frac{\\sin x}{x}\\to1\\) and \\(\\tan x\\to0\\).</p>\\[\\displaystyle \\to-1\\cdot0=0\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{form}:\\ 0\\cdot\\infty\\)</li><li>\\(\\text{limit}:\\ 0\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -10807,6 +11403,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(1^\\infty\\). Take \\(\\ln\\): \\(\\ln y=\\frac{\\ln(1+2x)}{x}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle 1^\\infty\\]<p><strong>Step 2.</strong> Bring the exponent down: \\(\\frac00\\).</p>\\[\\displaystyle \\ln y=\\tfrac1x\\ln(1+2x)=\\frac{\\ln(1+2x)}{x}\\]<p><strong>Step 3.</strong> L'H, with the chain rule on top.</p>\\[\\displaystyle \\lim\\frac{\\frac{2}{1+2x}}{1}=2\\]<p><strong>Step 4.</strong> Undo the ln.</p>\\[\\displaystyle y\\to e^2\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{form}:\\ 1^\\infty\\)</li><li>\\(\\lim\\ln y=2\\)</li><li>\\(\\text{limit}:\\ e^2\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -10868,6 +11468,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Even function. VA where \\(x^2-4=0\\); HA from comparing the degrees. \\(y'=\\frac{-8x}{(x^2-4)^2}\\).</p>"
+       },
+       {
+        "label": "Sign-map walkthrough",
+        "html": "<div class=\"walk\"><p>The domain is all real numbers, so your number line runs from \\(-\\infty\\) to \\(\\infty\\).</p><p><strong>1. Intervals of increase &amp; decrease</strong></p><p><em>Step 1: Find \\(f'(x)\\) and set it to zero</em></p>\\[y'=\\frac{-8x}{(x^2-4)^2}\\]\\[x=0\\]<p>\\(x=\\pm2\\) are vertical asymptotes: not critical numbers, but they still cut the line.</p><p><em>Step 2: Build the sign map</em> Put the asymptotes and the critical number between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      ‖      |      ‖      (∞)\n         -2      0      2</pre><p class=\"note\">‖ = not in the domain (vertical asymptote). The sign can still flip there, so it's a cut point.</p><p>Pick one easy \\(x\\) in each section and plug it into \\(f'(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,-2)\\), test \\(x=-3\\):\\[\\begin{aligned}y'(-3)&=\\tfrac{24}{25}\\\\&=\\tfrac{24}{25}\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((-2,0)\\), test \\(x=-1\\):\\[\\begin{aligned}y'(-1)&=\\tfrac{8}{9}\\\\&=\\tfrac89\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((0,2)\\), test \\(x=1\\):\\[\\begin{aligned}y'(1)&=\\tfrac{-8}{9}\\\\&=-\\tfrac89\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 4:</strong> \\((2,\\infty)\\), test \\(x=3\\):\\[\\begin{aligned}y'(3)&=\\tfrac{-24}{25}\\\\&=-\\tfrac{24}{25}\\implies\\mathbf{-}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f'(x)\\) is:</p>\\[+\\;\\Big\\Vert{}_{-2}\\;+\\;\\Big\\vert{}_{0}\\;-\\;\\Big\\Vert{}_{2}\\;-\\]<ul><li><strong>Increasing:</strong> \\((-\\infty,-2)\\) and \\((-2,0)\\)</li><li><strong>Decreasing:</strong> \\((0,2)\\) and \\((2,\\infty)\\)</li></ul><p><strong>2. Local extreme values</strong></p><p>Read the sign changes from your map:</p><ul><li>At \\(x=0\\): \\(+\\to-\\), <strong>local max</strong>:\\[y(0)=\\tfrac{0}{-4}=\\mathbf{0}\\]</li><li>At \\(\\pm2\\) the function doesn't exist, so there are no extremes there.</li></ul><p><strong>3. Concavity &amp; inflection points</strong></p><p><em>Step 1: Find \\(f''(x)\\) and set it to zero</em></p>\\[y''=\\frac{8(3x^2+4)}{(x^2-4)^3}\\]<p>The top is always positive. The only cuts are the asymptotes \\(\\pm2\\).</p><p><em>Step 2: Build the sign map</em> Put the asymptotes between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      ‖      ‖      (∞)\n         -2      2</pre><p class=\"note\">‖ = not in the domain (vertical asymptote). The sign can still flip there, so it's a cut point.</p><p>Pick one easy \\(x\\) in each section and plug it into \\(f''(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,-2)\\), test \\(x=-3\\):\\[\\begin{aligned}y''(-3)&=\\tfrac{8(31)}{125}\\\\&=\\tfrac{248}{125}\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((-2,2)\\), test \\(x=0\\):\\[\\begin{aligned}y''(0)&=\\tfrac{8(4)}{(-4)^3}\\\\&=-\\tfrac12\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((2,\\infty)\\), test \\(x=3\\):\\[\\begin{aligned}y''(3)&=\\tfrac{8(31)}{125}\\\\&=\\tfrac{248}{125}\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f''(x)\\) is:</p>\\[+\\;\\Big\\Vert{}_{-2}\\;-\\;\\Big\\Vert{}_{2}\\;+\\]<ul><li><strong>Concave up:</strong> \\((-\\infty,-2)\\) and \\((2,\\infty)\\)</li><li><strong>Concave down:</strong> \\((-2,2)\\)</li></ul><p><em>Inflection point(s)</em></p><p class=\"ans\">No inflection point (both flips are at asymptotes).</p></div>"
        },
        {
         "label": "Full solution",
@@ -10947,6 +11551,10 @@ export const sections: Section[] = [
         "html": "<p>Base \\((12-2x)\\times(12-2x)\\), height \\(x\\), with \\(0\\le x\\le6\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Height times base area. You can't cut more than half of 12.</p>\\[\\begin{gathered}\\displaystyle V=x(12-2x)^2\\\\\\displaystyle 0\\le x\\le6\\end{gathered}\\]<p><strong>Step 2.</strong> Product rule, with the chain rule on the square.</p>\\[\\displaystyle V'=(12-2x)^2+x\\cdot2(12-2x)(-2)\\]<p><strong>Step 3.</strong> Factor out \\((12-2x)\\).</p>\\[\\displaystyle V'=(12-2x)\\big[(12-2x)-4x\\big]\\]<p><strong>Step 4.</strong> \\(x=6\\) or \\(x=2\\).</p>\\[\\displaystyle =(12-2x)(12-6x)=0\\]<p><strong>Step 5.</strong> Closed interval method: the biggest one wins.</p>\\[\\begin{gathered}\\displaystyle V(0)=V(6)=0\\\\\\displaystyle V(2)=2\\cdot64=128\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{crit}:\\ 2,\\ 6\\)</li><li>\\(V_{\\max}=128\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(V=x(12-2x)^2\\). \\(V'=(12-2x)^2-4x(12-2x)=(12-2x)(12-6x)=0\\Rightarrow x=2\\) (\\(x=6\\) gives \\(V=0\\)). Endpoints give 0, so the max is \\(V(2)=2\\cdot8^2=128\\).</p><p class=\"ans\">\\(128\\text{ in}^3\\) (cut \\(x=2\\) in)</p>"
        }
@@ -11004,6 +11612,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Antidifferentiate twice. Use \\(f'(0)\\) for the first constant and \\(f(0)\\) for the second.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(6\\cdot\\frac{x^2}{2}+4x\\).</p>\\[\\displaystyle f'(x)=3x^2+4x+C\\]<p><strong>Step 2.</strong> Use the first condition right away.</p>\\[\\displaystyle f'(0)=C=-2\\]<p><strong>Step 3.</strong> Antidifferentiate \\(3x^2+4x-2\\).</p>\\[\\displaystyle f(x)=x^3+2x^2-2x+D\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f(0)=D=1\\]<p><strong>Step 5.</strong> Check: \\(f''=6x+4\\) ✓</p>\\[\\displaystyle f(x)=x^3+2x^2-2x+1\\]<p><strong>What you found:</strong></p><ul><li>\\(C=-2\\)</li><li>\\(D=1\\)</li><li>\\(f=x^3+2x^2-2x+1\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -11307,6 +11919,10 @@ export const sections: Section[] = [
         "html": "<p>Factor the top and bottom.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\frac00\\]<p><strong>Step 2.</strong> Both have the factor \\(x-3\\).</p>\\[\\displaystyle \\frac{(x-3)(x+3)}{(x-3)(x+1)}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\frac{x+3}{x+1}\\to\\frac{6}{4}=\\frac32\\]<p><strong>What you found:</strong></p><ul><li>\\(\\lim=3/2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\frac{(x-3)(x+3)}{(x-3)(x+1)}=\\frac{x+3}{x+1}\\to\\frac64\\).</p><p class=\"ans\">\\(\\tfrac32\\)</p>"
        }
@@ -11343,6 +11959,10 @@ export const sections: Section[] = [
         "html": "<p>The two pieces must meet at \\(x=2\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\lim_{x\\to2^-}=2a+1\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\lim_{x\\to2^+}=f(2)=4-a\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle 2a+1=4-a\\Rightarrow a=1\\]<p><strong>What you found:</strong></p><ul><li>\\(a=1\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(2a+1=4-a\\Rightarrow3a=3\\Rightarrow a=1\\).</p><p class=\"ans\">\\(a=1\\)</p>"
        }
@@ -11377,6 +11997,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(\\lim_{h\\to0}\\frac{f(x+h)-f(x)}h\\). Combine the two fractions first.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Write the definition out.</p>\\[\\displaystyle \\frac{f(x+h)-f(x)}{h}=\\frac{\\frac{1}{x+h+2}-\\frac{1}{x+2}}{h}\\]<p><strong>Step 2.</strong> Common denominator.</p>\\[\\displaystyle =\\frac{(x+2)-(x+h+2)}{h(x+h+2)(x+2)}\\]<p><strong>Step 3.</strong> The top simplifies to \\(-h\\).</p>\\[\\displaystyle =\\frac{-h}{h(x+h+2)(x+2)}\\]<p><strong>Step 4.</strong> Cancel \\(h\\).</p>\\[\\displaystyle =\\frac{-1}{(x+h+2)(x+2)}\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle h\\to0:\\ -\\frac1{(x+2)^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(f'=-1/(x+2)^2\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -11432,6 +12056,10 @@ export const sections: Section[] = [
         "html": "<p>Product rule, with the chain rule on \\(e^{2x}\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle y'=3x^2e^{2x}+x^3\\cdot2e^{2x}\\]<p><strong>Step 2.</strong> Factor.</p>\\[\\displaystyle =x^2e^{2x}(3+2x)\\]</div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(3x^2e^{2x}+2x^3e^{2x}\\).</p><p class=\"ans\">\\(x^2e^{2x}(3+2x)\\)</p>"
        }
@@ -11456,6 +12084,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Low·d(high) − high·d(low), over low².</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\frac{(x-1)(2x)-(x^2+1)(1)}{(x-1)^2}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle =\\frac{2x^2-2x-x^2-1}{(x-1)^2}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle =\\frac{x^2-2x-1}{(x-1)^2}\\]</div>"
        },
        {
         "label": "Full solution",
@@ -11488,6 +12120,10 @@ export const sections: Section[] = [
         "html": "<p>Three layers: square, sin, \\(3x\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The outside is the square.</p>\\[\\displaystyle y=(\\sin3x)^2\\]<p><strong>Step 2.</strong> Peel one layer at a time.</p>\\[\\displaystyle y'=2\\sin3x\\cdot\\cos3x\\cdot3\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle =6\\sin3x\\cos3x\\]</div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(2\\sin3x\\cdot\\cos3x\\cdot3\\).</p><p class=\"ans\">\\(6\\sin3x\\cos3x\\ (=3\\sin6x)\\)</p>"
        }
@@ -11518,6 +12154,10 @@ export const sections: Section[] = [
         "html": "<p>\\((\\ln u)'=\\frac{u'}{u}\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=x^2+e^x\\\\\\displaystyle u'=2x+e^x\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle y'=\\frac{u'}{u}\\]</div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\frac{2x+e^x}{x^2+e^x}\\).</p><p class=\"ans\">\\(\\dfrac{2x+e^x}{x^2+e^x}\\)</p>"
        }
@@ -11544,6 +12184,10 @@ export const sections: Section[] = [
         "html": "<p>\\(\\frac{u'}{1+u^2}\\) with \\(u=\\sqrt x\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=\\sqrt x\\\\\\displaystyle u'=\\tfrac1{2\\sqrt x}\\\\\\displaystyle u^2=x\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle y'=\\frac{1}{2\\sqrt x(1+x)}\\]</div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\frac{1/(2\\sqrt x)}{1+x}\\).</p><p class=\"ans\">\\(\\dfrac{1}{2\\sqrt x\\,(1+x)}\\)</p>"
        }
@@ -11568,6 +12212,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Implicit: \\((xy)'=y+xy'\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product rule on \\(xy\\); chain rule on \\(y^2\\).</p>\\[\\displaystyle 2x+(y+xy')+2yy'=0\\]<p><strong>Step 2.</strong> Collect the \\(y'\\) terms.</p>\\[\\displaystyle y'(x+2y)=-(2x+y)\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle y'=-\\frac{2+2}{1+4}=-\\frac45\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=-4/5\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -11606,6 +12254,10 @@ export const sections: Section[] = [
         "html": "<p>Take ln of both sides first.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\ln y=\\sin x\\,\\ln x\\]<p><strong>Step 2.</strong> Product rule.</p>\\[\\displaystyle \\tfrac{y'}{y}=\\cos x\\ln x+\\sin x\\cdot\\tfrac1x\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle y'=x^{\\sin x}\\big(\\cos x\\ln x+\\tfrac{\\sin x}x\\big)\\]</div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\ln y=\\sin x\\ln x\\Rightarrow\\frac{y'}{y}=\\cos x\\ln x+\\frac{\\sin x}{x}\\).</p><p class=\"ans\">\\(x^{\\sin x}\\big(\\cos x\\ln x+\\tfrac{\\sin x}{x}\\big)\\)</p>"
        }
@@ -11634,6 +12286,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(x^2+y^2=169\\). When \\(x=5\\), \\(y=12\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle x^2+y^2=169\\]<p><strong>Step 2.</strong> 5-12-13 triangle.</p>\\[\\displaystyle x=5\\Rightarrow y=12\\]<p><strong>Step 3.</strong> Differentiate in \\(t\\).</p>\\[\\displaystyle 2x\\,x'+2y\\,y'=0\\]<p><strong>Step 4.</strong> Negative means moving down.</p>\\[\\displaystyle y'=-\\frac{(5)(2)}{12}=-\\frac56\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=-5/6\\text{ ft/s}\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -11674,6 +12330,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(f(x)=\\sqrt x\\) at \\(a=4\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle f(4)=2\\\\\\displaystyle f'(4)=\\tfrac{1}{2\\sqrt4}=\\tfrac14\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle L(x)=2+\\tfrac14(x-4)\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle L(4.1)=2+\\tfrac14(0.1)=2.025\\]<p><strong>What you found:</strong></p><ul><li>\\(\\approx=2.025\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -11721,6 +12381,10 @@ export const sections: Section[] = [
         "html": "<p>Critical numbers \\(0,2\\); check them and both endpoints.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle f'=3x(x-2)\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f(-1)=-1-3+1=-3\\]<p><strong>Step 3.</strong></p>\\[\\begin{gathered}\\displaystyle f(0)=1\\\\\\displaystyle f(2)=-3\\end{gathered}\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f(3)=27-27+1=1\\]<p><strong>Step 5.</strong> Ties are allowed.</p>\\[\\begin{gathered}\\displaystyle \\max=1\\\\\\displaystyle \\min=-3\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{crit}:\\ 0,\\ 2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f(-1)=-3\\), \\(f(0)=1\\), \\(f(2)=-3\\), \\(f(3)=1\\).</p><p class=\"ans\">Abs max \\(1\\) (at \\(x=0,3\\)); abs min \\(-3\\) (at \\(x=-1,2\\))</p>"
        }
@@ -11763,6 +12427,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(f'=15x^2(x^2-1)\\); \\(f''=30x(2x^2-1)\\).</p>"
+       },
+       {
+        "label": "Sign-map walkthrough",
+        "html": "<div class=\"walk\"><p>The domain is all real numbers, so your number line runs from \\(-\\infty\\) to \\(\\infty\\).</p><p><strong>1. Intervals of increase &amp; decrease</strong></p><p><em>Step 1: Find \\(f'(x)\\) and set it to zero</em></p>\\[f'(x)=15x^4-15x^2=15x^2(x^2-1)\\]\\[x=-1,\\ 0,\\ 1\\]<p><em>Step 2: Build the sign map</em> Put the critical numbers between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      |      |      (∞)\n         -1      0      1</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f'(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,-1)\\), test \\(x=-2\\):\\[\\begin{aligned}f'(-2)&=15(4)(3)\\\\&=180\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((-1,0)\\), test \\(x=-\\tfrac12\\):\\[\\begin{aligned}f'(-\\tfrac12)&=15(\\tfrac14)(-\\tfrac34)\\\\&=-\\tfrac{45}{16}\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((0,1)\\), test \\(x=\\tfrac12\\):\\[\\begin{aligned}f'(\\tfrac12)&=15(\\tfrac14)(-\\tfrac34)\\\\&=-\\tfrac{45}{16}\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 4:</strong> \\((1,\\infty)\\), test \\(x=2\\):\\[\\begin{aligned}f'(2)&=15(4)(3)\\\\&=180\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f'(x)\\) is:</p>\\[+\\;\\Big\\vert{}_{-1}\\;-\\;\\Big\\vert{}_{0}\\;-\\;\\Big\\vert{}_{1}\\;+\\]<ul><li><strong>Increasing:</strong> \\((-\\infty,-1)\\) and \\((1,\\infty)\\)</li><li><strong>Decreasing:</strong> \\((-1,0)\\) and \\((0,1)\\)</li></ul><p><strong>2. Local extreme values</strong></p><p>Read the sign changes from your map:</p><ul><li>At \\(x=-1\\): \\(+\\to-\\), <strong>local max</strong>:\\[f(-1)=-3+5=\\mathbf{2}\\]</li><li>At \\(x=0\\): \\(-\\to-\\), <strong>no extremum</strong>.</li><li>At \\(x=1\\): \\(-\\to+\\), <strong>local min</strong>:\\[f(1)=3-5=\\mathbf{-2}\\]</li></ul><p><strong>3. Concavity &amp; inflection points</strong></p><p><em>Step 1: Find \\(f''(x)\\) and set it to zero</em></p>\\[f''(x)=60x^3-30x=30x(2x^2-1)\\]\\[x=0,\\ \\pm\\tfrac1{\\sqrt2}\\]<p><em>Step 2: Build the sign map</em> Put \\(-\\tfrac1{\\sqrt2},\\ 0,\\ \\tfrac1{\\sqrt2}\\) between the walls \\(-\\infty\\) and \\(\\infty\\):</p><pre class=\"signline\">(−∞)      |      |      |      (∞)\n        -1/√2    0    1/√2</pre><p>Pick one easy \\(x\\) in each section and plug it into \\(f''(x)\\):</p><ul class=\"tests\"><li><strong>Section 1:</strong> \\((-\\infty,-\\tfrac1{\\sqrt2})\\), test \\(x=-1\\):\\[\\begin{aligned}f''(-1)&=30(-1)(1)\\\\&=-30\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 2:</strong> \\((-\\tfrac1{\\sqrt2},0)\\), test \\(x=-\\tfrac12\\):\\[\\begin{aligned}f''(-\\tfrac12)&=30(-\\tfrac12)(-\\tfrac12)\\\\&=\\tfrac{15}2\\implies\\mathbf{+}\\end{aligned}\\]</li><li><strong>Section 3:</strong> \\((0,\\tfrac1{\\sqrt2})\\), test \\(x=\\tfrac12\\):\\[\\begin{aligned}f''(\\tfrac12)&=30(\\tfrac12)(-\\tfrac12)\\\\&=-\\tfrac{15}2\\implies\\mathbf{-}\\end{aligned}\\]</li><li><strong>Section 4:</strong> \\((\\tfrac1{\\sqrt2},\\infty)\\), test \\(x=1\\):\\[\\begin{aligned}f''(1)&=30(1)(1)\\\\&=30\\implies\\mathbf{+}\\end{aligned}\\]</li></ul><p>Your sign map for \\(f''(x)\\) is:</p>\\[-\\;\\Big\\vert{}_{-\\frac1{\\sqrt2}}\\;+\\;\\Big\\vert{}_{0}\\;-\\;\\Big\\vert{}_{\\frac1{\\sqrt2}}\\;+\\]<ul><li><strong>Concave down:</strong> \\((-\\infty,-\\tfrac1{\\sqrt2})\\) and \\((0,\\tfrac1{\\sqrt2})\\)</li><li><strong>Concave up:</strong> \\((-\\tfrac1{\\sqrt2},0)\\) and \\((\\tfrac1{\\sqrt2},\\infty)\\)</li></ul><p><em>Inflection point(s)</em></p>\\[f(0)=0,\\quad f(\\tfrac1{\\sqrt2})=\\tfrac{3}{4\\sqrt2}-\\tfrac{5}{2\\sqrt2}=-\\tfrac{7\\sqrt2}{8}\\]<p class=\"ans\">\\((0,0)\\), \\((\\tfrac1{\\sqrt2},-\\tfrac{7\\sqrt2}8)\\), \\((-\\tfrac1{\\sqrt2},\\tfrac{7\\sqrt2}8)\\)</p></div>"
        },
        {
         "label": "Full solution",
@@ -11823,6 +12491,10 @@ export const sections: Section[] = [
         "html": "<p>\\(\\frac00\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\frac00\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\lim\\frac{2e^{2x}}{\\cos x}=\\frac21\\]</div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\frac{2e^{2x}}{\\cos x}\\to2\\).</p><p class=\"ans\">\\(2\\)</p>"
        }
@@ -11847,6 +12519,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(\\infty^0\\). \\(\\ln y=\\frac{\\ln x}{x}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\ln y=\\tfrac1x\\ln x\\]<p><strong>Step 2.</strong> L'H.</p>\\[\\displaystyle \\lim\\frac{\\ln x}{x}=\\lim\\frac{1/x}{1}=0\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle y\\to e^0=1\\]</div>"
        },
        {
         "label": "Full solution",
@@ -11877,6 +12553,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Corner at \\((x,12-x^2)\\): width \\(2x\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle A=2x(12-x^2)\\\\\\displaystyle 0\\le x\\le\\sqrt{12}\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle A'=24-6x^2=0\\Rightarrow x=2\\]<p><strong>Step 3.</strong> Endpoints give 0.</p>\\[\\displaystyle A(2)=4\\cdot8=32\\]<p><strong>What you found:</strong></p><ul><li>\\(A_{\\max}=32\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -11915,6 +12595,10 @@ export const sections: Section[] = [
         "html": "<p>\\(3x^{1/2}\\to2x^{3/2}\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle f=2x^{3/2}+2x+C\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f(1)=4+C=5\\]<p><strong>What you found:</strong></p><ul><li>\\(C=1\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f=2x^{3/2}+2x+C\\), \\(2+2+C=5\\Rightarrow C=1\\).</p><p class=\"ans\">\\(f(x)=2x^{3/2}+2x+1\\)</p>"
        }
@@ -11945,6 +12629,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(f'(x)=3x^2-1\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle f(1)=-1\\\\\\displaystyle f'(1)=2\\end{gathered}\\]<p><strong>Step 2.</strong> Simple numbers, since there's no calculator on the exam.</p>\\[\\displaystyle x_2=1-\\tfrac{-1}{2}=1.5\\]</div>"
        },
        {
         "label": "Full solution",
@@ -11982,6 +12670,10 @@ export const sections: Section[] = [
         "html": "<p>\\(\\Delta x=1\\); right ends \\(1,2,3,4\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\Delta x=1\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f(1),f(2),f(3),f(4)=2,5,10,17\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle R_4=1(34)=34\\]</div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(2+5+10+17=34\\).</p><p class=\"ans\">\\(R_4=34\\)</p>"
        }
@@ -12012,6 +12704,10 @@ export const sections: Section[] = [
         "html": "<p>FTC 1 with the chain rule.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle f(g(x))=\\sqrt{1+(x^3)^2}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\cdot g'(x)=3x^2\\]</div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\sqrt{1+x^6}\\cdot3x^2\\).</p><p class=\"ans\">\\(3x^2\\sqrt{1+x^6}\\)</p>"
        }
@@ -12036,6 +12732,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(-2x^{-2}\\to2x^{-1}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\frac{-2x^{-1}}{-1}=2x^{-1}\\).</p>\\[\\displaystyle F=x^3+\\tfrac2x\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle F(2)=9\\\\\\displaystyle F(1)=3\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle 9-3=6\\]</div>"
        },
        {
         "label": "Full solution",
@@ -12068,6 +12768,10 @@ export const sections: Section[] = [
         "html": "<p>\\(u=x^2-1\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=x^2-1\\\\\\displaystyle x\\,dx=\\tfrac12du\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\tfrac12\\cdot\\tfrac{u^5}{5}+C\\]</div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\frac12\\int u^4du=\\frac{u^5}{10}\\).</p><p class=\"ans\">\\(\\tfrac{(x^2-1)^5}{10}+C\\)</p>"
        }
@@ -12092,6 +12796,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(u=\\cos x\\), \\(du=-\\sin x\\,dx\\). Limits \\(1\\to0\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=\\cos x\\\\\\displaystyle \\sin x\\,dx=-du\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle x:0\\to\\tfrac\\pi2\\Rightarrow u:1\\to0\\]<p><strong>Step 3.</strong> Flipping the limits cancels the minus.</p>\\[\\displaystyle -\\int_1^0u^2du=\\int_0^1u^2du=\\tfrac13\\]</div>"
        },
        {
         "label": "Full solution",
@@ -12122,6 +12830,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(v<0\\) before \\(t=2\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Back where it started.</p>\\[\\displaystyle \\int_0^4(t-2)dt=8-8=0\\]<p><strong>Step 2.</strong> Two triangles.</p>\\[\\displaystyle \\int_0^2|t-2|+\\int_2^4|t-2|=2+2\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\text{distance}=4\\]</div>"
        },
        {
         "label": "Full solution",
@@ -12198,6 +12910,10 @@ export const sections: Section[] = [
         "html": "<p>Check \\(f(0)\\) and \\(f(4)\\) first, then solve \\(f'(c)=0\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Rolle needs equal heights at the ends. They match.</p>\\[\\begin{gathered}\\displaystyle f(0)=1\\\\\\displaystyle f(4)=1\\end{gathered}\\]<p><strong>Step 2.</strong> Power rule. Polynomials are smooth, so the hypotheses hold.</p>\\[\\displaystyle f'(x)=2x-4\\]<p><strong>Step 3.</strong> Rolle promises a flat tangent. \\(2\\) lies inside \\((0,4)\\).</p>\\[\\displaystyle 2c-4=0\\ \\Rightarrow\\ c=2\\]<p><strong>What you found:</strong></p><ul><li>\\(f(a)=f(b)=1\\)</li><li>\\(c=2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>A polynomial is continuous and differentiable everywhere. \\(f(0)=1\\) and \\(f(4)=16-16+1=1\\), so the ends match. \\(f'(x)=2x-4=0\\Rightarrow x=2\\), which is in \\((0,4)\\).</p><p class=\"ans\">\\(c=2\\)</p>"
        }
@@ -12238,6 +12954,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Average slope first: \\(\\frac{f(2)-f(0)}{2-0}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> This is the slope of the secant line from end to end.</p>\\[\\displaystyle \\frac{f(2)-f(0)}{2-0}=\\frac{6-0}{2}=3\\]<p><strong>Step 2.</strong> Derivative of \\(x^3-x\\).</p>\\[\\displaystyle f'(c)=3c^2-1\\]<p><strong>Step 3.</strong> Set the instant slope equal to the average slope.</p>\\[\\displaystyle 3c^2-1=3\\ \\Rightarrow\\ c^2=\\tfrac43\\]<p><strong>Step 4.</strong> \\(-\\tfrac{2}{\\sqrt3}\\) is outside \\((0,2)\\), so throw it out.</p>\\[\\displaystyle c=\\tfrac{2}{\\sqrt3}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{avg slope}:\\ 3\\)</li><li>\\(c=2/\\sqrt3\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -12284,6 +13004,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(f'(x)=\\frac{1}{2\\sqrt x}\\). Set it equal to the average slope.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Average slope over the interval.</p>\\[\\displaystyle \\frac{\\sqrt4-\\sqrt0}{4-0}=\\frac12\\]<p><strong>Step 2.</strong> \\(\\sqrt x\\) is continuous on \\([0,4]\\) and differentiable on \\((0,4)\\), which is all the MVT needs.</p>\\[\\displaystyle \\frac{1}{2\\sqrt c}=\\frac12\\]<p><strong>Step 3.</strong> Cross-multiply.</p>\\[\\displaystyle \\sqrt c=1\\ \\Rightarrow\\ c=1\\]<p><strong>What you found:</strong></p><ul><li>\\(c=1\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -12375,6 +13099,10 @@ export const sections: Section[] = [
         "html": "<p>\\(f'(x)=3x^2+2\\). Do two steps.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Write both down first.</p>\\[\\begin{gathered}\\displaystyle f(x)=x^3+2x-4\\\\\\displaystyle f'(x)=3x^2+2\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle f(1)=-1\\\\\\displaystyle f'(1)=5\\end{gathered}\\]<p><strong>Step 3.</strong> Minus a negative moves right.</p>\\[\\displaystyle x_2=1-\\frac{-1}{5}=1.2\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f(1.2)=1.728+2.4-4=0.128\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle f'(1.2)=3(1.44)+2=6.32\\]<p><strong>Step 6.</strong></p>\\[\\displaystyle x_3=1.2-\\frac{0.128}{6.32}\\approx1.179747\\]<p><strong>What you found:</strong></p><ul><li>\\(x_1=1\\)</li><li>\\(x_2=1.2\\)</li><li>\\(x_3=1.1797\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(x_2=1-\\frac{-1}{5}=1.2\\). \\(f(1.2)=0.128\\), \\(f'(1.2)=6.32\\), so \\(x_3=1.2-\\frac{0.128}{6.32}\\approx1.1797\\).</p><p class=\"ans\">\\(x_3\\approx1.1797\\)</p>"
        }
@@ -12433,6 +13161,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(f(x)=x^2-2\\), \\(f'(x)=2x\\). The formula simplifies to \\(x_{n+1}=\\frac{x_n}{2}+\\frac{1}{x_n}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\sqrt2\\) is the positive root of \\(x^2=2\\).</p>\\[\\displaystyle f(x)=x^2-2\\]<p><strong>Step 2.</strong> Newton's formula.</p>\\[\\displaystyle x_{n+1}=x_n-\\frac{x_n^2-2}{2x_n}\\]<p><strong>Step 3.</strong> Simplify: \\(x_n-\\frac{x_n}{2}+\\frac{2}{2x_n}\\).</p>\\[\\displaystyle =\\frac{x_n}{2}+\\frac1{x_n}\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle x_2=\\tfrac12+1=1.5\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle x_3=0.75+0.666667=1.416667\\]<p><strong>Step 6.</strong> Already correct to 5 decimals.</p>\\[\\displaystyle x_4=0.708333+0.705882=1.414216\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2=1.5\\)</li><li>\\(x_3=1.416667\\)</li><li>\\(x_4=1.414216\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -12495,6 +13227,10 @@ export const sections: Section[] = [
         "html": "<p>\\(f(x)=x^3-30\\), \\(f'(x)=3x^2\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle f(x)=x^3-30\\\\\\displaystyle f'(x)=3x^2\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle f(3)=-3\\\\\\displaystyle f'(3)=27\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle x_2=3+\\tfrac{3}{27}=3.111111\\]<p><strong>Step 4.</strong> Keep the decimals.</p>\\[\\begin{gathered}\\displaystyle f(x_2)\\approx0.112483\\\\\\displaystyle f'(x_2)\\approx29.037\\end{gathered}\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle x_3=3.111111-\\tfrac{0.112483}{29.037}\\]<p><strong>Step 6.</strong></p>\\[\\displaystyle x_3\\approx3.107237\\]<p><strong>What you found:</strong></p><ul><li>\\(x_1=3\\)</li><li>\\(x_2=3.111111\\)</li><li>\\(x_3=3.10724\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(x_2=3-\\frac{-3}{27}=3.111111\\). \\(f(x_2)\\approx0.112483\\), \\(f'(x_2)\\approx29.037037\\), so \\(x_3\\approx3.107237\\). The true value is \\(3.107233\\).</p><p class=\"ans\">\\(x_3\\approx3.10724\\)</p>"
        }
@@ -12555,6 +13291,10 @@ export const sections: Section[] = [
         "html": "<p>\\(f(x)=\\cos x-x\\), \\(f'(x)=-\\sin x-1\\). Use radians.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Move everything to one side.</p>\\[\\displaystyle f(x)=\\cos x-x\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f'(x)=-\\sin x-1\\]<p><strong>Step 3.</strong> Radians!</p>\\[\\displaystyle f(1)=0.540302-1=-0.459698\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f'(1)=-0.841471-1=-1.841471\\]<p><strong>Step 5.</strong> Negative over negative is positive, so you subtract.</p>\\[\\displaystyle x_2=1-\\frac{-0.459698}{-1.841471}=0.750364\\]<p><strong>Step 6.</strong></p>\\[\\begin{gathered}\\displaystyle f(x_2)\\approx-0.018923\\\\\\displaystyle f'(x_2)\\approx-1.681905\\end{gathered}\\]<p><strong>Step 7.</strong></p>\\[\\displaystyle x_3\\approx0.750364-0.011251=0.739113\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2=0.750364\\)</li><li>\\(x_3=0.7391\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(x_2=1-\\frac{-0.459698}{-1.841471}=0.750364\\). \\(f(x_2)\\approx-0.018923\\), \\(f'(x_2)\\approx-1.681905\\), so \\(x_3\\approx0.739113\\). The root is \\(0.739085\\).</p><p class=\"ans\">\\(x_3\\approx0.7391\\)</p>"
        }
@@ -12611,6 +13351,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Compute \\(f'(1)\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle f'(x)=3x^2-3\\]<p><strong>Step 2.</strong> The formula would divide by zero.</p>\\[\\displaystyle f'(1)=0\\]<p><strong>Step 3.</strong> A flat line never crosses the x-axis, so there's no next guess. Pick a different \\(x_1\\).</p>\\[\\displaystyle \\text{horizontal tangent}\\]<p><strong>What you found:</strong></p><ul><li>\\(f'(x_1)=0\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -12719,6 +13463,10 @@ export const sections: Section[] = [
         "html": "<p>\\(\\Delta x=\\frac{2-0}{4}=0.5\\). Right endpoints: \\(0.5,1,1.5,2\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Width of each strip.</p>\\[\\displaystyle \\Delta x=\\tfrac{2-0}{4}=\\tfrac12\\]<p><strong>Step 2.</strong> Right ends of the strips.</p>\\[\\begin{gathered}\\displaystyle x_i:\\ 0.5\\\\\\displaystyle 1\\\\\\displaystyle 1.5\\\\\\displaystyle 2\\end{gathered}\\]<p><strong>Step 3.</strong> Square each one.</p>\\[\\begin{gathered}\\displaystyle f:\\ 0.25\\\\\\displaystyle 1\\\\\\displaystyle 2.25\\\\\\displaystyle 4\\end{gathered}\\]<p><strong>Step 4.</strong> Width × (sum of heights).</p>\\[\\displaystyle R_4=0.5(7.5)=3.75\\]<p><strong>What you found:</strong></p><ul><li>\\(\\Delta x=0.5\\)</li><li>\\(R_4=3.75\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(0.5\\,(0.25+1+2.25+4)=0.5(7.5)=3.75\\). The exact area is \\(\\frac83\\approx2.67\\); \\(R_4\\) overestimates because \\(x^2\\) is increasing.</p><p class=\"ans\">\\(R_4=3.75\\)</p>"
        }
@@ -12765,6 +13513,10 @@ export const sections: Section[] = [
         "html": "<p>Left endpoints: \\(0,0.5,1,1.5\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Left ends: start at \\(a\\), stop one short of \\(b\\).</p>\\[\\begin{gathered}\\displaystyle x_i:\\ 0\\\\\\displaystyle 0.5\\\\\\displaystyle 1\\\\\\displaystyle 1.5\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle f:\\ 0\\\\\\displaystyle 0.25\\\\\\displaystyle 1\\\\\\displaystyle 2.25\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle L_4=0.5(3.5)=1.75\\]<p><strong>What you found:</strong></p><ul><li>\\(L_4=1.75\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(0.5(0+0.25+1+2.25)=1.75\\). This underestimates. The exact area \\(\\frac83\\) lies between \\(L_4\\) and \\(R_4\\).</p><p class=\"ans\">\\(L_4=1.75\\)</p>"
        }
@@ -12799,6 +13551,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Two strips of width 1. Midpoints \\(0.5\\) and \\(1.5\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Middles of \\([0,1]\\) and \\([1,2]\\).</p>\\[\\begin{gathered}\\displaystyle \\Delta x=1\\\\\\displaystyle \\bar x=0.5\\\\\\displaystyle 1.5\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle 0.5^3=0.125\\\\\\displaystyle 1.5^3=3.375\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle M_2=1(3.5)=3.5\\]<p><strong>What you found:</strong></p><ul><li>\\(M_2=3.5\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -12837,6 +13593,10 @@ export const sections: Section[] = [
         "html": "<p>\\(\\Delta t=1\\). Left uses \\(t=0,1,2\\); right uses \\(t=1,2,3\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\Delta t=1\\]<p><strong>Step 2.</strong> Speed at the start of each second.</p>\\[\\displaystyle \\text{left: }(2+4+7)(1)=13\\]<p><strong>Step 3.</strong> Speed at the end of each second.</p>\\[\\displaystyle \\text{right: }(4+7+9)(1)=20\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{between}:\\ 13\\text{ and }20\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Left: \\(2+4+7=13\\) m. Right: \\(4+7+9=20\\) m. The speed is increasing, so the true distance is between them.</p><p class=\"ans\">Left \\(13\\) m, right \\(20\\) m</p>"
        }
@@ -12871,6 +13631,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(\\Delta x=\\frac3n\\), \\(x_i=1+\\frac{3i}{n}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\Delta x=\\tfrac{4-1}{n}=\\tfrac3n\\]<p><strong>Step 2.</strong> Start at \\(a=1\\) and take \\(i\\) steps.</p>\\[\\displaystyle x_i=1+i\\cdot\\tfrac3n\\]<p><strong>Step 3.</strong> Height × width of the \\(i\\)-th rectangle.</p>\\[\\displaystyle f(x_i)\\Delta x=\\big(1+\\tfrac{3i}{n}\\big)^2\\cdot\\tfrac3n\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle A=\\lim_{n\\to\\infty}\\sum_{i=1}^n\\big(1+\\tfrac{3i}{n}\\big)^2\\tfrac3n\\]</div>"
        },
        {
         "label": "Full solution",
@@ -12969,6 +13733,10 @@ export const sections: Section[] = [
         "html": "<p>Under a straight line from \\(x=0\\) to \\(3\\): a trapezoid.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The two parallel sides.</p>\\[\\begin{gathered}\\displaystyle f(0)=1\\\\\\displaystyle f(3)=7\\end{gathered}\\]<p><strong>Step 2.</strong> Trapezoid: average height × width.</p>\\[\\displaystyle A=\\tfrac{1+7}{2}\\cdot3\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle =12\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=12\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Heights \\(f(0)=1\\) and \\(f(3)=7\\), width 3: \\(\\frac{1+7}{2}\\cdot3=12\\).</p><p class=\"ans\">\\(12\\)</p>"
        }
@@ -13005,6 +13773,10 @@ export const sections: Section[] = [
         "html": "<p>\\(y=\\sqrt{4-x^2}\\) is the top half of a circle of radius 2.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Upper semicircle, \\(r=2\\).</p>\\[\\begin{gathered}\\displaystyle y=\\sqrt{4-x^2}\\Rightarrow x^2+y^2=4\\\\\\displaystyle y\\ge0\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\tfrac12\\pi(2)^2=2\\pi\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=2\\pi\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Half of \\(\\pi r^2=4\\pi\\), so the integral is \\(2\\pi\\).</p><p class=\"ans\">\\(2\\pi\\)</p>"
        }
@@ -13035,6 +13807,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Part of the region is below the x-axis.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Below the axis counts negative.</p>\\[\\displaystyle [0,2]:\\ -\\tfrac12(2)(2)=-2\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle [2,4]:\\ +\\tfrac12(2)(2)=2\\]<p><strong>Step 3.</strong> Net signed area.</p>\\[\\displaystyle -2+2=0\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=0\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -13071,6 +13847,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(\\Delta x=\\frac2n\\), \\(x_i=\\frac{2i}{n}\\). Use the formula for \\(\\sum i^2\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle \\Delta x=\\tfrac2n\\\\\\displaystyle x_i=\\tfrac{2i}{n}\\end{gathered}\\]<p><strong>Step 2.</strong> Pull out everything that doesn't depend on \\(i\\).</p>\\[\\displaystyle \\sum_{i=1}^n\\Big(\\tfrac{2i}{n}\\Big)^2\\tfrac2n=\\tfrac{8}{n^3}\\sum i^2\\]<p><strong>Step 3.</strong> Sum of squares formula.</p>\\[\\displaystyle =\\tfrac{8}{n^3}\\cdot\\tfrac{n(n+1)(2n+1)}{6}\\]<p><strong>Step 4.</strong> Split up the three powers of \\(n\\) to take the limit.</p>\\[\\displaystyle =\\tfrac{8}{6}\\cdot\\tfrac{n}{n}\\cdot\\tfrac{n+1}{n}\\cdot\\tfrac{2n+1}{n}\\]<p><strong>Step 5.</strong> \\(\\frac{n+1}n\\to1\\), \\(\\frac{2n+1}n\\to2\\).</p>\\[\\displaystyle \\to\\tfrac86\\cdot1\\cdot1\\cdot2=\\tfrac83\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=8/3\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -13117,6 +13897,10 @@ export const sections: Section[] = [
         "html": "<p>\\(\\int_0^2+\\int_2^5=\\int_0^5\\). Swapping the limits flips the sign.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Split the interval.</p>\\[\\displaystyle \\int_0^2f+\\int_2^5f=\\int_0^5f\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle 3+\\int_2^5f=10\\Rightarrow\\int_2^5f=7\\]<p><strong>Step 3.</strong> The constant comes out; reversed limits give a minus.</p>\\[\\displaystyle \\int_5^2 2f=-2\\int_2^5f\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle =-14\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int_2^5f=7\\)</li><li>\\(\\int_5^22f=-14\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\int_2^5f=10-3=7\\). \\(\\int_5^2 2f=-2\\cdot7=-14\\).</p><p class=\"ans\">\\(7\\) and \\(-14\\)</p>"
        }
@@ -13161,6 +13945,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Match it to \\(f(x_i)\\Delta x\\) with \\(\\Delta x=\\frac1n\\) and \\(x_i=\\frac in\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\Delta x=\\tfrac1n\\Rightarrow b-a=1\\]<p><strong>Step 2.</strong> \\(x_i=a+i\\Delta x\\).</p>\\[\\begin{gathered}\\displaystyle x_i=\\tfrac in\\Rightarrow a=0\\\\\\displaystyle b=1\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle f(x)=x^3\\]<p><strong>Step 4.</strong> Using §5.3 to evaluate.</p>\\[\\displaystyle \\int_0^1x^3dx=\\tfrac14\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{value}:\\ 1/4\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -13257,6 +14045,10 @@ export const sections: Section[] = [
         "html": "<p>Part 1: replace \\(t\\) with \\(x\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The upper limit is plain \\(x\\).</p>\\[\\displaystyle g(x)=\\int_1^xf(t)\\,dt\\]<p><strong>Step 2.</strong> No integrating needed.</p>\\[\\displaystyle g'(x)=f(x)=(x^2+1)^5\\]<p><strong>What you found:</strong></p><ul><li>\\(g'=(x^2+1)^5\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(g'(x)=(x^2+1)^5\\).</p><p class=\"ans\">\\((x^2+1)^5\\)</p>"
        }
@@ -13287,6 +14079,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>The upper limit is \\(x^2\\): plug it in, then multiply by its derivative.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Plug in the upper limit.</p>\\[\\displaystyle f(g(x))=\\sin(x^2)\\]<p><strong>Step 2.</strong> Chain rule.</p>\\[\\displaystyle g'(x)=2x\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle y'=2x\\sin(x^2)\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=2x\\sin(x^2)\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -13325,6 +14121,10 @@ export const sections: Section[] = [
         "html": "<p>\\(x\\) is in the <em>lower</em> limit. Flip the limits first.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Swapping the limits adds a minus.</p>\\[\\displaystyle y=-\\int_3^{x}e^{t^2}dt\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle y'=-e^{x^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=-e^{x^2}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(y=-\\int_3^xe^{t^2}dt\\Rightarrow y'=-e^{x^2}\\).</p><p class=\"ans\">\\(-e^{x^2}\\)</p>"
        }
@@ -13355,6 +14155,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Split at a constant: \\(\\int_x^{0}+\\int_0^{x^2}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Both limits move, so split at 0.</p>\\[\\displaystyle y=\\int_0^{x^2}t^3dt-\\int_0^{x}t^3dt\\]<p><strong>Step 2.</strong> Chain rule.</p>\\[\\displaystyle \\tfrac{d}{dx}\\int_0^{x^2}=(x^2)^3\\cdot2x=2x^7\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\tfrac{d}{dx}\\int_0^{x}=x^3\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle y'=2x^7-x^3\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=2x^7-x^3\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -13397,6 +14201,10 @@ export const sections: Section[] = [
         "html": "<p>Antiderivative \\(\\frac{x^3}3-x^2\\). Top minus bottom.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle F(x)=\\tfrac{x^3}{3}-x^2\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle F(3)=9-9=0\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle F(1)=\\tfrac13-1=-\\tfrac23\\]<p><strong>Step 4.</strong> Careful with the double negative.</p>\\[\\displaystyle F(3)-F(1)=0-(-\\tfrac23)=\\tfrac23\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=2/3\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\big[\\frac{x^3}3-x^2\\big]_1^3=(9-9)-(\\frac13-1)=\\frac23\\).</p><p class=\"ans\">\\(\\tfrac23\\)</p>"
        }
@@ -13437,6 +14245,10 @@ export const sections: Section[] = [
         "html": "<p>\\(\\int\\cos=\\sin\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle F=\\sin x\\]<p><strong>Step 2.</strong> Unit circle values.</p>\\[\\displaystyle \\sin\\tfrac\\pi2-\\sin0=1-0\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=1\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\sin\\frac\\pi2-\\sin0=1\\).</p><p class=\"ans\">\\(1\\)</p>"
        }
@@ -13469,6 +14281,10 @@ export const sections: Section[] = [
         "html": "<p>\\(x^{-1/2}\\to2x^{1/2}\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle x^{-1/2}\\to\\frac{x^{1/2}}{1/2}=2\\sqrt x\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle 2(2)-2(1)=2\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(2\\sqrt4-2\\sqrt1=2\\).</p><p class=\"ans\">\\(2\\)</p>"
        }
@@ -13499,6 +14315,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(\\int\\frac1{1+x^2}=\\tan^{-1}x\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle F=e^x+\\tan^{-1}x\\]<p><strong>Step 2.</strong> \\(\\tan^{-1}1=\\frac\\pi4\\).</p>\\[\\displaystyle F(1)=e+\\tfrac\\pi4\\]<p><strong>Step 3.</strong> \\(e^0=1\\).</p>\\[\\displaystyle F(0)=1+0\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle e-1+\\tfrac\\pi4\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=e-1+\\pi/4\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -13603,6 +14423,10 @@ export const sections: Section[] = [
         "html": "<p>Term by term.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle x^3\\to\\tfrac{x^4}4\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle -\\tfrac4x\\to-4\\ln|x|\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\sec^2x\\to\\tan x\\]<p><strong>Step 4.</strong> Indefinite, so add \\(C\\).</p>\\[\\displaystyle +C\\]</div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\frac{x^4}4-4\\ln|x|+\\tan x+C\\).</p><p class=\"ans\">\\(\\tfrac{x^4}{4}-4\\ln|x|+\\tan x+C\\)</p>"
        }
@@ -13637,6 +14461,10 @@ export const sections: Section[] = [
         "html": "<p>Expand first: \\(1+2\\sqrt x+x\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> There's no chain rule backwards here, so expand.</p>\\[\\displaystyle (1+\\sqrt x)^2=1+2x^{1/2}+x\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle 2x^{1/2}\\to2\\cdot\\tfrac{x^{3/2}}{3/2}=\\tfrac43x^{3/2}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle x+\\tfrac43x^{3/2}+\\tfrac{x^2}2+C\\]</div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(x+\\frac43x^{3/2}+\\frac{x^2}2+C\\).</p><p class=\"ans\">\\(x+\\tfrac43x^{3/2}+\\tfrac{x^2}{2}+C\\)</p>"
        }
@@ -13667,6 +14495,10 @@ export const sections: Section[] = [
         "html": "<p>Rewrite as \\(\\frac{1}{\\cos\\theta}\\cdot\\frac{\\sin\\theta}{\\cos\\theta}\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Trig rewrite.</p>\\[\\displaystyle \\frac{\\sin\\theta}{\\cos^2\\theta}=\\sec\\theta\\tan\\theta\\]<p><strong>Step 2.</strong> Because \\((\\sec)'=\\sec\\tan\\).</p>\\[\\displaystyle \\int\\sec\\theta\\tan\\theta=\\sec\\theta+C\\]</div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\int\\sec\\theta\\tan\\theta\\,d\\theta=\\sec\\theta+C\\).</p><p class=\"ans\">\\(\\sec\\theta+C\\)</p>"
        }
@@ -13691,6 +14523,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Split at 0, where \\(|x|\\) changes formula.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle |x|=-x\\ (x<0)\\\\\\displaystyle x\\ (x\\ge0)\\end{gathered}\\]<p><strong>Step 2.</strong> A triangle with area \\(\\frac12\\).</p>\\[\\displaystyle \\int_{-1}^0-x\\,dx=\\tfrac12\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\int_0^2x\\,dx=2\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle \\tfrac12+2=\\tfrac52\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=5/2\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -13731,6 +14567,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(v=(t-3)(t+1)\\): negative on \\([2,3)\\), positive on \\((3,4]\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle F(t)=\\tfrac{t^3}3-t^2-3t\\]<p><strong>Step 2.</strong> \\(F(4)=\\frac{64}3-28\\), \\(F(2)=\\frac83-10\\).</p>\\[\\displaystyle F(4)-F(2)=-\\tfrac{20}{3}-(-\\tfrac{22}{3})=\\tfrac23\\]<p><strong>Step 3.</strong> Where it turns around.</p>\\[\\displaystyle v=(t-3)(t+1)=0\\Rightarrow t=3\\]<p><strong>Step 4.</strong> Moving backwards.</p>\\[\\displaystyle \\int_2^3v=F(3)-F(2)=-9+\\tfrac{22}3=-\\tfrac53\\]<p><strong>Step 5.</strong> Moving forwards.</p>\\[\\displaystyle \\int_3^4v=-\\tfrac{20}3+9=\\tfrac73\\]<p><strong>Step 6.</strong> Distance adds the sizes.</p>\\[\\displaystyle \\tfrac53+\\tfrac73=4\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{disp}:\\ 2/3\\)</li><li>\\(\\text{dist}:\\ 4\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -13785,6 +14625,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Net change = ∫ rate.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Net Change Theorem.</p>\\[\\displaystyle \\int_0^{10}r(t)\\,dt\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle [100t-2t^2]_0^{10}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle 1000-200=800\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{water}:\\ 800\\text{ L}\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -13881,6 +14725,10 @@ export const sections: Section[] = [
         "html": "<p>\\(u=x^2+1\\), \\(du=2x\\,dx\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The \\(2x\\,dx\\) is exactly \\(du\\).</p>\\[\\begin{gathered}\\displaystyle u=x^2+1\\\\\\displaystyle du=2x\\,dx\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\int u^5\\,du=\\tfrac{u^6}{6}+C\\]<p><strong>Step 3.</strong> Put \\(x\\) back.</p>\\[\\displaystyle =\\tfrac{(x^2+1)^6}{6}+C\\]</div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\int u^5du=\\frac{u^6}6\\).</p><p class=\"ans\">\\(\\tfrac{(x^2+1)^6}{6}+C\\)</p>"
        }
@@ -13909,6 +14757,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(u=x^3+1\\), \\(du=3x^2dx\\Rightarrow x^2dx=\\frac13du\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=x^3+1\\\\\\displaystyle du=3x^2dx\\end{gathered}\\]<p><strong>Step 2.</strong> Fix the missing constant.</p>\\[\\displaystyle x^2dx=\\tfrac13du\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\tfrac13\\int u^{1/2}du=\\tfrac13\\cdot\\tfrac23u^{3/2}\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle =\\tfrac29(x^3+1)^{3/2}+C\\]</div>"
        },
        {
         "label": "Full solution",
@@ -13945,6 +14797,10 @@ export const sections: Section[] = [
         "html": "<p>\\(u=3x\\) and \\(u=5x\\): you divide by the constant.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=3x\\\\\\displaystyle dx=\\tfrac13du\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\tfrac13\\int\\cos u\\,du=\\tfrac13\\sin3x+C\\]<p><strong>Step 3.</strong> Same idea. Check: differentiating gives back \\(e^{5x}\\).</p>\\[\\displaystyle \\int e^{5x}dx=\\tfrac15e^{5x}+C\\]</div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\frac13\\sin3x+C\\) and \\(\\frac15e^{5x}+C\\).</p><p class=\"ans\">\\(\\tfrac13\\sin3x+C,\\ \\ \\tfrac15e^{5x}+C\\)</p>"
        }
@@ -13973,6 +14829,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(u=\\ln x\\), \\(du=\\frac1xdx\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=\\ln x\\\\\\displaystyle du=\\tfrac{dx}{x}\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\int u\\,du=\\tfrac{u^2}2+C\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle =\\tfrac{(\\ln x)^2}{2}+C\\]</div>"
        },
        {
         "label": "Full solution",
@@ -14005,6 +14865,10 @@ export const sections: Section[] = [
         "html": "<p>\\(u=x^2+4\\), \\(x\\,dx=\\frac12du\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=x^2+4\\\\\\displaystyle du=2x\\,dx\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\tfrac12\\int\\tfrac1u\\,du=\\tfrac12\\ln|u|+C\\]<p><strong>Step 3.</strong> \\(x^2+4>0\\), so no absolute value is needed.</p>\\[\\displaystyle =\\tfrac12\\ln(x^2+4)+C\\]</div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\frac12\\int\\frac{du}u=\\frac12\\ln|u|\\).</p><p class=\"ans\">\\(\\tfrac12\\ln(x^2+4)+C\\)</p>"
        }
@@ -14033,6 +14897,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(\\tan x=\\frac{\\sin x}{\\cos x}\\). Let \\(u=\\cos x\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\int\\frac{\\sin x}{\\cos x}dx\\]<p><strong>Step 2.</strong> Note the minus.</p>\\[\\begin{gathered}\\displaystyle u=\\cos x\\\\\\displaystyle du=-\\sin x\\,dx\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle -\\int\\tfrac{du}{u}=-\\ln|\\cos x|+C\\]<p><strong>Step 4.</strong> Log rule: \\(-\\ln a=\\ln\\frac1a\\).</p>\\[\\displaystyle =\\ln|\\sec x|+C\\]</div>"
        },
        {
         "label": "Full solution",
@@ -14067,6 +14935,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(u=x^2\\). Change the limits: \\(x=0\\to u=0\\), \\(x=1\\to u=1\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=x^2\\\\\\displaystyle x\\,dx=\\tfrac12du\\end{gathered}\\]<p><strong>Step 2.</strong> New limits, so you never go back to \\(x\\).</p>\\[\\displaystyle x:0\\to1\\ \\Rightarrow\\ u:0\\to1\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\tfrac12[e^u]_0^1=\\tfrac12(e-1)\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=(e-1)/2\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -14105,6 +14977,10 @@ export const sections: Section[] = [
         "html": "<p>\\(u=\\tan x\\), \\(du=\\sec^2x\\,dx\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=\\tan x\\\\\\displaystyle du=\\sec^2x\\,dx\\end{gathered}\\]<p><strong>Step 2.</strong> \\(\\tan\\frac\\pi4=1\\).</p>\\[\\displaystyle x:0\\to\\tfrac\\pi4\\Rightarrow u:0\\to1\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\int_0^1u\\,du=\\tfrac12\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=1/2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Limits \\(0\\to1\\): \\(\\int_0^1u\\,du=\\frac12\\).</p><p class=\"ans\">\\(\\tfrac12\\)</p>"
        }
@@ -14139,6 +15015,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Is the integrand odd or even?</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\cos\\) is even, \\(x^3\\) is odd: the product is odd.</p>\\[\\displaystyle f(-x)=(-x)^3\\cos(-x)=-x^3\\cos x\\]<p><strong>Step 2.</strong> The positive and negative areas cancel.</p>\\[\\displaystyle \\int_{-a}^a\\text{odd}=0\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=0\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -14209,6 +15089,10 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=3e^x+\\dfrac{4}{\\sqrt[3]{x}}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Rewrite the root as a power first: \\(\\sqrt[3]x=x^{1/3}\\), and 1 over it is \\(x^{-1/3}\\).</p>\\[\\displaystyle y=3e^x+4x^{-1/3}\\]<p><strong>Step 2.</strong> \\(e^x\\) is its own derivative; the 3 just comes along.</p>\\[\\displaystyle (3e^x)'=3e^x\\]<p><strong>Step 3.</strong> Power rule: bring down \\(-\\frac13\\), then \\(-\\frac13-1=-\\frac43\\).</p>\\[\\displaystyle (4x^{-1/3})'=4\\cdot\\big(-\\tfrac13\\big)x^{-1/3-1}=-\\tfrac43x^{-4/3}\\]<p><strong>Step 4.</strong> Rewrite with a root. It's a <b>cube</b> root of \\(x^4\\) (denominator 3 in the exponent), not a square root.</p>\\[\\displaystyle y'=3e^x-\\frac{4}{3x^{4/3}}=3e^x-\\frac{4}{3\\sqrt[3]{x^4}}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=3e^x-\\frac{4}{3\\sqrt[3]{x^4}}\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(y'=3e^x-\\dfrac{4}{3}x^{-4/3}=3e^x-\\dfrac{4}{3\\sqrt[3]{x^4}}\\)</p>"
        },
@@ -14248,6 +15132,10 @@ export const sections: Section[] = [
       "href": "3-2",
       "question": "Differentiate \\(f(x)=\\dfrac{x^2}{1+e^x}\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> A fraction: quotient rule.</p>\\[\\begin{gathered}\\displaystyle hi=x^2\\\\\\displaystyle lo=1+e^x\\end{gathered}\\]<p><strong>Step 2.</strong> “Low d-high minus high d-low, over low squared.”</p>\\[\\displaystyle f'=\\frac{lo\\cdot hi'-hi\\cdot lo'}{lo^2}\\]<p><strong>Step 3.</strong> Plug in.</p>\\[\\displaystyle f'=\\frac{(1+e^x)(2x)-x^2e^x}{(1+e^x)^2}\\]<p><strong>Step 4.</strong> Expand the top and factor out \\(x\\). Either form is fine.</p>\\[\\displaystyle =\\frac{2x+2xe^x-x^2e^x}{(1+e^x)^2}=\\frac{x(2+2e^x-xe^x)}{(1+e^x)^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(hi'=2x\\)</li><li>\\(lo'=e^x\\)</li><li>\\(f'=\\frac{2x+2xe^x-x^2e^x}{(1+e^x)^2}\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(f'(x)=\\dfrac{2x(1+e^x)-x^2e^x}{(1+e^x)^2}=\\dfrac{x\\,(2+2e^x-xe^x)}{(1+e^x)^2}\\)</p>"
@@ -14294,6 +15182,10 @@ export const sections: Section[] = [
       "href": "3-3",
       "question": "Differentiate \\(f(\\theta)=\\dfrac{\\sin\\theta}{1+\\cos\\theta}\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Quotient rule.</p>\\[\\begin{gathered}\\displaystyle hi=\\sin\\theta\\\\\\displaystyle lo=1+\\cos\\theta\\end{gathered}\\]<p><strong>Step 2.</strong> Low d-high minus high d-low. Note the \\(-\\sin\\theta\\) from \\((\\cos\\theta)'\\).</p>\\[\\displaystyle f'=\\frac{(1+\\cos\\theta)\\cos\\theta-\\sin\\theta(-\\sin\\theta)}{(1+\\cos\\theta)^2}\\]<p><strong>Step 3.</strong> Expand. Minus times minus is plus.</p>\\[\\displaystyle =\\frac{\\cos\\theta+\\cos^2\\theta+\\sin^2\\theta}{(1+\\cos\\theta)^2}\\]<p><strong>Step 4.</strong> \\(\\sin^2\\theta+\\cos^2\\theta=1\\). Look for this identity every time both squares appear.</p>\\[\\displaystyle =\\frac{\\cos\\theta+1}{(1+\\cos\\theta)^2}\\]<p><strong>Step 5.</strong> Cancel one factor of \\((1+\\cos\\theta)\\).</p>\\[\\displaystyle f'(\\theta)=\\frac{1}{1+\\cos\\theta}\\]<p><strong>What you found:</strong></p><ul><li>\\(hi'=\\cos\\theta\\)</li><li>\\(lo'=-\\sin\\theta\\)</li><li>\\(f'=\\frac{1}{1+\\cos\\theta}\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(f'(\\theta)=\\dfrac{1}{1+\\cos\\theta}\\)</p>"
@@ -14348,6 +15240,10 @@ export const sections: Section[] = [
       "href": "3-3",
       "question": "Prove that \\(\\dfrac{d}{dx}(\\cot x)=-\\csc^2x\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Write cot in terms of sin and cos. Now it's a quotient.</p>\\[\\displaystyle \\cot x=\\frac{\\cos x}{\\sin x}\\]<p><strong>Step 2.</strong> The two basic derivatives.</p>\\[\\begin{gathered}\\displaystyle hi'=-\\sin x\\\\\\displaystyle lo'=\\cos x\\end{gathered}\\]<p><strong>Step 3.</strong> Low d-high <b>minus</b> high d-low. The low is \\(\\sin x\\), so it goes first.</p>\\[\\displaystyle \\frac{d}{dx}\\cot x=\\frac{\\sin x\\,(-\\sin x)-\\cos x\\,(\\cos x)}{\\sin^2x}\\]<p><strong>Step 4.</strong> Both terms on top are negative; factor out the minus.</p>\\[\\displaystyle =\\frac{-\\sin^2x-\\cos^2x}{\\sin^2x}=\\frac{-(\\sin^2x+\\cos^2x)}{\\sin^2x}\\]<p><strong>Step 5.</strong> \\(\\sin^2x+\\cos^2x=1\\).</p>\\[\\displaystyle =\\frac{-1}{\\sin^2x}\\]<p><strong>Step 6.</strong> \\(\\frac{1}{\\sin x}=\\csc x\\). Proof done.</p>\\[\\displaystyle =-\\csc^2x\\ \\ \\checkmark\\]<p><strong>What you found:</strong></p><ul><li>\\(hi=\\cos x\\)</li><li>\\(lo=\\sin x\\)</li><li>\\(hi'=-\\sin x\\)</li><li>\\(lo'=\\cos x\\)</li><li>\\((\\cot x)'=-\\csc^2x\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(\\dfrac{d}{dx}\\cot x=\\dfrac{-\\sin^2x-\\cos^2x}{\\sin^2x}=-\\dfrac{1}{\\sin^2x}=-\\csc^2x\\)</p>"
@@ -14417,6 +15313,10 @@ export const sections: Section[] = [
       "question": "Find \\(\\displaystyle\\lim_{x\\to0}\\frac{\\sin3x}{5x^3-4x}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Plugging in 0 gives \\(\\frac00\\), so we need the trig limit.</p>\\[\\displaystyle \\lim_{x\\to0}\\frac{\\sin3x}{5x^3-4x}\\]<p><strong>Step 2.</strong> Factor \\(x\\) out of the bottom.</p>\\[\\displaystyle =\\lim_{x\\to0}\\frac{\\sin3x}{x(5x^2-4)}\\]<p><strong>Step 3.</strong> Split into a trig-limit piece and an ordinary piece.</p>\\[\\displaystyle =\\lim_{x\\to0}\\frac{\\sin3x}{x}\\cdot\\frac{1}{5x^2-4}\\]<p><strong>Step 4.</strong> Make the bottom match the angle: multiply and divide by 3.</p>\\[\\displaystyle \\frac{\\sin3x}{x}=3\\cdot\\frac{\\sin3x}{3x}\\to3\\]<p><strong>Step 5.</strong> This piece has no problem at 0: just plug in.</p>\\[\\displaystyle \\frac{1}{5x^2-4}\\to\\frac{1}{-4}\\]<p><strong>Step 6.</strong> Multiply the two limits.</p>\\[\\displaystyle 3\\cdot\\Big(-\\frac14\\Big)=-\\frac34\\]<p><strong>What you found:</strong></p><ul><li>\\(\\lim\\frac{\\sin3x}x=3\\)</li><li>\\(\\lim\\frac1{5x^2-4}=-\\tfrac14\\)</li><li>\\(\\text{limit}:\\ -\\tfrac34\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(-\\dfrac34\\)</p>"
        }
@@ -14473,6 +15373,10 @@ export const sections: Section[] = [
       "question": "Differentiate \\(f(\\theta)=\\cos(\\theta^2)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The square is <b>inside</b> the cosine. This is not \\((\\cos\\theta)^2\\).</p>\\[\\begin{gathered}\\displaystyle f=\\cos(u)\\\\\\displaystyle u=\\theta^2\\end{gathered}\\]<p><strong>Step 2.</strong> Chain rule: derivative of cos is \\(-\\sin\\), keep the inside, times the inside's derivative.</p>\\[\\displaystyle f'=-\\sin(u)\\cdot u'\\]<p><strong>Step 3.</strong> Substitute.</p>\\[\\displaystyle f'=-\\sin(\\theta^2)\\cdot2\\theta=-2\\theta\\sin(\\theta^2)\\]<p><strong>What you found:</strong></p><ul><li>\\(u=\\theta^2\\)</li><li>\\(u'=2\\theta\\)</li><li>\\(f'=-2\\theta\\sin(\\theta^2)\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(f'(\\theta)=-2\\theta\\sin(\\theta^2)\\)</p>"
        },
@@ -14519,6 +15423,10 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=e^{\\tan\\theta}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(e\\) to a function: the exponent is the inside.</p>\\[\\begin{gathered}\\displaystyle y=e^{u}\\\\\\displaystyle u=\\tan\\theta\\end{gathered}\\]<p><strong>Step 2.</strong> \\((e^u)'=e^u\\cdot u'\\): copy the exponential, multiply by the exponent's derivative.</p>\\[\\displaystyle y'=e^{u}\\cdot u'\\]<p><strong>Step 3.</strong> Substitute.</p>\\[\\displaystyle y'=e^{\\tan\\theta}\\sec^2\\theta\\]<p><strong>What you found:</strong></p><ul><li>\\(u'=\\sec^2\\theta\\)</li><li>\\(y'=e^{\\tan\\theta}\\sec^2\\theta\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(y'=e^{\\tan\\theta}\\sec^2\\theta\\)</p>"
        },
@@ -14560,6 +15468,10 @@ export const sections: Section[] = [
       "href": "3-6",
       "question": "Differentiate \\(r(t)=10^{2\\sqrt t}\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The base is the constant 10 and the variable is in the exponent. It is <b>not</b> a product, so no product rule.</p>\\[\\begin{gathered}\\displaystyle r=10^{u}\\\\\\displaystyle u=2\\sqrt t\\end{gathered}\\]<p><strong>Step 2.</strong> Derivative of \\(\\sqrt t\\) is \\(\\frac{1}{2\\sqrt t}\\).</p>\\[\\displaystyle u'=2\\cdot\\frac{1}{2\\sqrt t}=\\frac{1}{\\sqrt t}\\]<p><strong>Step 3.</strong> Exponential with base \\(b\\): copy it, multiply by \\(\\ln b\\), multiply by \\(u'\\).</p>\\[\\displaystyle (b^u)'=b^u\\ln b\\cdot u'\\]<p><strong>Step 4.</strong> Substitute.</p>\\[\\displaystyle r'(t)=10^{2\\sqrt t}\\ln10\\cdot\\frac1{\\sqrt t}\\]<p><strong>What you found:</strong></p><ul><li>\\(u=2\\sqrt t\\)</li><li>\\(u'=\\frac1{\\sqrt t}\\)</li><li>\\(r'=\\frac{10^{2\\sqrt t}\\ln10}{\\sqrt t}\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(r'(t)=\\dfrac{10^{2\\sqrt t}\\ln10}{\\sqrt t}\\)</p>"
@@ -14612,6 +15524,10 @@ export const sections: Section[] = [
       "href": "3-5",
       "question": "Find \\(y''\\) by implicit differentiation if \\(x^2+y^2=1\\). Simplify completely.",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Differentiate both sides; \\(y^2\\) gives \\(2y\\,y'\\); the constant 1 gives 0.</p>\\[\\displaystyle 2x+2y\\,y'=0\\]<p><strong>Step 2.</strong> Solve for \\(y'\\) first. You need it later.</p>\\[\\displaystyle y'=-\\frac{x}{y}\\]<p><strong>Step 3.</strong> Differentiate \\(y'=-\\frac xy\\) with the quotient rule. Top is \\(x\\), bottom is \\(y\\), and the bottom's derivative is \\(y'\\).</p>\\[\\displaystyle y''=-\\frac{(1)\\,y-x\\,y'}{y^2}\\]<p><strong>Step 4.</strong> Replace \\(y'\\) with \\(-\\frac xy\\).</p>\\[\\displaystyle =-\\frac{y-x\\big(-\\frac xy\\big)}{y^2}=-\\frac{y+\\frac{x^2}{y}}{y^2}\\]<p><strong>Step 5.</strong> Combine the top over \\(y\\), then move that \\(y\\) to the bottom.</p>\\[\\displaystyle =-\\frac{\\frac{y^2+x^2}{y}}{y^2}=-\\frac{x^2+y^2}{y^3}\\]<p><strong>Step 6.</strong> “Simplify completely” means use the original equation: \\(x^2+y^2=1\\).</p>\\[\\displaystyle y''=-\\frac{1}{y^3}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=-\\frac xy\\)</li><li>\\(y''=-\\frac1{y^3}\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(y''=-\\dfrac{1}{y^3}\\)</p>"
@@ -14666,6 +15582,10 @@ export const sections: Section[] = [
       "href": "3-6",
       "question": "Find the derivative of \\(y=\\arctan\\sqrt x\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Arctan of an inside.</p>\\[\\begin{gathered}\\displaystyle y=\\tan^{-1}(u)\\\\\\displaystyle u=\\sqrt x\\end{gathered}\\]<p><strong>Step 2.</strong> Rule: \\((\\tan^{-1}u)'=\\frac{u'}{1+u^2}\\).</p>\\[\\displaystyle y'=\\frac{u'}{1+u^2}\\]<p><strong>Step 3.</strong> Substitute; \\((\\sqrt x)^2=x\\).</p>\\[\\displaystyle y'=\\frac{\\frac{1}{2\\sqrt x}}{1+x}\\]<p><strong>Step 4.</strong> Move \\(2\\sqrt x\\) into the denominator.</p>\\[\\displaystyle y'=\\frac{1}{2\\sqrt x\\,(1+x)}\\]<p><strong>What you found:</strong></p><ul><li>\\(u=\\sqrt x\\)</li><li>\\(u'=\\frac1{2\\sqrt x}\\)</li><li>\\(u^2=x\\)</li><li>\\(y'=\\frac1{2\\sqrt x(1+x)}\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(y'=\\dfrac{1}{2\\sqrt x\\,(1+x)}\\)</p>"
@@ -14731,6 +15651,10 @@ export const sections: Section[] = [
       "question": "Differentiate \\(f(x)=\\log_{10}(1+\\cos x)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Log with base 10 of an inside.</p>\\[\\begin{gathered}\\displaystyle f=\\log_{10}u\\\\\\displaystyle u=1+\\cos x\\end{gathered}\\]<p><strong>Step 2.</strong> Same as \\(\\ln\\), but divide by an extra \\(\\ln b\\).</p>\\[\\displaystyle (\\log_b u)'=\\frac{u'}{u\\ln b}\\]<p><strong>Step 3.</strong> Substitute.</p>\\[\\displaystyle f'(x)=\\frac{-\\sin x}{(1+\\cos x)\\ln10}\\]<p><strong>What you found:</strong></p><ul><li>\\(u=1+\\cos x\\)</li><li>\\(u'=-\\sin x\\)</li><li>\\(f'=-\\frac{\\sin x}{(1+\\cos x)\\ln10}\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(f'(x)=-\\dfrac{\\sin x}{(1+\\cos x)\\ln10}\\)</p>"
        }
@@ -14773,6 +15697,10 @@ export const sections: Section[] = [
       "question": "Use logarithmic differentiation to find the derivative of \\(y=x^{e^x}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Take \\(\\ln\\) of both sides; the exponent \\(e^x\\) comes down in front.</p>\\[\\displaystyle \\ln y=\\ln\\big(x^{e^x}\\big)=e^x\\ln x\\]<p><strong>Step 2.</strong> Left: \\((\\ln y)'=\\frac{y'}{y}\\). Right: <b>product rule</b> on \\(e^x\\cdot\\ln x\\).</p>\\[\\displaystyle \\frac{y'}{y}=(e^x)'\\ln x+e^x(\\ln x)'\\]<p><strong>Step 3.</strong> \\((e^x)'=e^x\\) and \\((\\ln x)'=\\frac1x\\).</p>\\[\\displaystyle \\frac{y'}{y}=e^x\\ln x+\\frac{e^x}{x}\\]<p><strong>Step 4.</strong> Multiply by \\(y=x^{e^x}\\).</p>\\[\\displaystyle y'=x^{e^x}\\Big(e^x\\ln x+\\frac{e^x}{x}\\Big)\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=x^{e^x}\\left(e^x\\ln x+\\frac{e^x}x\\right)\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(y'=x^{e^x}\\Big(e^x\\ln x+\\dfrac{e^x}{x}\\Big)\\)</p>"
        },
@@ -14812,6 +15740,10 @@ export const sections: Section[] = [
       "href": "3-9",
       "question": "The altitude of a triangle is increasing at 1 cm/min while the area is increasing at \\(2\\text{ cm}^2/\\text{min}\\). At what rate is the base changing when the altitude is 10 cm and the area is \\(100\\text{ cm}^2\\)?",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> <b>Pick the equation that connects the quantities in the question:</b> area, base and altitude. There's no hypotenuse here, so it is <b>not</b> Pythagoras.</p>\\[\\displaystyle A=\\tfrac12bh\\]<p><strong>Step 2.</strong> We need the base at this moment; get it from the area formula.</p>\\[\\displaystyle b=\\frac{2A}{h}=\\frac{2(100)}{10}=20\\]<p><strong>Step 3.</strong> Differentiate in \\(t\\). Both \\(b\\) and \\(h\\) change, so \\(bh\\) needs the <b>product rule</b>.</p>\\[\\displaystyle \\frac{dA}{dt}=\\frac12\\Big(\\frac{db}{dt}h+b\\frac{dh}{dt}\\Big)\\]<p><strong>Step 4.</strong> Now plug in.</p>\\[\\displaystyle 2=\\frac12\\Big(10\\frac{db}{dt}+20\\cdot1\\Big)\\]<p><strong>Step 5.</strong> Multiply by 2, subtract 20, divide by 10. Negative means the base is getting shorter.</p>\\[\\displaystyle 4=10\\frac{db}{dt}+20\\ \\Rightarrow\\ \\frac{db}{dt}=-1.6\\]<p><strong>What you found:</strong></p><ul><li>\\(dh/dt=1\\)</li><li>\\(dA/dt=2\\)</li><li>\\(\\text{want}:\\ db/dt\\)</li><li>\\(h=10\\)</li><li>\\(b=20\\)</li><li>\\(db/dt=-1.6\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(\\dfrac{db}{dt}=-1.6\\) cm/min (the base is shrinking)</p>"
@@ -14881,6 +15813,10 @@ export const sections: Section[] = [
       "question": "Find the differential \\(dy\\) and evaluate it for \\(y=x^2+2x\\), \\(x=1\\), \\(dx=\\frac12\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Differential: take the derivative and attach \\(dx\\).</p>\\[\\displaystyle dy=f'(x)\\,dx=(2x+2)\\,dx\\]<p><strong>Step 2.</strong> Plug in \\(x=1\\) and \\(dx=\\frac12\\).</p>\\[\\displaystyle dy=(2\\cdot1+2)\\cdot\\tfrac12=2\\]<p><strong>What you found:</strong></p><ul><li>\\(dy=2\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(dy=(2x+2)\\,dx\\); \\(dy=2\\)</p>"
        }
@@ -14914,6 +15850,10 @@ export const sections: Section[] = [
       "href": "3-11",
       "question": "Use the definition of the hyperbolic function to find \\(\\displaystyle\\lim_{x\\to\\infty}\\tanh x\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> “Use the definition” means write it in exponentials. Just writing \\(\\frac{\\sinh x}{\\cosh x}\\) and the answer doesn't show why.</p>\\[\\displaystyle \\tanh x=\\frac{\\sinh x}{\\cosh x}=\\frac{e^x-e^{-x}}{e^x+e^{-x}}\\]<p><strong>Step 2.</strong> Divide top and bottom by the biggest term, \\(e^x\\) (same as multiplying by \\(e^{-x}\\)).</p>\\[\\displaystyle =\\frac{e^x-e^{-x}}{e^x+e^{-x}}\\cdot\\frac{e^{-x}}{e^{-x}}=\\frac{1-e^{-2x}}{1+e^{-2x}}\\]<p><strong>Step 3.</strong> \\(e^{-2x}=\\frac{1}{e^{2x}}\\), and the bottom grows without bound.</p>\\[\\displaystyle x\\to\\infty:\\ e^{-2x}\\to0\\]<p><strong>Step 4.</strong> Substitute the limit.</p>\\[\\displaystyle \\lim_{x\\to\\infty}\\tanh x=\\frac{1-0}{1+0}=1\\]<p><strong>What you found:</strong></p><ul><li>\\(\\lim=1\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(1\\)</p>"
@@ -14954,6 +15894,10 @@ export const sections: Section[] = [
       "href": "3-11",
       "question": "Find the derivative of \\(f(x)=\\tanh\\sqrt{x^2+4}\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Outer tanh, inner square root.</p>\\[\\begin{gathered}\\displaystyle f=\\tanh u\\\\\\displaystyle u=\\sqrt{x^2+4}\\end{gathered}\\]<p><strong>Step 2.</strong> Hyperbolic table: \\((\\tanh x)'=\\operatorname{sech}^2x\\), same as \\((\\tan x)'=\\sec^2x\\).</p>\\[\\displaystyle (\\tanh u)'=\\operatorname{sech}^2u\\cdot u'\\]<p><strong>Step 3.</strong> \\((\\sqrt w)'=\\frac{w'}{2\\sqrt w}\\) with \\(w=x^2+4\\).</p>\\[\\displaystyle u'=\\frac{2x}{2\\sqrt{x^2+4}}=\\frac{x}{\\sqrt{x^2+4}}\\]<p><strong>Step 4.</strong> Multiply.</p>\\[\\displaystyle f'(x)=\\operatorname{sech}^2\\!\\big(\\sqrt{x^2+4}\\big)\\cdot\\frac{x}{\\sqrt{x^2+4}}\\]<p><strong>What you found:</strong></p><ul><li>\\(u=\\sqrt{x^2+4}\\)</li><li>\\(u'=\\frac x{\\sqrt{x^2+4}}\\)</li><li>\\(f'=\\frac{x\\operatorname{sech}^2\\sqrt{x^2+4}}{\\sqrt{x^2+4}}\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(f'(x)=\\dfrac{x\\,\\operatorname{sech}^2\\sqrt{x^2+4}}{\\sqrt{x^2+4}}\\)</p>"
@@ -15006,6 +15950,10 @@ export const sections: Section[] = [
       "href": "4-1",
       "question": "Find the absolute maximum and minimum values of \\(f(x)=\\dfrac{x}{x^2+1}\\) on \\([0,2]\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Step 1 of the Closed Interval Method: the derivative. Quotient rule.</p>\\[\\begin{gathered}\\displaystyle hi=x\\\\\\displaystyle lo=x^2+1\\end{gathered}\\]<p><strong>Step 2.</strong> Low d-high minus high d-low. The low \\((x^2+1)\\) goes first.</p>\\[\\displaystyle f'(x)=\\frac{(x^2+1)(1)-x(2x)}{(x^2+1)^2}\\]<p><strong>Step 3.</strong> \\(x^2+1-2x^2=1-x^2\\).</p>\\[\\displaystyle f'(x)=\\frac{1-x^2}{(x^2+1)^2}\\]<p><strong>Step 4.</strong> Critical numbers: top = 0. The bottom is never 0. \\(-1\\) is outside \\([0,2]\\), so drop it.</p>\\[\\displaystyle 1-x^2=0\\Rightarrow x=\\pm1;\\ \\text{keep }x=1\\]<p><strong>Step 5.</strong> Evaluate the <b>original</b> \\(f\\) at the critical number and both endpoints.</p>\\[\\begin{gathered}\\displaystyle f(0)=0\\\\\\displaystyle f(1)=\\tfrac12\\\\\\displaystyle f(2)=\\tfrac25\\end{gathered}\\]<p><strong>Step 6.</strong> Compare: \\(\\frac12=0.5>\\frac25=0.4>0\\).</p>\\[\\begin{gathered}\\displaystyle \\max=f(1)=\\tfrac12\\\\\\displaystyle \\min=f(0)=0\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(hi'=1\\)</li><li>\\(lo'=2x\\)</li><li>\\(f'=\\frac{1-x^2}{(x^2+1)^2}\\)</li><li>\\(f(0)=0\\)</li><li>\\(f(1)=\\tfrac12\\)</li><li>\\(f(2)=\\tfrac25\\)</li><li>\\(\\max=\\tfrac12\\)</li><li>\\(\\min=0\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">Absolute max \\(f(1)=\\tfrac12\\); absolute min \\(f(0)=0\\)</p>"
@@ -15088,6 +16036,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "The sequence \\(x_1,x_2,\\dots\\) converges to \\(\\sqrt[m]{a}\\) (\\(a>0\\), \\(m\\) a counting number), where (a) \\(x_1=\\,\\)? and (b) \\(x_{n+1}=\\,\\)?",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\sqrt[m]a\\) is the positive root of \\(x^m-a=0\\). This is Newton's method, which finds roots by repeatedly following tangent lines.</p>\\[\\displaystyle f(x)=x^m-a\\]<p><strong>Step 2.</strong> Newton's formula. Start from an initial guess \\(x_1\\).</p>\\[\\displaystyle x_{n+1}=x_n-\\frac{f(x_n)}{f'(x_n)}\\]<p><strong>Step 3.</strong> \\(f'(x)=mx^{m-1}\\).</p>\\[\\displaystyle =x_n-\\frac{x_n^m-a}{m\\,x_n^{m-1}}\\]<p><strong>Step 4.</strong> Split the fraction: \\(\\frac{x_n^m}{mx_n^{m-1}}=\\frac{x_n}{m}\\).</p>\\[\\displaystyle =x_n-\\frac{x_n}{m}+\\frac{a}{m\\,x_n^{m-1}}\\]<p><strong>Step 5.</strong> Factor out \\(\\frac1m\\): \\(x_n-\\frac{x_n}m=\\frac{(m-1)x_n}{m}\\).</p>\\[\\displaystyle x_{n+1}=\\frac1m\\Big[(m-1)x_n+\\frac{a}{x_n^{m-1}}\\Big]\\]<p><strong>What you found:</strong></p><ul><li>\\(x_{n+1}=\\frac1m\\left[(m-1)x_n+\\frac{a}{x_n^{m-1}}\\right]\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">(a) \\(x_1\\) = any initial guess (\\(>0\\)); (b) \\(x_{n+1}=\\dfrac1m\\Big[(m-1)x_n+\\dfrac{a}{x_n^{\\,m-1}}\\Big]\\)</p>"
@@ -15272,6 +16224,10 @@ export const sections: Section[] = [
       "question": "Find \\(\\displaystyle\\lim_{x\\to4}\\frac{\\sqrt x-2}{x-4}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Always try plugging in first. \\(\\frac00\\) means “do algebra, then try again”, not “the limit doesn't exist”.</p>\\[\\displaystyle \\frac{\\sqrt4-2}{4-4}=\\frac00\\]<p><strong>Step 2.</strong> A square root next to a minus: multiply top and bottom by the <b>conjugate</b> (same thing with the sign flipped).</p>\\[\\displaystyle \\frac{\\sqrt x-2}{x-4}\\cdot\\frac{\\sqrt x+2}{\\sqrt x+2}\\]<p><strong>Step 3.</strong> Top: \\((\\sqrt x-2)(\\sqrt x+2)=x-4\\) (difference of squares). Leave the bottom factored.</p>\\[\\displaystyle =\\frac{x-4}{(x-4)(\\sqrt x+2)}\\]<p><strong>Step 4.</strong> Cancel the \\((x-4)\\) that caused the \\(\\frac00\\).</p>\\[\\displaystyle =\\frac{1}{\\sqrt x+2}\\]<p><strong>Step 5.</strong> Now plugging in works.</p>\\[\\displaystyle \\lim_{x\\to4}\\frac1{\\sqrt x+2}=\\frac1{2+2}=\\frac14\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{limit}:\\ \\tfrac14\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(\\dfrac14\\)</p>"
        }
@@ -15311,6 +16267,10 @@ export const sections: Section[] = [
       "href": null,
       "question": "Find the value of \\(c\\) that makes \\(f\\) continuous everywhere: \\(f(x)=\\begin{cases}cx^2+2x & x<2\\\\ x^3-cx & x\\ge2\\end{cases}\\)",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Each piece is a polynomial, so it's continuous on its own. The only danger is the switch point \\(x=2\\), where the two pieces must meet.</p>\\[\\displaystyle \\lim_{x\\to2^-}f=\\lim_{x\\to2^+}f=f(2)\\]<p><strong>Step 2.</strong> Plug 2 into the left piece.</p>\\[\\displaystyle \\text{left: }c(2)^2+2(2)=4c+4\\]<p><strong>Step 3.</strong> Plug 2 into the right piece (this is also \\(f(2)\\)).</p>\\[\\displaystyle \\text{right: }2^3-c(2)=8-2c\\]<p><strong>Step 4.</strong> Set them equal so there's no jump.</p>\\[\\displaystyle 4c+4=8-2c\\]<p><strong>Step 5.</strong> Solve.</p>\\[\\displaystyle 6c=4\\ \\Rightarrow\\ c=\\tfrac23\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{left}:\\ 4c+4\\)</li><li>\\(\\text{right}:\\ 8-2c\\)</li><li>\\(c=\\tfrac23\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(c=\\tfrac23\\)</p>"
@@ -15374,6 +16334,10 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=4e^x-\\dfrac{6}{\\sqrt[4]{x^3}}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\sqrt[4]{x^3}=x^{3/4}\\): the root becomes the <b>bottom</b> of the fraction. One over it is \\(x^{-3/4}\\).</p>\\[\\displaystyle y=4e^x-6x^{-3/4}\\]<p><strong>Step 2.</strong> Power rule: \\(-\\frac34-1=-\\frac74\\). \\((-6)(-\\frac34)=\\frac{18}4=\\frac92\\).</p>\\[\\displaystyle (-6x^{-3/4})'=-6\\big(-\\tfrac34\\big)x^{-7/4}=\\tfrac92x^{-7/4}\\]<p><strong>Step 3.</strong> Fourth root, because the exponent's bottom is 4.</p>\\[\\displaystyle y'=4e^x+\\frac{9}{2x^{7/4}}=4e^x+\\frac{9}{2\\sqrt[4]{x^7}}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=4e^x+\\tfrac92x^{-7/4}\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(y'=4e^x+\\dfrac92x^{-7/4}=4e^x+\\dfrac{9}{2\\sqrt[4]{x^7}}\\)</p>"
        }
@@ -15405,6 +16369,10 @@ export const sections: Section[] = [
       "href": "3-2",
       "question": "Differentiate \\(f(x)=\\dfrac{x^3}{2+e^x}\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Quotient rule.</p>\\[\\begin{gathered}\\displaystyle hi=x^3\\\\\\displaystyle lo=2+e^x\\end{gathered}\\]<p><strong>Step 2.</strong> Low d-high minus high d-low, over low squared.</p>\\[\\displaystyle f'=\\frac{(2+e^x)(3x^2)-x^3e^x}{(2+e^x)^2}\\]<p><strong>Step 3.</strong> Optional: factor \\(x^2\\) from the top.</p>\\[\\displaystyle =\\frac{x^2(6+3e^x-xe^x)}{(2+e^x)^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(hi'=3x^2\\)</li><li>\\(lo'=e^x\\)</li><li>\\(f'=\\frac{x^2(6+3e^x-xe^x)}{(2+e^x)^2}\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(f'(x)=\\dfrac{3x^2(2+e^x)-x^3e^x}{(2+e^x)^2}\\)</p>"
@@ -15447,6 +16415,10 @@ export const sections: Section[] = [
       "href": "3-3",
       "question": "Differentiate \\(f(\\theta)=\\dfrac{\\cos\\theta}{1-\\sin\\theta}\\) and simplify completely.",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Quotient rule.</p>\\[\\begin{gathered}\\displaystyle hi=\\cos\\theta\\\\\\displaystyle lo=1-\\sin\\theta\\end{gathered}\\]<p><strong>Step 2.</strong> Low d-high minus high d-low. Work out the top separately to keep it readable.</p>\\[\\displaystyle \\text{top}=(1-\\sin\\theta)(-\\sin\\theta)-\\cos\\theta(-\\cos\\theta)\\]<p><strong>Step 3.</strong> Expand; then \\(\\sin^2\\theta+\\cos^2\\theta=1\\).</p>\\[\\displaystyle \\text{top}=-\\sin\\theta+\\sin^2\\theta+\\cos^2\\theta=1-\\sin\\theta\\]<p><strong>Step 4.</strong> Divide by low squared and cancel one factor.</p>\\[\\displaystyle f'=\\frac{1-\\sin\\theta}{(1-\\sin\\theta)^2}=\\frac1{1-\\sin\\theta}\\]<p><strong>What you found:</strong></p><ul><li>\\(hi'=-\\sin\\theta\\)</li><li>\\(lo'=-\\cos\\theta\\)</li><li>\\(f'=\\frac1{1-\\sin\\theta}\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(f'(\\theta)=\\dfrac{1}{1-\\sin\\theta}\\)</p>"
@@ -15494,6 +16466,10 @@ export const sections: Section[] = [
       "question": "Prove that \\(\\dfrac{d}{dx}(\\csc x)=-\\csc x\\cot x\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Rewrite with sin.</p>\\[\\displaystyle \\csc x=\\frac1{\\sin x}\\]<p><strong>Step 2.</strong> Quotient rule, low (\\(\\sin x\\)) first.</p>\\[\\displaystyle \\frac{d}{dx}\\csc x=\\frac{\\sin x\\cdot0-1\\cdot\\cos x}{\\sin^2x}\\]<p><strong>Step 3.</strong> Simplify.</p>\\[\\displaystyle =\\frac{-\\cos x}{\\sin^2x}\\]<p><strong>Step 4.</strong> Split \\(\\sin^2x\\) into two factors.</p>\\[\\displaystyle =-\\frac1{\\sin x}\\cdot\\frac{\\cos x}{\\sin x}=-\\csc x\\cot x\\ \\ \\checkmark\\]<p><strong>What you found:</strong></p><ul><li>\\(hi'=0\\)</li><li>\\(lo'=\\cos x\\)</li><li>\\((\\csc x)'=-\\csc x\\cot x\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(\\dfrac{d}{dx}\\dfrac1{\\sin x}=\\dfrac{-\\cos x}{\\sin^2x}=-\\dfrac1{\\sin x}\\cdot\\dfrac{\\cos x}{\\sin x}=-\\csc x\\cot x\\)</p>"
        }
@@ -15540,6 +16516,10 @@ export const sections: Section[] = [
       "question": "Find \\(\\displaystyle\\lim_{x\\to0}\\frac{\\sin6x}{x^3-3x}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\frac00\\) at first. Factor \\(x\\) out of the bottom.</p>\\[\\displaystyle =\\lim_{x\\to0}\\frac{\\sin6x}{x(x^2-3)}\\]<p><strong>Step 2.</strong> Split into the trig piece and an ordinary piece.</p>\\[\\displaystyle =\\lim_{x\\to0}\\frac{\\sin6x}{x}\\cdot\\frac{1}{x^2-3}\\]<p><strong>Step 3.</strong> Match the bottom to the angle.</p>\\[\\displaystyle \\frac{\\sin6x}{x}=6\\cdot\\frac{\\sin6x}{6x}\\to6\\]<p><strong>Step 4.</strong> Plug 0 into the ordinary piece and multiply.</p>\\[\\displaystyle 6\\cdot\\frac{1}{0-3}=-2\\]<p><strong>What you found:</strong></p><ul><li>\\(\\lim\\frac{\\sin6x}x=6\\)</li><li>\\(\\text{limit}:\\ -2\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(-2\\)</p>"
        }
@@ -15582,6 +16562,10 @@ export const sections: Section[] = [
       "question": "Find the derivative of \\(f(\\theta)=\\sin\\big(\\sqrt\\theta\\big)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The root is <b>inside</b> the sine.</p>\\[\\begin{gathered}\\displaystyle f=\\sin u\\\\\\displaystyle u=\\sqrt\\theta\\end{gathered}\\]<p><strong>Step 2.</strong> Chain rule.</p>\\[\\displaystyle f'=\\cos\\big(\\sqrt\\theta\\big)\\cdot\\frac{1}{2\\sqrt\\theta}\\]<p><strong>What you found:</strong></p><ul><li>\\(u'=\\frac1{2\\sqrt\\theta}\\)</li><li>\\(f'=\\frac{\\cos\\sqrt\\theta}{2\\sqrt\\theta}\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(f'(\\theta)=\\dfrac{\\cos\\sqrt\\theta}{2\\sqrt\\theta}\\)</p>"
        }
@@ -15615,6 +16599,10 @@ export const sections: Section[] = [
       "href": "3-4",
       "question": "Find the derivative of \\(y=e^{\\sec\\theta}\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The exponent is the inside.</p>\\[\\begin{gathered}\\displaystyle y=e^u\\\\\\displaystyle u=\\sec\\theta\\end{gathered}\\]<p><strong>Step 2.</strong> \\((e^u)'=e^u\\cdot u'\\).</p>\\[\\displaystyle y'=e^{\\sec\\theta}\\sec\\theta\\tan\\theta\\]<p><strong>What you found:</strong></p><ul><li>\\(u'=\\sec\\theta\\tan\\theta\\)</li><li>\\(y'=e^{\\sec\\theta}\\sec\\theta\\tan\\theta\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(y'=e^{\\sec\\theta}\\sec\\theta\\tan\\theta\\)</p>"
@@ -15650,6 +16638,10 @@ export const sections: Section[] = [
       "question": "Find the derivative of \\(r(t)=5^{3\\sqrt t}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Constant base, variable exponent.</p>\\[\\begin{gathered}\\displaystyle r=5^u\\\\\\displaystyle u=3\\sqrt t\\end{gathered}\\]<p><strong>Step 2.</strong> \\((b^u)'=b^u\\ln b\\cdot u'\\).</p>\\[\\displaystyle r'=5^{3\\sqrt t}\\ln5\\cdot\\frac{3}{2\\sqrt t}\\]<p><strong>What you found:</strong></p><ul><li>\\(u'=\\frac{3}{2\\sqrt t}\\)</li><li>\\(r'=\\frac{3\\cdot5^{3\\sqrt t}\\ln5}{2\\sqrt t}\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(r'(t)=\\dfrac{3\\cdot5^{3\\sqrt t}\\ln5}{2\\sqrt t}\\)</p>"
        }
@@ -15683,6 +16675,10 @@ export const sections: Section[] = [
       "href": "3-5",
       "question": "Find \\(y''\\) by implicit differentiation if \\(x^2+4y^2=4\\). Simplify completely.",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> First derivative, solved for \\(y'\\).</p>\\[\\displaystyle 2x+8y\\,y'=0\\ \\Rightarrow\\ y'=-\\frac{x}{4y}\\]<p><strong>Step 2.</strong> Quotient rule on \\(\\frac{x}{4y}\\), keeping the minus in front.</p>\\[\\displaystyle y''=-\\frac{(1)(4y)-x(4y')}{(4y)^2}\\]<p><strong>Step 3.</strong> Substitute \\(y'\\).</p>\\[\\displaystyle -4x\\,y'=-4x\\Big(-\\frac{x}{4y}\\Big)=\\frac{x^2}{y}\\]<p><strong>Step 4.</strong> Combine the top over \\(y\\).</p>\\[\\displaystyle y''=-\\frac{4y+\\frac{x^2}{y}}{16y^2}=-\\frac{4y^2+x^2}{16y^3}\\]<p><strong>Step 5.</strong> Use the original equation: \\(x^2+4y^2=4\\).</p>\\[\\displaystyle y''=-\\frac{4}{16y^3}=-\\frac1{4y^3}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=-\\frac x{4y}\\)</li><li>\\(y''=-\\frac1{4y^3}\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(y''=-\\dfrac{1}{4y^3}\\)</p>"
@@ -15729,6 +16725,10 @@ export const sections: Section[] = [
       "href": "3-6",
       "question": "Find the derivative of \\(y=\\arcsin\\sqrt x\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Collect the pieces.</p>\\[\\begin{gathered}\\displaystyle u=\\sqrt x\\\\\\displaystyle u'=\\frac1{2\\sqrt x}\\\\\\displaystyle u^2=x\\end{gathered}\\]<p><strong>Step 2.</strong> Arcsin rule.</p>\\[\\displaystyle y'=\\frac{u'}{\\sqrt{1-u^2}}=\\frac{1}{2\\sqrt x\\sqrt{1-x}}\\]<p><strong>What you found:</strong></p><ul><li>\\(u'=\\frac1{2\\sqrt x}\\)</li><li>\\(u^2=x\\)</li><li>\\(y'=\\frac1{2\\sqrt x\\sqrt{1-x}}\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(y'=\\dfrac{1}{2\\sqrt x\\,\\sqrt{1-x}}\\)</p>"
@@ -15778,6 +16778,10 @@ export const sections: Section[] = [
       "question": "Differentiate \\(f(x)=\\log_5(2+\\sin x)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Log base 5 of an inside.</p>\\[\\begin{gathered}\\displaystyle u=2+\\sin x\\\\\\displaystyle u'=\\cos x\\end{gathered}\\]<p><strong>Step 2.</strong> \\((\\log_bu)'=\\frac{u'}{u\\ln b}\\).</p>\\[\\displaystyle f'=\\frac{u'}{u\\ln5}=\\frac{\\cos x}{(2+\\sin x)\\ln5}\\]<p><strong>What you found:</strong></p><ul><li>\\(u'=\\cos x\\)</li><li>\\(f'=\\frac{\\cos x}{(2+\\sin x)\\ln5}\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(f'(x)=\\dfrac{\\cos x}{(2+\\sin x)\\ln5}\\)</p>"
        }
@@ -15812,6 +16816,10 @@ export const sections: Section[] = [
       "question": "Use logarithmic differentiation to find the derivative of \\(y=x^{\\tan x}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Take \\(\\ln\\); bring the exponent down.</p>\\[\\displaystyle \\ln y=\\tan x\\,\\ln x\\]<p><strong>Step 2.</strong> Product rule on \\(\\tan x\\cdot\\ln x\\).</p>\\[\\displaystyle \\frac{y'}{y}=\\sec^2x\\ln x+\\tan x\\cdot\\frac1x\\]<p><strong>Step 3.</strong> Multiply by \\(y\\).</p>\\[\\displaystyle y'=x^{\\tan x}\\Big(\\sec^2x\\ln x+\\frac{\\tan x}{x}\\Big)\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=x^{\\tan x}\\left(\\sec^2x\\ln x+\\frac{\\tan x}x\\right)\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(y'=x^{\\tan x}\\Big(\\sec^2x\\ln x+\\dfrac{\\tan x}{x}\\Big)\\)</p>"
        }
@@ -15843,6 +16851,10 @@ export const sections: Section[] = [
       "href": "3-9",
       "question": "The base of a triangle is increasing at 2 cm/min while its area is increasing at \\(3\\text{ cm}^2/\\text{min}\\). At what rate is the altitude changing when the base is 12 cm and the area is \\(48\\text{ cm}^2\\)?",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Area of a triangle. This time the <b>altitude</b> is the unknown rate.</p>\\[\\displaystyle A=\\tfrac12bh\\]<p><strong>Step 2.</strong> Altitude at this moment.</p>\\[\\displaystyle h=\\frac{2A}{b}=\\frac{96}{12}=8\\]<p><strong>Step 3.</strong> Product rule: both change.</p>\\[\\displaystyle \\frac{dA}{dt}=\\frac12\\Big(\\frac{db}{dt}h+b\\frac{dh}{dt}\\Big)\\]<p><strong>Step 4.</strong> Plug in.</p>\\[\\displaystyle 3=\\frac12\\Big(2\\cdot8+12\\frac{dh}{dt}\\Big)\\]<p><strong>Step 5.</strong> Solve.</p>\\[\\displaystyle 6=16+12\\frac{dh}{dt}\\ \\Rightarrow\\ \\frac{dh}{dt}=-\\frac{10}{12}=-\\frac56\\]<p><strong>What you found:</strong></p><ul><li>\\(db/dt=2\\)</li><li>\\(dA/dt=3\\)</li><li>\\(\\text{want}:\\ dh/dt\\)</li><li>\\(b=12\\)</li><li>\\(h=8\\)</li><li>\\(dh/dt=-\\tfrac56\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(\\dfrac{dh}{dt}=-\\dfrac56\\) cm/min (the altitude is shrinking)</p>"
@@ -15908,6 +16920,10 @@ export const sections: Section[] = [
       "question": "Find the differential \\(dy\\) and evaluate it for \\(y=x^3-2x\\), \\(x=2\\), \\(dx=0.1\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Derivative, then attach \\(dx\\).</p>\\[\\displaystyle dy=(3x^2-2)\\,dx\\]<p><strong>Step 2.</strong> Plug in.</p>\\[\\displaystyle dy=(12-2)(0.1)=1\\]<p><strong>What you found:</strong></p><ul><li>\\(dy=1\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(dy=(3x^2-2)\\,dx\\); \\(dy=1\\)</p>"
        }
@@ -15935,6 +16951,10 @@ export const sections: Section[] = [
       "href": "3-11",
       "question": "Use the definition of the hyperbolic function to find \\(\\displaystyle\\lim_{x\\to-\\infty}\\tanh x\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Exponential definition.</p>\\[\\displaystyle \\tanh x=\\frac{e^x-e^{-x}}{e^x+e^{-x}}\\]<p><strong>Step 2.</strong> As \\(x\\to-\\infty\\) the big term is \\(e^{-x}\\): multiply top and bottom by \\(e^{x}\\).</p>\\[\\displaystyle =\\frac{e^{2x}-1}{e^{2x}+1}\\]<p><strong>Step 3.</strong> Take the limit.</p>\\[\\displaystyle e^{2x}\\to0\\ \\Rightarrow\\ \\frac{0-1}{0+1}=-1\\]<p><strong>What you found:</strong></p><ul><li>\\(\\lim=-1\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(-1\\)</p>"
@@ -15967,6 +16987,10 @@ export const sections: Section[] = [
       "href": "3-11",
       "question": "Find the derivative of \\(f(x)=\\cosh\\sqrt{x^2+1}\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Inner function.</p>\\[\\begin{gathered}\\displaystyle u=\\sqrt{x^2+1}\\\\\\displaystyle u'=\\frac{x}{\\sqrt{x^2+1}}\\end{gathered}\\]<p><strong>Step 2.</strong> \\((\\cosh u)'=\\sinh u\\cdot u'\\), with <b>no</b> minus sign.</p>\\[\\displaystyle f'=\\sinh u\\cdot u'\\]<p><strong>Step 3.</strong> Substitute.</p>\\[\\displaystyle f'=\\frac{x\\sinh\\sqrt{x^2+1}}{\\sqrt{x^2+1}}\\]<p><strong>What you found:</strong></p><ul><li>\\(u'=\\frac x{\\sqrt{x^2+1}}\\)</li><li>\\(f'=\\frac{x\\sinh\\sqrt{x^2+1}}{\\sqrt{x^2+1}}\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(f'(x)=\\dfrac{x\\sinh\\sqrt{x^2+1}}{\\sqrt{x^2+1}}\\)</p>"
@@ -16005,6 +17029,10 @@ export const sections: Section[] = [
       "href": "4-1",
       "question": "Find the absolute maximum and minimum values of \\(f(x)=\\dfrac{x}{x^2+4}\\) on \\([0,3]\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Quotient rule, low first.</p>\\[\\displaystyle f'=\\frac{(x^2+4)(1)-x(2x)}{(x^2+4)^2}\\]<p><strong>Step 2.</strong> Simplify the top.</p>\\[\\displaystyle f'=\\frac{4-x^2}{(x^2+4)^2}\\]<p><strong>Step 3.</strong> Top = 0. \\(-2\\) is outside \\([0,3]\\).</p>\\[\\displaystyle x=\\pm2;\\ \\text{keep }2\\]<p><strong>Step 4.</strong> Table with the critical number and both endpoints.</p>\\[\\begin{gathered}\\displaystyle f(0)=0\\\\\\displaystyle f(2)=\\tfrac14\\\\\\displaystyle f(3)=\\tfrac3{13}\\end{gathered}\\]<p><strong>Step 5.</strong> \\(\\frac14=0.25>\\frac3{13}\\approx0.23>0\\).</p>\\[\\begin{gathered}\\displaystyle \\max=\\tfrac14\\\\\\displaystyle \\min=0\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(f'=\\frac{4-x^2}{(x^2+4)^2}\\)</li><li>\\(f(0)=0\\)</li><li>\\(f(2)=\\tfrac14\\)</li><li>\\(f(3)=\\tfrac3{13}\\)</li><li>\\(\\max=\\tfrac14\\)</li><li>\\(\\min=0\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">Max \\(f(2)=\\tfrac14\\); min \\(f(0)=0\\)</p>"
@@ -16069,6 +17097,10 @@ export const sections: Section[] = [
       "href": "4-1",
       "question": "Find the critical numbers of \\(g(x)=x^{1/3}(x-4)\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Distribute first.</p>\\[\\displaystyle g=x^{4/3}-4x^{1/3}\\]<p><strong>Step 2.</strong> Power rule, then one fraction.</p>\\[\\displaystyle g'=\\tfrac43x^{1/3}-\\tfrac43x^{-2/3}=\\frac{4(x-1)}{3x^{2/3}}\\]<p><strong>Step 3.</strong> Both are in the domain (cube roots work everywhere).</p>\\[\\begin{gathered}\\displaystyle \\text{top}=0:\\ x=1;\\\\\\displaystyle \\text{bottom}=0:\\ x=0\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{c.n.}:\\ 0,\\ 1\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(x=0\\) and \\(x=1\\)</p>"
@@ -16154,6 +17186,10 @@ export const sections: Section[] = [
       "href": "2-8",
       "question": "Use the definition to find \\(f'(x)\\) for \\(f(x)=x^2-3x\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Always start by writing the definition. On the exam this line alone earns credit.</p>\\[\\displaystyle f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}\\]<p><strong>Step 2.</strong> Replace <b>every</b> \\(x\\) in \\(f\\) with \\((x+h)\\). Keep the parentheses.</p>\\[\\displaystyle f(x+h)=(x+h)^2-3(x+h)\\]<p><strong>Step 3.</strong> Expand: \\((x+h)^2=x^2+2xh+h^2\\) (not \\(x^2+h^2\\)!).</p>\\[\\displaystyle =x^2+2xh+h^2-3x-3h\\]<p><strong>Step 4.</strong> Subtract \\(f(x)=x^2-3x\\). The \\(x^2\\) and \\(-3x\\) cancel. Everything left has an \\(h\\) in it: that is the sign you're on track.</p>\\[\\displaystyle f(x+h)-f(x)=2xh+h^2-3h\\]<p><strong>Step 5.</strong> Factor \\(h\\) out of the top and cancel it with the bottom. This is what gets rid of the \\(\\frac00\\) problem.</p>\\[\\displaystyle \\frac{2xh+h^2-3h}{h}=2x+h-3\\]<p><strong>Step 6.</strong> Now it's safe to set \\(h=0\\). Check with the power rule: \\((x^2-3x)'=2x-3\\) ✓.</p>\\[\\displaystyle f'(x)=\\lim_{h\\to0}(2x+h-3)=2x-3\\]<p><strong>What you found:</strong></p><ul><li>\\(f(x+h)=(x+h)^2-3(x+h)\\)</li><li>\\(\\text{top}:\\ 2xh+h^2-3h\\)</li><li>\\(f'(x)=2x-3\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(f'(x)=2x-3\\)</p>"
@@ -16242,6 +17278,10 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=3\\sqrt x-\\dfrac{4}{x^2}+5\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Rewrite first. The power rule only works on \\(x^n\\), so turn the root and the fraction into powers.</p>\\[\\displaystyle y=3x^{1/2}-4x^{-2}+5\\]<p><strong>Step 2.</strong> Bring the \\(\\frac12\\) down, subtract 1: \\(\\frac12-1=-\\frac12\\).</p>\\[\\displaystyle (3x^{1/2})'=3\\cdot\\tfrac12x^{-1/2}=\\tfrac32x^{-1/2}\\]<p><strong>Step 3.</strong> Bring the \\(-2\\) down; \\(-2-1=-3\\). Two minuses make a plus.</p>\\[\\displaystyle (-4x^{-2})'=-4\\cdot(-2)x^{-3}=8x^{-3}\\]<p><strong>Step 4.</strong> A constant has zero slope.</p>\\[\\displaystyle (5)'=0\\]<p><strong>Step 5.</strong> Rewrite negative and fractional powers back as fractions and roots.</p>\\[\\displaystyle y'=\\frac{3}{2\\sqrt x}+\\frac{8}{x^3}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{term 1}':\\ \\tfrac32x^{-1/2}\\)</li><li>\\(\\text{term 2}':\\ 8x^{-3}\\)</li><li>\\(y'=\\frac{3}{2\\sqrt x}+\\frac8{x^3}\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(y'=\\dfrac{3}{2\\sqrt x}+\\dfrac{8}{x^3}\\)</p>"
        }
@@ -16293,6 +17333,10 @@ export const sections: Section[] = [
       "href": "3-2",
       "question": "Differentiate \\(y=\\dfrac{x^2+1}{x-3}\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> A fraction of two functions: quotient rule. Name the top and bottom.</p>\\[\\begin{gathered}\\displaystyle hi=x^2+1\\\\\\displaystyle lo=x-3\\end{gathered}\\]<p><strong>Step 2.</strong> “Low d-high minus high d-low, over low squared.”</p>\\[\\displaystyle y'=\\frac{lo\\cdot hi'-hi\\cdot lo'}{lo^2}\\]<p><strong>Step 3.</strong> Plug in from the Watch panel. Put parentheses around every piece.</p>\\[\\displaystyle y'=\\frac{(x-3)(2x)-(x^2+1)(1)}{(x-3)^2}\\]<p><strong>Step 4.</strong> Expand. The minus goes to <b>every</b> term of \\((x^2+1)\\): that's the most common sign mistake.</p>\\[\\displaystyle =\\frac{2x^2-6x-x^2-1}{(x-3)^2}\\]<p><strong>Step 5.</strong> Combine like terms. Leave the bottom factored.</p>\\[\\displaystyle y'=\\frac{x^2-6x-1}{(x-3)^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(hi'=2x\\)</li><li>\\(lo'=1\\)</li><li>\\(y'=\\frac{x^2-6x-1}{(x-3)^2}\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(y'=\\dfrac{x^2-6x-1}{(x-3)^2}\\)</p>"
@@ -16367,6 +17411,10 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=x^2\\sin x\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Two functions multiplied: product rule.</p>\\[\\displaystyle y=\\underbrace{x^2}_{f}\\cdot\\underbrace{\\sin x}_{g}\\]<p><strong>Step 2.</strong> Product rule.</p>\\[\\displaystyle y'=f'g+fg'\\]<p><strong>Step 3.</strong> Plug in. Done.</p>\\[\\displaystyle y'=2x\\sin x+x^2\\cos x\\]<p><strong>What you found:</strong></p><ul><li>\\(f'=2x\\)</li><li>\\(g'=\\cos x\\)</li><li>\\(y'=2x\\sin x+x^2\\cos x\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(y'=2x\\sin x+x^2\\cos x\\)</p>"
        }
@@ -16408,6 +17456,10 @@ export const sections: Section[] = [
       "href": "3-3",
       "question": "Find \\(\\displaystyle\\lim_{x\\to0}\\frac{\\sin 5x}{x}\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Plugging in gives \\(\\frac00\\). The angle is \\(5x\\) but the bottom is \\(x\\): they don't match yet.</p>\\[\\displaystyle \\lim_{x\\to0}\\frac{\\sin5x}{x}\\]<p><strong>Step 2.</strong> Multiply top and bottom by 5. Now the bottom matches the angle. (\\(5\\cdot\\frac{1}{5x}=\\frac1x\\), so nothing changed.)</p>\\[\\displaystyle =\\lim_{x\\to0}5\\cdot\\frac{\\sin5x}{5x}\\]<p><strong>Step 3.</strong> As \\(x\\to0\\), \\(5x\\to0\\) too, so \\(\\frac{\\sin5x}{5x}\\to1\\).</p>\\[\\displaystyle =5\\cdot1=5\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{limit}:\\ 5\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(5\\)</p>"
@@ -16463,6 +17515,10 @@ export const sections: Section[] = [
       "href": "3-4",
       "question": "Differentiate \\(y=\\sin^2(3x)\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Rewrite so the layers are visible: <b>square</b> (outside) → <b>sin</b> (middle) → <b>3x</b> (inside).</p>\\[\\displaystyle y=\\big(\\sin(3x)\\big)^2\\]<p><strong>Step 2.</strong> Power rule on the square. The inside, \\(\\sin(3x)\\), stays exactly as it is.</p>\\[\\displaystyle \\text{outside: } 2\\sin(3x)\\]<p><strong>Step 3.</strong> Derivative of sin is cos. Its inside \\(3x\\) stays.</p>\\[\\displaystyle \\text{middle: } \\cos(3x)\\]<p><strong>Step 4.</strong> Derivative of \\(3x\\).</p>\\[\\displaystyle \\text{inside: } 3\\]<p><strong>Step 5.</strong> Multiply all the layers together.</p>\\[\\displaystyle y'=2\\sin(3x)\\cdot\\cos(3x)\\cdot3=6\\sin(3x)\\cos(3x)\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{outside}':\\ 2\\sin(3x)\\)</li><li>\\(\\text{middle}':\\ \\cos(3x)\\)</li><li>\\(\\text{inside}':\\ 3\\)</li><li>\\(y'=6\\sin(3x)\\cos(3x)\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(y'=6\\sin(3x)\\cos(3x)\\)</p>"
@@ -16545,6 +17601,10 @@ export const sections: Section[] = [
       "question": "Find \\(y'\\) if \\(x^2+xy+y^2=7\\), and the slope at \\((1,2)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Differentiate every term on both sides. \\(y\\) is secretly a function of \\(x\\).</p>\\[\\displaystyle \\frac{d}{dx}\\big(x^2\\big)+\\frac{d}{dx}\\big(xy\\big)+\\frac{d}{dx}\\big(y^2\\big)=\\frac{d}{dx}(7)\\]<p><strong>Step 2.</strong> \\(xy\\): product rule. \\(y^2\\): power rule then \\(\\times y'\\) (chain rule). \\(7\\to0\\).</p>\\[\\displaystyle 2x+\\big(1\\cdot y+x\\,y'\\big)+2y\\,y'=0\\]<p><strong>Step 3.</strong> Keep the \\(y'\\) terms on the left; move the rest right (signs flip).</p>\\[\\displaystyle x\\,y'+2y\\,y'=-2x-y\\]<p><strong>Step 4.</strong> Factor \\(y'\\) out.</p>\\[\\displaystyle y'(x+2y)=-(2x+y)\\]<p><strong>Step 5.</strong> Divide.</p>\\[\\displaystyle y'=-\\frac{2x+y}{x+2y}\\]<p><strong>Step 6.</strong> For a slope at a point, plug in <b>both</b> \\(x=1\\) and \\(y=2\\).</p>\\[\\displaystyle y'\\big|_{(1,2)}=-\\frac{2+2}{1+4}=-\\frac45\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=-\\frac{2x+y}{x+2y}\\)</li><li>\\(\\text{slope}:\\ -\\tfrac45\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(y'=-\\dfrac{2x+y}{x+2y}\\); slope at \\((1,2)\\) is \\(-\\tfrac45\\)</p>"
        }
@@ -16622,6 +17682,10 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=\\ln(x^2+1)+\\tan^{-1}(2x)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> A sum: do each term separately.</p>\\[\\displaystyle y=\\ln(x^2+1)+\\tan^{-1}(2x)\\]<p><strong>Step 2.</strong> \\(\\frac{u'}{u}\\) with \\(u=x^2+1\\), \\(u'=2x\\).</p>\\[\\displaystyle \\big(\\ln(x^2+1)\\big)'=\\frac{2x}{x^2+1}\\]<p><strong>Step 3.</strong> \\(\\frac{u'}{1+u^2}\\) with \\(u=2x\\): \\(u'=2\\), \\(u^2=4x^2\\). Square the 2 too.</p>\\[\\displaystyle \\big(\\tan^{-1}(2x)\\big)'=\\frac{2}{1+(2x)^2}=\\frac{2}{1+4x^2}\\]<p><strong>Step 4.</strong> Add them.</p>\\[\\displaystyle y'=\\frac{2x}{x^2+1}+\\frac{2}{1+4x^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{term 1}':\\ \\frac{2x}{x^2+1}\\)</li><li>\\(\\text{term 2}':\\ \\frac2{1+4x^2}\\)</li><li>\\(y'=\\frac{2x}{x^2+1}+\\frac{2}{1+4x^2}\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(y'=\\dfrac{2x}{x^2+1}+\\dfrac{2}{1+4x^2}\\)</p>"
        }
@@ -16669,6 +17733,10 @@ export const sections: Section[] = [
       "href": "3-6",
       "question": "Differentiate \\(y=x^x\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Neither the power rule nor the exponential rule fits, so take \\(\\ln\\) of both sides. The exponent comes down in front.</p>\\[\\displaystyle \\ln y=\\ln\\big(x^x\\big)=x\\ln x\\]<p><strong>Step 2.</strong> Left: \\((\\ln y)'=\\frac{y'}{y}\\). Right: product rule on \\(x\\cdot\\ln x\\).</p>\\[\\displaystyle \\frac{y'}{y}=1\\cdot\\ln x+x\\cdot\\frac1x\\]<p><strong>Step 3.</strong> Simplify.</p>\\[\\displaystyle \\frac{y'}{y}=\\ln x+1\\]<p><strong>Step 4.</strong> Multiply both sides by \\(y\\), and replace \\(y\\) with \\(x^x\\).</p>\\[\\displaystyle y'=x^x(\\ln x+1)\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=x^x(\\ln x+1)\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(y'=x^x(\\ln x+1)\\)</p>"
@@ -16750,6 +17818,10 @@ export const sections: Section[] = [
       "question": "A 10 ft ladder leans against a wall. The bottom slides away from the wall at 2 ft/s. How fast is the top sliding down when the bottom is 6 ft from the wall?",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> <b>Draw:</b> a right triangle. The wall and the ground are the legs, the ladder is the hypotenuse. The ladder's length never changes, so it's a number.</p>\\[\\begin{gathered}\\displaystyle x=\\text{bottom to wall}\\\\\\displaystyle y=\\text{height of top}\\\\\\displaystyle 10=\\text{ladder}\\end{gathered}\\]<p><strong>Step 2.</strong> <b>Equation:</b> Pythagoras.</p>\\[\\displaystyle x^2+y^2=10^2\\]<p><strong>Step 3.</strong> <b>Differentiate in \\(t\\)</b>. Each letter gets its own rate. \\(10^2=100\\) is a constant, so it becomes 0.</p>\\[\\displaystyle 2x\\frac{dx}{dt}+2y\\frac{dy}{dt}=0\\]<p><strong>Step 4.</strong> We need \\(y\\) at this moment. Get it from the <b>original</b> equation.</p>\\[\\displaystyle x=6\\Rightarrow y=\\sqrt{100-36}=8\\]<p><strong>Step 5.</strong> <b>Plug in</b> now that we've differentiated.</p>\\[\\displaystyle 2(6)(2)+2(8)\\frac{dy}{dt}=0\\ \\Rightarrow\\ 24+16\\frac{dy}{dt}=0\\]<p><strong>Step 6.</strong> Negative means \\(y\\) is shrinking: the top slides <b>down</b> at 1.5 ft/s.</p>\\[\\displaystyle \\frac{dy}{dt}=-\\frac{24}{16}=-\\frac32\\ \\text{ft/s}\\]<p><strong>What you found:</strong></p><ul><li>\\(dx/dt=2\\)</li><li>\\(\\text{want}:\\ dy/dt\\text{ at }x=6\\)</li><li>\\(x=6\\)</li><li>\\(y=8\\)</li><li>\\(dy/dt=-\\tfrac32\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(\\frac{dy}{dt}=-\\frac32\\) ft/s: the top slides down at 1.5 ft/s</p>"
        }
@@ -16814,6 +17886,10 @@ export const sections: Section[] = [
       "question": "Air is pumped into a spherical balloon at \\(100\\text{ cm}^3/\\text{s}\\). How fast is the radius growing when \\(r=25\\) cm?",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> <b>Given and want.</b> “Air pumped in at 100 cm³/s” is a rate of change of <b>volume</b>.</p>\\[\\begin{gathered}\\displaystyle \\frac{dV}{dt}=100\\\\\\displaystyle \\text{want }\\frac{dr}{dt}\\text{ at }r=25\\end{gathered}\\]<p><strong>Step 2.</strong> <b>Equation:</b> volume of a sphere.</p>\\[\\displaystyle V=\\frac43\\pi r^3\\]<p><strong>Step 3.</strong> <b>Differentiate in \\(t\\)</b>: \\(\\frac43\\cdot3=4\\), and \\(r^3\\to3r^2\\cdot\\frac{dr}{dt}\\).</p>\\[\\displaystyle \\frac{dV}{dt}=4\\pi r^2\\frac{dr}{dt}\\]<p><strong>Step 4.</strong> <b>Plug in.</b> \\(25^2=625\\), \\(4\\cdot625=2500\\).</p>\\[\\displaystyle 100=4\\pi(25)^2\\frac{dr}{dt}=2500\\pi\\frac{dr}{dt}\\]<p><strong>Step 5.</strong> Solve. Leave it exact on a no-calculator exam.</p>\\[\\displaystyle \\frac{dr}{dt}=\\frac{100}{2500\\pi}=\\frac{1}{25\\pi}\\ \\text{cm/s}\\]<p><strong>What you found:</strong></p><ul><li>\\(dV/dt=100\\)</li><li>\\(r=25\\)</li><li>\\(dr/dt=\\frac1{25\\pi}\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(\\frac{dr}{dt}=\\frac{1}{25\\pi}\\approx0.0127\\) cm/s</p>"
        }
@@ -16863,6 +17939,10 @@ export const sections: Section[] = [
       "href": "3-9",
       "question": "Water is poured at \\(2\\text{ m}^3/\\text{min}\\) into a cone-shaped tank, point down, 10 m tall with top radius 4 m. How fast is the water level rising when the water is 5 m deep?",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> <b>Given and want.</b> The water forms a smaller cone with radius \\(r\\) and height \\(h\\); both change.</p>\\[\\begin{gathered}\\displaystyle \\frac{dV}{dt}=2\\\\\\displaystyle \\text{want }\\frac{dh}{dt}\\text{ at }h=5\\end{gathered}\\]<p><strong>Step 2.</strong> <b>Similar triangles:</b> the water cone has the same shape as the tank. This lets us get rid of \\(r\\), because the problem gives nothing about \\(\\frac{dr}{dt}\\).</p>\\[\\displaystyle \\frac rh=\\frac{4}{10}\\ \\Rightarrow\\ r=\\frac{2h}{5}\\]<p><strong>Step 3.</strong> <b>Equation</b> with only \\(h\\) left. \\(\\big(\\frac{2h}{5}\\big)^2=\\frac{4h^2}{25}\\), times \\(\\frac13\\) gives \\(\\frac{4}{75}\\).</p>\\[\\displaystyle V=\\frac13\\pi r^2h=\\frac13\\pi\\Big(\\frac{2h}5\\Big)^2h=\\frac{4\\pi h^3}{75}\\]<p><strong>Step 4.</strong> <b>Differentiate in \\(t\\):</b> \\(\\frac{4}{75}\\cdot3=\\frac{4}{25}\\).</p>\\[\\displaystyle \\frac{dV}{dt}=\\frac{4\\pi h^2}{25}\\frac{dh}{dt}\\]<p><strong>Step 5.</strong> <b>Plug in</b> \\(h=5\\).</p>\\[\\displaystyle 2=\\frac{4\\pi(25)}{25}\\frac{dh}{dt}=4\\pi\\frac{dh}{dt}\\]<p><strong>Step 6.</strong> Solve.</p>\\[\\displaystyle \\frac{dh}{dt}=\\frac{2}{4\\pi}=\\frac{1}{2\\pi}\\ \\text{m/min}\\]<p><strong>What you found:</strong></p><ul><li>\\(dV/dt=2\\)</li><li>\\(h=5\\)</li><li>\\(r=\\tfrac{2h}5\\)</li><li>\\(dh/dt=\\frac1{2\\pi}\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(\\frac{dh}{dt}=\\frac{1}{2\\pi}\\approx0.16\\) m/min</p>"
@@ -16955,6 +18035,10 @@ export const sections: Section[] = [
       "question": "Find the critical numbers of \\(f(x)=x^3-6x^2+9x+1\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Step 1 is always the derivative.</p>\\[\\displaystyle f'(x)=3x^2-12x+9\\]<p><strong>Step 2.</strong> Factor: first the 3, then the quadratic (two numbers multiplying to 3 and adding to \\(-4\\): \\(-1\\) and \\(-3\\)).</p>\\[\\displaystyle =3(x^2-4x+3)=3(x-1)(x-3)\\]<p><strong>Step 3.</strong> Set each factor to 0. A polynomial's derivative exists everywhere, so there are no “undefined” critical numbers.</p>\\[\\begin{gathered}\\displaystyle f'=0\\ \\Rightarrow\\ x=1\\\\\\displaystyle 3\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{c.n.}:\\ 1,\\ 3\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(x=1\\) and \\(x=3\\)</p>"
        }
@@ -16986,6 +18070,10 @@ export const sections: Section[] = [
       "href": "4-1",
       "question": "Find the absolute max and min of \\(f(x)=x^3-6x^2+9x+1\\) on \\([-1,4]\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> From the previous example. Both are inside the interval, so both stay.</p>\\[\\begin{gathered}\\displaystyle \\text{critical numbers: }1\\\\\\displaystyle 3\\ \\in[-1,4]\\end{gathered}\\]<p><strong>Step 2.</strong> Add the two endpoints. These four \\(x\\)-values are the only places the max and min can be.</p>\\[\\begin{gathered}\\displaystyle \\text{check: }x=-1\\\\\\displaystyle 1\\\\\\displaystyle 3\\\\\\displaystyle 4\\end{gathered}\\]<p><strong>Step 3.</strong> Evaluate the <b>original</b> \\(f\\). Careful: \\((-1)^3=-1\\), \\(-6(-1)^2=-6\\), \\(9(-1)=-9\\).</p>\\[\\displaystyle f(-1)=-1-6-9+1=-15\\]<p><strong>Step 4.</strong> Next one.</p>\\[\\displaystyle f(1)=1-6+9+1=5\\]<p><strong>Step 5.</strong> Next one.</p>\\[\\displaystyle f(3)=27-54+27+1=1\\]<p><strong>Step 6.</strong> Last one.</p>\\[\\displaystyle f(4)=64-96+36+1=5\\]<p><strong>Step 7.</strong> Pick the biggest and smallest values. The max happens twice, and the min is at an <b>endpoint</b>; that's why you never skip the endpoints.</p>\\[\\begin{gathered}\\displaystyle \\max=5\\ (x=1,4)\\\\\\displaystyle \\min=-15\\ (x=-1)\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(f(-1)=-15\\)</li><li>\\(f(1)=5\\)</li><li>\\(f(3)=1\\)</li><li>\\(f(4)=5\\)</li><li>\\(\\max=5\\)</li><li>\\(\\min=-15\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">Max \\(5\\) (at \\(x=1\\) and \\(x=4\\)); min \\(-15\\) (at \\(x=-1\\))</p>"
@@ -17063,6 +18151,10 @@ export const sections: Section[] = [
       "question": "Find the critical numbers of \\(f(x)=x^{2/3}(x-5)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Distribute first; it's easier than the product rule. \\(x^{2/3}\\cdot x=x^{5/3}\\).</p>\\[\\displaystyle f=x^{5/3}-5x^{2/3}\\]<p><strong>Step 2.</strong> Power rule on each term.</p>\\[\\displaystyle f'=\\tfrac53x^{2/3}-\\tfrac{10}{3}x^{-1/3}\\]<p><strong>Step 3.</strong> Write as one fraction: a negative power goes to the bottom, and \\(x^{2/3}\\cdot x^{1/3}=x\\) on top.</p>\\[\\displaystyle f'=\\frac{5x-10}{3x^{1/3}}=\\frac{5(x-2)}{3x^{1/3}}\\]<p><strong>Step 4.</strong> Where the slope is 0.</p>\\[\\displaystyle \\text{top}=0:\\ x=2\\]<p><strong>Step 5.</strong> Where the slope doesn't exist (a sharp point). \\(f(0)=0\\) is defined, so 0 is in the domain and counts.</p>\\[\\displaystyle \\text{bottom}=0:\\ x=0\\]<p><strong>What you found:</strong></p><ul><li>\\(f'=\\frac{5(x-2)}{3x^{1/3}}\\)</li><li>\\(\\text{c.n.}:\\ 0,\\ 2\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(x=0\\) and \\(x=2\\)</p>"
        }
@@ -17136,6 +18228,10 @@ export const sections: Section[] = [
       "question": "Use a linear approximation to estimate \\(\\sqrt{4.1}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> 4 is close to 4.1, and \\(\\sqrt4=2\\) is easy.</p>\\[\\begin{gathered}\\displaystyle f(x)=\\sqrt x\\\\\\displaystyle a=4\\end{gathered}\\]<p><strong>Step 2.</strong> The height at \\(a\\).</p>\\[\\displaystyle f(4)=2\\]<p><strong>Step 3.</strong> The slope at \\(a\\).</p>\\[\\displaystyle f'(x)=\\frac{1}{2\\sqrt x}\\ \\Rightarrow\\ f'(4)=\\frac14\\]<p><strong>Step 4.</strong> Linearization formula.</p>\\[\\displaystyle L(x)=2+\\tfrac14(x-4)\\]<p><strong>Step 5.</strong> Plug in 4.1. The real value is 2.02485…, very close.</p>\\[\\displaystyle \\sqrt{4.1}\\approx L(4.1)=2+\\tfrac14(0.1)=2.025\\]<p><strong>What you found:</strong></p><ul><li>\\(f(a)=2\\)</li><li>\\(f'(a)=\\tfrac14\\)</li><li>\\(\\sqrt{4.1}=\\approx2.025\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(\\sqrt{4.1}\\approx2.025\\)</p>"
        }
@@ -17187,6 +18283,10 @@ export const sections: Section[] = [
       "href": "3-10",
       "question": "For \\(y=x^3\\), find \\(dy\\) and \\(\\Delta y\\) when \\(x=2\\) and \\(dx=\\Delta x=0.1\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Differential: derivative, then attach \\(dx\\).</p>\\[\\displaystyle dy=3x^2\\,dx\\]<p><strong>Step 2.</strong> Plug in \\(x=2\\), \\(dx=0.1\\).</p>\\[\\displaystyle dy=3(2)^2(0.1)=1.2\\]<p><strong>Step 3.</strong> Real change: new value minus old value.</p>\\[\\displaystyle \\Delta y=(2.1)^3-2^3=9.261-8\\]<p><strong>Step 4.</strong> Close to \\(dy\\), but not equal. The tangent line slightly underestimates because \\(x^3\\) curves upward here.</p>\\[\\displaystyle \\Delta y=1.261\\]<p><strong>What you found:</strong></p><ul><li>\\(dy=1.2\\)</li><li>\\(\\Delta y=1.261\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(dy=1.2\\), \\(\\Delta y=1.261\\)</p>"
@@ -17265,6 +18365,10 @@ export const sections: Section[] = [
       "question": "Find the exact value of \\(\\cosh(\\ln3)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Use the definition with \\(x=\\ln3\\).</p>\\[\\displaystyle \\cosh(\\ln3)=\\frac{e^{\\ln3}+e^{-\\ln3}}{2}\\]<p><strong>Step 2.</strong> \\(e\\) and \\(\\ln\\) undo each other. A minus in the exponent means “one over”.</p>\\[\\begin{gathered}\\displaystyle e^{\\ln3}=3\\\\\\displaystyle e^{-\\ln3}=\\frac13\\end{gathered}\\]<p><strong>Step 3.</strong> Simplify.</p>\\[\\displaystyle =\\frac{3+\\frac13}{2}=\\frac{10/3}{2}=\\frac53\\]<p><strong>What you found:</strong></p><ul><li>\\(\\cosh(\\ln3)=\\tfrac53\\)</li></ul></div>"
+       },
+       {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(\\tfrac53\\)</p>"
        }
@@ -17296,6 +18400,10 @@ export const sections: Section[] = [
       "href": "3-11",
       "question": "Differentiate \\(y=\\cosh(3x)+\\tanh(x^2)\\).",
       "reveals": [
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Table + chain rule. No minus sign for cosh.</p>\\[\\displaystyle \\big(\\cosh(3x)\\big)'=\\sinh(3x)\\cdot3\\]<p><strong>Step 2.</strong> \\((\\tanh u)'=\\operatorname{sech}^2u\\cdot u'\\) with \\(u=x^2\\).</p>\\[\\displaystyle \\big(\\tanh(x^2)\\big)'=\\operatorname{sech}^2(x^2)\\cdot2x\\]<p><strong>Step 3.</strong> Add.</p>\\[\\displaystyle y'=3\\sinh(3x)+2x\\operatorname{sech}^2(x^2)\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{term 1}':\\ 3\\sinh(3x)\\)</li><li>\\(\\text{term 2}':\\ 2x\\operatorname{sech}^2(x^2)\\)</li><li>\\(y'=3\\sinh(3x)+2x\\operatorname{sech}^2(x^2)\\)</li></ul></div>"
+       },
        {
         "label": "Show the answer",
         "html": "<p class=\"ans\">\\(y'=3\\sinh(3x)+2x\\operatorname{sech}^2(x^2)\\)</p>"
@@ -19546,6 +20654,10 @@ export const sections: Section[] = [
         "html": "<p>Denominator 6, so the reference angle is \\(\\frac\\pi6\\). Which quadrant?</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Reference angle \\(\\frac\\pi6\\).</p>\\[\\displaystyle \\tfrac{5\\pi}{6}=\\pi-\\tfrac{\\pi}{6}\\]<p><strong>Step 2.</strong> Between \\(\\frac\\pi2\\) and \\(\\pi\\). <b>S</b>tudents: sin is positive.</p>\\[\\displaystyle \\text{Quadrant II}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\sin\\tfrac{5\\pi}{6}=+\\sin\\tfrac\\pi6=\\tfrac12\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{ref}:\\ \\pi/6\\)</li><li>\\(\\text{sign}:\\ +\\)</li><li>\\(\\text{answer}:\\ 1/2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\frac{5\\pi}6\\) is just short of \\(\\pi\\): Quadrant II, where sin is positive. \\(\\sin\\frac\\pi6=\\frac12\\).</p><p class=\"ans\">\\(\\tfrac12\\)</p>"
        }
@@ -19592,6 +20704,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Reference angle \\(\\frac\\pi3\\). Is x positive or negative there?</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Just past \\(\\pi\\).</p>\\[\\displaystyle \\tfrac{4\\pi}{3}=\\pi+\\tfrac\\pi3\\]<p><strong>Step 2.</strong> cos is the x-coordinate, so negative.</p>\\[\\displaystyle \\text{Quadrant III: }x<0\\]<p><strong>Step 3.</strong> From the backwards list: \\(1,\\frac{\\sqrt3}2,\\frac{\\sqrt2}2,\\frac12,0\\).</p>\\[\\displaystyle \\cos\\tfrac\\pi3=\\tfrac12\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle \\cos\\tfrac{4\\pi}{3}=-\\tfrac12\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{ref}:\\ \\pi/3\\)</li><li>\\(\\text{sign}:\\ -\\)</li><li>\\(\\text{answer}:\\ -1/2\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -19646,6 +20762,10 @@ export const sections: Section[] = [
         "html": "<p>\\(\\tan=\\frac{y}{x}\\). Find the point first.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Reference \\(\\frac\\pi4\\), Quadrant II.</p>\\[\\displaystyle \\tfrac{3\\pi}{4}=\\pi-\\tfrac\\pi4\\]<p><strong>Step 2.</strong> Left half, so x is negative.</p>\\[\\begin{gathered}\\displaystyle (x,y)=\\Big(-\\tfrac{\\sqrt2}{2}\\\\\\displaystyle \\tfrac{\\sqrt2}{2}\\Big)\\end{gathered}\\]<p><strong>Step 3.</strong> Same size, opposite signs.</p>\\[\\displaystyle \\tan=\\frac{y}{x}=-1\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{point}:\\ (-\\tfrac{\\sqrt2}2,\\tfrac{\\sqrt2}2)\\)</li><li>\\(\\text{answer}:\\ -1\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>The point is \\(\\big(-\\frac{\\sqrt2}2,\\frac{\\sqrt2}2\\big)\\), so \\(\\tan=\\frac{\\sqrt2/2}{-\\sqrt2/2}=-1\\).</p><p class=\"ans\">\\(-1\\)</p>"
        }
@@ -19686,6 +20806,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(\\sec=\\frac1{\\cos}\\). Find \\(\\cos\\frac{5\\pi}3\\) first.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Just short of a full turn.</p>\\[\\displaystyle \\tfrac{5\\pi}{3}=2\\pi-\\tfrac\\pi3\\]<p><strong>Step 2.</strong> Quadrant IV: <b>C</b>alculus, cos is positive.</p>\\[\\displaystyle \\cos\\tfrac{5\\pi}{3}=+\\tfrac12\\]<p><strong>Step 3.</strong> Flip it.</p>\\[\\displaystyle \\sec=\\frac{1}{1/2}=2\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{ref}:\\ \\pi/3\\)</li><li>\\(\\text{answer}:\\ 2\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -19730,6 +20854,10 @@ export const sections: Section[] = [
         "html": "<p>A negative angle goes clockwise, into Quadrant IV.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Add \\(2\\pi\\) to get a positive angle.</p>\\[\\displaystyle -\\tfrac\\pi4\\ \\equiv\\ 2\\pi-\\tfrac\\pi4=\\tfrac{7\\pi}{4}\\]<p><strong>Step 2.</strong> Right and below the axis.</p>\\[\\begin{gathered}\\displaystyle (x,y)=\\Big(\\tfrac{\\sqrt2}2\\\\\\displaystyle -\\tfrac{\\sqrt2}2\\Big)\\end{gathered}\\]<p><strong>Step 3.</strong> The general rule: cos is even, sin is odd.</p>\\[\\begin{gathered}\\displaystyle \\cos(-\\theta)=\\cos\\theta\\\\\\displaystyle \\sin(-\\theta)=-\\sin\\theta\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\cos=\\sqrt2/2\\)</li><li>\\(\\sin=-\\sqrt2/2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(-\\frac\\pi4\\) lands at the same spot as \\(\\frac{7\\pi}4\\): the point \\(\\big(\\frac{\\sqrt2}2,-\\frac{\\sqrt2}2\\big)\\).</p><p class=\"ans\">\\(\\cos=\\tfrac{\\sqrt2}2,\\ \\sin=-\\tfrac{\\sqrt2}2\\)</p>"
        }
@@ -19770,6 +20898,10 @@ export const sections: Section[] = [
         "html": "<p>Bigger than \\(2\\pi\\)? Subtract \\(2\\pi=\\frac{8\\pi}4\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> A full lap brings you back to the same point.</p>\\[\\displaystyle \\tfrac{11\\pi}{4}-2\\pi=\\tfrac{3\\pi}{4}\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle \\tfrac{3\\pi}{4}:\\ \\text{ref }\\tfrac\\pi4\\\\\\displaystyle \\text{QII}\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\sin=+\\tfrac{\\sqrt2}{2}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{answer}:\\ \\sqrt2/2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\frac{11\\pi}4-\\frac{8\\pi}4=\\frac{3\\pi}4\\): Quadrant II, sin positive, \\(\\frac{\\sqrt2}2\\).</p><p class=\"ans\">\\(\\tfrac{\\sqrt2}{2}\\)</p>"
        }
@@ -19804,6 +20936,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>\\(\\csc=\\frac1{\\sin}\\) and \\(\\cot=\\frac{\\cos}{\\sin}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Reference \\(\\frac\\pi6\\). Quadrant III: y is negative.</p>\\[\\displaystyle \\sin\\tfrac{7\\pi}{6}=-\\tfrac12\\]<p><strong>Step 2.</strong> Flip it.</p>\\[\\displaystyle \\csc\\tfrac{7\\pi}{6}=-2\\]<p><strong>Step 3.</strong> The halves cancel.</p>\\[\\displaystyle \\cot\\tfrac\\pi3=\\frac{\\cos}{\\sin}=\\frac{1/2}{\\sqrt3/2}\\]<p><strong>Step 4.</strong> Rationalize the denominator.</p>\\[\\displaystyle =\\tfrac{1}{\\sqrt3}=\\tfrac{\\sqrt3}{3}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\csc=-2\\)</li><li>\\(\\cot=\\sqrt3/3\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -19852,6 +20988,10 @@ export const sections: Section[] = [
         "html": "<p>Where on the circle is the x-coordinate \\(\\frac12\\)? There are two places.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Reference angle from the list.</p>\\[\\displaystyle \\cos\\tfrac\\pi3=\\tfrac12\\]<p><strong>Step 2.</strong> x is positive on the right half.</p>\\[\\displaystyle \\cos>0\\text{ in QI and QIV}\\]<p><strong>Step 3.</strong></p>\\[\\begin{gathered}\\displaystyle x=\\tfrac\\pi3\\\\\\displaystyle 2\\pi-\\tfrac\\pi3=\\tfrac{5\\pi}{3}\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{ref}:\\ \\pi/3\\)</li><li>\\(x=\\pi/3,\\ 5\\pi/3\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(x=\\frac12\\) is a vertical line that crosses the circle twice: at \\(\\frac\\pi3\\) (QI) and \\(\\frac{5\\pi}3\\) (QIV).</p><p class=\"ans\">\\(x=\\tfrac\\pi3,\\ \\tfrac{5\\pi}3\\)</p>"
        }
@@ -19892,6 +21032,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Reference angle \\(\\frac\\pi3\\). sin is negative in which quadrants?</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\sin\\tfrac\\pi3=\\tfrac{\\sqrt3}{2}\\]<p><strong>Step 2.</strong> Below the x-axis.</p>\\[\\displaystyle \\sin<0\\text{ in QIII, QIV}\\]<p><strong>Step 3.</strong> QIII.</p>\\[\\displaystyle \\pi+\\tfrac\\pi3=\\tfrac{4\\pi}{3}\\]<p><strong>Step 4.</strong> QIV.</p>\\[\\displaystyle 2\\pi-\\tfrac\\pi3=\\tfrac{5\\pi}{3}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{ref}:\\ \\pi/3\\)</li><li>\\(\\theta=4\\pi/3,\\ 5\\pi/3\\)</li></ul></div>"
        },
        {
         "label": "Full solution",
@@ -19938,6 +21082,10 @@ export const sections: Section[] = [
        {
         "label": "Hint",
         "html": "<p>Inverse trig gives ONE angle: \\(\\cos^{-1}\\) in \\([0,\\pi]\\), \\(\\sin^{-1}\\) in \\([-\\frac\\pi2,\\frac\\pi2]\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Top half of the circle only.</p>\\[\\displaystyle \\cos^{-1}:\\ \\theta\\in[0,\\pi]\\]<p><strong>Step 2.</strong> Reference \\(\\frac\\pi3\\), Quadrant II.</p>\\[\\displaystyle x=-\\tfrac12\\ \\text{on top}\\Rightarrow\\theta=\\tfrac{2\\pi}{3}\\]<p><strong>Step 3.</strong> Right half only, measured from the positive x-axis.</p>\\[\\displaystyle \\sin^{-1}:\\ \\theta\\in[-\\tfrac\\pi2,\\tfrac\\pi2]\\]<p><strong>Step 4.</strong> Clockwise by \\(\\frac\\pi6\\).</p>\\[\\displaystyle y=-\\tfrac12\\ \\text{on right}\\Rightarrow\\theta=-\\tfrac\\pi6\\]<p><strong>What you found:</strong></p><ul><li>\\(\\cos^{-1}=2\\pi/3\\)</li><li>\\(\\sin^{-1}=-\\pi/6\\)</li></ul></div>"
        },
        {
         "label": "Full solution",

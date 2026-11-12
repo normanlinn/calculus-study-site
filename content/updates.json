@@ -1,6 +1,10 @@
 [
   {
     "date": "2026-11-12",
+    "text": "New: written walkthroughs on every problem with a step-through. Sign-chart problems get a full number-line walkthrough (walls, test points with the arithmetic shown, then the answers), and every other problem gets a Step 1, Step 2… walkthrough."
+  },
+  {
+    "date": "2026-11-12",
     "text": "§4.9 Antiderivatives is now part of Quiz 5: on the Quiz 5 tab, in the plan, the quick quiz, flashcards and cheat sheet, plus a new problem in the practice quiz (now 12 points)."
   },
   {

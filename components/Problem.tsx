@@ -70,7 +70,20 @@ function DebugToggle({ lines }: { lines: NonNullable<P["debug"]> }) {
 
 /** Solution steps appear one line at a time. */
 function StepLines({ html }: { html: string }) {
-  const parts = html.split(/(?=<p[\s>])/).map((s) => s.trim()).filter(Boolean);
+  // A written walkthrough comes wrapped in <div class="walk">; keep the wrapper whole and animate its pieces.
+  const WALK = '<div class="walk">';
+  const walk = html.startsWith(WALK) && html.endsWith("</div>");
+  const body = walk ? html.slice(WALK.length, -"</div>".length) : html;
+  const parts = body.split(walk ? /(?=<p[\s>]|<ul[\s>]|<pre[\s>])/ : /(?=<p[\s>])/).map((s) => s.trim()).filter(Boolean);
+  const lines = parts.map((p, i) => (
+    <motion.div
+      key={i}
+      style={{ minWidth: 0 }}
+      variants={{ hidden: { opacity: 0, x: -10 }, show: { opacity: 1, x: 0, transition: { duration: 0.3 } } }}
+      dangerouslySetInnerHTML={{ __html: p }}
+    />
+  ));
+  if (walk) return <div className="walk">{lines}</div>;
   return (
     <>
       {parts.map((p, i) => (

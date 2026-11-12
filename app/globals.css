@@ -768,3 +768,16 @@ html, body { overflow-x: clip; }
 .uc-next { margin-left: 8px; font-weight: 700; }
 @media (prefers-reduced-motion: reduce) { .uc-chips button:hover { transform: none; } }
 .uc-point { font: 13px var(--font-mono); color: var(--muted); } .uc-point .katex { font-size: 1.15rem; color: var(--ink); }
+
+/* written walkthroughs */
+.walk { display: grid; gap: 4px; min-width: 0; }
+.walk p { margin: 6px 0 2px; }
+.walk ul { margin: 2px 0 6px; padding-left: 1.2em; display: grid; gap: 6px; }
+.walk ul.tests { list-style: none; padding-left: 0; }
+.walk ul.tests li { padding: 6px 10px; border-left: 3px solid var(--line); background: var(--bg); border-radius: 0 8px 8px 0; }
+.walk em { font-style: normal; font-weight: 700; color: var(--accent); font-family: var(--font-display); }
+.walk pre.signline { font: 600 13px/1.35 var(--font-mono); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; margin: 6px 0; overflow-x: auto; white-space: pre; }
+.walk .math-display { overflow-x: auto; overflow-y: hidden; }
+.walk .math-display { margin: 2px 0; }
+.walk ul.tests .math-display { margin: 4px 0 0; }
+@media (max-width: 520px) { .walk .math-display .katex { font-size: .94em; } }
