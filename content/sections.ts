@@ -7566,7 +7566,7 @@ export const sections: Section[] = [
   "num": "Quiz 5 · Thu, Nov 12",
   "unit": "q5",
   "title": "Quiz 5 study plan",
-  "lede": "Quiz 5 covers §4.3, 4.4, 4.5 and 4.7. What's assigned, where each skill is taught, and a 2-day plan for starting from zero.",
+  "lede": "Quiz 5 covers §4.3, 4.4, 4.5, 4.7 and 4.9. What's assigned, where each skill is taught, and a 2-day plan.",
   "blocks": [
    {
     "type": "countdown",
@@ -7575,7 +7575,7 @@ export const sections: Section[] = [
    },
    {
     "type": "prose",
-    "html": "<p class=\"callout\"><strong>On the quiz:</strong> §4.3, §4.4, §4.5 and §4.7 only. §4.2, §4.8 and §4.9 are under the <strong>Final</strong> tab. The practice problems match each homework range but aren't copied from the textbook, so do some of the real assigned numbers too.</p>"
+    "html": "<p class=\"callout\"><strong>On the quiz:</strong> §4.3, §4.4, §4.5, §4.7 and §4.9. §4.2 and §4.8 are under the <strong>Final</strong> tab. The practice problems match each homework range but aren't copied from the textbook, so do some of the real assigned numbers too.</p>"
    },
    {
     "type": "heading",
@@ -7601,8 +7601,12 @@ export const sections: Section[] = [
       "html": "<span class=\"tag\">§4.7 · homework 3–7 odd, 25, 26, 27</span><p><strong><a href=\"/4-7/\">Optimization</a></strong></p><p class=\"note\">8 practice problems, each solved line by line: <a href=\"/4-7/#p47-1\">#1</a>, <a href=\"/4-7/#p47-2\">#2</a>, <a href=\"/4-7/#p47-3\">#3</a>, <a href=\"/4-7/#p47-4\">#4</a>, <a href=\"/4-7/#p47-5\">#5</a>, <a href=\"/4-7/#p47-6\">#6</a>, <a href=\"/4-7/#p47-7\">#7</a>, <a href=\"/4-7/#p47-8\">#8</a></p>"
      },
      {
+      "key": true,
+      "html": "<span class=\"tag\">§4.9 · homework 1–47 odd</span><p><strong><a href=\"/4-9/\">Antiderivatives</a></strong></p><p class=\"note\">10 practice problems, each solved line by line: <a href=\"/4-9/#p49-1\">#1</a>, <a href=\"/4-9/#p49-2\">#2</a>, <a href=\"/4-9/#p49-3\">#3</a>, <a href=\"/4-9/#p49-4\">#4</a>, <a href=\"/4-9/#p49-5\">#5</a>, <a href=\"/4-9/#p49-6\">#6</a>, <a href=\"/4-9/#p49-7\">#7</a>, <a href=\"/4-9/#p49-8\">#8</a>, <a href=\"/4-9/#p49-9\">#9</a>, <a href=\"/4-9/#p49-10\">#10</a></p>"
+     },
+     {
       "key": false,
-      "html": "<span class=\"tag\">Then test yourself</span><p><strong><a href=\"/quiz-5-practice/\">Quiz 5 practice quiz</a></strong>: 7 problems, 10 points, with a live score.</p>"
+      "html": "<span class=\"tag\">Then test yourself</span><p><strong><a href=\"/quiz-5-practice/\">Quiz 5 practice quiz</a></strong>: 8 problems, 12 points, with a live score.</p>"
      }
     ]
    },
@@ -7612,11 +7616,11 @@ export const sections: Section[] = [
    },
    {
     "type": "prose",
-    "html": "<p><strong>Day 1 (today)</strong></p><ol class=\"steps\"><li><a href=\"/4-3/\">§4.3</a>: read the rules, then do #1, #3, #6 and #8 with the debugger. Everything else builds on this.</li><li><a href=\"/4-4/\">§4.4</a>: l'Hospital. Do #1–#7, then the powers (#8–#10). Do #11 so you remember to check the form.</li><li>The <a href=\"/unit-circle/\">unit circle</a> drill for 5 minutes: trig limits and critical numbers need exact values.</li></ol><p><strong>Day 2 (the night before)</strong></p><ol class=\"steps\"><li><a href=\"/4-5/\">§4.5</a>: sketch #3 and #5 with the A–H checklist.</li><li><a href=\"/4-7/\">§4.7</a>: optimization #1, #4, #5, #7 and #8.</li><li>Take the <a href=\"/quiz-5-practice/\">practice quiz</a> in 30 minutes.</li><li>Read the <a href=\"/cheat-sheet/#quiz-5\">Quiz 5 cheat sheet</a>, then the <a href=\"/quick-quiz/\">quick quiz</a> and <a href=\"/memory-tricks/\">flashcards</a>.</li></ol>"
+    "html": "<p><strong>Day 1 (today)</strong></p><ol class=\"steps\"><li><a href=\"/4-3/\">§4.3</a>: read the rules, then do #1, #3, #6 and #8 with the debugger. Everything else builds on this.</li><li><a href=\"/4-4/\">§4.4</a>: l'Hospital. Do #1–#7, then the powers (#8–#10). Do #11 so you remember to check the form.</li><li>The <a href=\"/unit-circle/\">unit circle</a> drill for 5 minutes: trig limits and critical numbers need exact values.</li></ol><p><strong>Day 2 (the night before)</strong></p><ol class=\"steps\"><li><a href=\"/4-5/\">§4.5</a>: sketch #3 and #5 with the A–H checklist.</li><li><a href=\"/4-7/\">§4.7</a>: optimization #1, #4, #5, #7 and #8.</li><li><a href=\"/4-9/\">§4.9</a>: antiderivatives are quick points. Do #1–#9.</li><li>Take the <a href=\"/quiz-5-practice/\">practice quiz</a> in 30 minutes.</li><li>Read the <a href=\"/cheat-sheet/#quiz-5\">Quiz 5 cheat sheet</a>, then the <a href=\"/quick-quiz/\">quick quiz</a> and <a href=\"/memory-tricks/\">flashcards</a>.</li></ol>"
    },
    {
     "type": "heading",
-    "text": "The 5 things to memorize"
+    "text": "The 6 things to memorize"
    },
    {
     "type": "rules",
@@ -7640,6 +7644,10 @@ export const sections: Section[] = [
      {
       "key": true,
       "html": "<span class=\"tag\">Optimization</span><p>Objective + constraint → one variable → \\(f'=0\\) → justify max/min → answer with units.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Antiderivative</span><p>\\(x^n\\to\\frac{x^{n+1}}{n+1}\\), \\(\\frac1x\\to\\ln|x|\\), \\(\\sin\\to-\\cos\\), \\(\\cos\\to\\sin\\). Always \\(+C\\); use the given point to find it.</p>"
      }
     ]
    }
@@ -9984,12 +9992,531 @@ export const sections: Section[] = [
   ]
  },
  {
+  "id": "s49",
+  "slug": "4-9",
+  "num": "§4.9",
+  "unit": "q5",
+  "title": "Antiderivatives",
+  "lede": "Run the derivative rules backwards, add +C, and use initial conditions to find C.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p>An <strong>antiderivative</strong> of \\(f\\) is a function \\(F\\) with \\(F'=f\\). There are infinitely many, all differing by a constant, so the <em>general</em> antiderivative always ends in \\(+C\\). Check every answer by differentiating it.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Power rule backwards</span>\\[\\int x^n\\,dx\\to\\frac{x^{n+1}}{n+1}+C\\quad(n\\ne-1)\\]<p class=\"note\">Add 1 to the power, divide by the new power.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">The \\(n=-1\\) case</span><p>\\(\\frac1x\\to\\ln|x|+C\\)</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Exponentials and trig</span><p>\\(e^x\\to e^x\\) · \\(\\cos x\\to\\sin x\\) · \\(\\sin x\\to-\\cos x\\) · \\(\\sec^2x\\to\\tan x\\) · \\(\\sec x\\tan x\\to\\sec x\\)</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Inverse trig and hyperbolic</span><p>\\(\\frac1{1+x^2}\\to\\tan^{-1}x\\) · \\(\\frac1{\\sqrt{1-x^2}}\\to\\sin^{-1}x\\) · \\(\\cosh x\\to\\sinh x\\) · \\(\\sinh x\\to\\cosh x\\)</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Initial value problem</span><p>Find the general antiderivative with \\(+C\\), then plug in the given point to solve for \\(C\\). Given \\(f''\\)? Antidifferentiate twice: you get \\(C\\) and \\(D\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Motion</span><p>\\(a(t)\\to v(t)\\to s(t)\\). Use \\(v(0)\\) for the first constant and \\(s(0)\\) for the second.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p49-1",
+      "source": "Like §4.9 #1–21",
+      "href": null,
+      "question": "Find the most general antiderivative of \\(f(x)=4x^3-6x+2\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Term by term: add one to each power and divide by the new power.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{4x^4}{4}-\\frac{6x^2}{2}+2x+C\\).</p><p class=\"ans\">\\(F(x)=x^4-3x^2+2x+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "4x^3\\to\\frac{4x^4}{4}=x^4",
+        "why": "Power 3 becomes 4, divide by 4."
+       },
+       {
+        "code": "-6x\\to-\\frac{6x^2}{2}=-3x^2",
+        "why": ""
+       },
+       {
+        "code": "2\\to2x",
+        "why": "A constant picks up an \\(x\\)."
+       },
+       {
+        "code": "F=x^4-3x^2+2x+C",
+        "why": "Check: \\(F'=4x^3-6x+2\\). ✓",
+        "watch": [
+         [
+          "F",
+          "x^4-3x^2+2x+C"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-2",
+      "source": "Like §4.9 #1–21",
+      "href": null,
+      "question": "Find the most general antiderivative of \\(f(x)=\\sqrt x+\\dfrac1x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\sqrt x=x^{1/2}\\). And \\(\\frac1x\\) is the special case.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x^{1/2}\\to\\frac{x^{3/2}}{3/2}=\\tfrac23x^{3/2}\\), and \\(\\frac1x\\to\\ln|x|\\).</p><p class=\"ans\">\\(F(x)=\\tfrac23x^{3/2}+\\ln|x|+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x^{1/2}\\to\\frac{x^{3/2}}{3/2}",
+        "why": "\\(\\tfrac12+1=\\tfrac32\\)."
+       },
+       {
+        "code": "=\\tfrac23x^{3/2}",
+        "why": "Dividing by \\(\\tfrac32\\) is multiplying by \\(\\tfrac23\\)."
+       },
+       {
+        "code": "\\tfrac1x\\to\\ln|x|",
+        "why": "The power rule would divide by 0 here, so use the special case."
+       },
+       {
+        "code": "F=\\tfrac23x^{3/2}+\\ln|x|+C",
+        "why": "",
+        "watch": [
+         [
+          "F",
+          "\\tfrac23x^{3/2}+\\ln|x|+C"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-3",
+      "source": "Like §4.9 #1–21",
+      "href": null,
+      "question": "Find the most general antiderivative of \\(f(x)=\\dfrac{3}{x^2}-5\\sec^2x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\frac{3}{x^2}=3x^{-2}\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(3x^{-2}\\to\\frac{3x^{-1}}{-1}=-\\frac3x\\). \\(\\sec^2x\\to\\tan x\\).</p><p class=\"ans\">\\(F(x)=-\\dfrac3x-5\\tan x+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "3x^{-2}\\to\\frac{3x^{-1}}{-1}=-\\tfrac{3}{x}",
+        "why": "\\(-2+1=-1\\). Divide by \\(-1\\)."
+       },
+       {
+        "code": "-5\\sec^2x\\to-5\\tan x",
+        "why": "Because \\((\\tan x)'=\\sec^2x\\)."
+       },
+       {
+        "code": "F=-\\tfrac3x-5\\tan x+C",
+        "why": "",
+        "watch": [
+         [
+          "F",
+          "-3/x-5\\tan x+C"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-4",
+      "source": "Like §4.9 #1–21",
+      "href": null,
+      "question": "Find the most general antiderivative of \\(f(x)=\\dfrac{x^2+3x-1}{x}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>There's no quotient rule backwards. Split the fraction first.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{x^2+3x-1}{x}=x+3-\\frac1x\\to\\frac{x^2}{2}+3x-\\ln|x|+C\\).</p><p class=\"ans\">\\(F(x)=\\tfrac{x^2}{2}+3x-\\ln|x|+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{x^2}{x}+\\frac{3x}{x}-\\frac1x=x+3-\\frac1x",
+        "why": "Divide every term by \\(x\\)."
+       },
+       {
+        "code": "x\\to\\tfrac{x^2}{2},\\quad3\\to3x",
+        "why": ""
+       },
+       {
+        "code": "-\\tfrac1x\\to-\\ln|x|",
+        "why": ""
+       },
+       {
+        "code": "F=\\tfrac{x^2}2+3x-\\ln|x|+C",
+        "why": "",
+        "watch": [
+         [
+          "F",
+          "\\tfrac{x^2}2+3x-\\ln|x|+C"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-5",
+      "source": "Like §4.9 #1–21",
+      "href": null,
+      "question": "Find the most general antiderivative of \\(f(x)=2e^x+\\dfrac{4}{1+x^2}-\\sin x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\frac1{1+x^2}\\) is the derivative of \\(\\tan^{-1}x\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(2e^x\\to2e^x\\); \\(\\frac4{1+x^2}\\to4\\tan^{-1}x\\); \\(-\\sin x\\to\\cos x\\).</p><p class=\"ans\">\\(F(x)=2e^x+4\\tan^{-1}x+\\cos x+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "2e^x\\to2e^x",
+        "why": "\\(e^x\\) is its own antiderivative."
+       },
+       {
+        "code": "\\frac{4}{1+x^2}\\to4\\tan^{-1}x",
+        "why": "Inverse-tan pattern."
+       },
+       {
+        "code": "-\\sin x\\to\\cos x",
+        "why": "Since \\((\\cos x)'=-\\sin x\\). The signs are tricky, so check by differentiating."
+       },
+       {
+        "code": "F=2e^x+4\\tan^{-1}x+\\cos x+C",
+        "why": "",
+        "watch": [
+         [
+          "F",
+          "2e^x+4\\tan^{-1}x+\\cos x+C"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-6",
+      "source": "Like §4.9 #23–47",
+      "href": null,
+      "question": "Find \\(f\\) given \\(f'(x)=6x^2-4x\\) and \\(f(1)=5\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Antidifferentiate with \\(+C\\), then plug in \\(x=1\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f=2x^3-2x^2+C\\). \\(f(1)=2-2+C=5\\Rightarrow C=5\\).</p><p class=\"ans\">\\(f(x)=2x^3-2x^2+5\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=2x^3-2x^2+C",
+        "why": "\\(6\\cdot\\frac{x^3}{3}\\) and \\(4\\cdot\\frac{x^2}{2}\\)."
+       },
+       {
+        "code": "f(1)=2-2+C=5",
+        "why": "Use the condition."
+       },
+       {
+        "code": "C=5",
+        "why": "",
+        "watch": [
+         [
+          "C",
+          "5"
+         ]
+        ]
+       },
+       {
+        "code": "f(x)=2x^3-2x^2+5",
+        "why": "",
+        "watch": [
+         [
+          "f",
+          "2x^3-2x^2+5"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-7",
+      "source": "Like §4.9 #23–47",
+      "href": null,
+      "question": "Find \\(f\\) given \\(f''(x)=12x^2+6x\\), \\(f'(0)=1\\) and \\(f(0)=3\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Two steps: \\(f''\\to f'\\) (find \\(C\\)), then \\(f'\\to f\\) (find \\(D\\)).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=4x^3+3x^2+C\\), \\(f'(0)=C=1\\). \\(f=x^4+x^3+x+D\\), \\(f(0)=D=3\\).</p><p class=\"ans\">\\(f(x)=x^4+x^3+x+3\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=4x^3+3x^2+C",
+        "why": "First antiderivative."
+       },
+       {
+        "code": "f'(0)=C=1",
+        "why": "",
+        "watch": [
+         [
+          "C",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "f(x)=x^4+x^3+x+D",
+        "why": "Antidifferentiate \\(4x^3+3x^2+1\\)."
+       },
+       {
+        "code": "f(0)=D=3",
+        "why": "",
+        "watch": [
+         [
+          "D",
+          "3"
+         ]
+        ]
+       },
+       {
+        "code": "f(x)=x^4+x^3+x+3",
+        "why": "",
+        "watch": [
+         [
+          "f",
+          "x^4+x^3+x+3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-8",
+      "source": "Like §4.9 #23–47",
+      "href": null,
+      "question": "Find \\(f\\) given \\(f'(x)=2\\cos x+\\sec^2x\\) on \\(-\\frac\\pi2<x<\\frac\\pi2\\), and \\(f(\\frac\\pi3)=4\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f=2\\sin x+\\tan x+C\\). Then use \\(\\sin\\frac\\pi3=\\frac{\\sqrt3}2\\) and \\(\\tan\\frac\\pi3=\\sqrt3\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(\\tfrac\\pi3)=\\sqrt3+\\sqrt3+C=4\\Rightarrow C=4-2\\sqrt3\\).</p><p class=\"ans\">\\(f(x)=2\\sin x+\\tan x+4-2\\sqrt3\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=2\\sin x+\\tan x+C",
+        "why": ""
+       },
+       {
+        "code": "f(\\tfrac\\pi3)=2\\cdot\\tfrac{\\sqrt3}{2}+\\sqrt3+C",
+        "why": "Exact values."
+       },
+       {
+        "code": "2\\sqrt3+C=4\\Rightarrow C=4-2\\sqrt3",
+        "why": "",
+        "watch": [
+         [
+          "C",
+          "4-2\\sqrt3"
+         ]
+        ]
+       },
+       {
+        "code": "f=2\\sin x+\\tan x+4-2\\sqrt3",
+        "why": "",
+        "watch": [
+         [
+          "f",
+          "2\\sin x+\\tan x+4-2\\sqrt3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-9",
+      "source": "Like §4.9 · extra (motion)",
+      "href": null,
+      "question": "A particle has acceleration \\(a(t)=6t+2\\), with \\(v(0)=-3\\) and \\(s(0)=1\\). Find its position \\(s(t)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(v=\\int a\\), then \\(s=\\int v\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(v=3t^2+2t+C\\), \\(v(0)=C=-3\\). \\(s=t^3+t^2-3t+D\\), \\(s(0)=D=1\\).</p><p class=\"ans\">\\(s(t)=t^3+t^2-3t+1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "v(t)=3t^2+2t+C",
+        "why": "Antiderivative of the acceleration."
+       },
+       {
+        "code": "v(0)=C=-3",
+        "why": "",
+        "watch": [
+         [
+          "v",
+          "3t^2+2t-3"
+         ]
+        ]
+       },
+       {
+        "code": "s(t)=t^3+t^2-3t+D",
+        "why": "Antiderivative of the velocity."
+       },
+       {
+        "code": "s(0)=D=1",
+        "why": "",
+        "watch": [
+         [
+          "s",
+          "t^3+t^2-3t+1"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-10",
+      "source": "Like §4.9 · extra (motion)",
+      "href": null,
+      "question": "A stone is dropped from a 450 m cliff. Using \\(a=-9.8\\) m/s², find its height \\(s(t)\\) and when it hits the ground.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>“Dropped” means \\(v(0)=0\\). \\(s(0)=450\\).</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(v=-9.8t\\), \\(s=-4.9t^2+450\\). Ground: \\(4.9t^2=450\\Rightarrow t=\\sqrt{450/4.9}\\approx9.58\\) s.</p><p class=\"ans\">\\(s(t)=450-4.9t^2\\); hits the ground at \\(t\\approx9.58\\) s</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "v(t)=-9.8t+C,\\ v(0)=0",
+        "why": "Dropped, not thrown: starts at rest.",
+        "watch": [
+         [
+          "v",
+          "-9.8t"
+         ]
+        ]
+       },
+       {
+        "code": "s(t)=-4.9t^2+D,\\ s(0)=450",
+        "why": "\\(-9.8\\cdot\\frac{t^2}{2}\\).",
+        "watch": [
+         [
+          "s",
+          "450-4.9t^2"
+         ]
+        ]
+       },
+       {
+        "code": "450-4.9t^2=0",
+        "why": "Hits the ground when the height is 0."
+       },
+       {
+        "code": "t=\\sqrt{450/4.9}\\approx9.58\\text{ s}",
+        "why": "Take the positive root.",
+        "watch": [
+         [
+          "t",
+          "9.58\\text{ s}"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Forgetting \\(+C\\)",
+      "html": "<p>“Most general antiderivative” without \\(+C\\) loses marks.</p>"
+     },
+     {
+      "title": "Antiderivative of a product or quotient",
+      "html": "<p>There's no product rule backwards. Expand or split first (#4).</p>"
+     },
+     {
+      "title": "\\(\\sin\\) / \\(\\cos\\) signs",
+      "html": "<p>\\(\\int\\sin x=-\\cos x\\) and \\(\\int\\cos x=+\\sin x\\). Differentiate your answer to check.</p>"
+     }
+    ]
+   }
+  ],
+  "also": [
+   "later"
+  ]
+ },
+ {
   "id": "q5p",
   "slug": "quiz-5-practice",
   "num": "Quiz 5 · practice",
   "unit": "q5",
   "title": "Quiz 5 practice quiz",
-  "lede": "7 problems, 10 points, shaped like your quizzes: §4.3, 4.4, 4.5 and 4.7, slightly harder than the section practice.",
+  "lede": "8 problems, 12 points, shaped like your quizzes: §4.3, 4.4, 4.5, 4.7 and 4.9, slightly harder than the section practice.",
   "blocks": [
    {
     "type": "prose",
@@ -10025,9 +10552,13 @@ export const sections: Section[] = [
      {
       "id": "q5p-7",
       "points": 2
+     },
+     {
+      "id": "q5p-8",
+      "points": 2
      }
     ],
-    "total": 10
+    "total": 12
    },
    {
     "type": "heading",
@@ -10458,8 +10989,73 @@ export const sections: Section[] = [
     ]
    },
    {
+    "type": "heading",
+    "text": "§4.9 · Antiderivatives"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "q5p-8",
+      "source": "Like §4.9",
+      "href": "4-9",
+      "question": "<b>8.</b> (2 pts) Find \\(f\\) if \\(f''(x)=6x+4\\), \\(f'(0)=-2\\) and \\(f(0)=1\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Antidifferentiate twice. Use \\(f'(0)\\) for the first constant and \\(f(0)\\) for the second.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=3x^2+4x+C\\), \\(C=-2\\). \\(f=x^3+2x^2-2x+D\\), \\(D=1\\).</p><p class=\"ans\">\\(f(x)=x^3+2x^2-2x+1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=3x^2+4x+C",
+        "why": "\\(6\\cdot\\frac{x^2}{2}+4x\\)."
+       },
+       {
+        "code": "f'(0)=C=-2",
+        "why": "Use the first condition right away.",
+        "watch": [
+         [
+          "C",
+          "-2"
+         ]
+        ]
+       },
+       {
+        "code": "f(x)=x^3+2x^2-2x+D",
+        "why": "Antidifferentiate \\(3x^2+4x-2\\)."
+       },
+       {
+        "code": "f(0)=D=1",
+        "why": "",
+        "watch": [
+         [
+          "D",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "f(x)=x^3+2x^2-2x+1",
+        "why": "Check: \\(f''=6x+4\\) ✓",
+        "watch": [
+         [
+          "f",
+          "x^3+2x^2-2x+1"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
     "type": "prose",
-    "html": "<p class=\"callout\">Missed one? Go back to that section's page: <a href=\"/4-3/\">§4.3</a>, <a href=\"/4-4/\">§4.4</a>, <a href=\"/4-5/\">§4.5</a>, <a href=\"/4-7/\">§4.7</a>.</p>"
+    "html": "<p class=\"callout\">Missed one? Go back to that section's page: <a href=\"/4-3/\">§4.3</a>, <a href=\"/4-4/\">§4.4</a>, <a href=\"/4-5/\">§4.5</a>, <a href=\"/4-7/\">§4.7</a>, <a href=\"/4-9/\">§4.9</a>.</p>"
    }
   ]
  },
@@ -10525,7 +11121,7 @@ export const sections: Section[] = [
    },
    {
     "type": "prose",
-    "html": "<ol class=\"steps\"><li><strong>Now → Thu Nov 12:</strong> <a href=\"/quiz-5/\">Quiz 5</a> (§4.3, 4.4, 4.5, 4.7).</li><li><strong>Nov 13–19:</strong> as class covers them: <a href=\"/4-8/\">§4.8</a>, <a href=\"/4-9/\">§4.9</a>, <a href=\"/5-1/\">§5.1</a>, <a href=\"/5-2/\">§5.2</a>. One section a night, practice problems with the debugger.</li><li><strong>Nov 20–26:</strong> <a href=\"/5-3/\">§5.3</a>, <a href=\"/5-4/\">§5.4</a>, <a href=\"/5-5/\">§5.5</a>. Substitution is the biggest skill.</li><li><strong>Nov 27–30:</strong> Midterm 3 review: redo every §4.x and §5.x practice problem you didn't tick.</li><li><strong>Dec 2–4:</strong> Ch. 2–3 refresh: <a href=\"/crash-course/\">crash course</a>, <a href=\"/quiz-review/\">Quiz 3 &amp; 4 review</a>, <a href=\"/midterm-practice/\">Midterm 2 practice exam</a>.</li><li><strong>Dec 5:</strong> <a href=\"/final-practice/\">practice final</a>, 2 hours. Score it. Study the part you scored lowest on.</li><li><strong>Dec 6–7:</strong> retake the practice final (aim for 90+), <a href=\"/cheat-sheet/\">cheat sheet</a>, <a href=\"/unit-circle/\">unit circle</a> drill, <a href=\"/quick-quiz/\">quick quiz</a>.</li></ol>"
+    "html": "<ol class=\"steps\"><li><strong>Now → Thu Nov 12:</strong> <a href=\"/quiz-5/\">Quiz 5</a> (§4.3, 4.4, 4.5, 4.7, 4.9).</li><li><strong>Nov 13–19:</strong> as class covers them: <a href=\"/4-8/\">§4.8</a>, <a href=\"/5-1/\">§5.1</a>, <a href=\"/5-2/\">§5.2</a>. One section a night, practice problems with the debugger.</li><li><strong>Nov 20–26:</strong> <a href=\"/5-3/\">§5.3</a>, <a href=\"/5-4/\">§5.4</a>, <a href=\"/5-5/\">§5.5</a>. Substitution is the biggest skill.</li><li><strong>Nov 27–30:</strong> Midterm 3 review: redo every §4.x and §5.x practice problem you didn't tick.</li><li><strong>Dec 2–4:</strong> Ch. 2–3 refresh: <a href=\"/crash-course/\">crash course</a>, <a href=\"/quiz-review/\">Quiz 3 &amp; 4 review</a>, <a href=\"/midterm-practice/\">Midterm 2 practice exam</a>.</li><li><strong>Dec 5:</strong> <a href=\"/final-practice/\">practice final</a>, 2 hours. Score it. Study the part you scored lowest on.</li><li><strong>Dec 6–7:</strong> retake the practice final (aim for 90+), <a href=\"/cheat-sheet/\">cheat sheet</a>, <a href=\"/unit-circle/\">unit circle</a> drill, <a href=\"/quick-quiz/\">quick quiz</a>.</li></ol>"
    },
    {
     "type": "heading",
@@ -12058,526 +12654,6 @@ export const sections: Section[] = [
      {
       "title": "Degrees mode",
       "html": "<p>Trig in degrees gives completely wrong numbers. Switch the calculator to radians.</p>"
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "s49",
-  "slug": "4-9",
-  "num": "§4.9",
-  "unit": "later",
-  "title": "Antiderivatives",
-  "lede": "Run the derivative rules backwards, add +C, and use initial conditions to find C.",
-  "blocks": [
-   {
-    "type": "prose",
-    "html": "<p class=\"callout\"><strong>Not on Quiz 5</strong>, but it's on Midterm 3 and the final. Learn it after Quiz 5.</p>"
-   },
-   {
-    "type": "prose",
-    "html": "<p>An <strong>antiderivative</strong> of \\(f\\) is a function \\(F\\) with \\(F'=f\\). There are infinitely many, all differing by a constant, so the <em>general</em> antiderivative always ends in \\(+C\\). Check every answer by differentiating it.</p>"
-   },
-   {
-    "type": "rules",
-    "items": [
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Power rule backwards</span>\\[\\int x^n\\,dx\\to\\frac{x^{n+1}}{n+1}+C\\quad(n\\ne-1)\\]<p class=\"note\">Add 1 to the power, divide by the new power.</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">The \\(n=-1\\) case</span><p>\\(\\frac1x\\to\\ln|x|+C\\)</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Exponentials and trig</span><p>\\(e^x\\to e^x\\) · \\(\\cos x\\to\\sin x\\) · \\(\\sin x\\to-\\cos x\\) · \\(\\sec^2x\\to\\tan x\\) · \\(\\sec x\\tan x\\to\\sec x\\)</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Inverse trig and hyperbolic</span><p>\\(\\frac1{1+x^2}\\to\\tan^{-1}x\\) · \\(\\frac1{\\sqrt{1-x^2}}\\to\\sin^{-1}x\\) · \\(\\cosh x\\to\\sinh x\\) · \\(\\sinh x\\to\\cosh x\\)</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Initial value problem</span><p>Find the general antiderivative with \\(+C\\), then plug in the given point to solve for \\(C\\). Given \\(f''\\)? Antidifferentiate twice: you get \\(C\\) and \\(D\\).</p>"
-     },
-     {
-      "key": false,
-      "html": "<span class=\"tag\">Motion</span><p>\\(a(t)\\to v(t)\\to s(t)\\). Use \\(v(0)\\) for the first constant and \\(s(0)\\) for the second.</p>"
-     }
-    ]
-   },
-   {
-    "type": "heading",
-    "text": "Practice",
-    "id": "practice"
-   },
-   {
-    "type": "practice",
-    "items": [
-     {
-      "id": "p49-1",
-      "source": "Like §4.9 #1–21",
-      "href": null,
-      "question": "Find the most general antiderivative of \\(f(x)=4x^3-6x+2\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Term by term: add one to each power and divide by the new power.</p>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\frac{4x^4}{4}-\\frac{6x^2}{2}+2x+C\\).</p><p class=\"ans\">\\(F(x)=x^4-3x^2+2x+C\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "4x^3\\to\\frac{4x^4}{4}=x^4",
-        "why": "Power 3 becomes 4, divide by 4."
-       },
-       {
-        "code": "-6x\\to-\\frac{6x^2}{2}=-3x^2",
-        "why": ""
-       },
-       {
-        "code": "2\\to2x",
-        "why": "A constant picks up an \\(x\\)."
-       },
-       {
-        "code": "F=x^4-3x^2+2x+C",
-        "why": "Check: \\(F'=4x^3-6x+2\\). ✓",
-        "watch": [
-         [
-          "F",
-          "x^4-3x^2+2x+C"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p49-2",
-      "source": "Like §4.9 #1–21",
-      "href": null,
-      "question": "Find the most general antiderivative of \\(f(x)=\\sqrt x+\\dfrac1x\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(\\sqrt x=x^{1/2}\\). And \\(\\frac1x\\) is the special case.</p>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(x^{1/2}\\to\\frac{x^{3/2}}{3/2}=\\tfrac23x^{3/2}\\), and \\(\\frac1x\\to\\ln|x|\\).</p><p class=\"ans\">\\(F(x)=\\tfrac23x^{3/2}+\\ln|x|+C\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "x^{1/2}\\to\\frac{x^{3/2}}{3/2}",
-        "why": "\\(\\tfrac12+1=\\tfrac32\\)."
-       },
-       {
-        "code": "=\\tfrac23x^{3/2}",
-        "why": "Dividing by \\(\\tfrac32\\) is multiplying by \\(\\tfrac23\\)."
-       },
-       {
-        "code": "\\tfrac1x\\to\\ln|x|",
-        "why": "The power rule would divide by 0 here, so use the special case."
-       },
-       {
-        "code": "F=\\tfrac23x^{3/2}+\\ln|x|+C",
-        "why": "",
-        "watch": [
-         [
-          "F",
-          "\\tfrac23x^{3/2}+\\ln|x|+C"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p49-3",
-      "source": "Like §4.9 #1–21",
-      "href": null,
-      "question": "Find the most general antiderivative of \\(f(x)=\\dfrac{3}{x^2}-5\\sec^2x\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(\\frac{3}{x^2}=3x^{-2}\\).</p>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(3x^{-2}\\to\\frac{3x^{-1}}{-1}=-\\frac3x\\). \\(\\sec^2x\\to\\tan x\\).</p><p class=\"ans\">\\(F(x)=-\\dfrac3x-5\\tan x+C\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "3x^{-2}\\to\\frac{3x^{-1}}{-1}=-\\tfrac{3}{x}",
-        "why": "\\(-2+1=-1\\). Divide by \\(-1\\)."
-       },
-       {
-        "code": "-5\\sec^2x\\to-5\\tan x",
-        "why": "Because \\((\\tan x)'=\\sec^2x\\)."
-       },
-       {
-        "code": "F=-\\tfrac3x-5\\tan x+C",
-        "why": "",
-        "watch": [
-         [
-          "F",
-          "-3/x-5\\tan x+C"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p49-4",
-      "source": "Like §4.9 #1–21",
-      "href": null,
-      "question": "Find the most general antiderivative of \\(f(x)=\\dfrac{x^2+3x-1}{x}\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>There's no quotient rule backwards. Split the fraction first.</p>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\frac{x^2+3x-1}{x}=x+3-\\frac1x\\to\\frac{x^2}{2}+3x-\\ln|x|+C\\).</p><p class=\"ans\">\\(F(x)=\\tfrac{x^2}{2}+3x-\\ln|x|+C\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "\\frac{x^2}{x}+\\frac{3x}{x}-\\frac1x=x+3-\\frac1x",
-        "why": "Divide every term by \\(x\\)."
-       },
-       {
-        "code": "x\\to\\tfrac{x^2}{2},\\quad3\\to3x",
-        "why": ""
-       },
-       {
-        "code": "-\\tfrac1x\\to-\\ln|x|",
-        "why": ""
-       },
-       {
-        "code": "F=\\tfrac{x^2}2+3x-\\ln|x|+C",
-        "why": "",
-        "watch": [
-         [
-          "F",
-          "\\tfrac{x^2}2+3x-\\ln|x|+C"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p49-5",
-      "source": "Like §4.9 #1–21",
-      "href": null,
-      "question": "Find the most general antiderivative of \\(f(x)=2e^x+\\dfrac{4}{1+x^2}-\\sin x\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(\\frac1{1+x^2}\\) is the derivative of \\(\\tan^{-1}x\\).</p>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(2e^x\\to2e^x\\); \\(\\frac4{1+x^2}\\to4\\tan^{-1}x\\); \\(-\\sin x\\to\\cos x\\).</p><p class=\"ans\">\\(F(x)=2e^x+4\\tan^{-1}x+\\cos x+C\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "2e^x\\to2e^x",
-        "why": "\\(e^x\\) is its own antiderivative."
-       },
-       {
-        "code": "\\frac{4}{1+x^2}\\to4\\tan^{-1}x",
-        "why": "Inverse-tan pattern."
-       },
-       {
-        "code": "-\\sin x\\to\\cos x",
-        "why": "Since \\((\\cos x)'=-\\sin x\\). The signs are tricky, so check by differentiating."
-       },
-       {
-        "code": "F=2e^x+4\\tan^{-1}x+\\cos x+C",
-        "why": "",
-        "watch": [
-         [
-          "F",
-          "2e^x+4\\tan^{-1}x+\\cos x+C"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p49-6",
-      "source": "Like §4.9 #23–45",
-      "href": null,
-      "question": "Find \\(f\\) given \\(f'(x)=6x^2-4x\\) and \\(f(1)=5\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Antidifferentiate with \\(+C\\), then plug in \\(x=1\\).</p>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(f=2x^3-2x^2+C\\). \\(f(1)=2-2+C=5\\Rightarrow C=5\\).</p><p class=\"ans\">\\(f(x)=2x^3-2x^2+5\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(x)=2x^3-2x^2+C",
-        "why": "\\(6\\cdot\\frac{x^3}{3}\\) and \\(4\\cdot\\frac{x^2}{2}\\)."
-       },
-       {
-        "code": "f(1)=2-2+C=5",
-        "why": "Use the condition."
-       },
-       {
-        "code": "C=5",
-        "why": "",
-        "watch": [
-         [
-          "C",
-          "5"
-         ]
-        ]
-       },
-       {
-        "code": "f(x)=2x^3-2x^2+5",
-        "why": "",
-        "watch": [
-         [
-          "f",
-          "2x^3-2x^2+5"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p49-7",
-      "source": "Like §4.9 #23–45",
-      "href": null,
-      "question": "Find \\(f\\) given \\(f''(x)=12x^2+6x\\), \\(f'(0)=1\\) and \\(f(0)=3\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Two steps: \\(f''\\to f'\\) (find \\(C\\)), then \\(f'\\to f\\) (find \\(D\\)).</p>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(f'=4x^3+3x^2+C\\), \\(f'(0)=C=1\\). \\(f=x^4+x^3+x+D\\), \\(f(0)=D=3\\).</p><p class=\"ans\">\\(f(x)=x^4+x^3+x+3\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f'(x)=4x^3+3x^2+C",
-        "why": "First antiderivative."
-       },
-       {
-        "code": "f'(0)=C=1",
-        "why": "",
-        "watch": [
-         [
-          "C",
-          "1"
-         ]
-        ]
-       },
-       {
-        "code": "f(x)=x^4+x^3+x+D",
-        "why": "Antidifferentiate \\(4x^3+3x^2+1\\)."
-       },
-       {
-        "code": "f(0)=D=3",
-        "why": "",
-        "watch": [
-         [
-          "D",
-          "3"
-         ]
-        ]
-       },
-       {
-        "code": "f(x)=x^4+x^3+x+3",
-        "why": "",
-        "watch": [
-         [
-          "f",
-          "x^4+x^3+x+3"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p49-8",
-      "source": "Like §4.9 #23–45",
-      "href": null,
-      "question": "Find \\(f\\) given \\(f'(x)=2\\cos x+\\sec^2x\\) on \\(-\\frac\\pi2<x<\\frac\\pi2\\), and \\(f(\\frac\\pi3)=4\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(f=2\\sin x+\\tan x+C\\). Then use \\(\\sin\\frac\\pi3=\\frac{\\sqrt3}2\\) and \\(\\tan\\frac\\pi3=\\sqrt3\\).</p>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(f(\\tfrac\\pi3)=\\sqrt3+\\sqrt3+C=4\\Rightarrow C=4-2\\sqrt3\\).</p><p class=\"ans\">\\(f(x)=2\\sin x+\\tan x+4-2\\sqrt3\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(x)=2\\sin x+\\tan x+C",
-        "why": ""
-       },
-       {
-        "code": "f(\\tfrac\\pi3)=2\\cdot\\tfrac{\\sqrt3}{2}+\\sqrt3+C",
-        "why": "Exact values."
-       },
-       {
-        "code": "2\\sqrt3+C=4\\Rightarrow C=4-2\\sqrt3",
-        "why": "",
-        "watch": [
-         [
-          "C",
-          "4-2\\sqrt3"
-         ]
-        ]
-       },
-       {
-        "code": "f=2\\sin x+\\tan x+4-2\\sqrt3",
-        "why": "",
-        "watch": [
-         [
-          "f",
-          "2\\sin x+\\tan x+4-2\\sqrt3"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p49-9",
-      "source": "Like §4.9 #47–53",
-      "href": null,
-      "question": "A particle has acceleration \\(a(t)=6t+2\\), with \\(v(0)=-3\\) and \\(s(0)=1\\). Find its position \\(s(t)\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(v=\\int a\\), then \\(s=\\int v\\).</p>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(v=3t^2+2t+C\\), \\(v(0)=C=-3\\). \\(s=t^3+t^2-3t+D\\), \\(s(0)=D=1\\).</p><p class=\"ans\">\\(s(t)=t^3+t^2-3t+1\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "v(t)=3t^2+2t+C",
-        "why": "Antiderivative of the acceleration."
-       },
-       {
-        "code": "v(0)=C=-3",
-        "why": "",
-        "watch": [
-         [
-          "v",
-          "3t^2+2t-3"
-         ]
-        ]
-       },
-       {
-        "code": "s(t)=t^3+t^2-3t+D",
-        "why": "Antiderivative of the velocity."
-       },
-       {
-        "code": "s(0)=D=1",
-        "why": "",
-        "watch": [
-         [
-          "s",
-          "t^3+t^2-3t+1"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p49-10",
-      "source": "Like §4.9 #47–53",
-      "href": null,
-      "question": "A stone is dropped from a 450 m cliff. Using \\(a=-9.8\\) m/s², find its height \\(s(t)\\) and when it hits the ground.",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>“Dropped” means \\(v(0)=0\\). \\(s(0)=450\\).</p>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(v=-9.8t\\), \\(s=-4.9t^2+450\\). Ground: \\(4.9t^2=450\\Rightarrow t=\\sqrt{450/4.9}\\approx9.58\\) s.</p><p class=\"ans\">\\(s(t)=450-4.9t^2\\); hits the ground at \\(t\\approx9.58\\) s</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "v(t)=-9.8t+C,\\ v(0)=0",
-        "why": "Dropped, not thrown: starts at rest.",
-        "watch": [
-         [
-          "v",
-          "-9.8t"
-         ]
-        ]
-       },
-       {
-        "code": "s(t)=-4.9t^2+D,\\ s(0)=450",
-        "why": "\\(-9.8\\cdot\\frac{t^2}{2}\\).",
-        "watch": [
-         [
-          "s",
-          "450-4.9t^2"
-         ]
-        ]
-       },
-       {
-        "code": "450-4.9t^2=0",
-        "why": "Hits the ground when the height is 0."
-       },
-       {
-        "code": "t=\\sqrt{450/4.9}\\approx9.58\\text{ s}",
-        "why": "Take the positive root.",
-        "watch": [
-         [
-          "t",
-          "9.58\\text{ s}"
-         ]
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "type": "heading",
-    "text": "Traps"
-   },
-   {
-    "type": "traps",
-    "items": [
-     {
-      "title": "Forgetting \\(+C\\)",
-      "html": "<p>“Most general antiderivative” without \\(+C\\) loses marks.</p>"
-     },
-     {
-      "title": "Antiderivative of a product or quotient",
-      "html": "<p>There's no product rule backwards. Expand or split first (#4).</p>"
-     },
-     {
-      "title": "\\(\\sin\\) / \\(\\cos\\) signs",
-      "html": "<p>\\(\\int\\sin x=-\\cos x\\) and \\(\\int\\cos x=+\\sin x\\). Differentiate your answer to check.</p>"
      }
     ]
    }
@@ -18308,8 +18384,8 @@ export const sections: Section[] = [
       "explain": "<p>\\(x_2=2-\\frac{-1}{4}=2.25\\).</p>"
      },
      {
-      "question": "<b>2.</b> The most general antiderivative of \\(\\cos x+3x^2\\) is…",
-      "unit": "later",
+      "question": "<b>11.</b> The most general antiderivative of \\(\\cos x+3x^2\\) is…",
+      "unit": "q5",
       "options": [
        {
         "html": "\\(-\\sin x+x^3+C\\)",
@@ -18331,8 +18407,8 @@ export const sections: Section[] = [
       "explain": "<p>\\(\\cos\\to\\sin\\), \\(3x^2\\to x^3\\), and don't forget \\(+C\\).</p>"
      },
      {
-      "question": "<b>3.</b> If \\(f'(x)=\\frac1x\\) and \\(f(1)=2\\), then \\(f(x)=\\)",
-      "unit": "later",
+      "question": "<b>12.</b> If \\(f'(x)=\\frac1x\\) and \\(f(1)=2\\), then \\(f(x)=\\)",
+      "unit": "q5",
       "options": [
        {
         "html": "\\(\\ln|x|+2\\)",
@@ -18354,8 +18430,8 @@ export const sections: Section[] = [
       "explain": "<p>\\(f=\\ln|x|+C\\), and \\(\\ln1=0\\), so \\(C=2\\).</p>"
      },
      {
-      "question": "<b>4.</b> \\(a(t)=4\\), \\(v(0)=1\\). Then \\(v(t)=\\)",
-      "unit": "later",
+      "question": "<b>13.</b> \\(a(t)=4\\), \\(v(0)=1\\). Then \\(v(t)=\\)",
+      "unit": "q5",
       "options": [
        {
         "html": "\\(4t\\)",
@@ -18377,7 +18453,7 @@ export const sections: Section[] = [
       "explain": "<p>\\(v=4t+C\\), \\(C=v(0)=1\\).</p>"
      },
      {
-      "question": "<b>5.</b> \\(R_2\\) for \\(f(x)=x\\) on \\([0,2]\\) is…",
+      "question": "<b>2.</b> \\(R_2\\) for \\(f(x)=x\\) on \\([0,2]\\) is…",
       "unit": "later",
       "options": [
        {
@@ -18400,7 +18476,7 @@ export const sections: Section[] = [
       "explain": "<p>\\(\\Delta x=1\\), heights \\(f(1)+f(2)=3\\).</p>"
      },
      {
-      "question": "<b>6.</b> \\(\\int_0^2(x-1)\\,dx=\\)",
+      "question": "<b>3.</b> \\(\\int_0^2(x-1)\\,dx=\\)",
       "unit": "later",
       "options": [
        {
@@ -18423,7 +18499,7 @@ export const sections: Section[] = [
       "explain": "<p>Equal triangles below and above the axis cancel.</p>"
      },
      {
-      "question": "<b>7.</b> \\(\\frac{d}{dx}\\int_0^{x}\\cos(t^2)\\,dt=\\)",
+      "question": "<b>4.</b> \\(\\frac{d}{dx}\\int_0^{x}\\cos(t^2)\\,dt=\\)",
       "unit": "later",
       "options": [
        {
@@ -18446,7 +18522,7 @@ export const sections: Section[] = [
       "explain": "<p>FTC 1: plug in the upper limit.</p>"
      },
      {
-      "question": "<b>8.</b> \\(\\frac{d}{dx}\\int_1^{x^2}\\frac{dt}{t}=\\)",
+      "question": "<b>5.</b> \\(\\frac{d}{dx}\\int_1^{x^2}\\frac{dt}{t}=\\)",
       "unit": "later",
       "options": [
        {
@@ -18469,7 +18545,7 @@ export const sections: Section[] = [
       "explain": "<p>\\(\\frac1{x^2}\\cdot2x=\\frac2x\\).</p>"
      },
      {
-      "question": "<b>9.</b> \\(\\int_0^1 3x^2\\,dx=\\)",
+      "question": "<b>6.</b> \\(\\int_0^1 3x^2\\,dx=\\)",
       "unit": "later",
       "options": [
        {
@@ -18492,7 +18568,7 @@ export const sections: Section[] = [
       "explain": "<p>\\([x^3]_0^1=1\\).</p>"
      },
      {
-      "question": "<b>10.</b> For \\(\\int 2x\\cos(x^2)\\,dx\\), the best \\(u\\) is…",
+      "question": "<b>7.</b> For \\(\\int 2x\\cos(x^2)\\,dx\\), the best \\(u\\) is…",
       "unit": "later",
       "options": [
        {
@@ -18515,7 +18591,7 @@ export const sections: Section[] = [
       "explain": "<p>The inside function, whose derivative \\(2x\\) is sitting right there.</p>"
      },
      {
-      "question": "<b>11.</b> \\(\\int e^{3x}\\,dx=\\)",
+      "question": "<b>8.</b> \\(\\int e^{3x}\\,dx=\\)",
       "unit": "later",
       "options": [
        {
@@ -18538,7 +18614,7 @@ export const sections: Section[] = [
       "explain": "<p>Divide by the inside constant.</p>"
      },
      {
-      "question": "<b>12.</b> \\(\\int_{-1}^{1}x^5\\,dx=\\)",
+      "question": "<b>9.</b> \\(\\int_{-1}^{1}x^5\\,dx=\\)",
       "unit": "later",
       "options": [
        {
@@ -18898,22 +18974,22 @@ export const sections: Section[] = [
      {
       "front": "\\(\\int x^n\\)",
       "back": "\\(\\dfrac{x^{n+1}}{n+1}+C\\ (n\\ne-1)\\)",
-      "tag": "Later · 4.9"
+      "tag": "Q5 · 4.9"
      },
      {
       "front": "\\(\\int\\frac1x\\)",
       "back": "\\(\\ln|x|+C\\)",
-      "tag": "Later · 4.9"
+      "tag": "Q5 · 4.9"
      },
      {
       "front": "\\(\\int\\sin x\\) / \\(\\int\\cos x\\)",
       "back": "\\(-\\cos x+C\\) / \\(\\sin x+C\\)",
-      "tag": "Later · 4.9"
+      "tag": "Q5 · 4.9"
      },
      {
       "front": "\\(\\int\\sec^2x\\) / \\(\\int\\frac1{1+x^2}\\)",
       "back": "\\(\\tan x+C\\) / \\(\\tan^{-1}x+C\\)",
-      "tag": "Later · 4.9"
+      "tag": "Q5 · 4.9"
      },
      {
       "front": "\\(\\dfrac{d}{dx}\\sin x\\)",
@@ -19933,11 +20009,11 @@ export const sections: Section[] = [
   "slug": "cheat-sheet",
   "num": "Review",
   "title": "One-page cheat sheet",
-  "lede": "Everything to memorize for Quiz 5 (§4.3–4.7), plus Quiz 3 & 4 and later sections. Tap a card to open the full explanation with examples.",
+  "lede": "Everything to memorize for Quiz 5 (§4.3–4.9), plus Quiz 3 & 4 and later sections. Tap a card to open the full explanation with examples.",
   "blocks": [
    {
     "type": "heading",
-    "text": "Quiz 5 · §4.3, 4.4, 4.5, 4.7",
+    "text": "Quiz 5 · §4.3, 4.4, 4.5, 4.7, 4.9",
     "id": "quiz-5"
    },
    {
@@ -19991,6 +20067,13 @@ export const sections: Section[] = [
       "details": "<ol class='steps'><li>Draw and name the variables.</li><li><strong>Objective:</strong> what to maximize or minimize.</li><li><strong>Constraint:</strong> the fixed fact. Solve it for one variable and substitute.</li><li>Domain (closed interval? check the endpoints too).</li><li>\\(f'=0\\), then justify: \\(f''\\) sign or a first-derivative sign change.</li><li>Answer what was asked, with units.</li></ol><p><strong>Classics:</strong> sum fixed, so max product when the numbers are equal. Fence along a river, \\(2x+y=L\\): \\(x=\\frac L4\\). Rectangle in a circle: a square.</p>",
       "href": "/4-7/",
       "linkLabel": "Open §4.7"
+     },
+     {
+      "title": "Antiderivatives (4.9)",
+      "html": "\\[x^n\\to\\frac{x^{n+1}}{n+1}+C\\]<p class='note'>\\(\\frac1x\\to\\ln|x|\\) · \\(\\sin\\to-\\cos\\) · \\(\\cos\\to\\sin\\) · always \\(+C\\)</p>",
+      "details": "<p><strong>Table:</strong></p><ul><li>\\(e^x\\to e^x\\)</li><li>\\(\\sec^2x\\to\\tan x\\), \\(\\sec x\\tan x\\to\\sec x\\)</li><li>\\(\\frac1{1+x^2}\\to\\tan^{-1}x\\), \\(\\frac1{\\sqrt{1-x^2}}\\to\\sin^{-1}x\\)</li><li>\\(\\cosh x\\to\\sinh x\\), \\(\\sinh x\\to\\cosh x\\)</li></ul><p><strong>Split fractions first:</strong> \\(\\frac{x^2+3x-1}{x}=x+3-\\frac1x\\).</p><p><strong>Initial value:</strong> antidifferentiate with \\(+C\\), then plug in the point. Given \\(f''\\)? Two constants, \\(C\\) and \\(D\\).</p><p><strong>Motion:</strong> \\(a\\to v\\to s\\), using \\(v(0)\\) then \\(s(0)\\).</p>",
+      "href": "/4-9/",
+      "linkLabel": "Open §4.9"
      }
     ]
    },
@@ -20095,13 +20178,6 @@ export const sections: Section[] = [
       "details": "<p><strong>Setup:</strong> \\(\\cos x=x\\Rightarrow f=\\cos x-x\\). \\(\\sqrt[3]{30}\\Rightarrow f=x^3-30\\).</p><p><strong>Example:</strong> \\(f=x^2-2\\), \\(x_1=1\\): \\(x_2=1.5\\), \\(x_3\\approx1.416667\\), \\(x_4\\approx1.414216\\).</p><p><strong>Fails when</strong> \\(f'(x_n)=0\\) (horizontal tangent), or when a bad guess jumps to a different root.</p><p>Keep 6+ decimals between steps and round only at the end.</p>",
       "href": "/4-8/",
       "linkLabel": "Open §4.8"
-     },
-     {
-      "title": "Antiderivatives (4.9)",
-      "html": "\\[x^n\\to\\frac{x^{n+1}}{n+1}+C\\]<p class='note'>\\(\\frac1x\\to\\ln|x|\\) · \\(\\sin\\to-\\cos\\) · \\(\\cos\\to\\sin\\) · always \\(+C\\)</p>",
-      "details": "<p><strong>Table:</strong></p><ul><li>\\(e^x\\to e^x\\)</li><li>\\(\\sec^2x\\to\\tan x\\), \\(\\sec x\\tan x\\to\\sec x\\)</li><li>\\(\\frac1{1+x^2}\\to\\tan^{-1}x\\), \\(\\frac1{\\sqrt{1-x^2}}\\to\\sin^{-1}x\\)</li><li>\\(\\cosh x\\to\\sinh x\\), \\(\\sinh x\\to\\cosh x\\)</li></ul><p><strong>Split fractions first:</strong> \\(\\frac{x^2+3x-1}{x}=x+3-\\frac1x\\).</p><p><strong>Initial value:</strong> antidifferentiate with \\(+C\\), then plug in the point. Given \\(f''\\)? Two constants, \\(C\\) and \\(D\\).</p><p><strong>Motion:</strong> \\(a\\to v\\to s\\), using \\(v(0)\\) then \\(s(0)\\).</p>",
-      "href": "/4-9/",
-      "linkLabel": "Open §4.9"
      },
      {
       "title": "Riemann sums (5.1)",

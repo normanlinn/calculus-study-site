@@ -40,8 +40,8 @@ export default function Home() {
         <HeroTitle />
         <HeroFade delay={0.35}>
           <p className="lede">
-            Quiz 5 covers §4.3, 4.4, 4.5 and 4.7: the shape of a graph, l&apos;Hospital&apos;s Rule, curve sketching and optimization.
-            Every section has a short lesson and practice problems you can step through line by line, then a 10-point practice quiz.
+            Quiz 5 covers §4.3, 4.4, 4.5, 4.7 and 4.9: the shape of a graph, l&apos;Hospital&apos;s Rule, curve sketching, optimization and antiderivatives.
+            Every section has a short lesson and practice problems you can step through line by line, then a 12-point practice quiz.
           </p>
         </HeroFade>
         <HeroFade delay={0.45}>
@@ -54,13 +54,13 @@ export default function Home() {
         <HeroFade delay={0.5}>
           <div className="cta-row">
             <Link className="cta" href="/quiz-5/">Quiz 5 plan →</Link>
-            <Link className="cta ghost" href="/quiz-5-practice/">Practice quiz (10 pts)</Link>
+            <Link className="cta ghost" href="/quiz-5-practice/">Practice quiz (12 pts)</Link>
             <Link className="cta ghost" href="/unit-circle/">Unit circle</Link>
             <Ring ids={unitProblemIds("q5")} />
           </div>
         </HeroFade>
       </section>
-      <h2 className="unit-head">Quiz 5 · §4.3, 4.4, 4.5, 4.7 <span>Thu, Nov 12</span></h2>
+      <h2 className="unit-head">Quiz 5 · §4.3–4.5, 4.7, 4.9 <span>Thu, Nov 12</span></h2>
       <Cards list={q5} />
       <h2 className="unit-head">Midterm 3 &amp; final · §4.8–5.5 <span>Dec 1 · Dec 8</span></h2>
       <Cards list={later} />
