@@ -52,8 +52,48 @@ export const sections: Section[] = [
         "html": "<p>Expand \\(f(x+h)=(x+h)^2+3(x+h)\\). After subtracting \\(f(x)\\), every term left has an \\(h\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Write the definition first. It earns marks on its own.</p>\\[\\displaystyle f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}\\]<p><strong>Step 2.</strong> Replace every \\(x\\) with \\(x+h\\).</p>\\[\\displaystyle f(x+h)=(x+h)^2+3(x+h)\\]<p><strong>Step 3.</strong> Expand \\((x+h)^2=x^2+2xh+h^2\\).</p>\\[\\displaystyle =x^2+2xh+h^2+3x+3h\\]<p><strong>Step 4.</strong> Subtract \\(x^2+3x\\). Everything left has an \\(h\\).</p>\\[\\displaystyle f(x+h)-f(x)=2xh+h^2+3h\\]<p><strong>Step 5.</strong> Factor out \\(h\\).</p>\\[\\displaystyle =h(2x+h+3)\\]<p><strong>Step 6.</strong> Cancel \\(h\\). Now it's safe to let \\(h\\to0\\).</p>\\[\\displaystyle \\frac{h(2x+h+3)}{h}=2x+h+3\\]<p><strong>Step 7.</strong> Set \\(h=0\\).</p>\\[\\displaystyle f'(x)=2x+3\\]<p><strong>What you found:</strong></p><ul><li>\\(f'(x)=2x+3\\)</li></ul></div>"
+       },
+       {
         "label": "Step-by-step solution",
         "html": "<p>\\(f(x+h)=x^2+2xh+h^2+3x+3h\\)</p>\n<p>\\(f(x+h)-f(x)=2xh+h^2+3h=h(2x+h+3)\\)</p>\n<p>\\(\\dfrac{f(x+h)-f(x)}{h}=2x+h+3\\xrightarrow{h\\to0}2x+3\\)</p>\n<p class=\"ans\">\\(f'(x)=2x+3\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}",
+        "why": "Write the definition first. It earns marks on its own."
+       },
+       {
+        "code": "f(x+h)=(x+h)^2+3(x+h)",
+        "why": "Replace every \\(x\\) with \\(x+h\\)."
+       },
+       {
+        "code": "=x^2+2xh+h^2+3x+3h",
+        "why": "Expand \\((x+h)^2=x^2+2xh+h^2\\)."
+       },
+       {
+        "code": "f(x+h)-f(x)=2xh+h^2+3h",
+        "why": "Subtract \\(x^2+3x\\). Everything left has an \\(h\\)."
+       },
+       {
+        "code": "=h(2x+h+3)",
+        "why": "Factor out \\(h\\)."
+       },
+       {
+        "code": "\\frac{h(2x+h+3)}{h}=2x+h+3",
+        "why": "Cancel \\(h\\). Now it's safe to let \\(h\\to0\\)."
+       },
+       {
+        "code": "f'(x)=2x+3",
+        "why": "Set \\(h=0\\).",
+        "watch": [
+         [
+          "f'(x)",
+          "2x+3"
+         ]
+        ]
        }
       ]
      },
@@ -64,8 +104,32 @@ export const sections: Section[] = [
       "question": "Find the slope of the tangent line to \\(f(x)=x^2-4x\\) at \\(x=3\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The slope of the tangent line at \\(x=3\\) is the derivative at 3.</p>\\[\\displaystyle \\text{slope}=f'(3)\\]<p><strong>Step 2.</strong> Power rule on each term.</p>\\[\\displaystyle f'(x)=2x-4\\]<p><strong>Step 3.</strong> Plug in 3.</p>\\[\\displaystyle f'(3)=6-4=2\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{slope}:\\ 2\\)</li></ul></div>"
+       },
+       {
         "label": "Step-by-step solution",
         "html": "<p>The tangent slope is \\(f'(3)\\). \\(f'(x)=2x-4\\) (by the definition, or the power rule).</p>\n<p class=\"ans\">\\(f'(3)=6-4=2\\)</p><p class=\"why\">Slope or full line? See <a href=\"/3-1/#slope-vs-line\">slope of the tangent vs. the tangent line</a> on the 3.1 page.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\text{slope}=f'(3)",
+        "why": "The slope of the tangent line at \\(x=3\\) is the derivative at 3."
+       },
+       {
+        "code": "f'(x)=2x-4",
+        "why": "Power rule on each term."
+       },
+       {
+        "code": "f'(3)=6-4=2",
+        "why": "Plug in 3.",
+        "watch": [
+         [
+          "\\text{slope}",
+          "2"
+         ]
+        ]
        }
       ]
      },
@@ -80,8 +144,40 @@ export const sections: Section[] = [
         "html": "<p>Split \\(|x-2|\\) into two cases: \\(x\\ge2\\) and \\(x\\lt2\\). Find the slope of each piece. Do they agree where the pieces meet?</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Split the absolute value where the inside is 0.</p>\\[\\displaystyle |x-2|=\\begin{cases}x-2,&x\\ge2\\\\2-x,&x<2\\end{cases}\\]<p><strong>Step 2.</strong> Each piece is a line, so its slope is constant.</p>\\[\\begin{gathered}\\displaystyle x>2:\\ f'=1,\\\\\\displaystyle x<2:\\ f'=-1\\end{gathered}\\]<p><strong>Step 3.</strong> Test \\(x=2\\) with the definition: \\(f(2+h)-f(2)=|h|\\).</p>\\[\\displaystyle f'(2)=\\lim_{h\\to0}\\frac{|h|}{h}\\]<p><strong>Step 4.</strong> The two sides disagree, so the limit doesn't exist.</p>\\[\\begin{gathered}\\displaystyle \\lim_{h\\to0^+}\\tfrac{|h|}{h}=1\\\\\\displaystyle \\lim_{h\\to0^-}\\tfrac{|h|}{h}=-1\\end{gathered}\\]<p><strong>Step 5.</strong> A sharp corner: slope \\(-1\\) coming in, \\(+1\\) going out. \\(f\\) is still continuous there.</p>\\[\\displaystyle f'(2)\\ \\text{does not exist}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{not diff. at}:\\ x=2\\)</li></ul></div>"
+       },
+       {
         "label": "Step-by-step solution",
         "html": "<p><strong>Step 1. Rewrite the absolute value as two pieces.</strong> \\(|x-2|\\) means “the distance from \\(x\\) to 2”, so it is never negative. When \\(x\\lt 2\\), \\(x-2\\) is negative, so we flip its sign: \\(-(x-2)=2-x\\).</p>\n<div>\\[f(x)=|x-2|=\\begin{cases} x-2, & x\\ge 2\\\\ 2-x, & x\\lt 2 \\end{cases}\\]</div>\n<p><strong>Step 2. Picture it.</strong> Each piece is a straight line, so the graph is a V with its point (vertex) at \\((2,0)\\).</p>\n<svg class=\"mini-graph\" viewBox=\"0 0 320 190\" role=\"img\" aria-label=\"Graph of y = |x - 2|: a V shape with its corner at (2, 0). Slope -1 on the left, +1 on the right.\">\n<line x1=\"10\" y1=\"160\" x2=\"310\" y2=\"160\" stroke=\"var(--axis)\"/>\n<line x1=\"70\" y1=\"10\" x2=\"70\" y2=\"180\" stroke=\"var(--axis)\"/>\n<polyline points=\"10,40 170,160 310,55\" fill=\"none\" stroke=\"var(--accent)\" stroke-width=\"3.5\" stroke-linejoin=\"miter\"/>\n<line x1=\"90\" y1=\"70\" x2=\"150\" y2=\"115\" stroke=\"var(--deriv)\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/>\n<line x1=\"190\" y1=\"115\" x2=\"250\" y2=\"70\" stroke=\"var(--tangent)\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/>\n<circle cx=\"170\" cy=\"160\" r=\"6\" fill=\"var(--ink)\"/>\n<text x=\"176\" y=\"182\" fill=\"var(--ink)\" font-family=\"var(--font-mono)\" font-size=\"12\">(2, 0) corner</text>\n<text x=\"40\" y=\"100\" fill=\"var(--deriv)\" font-family=\"var(--font-mono)\" font-size=\"12\" font-weight=\"600\">slope −1</text>\n<text x=\"236\" y=\"100\" fill=\"var(--tangent)\" font-family=\"var(--font-mono)\" font-size=\"12\" font-weight=\"600\">slope +1</text>\n<text x=\"74\" y=\"22\" fill=\"var(--muted)\" font-family=\"var(--font-mono)\" font-size=\"11\">y</text>\n<text x=\"300\" y=\"176\" fill=\"var(--muted)\" font-family=\"var(--font-mono)\" font-size=\"11\">x</text>\n</svg>\n<p><strong>Step 3. Find the slope on each side.</strong> Right of 2, \\(f(x)=x-2\\) has slope \\(+1\\). Left of 2, \\(f(x)=2-x\\) has slope \\(-1\\). So \\(f'(x)=1\\) for \\(x\\gt 2\\) and \\(f'(x)=-1\\) for \\(x\\lt 2\\).</p>\n<p><strong>Step 4. Test \\(x=2\\) with the limit definition.</strong> Since \\(f(2)=0\\):</p>\n<div>\\[f'(2)=\\lim_{h\\to0}\\frac{f(2+h)-f(2)}{h}=\\lim_{h\\to0}\\frac{|h|-0}{h}=\\lim_{h\\to0}\\frac{|h|}{h}\\]</div>\n<p><strong>Step 5. Check each side separately.</strong> When \\(h\\gt 0\\), \\(|h|=h\\), so \\(\\frac{|h|}{h}=1\\). When \\(h\\lt 0\\), \\(|h|=-h\\), so \\(\\frac{|h|}{h}=-1\\).</p>\n<div>\\[\\lim_{h\\to0^+}\\frac{|h|}{h}=1\\]\\[\\lim_{h\\to0^-}\\frac{|h|}{h}=-1\\]</div>\n<p><strong>Step 6. Conclude.</strong> The two one-sided limits are different, so the limit does not exist, so \\(f'(2)\\) does not exist. In picture terms, at a sharp corner there is no single tangent line: the curve comes in with slope −1 and leaves with slope +1.</p>\n<p><strong>Step 7. Why it is still continuous.</strong> As \\(x\\to2\\) from either side, \\(|x-2|\\to0=f(2)\\). There is no hole or jump, just a sharp point. This is the key lesson: <em>continuous does not guarantee differentiable</em>. (The reverse is true: differentiable always means continuous.)</p>\n<p class=\"ans\">Answer: \\(f\\) is not differentiable at \\(x=2\\). The left-hand slope is \\(-1\\) and the right-hand slope is \\(+1\\), so \\(\\lim_{h\\to0}\\frac{f(2+h)-f(2)}{h}\\) does not exist (the graph has a corner). \\(f\\) is continuous at 2. Everywhere else \\(f'(x)=\\pm1\\).</p>\n<p class=\"why\">How to spot these on a test: for \\(|g(x)|\\), set the inside equal to zero (\\(x-2=0\\)). That is where the corner is. Try “|x| (corner)” in Lab 2 on the 2.8 page to watch f′ jump from −1 to +1.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "|x-2|=\\begin{cases}x-2,&x\\ge2\\\\2-x,&x<2\\end{cases}",
+        "why": "Split the absolute value where the inside is 0."
+       },
+       {
+        "code": "x>2:\\ f'=1,\\qquad x<2:\\ f'=-1",
+        "why": "Each piece is a line, so its slope is constant."
+       },
+       {
+        "code": "f'(2)=\\lim_{h\\to0}\\frac{|h|}{h}",
+        "why": "Test \\(x=2\\) with the definition: \\(f(2+h)-f(2)=|h|\\)."
+       },
+       {
+        "code": "\\lim_{h\\to0^+}\\tfrac{|h|}{h}=1,\\quad\\lim_{h\\to0^-}\\tfrac{|h|}{h}=-1",
+        "why": "The two sides disagree, so the limit doesn't exist."
+       },
+       {
+        "code": "f'(2)\\ \\text{does not exist}",
+        "why": "A sharp corner: slope \\(-1\\) coming in, \\(+1\\) going out. \\(f\\) is still continuous there.",
+        "watch": [
+         [
+          "\\text{not diff. at}",
+          "x=2"
+         ]
+        ]
        }
       ]
      },
@@ -92,8 +188,36 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=7x^5-4x^3+6x-9\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Bring the 5 down and multiply: \\(7\\cdot5=35\\).</p>\\[\\displaystyle (7x^5)'=35x^4\\]<p><strong>Step 2.</strong> \\(-4\\cdot3=-12\\).</p>\\[\\displaystyle (-4x^3)'=-12x^2\\]<p><strong>Step 3.</strong> A constant's derivative is 0.</p>\\[\\begin{gathered}\\displaystyle (6x)'=6\\\\\\displaystyle (-9)'=0\\end{gathered}\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle y'=35x^4-12x^2+6\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=35x^4-12x^2+6\\)</li></ul></div>"
+       },
+       {
         "label": "Step-by-step solution",
         "html": "<p>Power rule term by term: \\(7\\cdot5x^4\\), \\(-4\\cdot3x^2\\), \\(6\\cdot1\\), and the constant \\(-9\\) becomes 0.</p>\n<p class=\"ans\">\\(y'=35x^4-12x^2+6\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "(7x^5)'=35x^4",
+        "why": "Bring the 5 down and multiply: \\(7\\cdot5=35\\)."
+       },
+       {
+        "code": "(-4x^3)'=-12x^2",
+        "why": "\\(-4\\cdot3=-12\\)."
+       },
+       {
+        "code": "(6x)'=6,\\quad(-9)'=0",
+        "why": "A constant's derivative is 0."
+       },
+       {
+        "code": "y'=35x^4-12x^2+6",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "35x^4-12x^2+6"
+         ]
+        ]
        }
       ]
      },
@@ -108,8 +232,40 @@ export const sections: Section[] = [
         "html": "<p>Three different rules: \\(e^x\\to e^x\\); \\(2^x\\to2^x\\ln2\\); rewrite \\(\\frac8{x^2}=8x^{-2}\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Rewrite \\(\\frac{8}{x^2}=8x^{-2}\\) so the power rule works.</p>\\[\\displaystyle y=5e^x+3\\cdot2^x-8x^{-2}\\]<p><strong>Step 2.</strong> \\(e^x\\) is its own derivative.</p>\\[\\displaystyle (5e^x)'=5e^x\\]<p><strong>Step 3.</strong> \\((a^x)'=a^x\\ln a\\).</p>\\[\\displaystyle (3\\cdot2^x)'=3\\cdot2^x\\ln2\\]<p><strong>Step 4.</strong> \\(-8\\cdot(-2)=16\\); the power drops to \\(-3\\).</p>\\[\\displaystyle (-8x^{-2})'=16x^{-3}\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle y'=5e^x+3\\cdot2^x\\ln2+\\frac{16}{x^3}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=5e^x+3\\cdot2^x\\ln2+16/x^3\\)</li></ul></div>"
+       },
+       {
         "label": "Step-by-step solution",
         "html": "<p>\\((5e^x)'=5e^x\\)</p>\n<p>\\((3\\cdot2^x)'=3\\cdot2^x\\ln2\\)</p>\n<p>\\((-8x^{-2})'=-8\\cdot(-2)x^{-3}=16x^{-3}\\)</p>\n<p class=\"ans\">\\(y'=5e^x+3\\cdot2^x\\ln2+\\dfrac{16}{x^3}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=5e^x+3\\cdot2^x-8x^{-2}",
+        "why": "Rewrite \\(\\frac{8}{x^2}=8x^{-2}\\) so the power rule works."
+       },
+       {
+        "code": "(5e^x)'=5e^x",
+        "why": "\\(e^x\\) is its own derivative."
+       },
+       {
+        "code": "(3\\cdot2^x)'=3\\cdot2^x\\ln2",
+        "why": "\\((a^x)'=a^x\\ln a\\)."
+       },
+       {
+        "code": "(-8x^{-2})'=16x^{-3}",
+        "why": "\\(-8\\cdot(-2)=16\\); the power drops to \\(-3\\)."
+       },
+       {
+        "code": "y'=5e^x+3\\cdot2^x\\ln2+\\frac{16}{x^3}",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "5e^x+3\\cdot2^x\\ln2+16/x^3"
+         ]
+        ]
        }
       ]
      },
@@ -120,8 +276,52 @@ export const sections: Section[] = [
       "question": "Find the tangent line to \\(y=x^3-2x\\) at \\(x=1\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The point on the curve: \\((1,-1)\\).</p>\\[\\displaystyle y(1)=1-2=-1\\]<p><strong>Step 2.</strong> Power rule.</p>\\[\\displaystyle y'=3x^2-2\\]<p><strong>Step 3.</strong> The slope at \\(x=1\\).</p>\\[\\displaystyle y'(1)=3-2=1\\]<p><strong>Step 4.</strong> Point-slope form.</p>\\[\\displaystyle y-(-1)=1(x-1)\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle y=x-2\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{point}:\\ (1,-1)\\)</li><li>\\(m=1\\)</li><li>\\(\\text{line}:\\ y=x-2\\)</li></ul></div>"
+       },
+       {
         "label": "Step-by-step solution",
         "html": "<p>Point: \\(y(1)=1-2=-1\\), so \\((1,-1)\\).</p>\n<p>Slope: \\(y'=3x^2-2\\), so \\(y'(1)=1\\).</p>\n<p>\\(y-(-1)=1(x-1)\\)</p>\n<p class=\"ans\">\\(y=x-2\\)</p><p class=\"why\">Slope or full line? See <a href=\"/3-1/#slope-vs-line\">slope of the tangent vs. the tangent line</a> on the 3.1 page.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y(1)=1-2=-1",
+        "why": "The point on the curve: \\((1,-1)\\).",
+        "watch": [
+         [
+          "\\text{point}",
+          "(1,-1)"
+         ]
+        ]
+       },
+       {
+        "code": "y'=3x^2-2",
+        "why": "Power rule."
+       },
+       {
+        "code": "y'(1)=3-2=1",
+        "why": "The slope at \\(x=1\\).",
+        "watch": [
+         [
+          "m",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "y-(-1)=1(x-1)",
+        "why": "Point-slope form."
+       },
+       {
+        "code": "y=x-2",
+        "why": "",
+        "watch": [
+         [
+          "\\text{line}",
+          "y=x-2"
+         ]
+        ]
        }
       ]
      },
@@ -132,8 +332,40 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=(x^2+1)(x^3-2x)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Name the two factors and their derivatives.</p>\\[\\begin{gathered}\\displaystyle f=x^2+1\\\\\\displaystyle f'=2x;\\\\\\displaystyle g=x^3-2x\\\\\\displaystyle g'=3x^2-2\\end{gathered}\\]<p><strong>Step 2.</strong> Product rule.</p>\\[\\displaystyle y'=f'g+fg'\\]<p><strong>Step 3.</strong> Plug in.</p>\\[\\displaystyle =2x(x^3-2x)+(x^2+1)(3x^2-2)\\]<p><strong>Step 4.</strong> Multiply out both products.</p>\\[\\displaystyle =2x^4-4x^2+3x^4-2x^2+3x^2-2\\]<p><strong>Step 5.</strong> Combine like terms. Check: expanding first gives \\(y=x^5-x^3-2x\\), the same derivative.</p>\\[\\displaystyle y'=5x^4-3x^2-2\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=5x^4-3x^2-2\\)</li></ul></div>"
+       },
+       {
         "label": "Step-by-step solution",
         "html": "<p>Product rule: first \\(=x^2+1\\) (derivative \\(2x\\)), second \\(=x^3-2x\\) (derivative \\(3x^2-2\\)).</p>\n<p>\\(y'=2x(x^3-2x)+(x^2+1)(3x^2-2)\\)</p>\n<p>Simplified: \\(2x^4-4x^2+3x^4-2x^2+3x^2-2\\)</p>\n<p class=\"ans\">\\(y'=2x(x^3-2x)+(x^2+1)(3x^2-2)=5x^4-3x^2-2\\)</p>\n<p class=\"why\">Check by expanding first: \\(y=x^5-x^3-2x\\), so \\(y'=5x^4-3x^2-2\\). ✓</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f=x^2+1,\\ f'=2x;\\quad g=x^3-2x,\\ g'=3x^2-2",
+        "why": "Name the two factors and their derivatives."
+       },
+       {
+        "code": "y'=f'g+fg'",
+        "why": "Product rule."
+       },
+       {
+        "code": "=2x(x^3-2x)+(x^2+1)(3x^2-2)",
+        "why": "Plug in."
+       },
+       {
+        "code": "=2x^4-4x^2+3x^4-2x^2+3x^2-2",
+        "why": "Multiply out both products."
+       },
+       {
+        "code": "y'=5x^4-3x^2-2",
+        "why": "Combine like terms. Check: expanding first gives \\(y=x^5-x^3-2x\\), the same derivative.",
+        "watch": [
+         [
+          "y'",
+          "5x^4-3x^2-2"
+         ]
+        ]
        }
       ]
      },
@@ -148,8 +380,44 @@ export const sections: Section[] = [
         "html": "<p>It's a fraction with \\(x\\) on top and bottom, so use the Quotient Rule: \\(\\left(\\frac{f}{g}\\right)'=\\frac{g\\,f'-f\\,g'}{g^2}\\). Write down the four pieces before plugging in.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Top and its derivative.</p>\\[\\begin{gathered}\\displaystyle \\text{high}=x^2+3\\\\\\displaystyle \\text{d-high}=2x\\end{gathered}\\]<p><strong>Step 2.</strong> Bottom and its derivative.</p>\\[\\begin{gathered}\\displaystyle \\text{low}=x-1\\\\\\displaystyle \\text{d-low}=1\\end{gathered}\\]<p><strong>Step 3.</strong> Low d-high minus high d-low, over low squared.</p>\\[\\displaystyle y'=\\frac{(x-1)(2x)-(x^2+3)(1)}{(x-1)^2}\\]<p><strong>Step 4.</strong> The minus hits both terms of \\(x^2+3\\).</p>\\[\\displaystyle =\\frac{2x^2-2x-x^2-3}{(x-1)^2}\\]<p><strong>Step 5.</strong> Combine like terms.</p>\\[\\displaystyle =\\frac{x^2-2x-3}{(x-1)^2}\\]<p><strong>Step 6.</strong> Factor the top (optional).</p>\\[\\displaystyle =\\frac{(x-3)(x+1)}{(x-1)^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=\\frac{(x-3)(x+1)}{(x-1)^2}\\)</li></ul></div>"
+       },
+       {
         "label": "Step-by-step solution",
         "html": "<p><strong>Step 1. Spot the rule.</strong> The function is one expression divided by another, and both contain \\(x\\). You can't split it into simple powers, because the bottom has two terms. So this is a Quotient Rule problem.</p>\n<p><strong>Step 2. Name the four pieces.</strong> Call the top “high” and the bottom “low”:</p>\n<div>\\[\\text{high}=x^2+3\\]\\[\\text{d-high}=2x\\]\\[\\text{low}=x-1\\]\\[\\text{d-low}=1\\]</div>\n<p class=\"why\">The 3 in \\(x^2+3\\) is a constant, so its derivative is 0. That is why d-high is just \\(2x\\).</p>\n<p><strong>Step 3. Say the rule, then fill it in.</strong> “Low d-high minus high d-low, over low squared”:</p>\n<div>\\[y'=\\frac{\\text{low}\\cdot\\text{d-high}-\\text{high}\\cdot\\text{d-low}}{\\text{low}^2}=\\frac{(x-1)(2x)-(x^2+3)(1)}{(x-1)^2}\\]</div>\n<p class=\"why\">Low goes first. The minus sign makes order matter: swapping the two terms gives the negative of the right answer.</p>\n<p><strong>Step 4. Multiply out the first product.</strong> \\((x-1)(2x)=2x^2-2x\\).</p>\n<p><strong>Step 5. Subtract the second product, all of it.</strong> \\((x^2+3)(1)=x^2+3\\). Put it in brackets so the minus hits both terms:</p>\n<div>\\[2x^2-2x-(x^2+3)=2x^2-2x-x^2-3\\]</div>\n<p class=\"why\">The most common mistake here is writing \\(-x^2+3\\). The minus applies to the 3 too, so it becomes \\(-3\\).</p>\n<p><strong>Step 6. Combine like terms.</strong> \\(2x^2-x^2=x^2\\), so the numerator is \\(x^2-2x-3\\). Leave the bottom as \\((x-1)^2\\). Don't expand it; the factored form is simpler.</p>\n<div>\\[y'=\\frac{x^2-2x-3}{(x-1)^2}\\]</div>\n<p><strong>Step 7. Factor the top (optional, but useful).</strong> Find two numbers that multiply to \\(-3\\) and add to \\(-2\\): that's \\(-3\\) and \\(+1\\).</p>\n<div>\\[y'=\\frac{(x-3)(x+1)}{(x-1)^2}\\]</div>\n<p class=\"why\">Nothing cancels with the bottom, since \\((x-1)\\) is not a factor of the top. The factored form shows right away that \\(y'=0\\) at \\(x=3\\) and \\(x=-1\\), where the tangent lines are horizontal.</p>\n<p><strong>Step 8. Check it another way.</strong> Long division gives \\(\\dfrac{x^2+3}{x-1}=x+1+\\dfrac{4}{x-1}\\). Differentiate each part:</p>\n<div>\\[y'=1-\\frac{4}{(x-1)^2}=\\frac{(x-1)^2-4}{(x-1)^2}=\\frac{x^2-2x-3}{(x-1)^2}\\ \\checkmark\\]</div>\n<p class=\"ans\">Answer: \\(y'=\\dfrac{x^2-2x-3}{(x-1)^2}=\\dfrac{(x-3)(x+1)}{(x-1)^2}\\), for \\(x\\ne1\\). The original function isn't defined at \\(x=1\\), so neither is its derivative.</p>\n<p class=\"why\">Memory aid: “low d-high minus high d-low, over the square of what's below.” See <a href=\"/3-2/\">§3.2</a> for more quotient-rule practice.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\text{high}=x^2+3,\\ \\text{d-high}=2x",
+        "why": "Top and its derivative."
+       },
+       {
+        "code": "\\text{low}=x-1,\\ \\text{d-low}=1",
+        "why": "Bottom and its derivative."
+       },
+       {
+        "code": "y'=\\frac{(x-1)(2x)-(x^2+3)(1)}{(x-1)^2}",
+        "why": "Low d-high minus high d-low, over low squared."
+       },
+       {
+        "code": "=\\frac{2x^2-2x-x^2-3}{(x-1)^2}",
+        "why": "The minus hits both terms of \\(x^2+3\\)."
+       },
+       {
+        "code": "=\\frac{x^2-2x-3}{(x-1)^2}",
+        "why": "Combine like terms."
+       },
+       {
+        "code": "=\\frac{(x-3)(x+1)}{(x-1)^2}",
+        "why": "Factor the top (optional).",
+        "watch": [
+         [
+          "y'",
+          "\\frac{(x-3)(x+1)}{(x-1)^2}"
+         ]
+        ]
        }
       ]
      },
@@ -160,8 +428,32 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=x^2e^x\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product rule.</p>\\[\\displaystyle y'=(x^2)'e^x+x^2(e^x)'\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle =2xe^x+x^2e^x\\]<p><strong>Step 3.</strong> Factor out \\(xe^x\\).</p>\\[\\displaystyle =xe^x(x+2)\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=xe^x(x+2)\\)</li></ul></div>"
+       },
+       {
         "label": "Step-by-step solution",
         "html": "<p>\\(y'=2x\\cdot e^x+x^2\\cdot e^x\\)</p>\n<p class=\"ans\">\\(y'=e^x(x^2+2x)=xe^x(x+2)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y'=(x^2)'e^x+x^2(e^x)'",
+        "why": "Product rule."
+       },
+       {
+        "code": "=2xe^x+x^2e^x",
+        "why": ""
+       },
+       {
+        "code": "=xe^x(x+2)",
+        "why": "Factor out \\(xe^x\\).",
+        "watch": [
+         [
+          "y'",
+          "xe^x(x+2)"
+         ]
+        ]
        }
       ]
      },
@@ -172,8 +464,36 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=3\\sin x-2\\cos x+\\tan x\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle (3\\sin x)'=3\\cos x\\]<p><strong>Step 2.</strong> Two minus signs make a plus.</p>\\[\\displaystyle (-2\\cos x)'=-2(-\\sin x)=2\\sin x\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle (\\tan x)'=\\sec^2x\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle y'=3\\cos x+2\\sin x+\\sec^2x\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=3\\cos x+2\\sin x+\\sec^2x\\)</li></ul></div>"
+       },
+       {
         "label": "Step-by-step solution",
         "html": "<p>\\((3\\sin x)'=3\\cos x\\); \\((-2\\cos x)'=-2(-\\sin x)=2\\sin x\\); \\((\\tan x)'=\\sec^2x\\).</p>\n<p class=\"ans\">\\(y'=3\\cos x+2\\sin x+\\sec^2x\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "(3\\sin x)'=3\\cos x",
+        "why": ""
+       },
+       {
+        "code": "(-2\\cos x)'=-2(-\\sin x)=2\\sin x",
+        "why": "Two minus signs make a plus."
+       },
+       {
+        "code": "(\\tan x)'=\\sec^2x",
+        "why": ""
+       },
+       {
+        "code": "y'=3\\cos x+2\\sin x+\\sec^2x",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "3\\cos x+2\\sin x+\\sec^2x"
+         ]
+        ]
        }
       ]
      },
@@ -184,8 +504,28 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=x\\sin x\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product rule.</p>\\[\\displaystyle y'=(x)'\\sin x+x(\\sin x)'\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle y'=\\sin x+x\\cos x\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=\\sin x+x\\cos x\\)</li></ul></div>"
+       },
+       {
         "label": "Step-by-step solution",
         "html": "<p>Product rule: \\(1\\cdot\\sin x+x\\cdot\\cos x\\).</p>\n<p class=\"ans\">\\(y'=\\sin x+x\\cos x\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y'=(x)'\\sin x+x(\\sin x)'",
+        "why": "Product rule."
+       },
+       {
+        "code": "y'=\\sin x+x\\cos x",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "\\sin x+x\\cos x"
+         ]
+        ]
        }
       ]
      },
@@ -196,8 +536,36 @@ export const sections: Section[] = [
       "question": "Find \\(y'(0)\\) if \\(y=\\dfrac{\\sin x}{1+\\cos x}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Quotient rule: low d-high minus high d-low.</p>\\[\\displaystyle y'=\\frac{(1+\\cos x)\\cos x-\\sin x(-\\sin x)}{(1+\\cos x)^2}\\]<p><strong>Step 2.</strong> Multiply out the top.</p>\\[\\displaystyle =\\frac{\\cos x+\\cos^2x+\\sin^2x}{(1+\\cos x)^2}\\]<p><strong>Step 3.</strong> \\(\\sin^2x+\\cos^2x=1\\), then cancel one factor.</p>\\[\\displaystyle =\\frac{1+\\cos x}{(1+\\cos x)^2}=\\frac{1}{1+\\cos x}\\]<p><strong>Step 4.</strong> \\(\\cos0=1\\).</p>\\[\\displaystyle y'(0)=\\frac{1}{1+1}=\\frac12\\]<p><strong>What you found:</strong></p><ul><li>\\(y'(0)=1/2\\)</li></ul></div>"
+       },
+       {
         "label": "Step-by-step solution",
         "html": "<p>\\(y'=\\dfrac{(1+\\cos x)\\cos x-\\sin x(-\\sin x)}{(1+\\cos x)^2}=\\dfrac{\\cos x+\\cos^2x+\\sin^2x}{(1+\\cos x)^2}\\)</p>\n<p>Since \\(\\sin^2x+\\cos^2x=1\\), the top is \\(1+\\cos x\\), so \\(y'=\\dfrac{1}{1+\\cos x}\\).</p>\n<p class=\"ans\">\\(y'(0)=\\dfrac{1}{1+1}=\\dfrac12\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y'=\\frac{(1+\\cos x)\\cos x-\\sin x(-\\sin x)}{(1+\\cos x)^2}",
+        "why": "Quotient rule: low d-high minus high d-low."
+       },
+       {
+        "code": "=\\frac{\\cos x+\\cos^2x+\\sin^2x}{(1+\\cos x)^2}",
+        "why": "Multiply out the top."
+       },
+       {
+        "code": "=\\frac{1+\\cos x}{(1+\\cos x)^2}=\\frac{1}{1+\\cos x}",
+        "why": "\\(\\sin^2x+\\cos^2x=1\\), then cancel one factor."
+       },
+       {
+        "code": "y'(0)=\\frac{1}{1+1}=\\frac12",
+        "why": "\\(\\cos0=1\\).",
+        "watch": [
+         [
+          "y'(0)",
+          "1/2"
+         ]
+        ]
        }
       ]
      },
@@ -208,8 +576,36 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=(3x^2-1)^5\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Inside function and its derivative.</p>\\[\\begin{gathered}\\displaystyle u=3x^2-1\\\\\\displaystyle u'=6x\\end{gathered}\\]<p><strong>Step 2.</strong> Chain rule: power rule on the outside, times the inside's derivative.</p>\\[\\displaystyle y'=5u^4\\cdot u'\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle =5(3x^2-1)^4\\cdot6x\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle y'=30x(3x^2-1)^4\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=30x(3x^2-1)^4\\)</li></ul></div>"
+       },
+       {
         "label": "Step-by-step solution",
         "html": "<p>Outer \\(u^5\\), inner \\(u=3x^2-1\\) with \\(u'=6x\\).</p>\n<p>\\(y'=5(3x^2-1)^4\\cdot6x\\)</p>\n<p class=\"ans\">\\(y'=30x(3x^2-1)^4\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=3x^2-1,\\quad u'=6x",
+        "why": "Inside function and its derivative."
+       },
+       {
+        "code": "y'=5u^4\\cdot u'",
+        "why": "Chain rule: power rule on the outside, times the inside's derivative."
+       },
+       {
+        "code": "=5(3x^2-1)^4\\cdot6x",
+        "why": ""
+       },
+       {
+        "code": "y'=30x(3x^2-1)^4",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "30x(3x^2-1)^4"
+         ]
+        ]
        }
       ]
      },
@@ -224,8 +620,36 @@ export const sections: Section[] = [
         "html": "<p>Something is <em>inside</em> the sin. That's a chain rule problem. Differentiate the sin (keep the inside the same), then multiply by the derivative of the inside.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Plug in \\(x=1\\) mentally: you compute \\(x^3+2x\\) first (inside), then sin (outside).</p>\\[\\begin{gathered}\\displaystyle u=x^3+2x\\\\\\displaystyle y=\\sin u\\end{gathered}\\]<p><strong>Step 2.</strong> Differentiate each layer.</p>\\[\\begin{gathered}\\displaystyle \\frac{dy}{du}=\\cos u\\\\\\displaystyle \\frac{du}{dx}=3x^2+2\\end{gathered}\\]<p><strong>Step 3.</strong> Multiply, and put the inside back unchanged.</p>\\[\\displaystyle y'=\\cos(x^3+2x)\\cdot(3x^2+2)\\]<p><strong>Step 4.</strong> Write the polynomial in front.</p>\\[\\displaystyle y'=(3x^2+2)\\cos(x^3+2x)\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=(3x^2+2)\\cos(x^3+2x)\\)</li></ul></div>"
+       },
+       {
         "label": "Step-by-step solution",
         "html": "<p><strong>Step 1. Recognize it's a chain rule problem.</strong> This isn't \\(\\sin x\\). It's \\(\\sin\\) of a <em>more complicated expression</em>. Whenever a function has another expression plugged into it, you need the chain rule.</p>\n<p><strong>Step 2. Find the outside and the inside.</strong> Imagine plugging in \\(x=1\\). What do you compute first, and what last?</p>\n<ul class=\"steps\"><li>First: \\(x^3+2x=1+2=3\\). That's the <strong>inside</strong>.</li><li>Last: \\(\\sin(3)\\). That's the <strong>outside</strong>.</li></ul>\n<p>Give the inside a name, \\(u\\):</p>\n<div>\\[u=x^3+2x\\]\\[y=\\sin u\\]</div>\n<p><strong>Step 3. Differentiate each piece separately.</strong></p>\n<ul class=\"steps\"><li>Outside: \\(\\dfrac{dy}{du}=\\cos u\\) (derivative of sin is cos).</li><li>Inside: \\(\\dfrac{du}{dx}=3x^2+2\\) (power rule on each term).</li></ul>\n<p><strong>Step 4. Multiply them.</strong> The chain rule says the rates multiply:</p>\n<div>\\[\\frac{dy}{dx}=\\frac{dy}{du}\\cdot\\frac{du}{dx}=\\cos u\\cdot(3x^2+2)\\]</div>\n<p><strong>Step 5. Put the inside back.</strong> Replace \\(u\\) with \\(x^3+2x\\). The inside goes back in <em>unchanged</em>:</p>\n<div>\\[\\frac{dy}{dx}=\\cos(x^3+2x)\\cdot(3x^2+2)\\]</div>\n<p><strong>Step 6. Write it neatly.</strong> Put the polynomial in front, so nobody reads it as cos of a product:</p>\n<div>\\[y'=(3x^2+2)\\cos(x^3+2x)\\]</div>\n<p><strong>Step 7. The pattern to remember.</strong> For any inside \\(\\square\\):</p>\n<div>\\[\\frac{d}{dx}\\sin(\\square)=\\cos(\\square)\\cdot\\square'\\]</div>\n<p class=\"why\">“Derivative of the outside, leave the inside alone, times the derivative of the inside.”</p>\n<p><strong>Step 8. Check that the answer makes sense.</strong> At \\(x=0\\): \\(y'(0)=(0+2)\\cos(0)=2\\). Near 0, \\(x^3\\) is tiny, so \\(y\\approx\\sin(2x)\\approx 2x\\), a line with slope 2. ✓</p>\n<p class=\"ans\">Answer: \\(y'=(3x^2+2)\\cos(x^3+2x)\\)</p>\n<p><strong>Three mistakes to avoid:</strong></p>\n<ul class=\"steps\"><li><strong>\\(\\cos(3x^2+2)\\).</strong> Wrong: you differentiated the inside <em>inside</em> the cos. The inside stays \\(x^3+2x\\) inside the cos; its derivative goes <em>outside</em>, multiplied.</li><li><strong>\\(\\cos(x^3+2x)\\) with nothing in front.</strong> Wrong: forgetting the inside derivative. Every layer gives a factor.</li><li><strong>\\(\\cos(x^3+2x)\\cdot3x^2+2\\).</strong> Missing parentheses: that means only \\(3x^2\\) is multiplied. Write \\((3x^2+2)\\).</li></ul>\n<p class=\"why\">To see why rates multiply, try Lab 6 on the <a href=\"/3-4/\">§3.4 page</a>: a small nudge in \\(x\\) gets stretched by the inside, then again by the outside.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=x^3+2x,\\quad y=\\sin u",
+        "why": "Plug in \\(x=1\\) mentally: you compute \\(x^3+2x\\) first (inside), then sin (outside)."
+       },
+       {
+        "code": "\\frac{dy}{du}=\\cos u,\\quad\\frac{du}{dx}=3x^2+2",
+        "why": "Differentiate each layer."
+       },
+       {
+        "code": "y'=\\cos(x^3+2x)\\cdot(3x^2+2)",
+        "why": "Multiply, and put the inside back unchanged."
+       },
+       {
+        "code": "y'=(3x^2+2)\\cos(x^3+2x)",
+        "why": "Write the polynomial in front.",
+        "watch": [
+         [
+          "y'",
+          "(3x^2+2)\\cos(x^3+2x)"
+         ]
+        ]
        }
       ]
      },
@@ -240,8 +664,36 @@ export const sections: Section[] = [
         "html": "<p>The exponent isn't just \\(x\\), it's a whole expression. So it's \\(e^{u}\\) with an inside \\(u\\): copy the exponential exactly, then multiply by the derivative of the exponent.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The exponent is the inside.</p>\\[\\begin{gathered}\\displaystyle u=4x^2-3x\\\\\\displaystyle y=e^u\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle (e^u)'=e^u\\\\\\displaystyle u'=8x-3\\end{gathered}\\]<p><strong>Step 3.</strong> Copy the exponential exactly, times the derivative of the exponent.</p>\\[\\displaystyle y'=e^{4x^2-3x}\\cdot(8x-3)\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle y'=(8x-3)e^{4x^2-3x}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=(8x-3)e^{4x^2-3x}\\)</li></ul></div>"
+       },
+       {
         "label": "Step-by-step solution",
         "html": "<p><strong>Step 1. Recognize it's a chain rule problem.</strong> If it were \\(e^x\\), the derivative would just be \\(e^x\\). But here the exponent is a whole expression, \\(4x^2-3x\\). An expression plugged into another function means the chain rule.</p>\n<p><strong>Step 2. Find the outside and the inside.</strong> Imagine plugging in \\(x=1\\):</p>\n<ul class=\"steps\"><li>First: \\(4(1)^2-3(1)=1\\). The exponent is the <strong>inside</strong>.</li><li>Last: \\(e^{1}\\). The exponential is the <strong>outside</strong>.</li></ul>\n<div>\\[u=4x^2-3x\\]\\[y=e^{u}\\]</div>\n<p><strong>Step 3. Differentiate each piece separately.</strong></p>\n<ul class=\"steps\"><li>Outside: \\(\\dfrac{dy}{du}=e^{u}\\). (“e is lazy”: \\(e^u\\) differentiates to itself.)</li><li>Inside: \\(\\dfrac{du}{dx}=8x-3\\). (Power rule: \\(4\\cdot2x=8x\\), and \\(-3x\\to-3\\).)</li></ul>\n<p><strong>Step 4. Multiply them.</strong></p>\n<div>\\[\\frac{dy}{dx}=\\frac{dy}{du}\\cdot\\frac{du}{dx}=e^{u}\\cdot(8x-3)\\]</div>\n<p><strong>Step 5. Put the inside back, unchanged.</strong> The exponent stays exactly \\(4x^2-3x\\):</p>\n<div>\\[\\frac{dy}{dx}=e^{4x^2-3x}\\cdot(8x-3)\\]</div>\n<p><strong>Step 6. Write it neatly.</strong> Put the polynomial in front:</p>\n<div>\\[y'=(8x-3)\\,e^{4x^2-3x}\\]</div>\n<p><strong>Step 7. The pattern to remember.</strong> For any exponent \\(\\square\\):</p>\n<div>\\[\\frac{d}{dx}e^{\\square}=e^{\\square}\\cdot\\square'\\]</div>\n<p class=\"why\">“Copy the whole exponential exactly, then multiply by the derivative of the exponent.” Notice \\(e^{x}\\) is the special case where \\(\\square'=1\\).</p>\n<p><strong>Step 8. Check that it makes sense.</strong> At \\(x=0\\): \\(y'(0)=(0-3)e^{0}=-3\\). Near 0, the \\(4x^2\\) term is tiny, so \\(y\\approx e^{-3x}\\approx1-3x\\), a line with slope \\(-3\\). ✓</p>\n<p class=\"ans\">Answer: \\(y'=(8x-3)\\,e^{4x^2-3x}\\)</p>\n<p><strong>Bonus: where is the tangent horizontal?</strong> Set \\(y'=0\\). Since \\(e^{\\text{anything}}\\) is never 0, only \\(8x-3=0\\) can be, so \\(x=\\tfrac38\\). This trick (the exponential factor is never zero) comes up a lot.</p>\n<p><strong>Three mistakes to avoid:</strong></p>\n<ul class=\"steps\"><li><strong>\\((4x^2-3x)\\,e^{4x^2-3x-1}\\).</strong> Wrong: that's the power rule. The power rule is for \\(x^n\\) (variable in the base), not \\(e^{\\text{stuff}}\\) (variable in the exponent).</li><li><strong>\\(e^{8x-3}\\).</strong> Wrong: you differentiated the exponent in place. The exponent stays the same; its derivative goes in front as a multiplier.</li><li><strong>\\(e^{4x^2-3x}\\) with nothing in front.</strong> Wrong: forgetting the inside derivative. Only plain \\(e^x\\) gets away with that.</li></ul>\n<p class=\"why\">Compare with Q14: \\(\\sin(\\square)\\to\\cos(\\square)\\cdot\\square'\\) and \\(e^{\\square}\\to e^{\\square}\\cdot\\square'\\). Same chain rule, different outside function.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=4x^2-3x,\\quad y=e^u",
+        "why": "The exponent is the inside."
+       },
+       {
+        "code": "(e^u)'=e^u,\\quad u'=8x-3",
+        "why": ""
+       },
+       {
+        "code": "y'=e^{4x^2-3x}\\cdot(8x-3)",
+        "why": "Copy the exponential exactly, times the derivative of the exponent."
+       },
+       {
+        "code": "y'=(8x-3)e^{4x^2-3x}",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "(8x-3)e^{4x^2-3x}"
+         ]
+        ]
        }
       ]
      },
@@ -256,8 +708,36 @@ export const sections: Section[] = [
         "html": "<p>Differentiate both sides with respect to \\(x\\). Treat \\(y\\) as a function of \\(x\\), so \\(y^2\\) needs the chain rule: it gives \\(2y\\cdot y'\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Differentiate both sides with respect to \\(x\\).</p>\\[\\displaystyle \\frac{d}{dx}(x^2)+\\frac{d}{dx}(y^2)=\\frac{d}{dx}(25)\\]<p><strong>Step 2.</strong> \\(y\\) is a function of \\(x\\), so \\(y^2\\) gives \\(2y\\cdot y'\\) (chain rule).</p>\\[\\displaystyle 2x+2y\\,y'=0\\]<p><strong>Step 3.</strong> Move the \\(x\\) term across.</p>\\[\\displaystyle 2y\\,y'=-2x\\]<p><strong>Step 4.</strong> Divide by \\(2y\\) (\\(y\\ne0\\)).</p>\\[\\displaystyle y'=-\\frac{x}{y}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=-x/y\\)</li></ul></div>"
+       },
+       {
         "label": "Step-by-step solution",
         "html": "<p><strong>Step 1. Why implicit differentiation?</strong> \\(x^2+y^2=25\\) is a circle of radius 5. It isn't a single function \\(y=f(x)\\): for \\(x=3\\) there are two points, \\((3,4)\\) and \\((3,-4)\\). Solving gives \\(y=\\pm\\sqrt{25-x^2}\\), which is messy. Implicit differentiation lets you skip solving for \\(y\\).</p>\n<p><strong>Step 2. The key idea.</strong> Think of \\(y\\) as some unknown function of \\(x\\), like \\(y(x)\\). Then \\(y^2\\) is really \\(\\big(y(x)\\big)^2\\): a square (outside) of \\(y(x)\\) (inside). That's a chain rule, so a \\(y'\\) appears.</p>\n<p><strong>Step 3. Differentiate every term with respect to \\(x\\).</strong></p>\n<ul class=\"steps\"><li>\\(\\dfrac{d}{dx}(x^2)=2x\\). Ordinary power rule, no \\(y'\\) because it's \\(x\\).</li><li>\\(\\dfrac{d}{dx}(y^2)=2y\\cdot y'\\). Power rule on the outside, times the derivative of the inside (\\(y'\\)).</li><li>\\(\\dfrac{d}{dx}(25)=0\\). A constant.</li></ul>\n<div>\\[2x+2y\\,y'=0\\]</div>\n<p><strong>Step 4. Solve for \\(y'\\).</strong> Move \\(2x\\) to the other side, then divide by \\(2y\\):</p>\n<div>\\[2y\\,y'=-2x\\]\\[\\Longrightarrow\\ y'=\\frac{-2x}{2y}=-\\frac{x}{y}\\]</div>\n<p><strong>Step 5. Why does the answer have \\(y\\) in it?</strong> Because the slope depends on <em>which</em> point you're at, and \\(x\\) alone doesn't say. At \\((3,4)\\) the slope is \\(-\\tfrac34\\) (going down). At \\((3,-4)\\) it's \\(+\\tfrac34\\) (going up). Same \\(x\\), different slopes.</p>\n<p><strong>Step 6. Why “\\(y\\ne0\\)”?</strong> At \\((5,0)\\) and \\((-5,0)\\) we'd divide by zero. Those are the far left and right edges of the circle, where the tangent line is <strong>vertical</strong>.</p>\n<p><strong>Step 7. Check with geometry.</strong> A tangent to a circle is perpendicular to the radius. The radius to \\((3,4)\\) has slope \\(\\tfrac43\\). Perpendicular slope: \\(-\\tfrac34\\). Our formula gives \\(-\\tfrac34\\). ✓</p>\n<p><strong>Step 8. Check by solving for \\(y\\).</strong> On the top half, \\(y=\\sqrt{25-x^2}\\), so \\(y'=\\dfrac{-2x}{2\\sqrt{25-x^2}}=\\dfrac{-x}{\\sqrt{25-x^2}}=-\\dfrac{x}{y}\\). Same answer, more work. ✓</p>\n<p class=\"ans\">Answer: \\(\\dfrac{dy}{dx}=-\\dfrac{x}{y}\\), for \\(y\\ne0\\).</p>\n<p><strong>Mistakes to avoid:</strong></p>\n<ul class=\"steps\"><li><strong>\\(\\frac{d}{dx}(y^2)=2y\\).</strong> Missing the \\(y'\\). Every \\(y\\)-term gets a \\(y'\\).</li><li><strong>Writing \\(-\\frac{y}{x}\\).</strong> Flipped. Check: the \\(2x\\) came from the \\(x^2\\) term, and it ends up on top.</li></ul>\n<p class=\"why\">Drag the point around the circle in Lab 7 on the <a href=\"/3-5/\">§3.5 page</a> to watch the slope \\(-x/y\\) change.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{d}{dx}(x^2)+\\frac{d}{dx}(y^2)=\\frac{d}{dx}(25)",
+        "why": "Differentiate both sides with respect to \\(x\\)."
+       },
+       {
+        "code": "2x+2y\\,y'=0",
+        "why": "\\(y\\) is a function of \\(x\\), so \\(y^2\\) gives \\(2y\\cdot y'\\) (chain rule)."
+       },
+       {
+        "code": "2y\\,y'=-2x",
+        "why": "Move the \\(x\\) term across."
+       },
+       {
+        "code": "y'=-\\frac{x}{y}",
+        "why": "Divide by \\(2y\\) (\\(y\\ne0\\)).",
+        "watch": [
+         [
+          "y'",
+          "-x/y"
+         ]
+        ]
        }
       ]
      },
@@ -272,8 +752,40 @@ export const sections: Section[] = [
         "html": "<p>Go term by term. \\(x^2y\\) is a <em>product</em> of \\(x^2\\) and \\(y\\), so it needs the product rule. \\(y^3\\) needs the chain rule (\\(3y^2y'\\)).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product rule: \\(x^2\\) times \\(y\\).</p>\\[\\displaystyle \\frac{d}{dx}(x^2y)=2xy+x^2y'\\]<p><strong>Step 2.</strong> Chain rule.</p>\\[\\displaystyle \\frac{d}{dx}(y^3)=3y^2y'\\]<p><strong>Step 3.</strong> The constant 7 gives 0.</p>\\[\\displaystyle 2xy+x^2y'+3y^2y'=0\\]<p><strong>Step 4.</strong> Keep the \\(y'\\) terms together, factor out \\(y'\\).</p>\\[\\displaystyle y'(x^2+3y^2)=-2xy\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle y'=-\\frac{2xy}{x^2+3y^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=-\\frac{2xy}{x^2+3y^2}\\)</li></ul></div>"
+       },
+       {
         "label": "Step-by-step solution",
         "html": "<p><strong>Step 1. Why implicit?</strong> Solving \\(x^2y+y^3=7\\) for \\(y\\) means solving a cubic in \\(y\\). Not happening. Differentiate the equation as it is.</p>\n<p><strong>Step 2. Differentiate term by term.</strong></p>\n<ul class=\"steps\"><li><strong>\\(x^2y\\) is a product</strong> of \\(x^2\\) and \\(y\\). Product rule (first d-second + second d-first):<br>\\(\\dfrac{d}{dx}(x^2y)=x^2\\cdot y'+y\\cdot2x=2xy+x^2y'\\)</li><li><strong>\\(y^3\\)</strong>: chain rule, \\(3y^2\\cdot y'\\).</li><li><strong>\\(7\\)</strong>: a constant, so \\(0\\).</li></ul>\n<div>\\[2xy+x^2y'+3y^2y'=0\\]</div>\n<p><strong>Step 3. Separate the \\(y'\\) terms from the rest.</strong> Keep the \\(y'\\) terms on the left and move \\(2xy\\) to the right:</p>\n<div>\\[x^2y'+3y^2y'=-2xy\\]</div>\n<p><strong>Step 4. Factor out \\(y'\\).</strong></p>\n<div>\\[y'\\,(x^2+3y^2)=-2xy\\]</div>\n<p><strong>Step 5. Divide.</strong></p>\n<div>\\[y'=-\\frac{2xy}{x^2+3y^2}\\]</div>\n<p class=\"why\">This 3-move ending (collect \\(y'\\) terms, factor out \\(y'\\), divide) is the same in almost every implicit problem.</p>\n<p><strong>Step 6. Does it make sense?</strong> \\(x\\) only appears as \\(x^2\\), so the curve is symmetric about the \\(y\\)-axis. That means the tangent must be flat where the curve crosses \\(x=0\\). Our formula gives \\(y'=0\\) when \\(x=0\\). ✓</p>\n<p class=\"ans\">Answer: \\(\\dfrac{dy}{dx}=-\\dfrac{2xy}{x^2+3y^2}\\)</p>\n<p><strong>Mistakes to avoid:</strong></p>\n<ul class=\"steps\"><li><strong>\\(\\frac{d}{dx}(x^2y)=2x\\,y'\\).</strong> Wrong: it's a product, so you need <em>both</em> terms, \\(2xy+x^2y'\\).</li><li><strong>\\(\\frac{d}{dx}(y^3)=3y^2\\).</strong> Missing the \\(y'\\).</li><li><strong>Moving \\(x^2y'\\) to the right.</strong> Every term with \\(y'\\) stays on the same side, or you can't factor \\(y'\\) out.</li></ul>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{d}{dx}(x^2y)=2xy+x^2y'",
+        "why": "Product rule: \\(x^2\\) times \\(y\\)."
+       },
+       {
+        "code": "\\frac{d}{dx}(y^3)=3y^2y'",
+        "why": "Chain rule."
+       },
+       {
+        "code": "2xy+x^2y'+3y^2y'=0",
+        "why": "The constant 7 gives 0."
+       },
+       {
+        "code": "y'(x^2+3y^2)=-2xy",
+        "why": "Keep the \\(y'\\) terms together, factor out \\(y'\\)."
+       },
+       {
+        "code": "y'=-\\frac{2xy}{x^2+3y^2}",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "-\\frac{2xy}{x^2+3y^2}"
+         ]
+        ]
        }
       ]
      },
@@ -288,8 +800,36 @@ export const sections: Section[] = [
         "html": "<p>Differentiate both sides (the \\(xy\\) term needs the product rule), then plug in \\(x=1,\\ y=2\\). You can plug in before or after solving for \\(y'\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The point \\((1,2)\\) is on the curve.</p>\\[\\displaystyle 1+2+4=7\\ \\checkmark\\]<p><strong>Step 2.</strong> Product rule on \\(xy\\); chain rule on \\(y^2\\).</p>\\[\\displaystyle 2x+(y+xy')+2yy'=0\\]<p><strong>Step 3.</strong> Shortcut: plug in \\(x=1,\\ y=2\\) now.</p>\\[\\displaystyle 2+2+y'+4y'=0\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle 5y'=-4\\Rightarrow y'=-\\tfrac45\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{slope}:\\ -4/5\\)</li></ul></div>"
+       },
+       {
         "label": "Step-by-step solution",
         "html": "<p><strong>Step 1. Check the point is on the curve.</strong> \\(1^2+(1)(2)+2^2=1+2+4=7\\). ✓ Always worth 5 seconds: if it's not on the curve, something's wrong.</p>\n<p><strong>Step 2. Differentiate term by term.</strong></p>\n<ul class=\"steps\"><li>\\(\\dfrac{d}{dx}(x^2)=2x\\)</li><li>\\(\\dfrac{d}{dx}(xy)=1\\cdot y+x\\cdot y'=y+xy'\\) (product rule: \\(x\\) times \\(y\\))</li><li>\\(\\dfrac{d}{dx}(y^2)=2y\\,y'\\)</li><li>\\(\\dfrac{d}{dx}(7)=0\\)</li></ul>\n<div>\\[2x+y+xy'+2yy'=0\\]</div>\n<p><strong>Step 3. Collect and factor \\(y'\\).</strong></p>\n<div>\\[y'(x+2y)=-(2x+y)\\]\\[\\Longrightarrow\\ y'=-\\frac{2x+y}{x+2y}\\]</div>\n<p><strong>Step 4. Plug in the point \\((1,2)\\).</strong></p>\n<div>\\[y'=-\\frac{2(1)+2}{1+2(2)}=-\\frac{4}{5}\\]</div>\n<p><strong>Faster exam shortcut.</strong> If you only need the number, plug in \\(x=1,\\ y=2\\) right after Step 2, then solve a simple equation:</p>\n<div>\\[2+2+y'+4y'=0 \\;\\Longrightarrow\\; 4+5y'=0 \\;\\Longrightarrow\\; y'=-\\tfrac45\\]</div>\n<p class=\"why\">Same answer, less algebra. Use the full formula only when the question asks for \\(dy/dx\\) in general.</p>\n<p><strong>Step 5. (If asked) the tangent line.</strong> Point \\((1,2)\\), slope \\(-\\tfrac45\\):</p>\n<div>\\[y-2=-\\tfrac45(x-1)\\]\\[\\Longrightarrow\\ y=-\\tfrac45x+\\tfrac{14}{5}\\]</div>\n<p><strong>Step 6. Does it make sense?</strong> The curve \\(x^2+xy+y^2=7\\) is a tilted ellipse. At \\((1,2)\\), on its upper right, the curve is heading down as \\(x\\) increases, so a negative slope fits.</p>\n<p class=\"ans\">Answer: slope \\(=-\\dfrac45\\) at \\((1,2)\\). (General formula: \\(y'=-\\dfrac{2x+y}{x+2y}\\).)</p>\n<p><strong>Mistakes to avoid:</strong></p>\n<ul class=\"steps\"><li><strong>\\(\\frac{d}{dx}(xy)=y'\\) or \\(=1\\).</strong> It's a product: \\(y+xy'\\).</li><li><strong>Plugging the point into the original equation and stopping.</strong> That only checks the point. You need the <em>differentiated</em> equation.</li><li><strong>Slope vs. line.</strong> This question asks for the slope (a number). If it said “tangent line”, finish with \\(y=\\dots\\). See <a href=\"/3-1/#slope-vs-line\">slope vs. tangent line</a>.</li></ul>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "1+2+4=7\\ \\checkmark",
+        "why": "The point \\((1,2)\\) is on the curve."
+       },
+       {
+        "code": "2x+(y+xy')+2yy'=0",
+        "why": "Product rule on \\(xy\\); chain rule on \\(y^2\\)."
+       },
+       {
+        "code": "2+2+y'+4y'=0",
+        "why": "Shortcut: plug in \\(x=1,\\ y=2\\) now."
+       },
+       {
+        "code": "5y'=-4\\Rightarrow y'=-\\tfrac45",
+        "why": "",
+        "watch": [
+         [
+          "\\text{slope}",
+          "-4/5"
+         ]
+        ]
        }
       ]
      }
@@ -408,8 +948,42 @@ export const sections: Section[] = [
         "html": "<p>\\(f(x+h)=3(x+h)-8\\). Subtract \\(f(x)\\) and see what survives.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Plug into the definition.</p>\\[\\displaystyle \\frac{f(x+h)-f(x)}{h}=\\frac{[3(x+h)-8]-[3x-8]}{h}\\]<p><strong>Step 2.</strong> Everything except \\(3h\\) cancels.</p>\\[\\displaystyle =\\frac{3h}{h}=3\\]<p><strong>Step 3.</strong> A line has the same slope everywhere.</p>\\[\\displaystyle f'(x)=3\\]<p><strong>Step 4.</strong> Nothing is ever undefined.</p>\\[\\begin{gathered}\\displaystyle \\text{domain of }f\\\\\\displaystyle f':\\ \\mathbb R\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(f'=3\\)</li><li>\\(\\text{domains}:\\ \\mathbb R\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\dfrac{[3(x+h)-8]-[3x-8]}{h}=\\dfrac{3h}{h}=3\\), so \\(f'(x)=3\\).</p><p class=\"ans\">\\(f'(x)=3\\); both domains are \\(\\mathbb{R}\\). A line has the same slope everywhere.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{f(x+h)-f(x)}{h}=\\frac{[3(x+h)-8]-[3x-8]}{h}",
+        "why": "Plug into the definition."
+       },
+       {
+        "code": "=\\frac{3h}{h}=3",
+        "why": "Everything except \\(3h\\) cancels."
+       },
+       {
+        "code": "f'(x)=3",
+        "why": "A line has the same slope everywhere.",
+        "watch": [
+         [
+          "f'",
+          "3"
+         ]
+        ]
+       },
+       {
+        "code": "\\text{domain of }f,\\ f':\\ \\mathbb R",
+        "why": "Nothing is ever undefined.",
+        "watch": [
+         [
+          "\\text{domains}",
+          "\\mathbb R"
+         ]
+        ]
        }
       ]
      },
@@ -424,8 +998,40 @@ export const sections: Section[] = [
         "html": "<p>Expand \\((t+h)^2=t^2+2th+h^2\\). After subtracting, every surviving term has an \\(h\\) you can factor out.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Replace \\(t\\) with \\(t+h\\).</p>\\[\\displaystyle f(t+h)=2.5(t+h)^2+6(t+h)\\]<p><strong>Step 2.</strong> Expand.</p>\\[\\displaystyle =2.5t^2+5th+2.5h^2+6t+6h\\]<p><strong>Step 3.</strong> Subtract \\(2.5t^2+6t\\).</p>\\[\\displaystyle f(t+h)-f(t)=5th+2.5h^2+6h\\]<p><strong>Step 4.</strong> Factor out \\(h\\) and cancel.</p>\\[\\displaystyle \\frac{h(5t+2.5h+6)}{h}=5t+2.5h+6\\]<p><strong>Step 5.</strong> Let \\(h\\to0\\).</p>\\[\\displaystyle f'(t)=5t+6\\]<p><strong>What you found:</strong></p><ul><li>\\(f'(t)=5t+6\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f(t+h)=2.5(t^2+2th+h^2)+6t+6h = 2.5t^2+5th+2.5h^2+6t+6h\\)</p>\n<p>\\(f(t+h)-f(t)=5th+2.5h^2+6h = h(5t+2.5h+6)\\)</p>\n<p>Divide by \\(h\\): \\(5t+2.5h+6\\). Let \\(h\\to0\\).</p>\n<p class=\"ans\">\\(f'(t)=5t+6\\). Domains: all real numbers.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(t+h)=2.5(t+h)^2+6(t+h)",
+        "why": "Replace \\(t\\) with \\(t+h\\)."
+       },
+       {
+        "code": "=2.5t^2+5th+2.5h^2+6t+6h",
+        "why": "Expand."
+       },
+       {
+        "code": "f(t+h)-f(t)=5th+2.5h^2+6h",
+        "why": "Subtract \\(2.5t^2+6t\\)."
+       },
+       {
+        "code": "\\frac{h(5t+2.5h+6)}{h}=5t+2.5h+6",
+        "why": "Factor out \\(h\\) and cancel."
+       },
+       {
+        "code": "f'(t)=5t+6",
+        "why": "Let \\(h\\to0\\).",
+        "watch": [
+         [
+          "f'(t)",
+          "5t+6"
+         ]
+        ]
        }
       ]
      },
@@ -440,8 +1046,50 @@ export const sections: Section[] = [
         "html": "<p>Common denominator \\((v+h+2)(v+2)\\). The numerator collapses to a multiple of \\(h\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The top of the difference quotient.</p>\\[\\displaystyle \\frac{v+h}{v+h+2}-\\frac{v}{v+2}\\]<p><strong>Step 2.</strong> Common denominator.</p>\\[\\displaystyle =\\frac{(v+h)(v+2)-v(v+h+2)}{(v+h+2)(v+2)}\\]<p><strong>Step 3.</strong> Expand; almost everything cancels.</p>\\[\\displaystyle \\text{top}=v^2+2v+hv+2h-v^2-vh-2v=2h\\]<p><strong>Step 4.</strong> Divide by \\(h\\) and cancel.</p>\\[\\displaystyle \\frac{2h}{h(v+h+2)(v+2)}=\\frac{2}{(v+h+2)(v+2)}\\]<p><strong>Step 5.</strong> Let \\(h\\to0\\).</p>\\[\\displaystyle F'(v)=\\frac{2}{(v+2)^2}\\]<p><strong>Step 6.</strong></p>\\[\\displaystyle \\text{domains: }v\\ne-2\\]<p><strong>What you found:</strong></p><ul><li>\\(F'=2/(v+2)^2\\)</li><li>\\(\\text{domains}:\\ v\\ne-2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\dfrac{v+h}{v+h+2}-\\dfrac{v}{v+2} = \\dfrac{(v+h)(v+2)-v(v+h+2)}{(v+h+2)(v+2)}\\)</p>\n<p>Numerator: \\(v^2+2v+hv+2h - v^2-vh-2v = 2h\\).</p>\n<p>Quotient: \\(\\dfrac{2h}{h(v+h+2)(v+2)}=\\dfrac{2}{(v+h+2)(v+2)}\\xrightarrow{h\\to0}\\dfrac{2}{(v+2)^2}\\).</p>\n<p class=\"ans\">\\(F'(v)=\\dfrac{2}{(v+2)^2}\\). Domain of \\(F\\) and \\(F'\\): \\(v\\neq-2\\).</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{v+h}{v+h+2}-\\frac{v}{v+2}",
+        "why": "The top of the difference quotient."
+       },
+       {
+        "code": "=\\frac{(v+h)(v+2)-v(v+h+2)}{(v+h+2)(v+2)}",
+        "why": "Common denominator."
+       },
+       {
+        "code": "\\text{top}=v^2+2v+hv+2h-v^2-vh-2v=2h",
+        "why": "Expand; almost everything cancels."
+       },
+       {
+        "code": "\\frac{2h}{h(v+h+2)(v+2)}=\\frac{2}{(v+h+2)(v+2)}",
+        "why": "Divide by \\(h\\) and cancel."
+       },
+       {
+        "code": "F'(v)=\\frac{2}{(v+2)^2}",
+        "why": "Let \\(h\\to0\\).",
+        "watch": [
+         [
+          "F'",
+          "2/(v+2)^2"
+         ]
+        ]
+       },
+       {
+        "code": "\\text{domains: }v\\ne-2",
+        "why": "",
+        "watch": [
+         [
+          "\\text{domains}",
+          "v\\ne-2"
+         ]
+        ]
        }
       ]
      },
@@ -456,8 +1104,40 @@ export const sections: Section[] = [
         "html": "<p>Same fraction strategy. After expanding, \\(u^2\\) and \\(u\\) terms cancel and you get \\(-5h\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The top of the difference quotient.</p>\\[\\displaystyle \\frac{u+h+1}{4u+4h-1}-\\frac{u+1}{4u-1}\\]<p><strong>Step 2.</strong> Over the common denominator \\((4u+4h-1)(4u-1)\\).</p>\\[\\displaystyle \\begin{aligned}\\text{top}=&\\,(u+h+1)(4u-1)\\\\&-(u+1)(4u+4h-1)\\end{aligned}\\]<p><strong>Step 3.</strong> Expand both products: the \\(u^2\\), \\(u\\) and constant terms cancel.</p>\\[\\displaystyle =-5h\\]<p><strong>Step 4.</strong> Cancel \\(h\\), let \\(h\\to0\\).</p>\\[\\displaystyle \\frac{-5h}{h(4u+4h-1)(4u-1)}\\to\\frac{-5}{(4u-1)^2}\\]<p><strong>Step 5.</strong></p>\\[\\begin{gathered}\\displaystyle g'(u)=\\frac{-5}{(4u-1)^2}\\\\\\displaystyle u\\ne\\tfrac14\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(g'=-5/(4u-1)^2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Numerator of the combined fraction: \\((u+h+1)(4u-1)-(u+1)(4u+4h-1)\\).</p>\n<p>\\(=(4u^2-u+4uh-h+4u-1)-(4u^2+4uh-u+4u+4h-1) = -5h\\).</p>\n<p>So \\(\\dfrac{g(u+h)-g(u)}{h}=\\dfrac{-5}{(4u+4h-1)(4u-1)}\\to\\dfrac{-5}{(4u-1)^2}\\).</p>\n<p class=\"ans\">\\(g'(u)=\\dfrac{-5}{(4u-1)^2}\\), domain \\(u\\neq\\tfrac14\\).</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{u+h+1}{4u+4h-1}-\\frac{u+1}{4u-1}",
+        "why": "The top of the difference quotient."
+       },
+       {
+        "code": "\\begin{aligned}\\text{top}=&\\,(u+h+1)(4u-1)\\\\&-(u+1)(4u+4h-1)\\end{aligned}",
+        "why": "Over the common denominator \\((4u+4h-1)(4u-1)\\)."
+       },
+       {
+        "code": "=-5h",
+        "why": "Expand both products: the \\(u^2\\), \\(u\\) and constant terms cancel."
+       },
+       {
+        "code": "\\frac{-5h}{h(4u+4h-1)(4u-1)}\\to\\frac{-5}{(4u-1)^2}",
+        "why": "Cancel \\(h\\), let \\(h\\to0\\)."
+       },
+       {
+        "code": "g'(u)=\\frac{-5}{(4u-1)^2},\\ u\\ne\\tfrac14",
+        "why": "",
+        "watch": [
+         [
+          "g'",
+          "-5/(4u-1)^2"
+         ]
+        ]
        }
       ]
      },
@@ -472,8 +1152,44 @@ export const sections: Section[] = [
         "html": "<p>Combine the fractions first: \\(\\dfrac{\\sqrt{1+x}-\\sqrt{1+x+h}}{\\sqrt{1+x+h}\\,\\sqrt{1+x}}\\). Then multiply the top and bottom by the conjugate \\(\\sqrt{1+x}+\\sqrt{1+x+h}\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The difference quotient.</p>\\[\\displaystyle \\frac{\\frac1{\\sqrt{1+x+h}}-\\frac1{\\sqrt{1+x}}}{h}\\]<p><strong>Step 2.</strong> Common denominator.</p>\\[\\displaystyle =\\frac{\\sqrt{1+x}-\\sqrt{1+x+h}}{h\\sqrt{1+x+h}\\sqrt{1+x}}\\]<p><strong>Step 3.</strong> Multiply top and bottom by the conjugate: \\((1+x)-(1+x+h)=-h\\).</p>\\[\\displaystyle \\text{top}\\times(\\sqrt{1+x}+\\sqrt{1+x+h})=-h\\]<p><strong>Step 4.</strong> Cancel \\(h\\). To keep it short, call \\(A=\\sqrt{1+x+h}\\) and \\(B=\\sqrt{1+x}\\).</p>\\[\\displaystyle =\\frac{-1}{A\\,B\\,(A+B)}\\]<p><strong>Step 5.</strong> As \\(h\\to0\\), \\(A\\to B\\).</p>\\[\\displaystyle \\to\\frac{-1}{B\\cdot B\\cdot2B}=\\frac{-1}{2B^3}\\]<p><strong>Step 6.</strong> Domains: \\((-1,\\infty)\\) for both.</p>\\[\\displaystyle f'(x)=-\\frac{1}{2(1+x)^{3/2}}\\]<p><strong>What you found:</strong></p><ul><li>\\(f'=-\\frac{1}{2(1+x)^{3/2}}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\dfrac{f(x+h)-f(x)}{h}=\\dfrac{\\sqrt{1+x}-\\sqrt{1+x+h}}{h\\sqrt{1+x+h}\\sqrt{1+x}}\\)</p>\n<p>Multiply by the conjugate. The numerator becomes \\((1+x)-(1+x+h)=-h\\):</p>\n<p>\\(=\\dfrac{-h}{h\\sqrt{1+x+h}\\sqrt{1+x}\\,(\\sqrt{1+x}+\\sqrt{1+x+h})}\\)</p>\n<p>Cancel \\(h\\), let \\(h\\to0\\): \\(\\dfrac{-1}{\\sqrt{1+x}\\sqrt{1+x}\\cdot2\\sqrt{1+x}}=\\dfrac{-1}{2(1+x)^{3/2}}\\).</p>\n<p class=\"ans\">\\(f'(x)=-\\dfrac{1}{2(1+x)^{3/2}}\\). Domain of \\(f\\) and \\(f'\\): \\((-1,\\infty)\\).</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{\\frac1{\\sqrt{1+x+h}}-\\frac1{\\sqrt{1+x}}}{h}",
+        "why": "The difference quotient."
+       },
+       {
+        "code": "=\\frac{\\sqrt{1+x}-\\sqrt{1+x+h}}{h\\sqrt{1+x+h}\\sqrt{1+x}}",
+        "why": "Common denominator."
+       },
+       {
+        "code": "\\text{top}\\times(\\sqrt{1+x}+\\sqrt{1+x+h})=-h",
+        "why": "Multiply top and bottom by the conjugate: \\((1+x)-(1+x+h)=-h\\)."
+       },
+       {
+        "code": "=\\frac{-1}{A\\,B\\,(A+B)}",
+        "why": "Cancel \\(h\\). To keep it short, call \\(A=\\sqrt{1+x+h}\\) and \\(B=\\sqrt{1+x}\\)."
+       },
+       {
+        "code": "\\to\\frac{-1}{B\\cdot B\\cdot2B}=\\frac{-1}{2B^3}",
+        "why": "As \\(h\\to0\\), \\(A\\to B\\)."
+       },
+       {
+        "code": "f'(x)=-\\frac{1}{2(1+x)^{3/2}}",
+        "why": "Domains: \\((-1,\\infty)\\) for both.",
+        "watch": [
+         [
+          "f'",
+          "-\\frac{1}{2(1+x)^{3/2}}"
+         ]
+        ]
        }
       ]
      },
@@ -488,8 +1204,50 @@ export const sections: Section[] = [
         "html": "<p>The 1 cancels immediately. What remains is the \\(\\sqrt{\\ }\\) conjugate trick.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The 1's cancel right away.</p>\\[\\displaystyle \\frac{[1+\\sqrt{x+h+3}]-[1+\\sqrt{x+3}]}{h}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle =\\frac{\\sqrt{x+h+3}-\\sqrt{x+3}}{h}\\]<p><strong>Step 3.</strong> Multiply by the conjugate.</p>\\[\\displaystyle =\\frac{(x+h+3)-(x+3)}{h(\\sqrt{x+h+3}+\\sqrt{x+3})}\\]<p><strong>Step 4.</strong> The top is \\(h\\); cancel it.</p>\\[\\displaystyle =\\frac{1}{\\sqrt{x+h+3}+\\sqrt{x+3}}\\]<p><strong>Step 5.</strong> Let \\(h\\to0\\).</p>\\[\\displaystyle f'(x)=\\frac{1}{2\\sqrt{x+3}}\\]<p><strong>Step 6.</strong> \\(f'\\) needs \\(x+3>0\\) because it's in a denominator.</p>\\[\\begin{gathered}\\displaystyle f:[-3,\\infty)\\\\\\displaystyle f':(-3,\\infty)\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(f'=\\frac{1}{2\\sqrt{x+3}}\\)</li><li>\\(\\text{domains}:\\ [-3,\\infty),\\ (-3,\\infty)\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\dfrac{\\sqrt{x+h+3}-\\sqrt{x+3}}{h}\\cdot\\dfrac{\\sqrt{x+h+3}+\\sqrt{x+3}}{\\sqrt{x+h+3}+\\sqrt{x+3}}=\\dfrac{1}{\\sqrt{x+h+3}+\\sqrt{x+3}}\\)</p>\n<p class=\"ans\">\\(f'(x)=\\dfrac{1}{2\\sqrt{x+3}}\\). Domain of \\(f\\): \\([-3,\\infty)\\). Domain of \\(f'\\): \\((-3,\\infty)\\).</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{[1+\\sqrt{x+h+3}]-[1+\\sqrt{x+3}]}{h}",
+        "why": "The 1's cancel right away."
+       },
+       {
+        "code": "=\\frac{\\sqrt{x+h+3}-\\sqrt{x+3}}{h}",
+        "why": ""
+       },
+       {
+        "code": "=\\frac{(x+h+3)-(x+3)}{h(\\sqrt{x+h+3}+\\sqrt{x+3})}",
+        "why": "Multiply by the conjugate."
+       },
+       {
+        "code": "=\\frac{1}{\\sqrt{x+h+3}+\\sqrt{x+3}}",
+        "why": "The top is \\(h\\); cancel it."
+       },
+       {
+        "code": "f'(x)=\\frac{1}{2\\sqrt{x+3}}",
+        "why": "Let \\(h\\to0\\).",
+        "watch": [
+         [
+          "f'",
+          "\\frac{1}{2\\sqrt{x+3}}"
+         ]
+        ]
+       },
+       {
+        "code": "f:[-3,\\infty),\\quad f':(-3,\\infty)",
+        "why": "\\(f'\\) needs \\(x+3>0\\) because it's in a denominator.",
+        "watch": [
+         [
+          "\\text{domains}",
+          "[-3,\\infty),\\ (-3,\\infty)"
+         ]
+        ]
        }
       ]
      },
@@ -504,8 +1262,36 @@ export const sections: Section[] = [
         "html": "<p>\\((x+h)^4=x^4+4x^3h+6x^2h^2+4xh^3+h^4\\) (Pascal's row 1 4 6 4 1).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Pascal's row 1 4 6 4 1.</p>\\[\\displaystyle (x+h)^4=x^4+4x^3h+6x^2h^2+4xh^3+h^4\\]<p><strong>Step 2.</strong> Subtract \\(x^4\\).</p>\\[\\displaystyle (x+h)^4-x^4=4x^3h+6x^2h^2+4xh^3+h^4\\]<p><strong>Step 3.</strong> Every term has an \\(h\\) to cancel.</p>\\[\\displaystyle \\div h:\\ 4x^3+6x^2h+4xh^2+h^3\\]<p><strong>Step 4.</strong> Every term with an \\(h\\) vanishes.</p>\\[\\displaystyle h\\to0:\\ 4x^3\\]<p><strong>What you found:</strong></p><ul><li>\\((x^4)'=4x^3\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\dfrac{(x+h)^4-x^4}{h}=\\dfrac{4x^3h+6x^2h^2+4xh^3+h^4}{h}=4x^3+6x^2h+4xh^2+h^3\\)</p>\n<p class=\"ans\">As \\(h\\to0\\), every term with \\(h\\) vanishes: \\(f'(x)=4x^3\\). This is the Power Rule you'll use in 3.1.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "(x+h)^4=x^4+4x^3h+6x^2h^2+4xh^3+h^4",
+        "why": "Pascal's row 1 4 6 4 1."
+       },
+       {
+        "code": "(x+h)^4-x^4=4x^3h+6x^2h^2+4xh^3+h^4",
+        "why": "Subtract \\(x^4\\)."
+       },
+       {
+        "code": "\\div h:\\ 4x^3+6x^2h+4xh^2+h^3",
+        "why": "Every term has an \\(h\\) to cancel."
+       },
+       {
+        "code": "h\\to0:\\ 4x^3",
+        "why": "Every term with an \\(h\\) vanishes.",
+        "watch": [
+         [
+          "(x^4)'",
+          "4x^3"
+         ]
+        ]
        }
       ]
      },
@@ -516,8 +1302,36 @@ export const sections: Section[] = [
       "question": "Where is \\(f(x)=|x-2|+\\begin{cases}0&amp;x\\lt 5\\\\ 1 &amp; x\\ge5\\end{cases}\\) not differentiable, and why?",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Slope \\(-1\\) on the left, \\(+1\\) on the right.</p>\\[\\displaystyle x=2:\\ |x-2|\\text{ has a corner}\\]<p><strong>Step 2.</strong> The second piece jumps from 0 to 1, so \\(f\\) isn't continuous there.</p>\\[\\displaystyle x=5:\\ \\text{a jump of }1\\]<p><strong>Step 3.</strong> Differentiable always requires continuous.</p>\\[\\displaystyle \\text{not continuous}\\Rightarrow\\text{not differentiable}\\]<p><strong>Step 4.</strong></p>\\[\\begin{gathered}\\displaystyle \\text{not differentiable at }x=2\\\\\\displaystyle 5\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(x=2\\ (\\text{corner}),\\ 5\\ (\\text{jump})\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>At \\(x=2\\): a <strong>corner</strong>. Slope is −1 on the left and +1 on the right.</p>\n<p>At \\(x=5\\): a <strong>jump</strong>, so it is not continuous, so it is not differentiable.</p>\n<p class=\"ans\">Not differentiable at \\(x=2\\) (corner) and \\(x=5\\) (discontinuity).</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x=2:\\ |x-2|\\text{ has a corner}",
+        "why": "Slope \\(-1\\) on the left, \\(+1\\) on the right."
+       },
+       {
+        "code": "x=5:\\ \\text{a jump of }1",
+        "why": "The second piece jumps from 0 to 1, so \\(f\\) isn't continuous there."
+       },
+       {
+        "code": "\\text{not continuous}\\Rightarrow\\text{not differentiable}",
+        "why": "Differentiable always requires continuous."
+       },
+       {
+        "code": "\\text{not differentiable at }x=2,\\ 5",
+        "why": "",
+        "watch": [
+         [
+          "x",
+          "2\\ (\\text{corner}),\\ 5\\ (\\text{jump})"
+         ]
+        ]
        }
       ]
      },
@@ -528,8 +1342,36 @@ export const sections: Section[] = [
       "question": "If \\(f(x)=x^3-x\\), find \\(f'\\), \\(f''\\), \\(f'''\\), \\(f^{(4)}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle f'=3x^2-1\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f''=6x\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle f'''=6\\]<p><strong>Step 4.</strong> Each derivative lowers the degree by one; a cubic hits 0 at the 4th.</p>\\[\\displaystyle f^{(4)}=0\\]<p><strong>What you found:</strong></p><ul><li>\\(f^{(4)}=0\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p class=\"ans\">\\(f'=3x^2-1\\), \\(f''=6x\\), \\(f'''=6\\), \\(f^{(4)}=0\\).</p><p>Each derivative of a polynomial lowers the degree by one, so a cubic hits 0 at the 4th derivative.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'=3x^2-1",
+        "why": ""
+       },
+       {
+        "code": "f''=6x",
+        "why": ""
+       },
+       {
+        "code": "f'''=6",
+        "why": ""
+       },
+       {
+        "code": "f^{(4)}=0",
+        "why": "Each derivative lowers the degree by one; a cubic hits 0 at the 4th.",
+        "watch": [
+         [
+          "f^{(4)}",
+          "0"
+         ]
+        ]
        }
       ]
      }
@@ -699,8 +1541,36 @@ export const sections: Section[] = [
       "question": "Differentiate \\(W(t)=\\sqrt t-2e^t\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Rewrite the root as a power.</p>\\[\\displaystyle W=t^{1/2}-2e^t\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle (t^{1/2})'=\\tfrac12t^{-1/2}=\\frac{1}{2\\sqrt t}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle (2e^t)'=2e^t\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle W'(t)=\\frac{1}{2\\sqrt t}-2e^t\\]<p><strong>What you found:</strong></p><ul><li>\\(W'=\\frac{1}{2\\sqrt t}-2e^t\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\sqrt t=t^{1/2}\\to\\tfrac12t^{-1/2}\\); \\(2e^t\\to2e^t\\).</p><p class=\"ans\">\\(W'(t)=\\dfrac{1}{2\\sqrt t}-2e^t\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "W=t^{1/2}-2e^t",
+        "why": "Rewrite the root as a power."
+       },
+       {
+        "code": "(t^{1/2})'=\\tfrac12t^{-1/2}=\\frac{1}{2\\sqrt t}",
+        "why": ""
+       },
+       {
+        "code": "(2e^t)'=2e^t",
+        "why": ""
+       },
+       {
+        "code": "W'(t)=\\frac{1}{2\\sqrt t}-2e^t",
+        "why": "",
+        "watch": [
+         [
+          "W'",
+          "\\frac{1}{2\\sqrt t}-2e^t"
+         ]
+        ]
        }
       ]
      },
@@ -715,8 +1585,32 @@ export const sections: Section[] = [
         "html": "<p>\\(\\dfrac4{\\sqrt[3]x}=4x^{-1/3}\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\sqrt[3]x=x^{1/3}\\), and dividing makes the power negative.</p>\\[\\displaystyle y=3e^x+4x^{-1/3}\\]<p><strong>Step 2.</strong> \\(-\\tfrac13-1=-\\tfrac43\\).</p>\\[\\displaystyle (4x^{-1/3})'=4\\cdot(-\\tfrac13)x^{-4/3}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle y'=3e^x-\\tfrac43x^{-4/3}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=3e^x-\\tfrac43x^{-4/3}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\dfrac{d}{dx}4x^{-1/3}=4\\cdot(-\\tfrac13)x^{-4/3}\\).</p><p class=\"ans\">\\(y'=3e^x-\\dfrac43x^{-4/3}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=3e^x+4x^{-1/3}",
+        "why": "\\(\\sqrt[3]x=x^{1/3}\\), and dividing makes the power negative."
+       },
+       {
+        "code": "(4x^{-1/3})'=4\\cdot(-\\tfrac13)x^{-4/3}",
+        "why": "\\(-\\tfrac13-1=-\\tfrac43\\)."
+       },
+       {
+        "code": "y'=3e^x-\\tfrac43x^{-4/3}",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "3e^x-\\tfrac43x^{-4/3}"
+         ]
+        ]
        }
       ]
      },
@@ -727,8 +1621,28 @@ export const sections: Section[] = [
       "question": "Differentiate \\(f(x)=\\dfrac{3x^2+x^3}{x}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Simplify first (for \\(x\\ne0\\)). No quotient rule needed.</p>\\[\\displaystyle f=\\frac{3x^2}{x}+\\frac{x^3}{x}=3x+x^2\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f'(x)=3+2x\\]<p><strong>What you found:</strong></p><ul><li>\\(f'=3+2x\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Simplify first: \\(f(x)=3x+x^2\\) (for \\(x\\ne0\\)).</p><p class=\"ans\">\\(f'(x)=3+2x\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f=\\frac{3x^2}{x}+\\frac{x^3}{x}=3x+x^2",
+        "why": "Simplify first (for \\(x\\ne0\\)). No quotient rule needed."
+       },
+       {
+        "code": "f'(x)=3+2x",
+        "why": "",
+        "watch": [
+         [
+          "f'",
+          "3+2x"
+         ]
+        ]
        }
       ]
      },
@@ -739,8 +1653,32 @@ export const sections: Section[] = [
       "question": "Differentiate \\(G(r)=\\dfrac{3r^{3/2}+r^{5/2}}{r}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Divide each term by \\(r^1\\): subtract 1 from each power.</p>\\[\\displaystyle G=3r^{1/2}+r^{3/2}\\]<p><strong>Step 2.</strong> Power rule on each term.</p>\\[\\displaystyle G'=\\tfrac32r^{-1/2}+\\tfrac32r^{1/2}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle =\\frac{3}{2\\sqrt r}+\\tfrac32\\sqrt r\\]<p><strong>What you found:</strong></p><ul><li>\\(G'=\\frac{3}{2\\sqrt r}+\\tfrac32\\sqrt r\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Divide each term by \\(r=r^1\\): \\(G=3r^{1/2}+r^{3/2}\\).</p><p class=\"ans\">\\(G'(r)=\\tfrac32r^{-1/2}+\\tfrac32r^{1/2}=\\dfrac{3}{2\\sqrt r}+\\dfrac32\\sqrt r\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "G=3r^{1/2}+r^{3/2}",
+        "why": "Divide each term by \\(r^1\\): subtract 1 from each power."
+       },
+       {
+        "code": "G'=\\tfrac32r^{-1/2}+\\tfrac32r^{1/2}",
+        "why": "Power rule on each term."
+       },
+       {
+        "code": "=\\frac{3}{2\\sqrt r}+\\tfrac32\\sqrt r",
+        "why": "",
+        "watch": [
+         [
+          "G'",
+          "\\frac{3}{2\\sqrt r}+\\tfrac32\\sqrt r"
+         ]
+        ]
        }
       ]
      },
@@ -755,8 +1693,32 @@ export const sections: Section[] = [
         "html": "<p>\\(e^r\\): variable in the exponent → exponential rule. \\(r^e\\): variable in the base, constant power → power rule.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Variable in the exponent: exponential rule.</p>\\[\\displaystyle (e^r)'=e^r\\]<p><strong>Step 2.</strong> Variable in the base, constant power: power rule (\\(e\\approx2.718\\) is just a number).</p>\\[\\displaystyle (r^e)'=e\\,r^{e-1}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle k'(r)=e^r+e\\,r^{e-1}\\]<p><strong>What you found:</strong></p><ul><li>\\(k'=e^r+er^{e-1}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p class=\"ans\">\\(k'(r)=e^r+e\\,r^{e-1}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "(e^r)'=e^r",
+        "why": "Variable in the exponent: exponential rule."
+       },
+       {
+        "code": "(r^e)'=e\\,r^{e-1}",
+        "why": "Variable in the base, constant power: power rule (\\(e\\approx2.718\\) is just a number)."
+       },
+       {
+        "code": "k'(r)=e^r+e\\,r^{e-1}",
+        "why": "",
+        "watch": [
+         [
+          "k'",
+          "e^r+er^{e-1}"
+         ]
+        ]
        }
       ]
      },
@@ -767,8 +1729,28 @@ export const sections: Section[] = [
       "question": "Differentiate \\(G(q)=(1+q^{-1})^2\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Expand the square, so only the power rule is needed.</p>\\[\\displaystyle G=(1+q^{-1})^2=1+2q^{-1}+q^{-2}\\]<p><strong>Step 2.</strong> \\(2\\cdot(-1)=-2\\); \\(1\\cdot(-2)=-2\\).</p>\\[\\displaystyle G'=-2q^{-2}-2q^{-3}\\]<p><strong>What you found:</strong></p><ul><li>\\(G'=-2q^{-2}-2q^{-3}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Expand (no chain rule yet): \\(G=1+2q^{-1}+q^{-2}\\).</p><p class=\"ans\">\\(G'(q)=-2q^{-2}-2q^{-3}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "G=(1+q^{-1})^2=1+2q^{-1}+q^{-2}",
+        "why": "Expand the square, so only the power rule is needed."
+       },
+       {
+        "code": "G'=-2q^{-2}-2q^{-3}",
+        "why": "\\(2\\cdot(-1)=-2\\); \\(1\\cdot(-2)=-2\\).",
+        "watch": [
+         [
+          "G'",
+          "-2q^{-2}-2q^{-3}"
+         ]
+        ]
        }
       ]
      },
@@ -779,8 +1761,42 @@ export const sections: Section[] = [
       "question": "Find the tangent line to \\(y=2x^3-x^2+2\\) at \\((1,3)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle y'=6x^2-2x\\]<p><strong>Step 2.</strong> Slope at the point \\((1,3)\\).</p>\\[\\displaystyle y'(1)=6-2=4\\]<p><strong>Step 3.</strong> Point-slope form.</p>\\[\\displaystyle y-3=4(x-1)\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle y=4x-1\\]<p><strong>What you found:</strong></p><ul><li>\\(m=4\\)</li><li>\\(\\text{line}:\\ y=4x-1\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(y'=6x^2-2x\\), so the slope at 1 is \\(6-2=4\\).</p><p>\\(y-3=4(x-1)\\)</p><p class=\"ans\">\\(y=4x-1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y'=6x^2-2x",
+        "why": ""
+       },
+       {
+        "code": "y'(1)=6-2=4",
+        "why": "Slope at the point \\((1,3)\\).",
+        "watch": [
+         [
+          "m",
+          "4"
+         ]
+        ]
+       },
+       {
+        "code": "y-3=4(x-1)",
+        "why": "Point-slope form."
+       },
+       {
+        "code": "y=4x-1",
+        "why": "",
+        "watch": [
+         [
+          "\\text{line}",
+          "y=4x-1"
+         ]
+        ]
        }
       ]
      },
@@ -791,8 +1807,50 @@ export const sections: Section[] = [
       "question": "Find the tangent and normal lines to \\(y=x^4+2e^x\\) at \\((0,2)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle y'=4x^3+2e^x\\]<p><strong>Step 2.</strong> Tangent slope at \\((0,2)\\).</p>\\[\\displaystyle y'(0)=0+2=2\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\text{tangent: }y=2x+2\\]<p><strong>Step 4.</strong> The normal line is perpendicular: negative reciprocal.</p>\\[\\displaystyle m_{\\perp}=-\\tfrac12\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle \\text{normal: }y=-\\tfrac12x+2\\]<p><strong>What you found:</strong></p><ul><li>\\(m=2\\)</li><li>\\(\\text{tangent}:\\ y=2x+2\\)</li><li>\\(\\text{normal}:\\ y=-\\tfrac12x+2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(y'=4x^3+2e^x\\); at 0: \\(0+2=2\\).</p><p>Tangent: \\(y-2=2x\\Rightarrow y=2x+2\\).</p><p>Normal slope \\(=-\\tfrac12\\): \\(y=-\\tfrac12x+2\\).</p><p class=\"ans\">Tangent \\(y=2x+2\\); normal \\(y=-\\tfrac12x+2\\).</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y'=4x^3+2e^x",
+        "why": ""
+       },
+       {
+        "code": "y'(0)=0+2=2",
+        "why": "Tangent slope at \\((0,2)\\).",
+        "watch": [
+         [
+          "m",
+          "2"
+         ]
+        ]
+       },
+       {
+        "code": "\\text{tangent: }y=2x+2",
+        "why": ""
+       },
+       {
+        "code": "m_{\\perp}=-\\tfrac12",
+        "why": "The normal line is perpendicular: negative reciprocal."
+       },
+       {
+        "code": "\\text{normal: }y=-\\tfrac12x+2",
+        "why": "",
+        "watch": [
+         [
+          "\\text{tangent}",
+          "y=2x+2"
+         ],
+         [
+          "\\text{normal}",
+          "y=-\\tfrac12x+2"
+         ]
+        ]
        }
       ]
      },
@@ -803,8 +1861,28 @@ export const sections: Section[] = [
       "question": "Find \\(f'\\) and \\(f''\\) for \\(f(x)=0.001x^5-0.02x^3\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(0.001\\cdot5=0.005\\); \\(0.02\\cdot3=0.06\\).</p>\\[\\displaystyle f'=0.005x^4-0.06x^2\\]<p><strong>Step 2.</strong> \\(0.005\\cdot4=0.02\\); \\(0.06\\cdot2=0.12\\).</p>\\[\\displaystyle f''=0.02x^3-0.12x\\]<p><strong>What you found:</strong></p><ul><li>\\(f''=0.02x^3-0.12x\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p class=\"ans\">\\(f'(x)=0.005x^4-0.06x^2\\), \\(f''(x)=0.02x^3-0.12x\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'=0.005x^4-0.06x^2",
+        "why": "\\(0.001\\cdot5=0.005\\); \\(0.02\\cdot3=0.06\\)."
+       },
+       {
+        "code": "f''=0.02x^3-0.12x",
+        "why": "\\(0.005\\cdot4=0.02\\); \\(0.06\\cdot2=0.12\\).",
+        "watch": [
+         [
+          "f''",
+          "0.02x^3-0.12x"
+         ]
+        ]
        }
       ]
      },
@@ -815,8 +1893,46 @@ export const sections: Section[] = [
       "question": "A particle moves by \\(s=t^3-6t^2+9t\\) (meters, seconds). When is it at rest? What is its acceleration then?",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Velocity is the derivative of position.</p>\\[\\displaystyle v=s'=3t^2-12t+9\\]<p><strong>Step 2.</strong> Factor.</p>\\[\\displaystyle =3(t-1)(t-3)\\]<p><strong>Step 3.</strong> At rest means velocity 0.</p>\\[\\begin{gathered}\\displaystyle v=0\\Rightarrow t=1\\\\\\displaystyle 3\\end{gathered}\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle a=v'=6t-12\\]<p><strong>Step 5.</strong> In m/s².</p>\\[\\begin{gathered}\\displaystyle a(1)=-6\\\\\\displaystyle a(3)=6\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(t=1,\\ 3\\)</li><li>\\(a=-6,\\ 6\\ \\text{m/s}^2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(v=s'=3t^2-12t+9=3(t-1)(t-3)\\). At rest when \\(v=0\\): \\(t=1\\) and \\(t=3\\).</p><p>\\(a=v'=6t-12\\): \\(a(1)=-6\\), \\(a(3)=6\\) m/s².</p><p class=\"ans\">At rest at t = 1 s (a = −6 m/s²) and t = 3 s (a = 6 m/s²).</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "v=s'=3t^2-12t+9",
+        "why": "Velocity is the derivative of position."
+       },
+       {
+        "code": "=3(t-1)(t-3)",
+        "why": "Factor."
+       },
+       {
+        "code": "v=0\\Rightarrow t=1,\\ 3",
+        "why": "At rest means velocity 0.",
+        "watch": [
+         [
+          "t",
+          "1,\\ 3"
+         ]
+        ]
+       },
+       {
+        "code": "a=v'=6t-12",
+        "why": ""
+       },
+       {
+        "code": "a(1)=-6,\\quad a(3)=6",
+        "why": "In m/s².",
+        "watch": [
+         [
+          "a",
+          "-6,\\ 6\\ \\text{m/s}^2"
+         ]
+        ]
        }
       ]
      }
@@ -906,8 +2022,40 @@ export const sections: Section[] = [
       "question": "Differentiate \\(f(x)=(1+2x^2)(x-x^2)\\) two ways: Product Rule, and multiplying out first. Do they agree?",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product rule: (first)' × second + first × (second)'.</p>\\[\\displaystyle f'=4x(x-x^2)+(1+2x^2)(1-2x)\\]<p><strong>Step 2.</strong> Multiply out.</p>\\[\\displaystyle =4x^2-4x^3+1-2x+2x^2-4x^3\\]<p><strong>Step 3.</strong> Combine like terms.</p>\\[\\displaystyle =1-2x+6x^2-8x^3\\]<p><strong>Step 4.</strong> Second way: multiply out first.</p>\\[\\displaystyle f=x-x^2+2x^3-2x^4\\]<p><strong>Step 5.</strong> Power rule. Same answer, so they agree.</p>\\[\\displaystyle f'=1-2x+6x^2-8x^3\\]<p><strong>What you found:</strong></p><ul><li>\\(f'=1-2x+6x^2-8x^3\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Product: \\(4x(x-x^2)+(1+2x^2)(1-2x)=4x^2-4x^3+1-2x+2x^2-4x^3\\)</p>\n<p>Multiply first: \\(f=x-x^2+2x^3-2x^4\\Rightarrow f'=1-2x+6x^2-8x^3\\).</p>\n<p class=\"ans\">Both give \\(f'(x)=1-2x+6x^2-8x^3\\).</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'=4x(x-x^2)+(1+2x^2)(1-2x)",
+        "why": "Product rule: (first)' × second + first × (second)'."
+       },
+       {
+        "code": "=4x^2-4x^3+1-2x+2x^2-4x^3",
+        "why": "Multiply out."
+       },
+       {
+        "code": "=1-2x+6x^2-8x^3",
+        "why": "Combine like terms."
+       },
+       {
+        "code": "f=x-x^2+2x^3-2x^4",
+        "why": "Second way: multiply out first."
+       },
+       {
+        "code": "f'=1-2x+6x^2-8x^3",
+        "why": "Power rule. Same answer, so they agree.",
+        "watch": [
+         [
+          "f'",
+          "1-2x+6x^2-8x^3"
+         ]
+        ]
        }
       ]
      },
@@ -918,8 +2066,32 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=x^3e^x\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product rule.</p>\\[\\displaystyle y'=(x^3)'e^x+x^3(e^x)'\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle =3x^2e^x+x^3e^x\\]<p><strong>Step 3.</strong> Factor.</p>\\[\\displaystyle =x^2e^x(x+3)\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=x^2e^x(x+3)\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p class=\"ans\">\\(y'=x^3e^x+3x^2e^x=x^2e^x(x+3)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y'=(x^3)'e^x+x^3(e^x)'",
+        "why": "Product rule."
+       },
+       {
+        "code": "=3x^2e^x+x^3e^x",
+        "why": ""
+       },
+       {
+        "code": "=x^2e^x(x+3)",
+        "why": "Factor.",
+        "watch": [
+         [
+          "y'",
+          "x^2e^x(x+3)"
+         ]
+        ]
        }
       ]
      },
@@ -930,8 +2102,32 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=\\dfrac{x}{e^x}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Quotient rule: low d-high minus high d-low.</p>\\[\\displaystyle y'=\\frac{e^x\\cdot1-x\\cdot e^x}{(e^x)^2}\\]<p><strong>Step 2.</strong> Factor \\(e^x\\) from the top; \\((e^x)^2=e^{2x}\\).</p>\\[\\displaystyle =\\frac{e^x(1-x)}{e^{2x}}\\]<p><strong>Step 3.</strong> Cancel one \\(e^x\\).</p>\\[\\displaystyle y'=\\frac{1-x}{e^x}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=\\frac{1-x}{e^x}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(y'=\\dfrac{e^x\\cdot1-x\\cdot e^x}{(e^x)^2}=\\dfrac{e^x(1-x)}{e^{2x}}\\)</p><p class=\"ans\">\\(y'=\\dfrac{1-x}{e^x}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y'=\\frac{e^x\\cdot1-x\\cdot e^x}{(e^x)^2}",
+        "why": "Quotient rule: low d-high minus high d-low."
+       },
+       {
+        "code": "=\\frac{e^x(1-x)}{e^{2x}}",
+        "why": "Factor \\(e^x\\) from the top; \\((e^x)^2=e^{2x}\\)."
+       },
+       {
+        "code": "y'=\\frac{1-x}{e^x}",
+        "why": "Cancel one \\(e^x\\).",
+        "watch": [
+         [
+          "y'",
+          "\\frac{1-x}{e^x}"
+         ]
+        ]
        }
       ]
      },
@@ -942,8 +2138,32 @@ export const sections: Section[] = [
       "question": "Differentiate \\(g(t)=\\dfrac{3-2t}{5t+1}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Low d-high minus high d-low.</p>\\[\\displaystyle g'=\\frac{(5t+1)(-2)-(3-2t)(5)}{(5t+1)^2}\\]<p><strong>Step 2.</strong> Expand. Careful: \\(-(3-2t)(5)=-15+10t\\).</p>\\[\\displaystyle =\\frac{-10t-2-15+10t}{(5t+1)^2}\\]<p><strong>Step 3.</strong> The \\(t\\) terms cancel.</p>\\[\\displaystyle g'(t)=\\frac{-17}{(5t+1)^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(g'=-17/(5t+1)^2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(g'=\\dfrac{(5t+1)(-2)-(3-2t)(5)}{(5t+1)^2}=\\dfrac{-10t-2-15+10t}{(5t+1)^2}\\)</p><p class=\"ans\">\\(g'(t)=\\dfrac{-17}{(5t+1)^2}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "g'=\\frac{(5t+1)(-2)-(3-2t)(5)}{(5t+1)^2}",
+        "why": "Low d-high minus high d-low."
+       },
+       {
+        "code": "=\\frac{-10t-2-15+10t}{(5t+1)^2}",
+        "why": "Expand. Careful: \\(-(3-2t)(5)=-15+10t\\)."
+       },
+       {
+        "code": "g'(t)=\\frac{-17}{(5t+1)^2}",
+        "why": "The \\(t\\) terms cancel.",
+        "watch": [
+         [
+          "g'",
+          "-17/(5t+1)^2"
+         ]
+        ]
        }
       ]
      },
@@ -954,8 +2174,32 @@ export const sections: Section[] = [
       "question": "Differentiate \\(f(t)=\\dfrac{5t}{t^3-t-1}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Quotient rule.</p>\\[\\displaystyle f'=\\frac{(t^3-t-1)(5)-5t(3t^2-1)}{(t^3-t-1)^2}\\]<p><strong>Step 2.</strong> Expand both products.</p>\\[\\displaystyle =\\frac{5t^3-5t-5-15t^3+5t}{(t^3-t-1)^2}\\]<p><strong>Step 3.</strong> Combine.</p>\\[\\displaystyle f'(t)=\\frac{-10t^3-5}{(t^3-t-1)^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(f'=\\frac{-10t^3-5}{(t^3-t-1)^2}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'=\\dfrac{(t^3-t-1)(5)-5t(3t^2-1)}{(t^3-t-1)^2}=\\dfrac{5t^3-5t-5-15t^3+5t}{(t^3-t-1)^2}\\)</p><p class=\"ans\">\\(f'(t)=\\dfrac{-10t^3-5}{(t^3-t-1)^2}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'=\\frac{(t^3-t-1)(5)-5t(3t^2-1)}{(t^3-t-1)^2}",
+        "why": "Quotient rule."
+       },
+       {
+        "code": "=\\frac{5t^3-5t-5-15t^3+5t}{(t^3-t-1)^2}",
+        "why": "Expand both products."
+       },
+       {
+        "code": "f'(t)=\\frac{-10t^3-5}{(t^3-t-1)^2}",
+        "why": "Combine.",
+        "watch": [
+         [
+          "f'",
+          "\\frac{-10t^3-5}{(t^3-t-1)^2}"
+         ]
+        ]
        }
       ]
      },
@@ -970,8 +2214,48 @@ export const sections: Section[] = [
         "html": "<p>The top \\(x^2e^x\\) needs the Product Rule inside the Quotient Rule: \\((x^2e^x)'=e^x(x^2+2x)\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The top needs its own product rule.</p>\\[\\displaystyle (x^2e^x)'=e^x(x^2+2x)\\]<p><strong>Step 2.</strong> Derivative of the bottom.</p>\\[\\displaystyle (x^2+e^x)'=2x+e^x\\]<p><strong>Step 3.</strong> Quotient rule.</p>\\[\\displaystyle f'=\\frac{\\text{low}\\cdot\\text{d-high}-\\text{high}\\cdot\\text{d-low}}{(x^2+e^x)^2}\\]<p><strong>Step 4.</strong> Plug the four pieces in.</p>\\[\\displaystyle \\begin{aligned}\\text{top}=&\\,(x^2+e^x)\\,e^x(x^2+2x)\\\\&-x^2e^x(2x+e^x)\\end{aligned}\\]<p><strong>Step 5.</strong> Factor out \\(e^x\\) and expand.</p>\\[\\displaystyle \\text{top}=e^x[x^4+2x^3+x^2e^x+2xe^x-2x^3-x^2e^x]\\]<p><strong>Step 6.</strong> Most terms cancel.</p>\\[\\displaystyle =e^x(x^4+2xe^x)=xe^x(x^3+2e^x)\\]<p><strong>Step 7.</strong></p>\\[\\displaystyle f'=\\frac{xe^x(x^3+2e^x)}{(x^2+e^x)^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(f'=\\frac{xe^x(x^3+2e^x)}{(x^2+e^x)^2}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'=\\dfrac{(x^2+e^x)\\,e^x(x^2+2x)-x^2e^x(2x+e^x)}{(x^2+e^x)^2}\\)</p>\n<p>Factor \\(e^x\\) from the numerator: \\(e^x[x^4+2x^3+x^2e^x+2xe^x-2x^3-x^2e^x]=e^x(x^4+2xe^x)\\).</p>\n<p class=\"ans\">\\(f'(x)=\\dfrac{xe^x(x^3+2e^x)}{(x^2+e^x)^2}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "(x^2e^x)'=e^x(x^2+2x)",
+        "why": "The top needs its own product rule."
+       },
+       {
+        "code": "(x^2+e^x)'=2x+e^x",
+        "why": "Derivative of the bottom."
+       },
+       {
+        "code": "f'=\\frac{\\text{low}\\cdot\\text{d-high}-\\text{high}\\cdot\\text{d-low}}{(x^2+e^x)^2}",
+        "why": "Quotient rule."
+       },
+       {
+        "code": "\\begin{aligned}\\text{top}=&\\,(x^2+e^x)\\,e^x(x^2+2x)\\\\&-x^2e^x(2x+e^x)\\end{aligned}",
+        "why": "Plug the four pieces in."
+       },
+       {
+        "code": "\\text{top}=e^x[x^4+2x^3+x^2e^x+2xe^x-2x^3-x^2e^x]",
+        "why": "Factor out \\(e^x\\) and expand."
+       },
+       {
+        "code": "=e^x(x^4+2xe^x)=xe^x(x^3+2e^x)",
+        "why": "Most terms cancel."
+       },
+       {
+        "code": "f'=\\frac{xe^x(x^3+2e^x)}{(x^2+e^x)^2}",
+        "why": "",
+        "watch": [
+         [
+          "f'",
+          "\\frac{xe^x(x^3+2e^x)}{(x^2+e^x)^2}"
+         ]
+        ]
        }
       ]
      },
@@ -982,8 +2266,36 @@ export const sections: Section[] = [
       "question": "Find \\(f'\\) and \\(f''\\) for \\(f(x)=x^2e^x\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product rule.</p>\\[\\displaystyle f'=2xe^x+x^2e^x=e^x(x^2+2x)\\]<p><strong>Step 2.</strong> Product rule again on \\(e^x\\cdot(x^2+2x)\\).</p>\\[\\displaystyle f''=e^x(x^2+2x)+e^x(2x+2)\\]<p><strong>Step 3.</strong> Combine inside the bracket.</p>\\[\\displaystyle f''=e^x(x^2+4x+2)\\]<p><strong>What you found:</strong></p><ul><li>\\(f'=e^x(x^2+2x)\\)</li><li>\\(f''=e^x(x^2+4x+2)\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'=e^x(x^2+2x)\\). Then \\(f''=e^x(x^2+2x)+e^x(2x+2)\\).</p><p class=\"ans\">\\(f'=e^x(x^2+2x)\\), \\(f''=e^x(x^2+4x+2)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'=2xe^x+x^2e^x=e^x(x^2+2x)",
+        "why": "Product rule."
+       },
+       {
+        "code": "f''=e^x(x^2+2x)+e^x(2x+2)",
+        "why": "Product rule again on \\(e^x\\cdot(x^2+2x)\\)."
+       },
+       {
+        "code": "f''=e^x(x^2+4x+2)",
+        "why": "Combine inside the bracket.",
+        "watch": [
+         [
+          "f'",
+          "e^x(x^2+2x)"
+         ],
+         [
+          "f''",
+          "e^x(x^2+4x+2)"
+         ]
+        ]
        }
       ]
      },
@@ -994,8 +2306,46 @@ export const sections: Section[] = [
       "question": "Find the tangent line to \\(y=\\dfrac{x^2}{1+x}\\) at \\(\\left(1,\\tfrac12\\right)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Quotient rule.</p>\\[\\displaystyle y'=\\frac{(1+x)(2x)-x^2(1)}{(1+x)^2}\\]<p><strong>Step 2.</strong> \\(2x+2x^2-x^2=x^2+2x\\).</p>\\[\\displaystyle =\\frac{x^2+2x}{(1+x)^2}\\]<p><strong>Step 3.</strong> Slope at \\(x=1\\).</p>\\[\\displaystyle y'(1)=\\frac{3}{4}\\]<p><strong>Step 4.</strong> Point-slope form.</p>\\[\\displaystyle y-\\tfrac12=\\tfrac34(x-1)\\]<p><strong>Step 5.</strong> \\(-\\tfrac34+\\tfrac12=-\\tfrac14\\).</p>\\[\\displaystyle y=\\tfrac34x-\\tfrac14\\]<p><strong>What you found:</strong></p><ul><li>\\(m=3/4\\)</li><li>\\(\\text{line}:\\ y=\\tfrac34x-\\tfrac14\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(y'=\\dfrac{(1+x)(2x)-x^2}{(1+x)^2}=\\dfrac{x^2+2x}{(1+x)^2}\\); at 1: \\(\\tfrac34\\).</p><p>\\(y-\\tfrac12=\\tfrac34(x-1)\\)</p><p class=\"ans\">\\(y=\\tfrac34x-\\tfrac14\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y'=\\frac{(1+x)(2x)-x^2(1)}{(1+x)^2}",
+        "why": "Quotient rule."
+       },
+       {
+        "code": "=\\frac{x^2+2x}{(1+x)^2}",
+        "why": "\\(2x+2x^2-x^2=x^2+2x\\)."
+       },
+       {
+        "code": "y'(1)=\\frac{3}{4}",
+        "why": "Slope at \\(x=1\\).",
+        "watch": [
+         [
+          "m",
+          "3/4"
+         ]
+        ]
+       },
+       {
+        "code": "y-\\tfrac12=\\tfrac34(x-1)",
+        "why": "Point-slope form."
+       },
+       {
+        "code": "y=\\tfrac34x-\\tfrac14",
+        "why": "\\(-\\tfrac34+\\tfrac12=-\\tfrac14\\).",
+        "watch": [
+         [
+          "\\text{line}",
+          "y=\\tfrac34x-\\tfrac14"
+         ]
+        ]
        }
       ]
      },
@@ -1006,8 +2356,46 @@ export const sections: Section[] = [
       "question": "Find the tangent line to the witch of Agnesi \\(y=\\dfrac{1}{1+x^2}\\) at \\(\\left(-1,\\tfrac12\\right)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Quotient rule; the top is the constant 1.</p>\\[\\displaystyle y'=\\frac{(1+x^2)(0)-1(2x)}{(1+x^2)^2}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle =\\frac{-2x}{(1+x^2)^2}\\]<p><strong>Step 3.</strong> Slope at \\(x=-1\\).</p>\\[\\displaystyle y'(-1)=\\frac{2}{4}=\\frac12\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle y-\\tfrac12=\\tfrac12(x+1)\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle y=\\tfrac12x+1\\]<p><strong>What you found:</strong></p><ul><li>\\(m=1/2\\)</li><li>\\(\\text{line}:\\ y=\\tfrac12x+1\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(y'=\\dfrac{(1+x^2)(0)-1(2x)}{(1+x^2)^2}=\\dfrac{-2x}{(1+x^2)^2}\\); at \\(-1\\): \\(\\dfrac{2}{4}=\\tfrac12\\).</p><p class=\"ans\">\\(y=\\tfrac12x+1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y'=\\frac{(1+x^2)(0)-1(2x)}{(1+x^2)^2}",
+        "why": "Quotient rule; the top is the constant 1."
+       },
+       {
+        "code": "=\\frac{-2x}{(1+x^2)^2}",
+        "why": ""
+       },
+       {
+        "code": "y'(-1)=\\frac{2}{4}=\\frac12",
+        "why": "Slope at \\(x=-1\\).",
+        "watch": [
+         [
+          "m",
+          "1/2"
+         ]
+        ]
+       },
+       {
+        "code": "y-\\tfrac12=\\tfrac12(x+1)",
+        "why": ""
+       },
+       {
+        "code": "y=\\tfrac12x+1",
+        "why": "",
+        "watch": [
+         [
+          "\\text{line}",
+          "y=\\tfrac12x+1"
+         ]
+        ]
        }
       ]
      },
@@ -1018,8 +2406,32 @@ export const sections: Section[] = [
       "question": "If \\(h(x)=\\dfrac{f(x)}{x}\\), \\(f(2)=-3\\), \\(f'(2)=4\\), find \\(h'(2)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Quotient rule with \\(f\\) on top and \\(x\\) on the bottom.</p>\\[\\displaystyle h'=\\frac{x\\,f'(x)-f(x)\\cdot1}{x^2}\\]<p><strong>Step 2.</strong> Plug in \\(f(2)=-3\\), \\(f'(2)=4\\).</p>\\[\\displaystyle h'(2)=\\frac{2(4)-(-3)}{4}\\]<p><strong>Step 3.</strong> \\(8+3=11\\).</p>\\[\\displaystyle =\\frac{11}{4}\\]<p><strong>What you found:</strong></p><ul><li>\\(h'(2)=11/4\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(h'=\\dfrac{x f'(x)-f(x)\\cdot1}{x^2}=\\dfrac{2(4)-(-3)}{4}\\)</p><p class=\"ans\">\\(h'(2)=\\dfrac{11}{4}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "h'=\\frac{x\\,f'(x)-f(x)\\cdot1}{x^2}",
+        "why": "Quotient rule with \\(f\\) on top and \\(x\\) on the bottom."
+       },
+       {
+        "code": "h'(2)=\\frac{2(4)-(-3)}{4}",
+        "why": "Plug in \\(f(2)=-3\\), \\(f'(2)=4\\)."
+       },
+       {
+        "code": "=\\frac{11}{4}",
+        "why": "\\(8+3=11\\).",
+        "watch": [
+         [
+          "h'(2)",
+          "11/4"
+         ]
+        ]
        }
       ]
      }
@@ -1126,8 +2538,40 @@ export const sections: Section[] = [
         "html": "<p>Write \\(\\csc x=\\frac{1}{\\sin x}\\) and use the quotient rule; the derivative of the constant 1 is 0.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Write it as a quotient.</p>\\[\\displaystyle \\csc x=\\frac{1}{\\sin x}\\]<p><strong>Step 2.</strong> Quotient rule; the derivative of 1 is 0.</p>\\[\\displaystyle \\frac{d}{dx}\\frac1{\\sin x}=\\frac{\\sin x\\cdot0-1\\cdot\\cos x}{\\sin^2x}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle =\\frac{-\\cos x}{\\sin^2x}\\]<p><strong>Step 4.</strong> Split into two fractions.</p>\\[\\displaystyle =-\\frac{1}{\\sin x}\\cdot\\frac{\\cos x}{\\sin x}\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle =-\\csc x\\cot x\\ \\checkmark\\]<p><strong>What you found:</strong></p><ul><li>\\((\\csc x)'=-\\csc x\\cot x\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\dfrac{d}{dx}\\left(\\dfrac1{\\sin x}\\right)=\\dfrac{\\sin x\\cdot0-1\\cdot\\cos x}{\\sin^2x}=\\dfrac{-\\cos x}{\\sin^2x}\\).</p><p>Split: \\(-\\dfrac{1}{\\sin x}\\cdot\\dfrac{\\cos x}{\\sin x}=-\\csc x\\cot x\\).</p><p class=\"ans\">\\(\\dfrac{d}{dx}\\csc x=-\\csc x\\cot x\\) ✓</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\csc x=\\frac{1}{\\sin x}",
+        "why": "Write it as a quotient."
+       },
+       {
+        "code": "\\frac{d}{dx}\\frac1{\\sin x}=\\frac{\\sin x\\cdot0-1\\cdot\\cos x}{\\sin^2x}",
+        "why": "Quotient rule; the derivative of 1 is 0."
+       },
+       {
+        "code": "=\\frac{-\\cos x}{\\sin^2x}",
+        "why": ""
+       },
+       {
+        "code": "=-\\frac{1}{\\sin x}\\cdot\\frac{\\cos x}{\\sin x}",
+        "why": "Split into two fractions."
+       },
+       {
+        "code": "=-\\csc x\\cot x\\ \\checkmark",
+        "why": "",
+        "watch": [
+         [
+          "(\\csc x)'",
+          "-\\csc x\\cot x"
+         ]
+        ]
        }
       ]
      },
@@ -1138,8 +2582,36 @@ export const sections: Section[] = [
       "question": "Show that \\(\\dfrac{d}{dx}\\sec x=\\sec x\\tan x\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\sec x=\\frac{1}{\\cos x}\\]<p><strong>Step 2.</strong> Quotient rule.</p>\\[\\displaystyle \\frac{d}{dx}\\frac1{\\cos x}=\\frac{0-1\\cdot(-\\sin x)}{\\cos^2x}\\]<p><strong>Step 3.</strong> Split.</p>\\[\\displaystyle =\\frac{\\sin x}{\\cos^2x}=\\frac{1}{\\cos x}\\cdot\\frac{\\sin x}{\\cos x}\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle =\\sec x\\tan x\\ \\checkmark\\]<p><strong>What you found:</strong></p><ul><li>\\((\\sec x)'=\\sec x\\tan x\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\dfrac{d}{dx}\\left(\\dfrac1{\\cos x}\\right)=\\dfrac{0-1\\cdot(-\\sin x)}{\\cos^2x}=\\dfrac{\\sin x}{\\cos^2x}\\).</p><p>Split: \\(\\dfrac{1}{\\cos x}\\cdot\\dfrac{\\sin x}{\\cos x}=\\sec x\\tan x\\).</p><p class=\"ans\">\\(\\dfrac{d}{dx}\\sec x=\\sec x\\tan x\\) ✓</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\sec x=\\frac{1}{\\cos x}",
+        "why": ""
+       },
+       {
+        "code": "\\frac{d}{dx}\\frac1{\\cos x}=\\frac{0-1\\cdot(-\\sin x)}{\\cos^2x}",
+        "why": "Quotient rule."
+       },
+       {
+        "code": "=\\frac{\\sin x}{\\cos^2x}=\\frac{1}{\\cos x}\\cdot\\frac{\\sin x}{\\cos x}",
+        "why": "Split."
+       },
+       {
+        "code": "=\\sec x\\tan x\\ \\checkmark",
+        "why": "",
+        "watch": [
+         [
+          "(\\sec x)'",
+          "\\sec x\\tan x"
+         ]
+        ]
        }
       ]
      },
@@ -1154,8 +2626,36 @@ export const sections: Section[] = [
         "html": "<p>\\(\\cot x=\\frac{\\cos x}{\\sin x}\\). After the quotient rule, factor out a minus and use \\(\\sin^2x+\\cos^2x=1\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\cot x=\\frac{\\cos x}{\\sin x}\\]<p><strong>Step 2.</strong> Quotient rule. Low d-high first: \\(\\sin x\\cdot(-\\sin x)\\).</p>\\[\\displaystyle \\frac{\\sin x(-\\sin x)-\\cos x\\cos x}{\\sin^2x}\\]<p><strong>Step 3.</strong> Factor out the minus.</p>\\[\\displaystyle =\\frac{-(\\sin^2x+\\cos^2x)}{\\sin^2x}\\]<p><strong>Step 4.</strong> Pythagorean identity.</p>\\[\\displaystyle =\\frac{-1}{\\sin^2x}=-\\csc^2x\\ \\checkmark\\]<p><strong>What you found:</strong></p><ul><li>\\((\\cot x)'=-\\csc^2x\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\dfrac{d}{dx}\\left(\\dfrac{\\cos x}{\\sin x}\\right)=\\dfrac{\\sin x(-\\sin x)-\\cos x\\cos x}{\\sin^2x}\\).</p><p>Top: \\(-(\\sin^2x+\\cos^2x)=-1\\). So it equals \\(\\dfrac{-1}{\\sin^2x}=-\\csc^2x\\).</p><p class=\"ans\">\\(\\dfrac{d}{dx}\\cot x=-\\csc^2x\\) ✓</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\cot x=\\frac{\\cos x}{\\sin x}",
+        "why": ""
+       },
+       {
+        "code": "\\frac{\\sin x(-\\sin x)-\\cos x\\cos x}{\\sin^2x}",
+        "why": "Quotient rule. Low d-high first: \\(\\sin x\\cdot(-\\sin x)\\)."
+       },
+       {
+        "code": "=\\frac{-(\\sin^2x+\\cos^2x)}{\\sin^2x}",
+        "why": "Factor out the minus."
+       },
+       {
+        "code": "=\\frac{-1}{\\sin^2x}=-\\csc^2x\\ \\checkmark",
+        "why": "Pythagorean identity.",
+        "watch": [
+         [
+          "(\\cot x)'",
+          "-\\csc^2x"
+         ]
+        ]
        }
       ]
      },
@@ -1166,8 +2666,36 @@ export const sections: Section[] = [
       "question": "Show that \\(\\dfrac{d}{dx}\\tan x=\\sec^2x\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\tan x=\\frac{\\sin x}{\\cos x}\\]<p><strong>Step 2.</strong> Quotient rule.</p>\\[\\displaystyle \\frac{\\cos x\\cos x-\\sin x(-\\sin x)}{\\cos^2x}\\]<p><strong>Step 3.</strong> Pythagorean identity.</p>\\[\\displaystyle =\\frac{\\cos^2x+\\sin^2x}{\\cos^2x}=\\frac{1}{\\cos^2x}\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle =\\sec^2x\\ \\checkmark\\]<p><strong>What you found:</strong></p><ul><li>\\((\\tan x)'=\\sec^2x\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\dfrac{d}{dx}\\left(\\dfrac{\\sin x}{\\cos x}\\right)=\\dfrac{\\cos x\\cos x-\\sin x(-\\sin x)}{\\cos^2x}=\\dfrac{\\cos^2x+\\sin^2x}{\\cos^2x}\\).</p><p>Top \\(=1\\): \\(\\dfrac{1}{\\cos^2x}=\\sec^2x\\).</p><p class=\"ans\">\\(\\dfrac{d}{dx}\\tan x=\\sec^2x\\) ✓</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\tan x=\\frac{\\sin x}{\\cos x}",
+        "why": ""
+       },
+       {
+        "code": "\\frac{\\cos x\\cos x-\\sin x(-\\sin x)}{\\cos^2x}",
+        "why": "Quotient rule."
+       },
+       {
+        "code": "=\\frac{\\cos^2x+\\sin^2x}{\\cos^2x}=\\frac{1}{\\cos^2x}",
+        "why": "Pythagorean identity."
+       },
+       {
+        "code": "=\\sec^2x\\ \\checkmark",
+        "why": "",
+        "watch": [
+         [
+          "(\\tan x)'",
+          "\\sec^2x"
+         ]
+        ]
        }
       ]
      },
@@ -1182,8 +2710,40 @@ export const sections: Section[] = [
         "html": "<p>Expand \\(\\cos(x+h)\\) with the addition formula, then group the terms with \\(\\cos x\\) and with \\(\\sin x\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The definition.</p>\\[\\displaystyle f'(x)=\\lim_{h\\to0}\\frac{\\cos(x+h)-\\cos x}{h}\\]<p><strong>Step 2.</strong> Addition formula.</p>\\[\\displaystyle \\cos(x+h)=\\cos x\\cos h-\\sin x\\sin h\\]<p><strong>Step 3.</strong> Group the \\(\\cos x\\) terms and the \\(\\sin x\\) terms.</p>\\[\\displaystyle =\\lim\\Big[\\cos x\\frac{\\cos h-1}{h}-\\sin x\\frac{\\sin h}{h}\\Big]\\]<p><strong>Step 4.</strong> The two special limits.</p>\\[\\begin{gathered}\\displaystyle \\frac{\\cos h-1}{h}\\to0\\\\\\displaystyle \\frac{\\sin h}{h}\\to1\\end{gathered}\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle =\\cos x\\cdot0-\\sin x\\cdot1=-\\sin x\\ \\checkmark\\]<p><strong>What you found:</strong></p><ul><li>\\((\\cos x)'=-\\sin x\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'(x)=\\displaystyle\\lim_{h\\to0}\\frac{\\cos(x+h)-\\cos x}{h}\\).</p><p>Addition formula: \\(\\cos(x+h)=\\cos x\\cos h-\\sin x\\sin h\\).</p><p>Regroup: \\(\\displaystyle\\lim_{h\\to0}\\left[\\cos x\\cdot\\frac{\\cos h-1}{h}-\\sin x\\cdot\\frac{\\sin h}{h}\\right]\\).</p><p>Use the special limits \\(\\frac{\\cos h-1}{h}\\to0\\) and \\(\\frac{\\sin h}{h}\\to1\\): \\(\\cos x\\cdot0-\\sin x\\cdot1\\).</p><p class=\"ans\">\\(f'(x)=-\\sin x\\) ✓</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=\\lim_{h\\to0}\\frac{\\cos(x+h)-\\cos x}{h}",
+        "why": "The definition."
+       },
+       {
+        "code": "\\cos(x+h)=\\cos x\\cos h-\\sin x\\sin h",
+        "why": "Addition formula."
+       },
+       {
+        "code": "=\\lim\\Big[\\cos x\\frac{\\cos h-1}{h}-\\sin x\\frac{\\sin h}{h}\\Big]",
+        "why": "Group the \\(\\cos x\\) terms and the \\(\\sin x\\) terms."
+       },
+       {
+        "code": "\\frac{\\cos h-1}{h}\\to0,\\quad\\frac{\\sin h}{h}\\to1",
+        "why": "The two special limits."
+       },
+       {
+        "code": "=\\cos x\\cdot0-\\sin x\\cdot1=-\\sin x\\ \\checkmark",
+        "why": "",
+        "watch": [
+         [
+          "(\\cos x)'",
+          "-\\sin x"
+         ]
+        ]
        }
       ]
      },
@@ -1194,8 +2754,40 @@ export const sections: Section[] = [
       "question": "Differentiate \\(f(x)=\\dfrac{\\tan x-1}{\\sec x}\\) two ways and show the answers agree.",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Way 1: simplify first (multiply top and bottom by \\(\\cos x\\)).</p>\\[\\displaystyle f=\\frac{\\frac{\\sin x}{\\cos x}-1}{\\frac1{\\cos x}}=\\sin x-\\cos x\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f'=\\cos x+\\sin x\\]<p><strong>Step 3.</strong> Way 2: quotient rule.</p>\\[\\displaystyle f'=\\frac{\\sec x\\sec^2x-(\\tan x-1)\\sec x\\tan x}{\\sec^2x}\\]<p><strong>Step 4.</strong> Cancel one \\(\\sec x\\).</p>\\[\\displaystyle =\\frac{\\sec^2x-\\tan^2x+\\tan x}{\\sec x}\\]<p><strong>Step 5.</strong> \\(\\sec^2x-\\tan^2x=1\\). Same answer both ways.</p>\\[\\displaystyle =\\frac{1+\\tan x}{\\sec x}=\\cos x+\\sin x\\]<p><strong>What you found:</strong></p><ul><li>\\(f'=\\cos x+\\sin x\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<strong>Simplify first:</strong> \\(f=\\dfrac{\\frac{\\sin x}{\\cos x}-1}{\\frac1{\\cos x}}=\\sin x-\\cos x\\), so \\(f'=\\cos x+\\sin x\\).<strong>Quotient rule:</strong> \\(f'=\\dfrac{\\sec x\\cdot\\sec^2x-(\\tan x-1)\\sec x\\tan x}{\\sec^2x}=\\dfrac{\\sec^2x-\\tan^2x+\\tan x}{\\sec x}\\).<p>Use \\(\\sec^2x-\\tan^2x=1\\): \\(f'=\\dfrac{1+\\tan x}{\\sec x}=\\cos x+\\sin x\\). Same answer.</p><p class=\"ans\">\\(f'(x)=\\cos x+\\sin x\\) both ways ✓</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f=\\frac{\\frac{\\sin x}{\\cos x}-1}{\\frac1{\\cos x}}=\\sin x-\\cos x",
+        "why": "Way 1: simplify first (multiply top and bottom by \\(\\cos x\\))."
+       },
+       {
+        "code": "f'=\\cos x+\\sin x",
+        "why": ""
+       },
+       {
+        "code": "f'=\\frac{\\sec x\\sec^2x-(\\tan x-1)\\sec x\\tan x}{\\sec^2x}",
+        "why": "Way 2: quotient rule."
+       },
+       {
+        "code": "=\\frac{\\sec^2x-\\tan^2x+\\tan x}{\\sec x}",
+        "why": "Cancel one \\(\\sec x\\)."
+       },
+       {
+        "code": "=\\frac{1+\\tan x}{\\sec x}=\\cos x+\\sin x",
+        "why": "\\(\\sec^2x-\\tan^2x=1\\). Same answer both ways.",
+        "watch": [
+         [
+          "f'",
+          "\\cos x+\\sin x"
+         ]
+        ]
        }
       ]
      }
@@ -1275,8 +2867,32 @@ export const sections: Section[] = [
       "question": "Differentiate \\(f(x)=3\\sin x-2\\cos x\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle (3\\sin x)'=3\\cos x\\]<p><strong>Step 2.</strong> Two minus signs cancel.</p>\\[\\displaystyle (-2\\cos x)'=-2(-\\sin x)=2\\sin x\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle f'(x)=3\\cos x+2\\sin x\\]<p><strong>What you found:</strong></p><ul><li>\\(f'=3\\cos x+2\\sin x\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p class=\"ans\">\\(f'(x)=3\\cos x+2\\sin x\\)</p><p class=\"why\">The minus from \\(-2\\) and the minus from \\((\\cos x)'=-\\sin x\\) cancel.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "(3\\sin x)'=3\\cos x",
+        "why": ""
+       },
+       {
+        "code": "(-2\\cos x)'=-2(-\\sin x)=2\\sin x",
+        "why": "Two minus signs cancel."
+       },
+       {
+        "code": "f'(x)=3\\cos x+2\\sin x",
+        "why": "",
+        "watch": [
+         [
+          "f'",
+          "3\\cos x+2\\sin x"
+         ]
+        ]
        }
       ]
      },
@@ -1287,8 +2903,28 @@ export const sections: Section[] = [
       "question": "Differentiate \\(h(\\theta)=\\theta^2\\sin\\theta\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product rule.</p>\\[\\displaystyle h'=(\\theta^2)'\\sin\\theta+\\theta^2(\\sin\\theta)'\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle h'(\\theta)=2\\theta\\sin\\theta+\\theta^2\\cos\\theta\\]<p><strong>What you found:</strong></p><ul><li>\\(h'=2\\theta\\sin\\theta+\\theta^2\\cos\\theta\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p class=\"ans\">\\(h'(\\theta)=2\\theta\\sin\\theta+\\theta^2\\cos\\theta\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "h'=(\\theta^2)'\\sin\\theta+\\theta^2(\\sin\\theta)'",
+        "why": "Product rule."
+       },
+       {
+        "code": "h'(\\theta)=2\\theta\\sin\\theta+\\theta^2\\cos\\theta",
+        "why": "",
+        "watch": [
+         [
+          "h'",
+          "2\\theta\\sin\\theta+\\theta^2\\cos\\theta"
+         ]
+        ]
        }
       ]
      },
@@ -1299,8 +2935,36 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=\\sec\\theta\\tan\\theta\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product rule.</p>\\[\\displaystyle y'=(\\sec\\theta)'\\tan\\theta+\\sec\\theta(\\tan\\theta)'\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle =\\sec\\theta\\tan\\theta\\cdot\\tan\\theta+\\sec\\theta\\cdot\\sec^2\\theta\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle =\\sec\\theta\\tan^2\\theta+\\sec^3\\theta\\]<p><strong>Step 4.</strong> Factor.</p>\\[\\displaystyle =\\sec\\theta(\\sec^2\\theta+\\tan^2\\theta)\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=\\sec\\theta(\\sec^2\\theta+\\tan^2\\theta)\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(y'=\\sec\\theta\\cdot\\sec^2\\theta+\\tan\\theta\\cdot\\sec\\theta\\tan\\theta\\)</p><p class=\"ans\">\\(y'=\\sec^3\\theta+\\sec\\theta\\tan^2\\theta=\\sec\\theta(\\sec^2\\theta+\\tan^2\\theta)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y'=(\\sec\\theta)'\\tan\\theta+\\sec\\theta(\\tan\\theta)'",
+        "why": "Product rule."
+       },
+       {
+        "code": "=\\sec\\theta\\tan\\theta\\cdot\\tan\\theta+\\sec\\theta\\cdot\\sec^2\\theta",
+        "why": ""
+       },
+       {
+        "code": "=\\sec\\theta\\tan^2\\theta+\\sec^3\\theta",
+        "why": ""
+       },
+       {
+        "code": "=\\sec\\theta(\\sec^2\\theta+\\tan^2\\theta)",
+        "why": "Factor.",
+        "watch": [
+         [
+          "y'",
+          "\\sec\\theta(\\sec^2\\theta+\\tan^2\\theta)"
+         ]
+        ]
        }
       ]
      },
@@ -1311,8 +2975,36 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=\\dfrac{\\cos x}{1-\\sin x}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Quotient rule.</p>\\[\\displaystyle y'=\\frac{(1-\\sin x)(-\\sin x)-\\cos x(-\\cos x)}{(1-\\sin x)^2}\\]<p><strong>Step 2.</strong> Multiply out.</p>\\[\\displaystyle =\\frac{-\\sin x+\\sin^2x+\\cos^2x}{(1-\\sin x)^2}\\]<p><strong>Step 3.</strong> \\(\\sin^2x+\\cos^2x=1\\).</p>\\[\\displaystyle =\\frac{1-\\sin x}{(1-\\sin x)^2}\\]<p><strong>Step 4.</strong> Cancel one factor.</p>\\[\\displaystyle y'=\\frac{1}{1-\\sin x}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=\\frac{1}{1-\\sin x}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(y'=\\dfrac{(1-\\sin x)(-\\sin x)-\\cos x(-\\cos x)}{(1-\\sin x)^2}=\\dfrac{-\\sin x+\\sin^2x+\\cos^2x}{(1-\\sin x)^2}\\)</p><p class=\"ans\">\\(y'=\\dfrac{1-\\sin x}{(1-\\sin x)^2}=\\dfrac{1}{1-\\sin x}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y'=\\frac{(1-\\sin x)(-\\sin x)-\\cos x(-\\cos x)}{(1-\\sin x)^2}",
+        "why": "Quotient rule."
+       },
+       {
+        "code": "=\\frac{-\\sin x+\\sin^2x+\\cos^2x}{(1-\\sin x)^2}",
+        "why": "Multiply out."
+       },
+       {
+        "code": "=\\frac{1-\\sin x}{(1-\\sin x)^2}",
+        "why": "\\(\\sin^2x+\\cos^2x=1\\)."
+       },
+       {
+        "code": "y'=\\frac{1}{1-\\sin x}",
+        "why": "Cancel one factor.",
+        "watch": [
+         [
+          "y'",
+          "\\frac{1}{1-\\sin x}"
+         ]
+        ]
        }
       ]
      },
@@ -1323,8 +3015,38 @@ export const sections: Section[] = [
       "question": "Find the tangent line to \\(y=\\sin x+\\cos x\\) at \\((0,1)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle y'=\\cos x-\\sin x\\]<p><strong>Step 2.</strong> Slope at \\((0,1)\\).</p>\\[\\displaystyle y'(0)=1-0=1\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle y-1=1(x-0)\\Rightarrow y=x+1\\]<p><strong>What you found:</strong></p><ul><li>\\(m=1\\)</li><li>\\(\\text{line}:\\ y=x+1\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(y'=\\cos x-\\sin x\\); at 0: \\(1\\).</p><p class=\"ans\">\\(y=x+1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y'=\\cos x-\\sin x",
+        "why": ""
+       },
+       {
+        "code": "y'(0)=1-0=1",
+        "why": "Slope at \\((0,1)\\).",
+        "watch": [
+         [
+          "m",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "y-1=1(x-0)\\Rightarrow y=x+1",
+        "why": "",
+        "watch": [
+         [
+          "\\text{line}",
+          "y=x+1"
+         ]
+        ]
        }
       ]
      },
@@ -1335,8 +3057,36 @@ export const sections: Section[] = [
       "question": "For what \\(x\\) does \\(f(x)=x+2\\sin x\\) have a horizontal tangent?",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle f'(x)=1+2\\cos x\\]<p><strong>Step 2.</strong> Horizontal tangent means slope 0.</p>\\[\\displaystyle 1+2\\cos x=0\\Rightarrow\\cos x=-\\tfrac12\\]<p><strong>Step 3.</strong> Unit circle: \\(\\cos=-\\tfrac12\\) in Quadrants II and III.</p>\\[\\begin{gathered}\\displaystyle x=\\tfrac{2\\pi}{3}\\\\\\displaystyle \\tfrac{4\\pi}{3}\\end{gathered}\\]<p><strong>Step 4.</strong> Add any whole number of full turns.</p>\\[\\displaystyle x=\\tfrac{2\\pi}3+2n\\pi\\ \\text{or}\\ \\tfrac{4\\pi}3+2n\\pi\\]<p><strong>What you found:</strong></p><ul><li>\\(x=\\tfrac{2\\pi}3+2n\\pi,\\ \\tfrac{4\\pi}3+2n\\pi\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'(x)=1+2\\cos x=0\\Rightarrow\\cos x=-\\tfrac12\\).</p><p class=\"ans\">\\(x=\\dfrac{2\\pi}{3}+2n\\pi\\) or \\(x=\\dfrac{4\\pi}{3}+2n\\pi\\), \\(n\\) any integer.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=1+2\\cos x",
+        "why": ""
+       },
+       {
+        "code": "1+2\\cos x=0\\Rightarrow\\cos x=-\\tfrac12",
+        "why": "Horizontal tangent means slope 0."
+       },
+       {
+        "code": "x=\\tfrac{2\\pi}{3},\\ \\tfrac{4\\pi}{3}",
+        "why": "Unit circle: \\(\\cos=-\\tfrac12\\) in Quadrants II and III."
+       },
+       {
+        "code": "x=\\tfrac{2\\pi}3+2n\\pi\\ \\text{or}\\ \\tfrac{4\\pi}3+2n\\pi",
+        "why": "Add any whole number of full turns.",
+        "watch": [
+         [
+          "x",
+          "\\tfrac{2\\pi}3+2n\\pi,\\ \\tfrac{4\\pi}3+2n\\pi"
+         ]
+        ]
        }
       ]
      },
@@ -1347,8 +3097,48 @@ export const sections: Section[] = [
       "question": "A mass on a spring has position \\(x(t)=8\\sin t\\) cm. Find velocity and acceleration, and the state at \\(t=2\\pi/3\\). Which way is it moving?",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle v=x'=8\\cos t\\\\\\displaystyle a=v'=-8\\sin t\\end{gathered}\\]<p><strong>Step 2.</strong> \\(\\sin\\tfrac{2\\pi}3=\\tfrac{\\sqrt3}2\\).</p>\\[\\displaystyle x(\\tfrac{2\\pi}3)=8\\cdot\\tfrac{\\sqrt3}2=4\\sqrt3\\]<p><strong>Step 3.</strong> \\(\\cos\\tfrac{2\\pi}3=-\\tfrac12\\).</p>\\[\\displaystyle v(\\tfrac{2\\pi}3)=8(-\\tfrac12)=-4\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle a(\\tfrac{2\\pi}3)=-4\\sqrt3\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle v<0\\Rightarrow\\text{moving left}\\]<p><strong>What you found:</strong></p><ul><li>\\(x=4\\sqrt3\\text{ cm}\\)</li><li>\\(v=-4\\text{ cm/s}\\)</li><li>\\(a=-4\\sqrt3\\text{ cm/s}^2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(v=8\\cos t\\), \\(a=-8\\sin t\\).</p><p>At \\(t=\\frac{2\\pi}3\\): \\(x=8\\cdot\\frac{\\sqrt3}2=4\\sqrt3\\), \\(v=8(-\\tfrac12)=-4\\), \\(a=-4\\sqrt3\\).</p><p class=\"ans\">\\(x=4\\sqrt3\\) cm, \\(v=-4\\) cm/s, \\(a=-4\\sqrt3\\) cm/s². Moving left (v &lt; 0).</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "v=x'=8\\cos t,\\quad a=v'=-8\\sin t",
+        "why": ""
+       },
+       {
+        "code": "x(\\tfrac{2\\pi}3)=8\\cdot\\tfrac{\\sqrt3}2=4\\sqrt3",
+        "why": "\\(\\sin\\tfrac{2\\pi}3=\\tfrac{\\sqrt3}2\\)."
+       },
+       {
+        "code": "v(\\tfrac{2\\pi}3)=8(-\\tfrac12)=-4",
+        "why": "\\(\\cos\\tfrac{2\\pi}3=-\\tfrac12\\)."
+       },
+       {
+        "code": "a(\\tfrac{2\\pi}3)=-4\\sqrt3",
+        "why": ""
+       },
+       {
+        "code": "v<0\\Rightarrow\\text{moving left}",
+        "why": "",
+        "watch": [
+         [
+          "x",
+          "4\\sqrt3\\text{ cm}"
+         ],
+         [
+          "v",
+          "-4\\text{ cm/s}"
+         ],
+         [
+          "a",
+          "-4\\sqrt3\\text{ cm/s}^2"
+         ]
+        ]
        }
       ]
      },
@@ -1363,8 +3153,32 @@ export const sections: Section[] = [
         "html": "<p>\\(\\tan6t=\\dfrac{\\sin6t}{\\cos6t}\\). Then build \\(\\frac{\\sin6t}{6t}\\) and \\(\\frac{2t}{\\sin2t}\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Write tan as sin over cos.</p>\\[\\displaystyle \\frac{\\tan6t}{\\sin2t}=\\frac{\\sin6t}{\\cos6t\\,\\sin2t}\\]<p><strong>Step 2.</strong> Build the \\(\\frac{\\sin u}{u}\\) pieces.</p>\\[\\displaystyle =\\frac{\\sin6t}{6t}\\cdot\\frac{2t}{\\sin2t}\\cdot\\frac{6t}{2t}\\cdot\\frac{1}{\\cos6t}\\]<p><strong>Step 3.</strong> \\(\\frac{\\sin u}{u}\\to1\\) and \\(\\cos0=1\\).</p>\\[\\displaystyle \\to1\\cdot1\\cdot3\\cdot1=3\\]<p><strong>What you found:</strong></p><ul><li>\\(\\lim=3\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\dfrac{\\sin6t}{\\cos6t\\,\\sin2t}=\\dfrac{\\sin6t}{6t}\\cdot\\dfrac{2t}{\\sin2t}\\cdot\\dfrac{6t}{2t}\\cdot\\dfrac1{\\cos6t}\\to1\\cdot1\\cdot3\\cdot1\\)</p><p class=\"ans\">3</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{\\tan6t}{\\sin2t}=\\frac{\\sin6t}{\\cos6t\\,\\sin2t}",
+        "why": "Write tan as sin over cos."
+       },
+       {
+        "code": "=\\frac{\\sin6t}{6t}\\cdot\\frac{2t}{\\sin2t}\\cdot\\frac{6t}{2t}\\cdot\\frac{1}{\\cos6t}",
+        "why": "Build the \\(\\frac{\\sin u}{u}\\) pieces."
+       },
+       {
+        "code": "\\to1\\cdot1\\cdot3\\cdot1=3",
+        "why": "\\(\\frac{\\sin u}{u}\\to1\\) and \\(\\cos0=1\\).",
+        "watch": [
+         [
+          "\\lim",
+          "3"
+         ]
+        ]
        }
       ]
      },
@@ -1375,8 +3189,32 @@ export const sections: Section[] = [
       "question": "Find \\(\\displaystyle\\lim_{x\\to0}\\frac{\\sin3x}{5x^3-4x}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Factor \\(x\\) out of the bottom.</p>\\[\\displaystyle \\frac{\\sin3x}{x(5x^2-4)}\\]<p><strong>Step 2.</strong> Multiply and divide by 3.</p>\\[\\displaystyle =3\\cdot\\frac{\\sin3x}{3x}\\cdot\\frac{1}{5x^2-4}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\to3\\cdot1\\cdot\\big(-\\tfrac14\\big)=-\\tfrac34\\]<p><strong>What you found:</strong></p><ul><li>\\(\\lim=-3/4\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\dfrac{\\sin3x}{x(5x^2-4)}=3\\cdot\\dfrac{\\sin3x}{3x}\\cdot\\dfrac{1}{5x^2-4}\\to3\\cdot1\\cdot\\left(-\\tfrac14\\right)\\)</p><p class=\"ans\">\\(-\\dfrac34\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{\\sin3x}{x(5x^2-4)}",
+        "why": "Factor \\(x\\) out of the bottom."
+       },
+       {
+        "code": "=3\\cdot\\frac{\\sin3x}{3x}\\cdot\\frac{1}{5x^2-4}",
+        "why": "Multiply and divide by 3."
+       },
+       {
+        "code": "\\to3\\cdot1\\cdot\\big(-\\tfrac14\\big)=-\\tfrac34",
+        "why": "",
+        "watch": [
+         [
+          "\\lim",
+          "-3/4"
+         ]
+        ]
        }
       ]
      },
@@ -1387,8 +3225,32 @@ export const sections: Section[] = [
       "question": "Find \\(\\dfrac{d^{99}}{dx^{99}}\\sin x\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The derivatives repeat every 4.</p>\\[\\displaystyle \\sin\\to\\cos\\to-\\sin\\to-\\cos\\to\\sin\\]<p><strong>Step 2.</strong> Remainder 3.</p>\\[\\displaystyle 99=4\\cdot24+3\\]<p><strong>Step 3.</strong> Same as the 3rd derivative.</p>\\[\\displaystyle \\frac{d^{99}}{dx^{99}}\\sin x=-\\cos x\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{answer}:\\ -\\cos x\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(99=4\\cdot24+3\\) → same as the 3rd derivative of sin.</p><p class=\"ans\">\\(-\\cos x\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\sin\\to\\cos\\to-\\sin\\to-\\cos\\to\\sin",
+        "why": "The derivatives repeat every 4."
+       },
+       {
+        "code": "99=4\\cdot24+3",
+        "why": "Remainder 3."
+       },
+       {
+        "code": "\\frac{d^{99}}{dx^{99}}\\sin x=-\\cos x",
+        "why": "Same as the 3rd derivative.",
+        "watch": [
+         [
+          "\\text{answer}",
+          "-\\cos x"
+         ]
+        ]
        }
       ]
      }
@@ -1490,8 +3352,36 @@ export const sections: Section[] = [
       "question": "Write \\(y=(5-x^4)^3\\) as \\(f(g(x))\\) and find \\(dy/dx\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Inside and outside.</p>\\[\\begin{gathered}\\displaystyle g(x)=5-x^4\\\\\\displaystyle f(u)=u^3\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle g'(x)=-4x^3\\\\\\displaystyle f'(u)=3u^2\\end{gathered}\\]<p><strong>Step 3.</strong> Outside's derivative (inside unchanged) times the inside's derivative.</p>\\[\\displaystyle y'=3(5-x^4)^2\\cdot(-4x^3)\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle y'=-12x^3(5-x^4)^2\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=-12x^3(5-x^4)^2\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Inner \\(u=5-x^4\\), outer \\(y=u^3\\).</p><p class=\"ans\">\\(y'=3(5-x^4)^2(-4x^3)=-12x^3(5-x^4)^2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "g(x)=5-x^4,\\quad f(u)=u^3",
+        "why": "Inside and outside."
+       },
+       {
+        "code": "g'(x)=-4x^3,\\quad f'(u)=3u^2",
+        "why": ""
+       },
+       {
+        "code": "y'=3(5-x^4)^2\\cdot(-4x^3)",
+        "why": "Outside's derivative (inside unchanged) times the inside's derivative."
+       },
+       {
+        "code": "y'=-12x^3(5-x^4)^2",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "-12x^3(5-x^4)^2"
+         ]
+        ]
        }
       ]
      },
@@ -1502,8 +3392,32 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=\\sin(\\cos x)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle \\text{outside }\\sin u\\\\\\displaystyle \\text{inside }u=\\cos x\\end{gathered}\\]<p><strong>Step 2.</strong> \\((\\sin u)'=\\cos u\\); \\((\\cos x)'=-\\sin x\\).</p>\\[\\displaystyle y'=\\cos(\\cos x)\\cdot(-\\sin x)\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle y'=-\\sin x\\cos(\\cos x)\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=-\\sin x\\cos(\\cos x)\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p class=\"ans\">\\(y'=\\cos(\\cos x)\\cdot(-\\sin x)=-\\sin x\\cos(\\cos x)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\text{outside }\\sin u,\\ \\text{inside }u=\\cos x",
+        "why": ""
+       },
+       {
+        "code": "y'=\\cos(\\cos x)\\cdot(-\\sin x)",
+        "why": "\\((\\sin u)'=\\cos u\\); \\((\\cos x)'=-\\sin x\\)."
+       },
+       {
+        "code": "y'=-\\sin x\\cos(\\cos x)",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "-\\sin x\\cos(\\cos x)"
+         ]
+        ]
        }
       ]
      },
@@ -1514,8 +3428,46 @@ export const sections: Section[] = [
       "question": "Differentiate \\(f(\\theta)=\\cos(\\theta^2)\\) and \\(g(\\theta)=\\cos^2\\theta\\). Why are they different?",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The square is <em>inside</em> the cos.</p>\\[\\displaystyle f=\\cos(\\theta^2):\\ \\text{outside cos, inside }\\theta^2\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f'=-\\sin(\\theta^2)\\cdot2\\theta\\]<p><strong>Step 3.</strong> Here the square is on the <em>outside</em> and cos is inside.</p>\\[\\displaystyle g=\\cos^2\\theta=(\\cos\\theta)^2\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle g'=2\\cos\\theta\\cdot(-\\sin\\theta)\\]<p><strong>Step 5.</strong> Different layers, different answers.</p>\\[\\displaystyle =-2\\sin\\theta\\cos\\theta=-\\sin2\\theta\\]<p><strong>What you found:</strong></p><ul><li>\\(f'=-2\\theta\\sin(\\theta^2)\\)</li><li>\\(g'=-\\sin2\\theta\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\cos(\\theta^2)\\): outer cos, inner \\(\\theta^2\\) → \\(-\\sin(\\theta^2)\\cdot2\\theta\\).</p><p>\\(\\cos^2\\theta=(\\cos\\theta)^2\\): outer square, inner cos → \\(2\\cos\\theta(-\\sin\\theta)\\).</p><p class=\"ans\">\\(f'=-2\\theta\\sin(\\theta^2)\\); \\(g'=-2\\sin\\theta\\cos\\theta=-\\sin2\\theta\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f=\\cos(\\theta^2):\\ \\text{outside cos, inside }\\theta^2",
+        "why": "The square is <em>inside</em> the cos."
+       },
+       {
+        "code": "f'=-\\sin(\\theta^2)\\cdot2\\theta",
+        "why": "",
+        "watch": [
+         [
+          "f'",
+          "-2\\theta\\sin(\\theta^2)"
+         ]
+        ]
+       },
+       {
+        "code": "g=\\cos^2\\theta=(\\cos\\theta)^2",
+        "why": "Here the square is on the <em>outside</em> and cos is inside."
+       },
+       {
+        "code": "g'=2\\cos\\theta\\cdot(-\\sin\\theta)",
+        "why": ""
+       },
+       {
+        "code": "=-2\\sin\\theta\\cos\\theta=-\\sin2\\theta",
+        "why": "Different layers, different answers.",
+        "watch": [
+         [
+          "g'",
+          "-\\sin2\\theta"
+         ]
+        ]
        }
       ]
      },
@@ -1526,8 +3478,32 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=x^2e^{-3x}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Chain rule on the exponent.</p>\\[\\displaystyle (e^{-3x})'=-3e^{-3x}\\]<p><strong>Step 2.</strong> Product rule.</p>\\[\\displaystyle y'=2x\\,e^{-3x}+x^2(-3e^{-3x})\\]<p><strong>Step 3.</strong> Factor.</p>\\[\\displaystyle y'=xe^{-3x}(2-3x)\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=xe^{-3x}(2-3x)\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Product rule, with \\((e^{-3x})'=-3e^{-3x}\\).</p><p class=\"ans\">\\(y'=2xe^{-3x}-3x^2e^{-3x}=xe^{-3x}(2-3x)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "(e^{-3x})'=-3e^{-3x}",
+        "why": "Chain rule on the exponent."
+       },
+       {
+        "code": "y'=2x\\,e^{-3x}+x^2(-3e^{-3x})",
+        "why": "Product rule."
+       },
+       {
+        "code": "y'=xe^{-3x}(2-3x)",
+        "why": "Factor.",
+        "watch": [
+         [
+          "y'",
+          "xe^{-3x}(2-3x)"
+         ]
+        ]
        }
       ]
      },
@@ -1538,8 +3514,32 @@ export const sections: Section[] = [
       "question": "Differentiate \\(f(t)=e^{at}\\sin bt\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Chain rule on each factor.</p>\\[\\begin{gathered}\\displaystyle (e^{at})'=ae^{at}\\\\\\displaystyle (\\sin bt)'=b\\cos bt\\end{gathered}\\]<p><strong>Step 2.</strong> Product rule.</p>\\[\\displaystyle f'=ae^{at}\\sin bt+e^{at}\\cdot b\\cos bt\\]<p><strong>Step 3.</strong> Factor.</p>\\[\\displaystyle =e^{at}(a\\sin bt+b\\cos bt)\\]<p><strong>What you found:</strong></p><ul><li>\\(f'=e^{at}(a\\sin bt+b\\cos bt)\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p class=\"ans\">\\(f'(t)=ae^{at}\\sin bt+be^{at}\\cos bt=e^{at}(a\\sin bt+b\\cos bt)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "(e^{at})'=ae^{at},\\quad(\\sin bt)'=b\\cos bt",
+        "why": "Chain rule on each factor."
+       },
+       {
+        "code": "f'=ae^{at}\\sin bt+e^{at}\\cdot b\\cos bt",
+        "why": "Product rule."
+       },
+       {
+        "code": "=e^{at}(a\\sin bt+b\\cos bt)",
+        "why": "Factor.",
+        "watch": [
+         [
+          "f'",
+          "e^{at}(a\\sin bt+b\\cos bt)"
+         ]
+        ]
        }
       ]
      },
@@ -1554,8 +3554,40 @@ export const sections: Section[] = [
         "html": "<p>Outer \\(\\sqrt u\\), inner is a quotient: \\(\\left(\\frac{x}{x+1}\\right)'=\\frac{1}{(x+1)^2}\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Outside: square root. Inside: a quotient.</p>\\[\\displaystyle y=\\Big(\\frac{x}{x+1}\\Big)^{1/2}\\]<p><strong>Step 2.</strong> Quotient rule on the inside.</p>\\[\\displaystyle \\Big(\\frac{x}{x+1}\\Big)'=\\frac{(x+1)-x}{(x+1)^2}=\\frac{1}{(x+1)^2}\\]<p><strong>Step 3.</strong> Chain rule.</p>\\[\\displaystyle y'=\\tfrac12\\Big(\\frac{x}{x+1}\\Big)^{-1/2}\\cdot\\frac{1}{(x+1)^2}\\]<p><strong>Step 4.</strong> A negative power flips the fraction.</p>\\[\\displaystyle =\\tfrac12\\cdot\\frac{\\sqrt{x+1}}{\\sqrt x}\\cdot\\frac1{(x+1)^2}\\]<p><strong>Step 5.</strong> \\(\\frac{(x+1)^{1/2}}{(x+1)^2}=\\frac{1}{(x+1)^{3/2}}\\).</p>\\[\\displaystyle y'=\\frac{1}{2\\sqrt x\\,(x+1)^{3/2}}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=\\frac{1}{2\\sqrt x(x+1)^{3/2}}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(y'=\\dfrac12\\left(\\dfrac{x}{x+1}\\right)^{-1/2}\\cdot\\dfrac{1}{(x+1)^2}=\\dfrac12\\cdot\\dfrac{\\sqrt{x+1}}{\\sqrt x}\\cdot\\dfrac1{(x+1)^2}\\)</p><p class=\"ans\">\\(y'=\\dfrac{1}{2\\sqrt x\\,(x+1)^{3/2}}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=\\Big(\\frac{x}{x+1}\\Big)^{1/2}",
+        "why": "Outside: square root. Inside: a quotient."
+       },
+       {
+        "code": "\\Big(\\frac{x}{x+1}\\Big)'=\\frac{(x+1)-x}{(x+1)^2}=\\frac{1}{(x+1)^2}",
+        "why": "Quotient rule on the inside."
+       },
+       {
+        "code": "y'=\\tfrac12\\Big(\\frac{x}{x+1}\\Big)^{-1/2}\\cdot\\frac{1}{(x+1)^2}",
+        "why": "Chain rule."
+       },
+       {
+        "code": "=\\tfrac12\\cdot\\frac{\\sqrt{x+1}}{\\sqrt x}\\cdot\\frac1{(x+1)^2}",
+        "why": "A negative power flips the fraction."
+       },
+       {
+        "code": "y'=\\frac{1}{2\\sqrt x\\,(x+1)^{3/2}}",
+        "why": "\\(\\frac{(x+1)^{1/2}}{(x+1)^2}=\\frac{1}{(x+1)^{3/2}}\\).",
+        "watch": [
+         [
+          "y'",
+          "\\frac{1}{2\\sqrt x(x+1)^{3/2}}"
+         ]
+        ]
        }
       ]
      },
@@ -1566,8 +3598,32 @@ export const sections: Section[] = [
       "question": "Differentiate \\(r(t)=10^{2\\sqrt t}\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Exponential with base \\(a\\), plus the chain rule.</p>\\[\\displaystyle \\frac{d}{dt}a^u=a^u\\ln a\\cdot u'\\]<p><strong>Step 2.</strong> \\(2\\cdot\\tfrac12t^{-1/2}\\).</p>\\[\\begin{gathered}\\displaystyle u=2\\sqrt t\\\\\\displaystyle u'=\\frac{1}{\\sqrt t}\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle r'(t)=10^{2\\sqrt t}\\ln10\\cdot\\frac{1}{\\sqrt t}\\]<p><strong>What you found:</strong></p><ul><li>\\(r'=\\frac{10^{2\\sqrt t}\\ln10}{\\sqrt t}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\dfrac{d}{dt}a^{u}=a^{u}\\ln a\\cdot u'\\), with \\(u=2\\sqrt t\\), \\(u'=\\dfrac1{\\sqrt t}\\).</p><p class=\"ans\">\\(r'(t)=\\dfrac{10^{2\\sqrt t}\\ln10}{\\sqrt t}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{d}{dt}a^u=a^u\\ln a\\cdot u'",
+        "why": "Exponential with base \\(a\\), plus the chain rule."
+       },
+       {
+        "code": "u=2\\sqrt t,\\quad u'=\\frac{1}{\\sqrt t}",
+        "why": "\\(2\\cdot\\tfrac12t^{-1/2}\\)."
+       },
+       {
+        "code": "r'(t)=10^{2\\sqrt t}\\ln10\\cdot\\frac{1}{\\sqrt t}",
+        "why": "",
+        "watch": [
+         [
+          "r'",
+          "\\frac{10^{2\\sqrt t}\\ln10}{\\sqrt t}"
+         ]
+        ]
        }
       ]
      },
@@ -1578,8 +3634,32 @@ export const sections: Section[] = [
       "question": "Differentiate \\(y=\\sin^2(x^2+1)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Three layers: square → sin → \\(x^2+1\\).</p>\\[\\displaystyle y=\\big[\\sin(x^2+1)\\big]^2\\]<p><strong>Step 2.</strong> One factor per layer, outside to inside.</p>\\[\\displaystyle y'=2\\sin(x^2+1)\\cdot\\cos(x^2+1)\\cdot2x\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle =4x\\sin(x^2+1)\\cos(x^2+1)\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=4x\\sin(x^2+1)\\cos(x^2+1)\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>Three layers: square → sin → \\(x^2+1\\).</p><p>\\(y'=2\\sin(x^2+1)\\cdot\\cos(x^2+1)\\cdot2x\\)</p><p class=\"ans\">\\(y'=4x\\sin(x^2+1)\\cos(x^2+1)=2x\\sin\\big(2(x^2+1)\\big)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=\\big[\\sin(x^2+1)\\big]^2",
+        "why": "Three layers: square → sin → \\(x^2+1\\)."
+       },
+       {
+        "code": "y'=2\\sin(x^2+1)\\cdot\\cos(x^2+1)\\cdot2x",
+        "why": "One factor per layer, outside to inside."
+       },
+       {
+        "code": "=4x\\sin(x^2+1)\\cos(x^2+1)",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "4x\\sin(x^2+1)\\cos(x^2+1)"
+         ]
+        ]
        }
       ]
      },
@@ -1590,8 +3670,38 @@ export const sections: Section[] = [
       "question": "Find the tangent line to \\(y=\\sqrt{1+x^3}\\) at \\((2,3)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\((\\sqrt u)'=\\frac{u'}{2\\sqrt u}\\).</p>\\[\\displaystyle y'=\\frac{3x^2}{2\\sqrt{1+x^3}}\\]<p><strong>Step 2.</strong> \\(\\sqrt{1+8}=3\\).</p>\\[\\displaystyle y'(2)=\\frac{12}{2\\cdot3}=2\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle y-3=2(x-2)\\Rightarrow y=2x-1\\]<p><strong>What you found:</strong></p><ul><li>\\(m=2\\)</li><li>\\(\\text{line}:\\ y=2x-1\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(y'=\\dfrac{3x^2}{2\\sqrt{1+x^3}}\\); at 2: \\(\\dfrac{12}{2\\cdot3}=2\\).</p><p class=\"ans\">\\(y=2x-1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y'=\\frac{3x^2}{2\\sqrt{1+x^3}}",
+        "why": "\\((\\sqrt u)'=\\frac{u'}{2\\sqrt u}\\)."
+       },
+       {
+        "code": "y'(2)=\\frac{12}{2\\cdot3}=2",
+        "why": "\\(\\sqrt{1+8}=3\\).",
+        "watch": [
+         [
+          "m",
+          "2"
+         ]
+        ]
+       },
+       {
+        "code": "y-3=2(x-2)\\Rightarrow y=2x-1",
+        "why": "",
+        "watch": [
+         [
+          "\\text{line}",
+          "y=2x-1"
+         ]
+        ]
        }
       ]
      },
@@ -1606,8 +3716,32 @@ export const sections: Section[] = [
         "html": "<p>\\(f'\\) is evaluated at \\(g(1)\\), not at 1. One of the given numbers is a decoy.</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Chain rule.</p>\\[\\displaystyle h'(x)=f'(g(x))\\cdot g'(x)\\]<p><strong>Step 2.</strong> \\(f'\\) is evaluated at \\(g(1)=3\\), not at 1.</p>\\[\\displaystyle h'(1)=f'(g(1))\\cdot g'(1)=f'(3)\\cdot4\\]<p><strong>Step 3.</strong> \\(f'(1)=5\\) is a decoy.</p>\\[\\displaystyle =(-2)(4)=-8\\]<p><strong>What you found:</strong></p><ul><li>\\(h'(1)=-8\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(h'(1)=f'(g(1))\\cdot g'(1)=f'(3)\\cdot4=(-2)(4)\\)</p><p class=\"ans\">\\(h'(1)=-8\\). (\\(f'(1)=5\\) is not used.)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "h'(x)=f'(g(x))\\cdot g'(x)",
+        "why": "Chain rule."
+       },
+       {
+        "code": "h'(1)=f'(g(1))\\cdot g'(1)=f'(3)\\cdot4",
+        "why": "\\(f'\\) is evaluated at \\(g(1)=3\\), not at 1."
+       },
+       {
+        "code": "=(-2)(4)=-8",
+        "why": "\\(f'(1)=5\\) is a decoy.",
+        "watch": [
+         [
+          "h'(1)",
+          "-8"
+         ]
+        ]
        }
       ]
      }
@@ -1684,8 +3818,32 @@ export const sections: Section[] = [
       "question": "Find \\(y'\\) for \\(5x^2-y^3=7\\) implicitly.",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Differentiate both sides; \\(y^3\\) gives \\(3y^2y'\\).</p>\\[\\displaystyle 10x-3y^2y'=0\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle 3y^2y'=10x\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle y'=\\frac{10x}{3y^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=\\frac{10x}{3y^2}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(10x-3y^2y'=0\\)</p><p class=\"ans\">\\(y'=\\dfrac{10x}{3y^2}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "10x-3y^2y'=0",
+        "why": "Differentiate both sides; \\(y^3\\) gives \\(3y^2y'\\)."
+       },
+       {
+        "code": "3y^2y'=10x",
+        "why": ""
+       },
+       {
+        "code": "y'=\\frac{10x}{3y^2}",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "\\frac{10x}{3y^2}"
+         ]
+        ]
        }
       ]
      },
@@ -1696,8 +3854,36 @@ export const sections: Section[] = [
       "question": "Find \\(dy/dx\\) for \\(x^2-4xy+y^2=4\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product rule on \\(4xy\\).</p>\\[\\displaystyle 2x-4(y+xy')+2yy'=0\\]<p><strong>Step 2.</strong> Distribute the \\(-4\\).</p>\\[\\displaystyle 2x-4y-4xy'+2yy'=0\\]<p><strong>Step 3.</strong> Collect the \\(y'\\) terms, factor.</p>\\[\\displaystyle y'(2y-4x)=4y-2x\\]<p><strong>Step 4.</strong> Divide, and cancel a 2.</p>\\[\\displaystyle y'=\\frac{2y-x}{y-2x}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=\\frac{2y-x}{y-2x}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(2x-4(y+xy')+2yy'=0\\)</p><p>\\(y'(2y-4x)=4y-2x\\)</p><p class=\"ans\">\\(y'=\\dfrac{2y-x}{y-2x}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "2x-4(y+xy')+2yy'=0",
+        "why": "Product rule on \\(4xy\\)."
+       },
+       {
+        "code": "2x-4y-4xy'+2yy'=0",
+        "why": "Distribute the \\(-4\\)."
+       },
+       {
+        "code": "y'(2y-4x)=4y-2x",
+        "why": "Collect the \\(y'\\) terms, factor."
+       },
+       {
+        "code": "y'=\\frac{2y-x}{y-2x}",
+        "why": "Divide, and cancel a 2.",
+        "watch": [
+         [
+          "y'",
+          "\\frac{2y-x}{y-2x}"
+         ]
+        ]
        }
       ]
      },
@@ -1708,8 +3894,32 @@ export const sections: Section[] = [
       "question": "Find \\(dy/dx\\) for \\(x^4+x^2y^2+y^3=5\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product rule on \\(x^2y^2\\); chain rule on \\(y^3\\).</p>\\[\\displaystyle 4x^3+(2xy^2+2x^2yy')+3y^2y'=0\\]<p><strong>Step 2.</strong> Collect and factor.</p>\\[\\displaystyle y'(2x^2y+3y^2)=-(4x^3+2xy^2)\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle y'=-\\frac{4x^3+2xy^2}{2x^2y+3y^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=-\\frac{4x^3+2xy^2}{2x^2y+3y^2}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(4x^3+(2xy^2+x^2\\cdot2yy')+3y^2y'=0\\)</p><p class=\"ans\">\\(y'=-\\dfrac{4x^3+2xy^2}{2x^2y+3y^2}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "4x^3+(2xy^2+2x^2yy')+3y^2y'=0",
+        "why": "Product rule on \\(x^2y^2\\); chain rule on \\(y^3\\)."
+       },
+       {
+        "code": "y'(2x^2y+3y^2)=-(4x^3+2xy^2)",
+        "why": "Collect and factor."
+       },
+       {
+        "code": "y'=-\\frac{4x^3+2xy^2}{2x^2y+3y^2}",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "-\\frac{4x^3+2xy^2}{2x^2y+3y^2}"
+         ]
+        ]
        }
       ]
      },
@@ -1720,8 +3930,32 @@ export const sections: Section[] = [
       "question": "Find \\(dy/dx\\) for \\(xe^y=x-y\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product rule on \\(xe^y\\); \\((e^y)'=e^yy'\\).</p>\\[\\displaystyle e^y+xe^yy'=1-y'\\]<p><strong>Step 2.</strong> Move all \\(y'\\) terms left.</p>\\[\\displaystyle y'(xe^y+1)=1-e^y\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle y'=\\frac{1-e^y}{1+xe^y}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=\\frac{1-e^y}{1+xe^y}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(e^y+xe^yy'=1-y'\\)</p><p>\\(y'(xe^y+1)=1-e^y\\)</p><p class=\"ans\">\\(y'=\\dfrac{1-e^y}{1+xe^y}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "e^y+xe^yy'=1-y'",
+        "why": "Product rule on \\(xe^y\\); \\((e^y)'=e^yy'\\)."
+       },
+       {
+        "code": "y'(xe^y+1)=1-e^y",
+        "why": "Move all \\(y'\\) terms left."
+       },
+       {
+        "code": "y'=\\frac{1-e^y}{1+xe^y}",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "\\frac{1-e^y}{1+xe^y}"
+         ]
+        ]
        }
       ]
      },
@@ -1732,8 +3966,32 @@ export const sections: Section[] = [
       "question": "Find \\(dy/dx\\) for \\(\\sin x+\\cos y=2x-3y\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\((\\cos y)'=-\\sin y\\cdot y'\\).</p>\\[\\displaystyle \\cos x-\\sin y\\,y'=2-3y'\\]<p><strong>Step 2.</strong> Collect the \\(y'\\) terms.</p>\\[\\displaystyle y'(3-\\sin y)=2-\\cos x\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle y'=\\frac{2-\\cos x}{3-\\sin y}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=\\frac{2-\\cos x}{3-\\sin y}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(\\cos x-\\sin y\\,y'=2-3y'\\)</p><p>\\(y'(3-\\sin y)=2-\\cos x\\)</p><p class=\"ans\">\\(y'=\\dfrac{2-\\cos x}{3-\\sin y}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\cos x-\\sin y\\,y'=2-3y'",
+        "why": "\\((\\cos y)'=-\\sin y\\cdot y'\\)."
+       },
+       {
+        "code": "y'(3-\\sin y)=2-\\cos x",
+        "why": "Collect the \\(y'\\) terms."
+       },
+       {
+        "code": "y'=\\frac{2-\\cos x}{3-\\sin y}",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "\\frac{2-\\cos x}{3-\\sin y}"
+         ]
+        ]
        }
       ]
      },
@@ -1744,8 +4002,32 @@ export const sections: Section[] = [
       "question": "Find \\(dy/dx\\) for \\(y\\cos x=x^2+y^2\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product rule on \\(y\\cos x\\).</p>\\[\\displaystyle y'\\cos x-y\\sin x=2x+2yy'\\]<p><strong>Step 2.</strong> Collect and factor.</p>\\[\\displaystyle y'(\\cos x-2y)=2x+y\\sin x\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle y'=\\frac{2x+y\\sin x}{\\cos x-2y}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=\\frac{2x+y\\sin x}{\\cos x-2y}\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(y'\\cos x-y\\sin x=2x+2yy'\\)</p><p>\\(y'(\\cos x-2y)=2x+y\\sin x\\)</p><p class=\"ans\">\\(y'=\\dfrac{2x+y\\sin x}{\\cos x-2y}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y'\\cos x-y\\sin x=2x+2yy'",
+        "why": "Product rule on \\(y\\cos x\\)."
+       },
+       {
+        "code": "y'(\\cos x-2y)=2x+y\\sin x",
+        "why": "Collect and factor."
+       },
+       {
+        "code": "y'=\\frac{2x+y\\sin x}{\\cos x-2y}",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "\\frac{2x+y\\sin x}{\\cos x-2y}"
+         ]
+        ]
        }
       ]
      },
@@ -1760,8 +4042,36 @@ export const sections: Section[] = [
         "html": "<p>Differentiate, then plug in \\(x=1\\), \\(f(1)=2\\) <em>before</em> solving. It's just a linear equation in \\(f'(1)\\).</p>"
        },
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product rule on \\(x^2[f]^3\\), chain rule on \\([f]^3\\).</p>\\[\\displaystyle f'(x)+2x[f(x)]^3+3x^2[f(x)]^2f'(x)=0\\]<p><strong>Step 2.</strong> Plug in before solving.</p>\\[\\begin{gathered}\\displaystyle x=1\\\\\\displaystyle f(1)=2:\\ f'(1)+2(8)+3(4)f'(1)=0\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle 13f'(1)=-16\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f'(1)=-\\frac{16}{13}\\]<p><strong>What you found:</strong></p><ul><li>\\(f'(1)=-16/13\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(f'(x)+2x[f(x)]^3+3x^2[f(x)]^2f'(x)=0\\)</p><p>At \\(x=1\\): \\(f'(1)+2(8)+3(4)f'(1)=0\\Rightarrow13f'(1)=-16\\)</p><p class=\"ans\">\\(f'(1)=-\\dfrac{16}{13}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)+2x[f(x)]^3+3x^2[f(x)]^2f'(x)=0",
+        "why": "Product rule on \\(x^2[f]^3\\), chain rule on \\([f]^3\\)."
+       },
+       {
+        "code": "x=1,\\ f(1)=2:\\ f'(1)+2(8)+3(4)f'(1)=0",
+        "why": "Plug in before solving."
+       },
+       {
+        "code": "13f'(1)=-16",
+        "why": ""
+       },
+       {
+        "code": "f'(1)=-\\frac{16}{13}",
+        "why": "",
+        "watch": [
+         [
+          "f'(1)",
+          "-16/13"
+         ]
+        ]
        }
       ]
      },
@@ -1772,8 +4082,42 @@ export const sections: Section[] = [
       "question": "Find the tangent line to the kampyle \\(y^2=5x^4-x^2\\) at \\((1,2)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Differentiate both sides.</p>\\[\\displaystyle 2yy'=20x^3-2x\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle y'=\\frac{10x^3-x}{y}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle y'(1,2)=\\frac{10-1}{2}=\\frac92\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle y-2=\\tfrac92(x-1)\\Rightarrow y=\\tfrac92x-\\tfrac52\\]<p><strong>What you found:</strong></p><ul><li>\\(m=9/2\\)</li><li>\\(\\text{line}:\\ y=\\tfrac92x-\\tfrac52\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(2yy'=20x^3-2x\\Rightarrow y'=\\dfrac{10x^3-x}{y}\\); at \\((1,2)\\): \\(\\dfrac{9}{2}\\).</p><p class=\"ans\">\\(y=\\tfrac92x-\\tfrac52\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "2yy'=20x^3-2x",
+        "why": "Differentiate both sides."
+       },
+       {
+        "code": "y'=\\frac{10x^3-x}{y}",
+        "why": ""
+       },
+       {
+        "code": "y'(1,2)=\\frac{10-1}{2}=\\frac92",
+        "why": "",
+        "watch": [
+         [
+          "m",
+          "9/2"
+         ]
+        ]
+       },
+       {
+        "code": "y-2=\\tfrac92(x-1)\\Rightarrow y=\\tfrac92x-\\tfrac52",
+        "why": "",
+        "watch": [
+         [
+          "\\text{line}",
+          "y=\\tfrac92x-\\tfrac52"
+         ]
+        ]
        }
       ]
      },
@@ -1784,8 +4128,42 @@ export const sections: Section[] = [
       "question": "Find the tangent line to \\(x^2+y^2=25\\) at \\((3,4)\\).",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle 2x+2yy'=0\\Rightarrow y'=-\\frac{x}{y}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle y'(3,4)=-\\frac34\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle y-4=-\\tfrac34(x-3)\\]<p><strong>Step 4.</strong> \\(4+\\tfrac94=\\tfrac{25}4\\).</p>\\[\\displaystyle y=-\\tfrac34x+\\tfrac{25}{4}\\]<p><strong>What you found:</strong></p><ul><li>\\(m=-3/4\\)</li><li>\\(\\text{line}:\\ y=-\\tfrac34x+\\tfrac{25}4\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(2x+2yy'=0\\Rightarrow y'=-\\dfrac xy=-\\dfrac34\\).</p><p class=\"ans\">\\(y=-\\tfrac34x+\\tfrac{25}{4}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "2x+2yy'=0\\Rightarrow y'=-\\frac{x}{y}",
+        "why": ""
+       },
+       {
+        "code": "y'(3,4)=-\\frac34",
+        "why": "",
+        "watch": [
+         [
+          "m",
+          "-3/4"
+         ]
+        ]
+       },
+       {
+        "code": "y-4=-\\tfrac34(x-3)",
+        "why": ""
+       },
+       {
+        "code": "y=-\\tfrac34x+\\tfrac{25}{4}",
+        "why": "\\(4+\\tfrac94=\\tfrac{25}4\\).",
+        "watch": [
+         [
+          "\\text{line}",
+          "y=-\\tfrac34x+\\tfrac{25}4"
+         ]
+        ]
        }
       ]
      },
@@ -1796,8 +4174,40 @@ export const sections: Section[] = [
       "question": "Where does \\(x^2-xy+y^2=3\\) have horizontal tangents?",
       "reveals": [
        {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product rule on \\(xy\\).</p>\\[\\displaystyle 2x-(y+xy')+2yy'=0\\]<p><strong>Step 2.</strong> Collect and solve.</p>\\[\\displaystyle y'=\\frac{y-2x}{2y-x}\\]<p><strong>Step 3.</strong> Horizontal: the top is 0.</p>\\[\\displaystyle y'=0\\Rightarrow y=2x\\]<p><strong>Step 4.</strong> Substitute \\(y=2x\\) into the curve.</p>\\[\\displaystyle x^2-2x^2+4x^2=3\\Rightarrow x^2=1\\]<p><strong>Step 5.</strong> Check the bottom \\(2y-x=\\pm3\\ne0\\). ✓</p>\\[\\displaystyle (1,2)\\ \\text{and}\\ (-1,-2)\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{points}:\\ (1,2),\\ (-1,-2)\\)</li></ul></div>"
+       },
+       {
         "label": "Full solution",
         "html": "<p>\\(2x-y-xy'+2yy'=0\\Rightarrow y'=\\dfrac{y-2x}{2y-x}\\).</p><p>Horizontal: numerator 0 → \\(y=2x\\). Substitute: \\(x^2-2x^2+4x^2=3\\Rightarrow x^2=1\\).</p><p class=\"ans\">\\((1,2)\\) and \\((-1,-2)\\). (Check the denominator \\(2y-x\\ne0\\) there: \\(3\\) and \\(-3\\). ✓)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "2x-(y+xy')+2yy'=0",
+        "why": "Product rule on \\(xy\\)."
+       },
+       {
+        "code": "y'=\\frac{y-2x}{2y-x}",
+        "why": "Collect and solve."
+       },
+       {
+        "code": "y'=0\\Rightarrow y=2x",
+        "why": "Horizontal: the top is 0."
+       },
+       {
+        "code": "x^2-2x^2+4x^2=3\\Rightarrow x^2=1",
+        "why": "Substitute \\(y=2x\\) into the curve."
+       },
+       {
+        "code": "(1,2)\\ \\text{and}\\ (-1,-2)",
+        "why": "Check the bottom \\(2y-x=\\pm3\\ne0\\). ✓",
+        "watch": [
+         [
+          "\\text{points}",
+          "(1,2),\\ (-1,-2)"
+         ]
+        ]
        }
       ]
      }
