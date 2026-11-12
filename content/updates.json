@@ -1,7 +1,7 @@
 [
   {
     "date": "2026-11-12",
-    "text": "New: written walkthroughs on every problem with a step-through. Sign-chart problems get a full number-line walkthrough (walls, test points with the arithmetic shown, then the answers), and every other problem gets a Step 1, Step 2… walkthrough."
+    "text": "New: written walkthroughs on every problem with a step-through. Sign-chart problems follow 6 steps: check the domain, find f′ and the critical numbers (top = 0 and bottom = 0), the first sign map, local extremes, f″ and the second sign map, then confirm the inflection points. Every other problem gets a Step 1, Step 2… walkthrough."
   },
   {
     "date": "2026-11-12",
