@@ -40,7 +40,7 @@ export default function Home() {
         <HeroTitle />
         <HeroFade delay={0.35}>
           <p className="lede">
-            Quiz 5 covers §4.3, 4.4, 4.5, 4.7 and 4.9: the shape of a graph, l&apos;Hospital&apos;s Rule, curve sketching, optimization and antiderivatives.
+            Quiz 5 covers §4.3, 4.4, 4.5, 4.7, 4.8 and 4.9: the shape of a graph, l&apos;Hospital&apos;s Rule, curve sketching, optimization, Newton&apos;s method and antiderivatives.
             Every section has a short lesson and practice problems you can step through line by line, then a 12-point practice quiz.
           </p>
         </HeroFade>
@@ -60,7 +60,7 @@ export default function Home() {
           </div>
         </HeroFade>
       </section>
-      <h2 className="unit-head">Quiz 5 · §4.3–4.5, 4.7, 4.9 <span>Tue, Nov 17</span></h2>
+      <h2 className="unit-head">Quiz 5 · §4.3–4.5, 4.7–4.9 <span>Tue, Nov 17</span></h2>
       <Cards list={q5} />
       <h2 className="unit-head">Midterm 3 &amp; final · §4.8–5.5 <span>Dec 1 · Dec 8</span></h2>
       <Cards list={later} />

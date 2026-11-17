@@ -10376,7 +10376,7 @@ export const sections: Section[] = [
   "num": "Quiz 5 · Tue, Nov 17",
   "unit": "q5",
   "title": "Quiz 5 study plan",
-  "lede": "Quiz 5 is now Tue, Nov 17 and covers §4.3, 4.4, 4.5, 4.7 and 4.9. What's assigned, where each skill is taught, and a plan for tonight.",
+  "lede": "Quiz 5 is now Tue, Nov 17 and covers §4.3, 4.4, 4.5, 4.7, 4.8 and 4.9. What's assigned, where each skill is taught, and a plan for tonight.",
   "blocks": [
    {
     "type": "countdown",
@@ -10385,7 +10385,7 @@ export const sections: Section[] = [
    },
    {
     "type": "prose",
-    "html": "<p class=\"callout\"><strong>On the quiz:</strong> §4.3, §4.4, §4.5, §4.7 and §4.9. §4.2 and §4.8 are under the <strong>Final</strong> tab. The practice problems match each homework range but aren't copied from the textbook, so do some of the real assigned numbers too.</p>"
+    "html": "<p class=\"callout\"><strong>On the quiz:</strong> §4.3, §4.4, §4.5, §4.7, §4.8 and §4.9. §4.2 is under the <strong>Final</strong> tab. The practice problems match each homework range but aren't copied from the textbook, so do some of the real assigned numbers too.</p>"
    },
    {
     "type": "heading",
@@ -10412,11 +10412,15 @@ export const sections: Section[] = [
      },
      {
       "key": true,
+      "html": "<span class=\"tag\">§4.8 · homework 1–31 odd</span><p><strong><a href=\"/4-8/\">Newton's method</a></strong></p><p class=\"note\">10 practice problems, each solved line by line: <a href=\"/4-8/#p48-1\">#1</a>, <a href=\"/4-8/#p48-2\">#2</a>, <a href=\"/4-8/#p48-3\">#3</a>, <a href=\"/4-8/#p48-4\">#4</a>, <a href=\"/4-8/#p48-5\">#5</a>, <a href=\"/4-8/#p48-6\">#6</a>, <a href=\"/4-8/#p48-7\">#7</a>, <a href=\"/4-8/#p48-8\">#8</a>, <a href=\"/4-8/#p48-9\">#9</a>, <a href=\"/4-8/#p48-10\">#10</a></p>"
+     },
+     {
+      "key": true,
       "html": "<span class=\"tag\">§4.9 · homework 1–47 odd</span><p><strong><a href=\"/4-9/\">Antiderivatives</a></strong></p><p class=\"note\">10 practice problems, each solved line by line: <a href=\"/4-9/#p49-1\">#1</a>, <a href=\"/4-9/#p49-2\">#2</a>, <a href=\"/4-9/#p49-3\">#3</a>, <a href=\"/4-9/#p49-4\">#4</a>, <a href=\"/4-9/#p49-5\">#5</a>, <a href=\"/4-9/#p49-6\">#6</a>, <a href=\"/4-9/#p49-7\">#7</a>, <a href=\"/4-9/#p49-8\">#8</a>, <a href=\"/4-9/#p49-9\">#9</a>, <a href=\"/4-9/#p49-10\">#10</a></p>"
      },
      {
       "key": false,
-      "html": "<span class=\"tag\">Then test yourself</span><p><strong><a href=\"/quiz-5-practice/\">Quiz 5 practice quiz</a></strong>: 8 problems, 12 points, with a live score.</p>"
+      "html": "<span class=\"tag\">Then test yourself</span><p><strong><a href=\"/quiz-5-practice/\">Quiz 5 practice quiz</a></strong>: 9 problems, 13 points, with a live score.</p>"
      }
     ]
    },
@@ -10426,11 +10430,11 @@ export const sections: Section[] = [
    },
    {
     "type": "prose",
-    "html": "<p class=\"callout\">About 4 hours, in this order. Each block ends with a check: if you can do it without opening the solution, move on.</p><ol class=\"steps\"><li><strong>6:00–7:00 · <a href=\"/4-3/\">§4.3 shape of a graph</a>.</strong> Read the 5 rules. Do #1, then #7 and #8 with the <em>Sign-map walkthrough</em> open. Then #3 on paper alone. <em>Check:</em> you can draw the number line, pick test points and write intervals, extremes and inflection points.</li><li><strong>7:00–7:50 · <a href=\"/4-4/\">§4.4 l'Hospital</a>.</strong> #1–#4 (0/0 and ∞/∞), #5–#7 (rewrite first), #8–#10 (take ln, answer e^L), #11 (check the form!). <em>Check:</em> #9 on paper alone.</li><li><strong>7:50–8:00 · break.</strong></li><li><strong>8:00–8:40 · <a href=\"/4-5/\">§4.5 curve sketching</a>.</strong> Do #3 and #5 with the A–H checklist: domain, intercepts, symmetry, asymptotes, then the two sign maps. <em>Check:</em> you can find a slant asymptote by long division.</li><li><strong>8:40–9:20 · <a href=\"/4-7/\">§4.7 optimization</a>.</strong> #1, #4, #5, #7, #8. Always: objective, constraint, one variable, derivative = 0, justify. <em>Check:</em> #5 (box) on paper alone.</li><li><strong>9:20–9:50 · <a href=\"/4-9/\">§4.9 antiderivatives</a>.</strong> #1–#9. Quick points: power rule backwards, 1/x → ln|x|, +C, find C from the point.</li><li><strong>9:50–10:20 · <a href=\"/quiz-5-practice/\">practice quiz</a></strong> (12 points), timed, closed notes. Tick what you got right and check the score bar.</li><li><strong>10:20–10:30 ·</strong> read the <a href=\"/cheat-sheet/#quiz-5\">Quiz 5 cheat sheet</a> once, then sleep. Sleep beats one more hour of cramming.</li></ol><p><strong>Tomorrow morning (15 min):</strong> the <a href=\"/quick-quiz/\">quick quiz</a> on Quiz 5, the <a href=\"/memory-tricks/\">Quiz 5 flashcards</a>, and the 6 things to memorize below.</p>"
+    "html": "<p class=\"callout\">About 4 hours, in this order. Each block ends with a check: if you can do it without opening the solution, move on.</p><ol class=\"steps\"><li><strong>6:00–7:00 · <a href=\"/4-3/\">§4.3 shape of a graph</a>.</strong> Read the 5 rules. Do #1, then #7 and #8 with the <em>Sign-map walkthrough</em> open. Then #3 on paper alone. <em>Check:</em> you can draw the number line, pick test points and write intervals, extremes and inflection points.</li><li><strong>7:00–7:50 · <a href=\"/4-4/\">§4.4 l'Hospital</a>.</strong> #1–#4 (0/0 and ∞/∞), #5–#7 (rewrite first), #8–#10 (take ln, answer e^L), #11 (check the form!). <em>Check:</em> #9 on paper alone.</li><li><strong>7:50–8:00 · break.</strong></li><li><strong>8:00–8:40 · <a href=\"/4-5/\">§4.5 curve sketching</a>.</strong> Do #3 and #5 with the A–H checklist: domain, intercepts, symmetry, asymptotes, then the two sign maps. <em>Check:</em> you can find a slant asymptote by long division.</li><li><strong>8:40–9:20 · <a href=\"/4-7/\">§4.7 optimization</a>.</strong> #1, #4, #5, #7, #8. Always: objective, constraint, one variable, derivative = 0, justify. <em>Check:</em> #5 (box) on paper alone.</li><li><strong>+15 min · <a href=\"/4-8/\">§4.8 Newton's method</a>.</strong> One formula: \\(x_{n+1}=x_n-\\frac{f(x_n)}{f'(x_n)}\\). Do #1, #6, #7 and #10. <em>Check:</em> #7 on paper alone.</li><li><strong>9:20–9:50 · <a href=\"/4-9/\">§4.9 antiderivatives</a>.</strong> #1–#9. Quick points: power rule backwards, 1/x → ln|x|, +C, find C from the point.</li><li><strong>9:50–10:20 · <a href=\"/quiz-5-practice/\">practice quiz</a></strong> (13 points), timed, closed notes. Tick what you got right and check the score bar.</li><li><strong>10:20–10:30 ·</strong> read the <a href=\"/cheat-sheet/#quiz-5\">Quiz 5 cheat sheet</a> once, then sleep. Sleep beats one more hour of cramming.</li></ol><p><strong>Tomorrow morning (15 min):</strong> the <a href=\"/quick-quiz/\">quick quiz</a> on Quiz 5, the <a href=\"/memory-tricks/\">Quiz 5 flashcards</a>, and the 7 things to memorize below.</p>"
    },
    {
     "type": "heading",
-    "text": "The 6 things to memorize"
+    "text": "The 7 things to memorize"
    },
    {
     "type": "rules",
@@ -10454,6 +10458,10 @@ export const sections: Section[] = [
      {
       "key": true,
       "html": "<span class=\"tag\">Optimization</span><p>Objective + constraint → one variable → \\(f'=0\\) → justify max/min → answer with units.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Newton</span><p>\\(x_{n+1}=x_n-\\frac{f(x_n)}{f'(x_n)}\\). Move everything to one side first. \\(x_2\\) is where the tangent at \\(x_1\\) hits the x-axis. Fails if \\(f'(x_n)=0\\).</p>"
      },
      {
       "key": true,
@@ -13006,6 +13014,629 @@ export const sections: Section[] = [
   ]
  },
  {
+  "id": "s48",
+  "slug": "4-8",
+  "num": "§4.8",
+  "unit": "q5",
+  "title": "Newton's Method",
+  "lede": "Find a root by sliding down tangent lines: one formula, repeated.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\"><strong>Not on Quiz 5</strong>, but it's on Midterm 3 and the final. Learn it after Quiz 5.</p>"
+   },
+   {
+    "type": "prose",
+    "html": "<p>Start with a guess \\(x_1\\). Draw the tangent line at \\((x_1,f(x_1))\\), see where it hits the x-axis, and call that \\(x_2\\). Repeat. Each new guess is usually much closer to the root.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Newton's formula</span>\\[x_{n+1}=x_n-\\frac{f(x_n)}{f'(x_n)}\\]<p class=\"note\">Where it comes from: the tangent line \\(y=f(x_n)+f'(x_n)(x-x_n)\\) set to \\(y=0\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Solving an equation</span><p>Move everything to one side first: “solve \\(\\cos x=x\\)” becomes \\(f(x)=\\cos x-x=0\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Approximating a root like \\(\\sqrt[3]{30}\\)</span><p>Turn it into an equation: \\(x^3=30\\Rightarrow f(x)=x^3-30\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">When it fails</span><p>If \\(f'(x_n)=0\\) the tangent is flat and never hits the axis. A bad first guess can also jump to a different root or wander off.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Calculator</span><p>Use radians for trig, and keep at least 6 decimals between steps. Round only the final answer.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p48-1",
+      "source": "Like §4.8 #5–11",
+      "href": null,
+      "question": "Use Newton's method with \\(x_1=1\\) to find \\(x_3\\) for the equation \\(x^3+2x-4=0\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f'(x)=3x^2+2\\). Do two steps.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Write both down first.</p>\\[\\begin{gathered}\\displaystyle f(x)=x^3+2x-4\\\\\\displaystyle f'(x)=3x^2+2\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle f(1)=-1\\\\\\displaystyle f'(1)=5\\end{gathered}\\]<p><strong>Step 3.</strong> Minus a negative moves right.</p>\\[\\displaystyle x_2=1-\\frac{-1}{5}=1.2\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f(1.2)=1.728+2.4-4=0.128\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle f'(1.2)=3(1.44)+2=6.32\\]<p><strong>Step 6.</strong></p>\\[\\displaystyle x_3=1.2-\\frac{0.128}{6.32}\\approx1.179747\\]<p><strong>What you found:</strong></p><ul><li>\\(x_1=1\\)</li><li>\\(x_2=1.2\\)</li><li>\\(x_3=1.1797\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x_2=1-\\frac{-1}{5}=1.2\\). \\(f(1.2)=0.128\\), \\(f'(1.2)=6.32\\), so \\(x_3=1.2-\\frac{0.128}{6.32}\\approx1.1797\\).</p><p class=\"ans\">\\(x_3\\approx1.1797\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=x^3+2x-4,\\ \\ f'(x)=3x^2+2",
+        "why": "Write both down first."
+       },
+       {
+        "code": "f(1)=-1,\\ \\ f'(1)=5",
+        "why": "",
+        "watch": [
+         [
+          "x_1",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "x_2=1-\\frac{-1}{5}=1.2",
+        "why": "Minus a negative moves right.",
+        "watch": [
+         [
+          "x_2",
+          "1.2"
+         ]
+        ]
+       },
+       {
+        "code": "f(1.2)=1.728+2.4-4=0.128",
+        "why": ""
+       },
+       {
+        "code": "f'(1.2)=3(1.44)+2=6.32",
+        "why": ""
+       },
+       {
+        "code": "x_3=1.2-\\frac{0.128}{6.32}\\approx1.179747",
+        "why": "",
+        "watch": [
+         [
+          "x_3",
+          "1.1797"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p48-2",
+      "source": "Like §4.8 #13–17",
+      "href": null,
+      "question": "Use Newton's method to approximate \\(\\sqrt2\\), starting from \\(x_1=1\\). Find \\(x_4\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f(x)=x^2-2\\), \\(f'(x)=2x\\). The formula simplifies to \\(x_{n+1}=\\frac{x_n}{2}+\\frac{1}{x_n}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\sqrt2\\) is the positive root of \\(x^2=2\\).</p>\\[\\displaystyle f(x)=x^2-2\\]<p><strong>Step 2.</strong> Newton's formula.</p>\\[\\displaystyle x_{n+1}=x_n-\\frac{x_n^2-2}{2x_n}\\]<p><strong>Step 3.</strong> Simplify: \\(x_n-\\frac{x_n}{2}+\\frac{2}{2x_n}\\).</p>\\[\\displaystyle =\\frac{x_n}{2}+\\frac1{x_n}\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle x_2=\\tfrac12+1=1.5\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle x_3=0.75+0.666667=1.416667\\]<p><strong>Step 6.</strong> Already correct to 5 decimals.</p>\\[\\displaystyle x_4=0.708333+0.705882=1.414216\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2=1.5\\)</li><li>\\(x_3=1.416667\\)</li><li>\\(x_4=1.414216\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x_2=1.5\\), \\(x_3=1.416667\\), \\(x_4=1.414216\\). The true value is \\(1.414214\\).</p><p class=\"ans\">\\(x_4\\approx1.414216\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=x^2-2",
+        "why": "\\(\\sqrt2\\) is the positive root of \\(x^2=2\\)."
+       },
+       {
+        "code": "x_{n+1}=x_n-\\frac{x_n^2-2}{2x_n}",
+        "why": "Newton's formula."
+       },
+       {
+        "code": "=\\frac{x_n}{2}+\\frac1{x_n}",
+        "why": "Simplify: \\(x_n-\\frac{x_n}{2}+\\frac{2}{2x_n}\\)."
+       },
+       {
+        "code": "x_2=\\tfrac12+1=1.5",
+        "why": "",
+        "watch": [
+         [
+          "x_2",
+          "1.5"
+         ]
+        ]
+       },
+       {
+        "code": "x_3=0.75+0.666667=1.416667",
+        "why": "",
+        "watch": [
+         [
+          "x_3",
+          "1.416667"
+         ]
+        ]
+       },
+       {
+        "code": "x_4=0.708333+0.705882=1.414216",
+        "why": "Already correct to 5 decimals.",
+        "watch": [
+         [
+          "x_4",
+          "1.414216"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p48-3",
+      "source": "Like §4.8 #13–17",
+      "href": null,
+      "question": "Use Newton's method with \\(x_1=3\\) to approximate \\(\\sqrt[3]{30}\\) (find \\(x_3\\)).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f(x)=x^3-30\\), \\(f'(x)=3x^2\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle f(x)=x^3-30\\\\\\displaystyle f'(x)=3x^2\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle f(3)=-3\\\\\\displaystyle f'(3)=27\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle x_2=3+\\tfrac{3}{27}=3.111111\\]<p><strong>Step 4.</strong> Keep the decimals.</p>\\[\\begin{gathered}\\displaystyle f(x_2)\\approx0.112483\\\\\\displaystyle f'(x_2)\\approx29.037\\end{gathered}\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle x_3=3.111111-\\tfrac{0.112483}{29.037}\\]<p><strong>Step 6.</strong></p>\\[\\displaystyle x_3\\approx3.107237\\]<p><strong>What you found:</strong></p><ul><li>\\(x_1=3\\)</li><li>\\(x_2=3.111111\\)</li><li>\\(x_3=3.10724\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x_2=3-\\frac{-3}{27}=3.111111\\). \\(f(x_2)\\approx0.112483\\), \\(f'(x_2)\\approx29.037037\\), so \\(x_3\\approx3.107237\\). The true value is \\(3.107233\\).</p><p class=\"ans\">\\(x_3\\approx3.10724\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=x^3-30,\\ \\ f'(x)=3x^2",
+        "why": ""
+       },
+       {
+        "code": "f(3)=-3,\\ \\ f'(3)=27",
+        "why": "",
+        "watch": [
+         [
+          "x_1",
+          "3"
+         ]
+        ]
+       },
+       {
+        "code": "x_2=3+\\tfrac{3}{27}=3.111111",
+        "why": "",
+        "watch": [
+         [
+          "x_2",
+          "3.111111"
+         ]
+        ]
+       },
+       {
+        "code": "f(x_2)\\approx0.112483,\\ f'(x_2)\\approx29.037",
+        "why": "Keep the decimals."
+       },
+       {
+        "code": "x_3=3.111111-\\tfrac{0.112483}{29.037}",
+        "why": ""
+       },
+       {
+        "code": "x_3\\approx3.107237",
+        "why": "",
+        "watch": [
+         [
+          "x_3",
+          "3.10724"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p48-4",
+      "source": "Like §4.8 #19–27",
+      "href": null,
+      "question": "Use Newton's method to find the root of \\(\\cos x=x\\), starting from \\(x_1=1\\). Find \\(x_3\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f(x)=\\cos x-x\\), \\(f'(x)=-\\sin x-1\\). Use radians.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Move everything to one side.</p>\\[\\displaystyle f(x)=\\cos x-x\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f'(x)=-\\sin x-1\\]<p><strong>Step 3.</strong> Radians!</p>\\[\\displaystyle f(1)=0.540302-1=-0.459698\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f'(1)=-0.841471-1=-1.841471\\]<p><strong>Step 5.</strong> Negative over negative is positive, so you subtract.</p>\\[\\displaystyle x_2=1-\\frac{-0.459698}{-1.841471}=0.750364\\]<p><strong>Step 6.</strong></p>\\[\\begin{gathered}\\displaystyle f(x_2)\\approx-0.018923\\\\\\displaystyle f'(x_2)\\approx-1.681905\\end{gathered}\\]<p><strong>Step 7.</strong></p>\\[\\displaystyle x_3\\approx0.750364-0.011251=0.739113\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2=0.750364\\)</li><li>\\(x_3=0.7391\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x_2=1-\\frac{-0.459698}{-1.841471}=0.750364\\). \\(f(x_2)\\approx-0.018923\\), \\(f'(x_2)\\approx-1.681905\\), so \\(x_3\\approx0.739113\\). The root is \\(0.739085\\).</p><p class=\"ans\">\\(x_3\\approx0.7391\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=\\cos x-x",
+        "why": "Move everything to one side."
+       },
+       {
+        "code": "f'(x)=-\\sin x-1",
+        "why": ""
+       },
+       {
+        "code": "f(1)=0.540302-1=-0.459698",
+        "why": "Radians!"
+       },
+       {
+        "code": "f'(1)=-0.841471-1=-1.841471",
+        "why": ""
+       },
+       {
+        "code": "x_2=1-\\frac{-0.459698}{-1.841471}=0.750364",
+        "why": "Negative over negative is positive, so you subtract.",
+        "watch": [
+         [
+          "x_2",
+          "0.750364"
+         ]
+        ]
+       },
+       {
+        "code": "f(x_2)\\approx-0.018923,\\ f'(x_2)\\approx-1.681905",
+        "why": ""
+       },
+       {
+        "code": "x_3\\approx0.750364-0.011251=0.739113",
+        "why": "",
+        "watch": [
+         [
+          "x_3",
+          "0.7391"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p48-5",
+      "source": "Like §4.8 #1–3",
+      "href": null,
+      "question": "Explain why Newton's method fails for \\(f(x)=x^3-3x+6\\) if you start at \\(x_1=1\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Compute \\(f'(1)\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle f'(x)=3x^2-3\\]<p><strong>Step 2.</strong> The formula would divide by zero.</p>\\[\\displaystyle f'(1)=0\\]<p><strong>Step 3.</strong> A flat line never crosses the x-axis, so there's no next guess. Pick a different \\(x_1\\).</p>\\[\\displaystyle \\text{horizontal tangent}\\]<p><strong>What you found:</strong></p><ul><li>\\(f'(x_1)=0\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'(x)=3x^2-3\\), so \\(f'(1)=0\\). The tangent line at \\(x=1\\) is horizontal and never meets the x-axis, so \\(x_2\\) would mean dividing by zero.</p><p class=\"ans\">\\(f'(1)=0\\): the tangent is horizontal, so \\(x_2\\) is undefined</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=3x^2-3",
+        "why": ""
+       },
+       {
+        "code": "f'(1)=0",
+        "why": "The formula would divide by zero.",
+        "watch": [
+         [
+          "f'(x_1)",
+          "0"
+         ]
+        ]
+       },
+       {
+        "code": "\\text{horizontal tangent}",
+        "why": "A flat line never crosses the x-axis, so there's no next guess. Pick a different \\(x_1\\)."
+       }
+      ]
+     },
+     {
+      "id": "p48-6",
+      "source": "Like §4.8 #3",
+      "href": null,
+      "question": "The tangent line to \\(y=f(x)\\) at \\((2,5)\\) is \\(y=9-2x\\). Newton's method starts at \\(x_1=2\\). Find \\(x_2\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Newton's \\(x_2\\) is simply where the tangent line at \\(x_1\\) crosses the x-axis. Set \\(y=0\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Newton's method follows the tangent line at \\(x_1\\) down to the x-axis. You're given that line, so use it directly.</p>\\[\\displaystyle y=9-2x\\]<p><strong>Step 2.</strong> \\(x_2\\) is the x-intercept of the tangent: set \\(y=0\\).</p>\\[\\displaystyle 0=9-2x\\]<p><strong>Step 3.</strong> Solve for \\(x\\).</p>\\[\\displaystyle x_2=\\tfrac92=4.5\\]<p><strong>Step 4.</strong> Double check with the formula: \\(f(2)=5\\) and the slope \\(f'(2)=-2\\). Same answer.</p>\\[\\displaystyle x_2=2-\\frac{f(2)}{f'(2)}=2-\\frac{5}{-2}=4.5\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2=4.5\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>The tangent at \\(x_1\\) is \\(y=9-2x\\). Setting \\(y=0\\) gives \\(x=4.5\\). Check: \\(f(2)=5\\), \\(f'(2)=-2\\), so \\(x_2=2-\\frac{5}{-2}=4.5\\).</p><p class=\"ans\">\\(x_2=4.5\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=9-2x",
+        "why": "Newton's method follows the tangent line at \\(x_1\\) down to the x-axis. You're given that line, so use it directly."
+       },
+       {
+        "code": "0=9-2x",
+        "why": "\\(x_2\\) is the x-intercept of the tangent: set \\(y=0\\)."
+       },
+       {
+        "code": "x_2=\\tfrac92=4.5",
+        "why": "Solve for \\(x\\).",
+        "watch": [
+         [
+          "x_2",
+          "4.5"
+         ]
+        ]
+       },
+       {
+        "code": "x_2=2-\\frac{f(2)}{f'(2)}=2-\\frac{5}{-2}=4.5",
+        "why": "Double check with the formula: \\(f(2)=5\\) and the slope \\(f'(2)=-2\\). Same answer."
+       }
+      ]
+     },
+     {
+      "id": "p48-7",
+      "source": "Like §4.8 #9",
+      "href": null,
+      "question": "Use Newton's method with \\(x_1=-1\\) to find \\(x_2\\) for \\(x^3+x+3=0\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f'(x)=3x^2+1\\). One step: \\(x_2=x_1-\\frac{f(x_1)}{f'(x_1)}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Write both down first.</p>\\[\\displaystyle f(x)=x^3+x+3,\\ \\ f'(x)=3x^2+1\\]<p><strong>Step 2.</strong> Careful with signs: \\((-1)^3=-1\\).</p>\\[\\displaystyle f(-1)=-1-1+3=1\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle f'(-1)=3(1)+1=4\\]<p><strong>Step 4.</strong> Plug into the formula.</p>\\[\\displaystyle x_2=-1-\\frac{1}{4}=-1.25\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2=-1.25\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(-1)=1\\), \\(f'(-1)=4\\), so \\(x_2=-1-\\frac14=-1.25\\).</p><p class=\"ans\">\\(x_2=-1.25\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=x^3+x+3,\\ \\ f'(x)=3x^2+1",
+        "why": "Write both down first."
+       },
+       {
+        "code": "f(-1)=-1-1+3=1",
+        "why": "Careful with signs: \\((-1)^3=-1\\).",
+        "watch": [
+         [
+          "f(x_1)",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "f'(-1)=3(1)+1=4",
+        "why": "",
+        "watch": [
+         [
+          "f'(x_1)",
+          "4"
+         ]
+        ]
+       },
+       {
+        "code": "x_2=-1-\\frac{1}{4}=-1.25",
+        "why": "Plug into the formula.",
+        "watch": [
+         [
+          "x_2",
+          "-1.25"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p48-8",
+      "source": "Like §4.8 #7",
+      "href": null,
+      "question": "Use Newton's method with \\(x_1=2\\) to find \\(x_3\\) for \\(\\dfrac{2}{x}-x^2+1=0\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f'(x)=-\\frac{2}{x^2}-2x\\). Do two steps and keep 6 decimals between them.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\frac2x=2x^{-1}\\), so its derivative is \\(-2x^{-2}\\).</p>\\[\\displaystyle f(x)=\\frac2x-x^2+1,\\ \\ f'(x)=-\\frac{2}{x^2}-2x\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f(2)=1-4+1=-2\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle f'(2)=-\\tfrac12-4=-4.5\\]<p><strong>Step 4.</strong> Negative over negative is positive, so you subtract.</p>\\[\\displaystyle x_2=2-\\frac{-2}{-4.5}=2-0.444444=1.555556\\]<p><strong>Step 5.</strong> \\(\\frac{2}{1.555556}=1.285714\\) and \\(1.555556^2=2.419753\\).</p>\\[\\displaystyle f(1.555556)\\approx-0.134039\\]<p><strong>Step 6.</strong></p>\\[\\displaystyle f'(1.555556)\\approx-3.937642\\]<p><strong>Step 7.</strong></p>\\[\\displaystyle x_3=1.555556-\\frac{-0.134039}{-3.937642}\\approx1.521515\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2\\approx1.5556\\)</li><li>\\(x_3\\approx1.5215\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x_2=2-\\frac{-2}{-4.5}=\\frac{14}{9}\\approx1.555556\\). Then \\(f(x_2)\\approx-0.134039\\) and \\(f'(x_2)\\approx-3.937642\\), so \\(x_3\\approx1.555556-0.034041=1.521515\\).</p><p class=\"ans\">\\(x_3\\approx1.5215\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=\\frac2x-x^2+1,\\ \\ f'(x)=-\\frac{2}{x^2}-2x",
+        "why": "\\(\\frac2x=2x^{-1}\\), so its derivative is \\(-2x^{-2}\\)."
+       },
+       {
+        "code": "f(2)=1-4+1=-2",
+        "why": "",
+        "watch": [
+         [
+          "x_1",
+          "2"
+         ]
+        ]
+       },
+       {
+        "code": "f'(2)=-\\tfrac12-4=-4.5",
+        "why": ""
+       },
+       {
+        "code": "x_2=2-\\frac{-2}{-4.5}=2-0.444444=1.555556",
+        "why": "Negative over negative is positive, so you subtract.",
+        "watch": [
+         [
+          "x_2",
+          "1.555556"
+         ]
+        ]
+       },
+       {
+        "code": "f(1.555556)\\approx-0.134039",
+        "why": "\\(\\frac{2}{1.555556}=1.285714\\) and \\(1.555556^2=2.419753\\)."
+       },
+       {
+        "code": "f'(1.555556)\\approx-3.937642",
+        "why": ""
+       },
+       {
+        "code": "x_3=1.555556-\\frac{-0.134039}{-3.937642}\\approx1.521515",
+        "why": "",
+        "watch": [
+         [
+          "x_3",
+          "1.5215"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p48-9",
+      "source": "Like §4.8 #29",
+      "href": null,
+      "question": "Show that Newton's method for \\(f(x)=\\dfrac1x-a\\) gives \\(x_{n+1}=2x_n-ax_n^2\\). (This computes \\(\\frac1a\\) without dividing.)",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f'(x)=-\\frac1{x^2}\\). Dividing by \\(-\\frac1{x^2}\\) is the same as multiplying by \\(-x^2\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The root of \\(f\\) is \\(x=\\frac1a\\).</p>\\[\\displaystyle f(x)=\\frac1x-a,\\ \\ f'(x)=-\\frac{1}{x^2}\\]<p><strong>Step 2.</strong> Newton's formula.</p>\\[\\displaystyle x_{n+1}=x_n-\\frac{\\frac1{x_n}-a}{-\\frac{1}{x_n^2}}\\]<p><strong>Step 3.</strong> Dividing by \\(-\\frac1{x_n^2}\\) = multiplying by \\(-x_n^2\\); minus times minus is plus.</p>\\[\\displaystyle =x_n+x_n^2\\Big(\\frac1{x_n}-a\\Big)\\]<p><strong>Step 4.</strong> Distribute.</p>\\[\\displaystyle =x_n+x_n-ax_n^2=2x_n-ax_n^2\\]<p><strong>What you found:</strong></p><ul><li>\\(x_{n+1}=2x_n-ax_n^2\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x_{n+1}=x_n-\\frac{1/x_n-a}{-1/x_n^2}=x_n+x_n^2\\big(\\frac1{x_n}-a\\big)=2x_n-ax_n^2\\).</p><p class=\"ans\">\\(x_{n+1}=2x_n-ax_n^2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=\\frac1x-a,\\ \\ f'(x)=-\\frac{1}{x^2}",
+        "why": "The root of \\(f\\) is \\(x=\\frac1a\\)."
+       },
+       {
+        "code": "x_{n+1}=x_n-\\frac{\\frac1{x_n}-a}{-\\frac{1}{x_n^2}}",
+        "why": "Newton's formula."
+       },
+       {
+        "code": "=x_n+x_n^2\\Big(\\frac1{x_n}-a\\Big)",
+        "why": "Dividing by \\(-\\frac1{x_n^2}\\) = multiplying by \\(-x_n^2\\); minus times minus is plus."
+       },
+       {
+        "code": "=x_n+x_n-ax_n^2=2x_n-ax_n^2",
+        "why": "Distribute.",
+        "watch": [
+         [
+          "x_{n+1}",
+          "2x_n-ax_n^2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p48-10",
+      "source": "Like §4.8 #31",
+      "href": null,
+      "question": "Explain why Newton's method fails for \\(f(x)=\\sqrt[3]{x}\\) with any starting guess \\(x_1\\ne0\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Simplify \\(x_{n+1}\\) in terms of \\(x_n\\). What happens to the size of \\(x_n\\)?</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The only root is \\(x=0\\).</p>\\[\\displaystyle f(x)=x^{1/3},\\ \\ f'(x)=\\tfrac13x^{-2/3}\\]<p><strong>Step 2.</strong> Subtract exponents: \\(\\frac13-(-\\frac23)=1\\).</p>\\[\\displaystyle \\frac{f(x_n)}{f'(x_n)}=\\frac{x_n^{1/3}}{\\frac13x_n^{-2/3}}=3x_n\\]<p><strong>Step 3.</strong> Each step doubles the distance from 0 and flips sides.</p>\\[\\displaystyle x_{n+1}=x_n-3x_n=-2x_n\\]<p><strong>Step 4.</strong> The guesses run away from the root instead of closing in.</p>\\[\\displaystyle x_1=1\\to-2\\to4\\to-8\\to\\cdots\\]<p><strong>What you found:</strong></p><ul><li>\\(x_{n+1}=-2x_n\\)</li><li>\\(|x_n|\\to\\infty\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{f(x)}{f'(x)}=\\frac{x^{1/3}}{\\frac13x^{-2/3}}=3x\\), so \\(x_{n+1}=x_n-3x_n=-2x_n\\). Every step is twice as far from 0 on the other side (e.g. \\(1,-2,4,-8,\\dots\\)), so it never converges.</p><p class=\"ans\">\\(x_{n+1}=-2x_n\\): the guesses double in size and alternate sides, so they diverge</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=x^{1/3},\\ \\ f'(x)=\\tfrac13x^{-2/3}",
+        "why": "The only root is \\(x=0\\)."
+       },
+       {
+        "code": "\\frac{f(x_n)}{f'(x_n)}=\\frac{x_n^{1/3}}{\\frac13x_n^{-2/3}}=3x_n",
+        "why": "Subtract exponents: \\(\\frac13-(-\\frac23)=1\\)."
+       },
+       {
+        "code": "x_{n+1}=x_n-3x_n=-2x_n",
+        "why": "Each step doubles the distance from 0 and flips sides.",
+        "watch": [
+         [
+          "x_{n+1}",
+          "-2x_n"
+         ]
+        ]
+       },
+       {
+        "code": "x_1=1\\to-2\\to4\\to-8\\to\\cdots",
+        "why": "The guesses run away from the root instead of closing in."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Plus instead of minus",
+      "html": "<p>It's \\(x_n\\) <strong>minus</strong> \\(\\frac{f}{f'}\\). Watch the double negatives.</p>"
+     },
+     {
+      "title": "Degrees mode",
+      "html": "<p>Trig in degrees gives completely wrong numbers. Switch the calculator to radians.</p>"
+     }
+    ]
+   }
+  ],
+  "also": [
+   "later"
+  ]
+ },
+ {
   "id": "s49",
   "slug": "4-9",
   "num": "§4.9",
@@ -13570,7 +14201,7 @@ export const sections: Section[] = [
   "num": "Quiz 5 · practice",
   "unit": "q5",
   "title": "Quiz 5 practice quiz",
-  "lede": "8 problems, 12 points, shaped like your quizzes: §4.3, 4.4, 4.5, 4.7 and 4.9, slightly harder than the section practice.",
+  "lede": "9 problems, 13 points, shaped like your quizzes: §4.3, 4.4, 4.5, 4.7, 4.8 and 4.9, slightly harder than the section practice.",
   "blocks": [
    {
     "type": "prose",
@@ -13610,9 +14241,13 @@ export const sections: Section[] = [
      {
       "id": "q5p-8",
       "points": 2
+     },
+     {
+      "id": "q5p-9",
+      "points": 1
      }
     ],
-    "total": 12
+    "total": 13
    },
    {
     "type": "heading",
@@ -14084,6 +14719,71 @@ export const sections: Section[] = [
    },
    {
     "type": "heading",
+    "text": "§4.8 · Newton's method"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "q5p-9",
+      "source": "Like §4.8 #5–9",
+      "href": null,
+      "question": "9. (1 pt) Use one step of Newton's method on \\(x^3-2x-5=0\\) with \\(x_1=2\\). Find \\(x_2\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f'(x)=3x^2-2\\). \\(x_2=x_1-\\frac{f(x_1)}{f'(x_1)}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Write both down first.</p>\\[\\displaystyle f(x)=x^3-2x-5,\\ \\ f'(x)=3x^2-2\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f(2)=8-4-5=-1\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle f'(2)=12-2=10\\]<p><strong>Step 4.</strong> Minus a negative moves right.</p>\\[\\displaystyle x_2=2-\\frac{-1}{10}=2.1\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2=2.1\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(2)=-1\\), \\(f'(2)=10\\), so \\(x_2=2+\\frac1{10}=2.1\\).</p><p class=\"ans\">\\(x_2=2.1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=x^3-2x-5,\\ \\ f'(x)=3x^2-2",
+        "why": "Write both down first."
+       },
+       {
+        "code": "f(2)=8-4-5=-1",
+        "why": "",
+        "watch": [
+         [
+          "f(x_1)",
+          "-1"
+         ]
+        ]
+       },
+       {
+        "code": "f'(2)=12-2=10",
+        "why": "",
+        "watch": [
+         [
+          "f'(x_1)",
+          "10"
+         ]
+        ]
+       },
+       {
+        "code": "x_2=2-\\frac{-1}{10}=2.1",
+        "why": "Minus a negative moves right.",
+        "watch": [
+         [
+          "x_2",
+          "2.1"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
     "text": "§4.9 · Antiderivatives"
    },
    {
@@ -14153,7 +14853,7 @@ export const sections: Section[] = [
    },
    {
     "type": "prose",
-    "html": "<p class=\"callout\">Missed one? Go back to that section's page: <a href=\"/4-3/\">§4.3</a>, <a href=\"/4-4/\">§4.4</a>, <a href=\"/4-5/\">§4.5</a>, <a href=\"/4-7/\">§4.7</a>, <a href=\"/4-9/\">§4.9</a>.</p>"
+    "html": "<p class=\"callout\">Missed one? Go back to that section's page: <a href=\"/4-3/\">§4.3</a>, <a href=\"/4-4/\">§4.4</a>, <a href=\"/4-5/\">§4.5</a>, <a href=\"/4-7/\">§4.7</a>, <a href=\"/4-8/\">§4.8</a>, <a href=\"/4-8/\">§4.8</a>, <a href=\"/4-9/\">§4.9</a>.</p>"
    }
   ]
  },
@@ -15528,370 +16228,6 @@ export const sections: Section[] = [
         ]
        }
       ]
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "s48",
-  "slug": "4-8",
-  "num": "§4.8",
-  "unit": "later",
-  "title": "Newton's Method",
-  "lede": "Find a root by sliding down tangent lines: one formula, repeated.",
-  "blocks": [
-   {
-    "type": "prose",
-    "html": "<p class=\"callout\"><strong>Not on Quiz 5</strong>, but it's on Midterm 3 and the final. Learn it after Quiz 5.</p>"
-   },
-   {
-    "type": "prose",
-    "html": "<p>Start with a guess \\(x_1\\). Draw the tangent line at \\((x_1,f(x_1))\\), see where it hits the x-axis, and call that \\(x_2\\). Repeat. Each new guess is usually much closer to the root.</p>"
-   },
-   {
-    "type": "rules",
-    "items": [
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Newton's formula</span>\\[x_{n+1}=x_n-\\frac{f(x_n)}{f'(x_n)}\\]<p class=\"note\">Where it comes from: the tangent line \\(y=f(x_n)+f'(x_n)(x-x_n)\\) set to \\(y=0\\).</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Solving an equation</span><p>Move everything to one side first: “solve \\(\\cos x=x\\)” becomes \\(f(x)=\\cos x-x=0\\).</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Approximating a root like \\(\\sqrt[3]{30}\\)</span><p>Turn it into an equation: \\(x^3=30\\Rightarrow f(x)=x^3-30\\).</p>"
-     },
-     {
-      "key": false,
-      "html": "<span class=\"tag\">When it fails</span><p>If \\(f'(x_n)=0\\) the tangent is flat and never hits the axis. A bad first guess can also jump to a different root or wander off.</p>"
-     },
-     {
-      "key": false,
-      "html": "<span class=\"tag\">Calculator</span><p>Use radians for trig, and keep at least 6 decimals between steps. Round only the final answer.</p>"
-     }
-    ]
-   },
-   {
-    "type": "heading",
-    "text": "Practice",
-    "id": "practice"
-   },
-   {
-    "type": "practice",
-    "items": [
-     {
-      "id": "p48-1",
-      "source": "Like §4.8 #5–11",
-      "href": null,
-      "question": "Use Newton's method with \\(x_1=1\\) to find \\(x_3\\) for the equation \\(x^3+2x-4=0\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(f'(x)=3x^2+2\\). Do two steps.</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Write both down first.</p>\\[\\begin{gathered}\\displaystyle f(x)=x^3+2x-4\\\\\\displaystyle f'(x)=3x^2+2\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle f(1)=-1\\\\\\displaystyle f'(1)=5\\end{gathered}\\]<p><strong>Step 3.</strong> Minus a negative moves right.</p>\\[\\displaystyle x_2=1-\\frac{-1}{5}=1.2\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f(1.2)=1.728+2.4-4=0.128\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle f'(1.2)=3(1.44)+2=6.32\\]<p><strong>Step 6.</strong></p>\\[\\displaystyle x_3=1.2-\\frac{0.128}{6.32}\\approx1.179747\\]<p><strong>What you found:</strong></p><ul><li>\\(x_1=1\\)</li><li>\\(x_2=1.2\\)</li><li>\\(x_3=1.1797\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(x_2=1-\\frac{-1}{5}=1.2\\). \\(f(1.2)=0.128\\), \\(f'(1.2)=6.32\\), so \\(x_3=1.2-\\frac{0.128}{6.32}\\approx1.1797\\).</p><p class=\"ans\">\\(x_3\\approx1.1797\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(x)=x^3+2x-4,\\ \\ f'(x)=3x^2+2",
-        "why": "Write both down first."
-       },
-       {
-        "code": "f(1)=-1,\\ \\ f'(1)=5",
-        "why": "",
-        "watch": [
-         [
-          "x_1",
-          "1"
-         ]
-        ]
-       },
-       {
-        "code": "x_2=1-\\frac{-1}{5}=1.2",
-        "why": "Minus a negative moves right.",
-        "watch": [
-         [
-          "x_2",
-          "1.2"
-         ]
-        ]
-       },
-       {
-        "code": "f(1.2)=1.728+2.4-4=0.128",
-        "why": ""
-       },
-       {
-        "code": "f'(1.2)=3(1.44)+2=6.32",
-        "why": ""
-       },
-       {
-        "code": "x_3=1.2-\\frac{0.128}{6.32}\\approx1.179747",
-        "why": "",
-        "watch": [
-         [
-          "x_3",
-          "1.1797"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p48-2",
-      "source": "Like §4.8 #13–17",
-      "href": null,
-      "question": "Use Newton's method to approximate \\(\\sqrt2\\), starting from \\(x_1=1\\). Find \\(x_4\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(f(x)=x^2-2\\), \\(f'(x)=2x\\). The formula simplifies to \\(x_{n+1}=\\frac{x_n}{2}+\\frac{1}{x_n}\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\sqrt2\\) is the positive root of \\(x^2=2\\).</p>\\[\\displaystyle f(x)=x^2-2\\]<p><strong>Step 2.</strong> Newton's formula.</p>\\[\\displaystyle x_{n+1}=x_n-\\frac{x_n^2-2}{2x_n}\\]<p><strong>Step 3.</strong> Simplify: \\(x_n-\\frac{x_n}{2}+\\frac{2}{2x_n}\\).</p>\\[\\displaystyle =\\frac{x_n}{2}+\\frac1{x_n}\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle x_2=\\tfrac12+1=1.5\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle x_3=0.75+0.666667=1.416667\\]<p><strong>Step 6.</strong> Already correct to 5 decimals.</p>\\[\\displaystyle x_4=0.708333+0.705882=1.414216\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2=1.5\\)</li><li>\\(x_3=1.416667\\)</li><li>\\(x_4=1.414216\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(x_2=1.5\\), \\(x_3=1.416667\\), \\(x_4=1.414216\\). The true value is \\(1.414214\\).</p><p class=\"ans\">\\(x_4\\approx1.414216\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(x)=x^2-2",
-        "why": "\\(\\sqrt2\\) is the positive root of \\(x^2=2\\)."
-       },
-       {
-        "code": "x_{n+1}=x_n-\\frac{x_n^2-2}{2x_n}",
-        "why": "Newton's formula."
-       },
-       {
-        "code": "=\\frac{x_n}{2}+\\frac1{x_n}",
-        "why": "Simplify: \\(x_n-\\frac{x_n}{2}+\\frac{2}{2x_n}\\)."
-       },
-       {
-        "code": "x_2=\\tfrac12+1=1.5",
-        "why": "",
-        "watch": [
-         [
-          "x_2",
-          "1.5"
-         ]
-        ]
-       },
-       {
-        "code": "x_3=0.75+0.666667=1.416667",
-        "why": "",
-        "watch": [
-         [
-          "x_3",
-          "1.416667"
-         ]
-        ]
-       },
-       {
-        "code": "x_4=0.708333+0.705882=1.414216",
-        "why": "Already correct to 5 decimals.",
-        "watch": [
-         [
-          "x_4",
-          "1.414216"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p48-3",
-      "source": "Like §4.8 #13–17",
-      "href": null,
-      "question": "Use Newton's method with \\(x_1=3\\) to approximate \\(\\sqrt[3]{30}\\) (find \\(x_3\\)).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(f(x)=x^3-30\\), \\(f'(x)=3x^2\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle f(x)=x^3-30\\\\\\displaystyle f'(x)=3x^2\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle f(3)=-3\\\\\\displaystyle f'(3)=27\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle x_2=3+\\tfrac{3}{27}=3.111111\\]<p><strong>Step 4.</strong> Keep the decimals.</p>\\[\\begin{gathered}\\displaystyle f(x_2)\\approx0.112483\\\\\\displaystyle f'(x_2)\\approx29.037\\end{gathered}\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle x_3=3.111111-\\tfrac{0.112483}{29.037}\\]<p><strong>Step 6.</strong></p>\\[\\displaystyle x_3\\approx3.107237\\]<p><strong>What you found:</strong></p><ul><li>\\(x_1=3\\)</li><li>\\(x_2=3.111111\\)</li><li>\\(x_3=3.10724\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(x_2=3-\\frac{-3}{27}=3.111111\\). \\(f(x_2)\\approx0.112483\\), \\(f'(x_2)\\approx29.037037\\), so \\(x_3\\approx3.107237\\). The true value is \\(3.107233\\).</p><p class=\"ans\">\\(x_3\\approx3.10724\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(x)=x^3-30,\\ \\ f'(x)=3x^2",
-        "why": ""
-       },
-       {
-        "code": "f(3)=-3,\\ \\ f'(3)=27",
-        "why": "",
-        "watch": [
-         [
-          "x_1",
-          "3"
-         ]
-        ]
-       },
-       {
-        "code": "x_2=3+\\tfrac{3}{27}=3.111111",
-        "why": "",
-        "watch": [
-         [
-          "x_2",
-          "3.111111"
-         ]
-        ]
-       },
-       {
-        "code": "f(x_2)\\approx0.112483,\\ f'(x_2)\\approx29.037",
-        "why": "Keep the decimals."
-       },
-       {
-        "code": "x_3=3.111111-\\tfrac{0.112483}{29.037}",
-        "why": ""
-       },
-       {
-        "code": "x_3\\approx3.107237",
-        "why": "",
-        "watch": [
-         [
-          "x_3",
-          "3.10724"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p48-4",
-      "source": "Like §4.8 #19–27",
-      "href": null,
-      "question": "Use Newton's method to find the root of \\(\\cos x=x\\), starting from \\(x_1=1\\). Find \\(x_3\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(f(x)=\\cos x-x\\), \\(f'(x)=-\\sin x-1\\). Use radians.</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Move everything to one side.</p>\\[\\displaystyle f(x)=\\cos x-x\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f'(x)=-\\sin x-1\\]<p><strong>Step 3.</strong> Radians!</p>\\[\\displaystyle f(1)=0.540302-1=-0.459698\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f'(1)=-0.841471-1=-1.841471\\]<p><strong>Step 5.</strong> Negative over negative is positive, so you subtract.</p>\\[\\displaystyle x_2=1-\\frac{-0.459698}{-1.841471}=0.750364\\]<p><strong>Step 6.</strong></p>\\[\\begin{gathered}\\displaystyle f(x_2)\\approx-0.018923\\\\\\displaystyle f'(x_2)\\approx-1.681905\\end{gathered}\\]<p><strong>Step 7.</strong></p>\\[\\displaystyle x_3\\approx0.750364-0.011251=0.739113\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2=0.750364\\)</li><li>\\(x_3=0.7391\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(x_2=1-\\frac{-0.459698}{-1.841471}=0.750364\\). \\(f(x_2)\\approx-0.018923\\), \\(f'(x_2)\\approx-1.681905\\), so \\(x_3\\approx0.739113\\). The root is \\(0.739085\\).</p><p class=\"ans\">\\(x_3\\approx0.7391\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(x)=\\cos x-x",
-        "why": "Move everything to one side."
-       },
-       {
-        "code": "f'(x)=-\\sin x-1",
-        "why": ""
-       },
-       {
-        "code": "f(1)=0.540302-1=-0.459698",
-        "why": "Radians!"
-       },
-       {
-        "code": "f'(1)=-0.841471-1=-1.841471",
-        "why": ""
-       },
-       {
-        "code": "x_2=1-\\frac{-0.459698}{-1.841471}=0.750364",
-        "why": "Negative over negative is positive, so you subtract.",
-        "watch": [
-         [
-          "x_2",
-          "0.750364"
-         ]
-        ]
-       },
-       {
-        "code": "f(x_2)\\approx-0.018923,\\ f'(x_2)\\approx-1.681905",
-        "why": ""
-       },
-       {
-        "code": "x_3\\approx0.750364-0.011251=0.739113",
-        "why": "",
-        "watch": [
-         [
-          "x_3",
-          "0.7391"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p48-5",
-      "source": "Like §4.8 #1–3",
-      "href": null,
-      "question": "Explain why Newton's method fails for \\(f(x)=x^3-3x+6\\) if you start at \\(x_1=1\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Compute \\(f'(1)\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle f'(x)=3x^2-3\\]<p><strong>Step 2.</strong> The formula would divide by zero.</p>\\[\\displaystyle f'(1)=0\\]<p><strong>Step 3.</strong> A flat line never crosses the x-axis, so there's no next guess. Pick a different \\(x_1\\).</p>\\[\\displaystyle \\text{horizontal tangent}\\]<p><strong>What you found:</strong></p><ul><li>\\(f'(x_1)=0\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(f'(x)=3x^2-3\\), so \\(f'(1)=0\\). The tangent line at \\(x=1\\) is horizontal and never meets the x-axis, so \\(x_2\\) would mean dividing by zero.</p><p class=\"ans\">\\(f'(1)=0\\): the tangent is horizontal, so \\(x_2\\) is undefined</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f'(x)=3x^2-3",
-        "why": ""
-       },
-       {
-        "code": "f'(1)=0",
-        "why": "The formula would divide by zero.",
-        "watch": [
-         [
-          "f'(x_1)",
-          "0"
-         ]
-        ]
-       },
-       {
-        "code": "\\text{horizontal tangent}",
-        "why": "A flat line never crosses the x-axis, so there's no next guess. Pick a different \\(x_1\\)."
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "type": "heading",
-    "text": "Traps"
-   },
-   {
-    "type": "traps",
-    "items": [
-     {
-      "title": "Plus instead of minus",
-      "html": "<p>It's \\(x_n\\) <strong>minus</strong> \\(\\frac{f}{f'}\\). Watch the double negatives.</p>"
-     },
-     {
-      "title": "Degrees mode",
-      "html": "<p>Trig in degrees gives completely wrong numbers. Switch the calculator to radians.</p>"
      }
     ]
    }
@@ -21964,7 +22300,7 @@ export const sections: Section[] = [
      },
      {
       "question": "<b>1.</b> Newton's method for \\(f(x)=x^2-5\\) with \\(x_1=2\\) gives \\(x_2=\\)",
-      "unit": "later",
+      "unit": "q5",
       "options": [
        {
         "html": "\\(2.2\\)",
@@ -22571,7 +22907,7 @@ export const sections: Section[] = [
      {
       "front": "Newton's method",
       "back": "\\(x_{n+1}=x_n-\\dfrac{f(x_n)}{f'(x_n)}\\)",
-      "tag": "Later · 4.8"
+      "tag": "Q5 · 4.8"
      },
      {
       "front": "\\(\\int x^n\\)",
@@ -23655,7 +23991,7 @@ export const sections: Section[] = [
   "blocks": [
    {
     "type": "heading",
-    "text": "Quiz 5 · §4.3, 4.4, 4.5, 4.7, 4.9",
+    "text": "Quiz 5 · §4.3, 4.4, 4.5, 4.7, 4.8, 4.9",
     "id": "quiz-5"
    },
    {
@@ -23709,6 +24045,13 @@ export const sections: Section[] = [
       "details": "<ol class='steps'><li>Draw and name the variables.</li><li><strong>Objective:</strong> what to maximize or minimize.</li><li><strong>Constraint:</strong> the fixed fact. Solve it for one variable and substitute.</li><li>Domain (closed interval? check the endpoints too).</li><li>\\(f'=0\\), then justify: \\(f''\\) sign or a first-derivative sign change.</li><li>Answer what was asked, with units.</li></ol><p><strong>Classics:</strong> sum fixed, so max product when the numbers are equal. Fence along a river, \\(2x+y=L\\): \\(x=\\frac L4\\). Rectangle in a circle: a square.</p>",
       "href": "/4-7/",
       "linkLabel": "Open §4.7"
+     },
+     {
+      "title": "Newton's method (4.8)",
+      "html": "\\[x_{n+1}=x_n-\\frac{f(x_n)}{f'(x_n)}\\]<p class='note'>Set the equation to 0 first. Radians!</p>",
+      "details": "<p><strong>Setup:</strong> \\(\\cos x=x\\Rightarrow f=\\cos x-x\\). \\(\\sqrt[3]{30}\\Rightarrow f=x^3-30\\).</p><p><strong>Example:</strong> \\(f=x^2-2\\), \\(x_1=1\\): \\(x_2=1.5\\), \\(x_3\\approx1.416667\\), \\(x_4\\approx1.414216\\).</p><p><strong>Fails when</strong> \\(f'(x_n)=0\\) (horizontal tangent), or when a bad guess jumps to a different root.</p><p>Keep 6+ decimals between steps and round only at the end.</p>",
+      "href": "/4-8/",
+      "linkLabel": "Open §4.8"
      },
      {
       "title": "Antiderivatives (4.9)",
