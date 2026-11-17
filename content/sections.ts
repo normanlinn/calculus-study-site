@@ -10373,14 +10373,14 @@ export const sections: Section[] = [
  {
   "id": "q5",
   "slug": "quiz-5",
-  "num": "Quiz 5 · Thu, Nov 12",
+  "num": "Quiz 5 · Tue, Nov 17",
   "unit": "q5",
   "title": "Quiz 5 study plan",
-  "lede": "Quiz 5 covers §4.3, 4.4, 4.5, 4.7 and 4.9. What's assigned, where each skill is taught, and a 2-day plan.",
+  "lede": "Quiz 5 is now Tue, Nov 17 and covers §4.3, 4.4, 4.5, 4.7 and 4.9. What's assigned, where each skill is taught, and a plan for tonight.",
   "blocks": [
    {
     "type": "countdown",
-    "target": "2026-11-12",
+    "target": "2026-11-17",
     "label": "Quiz 5"
    },
    {
@@ -10422,11 +10422,11 @@ export const sections: Section[] = [
    },
    {
     "type": "heading",
-    "text": "If you're starting from zero"
+    "text": "Tonight's plan (Mon, Nov 16)"
    },
    {
     "type": "prose",
-    "html": "<p><strong>Day 1 (today)</strong></p><ol class=\"steps\"><li><a href=\"/4-3/\">§4.3</a>: read the rules, then do #1, #3, #6 and #8 with the debugger. Everything else builds on this.</li><li><a href=\"/4-4/\">§4.4</a>: l'Hospital. Do #1–#7, then the powers (#8–#10). Do #11 so you remember to check the form.</li><li>The <a href=\"/unit-circle/\">unit circle</a> drill for 5 minutes: trig limits and critical numbers need exact values.</li></ol><p><strong>Day 2 (the night before)</strong></p><ol class=\"steps\"><li><a href=\"/4-5/\">§4.5</a>: sketch #3 and #5 with the A–H checklist.</li><li><a href=\"/4-7/\">§4.7</a>: optimization #1, #4, #5, #7 and #8.</li><li><a href=\"/4-9/\">§4.9</a>: antiderivatives are quick points. Do #1–#9.</li><li>Take the <a href=\"/quiz-5-practice/\">practice quiz</a> in 30 minutes.</li><li>Read the <a href=\"/cheat-sheet/#quiz-5\">Quiz 5 cheat sheet</a>, then the <a href=\"/quick-quiz/\">quick quiz</a> and <a href=\"/memory-tricks/\">flashcards</a>.</li></ol>"
+    "html": "<p class=\"callout\">About 4 hours, in this order. Each block ends with a check: if you can do it without opening the solution, move on.</p><ol class=\"steps\"><li><strong>6:00–7:00 · <a href=\"/4-3/\">§4.3 shape of a graph</a>.</strong> Read the 5 rules. Do #1, then #7 and #8 with the <em>Sign-map walkthrough</em> open. Then #3 on paper alone. <em>Check:</em> you can draw the number line, pick test points and write intervals, extremes and inflection points.</li><li><strong>7:00–7:50 · <a href=\"/4-4/\">§4.4 l'Hospital</a>.</strong> #1–#4 (0/0 and ∞/∞), #5–#7 (rewrite first), #8–#10 (take ln, answer e^L), #11 (check the form!). <em>Check:</em> #9 on paper alone.</li><li><strong>7:50–8:00 · break.</strong></li><li><strong>8:00–8:40 · <a href=\"/4-5/\">§4.5 curve sketching</a>.</strong> Do #3 and #5 with the A–H checklist: domain, intercepts, symmetry, asymptotes, then the two sign maps. <em>Check:</em> you can find a slant asymptote by long division.</li><li><strong>8:40–9:20 · <a href=\"/4-7/\">§4.7 optimization</a>.</strong> #1, #4, #5, #7, #8. Always: objective, constraint, one variable, derivative = 0, justify. <em>Check:</em> #5 (box) on paper alone.</li><li><strong>9:20–9:50 · <a href=\"/4-9/\">§4.9 antiderivatives</a>.</strong> #1–#9. Quick points: power rule backwards, 1/x → ln|x|, +C, find C from the point.</li><li><strong>9:50–10:20 · <a href=\"/quiz-5-practice/\">practice quiz</a></strong> (12 points), timed, closed notes. Tick what you got right and check the score bar.</li><li><strong>10:20–10:30 ·</strong> read the <a href=\"/cheat-sheet/#quiz-5\">Quiz 5 cheat sheet</a> once, then sleep. Sleep beats one more hour of cramming.</li></ol><p><strong>Tomorrow morning (15 min):</strong> the <a href=\"/quick-quiz/\">quick quiz</a> on Quiz 5, the <a href=\"/memory-tricks/\">Quiz 5 flashcards</a>, and the 6 things to memorize below.</p>"
    },
    {
     "type": "heading",
@@ -14143,7 +14143,7 @@ export const sections: Section[] = [
    },
    {
     "type": "prose",
-    "html": "<ol class=\"steps\"><li><strong>Now → Thu Nov 12:</strong> <a href=\"/quiz-5/\">Quiz 5</a> (§4.3, 4.4, 4.5, 4.7, 4.9).</li><li><strong>Nov 13–19:</strong> as class covers them: <a href=\"/4-8/\">§4.8</a>, <a href=\"/5-1/\">§5.1</a>, <a href=\"/5-2/\">§5.2</a>. One section a night, practice problems with the debugger.</li><li><strong>Nov 20–26:</strong> <a href=\"/5-3/\">§5.3</a>, <a href=\"/5-4/\">§5.4</a>, <a href=\"/5-5/\">§5.5</a>. Substitution is the biggest skill.</li><li><strong>Nov 27–30:</strong> Midterm 3 review: redo every §4.x and §5.x practice problem you didn't tick.</li><li><strong>Dec 2–4:</strong> Ch. 2–3 refresh: <a href=\"/crash-course/\">crash course</a>, <a href=\"/quiz-review/\">Quiz 3 &amp; 4 review</a>, <a href=\"/midterm-practice/\">Midterm 2 practice exam</a>.</li><li><strong>Dec 5:</strong> <a href=\"/final-practice/\">practice final</a>, 2 hours. Score it. Study the part you scored lowest on.</li><li><strong>Dec 6–7:</strong> retake the practice final (aim for 90+), <a href=\"/cheat-sheet/\">cheat sheet</a>, <a href=\"/unit-circle/\">unit circle</a> drill, <a href=\"/quick-quiz/\">quick quiz</a>.</li></ol>"
+    "html": "<ol class=\"steps\"><li><strong>Now → Tue Nov 17:</strong> <a href=\"/quiz-5/\">Quiz 5</a> (§4.3, 4.4, 4.5, 4.7, 4.9).</li><li><strong>Nov 13–19:</strong> as class covers them: <a href=\"/4-8/\">§4.8</a>, <a href=\"/5-1/\">§5.1</a>, <a href=\"/5-2/\">§5.2</a>. One section a night, practice problems with the debugger.</li><li><strong>Nov 20–26:</strong> <a href=\"/5-3/\">§5.3</a>, <a href=\"/5-4/\">§5.4</a>, <a href=\"/5-5/\">§5.5</a>. Substitution is the biggest skill.</li><li><strong>Nov 27–30:</strong> Midterm 3 review: redo every §4.x and §5.x practice problem you didn't tick.</li><li><strong>Dec 2–4:</strong> Ch. 2–3 refresh: <a href=\"/crash-course/\">crash course</a>, <a href=\"/quiz-review/\">Quiz 3 &amp; 4 review</a>, <a href=\"/midterm-practice/\">Midterm 2 practice exam</a>.</li><li><strong>Dec 5:</strong> <a href=\"/final-practice/\">practice final</a>, 2 hours. Score it. Study the part you scored lowest on.</li><li><strong>Dec 6–7:</strong> retake the practice final (aim for 90+), <a href=\"/cheat-sheet/\">cheat sheet</a>, <a href=\"/unit-circle/\">unit circle</a> drill, <a href=\"/quick-quiz/\">quick quiz</a>.</li></ol>"
    },
    {
     "type": "heading",
