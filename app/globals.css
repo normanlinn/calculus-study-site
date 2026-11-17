@@ -781,3 +781,31 @@ html, body { overflow-x: clip; }
 .walk .math-display { margin: 2px 0; }
 .walk ul.tests .math-display { margin: 4px 0 0; }
 @media (max-width: 520px) { .walk .math-display .katex { font-size: .94em; } }
+
+/* Graph sketches inside solutions: curve coloured by the sign of f', sign strips underneath */
+.sketch { width: 100%; max-width: 460px; height: auto; display: block; margin: 6px 0 2px; background: var(--bg); border: 1px solid var(--line); border-radius: 10px; font-family: var(--font-mono); }
+.sketch .sk-grid { stroke: var(--grid); stroke-width: 1; }
+.sketch .sk-axis { stroke: var(--axis); stroke-width: 1.4; }
+.sketch .sk-tick { fill: var(--muted); font-size: 9.5px; }
+.sketch .sk-asym { stroke: var(--tangent); stroke-width: 1.6; stroke-dasharray: 6 5; }
+.sketch .sk-asym-t { fill: var(--tangent); font-size: 10px; font-weight: 600; }
+.sketch .sk-curve { fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.sketch .sk-up { stroke: var(--good); }
+.sketch .sk-down { stroke: var(--bad); }
+.sketch .sk-ext { fill: var(--ink); stroke: var(--bg); stroke-width: 1.5; }
+.sketch .sk-ip { fill: var(--bg); stroke: var(--deriv); stroke-width: 2.4; }
+.sketch .sk-pt { fill: var(--accent); }
+.sketch .sk-open { fill: var(--bg); stroke: var(--ink); stroke-width: 1.8; }
+.sketch .sk-lab { fill: var(--ink); font-size: 10.5px; font-weight: 600; paint-order: stroke; stroke: var(--bg); stroke-width: 3.5px; stroke-linejoin: round; }
+.sketch .sk-lab-ip { fill: var(--deriv); }
+.sketch .sk-lab-pt { fill: var(--accent); }
+.sketch .sk-strip-name { fill: var(--muted); font-size: 11px; font-weight: 700; }
+.sketch .sk-pos { fill: var(--good-soft); stroke: var(--good); stroke-width: 1; }
+.sketch .sk-neg { fill: var(--bad-soft); stroke: var(--bad); stroke-width: 1; }
+.sketch .sk-strip-t { fill: var(--ink); font-size: 11px; font-weight: 700; }
+.sk-key { font-size: .86em; color: var(--muted); }
+.sk-key .k-up { color: var(--good); font-weight: 700; }
+.sk-key .k-down { color: var(--bad); font-weight: 700; }
+.sk-key .k-ext { color: var(--ink); }
+.sk-key .k-ip { color: var(--deriv); font-weight: 700; }
+.sk-key .k-asym { color: var(--tangent); font-weight: 700; }
