@@ -19,6 +19,16 @@ const SHORT: Record<string, string> = {
   "quiz-5": "Quiz 5 plan",
   "quiz-5-practice": "Practice quiz",
   "final": "Final plan",
+  "warmup": "Warm-up",
+  "2-1": "2.1",
+  "2-2": "2.2",
+  "2-3": "2.3",
+  "2-4": "2.4",
+  "2-5": "2.5",
+  "2-6": "2.6",
+  "2-7": "2.7",
+  "midterm-3": "Midterm 3 plan",
+  "midterm-3-practice": "Practice exam",
   "final-practice": "Practice final",
   "5-1": "5.1",
   "5-2": "5.2",
@@ -45,12 +55,13 @@ const SHORT: Record<string, string> = {
 };
 
 export const UNITS: { id: Unit; label: string; long: string; date: string | null }[] = [
-  { id: "q5", label: "Quiz 5", long: "Quiz 5 · §4.3, 4.4, 4.5, 4.7", date: "2026-11-17" },
-  { id: "q4", label: "Quiz 4", long: "Quiz 4 · §3.6–4.1", date: "2026-10-27" },
-  { id: "q3", label: "Quiz 3", long: "Quiz 3 · §2.8–3.5", date: null },
-  { id: "later", label: "Final", long: "Midterm 3 & final · §4.8–5.5 + review", date: "2026-12-08" },
+  { id: "m3", label: "Midterm 3", long: "Midterm 3 · §4.3–5.5", date: "2026-12-01" },
+  { id: "later", label: "Final", long: "Final · everything, Ch. 1–5", date: "2026-12-08" },
+  { id: "q5", label: "Q5", long: "Quiz 5 · §4.3, 4.4, 4.5, 4.7", date: "2026-11-17" },
+  { id: "q4", label: "Q4", long: "Quiz 4 · §3.6–4.1", date: "2026-10-27" },
+  { id: "q3", label: "Q3", long: "Quiz 3 · §2.8–3.5", date: null },
 ];
-export const LATEST_UNIT: Unit = "q5";
+export const LATEST_UNIT: Unit = "m3";
 
 export const navItems = sections.map((s) => ({ slug: s.slug, label: SHORT[s.slug] ?? s.num, title: s.title, unit: s.unit, also: s.also ?? [] }));
 

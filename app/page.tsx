@@ -27,6 +27,8 @@ function Cards({ list }: { list: Section[] }) {
 }
 
 export default function Home() {
+  const m3Own = sections.filter((s) => s.unit === "m3");
+  const m3 = [m3Own[0], ...sections.filter((s) => s.also?.includes("m3")), ...m3Own.slice(1)];
   const q5 = sections.filter((s) => s.unit === "q5");
   const later = sections.filter((s) => s.unit === "later");
   const q4 = sections.filter((s) => s.unit === "q4");
@@ -40,30 +42,32 @@ export default function Home() {
         <HeroTitle />
         <HeroFade delay={0.35}>
           <p className="lede">
-            Quiz 5 is today and covers §4.3, 4.4, 4.5 and 4.7: the shape of a graph, l&apos;Hospital&apos;s Rule, curve sketching and optimization.
-            Every section has a short lesson and practice problems you can step through line by line, then a 12-point practice quiz.
+            Midterm 3 is Tue, Dec 1 (§4.3–5.5) and the final is Tue, Dec 8 (everything, Ch. 1–5).
+            Every section has a short lesson and practice problems you can step through line by line, plus a practice exam for each test and a day-by-day plan.
           </p>
         </HeroFade>
         <HeroFade delay={0.45}>
           <div className="countdowns">
-            <Link href="/quiz-5/"><Countdown target="2026-11-17" label="Quiz 5" /></Link>
+            <Link href="/midterm-3/"><Countdown target="2026-12-01" label="Midterm 3" /></Link>
             <Link href="/final/"><Countdown target="2026-12-08" label="Final" /></Link>
           </div>
         </HeroFade>
         <HeroGraph />
         <HeroFade delay={0.5}>
           <div className="cta-row">
-            <Link className="cta" href="/quiz-5/">Quiz 5 plan →</Link>
-            <Link className="cta ghost" href="/quiz-5-practice/">Practice quiz (12 pts)</Link>
-            <Link className="cta ghost" href="/unit-circle/">Unit circle</Link>
-            <Ring ids={unitProblemIds("q5")} />
+            <Link className="cta" href="/midterm-3/">Midterm 3 plan →</Link>
+            <Link className="cta ghost" href="/final/#checklist">Final checklist</Link>
+            <Link className="cta ghost" href="/warmup/">Warm-up</Link>
+            <Ring ids={unitProblemIds("m3")} />
           </div>
         </HeroFade>
       </section>
-      <h2 className="unit-head">Quiz 5 · §4.3–4.5, 4.7 <span>Tue, Nov 17</span></h2>
-      <Cards list={q5} />
-      <h2 className="unit-head">Midterm 3 &amp; final · §4.8–5.5 <span>Dec 1 · Dec 8</span></h2>
+      <h2 className="unit-head">Midterm 3 · §4.3–5.5 <span>Tue, Dec 1</span></h2>
+      <Cards list={m3} />
+      <h2 className="unit-head">Final · Ch. 1–5, plus Midterm 1 material <span>Tue, Dec 8</span></h2>
       <Cards list={later} />
+      <h2 className="unit-head">Quiz 5 · §4.3–4.5, 4.7 <span>Done · Nov 17</span></h2>
+      <Cards list={q5} />
       <h2 className="unit-head">Quiz 4 · §3.6–4.1 <span>Midterm 2 review</span></h2>
       <Cards list={q4} />
       <h2 className="unit-head">Quiz 3 · §2.8–3.5 <span>Midterm 2 review</span></h2>

@@ -11328,6 +11328,9 @@ export const sections: Section[] = [
      }
     ]
    }
+  ],
+  "also": [
+   "m3"
   ]
  },
  {
@@ -11985,6 +11988,9 @@ export const sections: Section[] = [
      }
     ]
    }
+  ],
+  "also": [
+   "m3"
   ]
  },
  {
@@ -12481,6 +12487,9 @@ export const sections: Section[] = [
      }
     ]
    }
+  ],
+  "also": [
+   "m3"
   ]
  },
  {
@@ -12995,6 +13004,9 @@ export const sections: Section[] = [
      }
     ]
    }
+  ],
+  "also": [
+   "m3"
   ]
  },
  {
@@ -13518,12 +13530,3694 @@ export const sections: Section[] = [
   ]
  },
  {
+  "id": "m3plan",
+  "slug": "midterm-3",
+  "num": "Midterm 3 · Tue, Dec 1",
+  "title": "Midterm 3 study plan",
+  "lede": "Midterm 3 is Tue, Dec 1. It most likely covers everything since Midterm 2: §4.3–4.9 and Ch. 5. A week-long plan, the sections, and a practice exam.",
+  "unit": "m3",
+  "blocks": [
+   {
+    "type": "countdown",
+    "target": "2026-12-01",
+    "label": "Midterm 3"
+   },
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\"><strong>Check the coverage in class.</strong> The syllabus only says Midterm 3 is Dec 1. This plan assumes it covers §4.3–4.9 and §5.1–5.5 (everything after Midterm 2; §4.2 was read-only and §4.6 is skipped). If the review day says otherwise, drop what isn't on it.</p>"
+   },
+   {
+    "type": "heading",
+    "text": "What's on it"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">§4.3–4.7 · Quiz 5 material</span><p><a href=\"/4-3/\">4.3 shape of a graph</a> · <a href=\"/4-4/\">4.4 l'Hospital</a> · <a href=\"/4-5/\">4.5 curve sketching</a> · <a href=\"/4-7/\">4.7 optimization</a></p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">§4.8–4.9</span><p><a href=\"/4-8/\">4.8 Newton's method</a> · <a href=\"/4-9/\">4.9 antiderivatives</a></p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Ch. 5 · integrals</span><p><a href=\"/5-1/\">5.1 area and Riemann sums</a> · <a href=\"/5-2/\">5.2 definite integral</a> · <a href=\"/5-3/\">5.3 Fundamental Theorem</a> · <a href=\"/5-4/\">5.4 indefinite integrals, net change</a> · <a href=\"/5-5/\">5.5 substitution</a></p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Then test yourself</span><p><strong><a href=\"/midterm-3-practice/\">Midterm 3 practice exam</a></strong>: 14 problems, 62 points, live score.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Day by day to Dec 1"
+   },
+   {
+    "type": "prose",
+    "html": "<ol class=\"steps\"><li><strong>Tue Nov 24 · warm-up.</strong> Do the 16 <a href=\"/warmup/\">algebra &amp; trig warm-up</a> problems. They are inside every Ch. 4–5 problem.</li><li><strong>Wed Nov 25 · <a href=\"/4-3/\">4.3</a>, <a href=\"/4-4/\">4.4</a>, <a href=\"/4-5/\">4.5</a>.</strong> Redo every problem you didn't tick on Quiz 5. Sign maps until they are automatic.</li><li><strong>Thu Nov 26 (Thanksgiving) · <a href=\"/4-7/\">4.7</a>, <a href=\"/4-8/\">4.8</a>, <a href=\"/4-9/\">4.9</a>.</strong> Light day: 1–2 hours.</li><li><strong>Fri Nov 27 · <a href=\"/5-1/\">5.1</a>, <a href=\"/5-2/\">5.2</a>, <a href=\"/5-3/\">5.3</a>.</strong> Riemann sums by hand, the limit-of-sums integral, both parts of the FTC.</li><li><strong>Sat Nov 28 · <a href=\"/5-4/\">5.4</a>, <a href=\"/5-5/\">5.5</a>.</strong> Substitution is the biggest skill: do all 9 problems in 5.5.</li><li><strong>Sun Nov 29 · <a href=\"/midterm-3-practice/\">practice exam</a>.</strong> 2 hours, timed, closed notes. Grade it, then redo every miss with the debugger.</li><li><strong>Mon Nov 30 · review.</strong> Read the <a href=\"/cheat-sheet/#quiz-5\">Quiz 5</a> and <a href=\"/cheat-sheet/#later\">Midterm 3 &amp; final</a> cheat sheets, do the <a href=\"/quick-quiz/\">quick quiz</a> on Midterm 3, redo anything still shaky. Sleep early.</li><li><strong>Tue Dec 1 · Midterm 3.</strong> 15 minutes before: the 8 things to memorize below.</li></ol><p class=\"note\">Quiz 6 (take-home) is also due Dec 1. Its problems are the same skills, so it doubles as practice.</p>"
+   },
+   {
+    "type": "heading",
+    "text": "The 8 things to memorize"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Sign of f′ and f″</span><p>\\(f'\\): \\(+\\) up, \\(-\\) down; \\(+\\to-\\) max, \\(-\\to+\\) min. \\(f''\\): \\(+\\) ∪, \\(-\\) ∩; a flip is an inflection point.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">l'Hospital</span><p>Plug in first. \\(\\frac00,\\frac\\infty\\infty\\): \\(\\frac{f'}{g'}\\). \\(0\\cdot\\infty\\): make a fraction. Powers: \\(\\ln\\), then \\(e^L\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Sketching</span><p>Domain · intercepts · symmetry · asymptotes (VA, HA, slant by long division) · \\(f'\\) · \\(f''\\) · sketch.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Optimization</span><p>Objective + constraint → one variable → \\(f'=0\\) → justify → answer with units.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Newton</span><p>\\(x_{n+1}=x_n-\\frac{f(x_n)}{f'(x_n)}\\). Fails if \\(f'(x_n)=0\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Antiderivatives</span><p>\\(x^n\\to\\frac{x^{n+1}}{n+1}\\), \\(\\frac1x\\to\\ln|x|\\), \\(e^x\\to e^x\\), \\(\\sin\\to-\\cos\\), \\(\\cos\\to\\sin\\), \\(\\sec^2\\to\\tan\\), \\(\\frac1{1+x^2}\\to\\tan^{-1}x\\). \\(+C\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Riemann sums</span><p>\\(\\Delta x=\\frac{b-a}n\\), \\(x_i=a+i\\Delta x\\). \\(\\int_a^bf=\\lim\\sum f(x_i)\\Delta x\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">FTC + substitution</span><p>\\(\\frac{d}{dx}\\int_a^{g(x)}f=f(g(x))g'(x)\\). \\(\\int_a^bf=F(b)-F(a)\\). Sub: pick \\(u\\) whose \\(du\\) is in the integral; change the limits.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s48",
+  "slug": "4-8",
+  "num": "§4.8",
+  "unit": "m3",
+  "title": "Newton's Method",
+  "lede": "Find a root by sliding down tangent lines: one formula, repeated.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\"><strong>On Midterm 3 (Tue, Dec 1) and the final.</strong> See the <a href=\"/midterm-3/\">Midterm 3 plan</a> for where this fits.</p>"
+   },
+   {
+    "type": "prose",
+    "html": "<p>Start with a guess \\(x_1\\). Draw the tangent line at \\((x_1,f(x_1))\\), see where it hits the x-axis, and call that \\(x_2\\). Repeat. Each new guess is usually much closer to the root.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Newton's formula</span>\\[x_{n+1}=x_n-\\frac{f(x_n)}{f'(x_n)}\\]<p class=\"note\">Where it comes from: the tangent line \\(y=f(x_n)+f'(x_n)(x-x_n)\\) set to \\(y=0\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Solving an equation</span><p>Move everything to one side first: “solve \\(\\cos x=x\\)” becomes \\(f(x)=\\cos x-x=0\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Approximating a root like \\(\\sqrt[3]{30}\\)</span><p>Turn it into an equation: \\(x^3=30\\Rightarrow f(x)=x^3-30\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">When it fails</span><p>If \\(f'(x_n)=0\\) the tangent is flat and never hits the axis. A bad first guess can also jump to a different root or wander off.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Calculator</span><p>Use radians for trig, and keep at least 6 decimals between steps. Round only the final answer.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p48-1",
+      "source": "Like §4.8 #5–11",
+      "href": null,
+      "question": "Use Newton's method with \\(x_1=1\\) to find \\(x_3\\) for the equation \\(x^3+2x-4=0\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f'(x)=3x^2+2\\). Do two steps.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Write both down first.</p>\\[\\begin{gathered}\\displaystyle f(x)=x^3+2x-4\\\\\\displaystyle f'(x)=3x^2+2\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle f(1)=-1\\\\\\displaystyle f'(1)=5\\end{gathered}\\]<p><strong>Step 3.</strong> Minus a negative moves right.</p>\\[\\displaystyle x_2=1-\\frac{-1}{5}=1.2\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f(1.2)=1.728+2.4-4=0.128\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle f'(1.2)=3(1.44)+2=6.32\\]<p><strong>Step 6.</strong></p>\\[\\displaystyle x_3=1.2-\\frac{0.128}{6.32}\\approx1.179747\\]<p><strong>What you found:</strong></p><ul><li>\\(x_1=1\\)</li><li>\\(x_2=1.2\\)</li><li>\\(x_3=1.1797\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x_2=1-\\frac{-1}{5}=1.2\\). \\(f(1.2)=0.128\\), \\(f'(1.2)=6.32\\), so \\(x_3=1.2-\\frac{0.128}{6.32}\\approx1.1797\\).</p><p class=\"ans\">\\(x_3\\approx1.1797\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=x^3+2x-4,\\ \\ f'(x)=3x^2+2",
+        "why": "Write both down first."
+       },
+       {
+        "code": "f(1)=-1,\\ \\ f'(1)=5",
+        "why": "",
+        "watch": [
+         [
+          "x_1",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "x_2=1-\\frac{-1}{5}=1.2",
+        "why": "Minus a negative moves right.",
+        "watch": [
+         [
+          "x_2",
+          "1.2"
+         ]
+        ]
+       },
+       {
+        "code": "f(1.2)=1.728+2.4-4=0.128",
+        "why": ""
+       },
+       {
+        "code": "f'(1.2)=3(1.44)+2=6.32",
+        "why": ""
+       },
+       {
+        "code": "x_3=1.2-\\frac{0.128}{6.32}\\approx1.179747",
+        "why": "",
+        "watch": [
+         [
+          "x_3",
+          "1.1797"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p48-2",
+      "source": "Like §4.8 #13–17",
+      "href": null,
+      "question": "Use Newton's method to approximate \\(\\sqrt2\\), starting from \\(x_1=1\\). Find \\(x_4\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f(x)=x^2-2\\), \\(f'(x)=2x\\). The formula simplifies to \\(x_{n+1}=\\frac{x_n}{2}+\\frac{1}{x_n}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\sqrt2\\) is the positive root of \\(x^2=2\\).</p>\\[\\displaystyle f(x)=x^2-2\\]<p><strong>Step 2.</strong> Newton's formula.</p>\\[\\displaystyle x_{n+1}=x_n-\\frac{x_n^2-2}{2x_n}\\]<p><strong>Step 3.</strong> Simplify: \\(x_n-\\frac{x_n}{2}+\\frac{2}{2x_n}\\).</p>\\[\\displaystyle =\\frac{x_n}{2}+\\frac1{x_n}\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle x_2=\\tfrac12+1=1.5\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle x_3=0.75+0.666667=1.416667\\]<p><strong>Step 6.</strong> Already correct to 5 decimals.</p>\\[\\displaystyle x_4=0.708333+0.705882=1.414216\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2=1.5\\)</li><li>\\(x_3=1.416667\\)</li><li>\\(x_4=1.414216\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x_2=1.5\\), \\(x_3=1.416667\\), \\(x_4=1.414216\\). The true value is \\(1.414214\\).</p><p class=\"ans\">\\(x_4\\approx1.414216\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=x^2-2",
+        "why": "\\(\\sqrt2\\) is the positive root of \\(x^2=2\\)."
+       },
+       {
+        "code": "x_{n+1}=x_n-\\frac{x_n^2-2}{2x_n}",
+        "why": "Newton's formula."
+       },
+       {
+        "code": "=\\frac{x_n}{2}+\\frac1{x_n}",
+        "why": "Simplify: \\(x_n-\\frac{x_n}{2}+\\frac{2}{2x_n}\\)."
+       },
+       {
+        "code": "x_2=\\tfrac12+1=1.5",
+        "why": "",
+        "watch": [
+         [
+          "x_2",
+          "1.5"
+         ]
+        ]
+       },
+       {
+        "code": "x_3=0.75+0.666667=1.416667",
+        "why": "",
+        "watch": [
+         [
+          "x_3",
+          "1.416667"
+         ]
+        ]
+       },
+       {
+        "code": "x_4=0.708333+0.705882=1.414216",
+        "why": "Already correct to 5 decimals.",
+        "watch": [
+         [
+          "x_4",
+          "1.414216"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p48-3",
+      "source": "Like §4.8 #13–17",
+      "href": null,
+      "question": "Use Newton's method with \\(x_1=3\\) to approximate \\(\\sqrt[3]{30}\\) (find \\(x_3\\)).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f(x)=x^3-30\\), \\(f'(x)=3x^2\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle f(x)=x^3-30\\\\\\displaystyle f'(x)=3x^2\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle f(3)=-3\\\\\\displaystyle f'(3)=27\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle x_2=3+\\tfrac{3}{27}=3.111111\\]<p><strong>Step 4.</strong> Keep the decimals.</p>\\[\\begin{gathered}\\displaystyle f(x_2)\\approx0.112483\\\\\\displaystyle f'(x_2)\\approx29.037\\end{gathered}\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle x_3=3.111111-\\tfrac{0.112483}{29.037}\\]<p><strong>Step 6.</strong></p>\\[\\displaystyle x_3\\approx3.107237\\]<p><strong>What you found:</strong></p><ul><li>\\(x_1=3\\)</li><li>\\(x_2=3.111111\\)</li><li>\\(x_3=3.10724\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x_2=3-\\frac{-3}{27}=3.111111\\). \\(f(x_2)\\approx0.112483\\), \\(f'(x_2)\\approx29.037037\\), so \\(x_3\\approx3.107237\\). The true value is \\(3.107233\\).</p><p class=\"ans\">\\(x_3\\approx3.10724\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=x^3-30,\\ \\ f'(x)=3x^2",
+        "why": ""
+       },
+       {
+        "code": "f(3)=-3,\\ \\ f'(3)=27",
+        "why": "",
+        "watch": [
+         [
+          "x_1",
+          "3"
+         ]
+        ]
+       },
+       {
+        "code": "x_2=3+\\tfrac{3}{27}=3.111111",
+        "why": "",
+        "watch": [
+         [
+          "x_2",
+          "3.111111"
+         ]
+        ]
+       },
+       {
+        "code": "f(x_2)\\approx0.112483,\\ f'(x_2)\\approx29.037",
+        "why": "Keep the decimals."
+       },
+       {
+        "code": "x_3=3.111111-\\tfrac{0.112483}{29.037}",
+        "why": ""
+       },
+       {
+        "code": "x_3\\approx3.107237",
+        "why": "",
+        "watch": [
+         [
+          "x_3",
+          "3.10724"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p48-4",
+      "source": "Like §4.8 #19–27",
+      "href": null,
+      "question": "Use Newton's method to find the root of \\(\\cos x=x\\), starting from \\(x_1=1\\). Find \\(x_3\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f(x)=\\cos x-x\\), \\(f'(x)=-\\sin x-1\\). Use radians.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Move everything to one side.</p>\\[\\displaystyle f(x)=\\cos x-x\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f'(x)=-\\sin x-1\\]<p><strong>Step 3.</strong> Radians!</p>\\[\\displaystyle f(1)=0.540302-1=-0.459698\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f'(1)=-0.841471-1=-1.841471\\]<p><strong>Step 5.</strong> Negative over negative is positive, so you subtract.</p>\\[\\displaystyle x_2=1-\\frac{-0.459698}{-1.841471}=0.750364\\]<p><strong>Step 6.</strong></p>\\[\\begin{gathered}\\displaystyle f(x_2)\\approx-0.018923\\\\\\displaystyle f'(x_2)\\approx-1.681905\\end{gathered}\\]<p><strong>Step 7.</strong></p>\\[\\displaystyle x_3\\approx0.750364-0.011251=0.739113\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2=0.750364\\)</li><li>\\(x_3=0.7391\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x_2=1-\\frac{-0.459698}{-1.841471}=0.750364\\). \\(f(x_2)\\approx-0.018923\\), \\(f'(x_2)\\approx-1.681905\\), so \\(x_3\\approx0.739113\\). The root is \\(0.739085\\).</p><p class=\"ans\">\\(x_3\\approx0.7391\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=\\cos x-x",
+        "why": "Move everything to one side."
+       },
+       {
+        "code": "f'(x)=-\\sin x-1",
+        "why": ""
+       },
+       {
+        "code": "f(1)=0.540302-1=-0.459698",
+        "why": "Radians!"
+       },
+       {
+        "code": "f'(1)=-0.841471-1=-1.841471",
+        "why": ""
+       },
+       {
+        "code": "x_2=1-\\frac{-0.459698}{-1.841471}=0.750364",
+        "why": "Negative over negative is positive, so you subtract.",
+        "watch": [
+         [
+          "x_2",
+          "0.750364"
+         ]
+        ]
+       },
+       {
+        "code": "f(x_2)\\approx-0.018923,\\ f'(x_2)\\approx-1.681905",
+        "why": ""
+       },
+       {
+        "code": "x_3\\approx0.750364-0.011251=0.739113",
+        "why": "",
+        "watch": [
+         [
+          "x_3",
+          "0.7391"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p48-5",
+      "source": "Like §4.8 #1–3",
+      "href": null,
+      "question": "Explain why Newton's method fails for \\(f(x)=x^3-3x+6\\) if you start at \\(x_1=1\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Compute \\(f'(1)\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle f'(x)=3x^2-3\\]<p><strong>Step 2.</strong> The formula would divide by zero.</p>\\[\\displaystyle f'(1)=0\\]<p><strong>Step 3.</strong> A flat line never crosses the x-axis, so there's no next guess. Pick a different \\(x_1\\).</p>\\[\\displaystyle \\text{horizontal tangent}\\]<p><strong>What you found:</strong></p><ul><li>\\(f'(x_1)=0\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'(x)=3x^2-3\\), so \\(f'(1)=0\\). The tangent line at \\(x=1\\) is horizontal and never meets the x-axis, so \\(x_2\\) would mean dividing by zero.</p><p class=\"ans\">\\(f'(1)=0\\): the tangent is horizontal, so \\(x_2\\) is undefined</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=3x^2-3",
+        "why": ""
+       },
+       {
+        "code": "f'(1)=0",
+        "why": "The formula would divide by zero.",
+        "watch": [
+         [
+          "f'(x_1)",
+          "0"
+         ]
+        ]
+       },
+       {
+        "code": "\\text{horizontal tangent}",
+        "why": "A flat line never crosses the x-axis, so there's no next guess. Pick a different \\(x_1\\)."
+       }
+      ]
+     },
+     {
+      "id": "p48-6",
+      "source": "Like §4.8 #3",
+      "href": null,
+      "question": "The tangent line to \\(y=f(x)\\) at \\((2,5)\\) is \\(y=9-2x\\). Newton's method starts at \\(x_1=2\\). Find \\(x_2\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Newton's \\(x_2\\) is simply where the tangent line at \\(x_1\\) crosses the x-axis. Set \\(y=0\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Newton's method follows the tangent line at \\(x_1\\) down to the x-axis. You're given that line, so use it directly.</p>\\[\\displaystyle y=9-2x\\]<p><strong>Step 2.</strong> \\(x_2\\) is the x-intercept of the tangent: set \\(y=0\\).</p>\\[\\displaystyle 0=9-2x\\]<p><strong>Step 3.</strong> Solve for \\(x\\).</p>\\[\\displaystyle x_2=\\tfrac92=4.5\\]<p><strong>Step 4.</strong> Double check with the formula: \\(f(2)=5\\) and the slope \\(f'(2)=-2\\). Same answer.</p>\\[\\displaystyle x_2=2-\\frac{f(2)}{f'(2)}=2-\\frac{5}{-2}=4.5\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2=4.5\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>The tangent at \\(x_1\\) is \\(y=9-2x\\). Setting \\(y=0\\) gives \\(x=4.5\\). Check: \\(f(2)=5\\), \\(f'(2)=-2\\), so \\(x_2=2-\\frac{5}{-2}=4.5\\).</p><p class=\"ans\">\\(x_2=4.5\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=9-2x",
+        "why": "Newton's method follows the tangent line at \\(x_1\\) down to the x-axis. You're given that line, so use it directly."
+       },
+       {
+        "code": "0=9-2x",
+        "why": "\\(x_2\\) is the x-intercept of the tangent: set \\(y=0\\)."
+       },
+       {
+        "code": "x_2=\\tfrac92=4.5",
+        "why": "Solve for \\(x\\).",
+        "watch": [
+         [
+          "x_2",
+          "4.5"
+         ]
+        ]
+       },
+       {
+        "code": "x_2=2-\\frac{f(2)}{f'(2)}=2-\\frac{5}{-2}=4.5",
+        "why": "Double check with the formula: \\(f(2)=5\\) and the slope \\(f'(2)=-2\\). Same answer."
+       }
+      ]
+     },
+     {
+      "id": "p48-7",
+      "source": "Like §4.8 #9",
+      "href": null,
+      "question": "Use Newton's method with \\(x_1=-1\\) to find \\(x_2\\) for \\(x^3+x+3=0\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f'(x)=3x^2+1\\). One step: \\(x_2=x_1-\\frac{f(x_1)}{f'(x_1)}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Write both down first.</p>\\[\\displaystyle f(x)=x^3+x+3,\\ \\ f'(x)=3x^2+1\\]<p><strong>Step 2.</strong> Careful with signs: \\((-1)^3=-1\\).</p>\\[\\displaystyle f(-1)=-1-1+3=1\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle f'(-1)=3(1)+1=4\\]<p><strong>Step 4.</strong> Plug into the formula.</p>\\[\\displaystyle x_2=-1-\\frac{1}{4}=-1.25\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2=-1.25\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(-1)=1\\), \\(f'(-1)=4\\), so \\(x_2=-1-\\frac14=-1.25\\).</p><p class=\"ans\">\\(x_2=-1.25\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=x^3+x+3,\\ \\ f'(x)=3x^2+1",
+        "why": "Write both down first."
+       },
+       {
+        "code": "f(-1)=-1-1+3=1",
+        "why": "Careful with signs: \\((-1)^3=-1\\).",
+        "watch": [
+         [
+          "f(x_1)",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "f'(-1)=3(1)+1=4",
+        "why": "",
+        "watch": [
+         [
+          "f'(x_1)",
+          "4"
+         ]
+        ]
+       },
+       {
+        "code": "x_2=-1-\\frac{1}{4}=-1.25",
+        "why": "Plug into the formula.",
+        "watch": [
+         [
+          "x_2",
+          "-1.25"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p48-8",
+      "source": "Like §4.8 #7",
+      "href": null,
+      "question": "Use Newton's method with \\(x_1=2\\) to find \\(x_3\\) for \\(\\dfrac{2}{x}-x^2+1=0\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f'(x)=-\\frac{2}{x^2}-2x\\). Do two steps and keep 6 decimals between them.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\frac2x=2x^{-1}\\), so its derivative is \\(-2x^{-2}\\).</p>\\[\\displaystyle f(x)=\\frac2x-x^2+1,\\ \\ f'(x)=-\\frac{2}{x^2}-2x\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f(2)=1-4+1=-2\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle f'(2)=-\\tfrac12-4=-4.5\\]<p><strong>Step 4.</strong> Negative over negative is positive, so you subtract.</p>\\[\\displaystyle x_2=2-\\frac{-2}{-4.5}=2-0.444444=1.555556\\]<p><strong>Step 5.</strong> \\(\\frac{2}{1.555556}=1.285714\\) and \\(1.555556^2=2.419753\\).</p>\\[\\displaystyle f(1.555556)\\approx-0.134039\\]<p><strong>Step 6.</strong></p>\\[\\displaystyle f'(1.555556)\\approx-3.937642\\]<p><strong>Step 7.</strong></p>\\[\\displaystyle x_3=1.555556-\\frac{-0.134039}{-3.937642}\\approx1.521515\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2\\approx1.5556\\)</li><li>\\(x_3\\approx1.5215\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x_2=2-\\frac{-2}{-4.5}=\\frac{14}{9}\\approx1.555556\\). Then \\(f(x_2)\\approx-0.134039\\) and \\(f'(x_2)\\approx-3.937642\\), so \\(x_3\\approx1.555556-0.034041=1.521515\\).</p><p class=\"ans\">\\(x_3\\approx1.5215\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=\\frac2x-x^2+1,\\ \\ f'(x)=-\\frac{2}{x^2}-2x",
+        "why": "\\(\\frac2x=2x^{-1}\\), so its derivative is \\(-2x^{-2}\\)."
+       },
+       {
+        "code": "f(2)=1-4+1=-2",
+        "why": "",
+        "watch": [
+         [
+          "x_1",
+          "2"
+         ]
+        ]
+       },
+       {
+        "code": "f'(2)=-\\tfrac12-4=-4.5",
+        "why": ""
+       },
+       {
+        "code": "x_2=2-\\frac{-2}{-4.5}=2-0.444444=1.555556",
+        "why": "Negative over negative is positive, so you subtract.",
+        "watch": [
+         [
+          "x_2",
+          "1.555556"
+         ]
+        ]
+       },
+       {
+        "code": "f(1.555556)\\approx-0.134039",
+        "why": "\\(\\frac{2}{1.555556}=1.285714\\) and \\(1.555556^2=2.419753\\)."
+       },
+       {
+        "code": "f'(1.555556)\\approx-3.937642",
+        "why": ""
+       },
+       {
+        "code": "x_3=1.555556-\\frac{-0.134039}{-3.937642}\\approx1.521515",
+        "why": "",
+        "watch": [
+         [
+          "x_3",
+          "1.5215"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p48-9",
+      "source": "Like §4.8 #29",
+      "href": null,
+      "question": "Show that Newton's method for \\(f(x)=\\dfrac1x-a\\) gives \\(x_{n+1}=2x_n-ax_n^2\\). (This computes \\(\\frac1a\\) without dividing.)",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f'(x)=-\\frac1{x^2}\\). Dividing by \\(-\\frac1{x^2}\\) is the same as multiplying by \\(-x^2\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The root of \\(f\\) is \\(x=\\frac1a\\).</p>\\[\\displaystyle f(x)=\\frac1x-a,\\ \\ f'(x)=-\\frac{1}{x^2}\\]<p><strong>Step 2.</strong> Newton's formula.</p>\\[\\displaystyle x_{n+1}=x_n-\\frac{\\frac1{x_n}-a}{-\\frac{1}{x_n^2}}\\]<p><strong>Step 3.</strong> Dividing by \\(-\\frac1{x_n^2}\\) = multiplying by \\(-x_n^2\\); minus times minus is plus.</p>\\[\\displaystyle =x_n+x_n^2\\Big(\\frac1{x_n}-a\\Big)\\]<p><strong>Step 4.</strong> Distribute.</p>\\[\\displaystyle =x_n+x_n-ax_n^2=2x_n-ax_n^2\\]<p><strong>What you found:</strong></p><ul><li>\\(x_{n+1}=2x_n-ax_n^2\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x_{n+1}=x_n-\\frac{1/x_n-a}{-1/x_n^2}=x_n+x_n^2\\big(\\frac1{x_n}-a\\big)=2x_n-ax_n^2\\).</p><p class=\"ans\">\\(x_{n+1}=2x_n-ax_n^2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=\\frac1x-a,\\ \\ f'(x)=-\\frac{1}{x^2}",
+        "why": "The root of \\(f\\) is \\(x=\\frac1a\\)."
+       },
+       {
+        "code": "x_{n+1}=x_n-\\frac{\\frac1{x_n}-a}{-\\frac{1}{x_n^2}}",
+        "why": "Newton's formula."
+       },
+       {
+        "code": "=x_n+x_n^2\\Big(\\frac1{x_n}-a\\Big)",
+        "why": "Dividing by \\(-\\frac1{x_n^2}\\) = multiplying by \\(-x_n^2\\); minus times minus is plus."
+       },
+       {
+        "code": "=x_n+x_n-ax_n^2=2x_n-ax_n^2",
+        "why": "Distribute.",
+        "watch": [
+         [
+          "x_{n+1}",
+          "2x_n-ax_n^2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p48-10",
+      "source": "Like §4.8 #31",
+      "href": null,
+      "question": "Explain why Newton's method fails for \\(f(x)=\\sqrt[3]{x}\\) with any starting guess \\(x_1\\ne0\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Simplify \\(x_{n+1}\\) in terms of \\(x_n\\). What happens to the size of \\(x_n\\)?</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The only root is \\(x=0\\).</p>\\[\\displaystyle f(x)=x^{1/3},\\ \\ f'(x)=\\tfrac13x^{-2/3}\\]<p><strong>Step 2.</strong> Subtract exponents: \\(\\frac13-(-\\frac23)=1\\).</p>\\[\\displaystyle \\frac{f(x_n)}{f'(x_n)}=\\frac{x_n^{1/3}}{\\frac13x_n^{-2/3}}=3x_n\\]<p><strong>Step 3.</strong> Each step doubles the distance from 0 and flips sides.</p>\\[\\displaystyle x_{n+1}=x_n-3x_n=-2x_n\\]<p><strong>Step 4.</strong> The guesses run away from the root instead of closing in.</p>\\[\\displaystyle x_1=1\\to-2\\to4\\to-8\\to\\cdots\\]<p><strong>What you found:</strong></p><ul><li>\\(x_{n+1}=-2x_n\\)</li><li>\\(|x_n|\\to\\infty\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{f(x)}{f'(x)}=\\frac{x^{1/3}}{\\frac13x^{-2/3}}=3x\\), so \\(x_{n+1}=x_n-3x_n=-2x_n\\). Every step is twice as far from 0 on the other side (e.g. \\(1,-2,4,-8,\\dots\\)), so it never converges.</p><p class=\"ans\">\\(x_{n+1}=-2x_n\\): the guesses double in size and alternate sides, so they diverge</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=x^{1/3},\\ \\ f'(x)=\\tfrac13x^{-2/3}",
+        "why": "The only root is \\(x=0\\)."
+       },
+       {
+        "code": "\\frac{f(x_n)}{f'(x_n)}=\\frac{x_n^{1/3}}{\\frac13x_n^{-2/3}}=3x_n",
+        "why": "Subtract exponents: \\(\\frac13-(-\\frac23)=1\\)."
+       },
+       {
+        "code": "x_{n+1}=x_n-3x_n=-2x_n",
+        "why": "Each step doubles the distance from 0 and flips sides.",
+        "watch": [
+         [
+          "x_{n+1}",
+          "-2x_n"
+         ]
+        ]
+       },
+       {
+        "code": "x_1=1\\to-2\\to4\\to-8\\to\\cdots",
+        "why": "The guesses run away from the root instead of closing in."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Plus instead of minus",
+      "html": "<p>It's \\(x_n\\) <strong>minus</strong> \\(\\frac{f}{f'}\\). Watch the double negatives.</p>"
+     },
+     {
+      "title": "Degrees mode",
+      "html": "<p>Trig in degrees gives completely wrong numbers. Switch the calculator to radians.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s49",
+  "slug": "4-9",
+  "num": "§4.9",
+  "unit": "m3",
+  "title": "Antiderivatives",
+  "lede": "Run the derivative rules backwards, add +C, and use initial conditions to find C.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p>An <strong>antiderivative</strong> of \\(f\\) is a function \\(F\\) with \\(F'=f\\). There are infinitely many, all differing by a constant, so the <em>general</em> antiderivative always ends in \\(+C\\). Check every answer by differentiating it.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Power rule backwards</span>\\[\\int x^n\\,dx\\to\\frac{x^{n+1}}{n+1}+C\\quad(n\\ne-1)\\]<p class=\"note\">Add 1 to the power, divide by the new power.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">The \\(n=-1\\) case</span><p>\\(\\frac1x\\to\\ln|x|+C\\)</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Exponentials and trig</span><p>\\(e^x\\to e^x\\) · \\(\\cos x\\to\\sin x\\) · \\(\\sin x\\to-\\cos x\\) · \\(\\sec^2x\\to\\tan x\\) · \\(\\sec x\\tan x\\to\\sec x\\)</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Inverse trig and hyperbolic</span><p>\\(\\frac1{1+x^2}\\to\\tan^{-1}x\\) · \\(\\frac1{\\sqrt{1-x^2}}\\to\\sin^{-1}x\\) · \\(\\cosh x\\to\\sinh x\\) · \\(\\sinh x\\to\\cosh x\\)</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Initial value problem</span><p>Find the general antiderivative with \\(+C\\), then plug in the given point to solve for \\(C\\). Given \\(f''\\)? Antidifferentiate twice: you get \\(C\\) and \\(D\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Motion</span><p>\\(a(t)\\to v(t)\\to s(t)\\). Use \\(v(0)\\) for the first constant and \\(s(0)\\) for the second.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p49-1",
+      "source": "Like §4.9 #1–21",
+      "href": null,
+      "question": "Find the most general antiderivative of \\(f(x)=4x^3-6x+2\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Term by term: add one to each power and divide by the new power.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Power 3 becomes 4, divide by 4.</p>\\[\\displaystyle 4x^3\\to\\frac{4x^4}{4}=x^4\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle -6x\\to-\\frac{6x^2}{2}=-3x^2\\]<p><strong>Step 3.</strong> A constant picks up an \\(x\\).</p>\\[\\displaystyle 2\\to2x\\]<p><strong>Step 4.</strong> Check: \\(F'=4x^3-6x+2\\). ✓</p>\\[\\displaystyle F=x^4-3x^2+2x+C\\]<p><strong>What you found:</strong></p><ul><li>\\(F=x^4-3x^2+2x+C\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{4x^4}{4}-\\frac{6x^2}{2}+2x+C\\).</p><p class=\"ans\">\\(F(x)=x^4-3x^2+2x+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "4x^3\\to\\frac{4x^4}{4}=x^4",
+        "why": "Power 3 becomes 4, divide by 4."
+       },
+       {
+        "code": "-6x\\to-\\frac{6x^2}{2}=-3x^2",
+        "why": ""
+       },
+       {
+        "code": "2\\to2x",
+        "why": "A constant picks up an \\(x\\)."
+       },
+       {
+        "code": "F=x^4-3x^2+2x+C",
+        "why": "Check: \\(F'=4x^3-6x+2\\). ✓",
+        "watch": [
+         [
+          "F",
+          "x^4-3x^2+2x+C"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-2",
+      "source": "Like §4.9 #1–21",
+      "href": null,
+      "question": "Find the most general antiderivative of \\(f(x)=\\sqrt x+\\dfrac1x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\sqrt x=x^{1/2}\\). And \\(\\frac1x\\) is the special case.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\tfrac12+1=\\tfrac32\\).</p>\\[\\displaystyle x^{1/2}\\to\\frac{x^{3/2}}{3/2}\\]<p><strong>Step 2.</strong> Dividing by \\(\\tfrac32\\) is multiplying by \\(\\tfrac23\\).</p>\\[\\displaystyle =\\tfrac23x^{3/2}\\]<p><strong>Step 3.</strong> The power rule would divide by 0 here, so use the special case.</p>\\[\\displaystyle \\tfrac1x\\to\\ln|x|\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle F=\\tfrac23x^{3/2}+\\ln|x|+C\\]<p><strong>What you found:</strong></p><ul><li>\\(F=\\tfrac23x^{3/2}+\\ln|x|+C\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x^{1/2}\\to\\frac{x^{3/2}}{3/2}=\\tfrac23x^{3/2}\\), and \\(\\frac1x\\to\\ln|x|\\).</p><p class=\"ans\">\\(F(x)=\\tfrac23x^{3/2}+\\ln|x|+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x^{1/2}\\to\\frac{x^{3/2}}{3/2}",
+        "why": "\\(\\tfrac12+1=\\tfrac32\\)."
+       },
+       {
+        "code": "=\\tfrac23x^{3/2}",
+        "why": "Dividing by \\(\\tfrac32\\) is multiplying by \\(\\tfrac23\\)."
+       },
+       {
+        "code": "\\tfrac1x\\to\\ln|x|",
+        "why": "The power rule would divide by 0 here, so use the special case."
+       },
+       {
+        "code": "F=\\tfrac23x^{3/2}+\\ln|x|+C",
+        "why": "",
+        "watch": [
+         [
+          "F",
+          "\\tfrac23x^{3/2}+\\ln|x|+C"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-3",
+      "source": "Like §4.9 #1–21",
+      "href": null,
+      "question": "Find the most general antiderivative of \\(f(x)=\\dfrac{3}{x^2}-5\\sec^2x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\frac{3}{x^2}=3x^{-2}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(-2+1=-1\\). Divide by \\(-1\\).</p>\\[\\displaystyle 3x^{-2}\\to\\frac{3x^{-1}}{-1}=-\\tfrac{3}{x}\\]<p><strong>Step 2.</strong> Because \\((\\tan x)'=\\sec^2x\\).</p>\\[\\displaystyle -5\\sec^2x\\to-5\\tan x\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle F=-\\tfrac3x-5\\tan x+C\\]<p><strong>What you found:</strong></p><ul><li>\\(F=-3/x-5\\tan x+C\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(3x^{-2}\\to\\frac{3x^{-1}}{-1}=-\\frac3x\\). \\(\\sec^2x\\to\\tan x\\).</p><p class=\"ans\">\\(F(x)=-\\dfrac3x-5\\tan x+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "3x^{-2}\\to\\frac{3x^{-1}}{-1}=-\\tfrac{3}{x}",
+        "why": "\\(-2+1=-1\\). Divide by \\(-1\\)."
+       },
+       {
+        "code": "-5\\sec^2x\\to-5\\tan x",
+        "why": "Because \\((\\tan x)'=\\sec^2x\\)."
+       },
+       {
+        "code": "F=-\\tfrac3x-5\\tan x+C",
+        "why": "",
+        "watch": [
+         [
+          "F",
+          "-3/x-5\\tan x+C"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-4",
+      "source": "Like §4.9 #1–21",
+      "href": null,
+      "question": "Find the most general antiderivative of \\(f(x)=\\dfrac{x^2+3x-1}{x}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>There's no quotient rule backwards. Split the fraction first.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Divide every term by \\(x\\).</p>\\[\\displaystyle \\frac{x^2}{x}+\\frac{3x}{x}-\\frac1x=x+3-\\frac1x\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle x\\to\\tfrac{x^2}{2}\\\\\\displaystyle 3\\to3x\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle -\\tfrac1x\\to-\\ln|x|\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle F=\\tfrac{x^2}2+3x-\\ln|x|+C\\]<p><strong>What you found:</strong></p><ul><li>\\(F=\\tfrac{x^2}2+3x-\\ln|x|+C\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{x^2+3x-1}{x}=x+3-\\frac1x\\to\\frac{x^2}{2}+3x-\\ln|x|+C\\).</p><p class=\"ans\">\\(F(x)=\\tfrac{x^2}{2}+3x-\\ln|x|+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{x^2}{x}+\\frac{3x}{x}-\\frac1x=x+3-\\frac1x",
+        "why": "Divide every term by \\(x\\)."
+       },
+       {
+        "code": "x\\to\\tfrac{x^2}{2},\\quad3\\to3x",
+        "why": ""
+       },
+       {
+        "code": "-\\tfrac1x\\to-\\ln|x|",
+        "why": ""
+       },
+       {
+        "code": "F=\\tfrac{x^2}2+3x-\\ln|x|+C",
+        "why": "",
+        "watch": [
+         [
+          "F",
+          "\\tfrac{x^2}2+3x-\\ln|x|+C"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-5",
+      "source": "Like §4.9 #1–21",
+      "href": null,
+      "question": "Find the most general antiderivative of \\(f(x)=2e^x+\\dfrac{4}{1+x^2}-\\sin x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\frac1{1+x^2}\\) is the derivative of \\(\\tan^{-1}x\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(e^x\\) is its own antiderivative.</p>\\[\\displaystyle 2e^x\\to2e^x\\]<p><strong>Step 2.</strong> Inverse-tan pattern.</p>\\[\\displaystyle \\frac{4}{1+x^2}\\to4\\tan^{-1}x\\]<p><strong>Step 3.</strong> Since \\((\\cos x)'=-\\sin x\\). The signs are tricky, so check by differentiating.</p>\\[\\displaystyle -\\sin x\\to\\cos x\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle F=2e^x+4\\tan^{-1}x+\\cos x+C\\]<p><strong>What you found:</strong></p><ul><li>\\(F=2e^x+4\\tan^{-1}x+\\cos x+C\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(2e^x\\to2e^x\\); \\(\\frac4{1+x^2}\\to4\\tan^{-1}x\\); \\(-\\sin x\\to\\cos x\\).</p><p class=\"ans\">\\(F(x)=2e^x+4\\tan^{-1}x+\\cos x+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "2e^x\\to2e^x",
+        "why": "\\(e^x\\) is its own antiderivative."
+       },
+       {
+        "code": "\\frac{4}{1+x^2}\\to4\\tan^{-1}x",
+        "why": "Inverse-tan pattern."
+       },
+       {
+        "code": "-\\sin x\\to\\cos x",
+        "why": "Since \\((\\cos x)'=-\\sin x\\). The signs are tricky, so check by differentiating."
+       },
+       {
+        "code": "F=2e^x+4\\tan^{-1}x+\\cos x+C",
+        "why": "",
+        "watch": [
+         [
+          "F",
+          "2e^x+4\\tan^{-1}x+\\cos x+C"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-6",
+      "source": "Like §4.9 #23–47",
+      "href": null,
+      "question": "Find \\(f\\) given \\(f'(x)=6x^2-4x\\) and \\(f(1)=5\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Antidifferentiate with \\(+C\\), then plug in \\(x=1\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(6\\cdot\\frac{x^3}{3}\\) and \\(4\\cdot\\frac{x^2}{2}\\).</p>\\[\\displaystyle f(x)=2x^3-2x^2+C\\]<p><strong>Step 2.</strong> Use the condition.</p>\\[\\displaystyle f(1)=2-2+C=5\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle C=5\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f(x)=2x^3-2x^2+5\\]<p><strong>What you found:</strong></p><ul><li>\\(C=5\\)</li><li>\\(f=2x^3-2x^2+5\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f=2x^3-2x^2+C\\). \\(f(1)=2-2+C=5\\Rightarrow C=5\\).</p><p class=\"ans\">\\(f(x)=2x^3-2x^2+5\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=2x^3-2x^2+C",
+        "why": "\\(6\\cdot\\frac{x^3}{3}\\) and \\(4\\cdot\\frac{x^2}{2}\\)."
+       },
+       {
+        "code": "f(1)=2-2+C=5",
+        "why": "Use the condition."
+       },
+       {
+        "code": "C=5",
+        "why": "",
+        "watch": [
+         [
+          "C",
+          "5"
+         ]
+        ]
+       },
+       {
+        "code": "f(x)=2x^3-2x^2+5",
+        "why": "",
+        "watch": [
+         [
+          "f",
+          "2x^3-2x^2+5"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-7",
+      "source": "Like §4.9 #23–47",
+      "href": null,
+      "question": "Find \\(f\\) given \\(f''(x)=12x^2+6x\\), \\(f'(0)=1\\) and \\(f(0)=3\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Two steps: \\(f''\\to f'\\) (find \\(C\\)), then \\(f'\\to f\\) (find \\(D\\)).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> First antiderivative.</p>\\[\\displaystyle f'(x)=4x^3+3x^2+C\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f'(0)=C=1\\]<p><strong>Step 3.</strong> Antidifferentiate \\(4x^3+3x^2+1\\).</p>\\[\\displaystyle f(x)=x^4+x^3+x+D\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f(0)=D=3\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle f(x)=x^4+x^3+x+3\\]<p><strong>What you found:</strong></p><ul><li>\\(C=1\\)</li><li>\\(D=3\\)</li><li>\\(f=x^4+x^3+x+3\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=4x^3+3x^2+C\\), \\(f'(0)=C=1\\). \\(f=x^4+x^3+x+D\\), \\(f(0)=D=3\\).</p><p class=\"ans\">\\(f(x)=x^4+x^3+x+3\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=4x^3+3x^2+C",
+        "why": "First antiderivative."
+       },
+       {
+        "code": "f'(0)=C=1",
+        "why": "",
+        "watch": [
+         [
+          "C",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "f(x)=x^4+x^3+x+D",
+        "why": "Antidifferentiate \\(4x^3+3x^2+1\\)."
+       },
+       {
+        "code": "f(0)=D=3",
+        "why": "",
+        "watch": [
+         [
+          "D",
+          "3"
+         ]
+        ]
+       },
+       {
+        "code": "f(x)=x^4+x^3+x+3",
+        "why": "",
+        "watch": [
+         [
+          "f",
+          "x^4+x^3+x+3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-8",
+      "source": "Like §4.9 #23–47",
+      "href": null,
+      "question": "Find \\(f\\) given \\(f'(x)=2\\cos x+\\sec^2x\\) on \\(-\\frac\\pi2<x<\\frac\\pi2\\), and \\(f(\\frac\\pi3)=4\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f=2\\sin x+\\tan x+C\\). Then use \\(\\sin\\frac\\pi3=\\frac{\\sqrt3}2\\) and \\(\\tan\\frac\\pi3=\\sqrt3\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle f(x)=2\\sin x+\\tan x+C\\]<p><strong>Step 2.</strong> Exact values.</p>\\[\\displaystyle f(\\tfrac\\pi3)=2\\cdot\\tfrac{\\sqrt3}{2}+\\sqrt3+C\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle 2\\sqrt3+C=4\\Rightarrow C=4-2\\sqrt3\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f=2\\sin x+\\tan x+4-2\\sqrt3\\]<p><strong>What you found:</strong></p><ul><li>\\(C=4-2\\sqrt3\\)</li><li>\\(f=2\\sin x+\\tan x+4-2\\sqrt3\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(\\tfrac\\pi3)=\\sqrt3+\\sqrt3+C=4\\Rightarrow C=4-2\\sqrt3\\).</p><p class=\"ans\">\\(f(x)=2\\sin x+\\tan x+4-2\\sqrt3\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=2\\sin x+\\tan x+C",
+        "why": ""
+       },
+       {
+        "code": "f(\\tfrac\\pi3)=2\\cdot\\tfrac{\\sqrt3}{2}+\\sqrt3+C",
+        "why": "Exact values."
+       },
+       {
+        "code": "2\\sqrt3+C=4\\Rightarrow C=4-2\\sqrt3",
+        "why": "",
+        "watch": [
+         [
+          "C",
+          "4-2\\sqrt3"
+         ]
+        ]
+       },
+       {
+        "code": "f=2\\sin x+\\tan x+4-2\\sqrt3",
+        "why": "",
+        "watch": [
+         [
+          "f",
+          "2\\sin x+\\tan x+4-2\\sqrt3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-9",
+      "source": "Like §4.9 · extra (motion)",
+      "href": null,
+      "question": "A particle has acceleration \\(a(t)=6t+2\\), with \\(v(0)=-3\\) and \\(s(0)=1\\). Find its position \\(s(t)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(v=\\int a\\), then \\(s=\\int v\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Antiderivative of the acceleration.</p>\\[\\displaystyle v(t)=3t^2+2t+C\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle v(0)=C=-3\\]<p><strong>Step 3.</strong> Antiderivative of the velocity.</p>\\[\\displaystyle s(t)=t^3+t^2-3t+D\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle s(0)=D=1\\]<p><strong>What you found:</strong></p><ul><li>\\(v=3t^2+2t-3\\)</li><li>\\(s=t^3+t^2-3t+1\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(v=3t^2+2t+C\\), \\(v(0)=C=-3\\). \\(s=t^3+t^2-3t+D\\), \\(s(0)=D=1\\).</p><p class=\"ans\">\\(s(t)=t^3+t^2-3t+1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "v(t)=3t^2+2t+C",
+        "why": "Antiderivative of the acceleration."
+       },
+       {
+        "code": "v(0)=C=-3",
+        "why": "",
+        "watch": [
+         [
+          "v",
+          "3t^2+2t-3"
+         ]
+        ]
+       },
+       {
+        "code": "s(t)=t^3+t^2-3t+D",
+        "why": "Antiderivative of the velocity."
+       },
+       {
+        "code": "s(0)=D=1",
+        "why": "",
+        "watch": [
+         [
+          "s",
+          "t^3+t^2-3t+1"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p49-10",
+      "source": "Like §4.9 · extra (motion)",
+      "href": null,
+      "question": "A stone is dropped from a 450 m cliff. Using \\(a=-9.8\\) m/s², find its height \\(s(t)\\) and when it hits the ground.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>“Dropped” means \\(v(0)=0\\). \\(s(0)=450\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Dropped, not thrown: starts at rest.</p>\\[\\begin{gathered}\\displaystyle v(t)=-9.8t+C\\\\\\displaystyle v(0)=0\\end{gathered}\\]<p><strong>Step 2.</strong> \\(-9.8\\cdot\\frac{t^2}{2}\\).</p>\\[\\begin{gathered}\\displaystyle s(t)=-4.9t^2+D\\\\\\displaystyle s(0)=450\\end{gathered}\\]<p><strong>Step 3.</strong> Hits the ground when the height is 0.</p>\\[\\displaystyle 450-4.9t^2=0\\]<p><strong>Step 4.</strong> Take the positive root.</p>\\[\\displaystyle t=\\sqrt{450/4.9}\\approx9.58\\text{ s}\\]<p><strong>What you found:</strong></p><ul><li>\\(v=-9.8t\\)</li><li>\\(s=450-4.9t^2\\)</li><li>\\(t=9.58\\text{ s}\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(v=-9.8t\\), \\(s=-4.9t^2+450\\). Ground: \\(4.9t^2=450\\Rightarrow t=\\sqrt{450/4.9}\\approx9.58\\) s.</p><p class=\"ans\">\\(s(t)=450-4.9t^2\\); hits the ground at \\(t\\approx9.58\\) s</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "v(t)=-9.8t+C,\\ v(0)=0",
+        "why": "Dropped, not thrown: starts at rest.",
+        "watch": [
+         [
+          "v",
+          "-9.8t"
+         ]
+        ]
+       },
+       {
+        "code": "s(t)=-4.9t^2+D,\\ s(0)=450",
+        "why": "\\(-9.8\\cdot\\frac{t^2}{2}\\).",
+        "watch": [
+         [
+          "s",
+          "450-4.9t^2"
+         ]
+        ]
+       },
+       {
+        "code": "450-4.9t^2=0",
+        "why": "Hits the ground when the height is 0."
+       },
+       {
+        "code": "t=\\sqrt{450/4.9}\\approx9.58\\text{ s}",
+        "why": "Take the positive root.",
+        "watch": [
+         [
+          "t",
+          "9.58\\text{ s}"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Forgetting \\(+C\\)",
+      "html": "<p>“Most general antiderivative” without \\(+C\\) loses marks.</p>"
+     },
+     {
+      "title": "Antiderivative of a product or quotient",
+      "html": "<p>There's no product rule backwards. Expand or split first (#4).</p>"
+     },
+     {
+      "title": "\\(\\sin\\) / \\(\\cos\\) signs",
+      "html": "<p>\\(\\int\\sin x=-\\cos x\\) and \\(\\int\\cos x=+\\sin x\\). Differentiate your answer to check.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s51",
+  "slug": "5-1",
+  "num": "§5.1",
+  "unit": "m3",
+  "title": "Areas and Distances",
+  "lede": "Estimate the area under a curve with rectangles: left, right and midpoint sums.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p>Chop \\([a,b]\\) into \\(n\\) strips of width \\(\\Delta x\\). Make each strip a rectangle whose height is \\(f\\) at one point of the strip. Add the areas. More strips give a better estimate, and in the limit you get the exact area (§5.2).</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Width and points</span>\\[\\Delta x=\\frac{b-a}{n},\\qquad x_i=a+i\\,\\Delta x\\]"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Right sum \\(R_n\\)</span><p>Heights at the right ends \\(x_1,\\dots,x_n\\): \\(R_n=\\Delta x\\,[f(x_1)+\\dots+f(x_n)]\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Left sum \\(L_n\\)</span><p>Heights at the left ends \\(x_0,\\dots,x_{n-1}\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Midpoint sum \\(M_n\\)</span><p>Heights at the middle of each strip, \\(\\bar x_i=\\frac{x_{i-1}+x_i}{2}\\). Usually the best of the three.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Over or under?</span><p>If \\(f\\) is <strong>increasing</strong>, the left sum underestimates and the right sum overestimates. For a decreasing \\(f\\) it's the reverse.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Distance</span><p>Distance ≈ Σ velocity × time step. Same idea with \\(v(t)\\) instead of \\(f(x)\\).</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p51-1",
+      "source": "Like §5.1 #1–13",
+      "href": null,
+      "question": "Estimate the area under \\(f(x)=x^2\\) on \\([0,2]\\) using \\(R_4\\) (4 rectangles, right endpoints).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\Delta x=\\frac{2-0}{4}=0.5\\). Right endpoints: \\(0.5,1,1.5,2\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Width of each strip.</p>\\[\\displaystyle \\Delta x=\\tfrac{2-0}{4}=\\tfrac12\\]<p><strong>Step 2.</strong> Right ends of the strips.</p>\\[\\begin{gathered}\\displaystyle x_i:\\ 0.5\\\\\\displaystyle 1\\\\\\displaystyle 1.5\\\\\\displaystyle 2\\end{gathered}\\]<p><strong>Step 3.</strong> Square each one.</p>\\[\\begin{gathered}\\displaystyle f:\\ 0.25\\\\\\displaystyle 1\\\\\\displaystyle 2.25\\\\\\displaystyle 4\\end{gathered}\\]<p><strong>Step 4.</strong> Width × (sum of heights).</p>\\[\\displaystyle R_4=0.5(7.5)=3.75\\]<p><strong>What you found:</strong></p><ul><li>\\(\\Delta x=0.5\\)</li><li>\\(R_4=3.75\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(0.5\\,(0.25+1+2.25+4)=0.5(7.5)=3.75\\). The exact area is \\(\\frac83\\approx2.67\\); \\(R_4\\) overestimates because \\(x^2\\) is increasing.</p><p class=\"ans\">\\(R_4=3.75\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\Delta x=\\tfrac{2-0}{4}=\\tfrac12",
+        "why": "Width of each strip.",
+        "watch": [
+         [
+          "\\Delta x",
+          "0.5"
+         ]
+        ]
+       },
+       {
+        "code": "x_i:\\ 0.5,\\ 1,\\ 1.5,\\ 2",
+        "why": "Right ends of the strips."
+       },
+       {
+        "code": "f:\\ 0.25,\\ 1,\\ 2.25,\\ 4",
+        "why": "Square each one."
+       },
+       {
+        "code": "R_4=0.5(7.5)=3.75",
+        "why": "Width × (sum of heights).",
+        "watch": [
+         [
+          "R_4",
+          "3.75"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p51-2",
+      "source": "Like §5.1 #1–13",
+      "href": null,
+      "question": "Same function and interval: find \\(L_4\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Left endpoints: \\(0,0.5,1,1.5\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Left ends: start at \\(a\\), stop one short of \\(b\\).</p>\\[\\begin{gathered}\\displaystyle x_i:\\ 0\\\\\\displaystyle 0.5\\\\\\displaystyle 1\\\\\\displaystyle 1.5\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle f:\\ 0\\\\\\displaystyle 0.25\\\\\\displaystyle 1\\\\\\displaystyle 2.25\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle L_4=0.5(3.5)=1.75\\]<p><strong>What you found:</strong></p><ul><li>\\(L_4=1.75\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(0.5(0+0.25+1+2.25)=1.75\\). This underestimates. The exact area \\(\\frac83\\) lies between \\(L_4\\) and \\(R_4\\).</p><p class=\"ans\">\\(L_4=1.75\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x_i:\\ 0,\\ 0.5,\\ 1,\\ 1.5",
+        "why": "Left ends: start at \\(a\\), stop one short of \\(b\\)."
+       },
+       {
+        "code": "f:\\ 0,\\ 0.25,\\ 1,\\ 2.25",
+        "why": ""
+       },
+       {
+        "code": "L_4=0.5(3.5)=1.75",
+        "why": "",
+        "watch": [
+         [
+          "L_4",
+          "1.75"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p51-3",
+      "source": "Like §5.1 #1–13",
+      "href": null,
+      "question": "Estimate the area under \\(f(x)=x^3\\) on \\([0,2]\\) with \\(M_2\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Two strips of width 1. Midpoints \\(0.5\\) and \\(1.5\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Middles of \\([0,1]\\) and \\([1,2]\\).</p>\\[\\begin{gathered}\\displaystyle \\Delta x=1\\\\\\displaystyle \\bar x=0.5\\\\\\displaystyle 1.5\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle 0.5^3=0.125\\\\\\displaystyle 1.5^3=3.375\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle M_2=1(3.5)=3.5\\]<p><strong>What you found:</strong></p><ul><li>\\(M_2=3.5\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(1\\cdot(0.125+3.375)=3.5\\). The exact area is 4.</p><p class=\"ans\">\\(M_2=3.5\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\Delta x=1,\\ \\ \\bar x=0.5,\\ 1.5",
+        "why": "Middles of \\([0,1]\\) and \\([1,2]\\)."
+       },
+       {
+        "code": "0.5^3=0.125,\\ \\ 1.5^3=3.375",
+        "why": ""
+       },
+       {
+        "code": "M_2=1(3.5)=3.5",
+        "why": "",
+        "watch": [
+         [
+          "M_2",
+          "3.5"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p51-4",
+      "source": "Like §5.1 #15–19",
+      "href": null,
+      "question": "A car's speed is measured every second: \\(t=0,1,2,3\\) s gives \\(v=2,4,7,9\\) m/s. Estimate the distance travelled in 3 seconds using left and right endpoints.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\Delta t=1\\). Left uses \\(t=0,1,2\\); right uses \\(t=1,2,3\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\Delta t=1\\]<p><strong>Step 2.</strong> Speed at the start of each second.</p>\\[\\displaystyle \\text{left: }(2+4+7)(1)=13\\]<p><strong>Step 3.</strong> Speed at the end of each second.</p>\\[\\displaystyle \\text{right: }(4+7+9)(1)=20\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{between}:\\ 13\\text{ and }20\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Left: \\(2+4+7=13\\) m. Right: \\(4+7+9=20\\) m. The speed is increasing, so the true distance is between them.</p><p class=\"ans\">Left \\(13\\) m, right \\(20\\) m</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\Delta t=1",
+        "why": ""
+       },
+       {
+        "code": "\\text{left: }(2+4+7)(1)=13",
+        "why": "Speed at the start of each second."
+       },
+       {
+        "code": "\\text{right: }(4+7+9)(1)=20",
+        "why": "Speed at the end of each second.",
+        "watch": [
+         [
+          "\\text{between}",
+          "13\\text{ and }20"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p51-5",
+      "source": "Like §5.1 #21–25",
+      "href": null,
+      "question": "Write the area under \\(f(x)=x^2\\) on \\([1,4]\\) as a limit of right sums. (Don't evaluate.)",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\Delta x=\\frac3n\\), \\(x_i=1+\\frac{3i}{n}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\Delta x=\\tfrac{4-1}{n}=\\tfrac3n\\]<p><strong>Step 2.</strong> Start at \\(a=1\\) and take \\(i\\) steps.</p>\\[\\displaystyle x_i=1+i\\cdot\\tfrac3n\\]<p><strong>Step 3.</strong> Height × width of the \\(i\\)-th rectangle.</p>\\[\\displaystyle f(x_i)\\Delta x=\\big(1+\\tfrac{3i}{n}\\big)^2\\cdot\\tfrac3n\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle A=\\lim_{n\\to\\infty}\\sum_{i=1}^n\\big(1+\\tfrac{3i}{n}\\big)^2\\tfrac3n\\]</div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\displaystyle A=\\lim_{n\\to\\infty}\\sum_{i=1}^{n}\\Big(1+\\frac{3i}{n}\\Big)^2\\frac{3}{n}\\).</p><p class=\"ans\">\\(\\displaystyle\\lim_{n\\to\\infty}\\sum_{i=1}^n\\big(1+\\tfrac{3i}{n}\\big)^2\\tfrac3n\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\Delta x=\\tfrac{4-1}{n}=\\tfrac3n",
+        "why": ""
+       },
+       {
+        "code": "x_i=1+i\\cdot\\tfrac3n",
+        "why": "Start at \\(a=1\\) and take \\(i\\) steps."
+       },
+       {
+        "code": "f(x_i)\\Delta x=\\big(1+\\tfrac{3i}{n}\\big)^2\\cdot\\tfrac3n",
+        "why": "Height × width of the \\(i\\)-th rectangle."
+       },
+       {
+        "code": "A=\\lim_{n\\to\\infty}\\sum_{i=1}^n\\big(1+\\tfrac{3i}{n}\\big)^2\\tfrac3n",
+        "why": ""
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Off-by-one endpoints",
+      "html": "<p>Left sums use \\(x_0\\) to \\(x_{n-1}\\); right sums use \\(x_1\\) to \\(x_n\\). Write the list of x-values before plugging in.</p>"
+     },
+     {
+      "title": "Forgetting × Δx",
+      "html": "<p>Adding the heights isn't the area. Multiply by the width.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s52",
+  "slug": "5-2",
+  "num": "§5.2",
+  "unit": "m3",
+  "title": "The Definite Integral",
+  "lede": "The exact area as a limit of Riemann sums, net signed area, and the properties of integrals.",
+  "blocks": [
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Definition</span>\\[\\int_a^b f(x)\\,dx=\\lim_{n\\to\\infty}\\sum_{i=1}^n f(x_i)\\,\\Delta x\\]"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Net signed area</span><p>Area above the x-axis counts \\(+\\); area below counts \\(-\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Sum formulas</span>\\[\\sum_{i=1}^n i=\\frac{n(n+1)}2,\\quad\\sum_{i=1}^n i^2=\\frac{n(n+1)(2n+1)}6\\]<p class=\"note\">\\(\\sum_{i=1}^n c=cn\\), and \\(\\sum i^3=\\big[\\frac{n(n+1)}2\\big]^2\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Properties</span><p>\\(\\int_a^b[f\\pm g]=\\int_a^bf\\pm\\int_a^bg\\) · \\(\\int_a^bcf=c\\int_a^bf\\) · \\(\\int_b^a=-\\int_a^b\\) · \\(\\int_a^a=0\\) · \\(\\int_a^c+\\int_c^b=\\int_a^b\\)</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Geometry shortcut</span><p>Lines and semicircles: use triangle, rectangle, trapezoid or circle area formulas directly.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p52-1",
+      "source": "Like §5.2 #33–40",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_0^3(2x+1)\\,dx\\) by interpreting it as an area.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Under a straight line from \\(x=0\\) to \\(3\\): a trapezoid.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The two parallel sides.</p>\\[\\begin{gathered}\\displaystyle f(0)=1\\\\\\displaystyle f(3)=7\\end{gathered}\\]<p><strong>Step 2.</strong> Trapezoid: average height × width.</p>\\[\\displaystyle A=\\tfrac{1+7}{2}\\cdot3\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle =12\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=12\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Heights \\(f(0)=1\\) and \\(f(3)=7\\), width 3: \\(\\frac{1+7}{2}\\cdot3=12\\).</p><p class=\"ans\">\\(12\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(0)=1,\\ f(3)=7",
+        "why": "The two parallel sides."
+       },
+       {
+        "code": "A=\\tfrac{1+7}{2}\\cdot3",
+        "why": "Trapezoid: average height × width."
+       },
+       {
+        "code": "=12",
+        "why": "",
+        "watch": [
+         [
+          "\\int",
+          "12"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p52-2",
+      "source": "Like §5.2 #33–40",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_{-2}^{2}\\sqrt{4-x^2}\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(y=\\sqrt{4-x^2}\\) is the top half of a circle of radius 2.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Upper semicircle, \\(r=2\\).</p>\\[\\begin{gathered}\\displaystyle y=\\sqrt{4-x^2}\\Rightarrow x^2+y^2=4\\\\\\displaystyle y\\ge0\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\tfrac12\\pi(2)^2=2\\pi\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=2\\pi\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Half of \\(\\pi r^2=4\\pi\\), so the integral is \\(2\\pi\\).</p><p class=\"ans\">\\(2\\pi\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=\\sqrt{4-x^2}\\Rightarrow x^2+y^2=4,\\ y\\ge0",
+        "why": "Upper semicircle, \\(r=2\\)."
+       },
+       {
+        "code": "\\tfrac12\\pi(2)^2=2\\pi",
+        "why": "",
+        "watch": [
+         [
+          "\\int",
+          "2\\pi"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p52-3",
+      "source": "Like §5.2 #33–40",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_0^4(x-2)\\,dx\\) using areas.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Part of the region is below the x-axis.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Below the axis counts negative.</p>\\[\\displaystyle [0,2]:\\ -\\tfrac12(2)(2)=-2\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle [2,4]:\\ +\\tfrac12(2)(2)=2\\]<p><strong>Step 3.</strong> Net signed area.</p>\\[\\displaystyle -2+2=0\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=0\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Triangle below the axis on \\([0,2]\\) with area 2 (counts \\(-2\\)); triangle above on \\([2,4]\\) with area 2. Net \\(0\\).</p><p class=\"ans\">\\(0\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "[0,2]:\\ -\\tfrac12(2)(2)=-2",
+        "why": "Below the axis counts negative."
+       },
+       {
+        "code": "[2,4]:\\ +\\tfrac12(2)(2)=2",
+        "why": ""
+       },
+       {
+        "code": "-2+2=0",
+        "why": "Net signed area.",
+        "watch": [
+         [
+          "\\int",
+          "0"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p52-4",
+      "source": "Like §5.2 #21–25",
+      "href": null,
+      "question": "Use the limit definition (right endpoints) to evaluate \\(\\displaystyle\\int_0^2x^2\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\Delta x=\\frac2n\\), \\(x_i=\\frac{2i}{n}\\). Use the formula for \\(\\sum i^2\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle \\Delta x=\\tfrac2n\\\\\\displaystyle x_i=\\tfrac{2i}{n}\\end{gathered}\\]<p><strong>Step 2.</strong> Pull out everything that doesn't depend on \\(i\\).</p>\\[\\displaystyle \\sum_{i=1}^n\\Big(\\tfrac{2i}{n}\\Big)^2\\tfrac2n=\\tfrac{8}{n^3}\\sum i^2\\]<p><strong>Step 3.</strong> Sum of squares formula.</p>\\[\\displaystyle =\\tfrac{8}{n^3}\\cdot\\tfrac{n(n+1)(2n+1)}{6}\\]<p><strong>Step 4.</strong> Split up the three powers of \\(n\\) to take the limit.</p>\\[\\displaystyle =\\tfrac{8}{6}\\cdot\\tfrac{n}{n}\\cdot\\tfrac{n+1}{n}\\cdot\\tfrac{2n+1}{n}\\]<p><strong>Step 5.</strong> \\(\\frac{n+1}n\\to1\\), \\(\\frac{2n+1}n\\to2\\).</p>\\[\\displaystyle \\to\\tfrac86\\cdot1\\cdot1\\cdot2=\\tfrac83\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=8/3\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\sum\\frac{4i^2}{n^2}\\cdot\\frac2n=\\frac8{n^3}\\cdot\\frac{n(n+1)(2n+1)}6\\to\\frac{8\\cdot2}{6}=\\frac83\\).</p><p class=\"ans\">\\(\\tfrac83\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\Delta x=\\tfrac2n,\\ x_i=\\tfrac{2i}{n}",
+        "why": ""
+       },
+       {
+        "code": "\\sum_{i=1}^n\\Big(\\tfrac{2i}{n}\\Big)^2\\tfrac2n=\\tfrac{8}{n^3}\\sum i^2",
+        "why": "Pull out everything that doesn't depend on \\(i\\)."
+       },
+       {
+        "code": "=\\tfrac{8}{n^3}\\cdot\\tfrac{n(n+1)(2n+1)}{6}",
+        "why": "Sum of squares formula."
+       },
+       {
+        "code": "=\\tfrac{8}{6}\\cdot\\tfrac{n}{n}\\cdot\\tfrac{n+1}{n}\\cdot\\tfrac{2n+1}{n}",
+        "why": "Split up the three powers of \\(n\\) to take the limit."
+       },
+       {
+        "code": "\\to\\tfrac86\\cdot1\\cdot1\\cdot2=\\tfrac83",
+        "why": "\\(\\frac{n+1}n\\to1\\), \\(\\frac{2n+1}n\\to2\\).",
+        "watch": [
+         [
+          "\\int",
+          "8/3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p52-5",
+      "source": "Like §5.2 #47–55",
+      "href": null,
+      "question": "If \\(\\int_0^5f(x)\\,dx=10\\) and \\(\\int_0^2f(x)\\,dx=3\\), find \\(\\int_2^5f(x)\\,dx\\) and \\(\\int_5^2 2f(x)\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\int_0^2+\\int_2^5=\\int_0^5\\). Swapping the limits flips the sign.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Split the interval.</p>\\[\\displaystyle \\int_0^2f+\\int_2^5f=\\int_0^5f\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle 3+\\int_2^5f=10\\Rightarrow\\int_2^5f=7\\]<p><strong>Step 3.</strong> The constant comes out; reversed limits give a minus.</p>\\[\\displaystyle \\int_5^2 2f=-2\\int_2^5f\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle =-14\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int_2^5f=7\\)</li><li>\\(\\int_5^22f=-14\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\int_2^5f=10-3=7\\). \\(\\int_5^2 2f=-2\\cdot7=-14\\).</p><p class=\"ans\">\\(7\\) and \\(-14\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\int_0^2f+\\int_2^5f=\\int_0^5f",
+        "why": "Split the interval."
+       },
+       {
+        "code": "3+\\int_2^5f=10\\Rightarrow\\int_2^5f=7",
+        "why": "",
+        "watch": [
+         [
+          "\\int_2^5f",
+          "7"
+         ]
+        ]
+       },
+       {
+        "code": "\\int_5^2 2f=-2\\int_2^5f",
+        "why": "The constant comes out; reversed limits give a minus."
+       },
+       {
+        "code": "=-14",
+        "why": "",
+        "watch": [
+         [
+          "\\int_5^22f",
+          "-14"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p52-6",
+      "source": "Like §5.2 #17–20",
+      "href": null,
+      "question": "Write \\(\\displaystyle\\lim_{n\\to\\infty}\\sum_{i=1}^n\\frac1n\\Big(\\frac in\\Big)^3\\) as a definite integral and evaluate it.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Match it to \\(f(x_i)\\Delta x\\) with \\(\\Delta x=\\frac1n\\) and \\(x_i=\\frac in\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\Delta x=\\tfrac1n\\Rightarrow b-a=1\\]<p><strong>Step 2.</strong> \\(x_i=a+i\\Delta x\\).</p>\\[\\begin{gathered}\\displaystyle x_i=\\tfrac in\\Rightarrow a=0\\\\\\displaystyle b=1\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle f(x)=x^3\\]<p><strong>Step 4.</strong> Using §5.3 to evaluate.</p>\\[\\displaystyle \\int_0^1x^3dx=\\tfrac14\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{value}:\\ 1/4\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\Delta x=\\frac1n\\) on \\([0,1]\\), \\(f(x)=x^3\\): \\(\\int_0^1x^3\\,dx=\\frac14\\).</p><p class=\"ans\">\\(\\int_0^1x^3\\,dx=\\tfrac14\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\Delta x=\\tfrac1n\\Rightarrow b-a=1",
+        "why": ""
+       },
+       {
+        "code": "x_i=\\tfrac in\\Rightarrow a=0,\\ b=1",
+        "why": "\\(x_i=a+i\\Delta x\\)."
+       },
+       {
+        "code": "f(x)=x^3",
+        "why": ""
+       },
+       {
+        "code": "\\int_0^1x^3dx=\\tfrac14",
+        "why": "Using §5.3 to evaluate.",
+        "watch": [
+         [
+          "\\text{value}",
+          "1/4"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Net area vs total area",
+      "html": "<p>\\(\\int\\) gives <em>net</em> area. If the question says “total area”, split at the zeros and add absolute values.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s53",
+  "slug": "5-3",
+  "num": "§5.3",
+  "unit": "m3",
+  "title": "The Fundamental Theorem of Calculus",
+  "lede": "Derivatives undo integrals (Part 1), and antiderivatives evaluate integrals (Part 2).",
+  "blocks": [
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">FTC Part 1</span>\\[\\frac{d}{dx}\\int_a^x f(t)\\,dt=f(x)\\]<p class=\"note\">Plug the upper limit into the integrand.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Part 1 with the chain rule</span>\\[\\frac{d}{dx}\\int_a^{g(x)}f(t)\\,dt=f(g(x))\\,g'(x)\\]<p class=\"note\">Variable in the lower limit? Flip the limits and add a minus sign.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">FTC Part 2</span>\\[\\int_a^bf(x)\\,dx=F(b)-F(a),\\quad F'=f\\]<p class=\"note\">No \\(+C\\) needed: it cancels.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Needs continuity</span><p>\\(f\\) must be continuous on \\([a,b]\\). \\(\\int_{-1}^1\\frac1{x^2}dx\\) can't be done with FTC.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p53-1",
+      "source": "Like §5.3 #7–18",
+      "href": null,
+      "question": "Find \\(g'(x)\\) for \\(g(x)=\\displaystyle\\int_1^x(t^2+1)^5\\,dt\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Part 1: replace \\(t\\) with \\(x\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The upper limit is plain \\(x\\).</p>\\[\\displaystyle g(x)=\\int_1^xf(t)\\,dt\\]<p><strong>Step 2.</strong> No integrating needed.</p>\\[\\displaystyle g'(x)=f(x)=(x^2+1)^5\\]<p><strong>What you found:</strong></p><ul><li>\\(g'=(x^2+1)^5\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(g'(x)=(x^2+1)^5\\).</p><p class=\"ans\">\\((x^2+1)^5\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "g(x)=\\int_1^xf(t)\\,dt",
+        "why": "The upper limit is plain \\(x\\)."
+       },
+       {
+        "code": "g'(x)=f(x)=(x^2+1)^5",
+        "why": "No integrating needed.",
+        "watch": [
+         [
+          "g'",
+          "(x^2+1)^5"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p53-2",
+      "source": "Like §5.3 #7–18",
+      "href": null,
+      "question": "Find \\(\\dfrac{dy}{dx}\\) for \\(y=\\displaystyle\\int_0^{x^2}\\sin t\\,dt\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>The upper limit is \\(x^2\\): plug it in, then multiply by its derivative.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Plug in the upper limit.</p>\\[\\displaystyle f(g(x))=\\sin(x^2)\\]<p><strong>Step 2.</strong> Chain rule.</p>\\[\\displaystyle g'(x)=2x\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle y'=2x\\sin(x^2)\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=2x\\sin(x^2)\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\sin(x^2)\\cdot2x\\).</p><p class=\"ans\">\\(2x\\sin(x^2)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(g(x))=\\sin(x^2)",
+        "why": "Plug in the upper limit."
+       },
+       {
+        "code": "g'(x)=2x",
+        "why": "Chain rule."
+       },
+       {
+        "code": "y'=2x\\sin(x^2)",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "2x\\sin(x^2)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p53-3",
+      "source": "Like §5.3 #7–18",
+      "href": null,
+      "question": "Find \\(\\dfrac{dy}{dx}\\) for \\(y=\\displaystyle\\int_x^{3}e^{t^2}\\,dt\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(x\\) is in the <em>lower</em> limit. Flip the limits first.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Swapping the limits adds a minus.</p>\\[\\displaystyle y=-\\int_3^{x}e^{t^2}dt\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle y'=-e^{x^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=-e^{x^2}\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(y=-\\int_3^xe^{t^2}dt\\Rightarrow y'=-e^{x^2}\\).</p><p class=\"ans\">\\(-e^{x^2}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=-\\int_3^{x}e^{t^2}dt",
+        "why": "Swapping the limits adds a minus."
+       },
+       {
+        "code": "y'=-e^{x^2}",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "-e^{x^2}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p53-4",
+      "source": "Like §5.3 #7–18",
+      "href": null,
+      "question": "Find \\(\\dfrac{dy}{dx}\\) for \\(y=\\displaystyle\\int_x^{x^2}t^3\\,dt\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Split at a constant: \\(\\int_x^{0}+\\int_0^{x^2}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Both limits move, so split at 0.</p>\\[\\displaystyle y=\\int_0^{x^2}t^3dt-\\int_0^{x}t^3dt\\]<p><strong>Step 2.</strong> Chain rule.</p>\\[\\displaystyle \\tfrac{d}{dx}\\int_0^{x^2}=(x^2)^3\\cdot2x=2x^7\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\tfrac{d}{dx}\\int_0^{x}=x^3\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle y'=2x^7-x^3\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=2x^7-x^3\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\((x^2)^3\\cdot2x-x^3=2x^7-x^3\\).</p><p class=\"ans\">\\(2x^7-x^3\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y=\\int_0^{x^2}t^3dt-\\int_0^{x}t^3dt",
+        "why": "Both limits move, so split at 0."
+       },
+       {
+        "code": "\\tfrac{d}{dx}\\int_0^{x^2}=(x^2)^3\\cdot2x=2x^7",
+        "why": "Chain rule."
+       },
+       {
+        "code": "\\tfrac{d}{dx}\\int_0^{x}=x^3",
+        "why": ""
+       },
+       {
+        "code": "y'=2x^7-x^3",
+        "why": "",
+        "watch": [
+         [
+          "y'",
+          "2x^7-x^3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p53-5",
+      "source": "Like §5.3 #19–44",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_1^3(x^2-2x)\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Antiderivative \\(\\frac{x^3}3-x^2\\). Top minus bottom.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle F(x)=\\tfrac{x^3}{3}-x^2\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle F(3)=9-9=0\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle F(1)=\\tfrac13-1=-\\tfrac23\\]<p><strong>Step 4.</strong> Careful with the double negative.</p>\\[\\displaystyle F(3)-F(1)=0-(-\\tfrac23)=\\tfrac23\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=2/3\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\big[\\frac{x^3}3-x^2\\big]_1^3=(9-9)-(\\frac13-1)=\\frac23\\).</p><p class=\"ans\">\\(\\tfrac23\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "F(x)=\\tfrac{x^3}{3}-x^2",
+        "why": ""
+       },
+       {
+        "code": "F(3)=9-9=0",
+        "why": ""
+       },
+       {
+        "code": "F(1)=\\tfrac13-1=-\\tfrac23",
+        "why": ""
+       },
+       {
+        "code": "F(3)-F(1)=0-(-\\tfrac23)=\\tfrac23",
+        "why": "Careful with the double negative.",
+        "watch": [
+         [
+          "\\int",
+          "2/3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p53-6",
+      "source": "Like §5.3 #19–44",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_0^{\\pi/2}\\cos x\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\int\\cos=\\sin\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle F=\\sin x\\]<p><strong>Step 2.</strong> Unit circle values.</p>\\[\\displaystyle \\sin\\tfrac\\pi2-\\sin0=1-0\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=1\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\sin\\frac\\pi2-\\sin0=1\\).</p><p class=\"ans\">\\(1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "F=\\sin x",
+        "why": ""
+       },
+       {
+        "code": "\\sin\\tfrac\\pi2-\\sin0=1-0",
+        "why": "Unit circle values.",
+        "watch": [
+         [
+          "\\int",
+          "1"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p53-7",
+      "source": "Like §5.3 #19–44",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_1^4\\frac{1}{\\sqrt x}\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(x^{-1/2}\\to2x^{1/2}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle x^{-1/2}\\to\\frac{x^{1/2}}{1/2}=2\\sqrt x\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle 2(2)-2(1)=2\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=2\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(2\\sqrt4-2\\sqrt1=2\\).</p><p class=\"ans\">\\(2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x^{-1/2}\\to\\frac{x^{1/2}}{1/2}=2\\sqrt x",
+        "why": ""
+       },
+       {
+        "code": "2(2)-2(1)=2",
+        "why": "",
+        "watch": [
+         [
+          "\\int",
+          "2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p53-8",
+      "source": "Like §5.3 #19–44",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_0^1\\Big(e^x+\\frac{1}{1+x^2}\\Big)dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\int\\frac1{1+x^2}=\\tan^{-1}x\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle F=e^x+\\tan^{-1}x\\]<p><strong>Step 2.</strong> \\(\\tan^{-1}1=\\frac\\pi4\\).</p>\\[\\displaystyle F(1)=e+\\tfrac\\pi4\\]<p><strong>Step 3.</strong> \\(e^0=1\\).</p>\\[\\displaystyle F(0)=1+0\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle e-1+\\tfrac\\pi4\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=e-1+\\pi/4\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\([e^x+\\tan^{-1}x]_0^1=(e+\\frac\\pi4)-(1+0)\\).</p><p class=\"ans\">\\(e-1+\\tfrac\\pi4\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "F=e^x+\\tan^{-1}x",
+        "why": ""
+       },
+       {
+        "code": "F(1)=e+\\tfrac\\pi4",
+        "why": "\\(\\tan^{-1}1=\\frac\\pi4\\)."
+       },
+       {
+        "code": "F(0)=1+0",
+        "why": "\\(e^0=1\\)."
+       },
+       {
+        "code": "e-1+\\tfrac\\pi4",
+        "why": "",
+        "watch": [
+         [
+          "\\int",
+          "e-1+\\pi/4"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Forgetting the chain rule in Part 1",
+      "html": "<p>Upper limit \\(x^2\\)? Multiply by \\(2x\\).</p>"
+     },
+     {
+      "title": "Bottom minus top",
+      "html": "<p>It's \\(F(b)-F(a)\\): upper limit first.</p>"
+     },
+     {
+      "title": "Discontinuous integrand",
+      "html": "<p>\\(\\int_{-1}^1\\frac{dx}{x^2}\\) is not \\(-2\\). FTC doesn't apply across \\(x=0\\).</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s54",
+  "slug": "5-4",
+  "num": "§5.4",
+  "unit": "m3",
+  "title": "Indefinite Integrals and the Net Change Theorem",
+  "lede": "The ∫ notation for antiderivatives, and integrating a rate to get a total change.",
+  "blocks": [
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Indefinite integral</span><p>\\(\\int f(x)\\,dx=F(x)+C\\) means \\(F'=f\\). It's a family of functions, not a number.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Net Change Theorem</span>\\[\\int_a^bF'(x)\\,dx=F(b)-F(a)\\]<p class=\"note\">Integrating a rate gives the total change.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Displacement vs distance</span><p>Displacement \\(=\\int_a^bv\\,dt\\). Total distance \\(=\\int_a^b|v|\\,dt\\): split where \\(v=0\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Table</span><p>Same as §4.9: \\(x^n\\), \\(\\frac1x\\), \\(e^x\\), \\(\\sin\\), \\(\\cos\\), \\(\\sec^2\\), \\(\\sec\\tan\\), \\(\\frac1{1+x^2}\\), \\(\\frac1{\\sqrt{1-x^2}}\\).</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p54-1",
+      "source": "Like §5.4 #5–18",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\int\\Big(x^3-\\frac4x+\\sec^2x\\Big)dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Term by term.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle x^3\\to\\tfrac{x^4}4\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle -\\tfrac4x\\to-4\\ln|x|\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\sec^2x\\to\\tan x\\]<p><strong>Step 4.</strong> Indefinite, so add \\(C\\).</p>\\[\\displaystyle +C\\]</div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{x^4}4-4\\ln|x|+\\tan x+C\\).</p><p class=\"ans\">\\(\\tfrac{x^4}{4}-4\\ln|x|+\\tan x+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x^3\\to\\tfrac{x^4}4",
+        "why": ""
+       },
+       {
+        "code": "-\\tfrac4x\\to-4\\ln|x|",
+        "why": ""
+       },
+       {
+        "code": "\\sec^2x\\to\\tan x",
+        "why": ""
+       },
+       {
+        "code": "+C",
+        "why": "Indefinite, so add \\(C\\)."
+       }
+      ]
+     },
+     {
+      "id": "p54-2",
+      "source": "Like §5.4 #5–18",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\int(1+\\sqrt x)^2\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Expand first: \\(1+2\\sqrt x+x\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> There's no chain rule backwards here, so expand.</p>\\[\\displaystyle (1+\\sqrt x)^2=1+2x^{1/2}+x\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle 2x^{1/2}\\to2\\cdot\\tfrac{x^{3/2}}{3/2}=\\tfrac43x^{3/2}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle x+\\tfrac43x^{3/2}+\\tfrac{x^2}2+C\\]</div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x+\\frac43x^{3/2}+\\frac{x^2}2+C\\).</p><p class=\"ans\">\\(x+\\tfrac43x^{3/2}+\\tfrac{x^2}{2}+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "(1+\\sqrt x)^2=1+2x^{1/2}+x",
+        "why": "There's no chain rule backwards here, so expand."
+       },
+       {
+        "code": "2x^{1/2}\\to2\\cdot\\tfrac{x^{3/2}}{3/2}=\\tfrac43x^{3/2}",
+        "why": ""
+       },
+       {
+        "code": "x+\\tfrac43x^{3/2}+\\tfrac{x^2}2+C",
+        "why": ""
+       }
+      ]
+     },
+     {
+      "id": "p54-3",
+      "source": "Like §5.4 #5–18",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\int\\frac{\\sin\\theta}{\\cos^2\\theta}\\,d\\theta\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Rewrite as \\(\\frac{1}{\\cos\\theta}\\cdot\\frac{\\sin\\theta}{\\cos\\theta}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Trig rewrite.</p>\\[\\displaystyle \\frac{\\sin\\theta}{\\cos^2\\theta}=\\sec\\theta\\tan\\theta\\]<p><strong>Step 2.</strong> Because \\((\\sec)'=\\sec\\tan\\).</p>\\[\\displaystyle \\int\\sec\\theta\\tan\\theta=\\sec\\theta+C\\]</div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\int\\sec\\theta\\tan\\theta\\,d\\theta=\\sec\\theta+C\\).</p><p class=\"ans\">\\(\\sec\\theta+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{\\sin\\theta}{\\cos^2\\theta}=\\sec\\theta\\tan\\theta",
+        "why": "Trig rewrite."
+       },
+       {
+        "code": "\\int\\sec\\theta\\tan\\theta=\\sec\\theta+C",
+        "why": "Because \\((\\sec)'=\\sec\\tan\\)."
+       }
+      ]
+     },
+     {
+      "id": "p54-4",
+      "source": "Like §5.4 #35–45",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_{-1}^{2}|x|\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Split at 0, where \\(|x|\\) changes formula.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle |x|=-x\\ (x<0)\\\\\\displaystyle x\\ (x\\ge0)\\end{gathered}\\]<p><strong>Step 2.</strong> A triangle with area \\(\\frac12\\).</p>\\[\\displaystyle \\int_{-1}^0-x\\,dx=\\tfrac12\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\int_0^2x\\,dx=2\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle \\tfrac12+2=\\tfrac52\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=5/2\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\int_{-1}^0(-x)dx+\\int_0^2x\\,dx=\\frac12+2=\\frac52\\).</p><p class=\"ans\">\\(\\tfrac52\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "|x|=-x\\ (x<0),\\ x\\ (x\\ge0)",
+        "why": ""
+       },
+       {
+        "code": "\\int_{-1}^0-x\\,dx=\\tfrac12",
+        "why": "A triangle with area \\(\\frac12\\)."
+       },
+       {
+        "code": "\\int_0^2x\\,dx=2",
+        "why": ""
+       },
+       {
+        "code": "\\tfrac12+2=\\tfrac52",
+        "why": "",
+        "watch": [
+         [
+          "\\int",
+          "5/2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p54-5",
+      "source": "Like §5.4 #59–63",
+      "href": null,
+      "question": "A particle moves with \\(v(t)=t^2-2t-3\\) m/s. Find (a) the displacement and (b) the total distance travelled on \\(2\\le t\\le4\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(v=(t-3)(t+1)\\): negative on \\([2,3)\\), positive on \\((3,4]\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle F(t)=\\tfrac{t^3}3-t^2-3t\\]<p><strong>Step 2.</strong> \\(F(4)=\\frac{64}3-28\\), \\(F(2)=\\frac83-10\\).</p>\\[\\displaystyle F(4)-F(2)=-\\tfrac{20}{3}-(-\\tfrac{22}{3})=\\tfrac23\\]<p><strong>Step 3.</strong> Where it turns around.</p>\\[\\displaystyle v=(t-3)(t+1)=0\\Rightarrow t=3\\]<p><strong>Step 4.</strong> Moving backwards.</p>\\[\\displaystyle \\int_2^3v=F(3)-F(2)=-9+\\tfrac{22}3=-\\tfrac53\\]<p><strong>Step 5.</strong> Moving forwards.</p>\\[\\displaystyle \\int_3^4v=-\\tfrac{20}3+9=\\tfrac73\\]<p><strong>Step 6.</strong> Distance adds the sizes.</p>\\[\\displaystyle \\tfrac53+\\tfrac73=4\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{disp}:\\ 2/3\\)</li><li>\\(\\text{dist}:\\ 4\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(F=\\frac{t^3}3-t^2-3t\\). Displacement \\(F(4)-F(2)=\\frac23\\). \\(\\int_2^3v=-\\frac53\\), \\(\\int_3^4v=\\frac73\\), so the distance is \\(\\frac53+\\frac73=4\\).</p><p class=\"ans\">(a) \\(\\tfrac23\\) m (b) \\(4\\) m</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "F(t)=\\tfrac{t^3}3-t^2-3t",
+        "why": ""
+       },
+       {
+        "code": "F(4)-F(2)=-\\tfrac{20}{3}-(-\\tfrac{22}{3})=\\tfrac23",
+        "why": "\\(F(4)=\\frac{64}3-28\\), \\(F(2)=\\frac83-10\\).",
+        "watch": [
+         [
+          "\\text{disp}",
+          "2/3"
+         ]
+        ]
+       },
+       {
+        "code": "v=(t-3)(t+1)=0\\Rightarrow t=3",
+        "why": "Where it turns around."
+       },
+       {
+        "code": "\\int_2^3v=F(3)-F(2)=-9+\\tfrac{22}3=-\\tfrac53",
+        "why": "Moving backwards."
+       },
+       {
+        "code": "\\int_3^4v=-\\tfrac{20}3+9=\\tfrac73",
+        "why": "Moving forwards."
+       },
+       {
+        "code": "\\tfrac53+\\tfrac73=4",
+        "why": "Distance adds the sizes.",
+        "watch": [
+         [
+          "\\text{dist}",
+          "4"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p54-6",
+      "source": "Like §5.4 #65–70",
+      "href": null,
+      "question": "Water flows into a tank at \\(r(t)=100-4t\\) liters per minute for \\(0\\le t\\le10\\). How much water enters the tank?",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Net change = ∫ rate.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Net Change Theorem.</p>\\[\\displaystyle \\int_0^{10}r(t)\\,dt\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle [100t-2t^2]_0^{10}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle 1000-200=800\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{water}:\\ 800\\text{ L}\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\int_0^{10}(100-4t)dt=[100t-2t^2]_0^{10}=1000-200=800\\) L.</p><p class=\"ans\">\\(800\\) L</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\int_0^{10}r(t)\\,dt",
+        "why": "Net Change Theorem."
+       },
+       {
+        "code": "[100t-2t^2]_0^{10}",
+        "why": ""
+       },
+       {
+        "code": "1000-200=800",
+        "why": "",
+        "watch": [
+         [
+          "\\text{water}",
+          "800\\text{ L}"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Distance = displacement",
+      "html": "<p>Only when \\(v\\) never changes sign. Find where \\(v=0\\) first.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s55",
+  "slug": "5-5",
+  "num": "§5.5",
+  "unit": "m3",
+  "title": "The Substitution Rule",
+  "lede": "u-substitution: the chain rule backwards. Spot the inside function and its derivative.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<ol class=\"steps\"><li>Pick \\(u\\) = the <strong>inside</strong> function (under a power, root, exponent, or in a denominator).</li><li>Find \\(du=u'\\,dx\\). Its pieces should already be in the integral (up to a constant).</li><li>Rewrite everything in \\(u\\) and integrate.</li><li>Put \\(x\\) back. For a definite integral, change the limits to \\(u\\)-values instead.</li></ol>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Substitution</span>\\[\\int f(g(x))g'(x)\\,dx=\\int f(u)\\,du\\]"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Definite version</span>\\[\\int_a^bf(g(x))g'(x)\\,dx=\\int_{g(a)}^{g(b)}f(u)\\,du\\]"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Symmetry</span><p>On \\([-a,a]\\): an <strong>odd</strong> \\(f\\) gives 0; an <strong>even</strong> \\(f\\) gives \\(2\\int_0^af\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Useful results</span><p>\\(\\int\\tan x\\,dx=\\ln|\\sec x|+C\\) · \\(\\int e^{kx}dx=\\frac1ke^{kx}+C\\) · \\(\\int\\cos(kx)dx=\\frac1k\\sin(kx)+C\\)</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice",
+    "id": "practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p55-1",
+      "source": "Like §5.5 #1–40",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\int2x(x^2+1)^5\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(u=x^2+1\\), \\(du=2x\\,dx\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The \\(2x\\,dx\\) is exactly \\(du\\).</p>\\[\\begin{gathered}\\displaystyle u=x^2+1\\\\\\displaystyle du=2x\\,dx\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\int u^5\\,du=\\tfrac{u^6}{6}+C\\]<p><strong>Step 3.</strong> Put \\(x\\) back.</p>\\[\\displaystyle =\\tfrac{(x^2+1)^6}{6}+C\\]</div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\int u^5du=\\frac{u^6}6\\).</p><p class=\"ans\">\\(\\tfrac{(x^2+1)^6}{6}+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=x^2+1,\\ du=2x\\,dx",
+        "why": "The \\(2x\\,dx\\) is exactly \\(du\\)."
+       },
+       {
+        "code": "\\int u^5\\,du=\\tfrac{u^6}{6}+C",
+        "why": ""
+       },
+       {
+        "code": "=\\tfrac{(x^2+1)^6}{6}+C",
+        "why": "Put \\(x\\) back."
+       }
+      ]
+     },
+     {
+      "id": "p55-2",
+      "source": "Like §5.5 #1–40",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\int x^2\\sqrt{x^3+1}\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(u=x^3+1\\), \\(du=3x^2dx\\Rightarrow x^2dx=\\frac13du\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=x^3+1\\\\\\displaystyle du=3x^2dx\\end{gathered}\\]<p><strong>Step 2.</strong> Fix the missing constant.</p>\\[\\displaystyle x^2dx=\\tfrac13du\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\tfrac13\\int u^{1/2}du=\\tfrac13\\cdot\\tfrac23u^{3/2}\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle =\\tfrac29(x^3+1)^{3/2}+C\\]</div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac13\\int u^{1/2}du=\\frac13\\cdot\\frac23u^{3/2}\\).</p><p class=\"ans\">\\(\\tfrac29(x^3+1)^{3/2}+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=x^3+1,\\ du=3x^2dx",
+        "why": ""
+       },
+       {
+        "code": "x^2dx=\\tfrac13du",
+        "why": "Fix the missing constant."
+       },
+       {
+        "code": "\\tfrac13\\int u^{1/2}du=\\tfrac13\\cdot\\tfrac23u^{3/2}",
+        "why": ""
+       },
+       {
+        "code": "=\\tfrac29(x^3+1)^{3/2}+C",
+        "why": ""
+       }
+      ]
+     },
+     {
+      "id": "p55-3",
+      "source": "Like §5.5 #1–40",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\int\\cos(3x)\\,dx\\) and \\(\\displaystyle\\int e^{5x}\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(u=3x\\) and \\(u=5x\\): you divide by the constant.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=3x\\\\\\displaystyle dx=\\tfrac13du\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\tfrac13\\int\\cos u\\,du=\\tfrac13\\sin3x+C\\]<p><strong>Step 3.</strong> Same idea. Check: differentiating gives back \\(e^{5x}\\).</p>\\[\\displaystyle \\int e^{5x}dx=\\tfrac15e^{5x}+C\\]</div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac13\\sin3x+C\\) and \\(\\frac15e^{5x}+C\\).</p><p class=\"ans\">\\(\\tfrac13\\sin3x+C,\\ \\ \\tfrac15e^{5x}+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=3x,\\ dx=\\tfrac13du",
+        "why": ""
+       },
+       {
+        "code": "\\tfrac13\\int\\cos u\\,du=\\tfrac13\\sin3x+C",
+        "why": ""
+       },
+       {
+        "code": "\\int e^{5x}dx=\\tfrac15e^{5x}+C",
+        "why": "Same idea. Check: differentiating gives back \\(e^{5x}\\)."
+       }
+      ]
+     },
+     {
+      "id": "p55-4",
+      "source": "Like §5.5 #1–40",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\int\\frac{\\ln x}{x}\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(u=\\ln x\\), \\(du=\\frac1xdx\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=\\ln x\\\\\\displaystyle du=\\tfrac{dx}{x}\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\int u\\,du=\\tfrac{u^2}2+C\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle =\\tfrac{(\\ln x)^2}{2}+C\\]</div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\int u\\,du=\\frac{u^2}2\\).</p><p class=\"ans\">\\(\\tfrac{(\\ln x)^2}{2}+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=\\ln x,\\ du=\\tfrac{dx}{x}",
+        "why": ""
+       },
+       {
+        "code": "\\int u\\,du=\\tfrac{u^2}2+C",
+        "why": ""
+       },
+       {
+        "code": "=\\tfrac{(\\ln x)^2}{2}+C",
+        "why": ""
+       }
+      ]
+     },
+     {
+      "id": "p55-5",
+      "source": "Like §5.5 #1–40",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\int\\frac{x}{x^2+4}\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(u=x^2+4\\), \\(x\\,dx=\\frac12du\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=x^2+4\\\\\\displaystyle du=2x\\,dx\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\tfrac12\\int\\tfrac1u\\,du=\\tfrac12\\ln|u|+C\\]<p><strong>Step 3.</strong> \\(x^2+4>0\\), so no absolute value is needed.</p>\\[\\displaystyle =\\tfrac12\\ln(x^2+4)+C\\]</div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac12\\int\\frac{du}u=\\frac12\\ln|u|\\).</p><p class=\"ans\">\\(\\tfrac12\\ln(x^2+4)+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=x^2+4,\\ du=2x\\,dx",
+        "why": ""
+       },
+       {
+        "code": "\\tfrac12\\int\\tfrac1u\\,du=\\tfrac12\\ln|u|+C",
+        "why": ""
+       },
+       {
+        "code": "=\\tfrac12\\ln(x^2+4)+C",
+        "why": "\\(x^2+4>0\\), so no absolute value is needed."
+       }
+      ]
+     },
+     {
+      "id": "p55-6",
+      "source": "Like §5.5 #1–40",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\int\\tan x\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\tan x=\\frac{\\sin x}{\\cos x}\\). Let \\(u=\\cos x\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\int\\frac{\\sin x}{\\cos x}dx\\]<p><strong>Step 2.</strong> Note the minus.</p>\\[\\begin{gathered}\\displaystyle u=\\cos x\\\\\\displaystyle du=-\\sin x\\,dx\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle -\\int\\tfrac{du}{u}=-\\ln|\\cos x|+C\\]<p><strong>Step 4.</strong> Log rule: \\(-\\ln a=\\ln\\frac1a\\).</p>\\[\\displaystyle =\\ln|\\sec x|+C\\]</div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(-\\int\\frac{du}{u}=-\\ln|\\cos x|=\\ln|\\sec x|+C\\).</p><p class=\"ans\">\\(\\ln|\\sec x|+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\int\\frac{\\sin x}{\\cos x}dx",
+        "why": ""
+       },
+       {
+        "code": "u=\\cos x,\\ du=-\\sin x\\,dx",
+        "why": "Note the minus."
+       },
+       {
+        "code": "-\\int\\tfrac{du}{u}=-\\ln|\\cos x|+C",
+        "why": ""
+       },
+       {
+        "code": "=\\ln|\\sec x|+C",
+        "why": "Log rule: \\(-\\ln a=\\ln\\frac1a\\)."
+       }
+      ]
+     },
+     {
+      "id": "p55-7",
+      "source": "Like §5.5 #53–73",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_0^1xe^{x^2}\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(u=x^2\\). Change the limits: \\(x=0\\to u=0\\), \\(x=1\\to u=1\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=x^2\\\\\\displaystyle x\\,dx=\\tfrac12du\\end{gathered}\\]<p><strong>Step 2.</strong> New limits, so you never go back to \\(x\\).</p>\\[\\displaystyle x:0\\to1\\ \\Rightarrow\\ u:0\\to1\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\tfrac12[e^u]_0^1=\\tfrac12(e-1)\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=(e-1)/2\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac12\\int_0^1e^u\\,du=\\frac12(e-1)\\).</p><p class=\"ans\">\\(\\tfrac12(e-1)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=x^2,\\ x\\,dx=\\tfrac12du",
+        "why": ""
+       },
+       {
+        "code": "x:0\\to1\\ \\Rightarrow\\ u:0\\to1",
+        "why": "New limits, so you never go back to \\(x\\)."
+       },
+       {
+        "code": "\\tfrac12[e^u]_0^1=\\tfrac12(e-1)",
+        "why": "",
+        "watch": [
+         [
+          "\\int",
+          "(e-1)/2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p55-8",
+      "source": "Like §5.5 #53–73",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_0^{\\pi/4}\\sec^2x\\tan x\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(u=\\tan x\\), \\(du=\\sec^2x\\,dx\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=\\tan x\\\\\\displaystyle du=\\sec^2x\\,dx\\end{gathered}\\]<p><strong>Step 2.</strong> \\(\\tan\\frac\\pi4=1\\).</p>\\[\\displaystyle x:0\\to\\tfrac\\pi4\\Rightarrow u:0\\to1\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\int_0^1u\\,du=\\tfrac12\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=1/2\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Limits \\(0\\to1\\): \\(\\int_0^1u\\,du=\\frac12\\).</p><p class=\"ans\">\\(\\tfrac12\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=\\tan x,\\ du=\\sec^2x\\,dx",
+        "why": ""
+       },
+       {
+        "code": "x:0\\to\\tfrac\\pi4\\Rightarrow u:0\\to1",
+        "why": "\\(\\tan\\frac\\pi4=1\\)."
+       },
+       {
+        "code": "\\int_0^1u\\,du=\\tfrac12",
+        "why": "",
+        "watch": [
+         [
+          "\\int",
+          "1/2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p55-9",
+      "source": "Like §5.5 #75–80",
+      "href": null,
+      "question": "Evaluate \\(\\displaystyle\\int_{-2}^{2}x^3\\cos x\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Is the integrand odd or even?</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\cos\\) is even, \\(x^3\\) is odd: the product is odd.</p>\\[\\displaystyle f(-x)=(-x)^3\\cos(-x)=-x^3\\cos x\\]<p><strong>Step 2.</strong> The positive and negative areas cancel.</p>\\[\\displaystyle \\int_{-a}^a\\text{odd}=0\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=0\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\((-x)^3\\cos(-x)=-x^3\\cos x\\): odd, on a symmetric interval, so the integral is \\(0\\).</p><p class=\"ans\">\\(0\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(-x)=(-x)^3\\cos(-x)=-x^3\\cos x",
+        "why": "\\(\\cos\\) is even, \\(x^3\\) is odd: the product is odd."
+       },
+       {
+        "code": "\\int_{-a}^a\\text{odd}=0",
+        "why": "The positive and negative areas cancel.",
+        "watch": [
+         [
+          "\\int",
+          "0"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Leaving x in the u-integral",
+      "html": "<p>Everything must turn into \\(u\\), including \\(dx\\). If an \\(x\\) is left over, pick a different \\(u\\).</p>"
+     },
+     {
+      "title": "Old limits after substituting",
+      "html": "<p>For definite integrals, either change the limits to \\(u\\)-values or substitute \\(x\\) back. Don't mix them.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "m3p",
+  "slug": "midterm-3-practice",
+  "num": "Midterm 3 · practice",
+  "title": "Midterm 3 practice exam",
+  "lede": "14 problems, 62 points, about 2 hours, no calculator. §4.3–4.9 and §5.1–5.5, shaped like your midterms.",
+  "unit": "m3",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<ol class=\"steps\"><li>Clear 2 hours. Paper and pencil, no notes, no calculator.</li><li>Do every problem before opening any answer.</li><li>Check with <strong>Full solution</strong> and tick <strong>I can do this</strong> on each one you got fully right. The score bar adds up your points. For a miss, use <strong>Step through it like a debugger</strong> to find the exact line.</li></ol>"
+   },
+   {
+    "type": "examscore",
+    "items": [
+     {
+      "id": "m3-1",
+      "points": 6
+     },
+     {
+      "id": "m3-2",
+      "points": 4
+     },
+     {
+      "id": "m3-3",
+      "points": 4
+     },
+     {
+      "id": "m3-4",
+      "points": 6
+     },
+     {
+      "id": "m3-5",
+      "points": 6
+     },
+     {
+      "id": "m3-6",
+      "points": 3
+     },
+     {
+      "id": "m3-7",
+      "points": 4
+     },
+     {
+      "id": "m3-8",
+      "points": 3
+     },
+     {
+      "id": "m3-9",
+      "points": 4
+     },
+     {
+      "id": "m3-10",
+      "points": 4
+     },
+     {
+      "id": "m3-11",
+      "points": 5
+     },
+     {
+      "id": "m3-12",
+      "points": 4
+     },
+     {
+      "id": "m3-13",
+      "points": 4
+     },
+     {
+      "id": "m3-14",
+      "points": 5
+     }
+    ],
+    "total": 62
+   },
+   {
+    "type": "heading",
+    "text": "Part A · Shape, limits, sketching, optimization (§4.3–4.7)"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "m3-1",
+      "source": "§4.3 · 6 pts",
+      "href": null,
+      "question": "<b>1.</b> (6) For \\(f(x)=x^3-3x^2-9x+5\\): intervals of increase/decrease, local max/min values, concavity and inflection point.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f'=3(x-3)(x+1)\\); \\(f''=6x-6\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Factor.</p>\\[\\displaystyle f'(x)=3x^2-6x-9=3(x-3)(x+1)\\]<p><strong>Step 2.</strong> \\(f'=0\\).</p>\\[\\displaystyle \\text{CN: }x=-1,\\ 3\\]<p><strong>Step 3.</strong> Test one point in each interval.</p>\\[\\displaystyle \\begin{gathered}f'(-2)=15>0,\\ \\ f'(0)=-9<0\\\\f'(4)=15>0\\end{gathered}\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle \\text{inc }(-\\infty,-1)\\cup(3,\\infty),\\ \\text{dec }(-1,3)\\]<p><strong>Step 5.</strong> \\(+\\to-\\) max, \\(-\\to+\\) min. Plug into \\(f\\).</p>\\[\\displaystyle \\text{max }f(-1)=10,\\ \\text{min }f(3)=-22\\]<p><strong>Step 6.</strong></p>\\[\\displaystyle f''(x)=6x-6=0\\Rightarrow x=1\\]<p><strong>Step 7.</strong> \\(f''(0)<0\\), \\(f''(2)>0\\); \\(f(1)=-6\\).</p>\\[\\displaystyle \\text{CD }(-\\infty,1),\\ \\text{CU }(1,\\infty),\\ \\text{IP }(1,-6)\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{inc }(-\\infty,-1),(3,\\infty);\\ \\text{dec }(-1,3)\\)</li><li>\\(\\max f(-1)=10,\\ \\min f(3)=-22\\)</li><li>\\(\\text{CD }(-\\infty,1),\\ \\text{CU }(1,\\infty),\\ \\text{IP }(1,-6)\\)</li></ul></div>"
+       },
+       {
+        "label": "Graph sketch",
+        "html": "<svg class=\"sketch\" viewBox=\"0 0 360 284\" role=\"img\" aria-label=\"Graph sketch. max (−1, 10); min (3, −22); IP (1, −6)\">\n<line x1=\"30.0\" y1=\"10\" x2=\"30.0\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"30.0\" y=\"94.3\" class=\"sk-tick\" text-anchor=\"middle\">−3</text>\n<line x1=\"69.0\" y1=\"10\" x2=\"69.0\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"69.0\" y=\"94.3\" class=\"sk-tick\" text-anchor=\"middle\">−2</text>\n<line x1=\"108.0\" y1=\"10\" x2=\"108.0\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"108.0\" y=\"94.3\" class=\"sk-tick\" text-anchor=\"middle\">−1</text>\n<line x1=\"147.1\" y1=\"10\" x2=\"147.1\" y2=\"218\" class=\"sk-grid\"/>\n<line x1=\"186.1\" y1=\"10\" x2=\"186.1\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"186.1\" y=\"94.3\" class=\"sk-tick\" text-anchor=\"middle\">1</text>\n<line x1=\"225.1\" y1=\"10\" x2=\"225.1\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"225.1\" y=\"94.3\" class=\"sk-tick\" text-anchor=\"middle\">2</text>\n<line x1=\"264.1\" y1=\"10\" x2=\"264.1\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"264.1\" y=\"94.3\" class=\"sk-tick\" text-anchor=\"middle\">3</text>\n<line x1=\"303.2\" y1=\"10\" x2=\"303.2\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"303.2\" y=\"94.3\" class=\"sk-tick\" text-anchor=\"middle\">4</text>\n<line x1=\"342.2\" y1=\"10\" x2=\"342.2\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"342.2\" y=\"94.3\" class=\"sk-tick\" text-anchor=\"middle\">5</text>\n<line x1=\"30\" y1=\"218.0\" x2=\"350\" y2=\"218.0\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"222.0\" class=\"sk-tick\" text-anchor=\"end\">−30</text>\n<line x1=\"30\" y1=\"195.4\" x2=\"350\" y2=\"195.4\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"199.4\" class=\"sk-tick\" text-anchor=\"end\">−25</text>\n<line x1=\"30\" y1=\"172.8\" x2=\"350\" y2=\"172.8\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"176.8\" class=\"sk-tick\" text-anchor=\"end\">−20</text>\n<line x1=\"30\" y1=\"150.2\" x2=\"350\" y2=\"150.2\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"154.2\" class=\"sk-tick\" text-anchor=\"end\">−15</text>\n<line x1=\"30\" y1=\"127.6\" x2=\"350\" y2=\"127.6\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"131.6\" class=\"sk-tick\" text-anchor=\"end\">−10</text>\n<line x1=\"30\" y1=\"105.0\" x2=\"350\" y2=\"105.0\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"109.0\" class=\"sk-tick\" text-anchor=\"end\">−5</text>\n<line x1=\"30\" y1=\"82.3\" x2=\"350\" y2=\"82.3\" class=\"sk-grid\"/>\n<line x1=\"30\" y1=\"59.7\" x2=\"350\" y2=\"59.7\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"63.7\" class=\"sk-tick\" text-anchor=\"end\">5</text>\n<line x1=\"30\" y1=\"37.1\" x2=\"350\" y2=\"37.1\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"41.1\" class=\"sk-tick\" text-anchor=\"end\">10</text>\n<line x1=\"30\" y1=\"14.5\" x2=\"350\" y2=\"14.5\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"18.5\" class=\"sk-tick\" text-anchor=\"end\">15</text>\n<line x1=\"30\" y1=\"82.3\" x2=\"350\" y2=\"82.3\" class=\"sk-axis\"/>\n<line x1=\"147.1\" y1=\"10\" x2=\"147.1\" y2=\"218\" class=\"sk-axis\"/>\n<defs><clipPath id=\"clip-m3-1\"><rect x=\"30\" y=\"10\" width=\"320\" height=\"208\"/></clipPath></defs>\n<g clip-path=\"url(#clip-m3-1)\">\n<polyline points=\"30.0,181.8 30.4,180.3 30.7,178.9 31.1,177.4 31.4,176.0 31.8,174.5 32.1,173.1 32.5,171.7 32.8,170.2 33.2,168.8 33.6,167.4 33.9,166.1 34.3,164.7 34.6,163.3 35.0,161.9 35.3,160.6 35.7,159.2 36.0,157.9 36.4,156.6 36.8,155.2 37.1,153.9 37.5,152.6 37.8,151.3 38.2,150.1 38.5,148.8 38.9,147.5 39.2,146.2 39.6,145.0 40.0,143.8 40.3,142.5 40.7,141.3 41.0,140.1 41.4,138.9 41.7,137.7 42.1,136.5 42.4,135.3 42.8,134.1 43.2,132.9 43.5,131.8 43.9,130.6 44.2,129.5 44.6,128.4 44.9,127.2 45.3,126.1 45.6,125.0 46.0,123.9 46.4,122.8 46.7,121.7 47.1,120.6 47.4,119.6 47.8,118.5 48.1,117.4 48.5,116.4 48.8,115.4 49.2,114.3 49.6,113.3 49.9,112.3 50.3,111.3 50.6,110.3 51.0,109.3 51.3,108.3 51.7,107.3 52.0,106.4 52.4,105.4 52.8,104.5 53.1,103.5 53.5,102.6 53.8,101.6 54.2,100.7 54.5,99.8 54.9,98.9 55.2,98.0 55.6,97.1 56.0,96.2 56.3,95.4 56.7,94.5 57.0,93.6 57.4,92.8 57.7,91.9 58.1,91.1 58.4,90.3 58.8,89.4 59.2,88.6 59.5,87.8 59.9,87.0 60.2,86.2 60.6,85.4 60.9,84.6 61.3,83.9 61.6,83.1 62.0,82.3 62.4,81.6 62.7,80.8 63.1,80.1 63.4,79.4 63.8,78.6 64.1,77.9 64.5,77.2 64.8,76.5 65.2,75.8 65.6,75.1 65.9,74.5 66.3,73.8 66.6,73.1 67.0,72.5 67.3,71.8 67.7,71.2 68.0,70.5 68.4,69.9 68.8,69.3 69.1,68.6 69.5,68.0 69.8,67.4 70.2,66.8 70.5,66.2 70.9,65.6 71.2,65.1 71.6,64.5 72.0,63.9 72.3,63.4 72.7,62.8 73.0,62.3 73.4,61.7 73.7,61.2 74.1,60.7 74.4,60.1 74.8,59.6 75.2,59.1 75.5,58.6 75.9,58.1 76.2,57.6 76.6,57.1 76.9,56.7 77.3,56.2 77.6,55.7 78.0,55.3 78.4,54.8 78.7,54.4 79.1,53.9 79.4,53.5 79.8,53.1 80.1,52.7 80.5,52.3 80.8,51.8 81.2,51.4 81.6,51.0 81.9,50.7 82.3,50.3 82.6,49.9 83.0,49.5 83.3,49.2 83.7,48.8 84.0,48.4 84.4,48.1 84.8,47.8 85.1,47.4 85.5,47.1 85.8,46.8 86.2,46.4 86.5,46.1 86.9,45.8 87.2,45.5 87.6,45.2 88.0,44.9 88.3,44.7 88.7,44.4 89.0,44.1 89.4,43.8 89.7,43.6 90.1,43.3 90.4,43.1 90.8,42.8 91.2,42.6 91.5,42.3 91.9,42.1 92.2,41.9 92.6,41.7 92.9,41.5 93.3,41.3 93.6,41.1 94.0,40.9 94.4,40.7 94.7,40.5 95.1,40.3 95.4,40.1 95.8,40.0 96.1,39.8 96.5,39.6 96.8,39.5 97.2,39.3 97.6,39.2 97.9,39.0 98.3,38.9 98.6,38.8 99.0,38.7 99.3,38.5 99.7,38.4 100.0,38.3 100.4,38.2 100.8,38.1 101.1,38.0 101.5,37.9 101.8,37.8 102.2,37.8 102.5,37.7 102.9,37.6 103.2,37.6 103.6,37.5 104.0,37.4 104.3,37.4 104.7,37.3 105.0,37.3 105.4,37.3 105.7,37.2 106.1,37.2 106.4,37.2 106.8,37.2 107.2,37.1 107.5,37.1 107.9,37.1\" class=\"sk-curve sk-up\"/>\n<polyline points=\"107.9,37.1 108.2,37.1 108.6,37.1 108.9,37.1 109.3,37.2 109.6,37.2 110.0,37.2 110.4,37.2 110.7,37.3 111.1,37.3 111.4,37.3 111.8,37.4 112.1,37.4 112.5,37.5 112.8,37.5 113.2,37.6 113.6,37.7 113.9,37.7 114.3,37.8 114.6,37.9 115.0,38.0 115.3,38.0 115.7,38.1 116.0,38.2 116.4,38.3 116.8,38.4 117.1,38.5 117.5,38.6 117.8,38.8 118.2,38.9 118.5,39.0 118.9,39.1 119.2,39.3 119.6,39.4 120.0,39.5 120.3,39.7 120.7,39.8 121.0,40.0 121.4,40.1 121.7,40.3 122.1,40.4 122.4,40.6 122.8,40.8 123.2,40.9 123.5,41.1 123.9,41.3 124.2,41.5 124.6,41.7 124.9,41.8 125.3,42.0 125.6,42.2 126.0,42.4 126.4,42.6 126.7,42.8 127.1,43.1 127.4,43.3 127.8,43.5 128.1,43.7 128.5,43.9 128.8,44.2 129.2,44.4 129.6,44.6 129.9,44.9 130.3,45.1 130.6,45.3 131.0,45.6 131.3,45.8 131.7,46.1 132.0,46.3 132.4,46.6 132.8,46.9 133.1,47.1 133.5,47.4 133.8,47.7 134.2,47.9 134.5,48.2 134.9,48.5 135.2,48.8 135.6,49.1 136.0,49.4 136.3,49.6 136.7,49.9 137.0,50.2 137.4,50.5 137.7,50.8 138.1,51.1 138.4,51.5 138.8,51.8 139.2,52.1 139.5,52.4 139.9,52.7 140.2,53.0 140.6,53.4 140.9,53.7 141.3,54.0 141.6,54.4 142.0,54.7 142.4,55.0 142.7,55.4 143.1,55.7 143.4,56.1 143.8,56.4 144.1,56.8 144.5,57.1 144.8,57.5 145.2,57.8 145.6,58.2 145.9,58.5 146.3,58.9 146.6,59.3 147.0,59.6 147.3,60.0 147.7,60.4 148.0,60.8 148.4,61.1 148.8,61.5 149.1,61.9 149.5,62.3 149.8,62.7 150.2,63.1 150.5,63.5 150.9,63.8 151.2,64.2 151.6,64.6 152.0,65.0 152.3,65.4 152.7,65.8 153.0,66.2 153.4,66.6 153.7,67.1 154.1,67.5 154.4,67.9 154.8,68.3 155.2,68.7 155.5,69.1 155.9,69.5 156.2,70.0 156.6,70.4 156.9,70.8 157.3,71.2 157.6,71.7 158.0,72.1 158.4,72.5 158.7,73.0 159.1,73.4 159.4,73.8 159.8,74.3 160.1,74.7 160.5,75.1 160.8,75.6 161.2,76.0 161.6,76.5 161.9,76.9 162.3,77.4 162.6,77.8 163.0,78.3 163.3,78.7 163.7,79.2 164.0,79.6 164.4,80.1 164.8,80.5 165.1,81.0 165.5,81.5 165.8,81.9 166.2,82.4 166.5,82.8 166.9,83.3 167.2,83.8 167.6,84.2 168.0,84.7 168.3,85.2 168.7,85.6 169.0,86.1 169.4,86.6 169.7,87.1 170.1,87.5 170.4,88.0 170.8,88.5 171.2,89.0 171.5,89.4 171.9,89.9 172.2,90.4 172.6,90.9 172.9,91.3 173.3,91.8 173.6,92.3 174.0,92.8 174.4,93.3 174.7,93.8 175.1,94.2 175.4,94.7 175.8,95.2 176.1,95.7 176.5,96.2 176.8,96.7 177.2,97.2 177.6,97.6 177.9,98.1 178.3,98.6 178.6,99.1 179.0,99.6 179.3,100.1 179.7,100.6 180.0,101.1 180.4,101.6 180.8,102.1 181.1,102.6 181.5,103.0 181.8,103.5 182.2,104.0 182.5,104.5 182.9,105.0 183.2,105.5 183.6,106.0 184.0,106.5 184.3,107.0 184.7,107.5 185.0,108.0 185.4,108.5 185.7,109.0 186.1,109.5 186.4,110.0 186.8,110.5 187.2,110.9 187.5,111.4 187.9,111.9 188.2,112.4 188.6,112.9 188.9,113.4 189.3,113.9 189.6,114.4 190.0,114.9 190.4,115.4 190.7,115.9 191.1,116.4 191.4,116.9 191.8,117.4 192.1,117.9 192.5,118.3 192.8,118.8 193.2,119.3 193.6,119.8 193.9,120.3 194.3,120.8 194.6,121.3 195.0,121.8 195.3,122.3 195.7,122.7 196.0,123.2 196.4,123.7 196.8,124.2 197.1,124.7 197.5,125.2 197.8,125.7 198.2,126.1 198.5,126.6 198.9,127.1 199.2,127.6 199.6,128.1 200.0,128.5 200.3,129.0 200.7,129.5 201.0,130.0 201.4,130.5 201.7,130.9 202.1,131.4 202.4,131.9 202.8,132.3 203.2,132.8 203.5,133.3 203.9,133.8 204.2,134.2 204.6,134.7 204.9,135.2 205.3,135.6 205.6,136.1 206.0,136.6 206.4,137.0 206.7,137.5 207.1,137.9 207.4,138.4 207.8,138.8 208.1,139.3 208.5,139.8 208.8,140.2 209.2,140.7 209.6,141.1 209.9,141.6 210.3,142.0 210.6,142.5 211.0,142.9 211.3,143.3 211.7,143.8 212.0,144.2 212.4,144.7 212.8,145.1 213.1,145.5 213.5,146.0 213.8,146.4 214.2,146.8 214.5,147.3 214.9,147.7 215.2,148.1 215.6,148.5 216.0,149.0 216.3,149.4 216.7,149.8 217.0,150.2 217.4,150.6 217.7,151.1 218.1,151.5 218.4,151.9 218.8,152.3 219.2,152.7 219.5,153.1 219.9,153.5 220.2,153.9 220.6,154.3 220.9,154.7 221.3,155.1 221.6,155.5 222.0,155.9 222.4,156.3 222.7,156.7 223.1,157.0 223.4,157.4 223.8,157.8 224.1,158.2 224.5,158.6 224.8,158.9 225.2,159.3 225.6,159.7 225.9,160.0 226.3,160.4 226.6,160.8 227.0,161.1 227.3,161.5 227.7,161.8 228.0,162.2 228.4,162.5 228.8,162.9 229.1,163.2 229.5,163.6 229.8,163.9 230.2,164.3 230.5,164.6 230.9,164.9 231.2,165.3 231.6,165.6 232.0,165.9 232.3,166.2 232.7,166.5 233.0,166.9 233.4,167.2 233.7,167.5 234.1,167.8 234.4,168.1 234.8,168.4 235.2,168.7 235.5,169.0 235.9,169.3 236.2,169.6 236.6,169.9 236.9,170.2 237.3,170.4 237.6,170.7 238.0,171.0 238.4,171.3 238.7,171.6 239.1,171.8 239.4,172.1 239.8,172.3 240.1,172.6 240.5,172.9 240.8,173.1 241.2,173.4 241.6,173.6 241.9,173.9 242.3,174.1 242.6,174.3 243.0,174.6 243.3,174.8 243.7,175.0 244.0,175.2 244.4,175.5 244.8,175.7 245.1,175.9 245.5,176.1 245.8,176.3 246.2,176.5 246.5,176.7 246.9,176.9 247.2,177.1 247.6,177.3 248.0,177.5 248.3,177.7 248.7,177.8 249.0,178.0 249.4,178.2 249.7,178.4 250.1,178.5 250.4,178.7 250.8,178.8 251.2,179.0 251.5,179.1 251.9,179.3 252.2,179.4 252.6,179.6 252.9,179.7 253.3,179.8 253.6,179.9 254.0,180.1 254.4,180.2 254.7,180.3 255.1,180.4 255.4,180.5 255.8,180.6 256.1,180.7 256.5,180.8 256.8,180.9 257.2,181.0 257.6,181.1 257.9,181.2 258.3,181.2 258.6,181.3 259.0,181.4 259.3,181.4 259.7,181.5 260.0,181.5 260.4,181.6 260.8,181.6 261.1,181.7 261.5,181.7 261.8,181.7 262.2,181.8 262.5,181.8 262.9,181.8 263.2,181.8 263.6,181.8 264.0,181.8\" class=\"sk-curve sk-down\"/>\n<polyline points=\"264.0,181.8 264.3,181.8 264.7,181.8 265.0,181.8 265.4,181.8 265.7,181.8 266.1,181.8 266.4,181.7 266.8,181.7 267.2,181.7 267.5,181.6 267.9,181.6 268.2,181.5 268.6,181.5 268.9,181.4 269.3,181.3 269.6,181.3 270.0,181.2 270.4,181.1 270.7,181.0 271.1,180.9 271.4,180.9 271.8,180.8 272.1,180.7 272.5,180.5 272.8,180.4 273.2,180.3 273.6,180.2 273.9,180.1 274.3,179.9 274.6,179.8 275.0,179.6 275.3,179.5 275.7,179.3 276.0,179.2 276.4,179.0 276.8,178.8 277.1,178.7 277.5,178.5 277.8,178.3 278.2,178.1 278.5,177.9 278.9,177.7 279.2,177.5 279.6,177.3 280.0,177.1 280.3,176.8 280.7,176.6 281.0,176.4 281.4,176.1 281.7,175.9 282.1,175.7 282.4,175.4 282.8,175.1 283.2,174.9 283.5,174.6 283.9,174.3 284.2,174.0 284.6,173.7 284.9,173.4 285.3,173.1 285.6,172.8 286.0,172.5 286.4,172.2 286.7,171.9 287.1,171.6 287.4,171.2 287.8,170.9 288.1,170.5 288.5,170.2 288.8,169.8 289.2,169.4 289.6,169.1 289.9,168.7 290.3,168.3 290.6,167.9 291.0,167.5 291.3,167.1 291.7,166.7 292.0,166.3 292.4,165.9 292.8,165.5 293.1,165.0 293.5,164.6 293.8,164.1 294.2,163.7 294.5,163.2 294.9,162.8 295.2,162.3 295.6,161.8 296.0,161.4 296.3,160.9 296.7,160.4 297.0,159.9 297.4,159.4 297.7,158.8 298.1,158.3 298.4,157.8 298.8,157.3 299.2,156.7 299.5,156.2 299.9,155.6 300.2,155.1 300.6,154.5 300.9,153.9 301.3,153.4 301.6,152.8 302.0,152.2 302.4,151.6 302.7,151.0 303.1,150.4 303.4,149.7 303.8,149.1 304.1,148.5 304.5,147.8 304.8,147.2 305.2,146.5 305.6,145.9 305.9,145.2 306.3,144.5 306.6,143.9 307.0,143.2 307.3,142.5 307.7,141.8 308.0,141.1 308.4,140.3 308.8,139.6 309.1,138.9 309.5,138.2 309.8,137.4 310.2,136.7 310.5,135.9 310.9,135.1 311.2,134.4 311.6,133.6 312.0,132.8 312.3,132.0 312.7,131.2 313.0,130.4 313.4,129.6 313.7,128.7 314.1,127.9 314.4,127.1 314.8,126.2 315.2,125.4 315.5,124.5 315.9,123.6 316.2,122.8 316.6,121.9 316.9,121.0 317.3,120.1 317.6,119.2 318.0,118.3 318.4,117.4 318.7,116.4 319.1,115.5 319.4,114.5 319.8,113.6 320.1,112.6 320.5,111.7 320.8,110.7 321.2,109.7 321.6,108.7 321.9,107.7 322.3,106.7 322.6,105.7 323.0,104.7 323.3,103.6 323.7,102.6 324.0,101.6 324.4,100.5 324.8,99.4 325.1,98.4 325.5,97.3 325.8,96.2 326.2,95.1 326.5,94.0 326.9,92.9 327.2,91.8 327.6,90.7 328.0,89.5 328.3,88.4 328.7,87.2 329.0,86.1 329.4,84.9 329.7,83.7 330.1,82.5 330.4,81.3 330.8,80.1 331.2,78.9 331.5,77.7 331.9,76.5 332.2,75.3 332.6,74.0 332.9,72.8 333.3,71.5 333.6,70.2 334.0,69.0 334.4,67.7 334.7,66.4 335.1,65.1 335.4,63.8 335.8,62.5 336.1,61.1 336.5,59.8 336.8,58.4 337.2,57.1 337.6,55.7 337.9,54.4 338.3,53.0 338.6,51.6 339.0,50.2 339.3,48.8 339.7,47.4 340.0,45.9 340.4,44.5 340.8,43.1 341.1,41.6 341.5,40.2 341.8,38.7 342.2,37.2 342.5,35.7 342.9,34.2 343.2,32.7 343.6,31.2 344.0,29.7 344.3,28.1 344.7,26.6 345.0,25.1 345.4,23.5 345.7,21.9 346.1,20.3 346.4,18.8 346.8,17.2 347.2,15.6 347.5,13.9 347.9,12.3 348.2,10.7 348.6,9.0 348.9,7.4 349.3,5.7 349.6,4.0 350.0,2.4\" class=\"sk-curve sk-up\"/>\n</g>\n<circle cx=\"108.0\" cy=\"37.1\" r=\"4.5\" class=\"sk-ext\"/>\n<text x=\"108.0\" y=\"28.1\" class=\"sk-lab sk-lab-max\" text-anchor=\"middle\">max (−1, 10)</text>\n<circle cx=\"264.1\" cy=\"181.8\" r=\"4.5\" class=\"sk-ext\"/>\n<text x=\"264.1\" y=\"198.8\" class=\"sk-lab sk-lab-min\" text-anchor=\"middle\">min (3, −22)</text>\n<circle cx=\"186.1\" cy=\"109.5\" r=\"4\" class=\"sk-ip\"/>\n<text x=\"194.1\" y=\"113.5\" class=\"sk-lab sk-lab-ip\" text-anchor=\"start\">IP (1, −6)</text>\n<text x=\"25\" y=\"248\" class=\"sk-strip-name\" text-anchor=\"end\">f′</text>\n<rect x=\"30.0\" y=\"234\" width=\"78.4\" height=\"17\" rx=\"3\" class=\"sk-pos\"/>\n<text x=\"69.2\" y=\"246.5\" class=\"sk-strip-t\" text-anchor=\"middle\">+ ↗</text>\n<rect x=\"108.4\" y=\"234\" width=\"156.3\" height=\"17\" rx=\"3\" class=\"sk-neg\"/>\n<text x=\"186.5\" y=\"246.5\" class=\"sk-strip-t\" text-anchor=\"middle\">− ↘</text>\n<rect x=\"264.7\" y=\"234\" width=\"85.3\" height=\"17\" rx=\"3\" class=\"sk-pos\"/>\n<text x=\"307.3\" y=\"246.5\" class=\"sk-strip-t\" text-anchor=\"middle\">+ ↗</text>\n<text x=\"25\" y=\"270\" class=\"sk-strip-name\" text-anchor=\"end\">f″</text>\n<rect x=\"30.0\" y=\"256\" width=\"156.3\" height=\"17\" rx=\"3\" class=\"sk-neg\"/>\n<text x=\"108.1\" y=\"268.5\" class=\"sk-strip-t\" text-anchor=\"middle\">− ∩</text>\n<rect x=\"186.3\" y=\"256\" width=\"163.7\" height=\"17\" rx=\"3\" class=\"sk-pos\"/>\n<text x=\"268.1\" y=\"268.5\" class=\"sk-strip-t\" text-anchor=\"middle\">+ ∪</text>\n</svg>\n<p class=\"sk-key\"><span class=\"k-up\">green</span> = rising (f′ &gt; 0), <span class=\"k-down\">red</span> = falling (f′ &lt; 0), <span class=\"k-ext\">●</span> max/min, <span class=\"k-ip\">○</span> inflection point (f″ changes sign), <span class=\"k-asym\">dashed</span> = asymptote. The strips under the graph are your sign maps: ∪ concave up, ∩ concave down.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'=3(x-3)(x+1)\\): increasing on \\((-\\infty,-1)\\) and \\((3,\\infty)\\), decreasing on \\((-1,3)\\); local max \\(f(-1)=10\\), local min \\(f(3)=-22\\). \\(f''=6x-6\\): concave down on \\((-\\infty,1)\\), up on \\((1,\\infty)\\), inflection point \\((1,-6)\\).</p><p class=\"ans\">max \\(10\\) at \\(x=-1\\); min \\(-22\\) at \\(x=3\\); IP \\((1,-6)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f'(x)=3x^2-6x-9=3(x-3)(x+1)",
+        "why": "Factor."
+       },
+       {
+        "code": "\\text{CN: }x=-1,\\ 3",
+        "why": "\\(f'=0\\)."
+       },
+       {
+        "code": "\\begin{gathered}f'(-2)=15>0,\\ \\ f'(0)=-9<0\\\\f'(4)=15>0\\end{gathered}",
+        "why": "Test one point in each interval."
+       },
+       {
+        "code": "\\text{inc }(-\\infty,-1)\\cup(3,\\infty),\\ \\text{dec }(-1,3)",
+        "why": ""
+       },
+       {
+        "code": "\\text{max }f(-1)=10,\\ \\text{min }f(3)=-22",
+        "why": "\\(+\\to-\\) max, \\(-\\to+\\) min. Plug into \\(f\\).",
+        "watch": [
+         [
+          "\\max",
+          "10"
+         ],
+         [
+          "\\min",
+          "-22"
+         ]
+        ]
+       },
+       {
+        "code": "f''(x)=6x-6=0\\Rightarrow x=1",
+        "why": ""
+       },
+       {
+        "code": "\\text{CD }(-\\infty,1),\\ \\text{CU }(1,\\infty),\\ \\text{IP }(1,-6)",
+        "why": "\\(f''(0)<0\\), \\(f''(2)>0\\); \\(f(1)=-6\\).",
+        "watch": [
+         [
+          "\\text{IP}",
+          "(1,-6)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "m3-2",
+      "source": "§4.4 · 4 pts",
+      "href": null,
+      "question": "<b>2.</b> (4) Find \\(\\displaystyle\\lim_{x\\to0}\\frac{x-\\sin x}{x^3}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>0/0 three times in a row. Keep going.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Plug in first.</p>\\[\\displaystyle \\frac{0-0}{0}=\\frac00\\]<p><strong>Step 2.</strong> l'H: still \\(\\frac00\\).</p>\\[\\displaystyle \\frac{1-\\cos x}{3x^2}\\]<p><strong>Step 3.</strong> l'H again: still \\(\\frac00\\).</p>\\[\\displaystyle \\frac{\\sin x}{6x}\\]<p><strong>Step 4.</strong> l'H once more.</p>\\[\\displaystyle \\frac{\\cos x}{6}\\to\\frac16\\]<p><strong>What you found:</strong></p><ul><li>\\(\\tfrac16\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Three rounds of l'Hospital: \\(\\frac{1-\\cos x}{3x^2}\\to\\frac{\\sin x}{6x}\\to\\frac{\\cos x}6=\\frac16\\).</p><p class=\"ans\">\\(\\dfrac16\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{0-0}{0}=\\frac00",
+        "why": "Plug in first."
+       },
+       {
+        "code": "\\frac{1-\\cos x}{3x^2}",
+        "why": "l'H: still \\(\\frac00\\)."
+       },
+       {
+        "code": "\\frac{\\sin x}{6x}",
+        "why": "l'H again: still \\(\\frac00\\)."
+       },
+       {
+        "code": "\\frac{\\cos x}{6}\\to\\frac16",
+        "why": "l'H once more.",
+        "watch": [
+         [
+          "\\lim",
+          "\\tfrac16"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "m3-3",
+      "source": "§4.4 · 4 pts",
+      "href": null,
+      "question": "<b>3.</b> (4) Find \\(\\displaystyle\\lim_{x\\to\\infty}\\Big(1+\\frac3x\\Big)^{2x}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(1^\\infty\\): take \\(\\ln\\), find the limit \\(L\\), answer \\(e^L\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Take \\(\\ln\\); rewrite \\(\\infty\\cdot0\\) as a fraction: \\(\\frac00\\).</p>\\[\\displaystyle \\ln y=2x\\ln\\!\\Big(1+\\frac3x\\Big)=\\frac{2\\ln(1+3/x)}{1/x}\\]<p><strong>Step 2.</strong> l'Hospital; the \\(-\\frac1{x^2}\\) cancel.</p>\\[\\displaystyle \\frac{2\\cdot\\frac{-3/x^2}{1+3/x}}{-1/x^2}=\\frac{6}{1+3/x}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\to6\\]<p><strong>Step 4.</strong> Undo the \\(\\ln\\).</p>\\[\\displaystyle y\\to e^6\\]<p><strong>What you found:</strong></p><ul><li>\\(e^6\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\ln y=\\frac{2\\ln(1+3/x)}{1/x}\\to6\\), so the limit is \\(e^6\\).</p><p class=\"ans\">\\(e^6\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\ln y=2x\\ln\\!\\Big(1+\\frac3x\\Big)=\\frac{2\\ln(1+3/x)}{1/x}",
+        "why": "Take \\(\\ln\\); rewrite \\(\\infty\\cdot0\\) as a fraction: \\(\\frac00\\)."
+       },
+       {
+        "code": "\\frac{2\\cdot\\frac{-3/x^2}{1+3/x}}{-1/x^2}=\\frac{6}{1+3/x}",
+        "why": "l'Hospital; the \\(-\\frac1{x^2}\\) cancel."
+       },
+       {
+        "code": "\\to6",
+        "why": ""
+       },
+       {
+        "code": "y\\to e^6",
+        "why": "Undo the \\(\\ln\\).",
+        "watch": [
+         [
+          "\\lim",
+          "e^6"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "m3-4",
+      "source": "§4.5 · 6 pts",
+      "href": null,
+      "question": "<b>4.</b> (6) Sketch \\(y=\\dfrac{x^2}{x+1}\\): domain, asymptotes (including slant), increase/decrease, extremes, concavity.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Long division: \\(\\frac{x^2}{x+1}=x-1+\\frac1{x+1}\\). That form makes \\(y'\\) and \\(y''\\) easy.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Bottom zero, top \\(=1\\ne0\\).</p>\\[\\displaystyle \\text{domain }x\\ne-1;\\ \\text{VA }x=-1\\]<p><strong>Step 2.</strong> Long division.</p>\\[\\displaystyle \\frac{x^2}{x+1}=x-1+\\frac{1}{x+1}\\Rightarrow\\text{slant }y=x-1\\]<p><strong>Step 3.</strong> CN \\(x=0,-2\\).</p>\\[\\displaystyle y'=1-\\frac1{(x+1)^2}=\\frac{x(x+2)}{(x+1)^2}\\]<p><strong>Step 4.</strong> Sign map of \\(y'\\).</p>\\[\\displaystyle +\\ (-\\infty,-2),\\ -\\ (-2,-1),\\ -\\ (-1,0),\\ +\\ (0,\\infty)\\]<p><strong>Step 5.</strong> \\(y(-2)=\\frac{4}{-1}=-4\\).</p>\\[\\displaystyle \\text{max }(-2,-4),\\ \\text{min }(0,0)\\]<p><strong>Step 6.</strong> Derivative of \\(-(x+1)^{-2}\\).</p>\\[\\displaystyle y''=\\frac{2}{(x+1)^3}\\]<p><strong>Step 7.</strong> The sign changes only at the asymptote.</p>\\[\\displaystyle \\text{CD }(-\\infty,-1),\\ \\text{CU }(-1,\\infty),\\ \\text{no IP}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{VA }x=-1,\\ \\text{slant }y=x-1\\)</li><li>\\(\\max(-2,-4),\\ \\min(0,0)\\)</li><li>\\(\\text{CD }x<-1,\\ \\text{CU }x>-1\\)</li></ul></div>"
+       },
+       {
+        "label": "Graph sketch",
+        "html": "<svg class=\"sketch\" viewBox=\"0 0 360 284\" role=\"img\" aria-label=\"Graph sketch. max (−2, −4); min (0, 0)\">\n<line x1=\"30.0\" y1=\"10\" x2=\"30.0\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"30.0\" y=\"105.2\" class=\"sk-tick\" text-anchor=\"middle\">−5</text>\n<line x1=\"65.6\" y1=\"10\" x2=\"65.6\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"65.6\" y=\"105.2\" class=\"sk-tick\" text-anchor=\"middle\">−4</text>\n<line x1=\"101.1\" y1=\"10\" x2=\"101.1\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"101.1\" y=\"105.2\" class=\"sk-tick\" text-anchor=\"middle\">−3</text>\n<line x1=\"136.7\" y1=\"10\" x2=\"136.7\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"136.7\" y=\"105.2\" class=\"sk-tick\" text-anchor=\"middle\">−2</text>\n<line x1=\"172.2\" y1=\"10\" x2=\"172.2\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"172.2\" y=\"105.2\" class=\"sk-tick\" text-anchor=\"middle\">−1</text>\n<line x1=\"207.8\" y1=\"10\" x2=\"207.8\" y2=\"218\" class=\"sk-grid\"/>\n<line x1=\"243.3\" y1=\"10\" x2=\"243.3\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"243.3\" y=\"105.2\" class=\"sk-tick\" text-anchor=\"middle\">1</text>\n<line x1=\"278.9\" y1=\"10\" x2=\"278.9\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"278.9\" y=\"105.2\" class=\"sk-tick\" text-anchor=\"middle\">2</text>\n<line x1=\"314.4\" y1=\"10\" x2=\"314.4\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"314.4\" y=\"105.2\" class=\"sk-tick\" text-anchor=\"middle\">3</text>\n<line x1=\"350.0\" y1=\"10\" x2=\"350.0\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"350.0\" y=\"105.2\" class=\"sk-tick\" text-anchor=\"middle\">4</text>\n<line x1=\"30\" y1=\"218.0\" x2=\"350\" y2=\"218.0\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"222.0\" class=\"sk-tick\" text-anchor=\"end\">−12</text>\n<line x1=\"30\" y1=\"197.2\" x2=\"350\" y2=\"197.2\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"201.2\" class=\"sk-tick\" text-anchor=\"end\">−10</text>\n<line x1=\"30\" y1=\"176.4\" x2=\"350\" y2=\"176.4\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"180.4\" class=\"sk-tick\" text-anchor=\"end\">−8</text>\n<line x1=\"30\" y1=\"155.6\" x2=\"350\" y2=\"155.6\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"159.6\" class=\"sk-tick\" text-anchor=\"end\">−6</text>\n<line x1=\"30\" y1=\"134.8\" x2=\"350\" y2=\"134.8\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"138.8\" class=\"sk-tick\" text-anchor=\"end\">−4</text>\n<line x1=\"30\" y1=\"114.0\" x2=\"350\" y2=\"114.0\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"118.0\" class=\"sk-tick\" text-anchor=\"end\">−2</text>\n<line x1=\"30\" y1=\"93.2\" x2=\"350\" y2=\"93.2\" class=\"sk-grid\"/>\n<line x1=\"30\" y1=\"72.4\" x2=\"350\" y2=\"72.4\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"76.4\" class=\"sk-tick\" text-anchor=\"end\">2</text>\n<line x1=\"30\" y1=\"51.6\" x2=\"350\" y2=\"51.6\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"55.6\" class=\"sk-tick\" text-anchor=\"end\">4</text>\n<line x1=\"30\" y1=\"30.8\" x2=\"350\" y2=\"30.8\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"34.8\" class=\"sk-tick\" text-anchor=\"end\">6</text>\n<line x1=\"30\" y1=\"10.0\" x2=\"350\" y2=\"10.0\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"14.0\" class=\"sk-tick\" text-anchor=\"end\">8</text>\n<line x1=\"30\" y1=\"93.2\" x2=\"350\" y2=\"93.2\" class=\"sk-axis\"/>\n<line x1=\"207.8\" y1=\"10\" x2=\"207.8\" y2=\"218\" class=\"sk-axis\"/>\n<line x1=\"172.2\" y1=\"10\" x2=\"172.2\" y2=\"218\" class=\"sk-asym\"/>\n<text x=\"175.2\" y=\"21\" class=\"sk-asym-t\">x = −1</text>\n<line x1=\"30.0\" y1=\"155.6\" x2=\"350.0\" y2=\"62.0\" class=\"sk-asym\"/>\n<text x=\"293.1\" y=\"94.6\" class=\"sk-asym-t\">y = x − 1</text>\n<defs><clipPath id=\"clip-m3-4\"><rect x=\"30\" y=\"10\" width=\"320\" height=\"208\"/></clipPath></defs>\n<g clip-path=\"url(#clip-m3-4)\">\n<polyline points=\"30.0,158.2 30.4,158.1 30.7,158.0 31.1,157.9 31.4,157.8 31.8,157.7 32.1,157.6 32.5,157.5 32.8,157.4 33.2,157.3 33.6,157.2 33.9,157.1 34.3,157.0 34.6,156.9 35.0,156.8 35.3,156.7 35.7,156.6 36.0,156.5 36.4,156.5 36.8,156.4 37.1,156.3 37.5,156.2 37.8,156.1 38.2,156.0 38.5,155.9 38.9,155.8 39.2,155.7 39.6,155.6 40.0,155.5 40.3,155.4 40.7,155.3 41.0,155.2 41.4,155.1 41.7,155.0 42.1,154.9 42.4,154.8 42.8,154.7 43.2,154.6 43.5,154.5 43.9,154.4 44.2,154.3 44.6,154.2 44.9,154.1 45.3,154.0 45.6,153.9 46.0,153.8 46.4,153.8 46.7,153.7 47.1,153.6 47.4,153.5 47.8,153.4 48.1,153.3 48.5,153.2 48.8,153.1 49.2,153.0 49.6,152.9 49.9,152.8 50.3,152.7 50.6,152.6 51.0,152.5 51.3,152.4 51.7,152.3 52.0,152.2 52.4,152.1 52.8,152.0 53.1,151.9 53.5,151.8 53.8,151.8 54.2,151.7 54.5,151.6 54.9,151.5 55.2,151.4 55.6,151.3 56.0,151.2 56.3,151.1 56.7,151.0 57.0,150.9 57.4,150.8 57.7,150.7 58.1,150.6 58.4,150.5 58.8,150.4 59.2,150.3 59.5,150.2 59.9,150.2 60.2,150.1 60.6,150.0 60.9,149.9 61.3,149.8 61.6,149.7 62.0,149.6 62.4,149.5 62.7,149.4 63.1,149.3 63.4,149.2 63.8,149.1 64.1,149.0 64.5,148.9 64.8,148.9 65.2,148.8 65.6,148.7 65.9,148.6 66.3,148.5 66.6,148.4 67.0,148.3 67.3,148.2 67.7,148.1 68.0,148.0 68.4,147.9 68.8,147.8 69.1,147.7 69.5,147.7 69.8,147.6 70.2,147.5 70.5,147.4 70.9,147.3 71.2,147.2 71.6,147.1 72.0,147.0 72.3,146.9 72.7,146.8 73.0,146.7 73.4,146.7 73.7,146.6 74.1,146.5 74.4,146.4 74.8,146.3 75.2,146.2 75.5,146.1 75.9,146.0 76.2,145.9 76.6,145.8 76.9,145.8 77.3,145.7 77.6,145.6 78.0,145.5 78.4,145.4 78.7,145.3 79.1,145.2 79.4,145.1 79.8,145.0 80.1,145.0 80.5,144.9 80.8,144.8 81.2,144.7 81.6,144.6 81.9,144.5 82.3,144.4 82.6,144.3 83.0,144.2 83.3,144.2 83.7,144.1 84.0,144.0 84.4,143.9 84.8,143.8 85.1,143.7 85.5,143.6 85.8,143.6 86.2,143.5 86.5,143.4 86.9,143.3 87.2,143.2 87.6,143.1 88.0,143.0 88.3,143.0 88.7,142.9 89.0,142.8 89.4,142.7 89.7,142.6 90.1,142.5 90.4,142.4 90.8,142.4 91.2,142.3 91.5,142.2 91.9,142.1 92.2,142.0 92.6,141.9 92.9,141.9 93.3,141.8 93.6,141.7 94.0,141.6 94.4,141.5 94.7,141.4 95.1,141.4 95.4,141.3 95.8,141.2 96.1,141.1 96.5,141.0 96.8,141.0 97.2,140.9 97.6,140.8 97.9,140.7 98.3,140.6 98.6,140.6 99.0,140.5 99.3,140.4 99.7,140.3 100.0,140.2 100.4,140.2 100.8,140.1 101.1,140.0 101.5,139.9 101.8,139.8 102.2,139.8 102.5,139.7 102.9,139.6 103.2,139.5 103.6,139.5 104.0,139.4 104.3,139.3 104.7,139.2 105.0,139.2 105.4,139.1 105.7,139.0 106.1,138.9 106.4,138.9 106.8,138.8 107.2,138.7 107.5,138.6 107.9,138.6 108.2,138.5 108.6,138.4 108.9,138.4 109.3,138.3 109.6,138.2 110.0,138.1 110.4,138.1 110.7,138.0 111.1,137.9 111.4,137.9 111.8,137.8 112.1,137.7 112.5,137.7 112.8,137.6 113.2,137.5 113.6,137.5 113.9,137.4 114.3,137.3 114.6,137.3 115.0,137.2 115.3,137.1 115.7,137.1 116.0,137.0 116.4,137.0 116.8,136.9 117.1,136.8 117.5,136.8 117.8,136.7 118.2,136.7 118.5,136.6 118.9,136.5 119.2,136.5 119.6,136.4 120.0,136.4 120.3,136.3 120.7,136.3 121.0,136.2 121.4,136.1 121.7,136.1 122.1,136.0 122.4,136.0 122.8,135.9 123.2,135.9 123.5,135.8 123.9,135.8 124.2,135.7 124.6,135.7 124.9,135.7 125.3,135.6 125.6,135.6 126.0,135.5 126.4,135.5 126.7,135.4 127.1,135.4 127.4,135.4 127.8,135.3 128.1,135.3 128.5,135.2 128.8,135.2 129.2,135.2 129.6,135.1 129.9,135.1 130.3,135.1 130.6,135.1 131.0,135.0 131.3,135.0 131.7,135.0 132.0,135.0 132.4,134.9 132.8,134.9 133.1,134.9 133.5,134.9 133.8,134.9 134.2,134.8 134.5,134.8 134.9,134.8 135.2,134.8 135.6,134.8 136.0,134.8 136.3,134.8 136.7,134.8\" class=\"sk-curve sk-up\"/>\n<polyline points=\"136.7,134.8 137.0,134.8 137.4,134.8 137.7,134.8 138.1,134.8 138.4,134.8 138.8,134.8 139.2,134.9 139.5,134.9 139.9,134.9 140.2,134.9 140.6,134.9 140.9,135.0 141.3,135.0 141.6,135.0 142.0,135.1 142.4,135.1 142.7,135.2 143.1,135.2 143.4,135.3 143.8,135.3 144.1,135.4 144.5,135.4 144.8,135.5 145.2,135.6 145.6,135.7 145.9,135.8 146.3,135.8 146.6,135.9 147.0,136.0 147.3,136.1 147.7,136.2 148.0,136.4 148.4,136.5 148.8,136.6 149.1,136.8 149.5,136.9 149.8,137.1 150.2,137.2 150.5,137.4 150.9,137.6 151.2,137.8 151.6,138.0 152.0,138.2 152.3,138.4 152.7,138.6 153.0,138.9 153.4,139.1 153.7,139.4 154.1,139.7 154.4,140.0 154.8,140.3 155.2,140.7 155.5,141.0 155.9,141.4 156.2,141.8 156.6,142.2 156.9,142.7 157.3,143.1 157.6,143.6 158.0,144.2 158.4,144.7 158.7,145.3 159.1,146.0 159.4,146.6 159.8,147.4 160.1,148.1 160.5,148.9 160.8,149.8 161.2,150.8 161.6,151.8 161.9,152.9 162.3,154.1 162.6,155.3 163.0,156.7 163.3,158.2 163.7,159.8 164.0,161.6 164.4,163.6 164.8,165.7 165.1,168.1 165.5,170.7 165.8,173.6 166.2,176.9 166.5,180.7 166.9,184.9 167.2,189.7 167.6,195.4 168.0,201.9 168.3,209.7 168.7,219.0 169.0,230.5 169.4,244.8 169.7,263.3 170.1,288.0 170.4,322.5 170.8,374.4 171.2,461.0 171.5,634.2\" class=\"sk-curve sk-down\"/>\n<polyline points=\"172.9,-406.2 173.3,-233.0 173.6,-146.4 174.0,-94.5 174.4,-60.0 174.7,-35.3 175.1,-16.8 175.4,-2.5 175.8,9.0 176.1,18.3 176.5,26.1 176.8,32.6 177.2,38.3 177.6,43.1 177.9,47.3 178.3,51.1 178.6,54.4 179.0,57.3 179.3,59.9 179.7,62.3 180.0,64.4 180.4,66.4 180.8,68.2 181.1,69.8 181.5,71.3 181.8,72.7 182.2,73.9 182.5,75.1 182.9,76.2 183.2,77.2 183.6,78.2 184.0,79.1 184.3,79.9 184.7,80.6 185.0,81.4 185.4,82.0 185.7,82.7 186.1,83.3 186.4,83.8 186.8,84.4 187.2,84.9 187.5,85.3 187.9,85.8 188.2,86.2 188.6,86.6 188.9,87.0 189.3,87.3 189.6,87.7 190.0,88.0 190.4,88.3 190.7,88.6 191.1,88.9 191.4,89.1 191.8,89.4 192.1,89.6 192.5,89.8 192.8,90.0 193.2,90.2 193.6,90.4 193.9,90.6 194.3,90.8 194.6,90.9 195.0,91.1 195.3,91.2 195.7,91.4 196.0,91.5 196.4,91.6 196.8,91.8 197.1,91.9 197.5,92.0 197.8,92.1 198.2,92.2 198.5,92.2 198.9,92.3 199.2,92.4 199.6,92.5 200.0,92.6 200.3,92.6 200.7,92.7 201.0,92.7 201.4,92.8 201.7,92.8 202.1,92.9 202.4,92.9 202.8,93.0 203.2,93.0 203.5,93.0 203.9,93.1 204.2,93.1 204.6,93.1 204.9,93.1 205.3,93.1 205.6,93.2 206.0,93.2 206.4,93.2 206.7,93.2 207.1,93.2 207.4,93.2 207.8,93.2\" class=\"sk-curve sk-down\"/>\n<polyline points=\"207.8,93.2 208.1,93.2 208.5,93.2 208.8,93.2 209.2,93.2 209.6,93.2 209.9,93.2 210.3,93.2 210.6,93.1 211.0,93.1 211.3,93.1 211.7,93.1 212.0,93.1 212.4,93.0 212.8,93.0 213.1,93.0 213.5,93.0 213.8,92.9 214.2,92.9 214.5,92.9 214.9,92.9 215.2,92.8 215.6,92.8 216.0,92.8 216.3,92.7 216.7,92.7 217.0,92.6 217.4,92.6 217.7,92.6 218.1,92.5 218.4,92.5 218.8,92.4 219.2,92.4 219.5,92.3 219.9,92.3 220.2,92.3 220.6,92.2 220.9,92.2 221.3,92.1 221.6,92.1 222.0,92.0 222.4,92.0 222.7,91.9 223.1,91.9 223.4,91.8 223.8,91.7 224.1,91.7 224.5,91.6 224.8,91.6 225.2,91.5 225.6,91.5 225.9,91.4 226.3,91.3 226.6,91.3 227.0,91.2 227.3,91.2 227.7,91.1 228.0,91.0 228.4,91.0 228.8,90.9 229.1,90.9 229.5,90.8 229.8,90.7 230.2,90.7 230.5,90.6 230.9,90.5 231.2,90.5 231.6,90.4 232.0,90.3 232.3,90.3 232.7,90.2 233.0,90.1 233.4,90.1 233.7,90.0 234.1,89.9 234.4,89.9 234.8,89.8 235.2,89.7 235.5,89.6 235.9,89.6 236.2,89.5 236.6,89.4 236.9,89.4 237.3,89.3 237.6,89.2 238.0,89.1 238.4,89.1 238.7,89.0 239.1,88.9 239.4,88.8 239.8,88.8 240.1,88.7 240.5,88.6 240.8,88.5 241.2,88.5 241.6,88.4 241.9,88.3 242.3,88.2 242.6,88.2 243.0,88.1 243.3,88.0 243.7,87.9 244.0,87.8 244.4,87.8 244.8,87.7 245.1,87.6 245.5,87.5 245.8,87.4 246.2,87.4 246.5,87.3 246.9,87.2 247.2,87.1 247.6,87.0 248.0,87.0 248.3,86.9 248.7,86.8 249.0,86.7 249.4,86.6 249.7,86.6 250.1,86.5 250.4,86.4 250.8,86.3 251.2,86.2 251.5,86.1 251.9,86.1 252.2,86.0 252.6,85.9 252.9,85.8 253.3,85.7 253.6,85.6 254.0,85.6 254.4,85.5 254.7,85.4 255.1,85.3 255.4,85.2 255.8,85.1 256.1,85.0 256.5,85.0 256.8,84.9 257.2,84.8 257.6,84.7 257.9,84.6 258.3,84.5 258.6,84.4 259.0,84.4 259.3,84.3 259.7,84.2 260.0,84.1 260.4,84.0 260.8,83.9 261.1,83.8 261.5,83.8 261.8,83.7 262.2,83.6 262.5,83.5 262.9,83.4 263.2,83.3 263.6,83.2 264.0,83.1 264.3,83.0 264.7,83.0 265.0,82.9 265.4,82.8 265.7,82.7 266.1,82.6 266.4,82.5 266.8,82.4 267.2,82.3 267.5,82.2 267.9,82.2 268.2,82.1 268.6,82.0 268.9,81.9 269.3,81.8 269.6,81.7 270.0,81.6 270.4,81.5 270.7,81.4 271.1,81.3 271.4,81.3 271.8,81.2 272.1,81.1 272.5,81.0 272.8,80.9 273.2,80.8 273.6,80.7 273.9,80.6 274.3,80.5 274.6,80.4 275.0,80.3 275.3,80.3 275.7,80.2 276.0,80.1 276.4,80.0 276.8,79.9 277.1,79.8 277.5,79.7 277.8,79.6 278.2,79.5 278.5,79.4 278.9,79.3 279.2,79.2 279.6,79.1 280.0,79.1 280.3,79.0 280.7,78.9 281.0,78.8 281.4,78.7 281.7,78.6 282.1,78.5 282.4,78.4 282.8,78.3 283.2,78.2 283.5,78.1 283.9,78.0 284.2,77.9 284.6,77.8 284.9,77.8 285.3,77.7 285.6,77.6 286.0,77.5 286.4,77.4 286.7,77.3 287.1,77.2 287.4,77.1 287.8,77.0 288.1,76.9 288.5,76.8 288.8,76.7 289.2,76.6 289.6,76.5 289.9,76.4 290.3,76.3 290.6,76.2 291.0,76.2 291.3,76.1 291.7,76.0 292.0,75.9 292.4,75.8 292.8,75.7 293.1,75.6 293.5,75.5 293.8,75.4 294.2,75.3 294.5,75.2 294.9,75.1 295.2,75.0 295.6,74.9 296.0,74.8 296.3,74.7 296.7,74.6 297.0,74.5 297.4,74.4 297.7,74.3 298.1,74.2 298.4,74.2 298.8,74.1 299.2,74.0 299.5,73.9 299.9,73.8 300.2,73.7 300.6,73.6 300.9,73.5 301.3,73.4 301.6,73.3 302.0,73.2 302.4,73.1 302.7,73.0 303.1,72.9 303.4,72.8 303.8,72.7 304.1,72.6 304.5,72.5 304.8,72.4 305.2,72.3 305.6,72.2 305.9,72.1 306.3,72.0 306.6,71.9 307.0,71.8 307.3,71.7 307.7,71.6 308.0,71.5 308.4,71.5 308.8,71.4 309.1,71.3 309.5,71.2 309.8,71.1 310.2,71.0 310.5,70.9 310.9,70.8 311.2,70.7 311.6,70.6 312.0,70.5 312.3,70.4 312.7,70.3 313.0,70.2 313.4,70.1 313.7,70.0 314.1,69.9 314.4,69.8 314.8,69.7 315.2,69.6 315.5,69.5 315.9,69.4 316.2,69.3 316.6,69.2 316.9,69.1 317.3,69.0 317.6,68.9 318.0,68.8 318.4,68.7 318.7,68.6 319.1,68.5 319.4,68.4 319.8,68.3 320.1,68.2 320.5,68.1 320.8,68.0 321.2,67.9 321.6,67.8 321.9,67.7 322.3,67.6 322.6,67.5 323.0,67.5 323.3,67.4 323.7,67.3 324.0,67.2 324.4,67.1 324.8,67.0 325.1,66.9 325.5,66.8 325.8,66.7 326.2,66.6 326.5,66.5 326.9,66.4 327.2,66.3 327.6,66.2 328.0,66.1 328.3,66.0 328.7,65.9 329.0,65.8 329.4,65.7 329.7,65.6 330.1,65.5 330.4,65.4 330.8,65.3 331.2,65.2 331.5,65.1 331.9,65.0 332.2,64.9 332.6,64.8 332.9,64.7 333.3,64.6 333.6,64.5 334.0,64.4 334.4,64.3 334.7,64.2 335.1,64.1 335.4,64.0 335.8,63.9 336.1,63.8 336.5,63.7 336.8,63.6 337.2,63.5 337.6,63.4 337.9,63.3 338.3,63.2 338.6,63.1 339.0,63.0 339.3,62.9 339.7,62.8 340.0,62.7 340.4,62.6 340.8,62.5 341.1,62.4 341.5,62.3 341.8,62.2 342.2,62.1 342.5,62.0 342.9,61.9 343.2,61.8 343.6,61.7 344.0,61.6 344.3,61.5 344.7,61.4 345.0,61.3 345.4,61.2 345.7,61.1 346.1,61.0 346.4,60.9 346.8,60.8 347.2,60.7 347.5,60.6 347.9,60.5 348.2,60.4 348.6,60.3 348.9,60.2 349.3,60.1 349.6,60.0 350.0,59.9\" class=\"sk-curve sk-up\"/>\n</g>\n<circle cx=\"136.7\" cy=\"134.8\" r=\"4.5\" class=\"sk-ext\"/>\n<text x=\"128.7\" y=\"138.8\" class=\"sk-lab sk-lab-max\" text-anchor=\"end\">max (−2, −4)</text>\n<circle cx=\"207.8\" cy=\"93.2\" r=\"4.5\" class=\"sk-ext\"/>\n<text x=\"214.8\" y=\"108.2\" class=\"sk-lab sk-lab-min\" text-anchor=\"start\">min (0, 0)</text>\n<text x=\"25\" y=\"248\" class=\"sk-strip-name\" text-anchor=\"end\">f′</text>\n<rect x=\"30.0\" y=\"234\" width=\"106.7\" height=\"17\" rx=\"3\" class=\"sk-pos\"/>\n<text x=\"83.3\" y=\"246.5\" class=\"sk-strip-t\" text-anchor=\"middle\">+ ↗</text>\n<rect x=\"137.2\" y=\"234\" width=\"70.9\" height=\"17\" rx=\"3\" class=\"sk-neg\"/>\n<text x=\"172.7\" y=\"246.5\" class=\"sk-strip-t\" text-anchor=\"middle\">− ↘</text>\n<rect x=\"208.1\" y=\"234\" width=\"141.9\" height=\"17\" rx=\"3\" class=\"sk-pos\"/>\n<text x=\"279.1\" y=\"246.5\" class=\"sk-strip-t\" text-anchor=\"middle\">+ ↗</text>\n<text x=\"25\" y=\"270\" class=\"sk-strip-name\" text-anchor=\"end\">f″</text>\n<rect x=\"30.0\" y=\"256\" width=\"142.4\" height=\"17\" rx=\"3\" class=\"sk-neg\"/>\n<text x=\"101.2\" y=\"268.5\" class=\"sk-strip-t\" text-anchor=\"middle\">− ∩</text>\n<rect x=\"172.4\" y=\"256\" width=\"177.6\" height=\"17\" rx=\"3\" class=\"sk-pos\"/>\n<text x=\"261.2\" y=\"268.5\" class=\"sk-strip-t\" text-anchor=\"middle\">+ ∪</text>\n</svg>\n<p class=\"sk-key\"><span class=\"k-up\">green</span> = rising (f′ &gt; 0), <span class=\"k-down\">red</span> = falling (f′ &lt; 0), <span class=\"k-ext\">●</span> max/min, <span class=\"k-ip\">○</span> inflection point (f″ changes sign), <span class=\"k-asym\">dashed</span> = asymptote. The strips under the graph are your sign maps: ∪ concave up, ∩ concave down.</p>\n<p class=\"why\">No inflection point: f″ changes sign only at the asymptote x = −1.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>VA \\(x=-1\\), slant asymptote \\(y=x-1\\). \\(y'=\\frac{x(x+2)}{(x+1)^2}\\): increasing on \\((-\\infty,-2)\\) and \\((0,\\infty)\\), decreasing on \\((-2,-1)\\) and \\((-1,0)\\); local max \\((-2,-4)\\), local min \\((0,0)\\). \\(y''=\\frac2{(x+1)^3}\\): concave down for \\(x<-1\\), up for \\(x>-1\\); no inflection point.</p><p class=\"ans\">max \\((-2,-4)\\), min \\((0,0)\\), VA \\(x=-1\\), slant \\(y=x-1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\text{domain }x\\ne-1;\\ \\text{VA }x=-1",
+        "why": "Bottom zero, top \\(=1\\ne0\\)."
+       },
+       {
+        "code": "\\frac{x^2}{x+1}=x-1+\\frac{1}{x+1}\\Rightarrow\\text{slant }y=x-1",
+        "why": "Long division."
+       },
+       {
+        "code": "y'=1-\\frac1{(x+1)^2}=\\frac{x(x+2)}{(x+1)^2}",
+        "why": "CN \\(x=0,-2\\)."
+       },
+       {
+        "code": "+\\ (-\\infty,-2),\\ -\\ (-2,-1),\\ -\\ (-1,0),\\ +\\ (0,\\infty)",
+        "why": "Sign map of \\(y'\\)."
+       },
+       {
+        "code": "\\text{max }(-2,-4),\\ \\text{min }(0,0)",
+        "why": "\\(y(-2)=\\frac{4}{-1}=-4\\).",
+        "watch": [
+         [
+          "\\max",
+          "(-2,-4)"
+         ],
+         [
+          "\\min",
+          "(0,0)"
+         ]
+        ]
+       },
+       {
+        "code": "y''=\\frac{2}{(x+1)^3}",
+        "why": "Derivative of \\(-(x+1)^{-2}\\)."
+       },
+       {
+        "code": "\\text{CD }(-\\infty,-1),\\ \\text{CU }(-1,\\infty),\\ \\text{no IP}",
+        "why": "The sign changes only at the asymptote."
+       }
+      ]
+     },
+     {
+      "id": "m3-5",
+      "source": "§4.7 · 6 pts",
+      "href": null,
+      "question": "<b>5.</b> (6) 240 m of fence encloses a rectangle and also divides it in two with a fence parallel to one side. Find the largest possible total area.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Let \\(x\\) be the side that has 3 pieces of fence. Constraint: \\(3x+2y=240\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\text{Objective: }A=xy\\]<p><strong>Step 2.</strong> Two ends plus the divider are each \\(x\\).</p>\\[\\displaystyle \\text{Constraint: }3x+2y=240\\Rightarrow y=120-\\tfrac32x\\]<p><strong>Step 3.</strong> One variable.</p>\\[\\displaystyle A=120x-\\tfrac32x^2,\\ 0<x<80\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle A'=120-3x=0\\Rightarrow x=40\\]<p><strong>Step 5.</strong> Justify.</p>\\[\\displaystyle A''=-3<0\\Rightarrow\\text{max}\\]<p><strong>Step 6.</strong></p>\\[\\displaystyle y=60,\\ A=2400\\text{ m}^2\\]<p><strong>What you found:</strong></p><ul><li>\\(x=40,\\ y=60\\)</li><li>\\(A_{\\max}=2400\\text{ m}^2\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(A=120x-\\frac32x^2\\), \\(A'=0\\) at \\(x=40\\), \\(y=60\\): max area \\(2400\\text{ m}^2\\).</p><p class=\"ans\">\\(2400\\text{ m}^2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\text{Objective: }A=xy",
+        "why": ""
+       },
+       {
+        "code": "\\text{Constraint: }3x+2y=240\\Rightarrow y=120-\\tfrac32x",
+        "why": "Two ends plus the divider are each \\(x\\)."
+       },
+       {
+        "code": "A=120x-\\tfrac32x^2,\\ 0<x<80",
+        "why": "One variable."
+       },
+       {
+        "code": "A'=120-3x=0\\Rightarrow x=40",
+        "why": ""
+       },
+       {
+        "code": "A''=-3<0\\Rightarrow\\text{max}",
+        "why": "Justify."
+       },
+       {
+        "code": "y=60,\\ A=2400\\text{ m}^2",
+        "why": "",
+        "watch": [
+         [
+          "A_{\\max}",
+          "2400\\text{ m}^2"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Part B · Newton and antiderivatives (§4.8–4.9)"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "m3-6",
+      "source": "§4.8 · 3 pts",
+      "href": null,
+      "question": "<b>6.</b> (3) Use one step of Newton's method on \\(x^3-2x-5=0\\) with \\(x_1=2\\). Find \\(x_2\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f'(x)=3x^2-2\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle f(2)=8-4-5=-1\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f'(2)=12-2=10\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle x_2=2-\\frac{-1}{10}=2.1\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2=2.1\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x_2=2-\\frac{-1}{10}=2.1\\).</p><p class=\"ans\">\\(x_2=2.1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(2)=8-4-5=-1",
+        "why": ""
+       },
+       {
+        "code": "f'(2)=12-2=10",
+        "why": ""
+       },
+       {
+        "code": "x_2=2-\\frac{-1}{10}=2.1",
+        "why": "",
+        "watch": [
+         [
+          "x_2",
+          "2.1"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "m3-7",
+      "source": "§4.9 · 4 pts",
+      "href": null,
+      "question": "<b>7.</b> (4) Find \\(f\\) if \\(f'(x)=4x^3-\\dfrac3{x^2}\\) and \\(f(1)=2\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Rewrite \\(\\frac3{x^2}=3x^{-2}\\) before integrating.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Power rule backwards.</p>\\[\\displaystyle f(x)=x^4-3\\cdot\\frac{x^{-1}}{-1}+C=x^4+\\frac3x+C\\]<p><strong>Step 2.</strong> Use the point.</p>\\[\\displaystyle f(1)=1+3+C=2\\Rightarrow C=-2\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle f(x)=x^4+\\frac3x-2\\]<p><strong>What you found:</strong></p><ul><li>\\(f(x)=x^4+\\frac3x-2\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f=x^4+\\frac3x+C\\); \\(f(1)=4+C=2\\Rightarrow C=-2\\).</p><p class=\"ans\">\\(f(x)=x^4+\\dfrac3x-2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=x^4-3\\cdot\\frac{x^{-1}}{-1}+C=x^4+\\frac3x+C",
+        "why": "Power rule backwards."
+       },
+       {
+        "code": "f(1)=1+3+C=2\\Rightarrow C=-2",
+        "why": "Use the point."
+       },
+       {
+        "code": "f(x)=x^4+\\frac3x-2",
+        "why": "",
+        "watch": [
+         [
+          "f(x)",
+          "x^4+\\frac3x-2"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Part C · Integrals (§5.1–5.5)"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "m3-8",
+      "source": "§5.1 · 3 pts",
+      "href": null,
+      "question": "<b>8.</b> (3) Estimate the area under \\(f(x)=x^2+1\\) on \\([0,3]\\) with \\(L_3\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\Delta x=1\\); left endpoints \\(0,1,2\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\Delta x=\\frac{3-0}{3}=1\\]<p><strong>Step 2.</strong> Left endpoints only.</p>\\[\\displaystyle f(0)+f(1)+f(2)=1+2+5\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle L_3=8\\cdot1=8\\]<p><strong>What you found:</strong></p><ul><li>\\(L_3=8\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(L_3=1\\,[f(0)+f(1)+f(2)]=1+2+5=8\\).</p><p class=\"ans\">\\(8\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\Delta x=\\frac{3-0}{3}=1",
+        "why": ""
+       },
+       {
+        "code": "f(0)+f(1)+f(2)=1+2+5",
+        "why": "Left endpoints only."
+       },
+       {
+        "code": "L_3=8\\cdot1=8",
+        "why": "",
+        "watch": [
+         [
+          "L_3",
+          "8"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "m3-9",
+      "source": "§5.2 · 4 pts",
+      "href": null,
+      "question": "<b>9.</b> (4) Write \\(\\displaystyle\\lim_{n\\to\\infty}\\sum_{i=1}^n\\frac3n\\Big(1+\\frac{3i}n\\Big)^2\\) as a definite integral, then evaluate it.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\Delta x=\\frac3n\\) and \\(x_i=1+\\frac{3i}n\\): start 1, width 3.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> So \\(a=1\\), \\(b=1+3=4\\), \\(f(x)=x^2\\).</p>\\[\\displaystyle \\Delta x=\\tfrac3n,\\ x_i=1+i\\Delta x\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle =\\int_1^4x^2\\,dx\\]<p><strong>Step 3.</strong> FTC.</p>\\[\\displaystyle =\\Big[\\tfrac{x^3}3\\Big]_1^4=\\tfrac{64}3-\\tfrac13=21\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int_1^4x^2\\,dx=21\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>It is \\(\\int_1^4x^2\\,dx=\\frac{64-1}3=21\\).</p><p class=\"ans\">\\(\\int_1^4x^2\\,dx=21\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\Delta x=\\tfrac3n,\\ x_i=1+i\\Delta x",
+        "why": "So \\(a=1\\), \\(b=1+3=4\\), \\(f(x)=x^2\\)."
+       },
+       {
+        "code": "=\\int_1^4x^2\\,dx",
+        "why": ""
+       },
+       {
+        "code": "=\\Big[\\tfrac{x^3}3\\Big]_1^4=\\tfrac{64}3-\\tfrac13=21",
+        "why": "FTC.",
+        "watch": [
+         [
+          "\\text{value}",
+          "21"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "m3-10",
+      "source": "§5.3 · 4 pts",
+      "href": null,
+      "question": "<b>10.</b> (4) Find \\(\\dfrac{d}{dx}\\displaystyle\\int_x^{x^2}\\cos t\\,dt\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Top limit: plug in and multiply by its derivative. Bottom limit: same, with a minus sign.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> FTC part 1 with chain rule at both ends.</p>\\[\\displaystyle \\frac{d}{dx}\\int_{a(x)}^{b(x)}f(t)\\,dt=f(b)\\,b'-f(a)\\,a'\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle =\\cos(x^2)\\cdot2x-\\cos x\\cdot1\\]<p><strong>What you found:</strong></p><ul><li>\\(2x\\cos(x^2)-\\cos x\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\cos(x^2)\\cdot2x-\\cos(x)\\cdot1\\).</p><p class=\"ans\">\\(2x\\cos(x^2)-\\cos x\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{d}{dx}\\int_{a(x)}^{b(x)}f(t)\\,dt=f(b)\\,b'-f(a)\\,a'",
+        "why": "FTC part 1 with chain rule at both ends."
+       },
+       {
+        "code": "=\\cos(x^2)\\cdot2x-\\cos x\\cdot1",
+        "why": "",
+        "watch": [
+         [
+          "\\text{answer}",
+          "2x\\cos(x^2)-\\cos x"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "m3-11",
+      "source": "§5.3 · 5 pts",
+      "href": null,
+      "question": "<b>11.</b> (5) Evaluate \\(\\displaystyle\\int_1^4\\Big(2\\sqrt x-\\frac1{\\sqrt x}\\Big)dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Powers: \\(2x^{1/2}-x^{-1/2}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Power rule backwards.</p>\\[\\displaystyle \\int(2x^{1/2}-x^{-1/2})\\,dx=\\tfrac43x^{3/2}-2x^{1/2}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle x=4:\\ \\tfrac43\\cdot8-2\\cdot2=\\tfrac{32}3-4=\\tfrac{20}3\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle x=1:\\ \\tfrac43-2=-\\tfrac23\\]<p><strong>Step 4.</strong> Top minus bottom.</p>\\[\\displaystyle \\tfrac{20}3-\\big(-\\tfrac23\\big)=\\tfrac{22}3\\]<p><strong>What you found:</strong></p><ul><li>\\(\\tfrac{22}3\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\big[\\frac43x^{3/2}-2x^{1/2}\\big]_1^4=\\frac{20}3+\\frac23=\\frac{22}3\\).</p><p class=\"ans\">\\(\\dfrac{22}3\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\int(2x^{1/2}-x^{-1/2})\\,dx=\\tfrac43x^{3/2}-2x^{1/2}",
+        "why": "Power rule backwards."
+       },
+       {
+        "code": "x=4:\\ \\tfrac43\\cdot8-2\\cdot2=\\tfrac{32}3-4=\\tfrac{20}3",
+        "why": ""
+       },
+       {
+        "code": "x=1:\\ \\tfrac43-2=-\\tfrac23",
+        "why": ""
+       },
+       {
+        "code": "\\tfrac{20}3-\\big(-\\tfrac23\\big)=\\tfrac{22}3",
+        "why": "Top minus bottom.",
+        "watch": [
+         [
+          "\\text{value}",
+          "\\tfrac{22}3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "m3-12",
+      "source": "§5.5 · 4 pts",
+      "href": null,
+      "question": "<b>12.</b> (4) Evaluate \\(\\displaystyle\\int_0^1xe^{x^2}\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(u=x^2\\), \\(du=2x\\,dx\\). Change the limits too.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle u=x^2,\\ du=2x\\,dx\\Rightarrow x\\,dx=\\tfrac12du\\]<p><strong>Step 2.</strong> New limits.</p>\\[\\displaystyle x=0\\to u=0,\\ x=1\\to u=1\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\tfrac12\\int_0^1e^u\\,du=\\tfrac12(e-1)\\]<p><strong>What you found:</strong></p><ul><li>\\(\\tfrac12(e-1)\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac12\\int_0^1e^u\\,du=\\frac{e-1}2\\).</p><p class=\"ans\">\\(\\dfrac{e-1}{2}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=x^2,\\ du=2x\\,dx\\Rightarrow x\\,dx=\\tfrac12du",
+        "why": ""
+       },
+       {
+        "code": "x=0\\to u=0,\\ x=1\\to u=1",
+        "why": "New limits."
+       },
+       {
+        "code": "\\tfrac12\\int_0^1e^u\\,du=\\tfrac12(e-1)",
+        "why": "",
+        "watch": [
+         [
+          "\\text{value}",
+          "\\tfrac12(e-1)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "m3-13",
+      "source": "§5.5 · 4 pts",
+      "href": null,
+      "question": "<b>13.</b> (4) Find \\(\\displaystyle\\int\\frac{\\ln x}{x}\\,dx\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(u=\\ln x\\) because \\(du=\\frac1x\\,dx\\) is sitting right there.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle u=\\ln x,\\ du=\\frac{dx}{x}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\int u\\,du=\\frac{u^2}2+C\\]<p><strong>Step 3.</strong> Put \\(x\\) back.</p>\\[\\displaystyle =\\frac{(\\ln x)^2}{2}+C\\]<p><strong>What you found:</strong></p><ul><li>\\(\\frac{(\\ln x)^2}2+C\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(u=\\ln x\\): \\(\\int u\\,du=\\frac{(\\ln x)^2}2+C\\).</p><p class=\"ans\">\\(\\dfrac{(\\ln x)^2}{2}+C\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "u=\\ln x,\\ du=\\frac{dx}{x}",
+        "why": ""
+       },
+       {
+        "code": "\\int u\\,du=\\frac{u^2}2+C",
+        "why": ""
+       },
+       {
+        "code": "=\\frac{(\\ln x)^2}{2}+C",
+        "why": "Put \\(x\\) back.",
+        "watch": [
+         [
+          "\\text{answer}",
+          "\\frac{(\\ln x)^2}2+C"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "m3-14",
+      "source": "§5.4 · 5 pts",
+      "href": null,
+      "question": "<b>14.</b> (5) A particle has \\(v(t)=t^2-4t+3\\) m/s on \\([0,3]\\). Find the displacement and the total distance traveled.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Displacement \\(=\\int v\\). Distance \\(=\\int|v|\\): split where \\(v=(t-1)(t-3)\\) changes sign.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Displacement.</p>\\[\\displaystyle \\begin{aligned}\\int_0^3(t^2-4t+3)\\,dt&=\\Big[\\tfrac{t^3}3-2t^2+3t\\Big]_0^3\\\\&=9-18+9=0\\end{aligned}\\]<p><strong>Step 2.</strong> Sign of \\(v\\).</p>\\[\\displaystyle v=(t-1)(t-3):\\ +\\text{ on }(0,1),\\ -\\text{ on }(1,3)\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\int_0^1v\\,dt=\\tfrac13-2+3=\\tfrac43\\]<p><strong>Step 4.</strong> Whole integral minus the first part.</p>\\[\\displaystyle \\int_1^3v\\,dt=0-\\tfrac43=-\\tfrac43\\]<p><strong>Step 5.</strong> Add absolute values.</p>\\[\\displaystyle \\text{distance}=\\tfrac43+\\tfrac43=\\tfrac83\\text{ m}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{displacement }0\\)</li><li>\\(\\text{distance }\\tfrac83\\text{ m}\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Displacement \\(0\\) m (it ends where it started). Distance \\(\\frac43+\\frac43=\\frac83\\) m.</p><p class=\"ans\">Displacement \\(0\\); distance \\(\\tfrac83\\) m</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\begin{aligned}\\int_0^3(t^2-4t+3)\\,dt&=\\Big[\\tfrac{t^3}3-2t^2+3t\\Big]_0^3\\\\&=9-18+9=0\\end{aligned}",
+        "why": "Displacement."
+       },
+       {
+        "code": "v=(t-1)(t-3):\\ +\\text{ on }(0,1),\\ -\\text{ on }(1,3)",
+        "why": "Sign of \\(v\\)."
+       },
+       {
+        "code": "\\int_0^1v\\,dt=\\tfrac13-2+3=\\tfrac43",
+        "why": ""
+       },
+       {
+        "code": "\\int_1^3v\\,dt=0-\\tfrac43=-\\tfrac43",
+        "why": "Whole integral minus the first part."
+       },
+       {
+        "code": "\\text{distance}=\\tfrac43+\\tfrac43=\\tfrac83\\text{ m}",
+        "why": "Add absolute values.",
+        "watch": [
+         [
+          "\\text{displacement}",
+          "0"
+         ],
+         [
+          "\\text{distance}",
+          "\\tfrac83"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\">Missed one? Go back to that section: <a href=\"/4-3/\">§4.3</a>, <a href=\"/4-4/\">§4.4</a>, <a href=\"/4-5/\">§4.5</a>, <a href=\"/4-7/\">§4.7</a>, <a href=\"/4-8/\">§4.8</a>, <a href=\"/4-9/\">§4.9</a>, <a href=\"/5-1/\">§5.1</a>, <a href=\"/5-2/\">§5.2</a>, <a href=\"/5-3/\">§5.3</a>, <a href=\"/5-4/\">§5.4</a>, <a href=\"/5-5/\">§5.5</a>.</p>"
+   }
+  ]
+ },
+ {
   "id": "fplan",
   "slug": "final",
   "num": "Final · Tue, Dec 8",
   "unit": "later",
   "title": "Final exam plan",
-  "lede": "From your syllabus: comprehensive, 2 hours, closed book, no calculator. Here's how to get a B or an A.",
+  "lede": "Tue, Dec 8, 2:25–4:25 pm. Comprehensive: everything from Ch. 1 review through §5.5, closed book, no calculator. A checklist of every section and a day-by-day plan.",
   "blocks": [
    {
     "type": "countdown",
@@ -13575,34 +17269,48 @@ export const sections: Section[] = [
    },
    {
     "type": "heading",
-    "text": "Week-by-week plan"
+    "text": "Day by day to Dec 8",
+    "id": "plan"
    },
    {
     "type": "prose",
-    "html": "<ol class=\"steps\"><li><strong>Now → Tue Nov 17:</strong> <a href=\"/quiz-5/\">Quiz 5</a> (§4.3, 4.4, 4.5, 4.7).</li><li><strong>Nov 13–19:</strong> as class covers them: <a href=\"/4-8/\">§4.8</a>, <a href=\"/5-1/\">§5.1</a>, <a href=\"/5-2/\">§5.2</a>. One section a night, practice problems with the debugger.</li><li><strong>Nov 20–26:</strong> <a href=\"/5-3/\">§5.3</a>, <a href=\"/5-4/\">§5.4</a>, <a href=\"/5-5/\">§5.5</a>. Substitution is the biggest skill.</li><li><strong>Nov 27–30:</strong> Midterm 3 review: redo every §4.x and §5.x practice problem you didn't tick.</li><li><strong>Dec 2–4:</strong> Ch. 2–3 refresh: <a href=\"/crash-course/\">crash course</a>, <a href=\"/quiz-review/\">Quiz 3 &amp; 4 review</a>, <a href=\"/midterm-practice/\">Midterm 2 practice exam</a>.</li><li><strong>Dec 5:</strong> <a href=\"/final-practice/\">practice final</a>, 2 hours. Score it. Study the part you scored lowest on.</li><li><strong>Dec 6–7:</strong> retake the practice final (aim for 90+), <a href=\"/cheat-sheet/\">cheat sheet</a>, <a href=\"/unit-circle/\">unit circle</a> drill, <a href=\"/quick-quiz/\">quick quiz</a>.</li></ol>"
+    "html": "<ol class=\"steps\"><li><strong>Now → Tue Dec 1:</strong> follow the <a href=\"/midterm-3/\">Midterm 3 plan</a> (§4.3–5.5, plus the <a href=\"/warmup/\">warm-up</a> on day one). That covers a third of the final.</li><li><strong>Wed Dec 2 · Midterm 1 material, part 1:</strong> <a href=\"/2-1/\">§2.1</a>, <a href=\"/2-2/\">§2.2</a>, <a href=\"/2-3/\">§2.3</a>, <a href=\"/2-4/\">§2.4</a>. Limits by factoring, conjugates and combining fractions.</li><li><strong>Thu Dec 3 · Midterm 1 material, part 2:</strong> <a href=\"/2-5/\">§2.5</a>, <a href=\"/2-6/\">§2.6</a>, <a href=\"/2-7/\">§2.7</a>, then <a href=\"/2-8/\">§2.8</a>. Continuity, IVT, limits at infinity, the limit definition of the derivative.</li><li><strong>Fri Dec 4 · derivative rules:</strong> <a href=\"/crash-course/\">crash course</a> lessons 1–6 (§2.8–3.6). Every rule once, fast.</li><li><strong>Sat Dec 5 · applications of derivatives:</strong> crash course lessons 7–10 (<a href=\"/3-9/\">related rates</a>, <a href=\"/4-1/\">max/min</a>, <a href=\"/3-10/\">linear approximation</a>, <a href=\"/3-11/\">hyperbolic</a>), then the <a href=\"/midterm-practice/\">Midterm 2 practice exam</a>.</li><li><strong>Sun Dec 6 · <a href=\"/final-practice/\">practice final</a>:</strong> 2 hours, timed, closed notes. Grade it with the score bar.</li><li><strong>Mon Dec 7 · fix and review:</strong> redo every miss with the debugger, read all four groups of the <a href=\"/cheat-sheet/\">cheat sheet</a>, do the <a href=\"/quick-quiz/\">quick quiz</a> with <em>Everything</em> on. Sleep early.</li><li><strong>Tue Dec 8 · final, 2:25 pm.</strong> Do the problems you are sure of first, then come back.</li></ol>"
    },
    {
     "type": "heading",
-    "text": "Everything on the final"
+    "text": "Everything on the final",
+    "id": "checklist"
+   },
+   {
+    "type": "prose",
+    "html": "<p>Tick a section when you can do its practice problems without opening the walkthrough. The progress bars on each page and on the home page track it for you.</p>"
    },
    {
     "type": "rules",
     "items": [
      {
-      "key": false,
-      "html": "<span class=\"tag\">Ch. 2 · Limits and derivatives</span><p>Limits by factoring/conjugates, one-sided limits, continuity (find \\(c\\)), limits at infinity, the limit definition of \\(f'(x)\\). Review: <a href=\"/crash-course/\">crash course</a>, <a href=\"/2-8/\">§2.8</a>.</p>"
+      "key": true,
+      "html": "<span class=\"tag\">Ch. 1 · Warm-up (algebra &amp; trig)</span><p><a href=\"/warmup/\">Warm-up</a>: factoring, fractions, conjugates, exponents, logs, unit circle, trig equations, domain, inverses. Also the <a href=\"/unit-circle/\">unit circle</a> tool.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Ch. 2 · Limits and derivatives (Midterm 1)</span><p><a href=\"/2-1/\">2.1</a> · <a href=\"/2-2/\">2.2</a> · <a href=\"/2-3/\">2.3</a> · <a href=\"/2-4/\">2.4</a> · <a href=\"/2-5/\">2.5</a> · <a href=\"/2-6/\">2.6</a> · <a href=\"/2-7/\">2.7</a> · <a href=\"/2-8/\">2.8</a></p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Ch. 3 · Differentiation rules (Midterm 2)</span><p><a href=\"/3-1/\">3.1</a> · <a href=\"/3-2/\">3.2</a> · <a href=\"/3-3/\">3.3</a> · <a href=\"/3-4/\">3.4</a> · <a href=\"/3-5/\">3.5</a> · <a href=\"/3-6/\">3.6</a> · <a href=\"/3-9/\">3.9</a> · <a href=\"/3-10/\">3.10</a> · <a href=\"/3-11/\">3.11</a> <span class=\"note\">(3.7, 3.8 skipped)</span></p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Ch. 4 · Applications (Midterms 2–3)</span><p><a href=\"/4-1/\">4.1</a> · <a href=\"/4-2/\">4.2</a> (read only) · <a href=\"/4-3/\">4.3</a> · <a href=\"/4-4/\">4.4</a> · <a href=\"/4-5/\">4.5</a> · <a href=\"/4-7/\">4.7</a> · <a href=\"/4-8/\">4.8</a> · <a href=\"/4-9/\">4.9</a> <span class=\"note\">(4.6 skipped)</span></p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Ch. 5 · Integrals (Midterm 3)</span><p><a href=\"/5-1/\">5.1</a> · <a href=\"/5-2/\">5.2</a> · <a href=\"/5-3/\">5.3</a> · <a href=\"/5-4/\">5.4</a> · <a href=\"/5-5/\">5.5</a></p>"
      },
      {
       "key": false,
-      "html": "<span class=\"tag\">Ch. 3 · Differentiation rules</span><p><a href=\"/3-1/\">3.1</a>, <a href=\"/3-2/\">3.2</a>, <a href=\"/3-3/\">3.3</a>, <a href=\"/3-4/\">3.4</a>, <a href=\"/3-5/\">3.5</a>, <a href=\"/3-6/\">3.6</a>, <a href=\"/3-9/\">3.9</a>, <a href=\"/3-10/\">3.10</a>, <a href=\"/3-11/\">3.11</a></p>"
-     },
-     {
-      "key": false,
-      "html": "<span class=\"tag\">Ch. 4 · Applications</span><p><a href=\"/4-1/\">4.1</a>, <a href=\"/4-2/\">4.2</a>, <a href=\"/4-3/\">4.3</a>, <a href=\"/4-4/\">4.4</a>, <a href=\"/4-5/\">4.5</a>, <a href=\"/4-7/\">4.7</a>, <a href=\"/4-8/\">4.8</a>, <a href=\"/4-9/\">4.9</a></p>"
-     },
-     {
-      "key": false,
-      "html": "<span class=\"tag\">Ch. 5 · Integrals</span><p><a href=\"/5-1/\">5.1</a>, <a href=\"/5-2/\">5.2</a>, <a href=\"/5-3/\">5.3</a>, <a href=\"/5-4/\">5.4</a>, <a href=\"/5-5/\">5.5</a></p>"
+      "html": "<span class=\"tag\">Full practice tests</span><p><a href=\"/midterm-practice/\">Midterm 2 practice</a> · <a href=\"/midterm-3-practice/\">Midterm 3 practice</a> · <a href=\"/final-practice/\">Practice final</a> (100 pts)</p>"
      }
     ]
    },
@@ -13624,6 +17332,2870 @@ export const sections: Section[] = [
      {
       "title": "Arithmetic by hand",
       "html": "<p>Newton's method and Riemann sums will use friendly numbers. Write each step; most lost points are arithmetic slips.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "warm",
+  "slug": "warmup",
+  "num": "Warm-up · Ch. 1 + algebra",
+  "title": "Algebra & trig warm-up",
+  "lede": "The precalculus skills every calculus problem leans on. Most points lost on exams are algebra slips, not calculus, so fix these first.",
+  "unit": "later",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\"><strong>Start here.</strong> Do these 16 before touching anything else. Each one is a move you will make inside a bigger calculus problem: factoring inside a limit, exponent rules before the power rule, log rules before log differentiation, unit-circle values in every trig problem. If one takes you more than 3 minutes, open its walkthrough and redo it tomorrow.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Factoring</span><p>\\(a^2-b^2=(a-b)(a+b)\\) · \\(a^3-b^3=(a-b)(a^2+ab+b^2)\\) · \\(a^3+b^3=(a+b)(a^2-ab+b^2)\\)</p><p class=\\\"note\\\">Trinomials: \\(x^2+bx+c=(x+p)(x+q)\\) where \\(pq=c\\), \\(p+q=b\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Exponents</span><p>\\(x^{-n}=\\dfrac1{x^n}\\) · \\(x^{m/n}=\\sqrt[n]{x^m}\\) · \\(x^ax^b=x^{a+b}\\) · \\(\\dfrac{x^a}{x^b}=x^{a-b}\\) · \\((x^a)^b=x^{ab}\\)</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Logs</span><p>\\(\\ln(ab)=\\ln a+\\ln b\\) · \\(\\ln\\dfrac ab=\\ln a-\\ln b\\) · \\(\\ln a^r=r\\ln a\\) · \\(\\ln e^x=x\\) · \\(e^{\\ln x}=x\\) · \\(\\ln1=0\\)</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Trig identities</span><p>\\(\\sin^2x+\\cos^2x=1\\) · \\(1+\\tan^2x=\\sec^2x\\) · \\(\\sin2x=2\\sin x\\cos x\\) · \\(\\cos2x=1-2\\sin^2x=2\\cos^2x-1\\)</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Unit circle</span><p>\\(\\frac\\pi6,\\frac\\pi4,\\frac\\pi3\\): \\(\\sin=\\frac12,\\frac{\\sqrt2}2,\\frac{\\sqrt3}2\\) and \\(\\cos\\) is the reverse. Signs by quadrant: All, Sin, Tan, Cos. Drill it on the <a href=\\\"/unit-circle/\\\">unit circle</a>.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Domain</span><p>No dividing by 0, no even root of a negative, \\(\\ln\\) only of a positive number.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Conjugate</span><p>To clear \\(\\sqrt a-b\\), multiply top and bottom by \\(\\sqrt a+b\\): \\((\\sqrt a-b)(\\sqrt a+b)=a-b^2\\).</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "w-1",
+      "source": "Factoring · used in §2.3 limits",
+      "href": null,
+      "question": "Factor \\(x^3-8\\), then simplify \\(\\dfrac{x^3-8}{x-2}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Difference of cubes with \\(a=x\\), \\(b=2\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Spot the cube: \\(8=2^3\\).</p>\\[\\displaystyle x^3-8=x^3-2^3\\]<p><strong>Step 2.</strong> \\(a^3-b^3=(a-b)(a^2+ab+b^2)\\).</p>\\[\\displaystyle =(x-2)(x^2+2x+4)\\]<p><strong>Step 3.</strong> Cancel the common factor (for \\(x\\ne2\\)).</p>\\[\\displaystyle \\frac{(x-2)(x^2+2x+4)}{x-2}=x^2+2x+4\\]<p><strong>What you found:</strong></p><ul><li>\\(x^3-8=(x-2)(x^2+2x+4)\\)</li><li>\\(\\frac{x^3-8}{x-2}=x^2+2x+4\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x^3-8=(x-2)(x^2+2x+4)\\), so the quotient is \\(x^2+2x+4\\) for \\(x\\ne2\\).</p><p class=\"ans\">\\(x^2+2x+4\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x^3-8=x^3-2^3",
+        "why": "Spot the cube: \\(8=2^3\\)."
+       },
+       {
+        "code": "=(x-2)(x^2+2x+4)",
+        "why": "\\(a^3-b^3=(a-b)(a^2+ab+b^2)\\)."
+       },
+       {
+        "code": "\\frac{(x-2)(x^2+2x+4)}{x-2}=x^2+2x+4",
+        "why": "Cancel the common factor (for \\(x\\ne2\\)).",
+        "watch": [
+         [
+          "\\text{result}",
+          "x^2+2x+4"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "w-2",
+      "source": "Complex fractions · used in §2.3, §2.7",
+      "href": null,
+      "question": "Simplify \\(\\dfrac{\\frac1x-\\frac13}{x-3}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Put the top over one common denominator \\(3x\\) first.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Common denominator \\(3x\\).</p>\\[\\displaystyle \\frac1x-\\frac13=\\frac{3-x}{3x}\\]<p><strong>Step 2.</strong> Dividing by \\(x-3\\) is multiplying by \\(\\frac1{x-3}\\).</p>\\[\\displaystyle \\frac{3-x}{3x}\\cdot\\frac{1}{x-3}\\]<p><strong>Step 3.</strong> Flip the sign so the factors match.</p>\\[\\displaystyle 3-x=-(x-3)\\]<p><strong>Step 4.</strong> Cancel \\(x-3\\).</p>\\[\\displaystyle =\\frac{-(x-3)}{3x(x-3)}=-\\frac1{3x}\\]<p><strong>What you found:</strong></p><ul><li>\\(-\\frac{1}{3x}\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{(3-x)/(3x)}{x-3}=\\frac{-(x-3)}{3x(x-3)}=-\\frac1{3x}\\).</p><p class=\"ans\">\\(-\\dfrac1{3x}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac1x-\\frac13=\\frac{3-x}{3x}",
+        "why": "Common denominator \\(3x\\)."
+       },
+       {
+        "code": "\\frac{3-x}{3x}\\cdot\\frac{1}{x-3}",
+        "why": "Dividing by \\(x-3\\) is multiplying by \\(\\frac1{x-3}\\)."
+       },
+       {
+        "code": "3-x=-(x-3)",
+        "why": "Flip the sign so the factors match."
+       },
+       {
+        "code": "=\\frac{-(x-3)}{3x(x-3)}=-\\frac1{3x}",
+        "why": "Cancel \\(x-3\\).",
+        "watch": [
+         [
+          "\\text{result}",
+          "-\\frac1{3x}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "w-3",
+      "source": "Conjugates · used in §2.3 limits",
+      "href": null,
+      "question": "Simplify \\(\\dfrac{\\sqrt x-2}{x-4}\\) by rationalizing.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Multiply top and bottom by \\(\\sqrt x+2\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Multiply by the conjugate (that's multiplying by 1).</p>\\[\\displaystyle \\frac{\\sqrt x-2}{x-4}\\cdot\\frac{\\sqrt x+2}{\\sqrt x+2}\\]<p><strong>Step 2.</strong> Difference of squares on top.</p>\\[\\displaystyle (\\sqrt x-2)(\\sqrt x+2)=x-4\\]<p><strong>Step 3.</strong> Cancel \\(x-4\\).</p>\\[\\displaystyle =\\frac{x-4}{(x-4)(\\sqrt x+2)}=\\frac1{\\sqrt x+2}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\frac1{\\sqrt x+2}\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Multiply by \\(\\frac{\\sqrt x+2}{\\sqrt x+2}\\): the top becomes \\(x-4\\), which cancels.</p><p class=\"ans\">\\(\\dfrac1{\\sqrt x+2}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{\\sqrt x-2}{x-4}\\cdot\\frac{\\sqrt x+2}{\\sqrt x+2}",
+        "why": "Multiply by the conjugate (that's multiplying by 1)."
+       },
+       {
+        "code": "(\\sqrt x-2)(\\sqrt x+2)=x-4",
+        "why": "Difference of squares on top."
+       },
+       {
+        "code": "=\\frac{x-4}{(x-4)(\\sqrt x+2)}=\\frac1{\\sqrt x+2}",
+        "why": "Cancel \\(x-4\\).",
+        "watch": [
+         [
+          "\\text{result}",
+          "\\frac1{\\sqrt x+2}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "w-4",
+      "source": "Exponents · used before the power rule",
+      "href": null,
+      "question": "Rewrite \\(y=\\dfrac{4}{\\sqrt[3]{x^2}}+5\\sqrt{x^3}-\\dfrac{2}{x}\\) as a sum of powers of \\(x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Roots become fractional exponents; anything in a denominator gets a negative exponent.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Root index goes on the bottom of the fraction.</p>\\[\\displaystyle \\sqrt[3]{x^2}=x^{2/3}\\Rightarrow\\frac4{x^{2/3}}=4x^{-2/3}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\sqrt{x^3}=x^{3/2}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\frac2x=2x^{-1}\\]<p><strong>Step 4.</strong> Now the power rule works term by term.</p>\\[\\displaystyle y=4x^{-2/3}+5x^{3/2}-2x^{-1}\\]<p><strong>What you found:</strong></p><ul><li>\\(y=4x^{-2/3}+5x^{3/2}-2x^{-1}\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(4x^{-2/3}+5x^{3/2}-2x^{-1}\\).</p><p class=\"ans\">\\(y=4x^{-2/3}+5x^{3/2}-2x^{-1}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\sqrt[3]{x^2}=x^{2/3}\\Rightarrow\\frac4{x^{2/3}}=4x^{-2/3}",
+        "why": "Root index goes on the bottom of the fraction."
+       },
+       {
+        "code": "\\sqrt{x^3}=x^{3/2}",
+        "why": ""
+       },
+       {
+        "code": "\\frac2x=2x^{-1}",
+        "why": ""
+       },
+       {
+        "code": "y=4x^{-2/3}+5x^{3/2}-2x^{-1}",
+        "why": "Now the power rule works term by term.",
+        "watch": [
+         [
+          "y",
+          "4x^{-2/3}+5x^{3/2}-2x^{-1}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "w-5",
+      "source": "Exponential equations",
+      "href": null,
+      "question": "Solve \\(e^{2x-1}=5\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Take \\(\\ln\\) of both sides; \\(\\ln e^{u}=u\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Take \\(\\ln\\) of both sides.</p>\\[\\displaystyle \\ln e^{2x-1}=\\ln5\\]<p><strong>Step 2.</strong> \\(\\ln\\) undoes \\(e\\).</p>\\[\\displaystyle 2x-1=\\ln5\\]<p><strong>Step 3.</strong> Solve for \\(x\\).</p>\\[\\displaystyle x=\\frac{1+\\ln5}{2}\\]<p><strong>What you found:</strong></p><ul><li>\\(x=\\frac{1+\\ln5}{2}\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(2x-1=\\ln5\\), so \\(x=\\frac{1+\\ln5}2\\).</p><p class=\"ans\">\\(x=\\dfrac{1+\\ln5}{2}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\ln e^{2x-1}=\\ln5",
+        "why": "Take \\(\\ln\\) of both sides."
+       },
+       {
+        "code": "2x-1=\\ln5",
+        "why": "\\(\\ln\\) undoes \\(e\\)."
+       },
+       {
+        "code": "x=\\frac{1+\\ln5}{2}",
+        "why": "Solve for \\(x\\).",
+        "watch": [
+         [
+          "x",
+          "\\frac{1+\\ln5}2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "w-6",
+      "source": "Log equations",
+      "href": null,
+      "question": "Solve \\(\\ln x+\\ln(x-3)=\\ln10\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Combine the logs, drop the \\(\\ln\\), then check the domain.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\ln a+\\ln b=\\ln(ab)\\).</p>\\[\\displaystyle \\ln\\big(x(x-3)\\big)=\\ln10\\]<p><strong>Step 2.</strong> Equal logs mean equal insides.</p>\\[\\displaystyle x^2-3x-10=0\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle (x-5)(x+2)=0\\Rightarrow x=5\\text{ or }x=-2\\]<p><strong>Step 4.</strong> Always check: \\(\\ln\\) needs a positive input. Reject \\(-2\\).</p>\\[\\displaystyle x=-2:\\ \\ln(-2)\\text{ undefined}\\]<p><strong>What you found:</strong></p><ul><li>\\(x=5\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x(x-3)=10\\Rightarrow(x-5)(x+2)=0\\). Only \\(x=5\\) keeps both logs defined.</p><p class=\"ans\">\\(x=5\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\ln\\big(x(x-3)\\big)=\\ln10",
+        "why": "\\(\\ln a+\\ln b=\\ln(ab)\\)."
+       },
+       {
+        "code": "x^2-3x-10=0",
+        "why": "Equal logs mean equal insides."
+       },
+       {
+        "code": "(x-5)(x+2)=0\\Rightarrow x=5\\text{ or }x=-2",
+        "why": ""
+       },
+       {
+        "code": "x=-2:\\ \\ln(-2)\\text{ undefined}",
+        "why": "Always check: \\(\\ln\\) needs a positive input. Reject \\(-2\\).",
+        "watch": [
+         [
+          "x",
+          "5"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "w-7",
+      "source": "Log rules · used in §3.6 log differentiation",
+      "href": null,
+      "question": "Expand \\(\\ln\\dfrac{x^2\\sqrt{x+1}}{(x-3)^4}\\) into a sum of simple logs.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Product → sum, quotient → difference, power → coefficient.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Product and quotient rules for logs.</p>\\[\\displaystyle =\\ln x^2+\\ln\\sqrt{x+1}-\\ln(x-3)^4\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\sqrt{x+1}=(x+1)^{1/2}\\]<p><strong>Step 3.</strong> Bring each power down in front.</p>\\[\\displaystyle =2\\ln x+\\tfrac12\\ln(x+1)-4\\ln(x-3)\\]<p><strong>What you found:</strong></p><ul><li>\\(2\\ln x+\\tfrac12\\ln(x+1)-4\\ln(x-3)\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(2\\ln x+\\frac12\\ln(x+1)-4\\ln(x-3)\\).</p><p class=\"ans\">\\(2\\ln x+\\tfrac12\\ln(x+1)-4\\ln(x-3)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "=\\ln x^2+\\ln\\sqrt{x+1}-\\ln(x-3)^4",
+        "why": "Product and quotient rules for logs."
+       },
+       {
+        "code": "\\sqrt{x+1}=(x+1)^{1/2}",
+        "why": ""
+       },
+       {
+        "code": "=2\\ln x+\\tfrac12\\ln(x+1)-4\\ln(x-3)",
+        "why": "Bring each power down in front.",
+        "watch": [
+         [
+          "\\text{result}",
+          "2\\ln x+\\tfrac12\\ln(x+1)-4\\ln(x-3)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "w-8",
+      "source": "Unit circle · no calculator",
+      "href": null,
+      "question": "Find the exact values: \\(\\sin\\frac{5\\pi}6\\), \\(\\cos\\frac{4\\pi}3\\), \\(\\tan\\frac{3\\pi}4\\), \\(\\sec\\frac\\pi3\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Find the reference angle, then fix the sign by quadrant.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Sine is positive in QII.</p>\\[\\displaystyle \\tfrac{5\\pi}6:\\ \\text{QII, ref }\\tfrac\\pi6\\Rightarrow\\sin=+\\tfrac12\\]<p><strong>Step 2.</strong> Cosine is negative in QIII.</p>\\[\\displaystyle \\tfrac{4\\pi}3:\\ \\text{QIII, ref }\\tfrac\\pi3\\Rightarrow\\cos=-\\tfrac12\\]<p><strong>Step 3.</strong> Tangent is negative in QII.</p>\\[\\displaystyle \\tfrac{3\\pi}4:\\ \\text{QII, ref }\\tfrac\\pi4\\Rightarrow\\tan=-1\\]<p><strong>Step 4.</strong> Secant is 1 over cosine.</p>\\[\\displaystyle \\sec\\tfrac\\pi3=\\frac1{\\cos\\frac\\pi3}=\\frac1{1/2}=2\\]<p><strong>What you found:</strong></p><ul><li>\\(\\tfrac12,\\ -\\tfrac12,\\ -1,\\ 2\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\sin\\frac{5\\pi}6=\\frac12\\), \\(\\cos\\frac{4\\pi}3=-\\frac12\\), \\(\\tan\\frac{3\\pi}4=-1\\), \\(\\sec\\frac\\pi3=2\\).</p><p class=\"ans\">\\(\\tfrac12,\\ -\\tfrac12,\\ -1,\\ 2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\tfrac{5\\pi}6:\\ \\text{QII, ref }\\tfrac\\pi6\\Rightarrow\\sin=+\\tfrac12",
+        "why": "Sine is positive in QII."
+       },
+       {
+        "code": "\\tfrac{4\\pi}3:\\ \\text{QIII, ref }\\tfrac\\pi3\\Rightarrow\\cos=-\\tfrac12",
+        "why": "Cosine is negative in QIII."
+       },
+       {
+        "code": "\\tfrac{3\\pi}4:\\ \\text{QII, ref }\\tfrac\\pi4\\Rightarrow\\tan=-1",
+        "why": "Tangent is negative in QII."
+       },
+       {
+        "code": "\\sec\\tfrac\\pi3=\\frac1{\\cos\\frac\\pi3}=\\frac1{1/2}=2",
+        "why": "Secant is 1 over cosine."
+       }
+      ]
+     },
+     {
+      "id": "w-9",
+      "source": "Trig equations · used in §4.1, §4.3",
+      "href": null,
+      "question": "Solve \\(2\\sin x-1=0\\) on \\([0,2\\pi)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Isolate \\(\\sin x\\), then find every angle in one full turn.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Isolate.</p>\\[\\displaystyle \\sin x=\\tfrac12\\]<p><strong>Step 2.</strong> Reference angle.</p>\\[\\displaystyle x=\\tfrac\\pi6\\]<p><strong>Step 3.</strong> Sine is also positive in QII.</p>\\[\\displaystyle x=\\pi-\\tfrac\\pi6=\\tfrac{5\\pi}6\\]<p><strong>What you found:</strong></p><ul><li>\\(x=\\tfrac\\pi6,\\ \\tfrac{5\\pi}6\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\sin x=\\frac12\\) in QI and QII: \\(x=\\frac\\pi6,\\frac{5\\pi}6\\).</p><p class=\"ans\">\\(x=\\dfrac\\pi6,\\ \\dfrac{5\\pi}6\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\sin x=\\tfrac12",
+        "why": "Isolate."
+       },
+       {
+        "code": "x=\\tfrac\\pi6",
+        "why": "Reference angle."
+       },
+       {
+        "code": "x=\\pi-\\tfrac\\pi6=\\tfrac{5\\pi}6",
+        "why": "Sine is also positive in QII.",
+        "watch": [
+         [
+          "x",
+          "\\tfrac\\pi6,\\ \\tfrac{5\\pi}6"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "w-10",
+      "source": "Trig equations · quadratic type",
+      "href": null,
+      "question": "Solve \\(2\\cos^2x-\\cos x-1=0\\) on \\([0,2\\pi)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Treat it as \\(2u^2-u-1=0\\) with \\(u=\\cos x\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Factor like \\(2u^2-u-1=(2u+1)(u-1)\\).</p>\\[\\displaystyle (2\\cos x+1)(\\cos x-1)=0\\]<p><strong>Step 2.</strong> Cosine is negative in QII and QIII, reference \\(\\frac\\pi3\\).</p>\\[\\displaystyle \\cos x=-\\tfrac12\\Rightarrow x=\\tfrac{2\\pi}3,\\ \\tfrac{4\\pi}3\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\cos x=1\\Rightarrow x=0\\]<p><strong>What you found:</strong></p><ul><li>\\(x=0,\\ \\tfrac{2\\pi}3,\\ \\tfrac{4\\pi}3\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\((2\\cos x+1)(\\cos x-1)=0\\): \\(\\cos x=-\\frac12\\) gives \\(\\frac{2\\pi}3,\\frac{4\\pi}3\\); \\(\\cos x=1\\) gives \\(0\\).</p><p class=\"ans\">\\(x=0,\\ \\dfrac{2\\pi}3,\\ \\dfrac{4\\pi}3\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "(2\\cos x+1)(\\cos x-1)=0",
+        "why": "Factor like \\(2u^2-u-1=(2u+1)(u-1)\\)."
+       },
+       {
+        "code": "\\cos x=-\\tfrac12\\Rightarrow x=\\tfrac{2\\pi}3,\\ \\tfrac{4\\pi}3",
+        "why": "Cosine is negative in QII and QIII, reference \\(\\frac\\pi3\\)."
+       },
+       {
+        "code": "\\cos x=1\\Rightarrow x=0",
+        "why": "",
+        "watch": [
+         [
+          "x",
+          "0,\\ \\tfrac{2\\pi}3,\\ \\tfrac{4\\pi}3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "w-11",
+      "source": "Domain",
+      "href": null,
+      "question": "Find the domain of \\(f(x)=\\dfrac{\\sqrt{x-2}}{x^2-9}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Two rules: the square root needs \\(x-2\\ge0\\); the bottom can't be 0.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Even root of a non-negative number only.</p>\\[\\displaystyle x-2\\ge0\\Rightarrow x\\ge2\\]<p><strong>Step 2.</strong> These make the bottom zero.</p>\\[\\displaystyle x^2-9=0\\Rightarrow x=\\pm3\\]<p><strong>Step 3.</strong> \\(-3\\) is already excluded by \\(x\\ge2\\).</p>\\[\\displaystyle x\\ge2,\\ x\\ne3\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle [2,3)\\cup(3,\\infty)\\]<p><strong>What you found:</strong></p><ul><li>\\([2,3)\\cup(3,\\infty)\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Need \\(x\\ge2\\) and \\(x\\ne\\pm3\\): \\([2,3)\\cup(3,\\infty)\\).</p><p class=\"ans\">\\([2,3)\\cup(3,\\infty)\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x-2\\ge0\\Rightarrow x\\ge2",
+        "why": "Even root of a non-negative number only."
+       },
+       {
+        "code": "x^2-9=0\\Rightarrow x=\\pm3",
+        "why": "These make the bottom zero."
+       },
+       {
+        "code": "x\\ge2,\\ x\\ne3",
+        "why": "\\(-3\\) is already excluded by \\(x\\ge2\\)."
+       },
+       {
+        "code": "[2,3)\\cup(3,\\infty)",
+        "why": "",
+        "watch": [
+         [
+          "\\text{domain}",
+          "[2,3)\\cup(3,\\infty)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "w-12",
+      "source": "Composition · used in the chain rule",
+      "href": null,
+      "question": "For \\(f(x)=x^2+1\\) and \\(g(x)=\\sqrt x\\), find \\(f(g(x))\\) and \\(g(f(x))\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f(g(x))\\): put \\(g(x)\\) everywhere you see \\(x\\) in \\(f\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The inside \\(\\sqrt x\\) still needs \\(x\\ge0\\).</p>\\[\\displaystyle f(g(x))=(\\sqrt x)^2+1=x+1,\\ x\\ge0\\]<p><strong>Step 2.</strong> Defined for every \\(x\\) because \\(x^2+1>0\\).</p>\\[\\displaystyle g(f(x))=\\sqrt{x^2+1}\\]<p><strong>What you found:</strong></p><ul><li>\\(f(g(x))=x+1\\ (x\\ge0)\\)</li><li>\\(g(f(x))=\\sqrt{x^2+1}\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(g(x))=x+1\\) for \\(x\\ge0\\); \\(g(f(x))=\\sqrt{x^2+1}\\) for all \\(x\\). Order matters.</p><p class=\"ans\">\\(f(g(x))=x+1\\ (x\\ge0)\\); \\(g(f(x))=\\sqrt{x^2+1}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(g(x))=(\\sqrt x)^2+1=x+1,\\ x\\ge0",
+        "why": "The inside \\(\\sqrt x\\) still needs \\(x\\ge0\\)."
+       },
+       {
+        "code": "g(f(x))=\\sqrt{x^2+1}",
+        "why": "Defined for every \\(x\\) because \\(x^2+1>0\\)."
+       }
+      ]
+     },
+     {
+      "id": "w-13",
+      "source": "Inverse functions",
+      "href": null,
+      "question": "Find \\(f^{-1}(x)\\) for \\(f(x)=\\dfrac{2x+1}{x-3}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Write \\(y=f(x)\\), solve for \\(x\\), then swap the letters.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Clear the fraction.</p>\\[\\displaystyle y(x-3)=2x+1\\]<p><strong>Step 2.</strong> Collect the \\(x\\) terms on one side.</p>\\[\\displaystyle yx-3y=2x+1\\Rightarrow yx-2x=3y+1\\]<p><strong>Step 3.</strong> Factor out \\(x\\).</p>\\[\\displaystyle x(y-2)=3y+1\\Rightarrow x=\\frac{3y+1}{y-2}\\]<p><strong>Step 4.</strong> Swap the letters.</p>\\[\\displaystyle f^{-1}(x)=\\frac{3x+1}{x-2}\\]<p><strong>What you found:</strong></p><ul><li>\\(f^{-1}(x)=\\frac{3x+1}{x-2}\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(x(y-2)=3y+1\\), so \\(f^{-1}(x)=\\frac{3x+1}{x-2}\\).</p><p class=\"ans\">\\(f^{-1}(x)=\\dfrac{3x+1}{x-2}\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "y(x-3)=2x+1",
+        "why": "Clear the fraction."
+       },
+       {
+        "code": "yx-3y=2x+1\\Rightarrow yx-2x=3y+1",
+        "why": "Collect the \\(x\\) terms on one side."
+       },
+       {
+        "code": "x(y-2)=3y+1\\Rightarrow x=\\frac{3y+1}{y-2}",
+        "why": "Factor out \\(x\\)."
+       },
+       {
+        "code": "f^{-1}(x)=\\frac{3x+1}{x-2}",
+        "why": "Swap the letters.",
+        "watch": [
+         [
+          "f^{-1}(x)",
+          "\\frac{3x+1}{x-2}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "w-14",
+      "source": "Right triangles · used in §3.6 inverse trig",
+      "href": null,
+      "question": "If \\(\\sin\\theta=\\frac35\\) and \\(\\theta\\) is in quadrant II, find \\(\\cos\\theta\\) and \\(\\tan\\theta\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Draw the triangle: opposite 3, hypotenuse 5. Then fix the signs for QII.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Pythagoras.</p>\\[\\displaystyle \\text{adj}=\\sqrt{5^2-3^2}=4\\]<p><strong>Step 2.</strong> Cosine is negative in QII.</p>\\[\\displaystyle \\cos\\theta=-\\tfrac45\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\tan\\theta=\\frac{\\sin\\theta}{\\cos\\theta}=\\frac{3/5}{-4/5}=-\\tfrac34\\]<p><strong>What you found:</strong></p><ul><li>\\(\\cos\\theta=-\\tfrac45\\)</li><li>\\(\\tan\\theta=-\\tfrac34\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>The 3-4-5 triangle gives \\(|\\cos\\theta|=\\frac45\\); in QII it is negative. \\(\\tan\\theta=-\\frac34\\).</p><p class=\"ans\">\\(\\cos\\theta=-\\tfrac45\\), \\(\\tan\\theta=-\\tfrac34\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\text{adj}=\\sqrt{5^2-3^2}=4",
+        "why": "Pythagoras."
+       },
+       {
+        "code": "\\cos\\theta=-\\tfrac45",
+        "why": "Cosine is negative in QII."
+       },
+       {
+        "code": "\\tan\\theta=\\frac{\\sin\\theta}{\\cos\\theta}=\\frac{3/5}{-4/5}=-\\tfrac34",
+        "why": "",
+        "watch": [
+         [
+          "\\cos\\theta",
+          "-\\tfrac45"
+         ],
+         [
+          "\\tan\\theta",
+          "-\\tfrac34"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "w-15",
+      "source": "Trig identities",
+      "href": null,
+      "question": "Show that \\(\\sec x-\\cos x=\\sin x\\tan x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Write everything with \\(\\sin\\) and \\(\\cos\\), then use \\(1-\\cos^2x=\\sin^2x\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Secant is \\(\\frac1{\\cos}\\).</p>\\[\\displaystyle \\sec x-\\cos x=\\frac1{\\cos x}-\\cos x\\]<p><strong>Step 2.</strong> Common denominator.</p>\\[\\displaystyle =\\frac{1-\\cos^2x}{\\cos x}\\]<p><strong>Step 3.</strong> \\(\\sin^2x+\\cos^2x=1\\).</p>\\[\\displaystyle =\\frac{\\sin^2x}{\\cos x}\\]<p><strong>Step 4.</strong> Split off one \\(\\sin x\\).</p>\\[\\displaystyle =\\sin x\\cdot\\frac{\\sin x}{\\cos x}=\\sin x\\tan x\\]<p><strong>What you found:</strong></p><ul><li>\\(\\sec x-\\cos x=\\sin x\\tan x\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac1{\\cos x}-\\cos x=\\frac{1-\\cos^2x}{\\cos x}=\\frac{\\sin^2x}{\\cos x}=\\sin x\\tan x\\).</p><p class=\"ans\">Shown.</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\sec x-\\cos x=\\frac1{\\cos x}-\\cos x",
+        "why": "Secant is \\(\\frac1{\\cos}\\)."
+       },
+       {
+        "code": "=\\frac{1-\\cos^2x}{\\cos x}",
+        "why": "Common denominator."
+       },
+       {
+        "code": "=\\frac{\\sin^2x}{\\cos x}",
+        "why": "\\(\\sin^2x+\\cos^2x=1\\)."
+       },
+       {
+        "code": "=\\sin x\\cdot\\frac{\\sin x}{\\cos x}=\\sin x\\tan x",
+        "why": "Split off one \\(\\sin x\\)."
+       }
+      ]
+     },
+     {
+      "id": "w-16",
+      "source": "Absolute value · used in one-sided limits",
+      "href": null,
+      "question": "Write \\(|2x-6|\\) without bars (as a piecewise function), then solve \\(|2x-6|=4\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(|u|=u\\) when \\(u\\ge0\\) and \\(-u\\) when \\(u<0\\). Here \\(u=2x-6\\) changes sign at \\(x=3\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Flip the sign on the side where the inside is negative.</p>\\[\\displaystyle |2x-6|=\\begin{cases}2x-6,&x\\ge3\\\\6-2x,&x<3\\end{cases}\\]<p><strong>Step 2.</strong> Right piece (and \\(5\\ge3\\) ✓).</p>\\[\\displaystyle 2x-6=4\\Rightarrow x=5\\]<p><strong>Step 3.</strong> Left piece (and \\(1<3\\) ✓).</p>\\[\\displaystyle 6-2x=4\\Rightarrow x=1\\]<p><strong>What you found:</strong></p><ul><li>\\(x=1\\text{ or }x=5\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(|2x-6|=2x-6\\) for \\(x\\ge3\\) and \\(6-2x\\) for \\(x<3\\). Solutions: \\(x=5\\) and \\(x=1\\).</p><p class=\"ans\">\\(x=1\\) or \\(x=5\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "|2x-6|=\\begin{cases}2x-6,&x\\ge3\\\\6-2x,&x<3\\end{cases}",
+        "why": "Flip the sign on the side where the inside is negative."
+       },
+       {
+        "code": "2x-6=4\\Rightarrow x=5",
+        "why": "Right piece (and \\(5\\ge3\\) ✓)."
+       },
+       {
+        "code": "6-2x=4\\Rightarrow x=1",
+        "why": "Left piece (and \\(1<3\\) ✓).",
+        "watch": [
+         [
+          "x",
+          "1,\\ 5"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Fake distributing",
+      "html": "<p>\\((a+b)^2\\ne a^2+b^2\\), \\(\\sqrt{a+b}\\ne\\sqrt a+\\sqrt b\\), \\(\\ln(a+b)\\ne\\ln a+\\ln b\\). These cost more points than any calculus rule.</p>"
+     },
+     {
+      "title": "Cancel factors, not terms",
+      "html": "<p>\\(\\frac{x^2+3}{x}\\) does not simplify to \\(x+3\\). Only something multiplied by everything on top can cancel.</p>"
+     },
+     {
+      "title": "sin⁻¹x is not 1/sin x",
+      "html": "<p>\\(\\sin^{-1}x=\\arcsin x\\). The reciprocal is \\(\\csc x\\).</p>"
+     },
+     {
+      "title": "Dividing by a variable",
+      "html": "<p>Dividing both sides by \\(x\\) loses the solution \\(x=0\\). Factor instead: \\(x^2=3x\\Rightarrow x(x-3)=0\\).</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s21",
+  "slug": "2-1",
+  "num": "§2.1",
+  "title": "The Tangent and Velocity Problems",
+  "lede": "Secant slopes and average velocity, and how they close in on the tangent slope and the instantaneous velocity.",
+  "unit": "later",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\"><strong>Midterm 1 material, back on the final.</strong> The final is comprehensive, so these limits show up again, usually as 2–4 short problems worth about 15% of the test.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Secant slope</span><p>The slope between \\((a,f(a))\\) and \\((x,f(x))\\):</p>\\[m_{PQ}=\\frac{f(x)-f(a)}{x-a}\\]"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Tangent slope</span><p>Let \\(x\\to a\\): the secant slopes approach the tangent slope. That limit is the derivative (§2.7).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Average velocity</span><p>On \\([a,a+h]\\): \\(\\dfrac{s(a+h)-s(a)}{h}\\). Let \\(h\\to0\\) to get the instantaneous velocity.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p21-1",
+      "source": "Like §2.1 #3–5",
+      "href": null,
+      "question": "The point \\(P(1,3)\\) is on \\(y=x^2+2\\). Find the slope of the secant line \\(PQ\\) for \\(Q\\) at \\(x=2,\\ 1.5,\\ 1.1,\\ 1.01\\), guess the tangent slope at \\(P\\), and write the tangent line.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Simplify the secant slope first: \\(\\frac{(x^2+2)-3}{x-1}\\) factors.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Simplifying once saves four separate calculations.</p>\\[\\displaystyle m_{PQ}=\\frac{x^2+2-3}{x-1}=\\frac{(x-1)(x+1)}{x-1}=x+1\\]<p><strong>Step 2.</strong> Plug each \\(x\\) into \\(x+1\\).</p>\\[\\displaystyle x=2,1.5,1.1,1.01:\\ m=3,\\ 2.5,\\ 2.1,\\ 2.01\\]<p><strong>Step 3.</strong> The slopes close in on 2 as \\(x\\to1\\).</p>\\[\\displaystyle m_{\\tan}=2\\]<p><strong>Step 4.</strong> Point-slope form.</p>\\[\\displaystyle y-3=2(x-1)\\Rightarrow y=2x+1\\]<p><strong>What you found:</strong></p><ul><li>\\(m_{PQ}=3,\\ 2.5,\\ 2.1,\\ 2.01\\)</li><li>\\(m_{\\tan}=2\\)</li><li>\\(y=2x+1\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(m_{PQ}=x+1\\): \\(3, 2.5, 2.1, 2.01\\). Tangent slope 2, so \\(y=2x+1\\).</p><p class=\"ans\">Slope 2; tangent \\(y=2x+1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "m_{PQ}=\\frac{x^2+2-3}{x-1}=\\frac{(x-1)(x+1)}{x-1}=x+1",
+        "why": "Simplifying once saves four separate calculations."
+       },
+       {
+        "code": "x=2,1.5,1.1,1.01:\\ m=3,\\ 2.5,\\ 2.1,\\ 2.01",
+        "why": "Plug each \\(x\\) into \\(x+1\\)."
+       },
+       {
+        "code": "m_{\\tan}=2",
+        "why": "The slopes close in on 2 as \\(x\\to1\\).",
+        "watch": [
+         [
+          "m",
+          "2"
+         ]
+        ]
+       },
+       {
+        "code": "y-3=2(x-1)\\Rightarrow y=2x+1",
+        "why": "Point-slope form.",
+        "watch": [
+         [
+          "\\text{tangent}",
+          "y=2x+1"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p21-2",
+      "source": "Like §2.1 #5–7",
+      "href": null,
+      "question": "A ball's height is \\(s(t)=40t-16t^2\\) ft. Find the average velocity on \\([2,2+h]\\) for \\(h=0.5,\\ 0.1,\\ 0.01\\), and estimate the velocity at \\(t=2\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Work out \\(\\frac{s(2+h)-s(2)}{h}\\) in general first, then plug in each \\(h\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle s(2)=80-64=16\\]<p><strong>Step 2.</strong> Expand \\((2+h)^2\\) carefully.</p>\\[\\displaystyle \\begin{aligned}s(2+h)&=80+40h-16(4+4h+h^2)\\\\&=16-24h-16h^2\\end{aligned}\\]<p><strong>Step 3.</strong> The \\(16\\)s cancel, then divide by \\(h\\).</p>\\[\\displaystyle \\frac{s(2+h)-s(2)}{h}=\\frac{-24h-16h^2}{h}=-24-16h\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle h=0.5,0.1,0.01:\\ -32,\\ -25.6,\\ -24.16\\]<p><strong>Step 5.</strong> As \\(h\\to0\\), \\(-24-16h\\to-24\\). Negative means falling.</p>\\[\\displaystyle v(2)=-24\\text{ ft/s}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{averages }-32,\\ -25.6,\\ -24.16\\)</li><li>\\(v(2)=-24\\text{ ft/s}\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Average velocity \\(=-24-16h\\): \\(-32, -25.6, -24.16\\) ft/s. Instantaneous: \\(-24\\) ft/s.</p><p class=\"ans\">\\(v(2)=-24\\) ft/s</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "s(2)=80-64=16",
+        "why": ""
+       },
+       {
+        "code": "\\begin{aligned}s(2+h)&=80+40h-16(4+4h+h^2)\\\\&=16-24h-16h^2\\end{aligned}",
+        "why": "Expand \\((2+h)^2\\) carefully."
+       },
+       {
+        "code": "\\frac{s(2+h)-s(2)}{h}=\\frac{-24h-16h^2}{h}=-24-16h",
+        "why": "The \\(16\\)s cancel, then divide by \\(h\\)."
+       },
+       {
+        "code": "h=0.5,0.1,0.01:\\ -32,\\ -25.6,\\ -24.16",
+        "why": ""
+       },
+       {
+        "code": "v(2)=-24\\text{ ft/s}",
+        "why": "As \\(h\\to0\\), \\(-24-16h\\to-24\\). Negative means falling.",
+        "watch": [
+         [
+          "v(2)",
+          "-24"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p21-3",
+      "source": "Like §2.1 #8",
+      "href": null,
+      "question": "For \\(f(x)=\\dfrac1x\\), simplify the secant slope from \\(x=2\\) to \\(x=2+h\\), then find the tangent slope at \\(x=2\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Combine \\(\\frac1{2+h}-\\frac12\\) over the common denominator \\(2(2+h)\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Secant slope.</p>\\[\\displaystyle \\frac{\\frac1{2+h}-\\frac12}{h}\\]<p><strong>Step 2.</strong> Common denominator.</p>\\[\\displaystyle \\frac1{2+h}-\\frac12=\\frac{2-(2+h)}{2(2+h)}=\\frac{-h}{2(2+h)}\\]<p><strong>Step 3.</strong> Cancel \\(h\\).</p>\\[\\displaystyle \\frac{-h}{2(2+h)}\\cdot\\frac1h=\\frac{-1}{2(2+h)}\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle h\\to0:\\ -\\tfrac14\\]<p><strong>What you found:</strong></p><ul><li>\\(m_{\\tan}=-\\tfrac14\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Secant slope \\(=\\frac{-1}{2(2+h)}\\to-\\frac14\\).</p><p class=\"ans\">\\(-\\dfrac14\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{\\frac1{2+h}-\\frac12}{h}",
+        "why": "Secant slope."
+       },
+       {
+        "code": "\\frac1{2+h}-\\frac12=\\frac{2-(2+h)}{2(2+h)}=\\frac{-h}{2(2+h)}",
+        "why": "Common denominator."
+       },
+       {
+        "code": "\\frac{-h}{2(2+h)}\\cdot\\frac1h=\\frac{-1}{2(2+h)}",
+        "why": "Cancel \\(h\\)."
+       },
+       {
+        "code": "h\\to0:\\ -\\tfrac14",
+        "why": "",
+        "watch": [
+         [
+          "m_{\\tan}",
+          "-\\tfrac14"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Order in the slope",
+      "html": "<p>Keep the same order on top and bottom: \\(\\frac{f(x)-f(a)}{x-a}\\), never \\(\\frac{f(x)-f(a)}{a-x}\\).</p>"
+     },
+     {
+      "title": "Simplify before plugging in",
+      "html": "<p>Factor or combine the secant slope first. Then every value of \\(x\\) or \\(h\\) is one quick substitution.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s22",
+  "slug": "2-2",
+  "num": "§2.2",
+  "title": "The Limit of a Function",
+  "lede": "One-sided limits, when a limit exists, infinite limits and vertical asymptotes.",
+  "unit": "later",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\"><strong>Midterm 1 material, back on the final.</strong> The final is comprehensive, so these limits show up again, usually as 2–4 short problems worth about 15% of the test.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">When a limit exists</span><p>\\(\\lim_{x\\to a}f(x)=L\\) exactly when \\(\\lim_{x\\to a^-}f(x)=L\\) and \\(\\lim_{x\\to a^+}f(x)=L\\). The value \\(f(a)\\) itself doesn't matter.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Infinite limits</span><p>A nonzero number over something going to 0 blows up. The sign of the top and the sign of the tiny bottom decide \\(+\\infty\\) or \\(-\\infty\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Vertical asymptote</span><p>\\(x=a\\) is a VA if a one-sided limit is \\(\\pm\\infty\\). For a fraction: the bottom is 0 at \\(a\\) and the factor does not cancel.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p22-1",
+      "source": "Like §2.2 #4–9",
+      "href": null,
+      "question": "\\(f(x)=\\begin{cases}x+1,&x<1\\\\3,&x=1\\\\4-x,&x>1\\end{cases}\\). Find \\(\\lim_{x\\to1^-}f(x)\\), \\(\\lim_{x\\to1^+}f(x)\\), \\(\\lim_{x\\to1}f(x)\\) and \\(f(1)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Each one-sided limit uses only its own piece.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> From the left, use the \\(x<1\\) piece.</p>\\[\\displaystyle \\lim_{x\\to1^-}(x+1)=2\\]<p><strong>Step 2.</strong> From the right, use the \\(x>1\\) piece.</p>\\[\\displaystyle \\lim_{x\\to1^+}(4-x)=3\\]<p><strong>Step 3.</strong> The two sides disagree.</p>\\[\\displaystyle 2\\ne3\\Rightarrow\\lim_{x\\to1}f(x)\\text{ DNE}\\]<p><strong>Step 4.</strong> The middle piece. It doesn't change the limit.</p>\\[\\displaystyle f(1)=3\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{left }2,\\ \\text{right }3\\)</li><li>\\(\\lim_{x\\to1}f(x)\\text{ DNE}\\)</li><li>\\(f(1)=3\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Left limit 2, right limit 3, so the limit does not exist. \\(f(1)=3\\).</p><p class=\"ans\">\\(2,\\ 3,\\) DNE, \\(3\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\lim_{x\\to1^-}(x+1)=2",
+        "why": "From the left, use the \\(x<1\\) piece."
+       },
+       {
+        "code": "\\lim_{x\\to1^+}(4-x)=3",
+        "why": "From the right, use the \\(x>1\\) piece."
+       },
+       {
+        "code": "2\\ne3\\Rightarrow\\lim_{x\\to1}f(x)\\text{ DNE}",
+        "why": "The two sides disagree."
+       },
+       {
+        "code": "f(1)=3",
+        "why": "The middle piece. It doesn't change the limit.",
+        "watch": [
+         [
+          "\\lim",
+          "\\text{DNE}"
+         ],
+         [
+          "f(1)",
+          "3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p22-2",
+      "source": "Like §2.2 #29–37",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to3^+}\\frac{x+2}{x-3}\\) and \\(\\displaystyle\\lim_{x\\to3^-}\\frac{x+2}{x-3}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>The top goes to 5. Decide the sign of the tiny bottom on each side.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The top is positive.</p>\\[\\displaystyle x+2\\to5>0\\]<p><strong>Step 2.</strong> Just right of 3, \\(x-3\\) is a tiny positive number.</p>\\[\\displaystyle x\\to3^+:\\ x-3\\to0^+\\Rightarrow\\frac{5}{0^+}=+\\infty\\]<p><strong>Step 3.</strong> Just left of 3, it is tiny and negative.</p>\\[\\displaystyle x\\to3^-:\\ x-3\\to0^-\\Rightarrow\\frac{5}{0^-}=-\\infty\\]<p><strong>What you found:</strong></p><ul><li>\\(+\\infty\\)</li><li>\\(-\\infty\\)</li><li>\\(\\text{VA }x=3\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Top \\(\\to5\\); bottom \\(\\to0^\\pm\\). Right: \\(+\\infty\\). Left: \\(-\\infty\\). So \\(x=3\\) is a vertical asymptote.</p><p class=\"ans\">\\(+\\infty\\) and \\(-\\infty\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x+2\\to5>0",
+        "why": "The top is positive."
+       },
+       {
+        "code": "x\\to3^+:\\ x-3\\to0^+\\Rightarrow\\frac{5}{0^+}=+\\infty",
+        "why": "Just right of 3, \\(x-3\\) is a tiny positive number."
+       },
+       {
+        "code": "x\\to3^-:\\ x-3\\to0^-\\Rightarrow\\frac{5}{0^-}=-\\infty",
+        "why": "Just left of 3, it is tiny and negative.",
+        "watch": [
+         [
+          "\\text{VA}",
+          "x=3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p22-3",
+      "source": "Like §2.2 #31",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to-1}\\frac{2x}{(x+1)^2}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>A squared bottom is positive on both sides.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle 2x\\to-2<0\\]<p><strong>Step 2.</strong> Squares are never negative.</p>\\[\\displaystyle (x+1)^2\\to0^+\\text{ from both sides}\\]<p><strong>Step 3.</strong> Both sides agree.</p>\\[\\displaystyle \\frac{-2}{0^+}=-\\infty\\]<p><strong>What you found:</strong></p><ul><li>\\(-\\infty\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Top \\(\\to-2\\), bottom \\(\\to0^+\\) from both sides, so the limit is \\(-\\infty\\).</p><p class=\"ans\">\\(-\\infty\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "2x\\to-2<0",
+        "why": ""
+       },
+       {
+        "code": "(x+1)^2\\to0^+\\text{ from both sides}",
+        "why": "Squares are never negative."
+       },
+       {
+        "code": "\\frac{-2}{0^+}=-\\infty",
+        "why": "Both sides agree.",
+        "watch": [
+         [
+          "\\lim",
+          "-\\infty"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p22-4",
+      "source": "Like §2.2 #38–40",
+      "href": null,
+      "question": "Find the vertical asymptotes of \\(f(x)=\\dfrac{x-1}{x^2-3x+2}\\). What happens at \\(x=1\\)?",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Factor the bottom and cancel before deciding.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle x^2-3x+2=(x-1)(x-2)\\]<p><strong>Step 2.</strong> \\(x-1\\) cancels: a hole, not an asymptote.</p>\\[\\displaystyle f(x)=\\frac{1}{x-2},\\ x\\ne1\\]<p><strong>Step 3.</strong> Hole at \\((1,-1)\\).</p>\\[\\displaystyle \\lim_{x\\to1}f(x)=\\frac1{1-2}=-1\\]<p><strong>Step 4.</strong> The factor \\(x-2\\) stays in the bottom.</p>\\[\\displaystyle \\text{VA: }x=2\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{VA }x=2\\)</li><li>\\(\\text{hole at }(1,-1)\\)</li></ul></div>"
+       },
+       {
+        "label": "Graph sketch",
+        "html": "<svg class=\"sketch\" viewBox=\"0 0 360 284\" role=\"img\" aria-label=\"Graph sketch. asymptotes and shape\">\n<line x1=\"30.0\" y1=\"10\" x2=\"30.0\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"30.0\" y=\"126.0\" class=\"sk-tick\" text-anchor=\"middle\">−3</text>\n<line x1=\"70.0\" y1=\"10\" x2=\"70.0\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"70.0\" y=\"126.0\" class=\"sk-tick\" text-anchor=\"middle\">−2</text>\n<line x1=\"110.0\" y1=\"10\" x2=\"110.0\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"110.0\" y=\"126.0\" class=\"sk-tick\" text-anchor=\"middle\">−1</text>\n<line x1=\"150.0\" y1=\"10\" x2=\"150.0\" y2=\"218\" class=\"sk-grid\"/>\n<line x1=\"190.0\" y1=\"10\" x2=\"190.0\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"190.0\" y=\"126.0\" class=\"sk-tick\" text-anchor=\"middle\">1</text>\n<line x1=\"230.0\" y1=\"10\" x2=\"230.0\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"230.0\" y=\"126.0\" class=\"sk-tick\" text-anchor=\"middle\">2</text>\n<line x1=\"270.0\" y1=\"10\" x2=\"270.0\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"270.0\" y=\"126.0\" class=\"sk-tick\" text-anchor=\"middle\">3</text>\n<line x1=\"310.0\" y1=\"10\" x2=\"310.0\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"310.0\" y=\"126.0\" class=\"sk-tick\" text-anchor=\"middle\">4</text>\n<line x1=\"350.0\" y1=\"10\" x2=\"350.0\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"350.0\" y=\"126.0\" class=\"sk-tick\" text-anchor=\"middle\">5</text>\n<line x1=\"30\" y1=\"197.2\" x2=\"350\" y2=\"197.2\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"201.2\" class=\"sk-tick\" text-anchor=\"end\">−4</text>\n<line x1=\"30\" y1=\"155.6\" x2=\"350\" y2=\"155.6\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"159.6\" class=\"sk-tick\" text-anchor=\"end\">−2</text>\n<line x1=\"30\" y1=\"114.0\" x2=\"350\" y2=\"114.0\" class=\"sk-grid\"/>\n<line x1=\"30\" y1=\"72.4\" x2=\"350\" y2=\"72.4\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"76.4\" class=\"sk-tick\" text-anchor=\"end\">2</text>\n<line x1=\"30\" y1=\"30.8\" x2=\"350\" y2=\"30.8\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"34.8\" class=\"sk-tick\" text-anchor=\"end\">4</text>\n<line x1=\"30\" y1=\"114.0\" x2=\"350\" y2=\"114.0\" class=\"sk-axis\"/>\n<line x1=\"150.0\" y1=\"10\" x2=\"150.0\" y2=\"218\" class=\"sk-axis\"/>\n<line x1=\"230.0\" y1=\"10\" x2=\"230.0\" y2=\"218\" class=\"sk-asym\"/>\n<text x=\"233.0\" y=\"21\" class=\"sk-asym-t\">x = 2</text>\n<line x1=\"30\" y1=\"114.0\" x2=\"350\" y2=\"114.0\" class=\"sk-asym\"/>\n<text x=\"34\" y=\"110.0\" class=\"sk-asym-t\">y = 0</text>\n<defs><clipPath id=\"clip-p22-4\"><rect x=\"30\" y=\"10\" width=\"320\" height=\"208\"/></clipPath></defs>\n<g clip-path=\"url(#clip-p22-4)\">\n<polyline points=\"30.0,118.2 30.4,118.2 30.7,118.2 31.1,118.2 31.4,118.2 31.8,118.2 32.1,118.2 32.5,118.2 32.8,118.2 33.2,118.2 33.6,118.2 33.9,118.2 34.3,118.3 34.6,118.3 35.0,118.3 35.3,118.3 35.7,118.3 36.0,118.3 36.4,118.3 36.8,118.3 37.1,118.3 37.5,118.3 37.8,118.3 38.2,118.3 38.5,118.3 38.9,118.4 39.2,118.4 39.6,118.4 40.0,118.4 40.3,118.4 40.7,118.4 41.0,118.4 41.4,118.4 41.7,118.4 42.1,118.4 42.4,118.4 42.8,118.4 43.2,118.5 43.5,118.5 43.9,118.5 44.2,118.5 44.6,118.5 44.9,118.5 45.3,118.5 45.6,118.5 46.0,118.5 46.4,118.5 46.7,118.5 47.1,118.5 47.4,118.6 47.8,118.6 48.1,118.6 48.5,118.6 48.8,118.6 49.2,118.6 49.6,118.6 49.9,118.6 50.3,118.6 50.6,118.6 51.0,118.6 51.3,118.7 51.7,118.7 52.0,118.7 52.4,118.7 52.8,118.7 53.1,118.7 53.5,118.7 53.8,118.7 54.2,118.7 54.5,118.7 54.9,118.8 55.2,118.8 55.6,118.8 56.0,118.8 56.3,118.8 56.7,118.8 57.0,118.8 57.4,118.8 57.7,118.8 58.1,118.8 58.4,118.8 58.8,118.9 59.2,118.9 59.5,118.9 59.9,118.9 60.2,118.9 60.6,118.9 60.9,118.9 61.3,118.9 61.6,118.9 62.0,119.0 62.4,119.0 62.7,119.0 63.1,119.0 63.4,119.0 63.8,119.0 64.1,119.0 64.5,119.0 64.8,119.0 65.2,119.0 65.6,119.1 65.9,119.1 66.3,119.1 66.6,119.1 67.0,119.1 67.3,119.1 67.7,119.1 68.0,119.1 68.4,119.1 68.8,119.2 69.1,119.2 69.5,119.2 69.8,119.2 70.2,119.2 70.5,119.2 70.9,119.2 71.2,119.2 71.6,119.3 72.0,119.3 72.3,119.3 72.7,119.3 73.0,119.3 73.4,119.3 73.7,119.3 74.1,119.3 74.4,119.3 74.8,119.4 75.2,119.4 75.5,119.4 75.9,119.4 76.2,119.4 76.6,119.4 76.9,119.4 77.3,119.4 77.6,119.5 78.0,119.5 78.4,119.5 78.7,119.5 79.1,119.5 79.4,119.5 79.8,119.5 80.1,119.6 80.5,119.6 80.8,119.6 81.2,119.6 81.6,119.6 81.9,119.6 82.3,119.6 82.6,119.6 83.0,119.7 83.3,119.7 83.7,119.7 84.0,119.7 84.4,119.7 84.8,119.7 85.1,119.7 85.5,119.8 85.8,119.8 86.2,119.8 86.5,119.8 86.9,119.8 87.2,119.8 87.6,119.8 88.0,119.9 88.3,119.9 88.7,119.9 89.0,119.9 89.4,119.9 89.7,119.9 90.1,119.9 90.4,120.0 90.8,120.0 91.2,120.0 91.5,120.0 91.9,120.0 92.2,120.0 92.6,120.1 92.9,120.1 93.3,120.1 93.6,120.1 94.0,120.1 94.4,120.1 94.7,120.1 95.1,120.2 95.4,120.2 95.8,120.2 96.1,120.2 96.5,120.2 96.8,120.2 97.2,120.3 97.6,120.3 97.9,120.3 98.3,120.3 98.6,120.3 99.0,120.4 99.3,120.4 99.7,120.4 100.0,120.4 100.4,120.4 100.8,120.4 101.1,120.5 101.5,120.5 101.8,120.5 102.2,120.5 102.5,120.5 102.9,120.5 103.2,120.6 103.6,120.6 104.0,120.6 104.3,120.6 104.7,120.6 105.0,120.7 105.4,120.7 105.7,120.7 106.1,120.7 106.4,120.7 106.8,120.8 107.2,120.8 107.5,120.8 107.9,120.8 108.2,120.8 108.6,120.9 108.9,120.9 109.3,120.9 109.6,120.9 110.0,120.9 110.4,121.0 110.7,121.0 111.1,121.0 111.4,121.0 111.8,121.0 112.1,121.1 112.5,121.1 112.8,121.1 113.2,121.1 113.6,121.1 113.9,121.2 114.3,121.2 114.6,121.2 115.0,121.2 115.3,121.3 115.7,121.3 116.0,121.3 116.4,121.3 116.8,121.3 117.1,121.4 117.5,121.4 117.8,121.4 118.2,121.4 118.5,121.5 118.9,121.5 119.2,121.5 119.6,121.5 120.0,121.6 120.3,121.6 120.7,121.6 121.0,121.6 121.4,121.7 121.7,121.7 122.1,121.7 122.4,121.7 122.8,121.8 123.2,121.8 123.5,121.8 123.9,121.8 124.2,121.9 124.6,121.9 124.9,121.9 125.3,121.9 125.6,122.0 126.0,122.0 126.4,122.0 126.7,122.1 127.1,122.1 127.4,122.1 127.8,122.1 128.1,122.2 128.5,122.2 128.8,122.2 129.2,122.3 129.6,122.3 129.9,122.3 130.3,122.3 130.6,122.4 131.0,122.4 131.3,122.4 131.7,122.5 132.0,122.5 132.4,122.5 132.8,122.6 133.1,122.6 133.5,122.6 133.8,122.7 134.2,122.7 134.5,122.7 134.9,122.7 135.2,122.8 135.6,122.8 136.0,122.8 136.3,122.9 136.7,122.9 137.0,122.9 137.4,123.0 137.7,123.0 138.1,123.1 138.4,123.1 138.8,123.1 139.2,123.2 139.5,123.2 139.9,123.2 140.2,123.3 140.6,123.3 140.9,123.3 141.3,123.4 141.6,123.4 142.0,123.5 142.4,123.5 142.7,123.5 143.1,123.6 143.4,123.6 143.8,123.6 144.1,123.7 144.5,123.7 144.8,123.8 145.2,123.8 145.6,123.9 145.9,123.9 146.3,123.9 146.6,124.0 147.0,124.0 147.3,124.1 147.7,124.1 148.0,124.2 148.4,124.2 148.8,124.2 149.1,124.3 149.5,124.3 149.8,124.4 150.2,124.4 150.5,124.5 150.9,124.5 151.2,124.6 151.6,124.6 152.0,124.7 152.3,124.7 152.7,124.8 153.0,124.8 153.4,124.9 153.7,124.9 154.1,125.0 154.4,125.0 154.8,125.1 155.2,125.1 155.5,125.2 155.9,125.2 156.2,125.3 156.6,125.3 156.9,125.4 157.3,125.4 157.6,125.5 158.0,125.6 158.4,125.6 158.7,125.7 159.1,125.7 159.4,125.8 159.8,125.8 160.1,125.9 160.5,126.0 160.8,126.0 161.2,126.1 161.6,126.2 161.9,126.2 162.3,126.3 162.6,126.3 163.0,126.4 163.3,126.5 163.7,126.5 164.0,126.6 164.4,126.7 164.8,126.8 165.1,126.8 165.5,126.9 165.8,127.0 166.2,127.0 166.5,127.1 166.9,127.2 167.2,127.3 167.6,127.3 168.0,127.4 168.3,127.5 168.7,127.6 169.0,127.6 169.4,127.7 169.7,127.8 170.1,127.9 170.4,128.0 170.8,128.1 171.2,128.1 171.5,128.2 171.9,128.3 172.2,128.4 172.6,128.5 172.9,128.6 173.3,128.7 173.6,128.8 174.0,128.9 174.4,129.0 174.7,129.0 175.1,129.1 175.4,129.2 175.8,129.3 176.1,129.4 176.5,129.5 176.8,129.7 177.2,129.8 177.6,129.9 177.9,130.0 178.3,130.1 178.6,130.2 179.0,130.3 179.3,130.4 179.7,130.5 180.0,130.7 180.4,130.8 180.8,130.9 181.1,131.0 181.5,131.1 181.8,131.3 182.2,131.4 182.5,131.5 182.9,131.7 183.2,131.8 183.6,131.9 184.0,132.1 184.3,132.2 184.7,132.4 185.0,132.5 185.4,132.6 185.7,132.8 186.1,132.9 186.4,133.1 186.8,133.3 187.2,133.4 187.5,133.6 187.9,133.7 188.2,133.9 188.6,134.1 188.9,134.3 189.3,134.4 189.6,134.6\" class=\"sk-curve sk-down\"/>\n<polyline points=\"190.4,135.0 190.7,135.2 191.1,135.4 191.4,135.6 191.8,135.8 192.1,136.0 192.5,136.2 192.8,136.4 193.2,136.6 193.6,136.8 193.9,137.1 194.3,137.3 194.6,137.5 195.0,137.8 195.3,138.0 195.7,138.2 196.0,138.5 196.4,138.8 196.8,139.0 197.1,139.3 197.5,139.6 197.8,139.9 198.2,140.1 198.5,140.4 198.9,140.7 199.2,141.1 199.6,141.4 200.0,141.7 200.3,142.0 200.7,142.4 201.0,142.7 201.4,143.1 201.7,143.4 202.1,143.8 202.4,144.2 202.8,144.6 203.2,145.0 203.5,145.4 203.9,145.8 204.2,146.3 204.6,146.7 204.9,147.2 205.3,147.7 205.6,148.2 206.0,148.7 206.4,149.2 206.7,149.7 207.1,150.3 207.4,150.9 207.8,151.4 208.1,152.0 208.5,152.7 208.8,153.3 209.2,154.0 209.6,154.7 209.9,155.4 210.3,156.2 210.6,156.9 211.0,157.7 211.3,158.6 211.7,159.4 212.0,160.3 212.4,161.3 212.8,162.2 213.1,163.3 213.5,164.3 213.8,165.4 214.2,166.6 214.5,167.8 214.9,169.1 215.2,170.4 215.6,171.8 216.0,173.2 216.3,174.8 216.7,176.4 217.0,178.1 217.4,179.9 217.7,181.8 218.1,183.9 218.4,186.0 218.8,188.3 219.2,190.7 219.5,193.3 219.9,196.1 220.2,199.1 220.6,202.3 220.9,205.8 221.3,209.5 221.6,213.6 222.0,218.0 222.4,222.8 222.7,228.1 223.1,234.0 223.4,240.5 223.8,247.7 224.1,255.8 224.5,265.0 224.8,275.4 225.2,287.3 225.6,301.2 225.9,317.5 226.3,336.9 226.6,360.3 227.0,389.3 227.3,426.0 227.7,474.0 228.0,539.5 228.4,634.0 228.8,782.6\" class=\"sk-curve sk-down\"/>\n<polyline points=\"231.2,-554.6 231.6,-406.0 232.0,-311.5 232.3,-246.0 232.7,-198.0 233.0,-161.3 233.4,-132.3 233.7,-108.9 234.1,-89.5 234.4,-73.2 234.8,-59.3 235.2,-47.4 235.5,-37.0 235.9,-27.8 236.2,-19.7 236.6,-12.5 236.9,-6.0 237.3,-0.1 237.6,5.2 238.0,10.0 238.4,14.4 238.7,18.5 239.1,22.2 239.4,25.7 239.8,28.9 240.1,31.9 240.5,34.7 240.8,37.3 241.2,39.7 241.6,42.0 241.9,44.1 242.3,46.2 242.6,48.1 243.0,49.9 243.3,51.6 243.7,53.2 244.0,54.8 244.4,56.2 244.8,57.6 245.1,58.9 245.5,60.2 245.8,61.4 246.2,62.6 246.5,63.7 246.9,64.7 247.2,65.8 247.6,66.7 248.0,67.7 248.3,68.6 248.7,69.4 249.0,70.3 249.4,71.1 249.7,71.8 250.1,72.6 250.4,73.3 250.8,74.0 251.2,74.7 251.5,75.3 251.9,76.0 252.2,76.6 252.6,77.1 252.9,77.7 253.3,78.3 253.6,78.8 254.0,79.3 254.4,79.8 254.7,80.3 255.1,80.8 255.4,81.3 255.8,81.7 256.1,82.2 256.5,82.6 256.8,83.0 257.2,83.4 257.6,83.8 257.9,84.2 258.3,84.6 258.6,84.9 259.0,85.3 259.3,85.6 259.7,86.0 260.0,86.3 260.4,86.6 260.8,86.9 261.1,87.3 261.5,87.6 261.8,87.9 262.2,88.1 262.5,88.4 262.9,88.7 263.2,89.0 263.6,89.2 264.0,89.5 264.3,89.8 264.7,90.0 265.0,90.2 265.4,90.5 265.7,90.7 266.1,90.9 266.4,91.2 266.8,91.4 267.2,91.6 267.5,91.8 267.9,92.0 268.2,92.2 268.6,92.4 268.9,92.6 269.3,92.8 269.6,93.0 270.0,93.2 270.4,93.4 270.7,93.6 271.1,93.7 271.4,93.9 271.8,94.1 272.1,94.3 272.5,94.4 272.8,94.6 273.2,94.7 273.6,94.9 273.9,95.1 274.3,95.2 274.6,95.4 275.0,95.5 275.3,95.6 275.7,95.8 276.0,95.9 276.4,96.1 276.8,96.2 277.1,96.3 277.5,96.5 277.8,96.6 278.2,96.7 278.5,96.9 278.9,97.0 279.2,97.1 279.6,97.2 280.0,97.3 280.3,97.5 280.7,97.6 281.0,97.7 281.4,97.8 281.7,97.9 282.1,98.0 282.4,98.1 282.8,98.2 283.2,98.3 283.5,98.5 283.9,98.6 284.2,98.7 284.6,98.8 284.9,98.9 285.3,99.0 285.6,99.0 286.0,99.1 286.4,99.2 286.7,99.3 287.1,99.4 287.4,99.5 287.8,99.6 288.1,99.7 288.5,99.8 288.8,99.9 289.2,99.9 289.6,100.0 289.9,100.1 290.3,100.2 290.6,100.3 291.0,100.4 291.3,100.4 291.7,100.5 292.0,100.6 292.4,100.7 292.8,100.7 293.1,100.8 293.5,100.9 293.8,101.0 294.2,101.0 294.5,101.1 294.9,101.2 295.2,101.2 295.6,101.3 296.0,101.4 296.3,101.5 296.7,101.5 297.0,101.6 297.4,101.7 297.7,101.7 298.1,101.8 298.4,101.8 298.8,101.9 299.2,102.0 299.5,102.0 299.9,102.1 300.2,102.2 300.6,102.2 300.9,102.3 301.3,102.3 301.6,102.4 302.0,102.4 302.4,102.5 302.7,102.6 303.1,102.6 303.4,102.7 303.8,102.7 304.1,102.8 304.5,102.8 304.8,102.9 305.2,102.9 305.6,103.0 305.9,103.0 306.3,103.1 306.6,103.1 307.0,103.2 307.3,103.2 307.7,103.3 308.0,103.3 308.4,103.4 308.8,103.4 309.1,103.5 309.5,103.5 309.8,103.6 310.2,103.6 310.5,103.7 310.9,103.7 311.2,103.8 311.6,103.8 312.0,103.8 312.3,103.9 312.7,103.9 313.0,104.0 313.4,104.0 313.7,104.1 314.1,104.1 314.4,104.1 314.8,104.2 315.2,104.2 315.5,104.3 315.9,104.3 316.2,104.4 316.6,104.4 316.9,104.4 317.3,104.5 317.6,104.5 318.0,104.5 318.4,104.6 318.7,104.6 319.1,104.7 319.4,104.7 319.8,104.7 320.1,104.8 320.5,104.8 320.8,104.8 321.2,104.9 321.6,104.9 321.9,104.9 322.3,105.0 322.6,105.0 323.0,105.1 323.3,105.1 323.7,105.1 324.0,105.2 324.4,105.2 324.8,105.2 325.1,105.3 325.5,105.3 325.8,105.3 326.2,105.3 326.5,105.4 326.9,105.4 327.2,105.4 327.6,105.5 328.0,105.5 328.3,105.5 328.7,105.6 329.0,105.6 329.4,105.6 329.7,105.7 330.1,105.7 330.4,105.7 330.8,105.7 331.2,105.8 331.5,105.8 331.9,105.8 332.2,105.9 332.6,105.9 332.9,105.9 333.3,105.9 333.6,106.0 334.0,106.0 334.4,106.0 334.7,106.1 335.1,106.1 335.4,106.1 335.8,106.1 336.1,106.2 336.5,106.2 336.8,106.2 337.2,106.2 337.6,106.3 337.9,106.3 338.3,106.3 338.6,106.3 339.0,106.4 339.3,106.4 339.7,106.4 340.0,106.4 340.4,106.5 340.8,106.5 341.1,106.5 341.5,106.5 341.8,106.6 342.2,106.6 342.5,106.6 342.9,106.6 343.2,106.7 343.6,106.7 344.0,106.7 344.3,106.7 344.7,106.7 345.0,106.8 345.4,106.8 345.7,106.8 346.1,106.8 346.4,106.9 346.8,106.9 347.2,106.9 347.5,106.9 347.9,106.9 348.2,107.0 348.6,107.0 348.9,107.0 349.3,107.0 349.6,107.0 350.0,107.1\" class=\"sk-curve sk-down\"/>\n</g>\n<circle cx=\"190.0\" cy=\"134.8\" r=\"4\" class=\"sk-open\"/>\n<text x=\"25\" y=\"248\" class=\"sk-strip-name\" text-anchor=\"end\">f′</text>\n<rect x=\"30.0\" y=\"234\" width=\"160.0\" height=\"17\" rx=\"3\" class=\"sk-neg\"/>\n<text x=\"110.0\" y=\"246.5\" class=\"sk-strip-t\" text-anchor=\"middle\">− ↘</text>\n<rect x=\"190.5\" y=\"234\" width=\"39.5\" height=\"17\" rx=\"3\" class=\"sk-neg\"/>\n<text x=\"210.3\" y=\"246.5\" class=\"sk-strip-t\" text-anchor=\"middle\">− ↘</text>\n<rect x=\"230.5\" y=\"234\" width=\"119.5\" height=\"17\" rx=\"3\" class=\"sk-neg\"/>\n<text x=\"290.3\" y=\"246.5\" class=\"sk-strip-t\" text-anchor=\"middle\">− ↘</text>\n<text x=\"25\" y=\"270\" class=\"sk-strip-name\" text-anchor=\"end\">f″</text>\n<rect x=\"30.0\" y=\"256\" width=\"160.0\" height=\"17\" rx=\"3\" class=\"sk-neg\"/>\n<text x=\"110.0\" y=\"268.5\" class=\"sk-strip-t\" text-anchor=\"middle\">− ∩</text>\n<rect x=\"190.5\" y=\"256\" width=\"39.5\" height=\"17\" rx=\"3\" class=\"sk-neg\"/>\n<text x=\"210.3\" y=\"268.5\" class=\"sk-strip-t\" text-anchor=\"middle\">− ∩</text>\n<rect x=\"230.5\" y=\"256\" width=\"119.5\" height=\"17\" rx=\"3\" class=\"sk-pos\"/>\n<text x=\"290.3\" y=\"268.5\" class=\"sk-strip-t\" text-anchor=\"middle\">+ ∪</text>\n</svg>\n<p class=\"sk-key\"><span class=\"k-up\">green</span> = rising (f′ &gt; 0), <span class=\"k-down\">red</span> = falling (f′ &lt; 0), <span class=\"k-ext\">●</span> max/min, <span class=\"k-ip\">○</span> inflection point (f″ changes sign), <span class=\"k-asym\">dashed</span> = asymptote. The strips under the graph are your sign maps: ∪ concave up, ∩ concave down.</p>\n<p class=\"why\">The open circle at (1, −1) is the hole: x − 1 cancelled, so there is no asymptote there.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(x)=\\frac{(x-1)}{(x-1)(x-2)}=\\frac1{x-2}\\) for \\(x\\ne1\\). VA only at \\(x=2\\); a hole at \\((1,-1)\\).</p><p class=\"ans\">VA \\(x=2\\) only; hole at \\(x=1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x^2-3x+2=(x-1)(x-2)",
+        "why": ""
+       },
+       {
+        "code": "f(x)=\\frac{1}{x-2},\\ x\\ne1",
+        "why": "\\(x-1\\) cancels: a hole, not an asymptote."
+       },
+       {
+        "code": "\\lim_{x\\to1}f(x)=\\frac1{1-2}=-1",
+        "why": "Hole at \\((1,-1)\\)."
+       },
+       {
+        "code": "\\text{VA: }x=2",
+        "why": "The factor \\(x-2\\) stays in the bottom.",
+        "watch": [
+         [
+          "\\text{VA}",
+          "x=2"
+         ],
+         [
+          "\\text{hole}",
+          "(1,-1)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p22-5",
+      "source": "Like §2.2 #11",
+      "href": null,
+      "question": "A table for \\(g(x)=\\dfrac{e^x-1}{x}\\) gives \\(g(\\pm0.1)=1.0517,\\ 0.9516\\) and \\(g(\\pm0.01)=1.0050,\\ 0.9950\\). Guess \\(\\lim_{x\\to0}g(x)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Look at what both sides are closing in on.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> From the right.</p>\\[\\displaystyle x=0.1,0.01:\\ 1.0517,\\ 1.0050\\]<p><strong>Step 2.</strong> From the left.</p>\\[\\displaystyle x=-0.1,-0.01:\\ 0.9516,\\ 0.9950\\]<p><strong>Step 3.</strong> Both sides approach 1. (l'Hospital in §4.4 confirms it is exactly 1.)</p>\\[\\displaystyle \\lim_{x\\to0}g(x)\\approx1\\]<p><strong>What you found:</strong></p><ul><li>\\(\\lim_{x\\to0}\\frac{e^x-1}{x}=1\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Both sides close in on 1.</p><p class=\"ans\">\\(1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x=0.1,0.01:\\ 1.0517,\\ 1.0050",
+        "why": "From the right."
+       },
+       {
+        "code": "x=-0.1,-0.01:\\ 0.9516,\\ 0.9950",
+        "why": "From the left."
+       },
+       {
+        "code": "\\lim_{x\\to0}g(x)\\approx1",
+        "why": "Both sides approach 1. (l'Hospital in §4.4 confirms it is exactly 1.)",
+        "watch": [
+         [
+          "\\lim",
+          "1"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p22-6",
+      "source": "Like §2.2 #35",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to(\\pi/2)^+}\\tan x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\tan x=\\frac{\\sin x}{\\cos x}\\). What sign is \\(\\cos x\\) just past \\(\\frac\\pi2\\)?</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\tan x=\\frac{\\sin x}{\\cos x}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\sin x\\to1\\]<p><strong>Step 3.</strong> Just past \\(\\frac\\pi2\\) you are in QII, where cosine is negative.</p>\\[\\displaystyle x\\to\\tfrac\\pi2^+:\\ \\cos x\\to0^-\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle \\frac{1}{0^-}=-\\infty\\]<p><strong>What you found:</strong></p><ul><li>\\(-\\infty\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\sin x\\to1\\) and \\(\\cos x\\to0^-\\), so \\(\\tan x\\to-\\infty\\).</p><p class=\"ans\">\\(-\\infty\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\tan x=\\frac{\\sin x}{\\cos x}",
+        "why": ""
+       },
+       {
+        "code": "\\sin x\\to1",
+        "why": ""
+       },
+       {
+        "code": "x\\to\\tfrac\\pi2^+:\\ \\cos x\\to0^-",
+        "why": "Just past \\(\\frac\\pi2\\) you are in QII, where cosine is negative."
+       },
+       {
+        "code": "\\frac{1}{0^-}=-\\infty",
+        "why": "",
+        "watch": [
+         [
+          "\\lim",
+          "-\\infty"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "f(a) is not the limit",
+      "html": "<p>The limit only cares about values <em>near</em> \\(a\\). A hole or a moved point at \\(a\\) doesn't change it.</p>"
+     },
+     {
+      "title": "0/0 is not an answer",
+      "html": "<p>If plugging in gives \\(\\frac00\\), the limit still exists maybe; simplify first (§2.3). If it gives \\(\\frac{\\text{nonzero}}0\\), it's \\(\\pm\\infty\\) or DNE: check each side.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s23",
+  "slug": "2-3",
+  "num": "§2.3",
+  "title": "Calculating Limits Using the Limit Laws",
+  "lede": "Plug in first. If you get 0/0: factor, use a conjugate, or combine fractions. Plus the Squeeze Theorem and absolute values.",
+  "unit": "later",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\"><strong>Midterm 1 material, back on the final.</strong> The final is comprehensive, so these limits show up again, usually as 2–4 short problems worth about 15% of the test.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Step 1: plug in</span><p>If the function is defined at \\(a\\) (polynomials, roots, trig, …), the limit is just \\(f(a)\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">0/0: simplify</span><p><strong>Factor and cancel</strong> · <strong>multiply by the conjugate</strong> (square roots) · <strong>combine fractions</strong> (fractions inside fractions). Then plug in again.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Squeeze Theorem</span><p>If \\(g(x)\\le f(x)\\le h(x)\\) and \\(g,h\\to L\\), then \\(f\\to L\\). Use with \\(-1\\le\\sin(\\cdot),\\cos(\\cdot)\\le1\\).</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Absolute values</span><p>Split into the two sides: \\(|x-a|=x-a\\) on the right, \\(-(x-a)\\) on the left.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p23-1",
+      "source": "Like §2.3 #11–13",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to2}(3x^2-x+5)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Polynomial: just plug in.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Polynomials are continuous, so substitute.</p>\\[\\displaystyle 3(2)^2-2+5\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle =12-2+5=15\\]<p><strong>What you found:</strong></p><ul><li>\\(15\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(3(4)-2+5=15\\).</p><p class=\"ans\">\\(15\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "3(2)^2-2+5",
+        "why": "Polynomials are continuous, so substitute."
+       },
+       {
+        "code": "=12-2+5=15",
+        "why": "",
+        "watch": [
+         [
+          "\\lim",
+          "15"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p23-2",
+      "source": "Like §2.3 #13–22",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to-3}\\frac{x^2+x-6}{x+3}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Plugging in gives \\(\\frac00\\). Factor the top.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Indeterminate: simplify.</p>\\[\\displaystyle \\frac{9-3-6}{0}=\\frac00\\]<p><strong>Step 2.</strong> Factor and cancel.</p>\\[\\displaystyle \\frac{(x+3)(x-2)}{x+3}=x-2\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle x\\to-3:\\ -3-2=-5\\]<p><strong>What you found:</strong></p><ul><li>\\(-5\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{(x+3)(x-2)}{x+3}=x-2\\to-5\\).</p><p class=\"ans\">\\(-5\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{9-3-6}{0}=\\frac00",
+        "why": "Indeterminate: simplify."
+       },
+       {
+        "code": "\\frac{(x+3)(x-2)}{x+3}=x-2",
+        "why": "Factor and cancel."
+       },
+       {
+        "code": "x\\to-3:\\ -3-2=-5",
+        "why": "",
+        "watch": [
+         [
+          "\\lim",
+          "-5"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p23-3",
+      "source": "Like §2.3 #19",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{h\\to0}\\frac{(3+h)^2-9}{h}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Expand \\((3+h)^2\\) and cancel the 9s.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Expand.</p>\\[\\displaystyle (3+h)^2-9=9+6h+h^2-9=6h+h^2\\]<p><strong>Step 2.</strong> Factor out \\(h\\) and cancel.</p>\\[\\displaystyle \\frac{6h+h^2}{h}=6+h\\]<p><strong>Step 3.</strong> This is the derivative of \\(x^2\\) at 3 in disguise.</p>\\[\\displaystyle h\\to0:\\ 6\\]<p><strong>What you found:</strong></p><ul><li>\\(6\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{6h+h^2}h=6+h\\to6\\).</p><p class=\"ans\">\\(6\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "(3+h)^2-9=9+6h+h^2-9=6h+h^2",
+        "why": "Expand."
+       },
+       {
+        "code": "\\frac{6h+h^2}{h}=6+h",
+        "why": "Factor out \\(h\\) and cancel."
+       },
+       {
+        "code": "h\\to0:\\ 6",
+        "why": "This is the derivative of \\(x^2\\) at 3 in disguise.",
+        "watch": [
+         [
+          "\\lim",
+          "6"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p23-4",
+      "source": "Like §2.3 #23–27",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to9}\\frac{\\sqrt x-3}{x-9}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Multiply top and bottom by \\(\\sqrt x+3\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Conjugate.</p>\\[\\displaystyle \\frac{\\sqrt x-3}{x-9}\\cdot\\frac{\\sqrt x+3}{\\sqrt x+3}\\]<p><strong>Step 2.</strong> Difference of squares on top, cancel.</p>\\[\\displaystyle =\\frac{x-9}{(x-9)(\\sqrt x+3)}=\\frac1{\\sqrt x+3}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle x\\to9:\\ \\frac1{3+3}=\\frac16\\]<p><strong>What you found:</strong></p><ul><li>\\(\\tfrac16\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>After the conjugate: \\(\\frac1{\\sqrt x+3}\\to\\frac16\\).</p><p class=\"ans\">\\(\\dfrac16\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{\\sqrt x-3}{x-9}\\cdot\\frac{\\sqrt x+3}{\\sqrt x+3}",
+        "why": "Conjugate."
+       },
+       {
+        "code": "=\\frac{x-9}{(x-9)(\\sqrt x+3)}=\\frac1{\\sqrt x+3}",
+        "why": "Difference of squares on top, cancel."
+       },
+       {
+        "code": "x\\to9:\\ \\frac1{3+3}=\\frac16",
+        "why": "",
+        "watch": [
+         [
+          "\\lim",
+          "\\tfrac16"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p23-5",
+      "source": "Like §2.3 #26",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{t\\to0}\\frac{\\frac1{t+2}-\\frac12}{t}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Combine the two fractions on top first.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Common denominator.</p>\\[\\displaystyle \\frac1{t+2}-\\frac12=\\frac{2-(t+2)}{2(t+2)}=\\frac{-t}{2(t+2)}\\]<p><strong>Step 2.</strong> Cancel \\(t\\).</p>\\[\\displaystyle \\frac{-t}{2(t+2)}\\cdot\\frac1t=\\frac{-1}{2(t+2)}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle t\\to0:\\ -\\tfrac14\\]<p><strong>What you found:</strong></p><ul><li>\\(-\\tfrac14\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{-1}{2(t+2)}\\to-\\frac14\\).</p><p class=\"ans\">\\(-\\dfrac14\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac1{t+2}-\\frac12=\\frac{2-(t+2)}{2(t+2)}=\\frac{-t}{2(t+2)}",
+        "why": "Common denominator."
+       },
+       {
+        "code": "\\frac{-t}{2(t+2)}\\cdot\\frac1t=\\frac{-1}{2(t+2)}",
+        "why": "Cancel \\(t\\)."
+       },
+       {
+        "code": "t\\to0:\\ -\\tfrac14",
+        "why": "",
+        "watch": [
+         [
+          "\\lim",
+          "-\\tfrac14"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p23-6",
+      "source": "Like §2.3 #37",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to0}x^2\\cos\\frac1x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>You can't plug in. Squeeze it using \\(-1\\le\\cos(\\cdot)\\le1\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> True for every \\(x\\ne0\\).</p>\\[\\displaystyle -1\\le\\cos\\tfrac1x\\le1\\]<p><strong>Step 2.</strong> Multiply through by \\(x^2\\ge0\\) (inequalities keep their direction).</p>\\[\\displaystyle -x^2\\le x^2\\cos\\tfrac1x\\le x^2\\]<p><strong>Step 3.</strong> Both outside functions go to 0.</p>\\[\\displaystyle \\lim_{x\\to0}(-x^2)=0=\\lim_{x\\to0}x^2\\]<p><strong>Step 4.</strong> Squeeze Theorem.</p>\\[\\displaystyle \\lim_{x\\to0}x^2\\cos\\tfrac1x=0\\]<p><strong>What you found:</strong></p><ul><li>\\(0\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(-x^2\\le x^2\\cos\\frac1x\\le x^2\\), and both sides \\(\\to0\\), so the limit is 0.</p><p class=\"ans\">\\(0\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "-1\\le\\cos\\tfrac1x\\le1",
+        "why": "True for every \\(x\\ne0\\)."
+       },
+       {
+        "code": "-x^2\\le x^2\\cos\\tfrac1x\\le x^2",
+        "why": "Multiply through by \\(x^2\\ge0\\) (inequalities keep their direction)."
+       },
+       {
+        "code": "\\lim_{x\\to0}(-x^2)=0=\\lim_{x\\to0}x^2",
+        "why": "Both outside functions go to 0."
+       },
+       {
+        "code": "\\lim_{x\\to0}x^2\\cos\\tfrac1x=0",
+        "why": "Squeeze Theorem.",
+        "watch": [
+         [
+          "\\lim",
+          "0"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p23-7",
+      "source": "Like §2.3 #41–45",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to4}\\frac{|x-4|}{x-4}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Do each side separately.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Right of 4 the inside is positive.</p>\\[\\displaystyle x\\to4^+:\\ |x-4|=x-4\\Rightarrow\\frac{x-4}{x-4}=1\\]<p><strong>Step 2.</strong> Left of 4 the inside is negative.</p>\\[\\displaystyle x\\to4^-:\\ |x-4|=-(x-4)\\Rightarrow-1\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle 1\\ne-1\\Rightarrow\\text{DNE}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{right }1,\\ \\text{left }-1\\)</li><li>\\(\\text{DNE}\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Right side 1, left side \\(-1\\): the limit does not exist.</p><p class=\"ans\">DNE</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x\\to4^+:\\ |x-4|=x-4\\Rightarrow\\frac{x-4}{x-4}=1",
+        "why": "Right of 4 the inside is positive."
+       },
+       {
+        "code": "x\\to4^-:\\ |x-4|=-(x-4)\\Rightarrow-1",
+        "why": "Left of 4 the inside is negative."
+       },
+       {
+        "code": "1\\ne-1\\Rightarrow\\text{DNE}",
+        "why": "",
+        "watch": [
+         [
+          "\\lim",
+          "\\text{DNE}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p23-8",
+      "source": "Like §2.3 #23–27",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{h\\to0}\\frac{\\sqrt{4+h}-2}{h}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Conjugate: multiply by \\(\\sqrt{4+h}+2\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Top: \\((4+h)-4=h\\).</p>\\[\\displaystyle \\frac{(\\sqrt{4+h}-2)(\\sqrt{4+h}+2)}{h(\\sqrt{4+h}+2)}=\\frac{h}{h(\\sqrt{4+h}+2)}\\]<p><strong>Step 2.</strong> Cancel \\(h\\).</p>\\[\\displaystyle =\\frac1{\\sqrt{4+h}+2}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle h\\to0:\\ \\frac1{2+2}=\\frac14\\]<p><strong>What you found:</strong></p><ul><li>\\(\\tfrac14\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac1{\\sqrt{4+h}+2}\\to\\frac14\\).</p><p class=\"ans\">\\(\\dfrac14\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{(\\sqrt{4+h}-2)(\\sqrt{4+h}+2)}{h(\\sqrt{4+h}+2)}=\\frac{h}{h(\\sqrt{4+h}+2)}",
+        "why": "Top: \\((4+h)-4=h\\)."
+       },
+       {
+        "code": "=\\frac1{\\sqrt{4+h}+2}",
+        "why": "Cancel \\(h\\)."
+       },
+       {
+        "code": "h\\to0:\\ \\frac1{2+2}=\\frac14",
+        "why": "",
+        "watch": [
+         [
+          "\\lim",
+          "\\tfrac14"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Writing lim on every line",
+      "html": "<p>Keep writing \\(\\lim_{x\\to a}\\) until the step where you actually plug in. Dropping it early costs points.</p>"
+     },
+     {
+      "title": "Cancel then plug",
+      "html": "<p>After cancelling, you must still substitute \\(a\\). Stopping at \\(x-2\\) isn't an answer; \\(-5\\) is.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s24",
+  "slug": "2-4",
+  "num": "§2.4",
+  "title": "The Precise Definition of a Limit",
+  "lede": "ε–δ: how close x must be to a so that f(x) is within ε of L. Know the linear case.",
+  "unit": "later",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\"><strong>Midterm 1 material, back on the final.</strong> The final is comprehensive, so these limits show up again, usually as 2–4 short problems worth about 15% of the test.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Definition</span><p>\\(\\lim_{x\\to a}f(x)=L\\) means: for every \\(\\varepsilon>0\\) there is a \\(\\delta>0\\) such that \\(0<|x-a|<\\delta\\Rightarrow|f(x)-L|<\\varepsilon\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Linear recipe</span><p>For \\(f(x)=mx+b\\): \\(|f(x)-L|=|m|\\,|x-a|\\), so take \\(\\delta=\\dfrac{\\varepsilon}{|m|}\\).</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p24-1",
+      "source": "Like §2.4 #13–16",
+      "href": null,
+      "question": "For \\(\\lim_{x\\to3}(4x-5)=7\\), find a \\(\\delta\\) that works for \\(\\varepsilon=0.1\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Rewrite \\(|(4x-5)-7|\\) in terms of \\(|x-3|\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Factor out the slope.</p>\\[\\displaystyle |(4x-5)-7|=|4x-12|=4|x-3|\\]<p><strong>Step 2.</strong> Divide by 4.</p>\\[\\displaystyle 4|x-3|<0.1\\iff|x-3|<0.025\\]<p><strong>Step 3.</strong> Any smaller \\(\\delta\\) also works.</p>\\[\\displaystyle \\delta=0.025\\]<p><strong>What you found:</strong></p><ul><li>\\(\\delta=0.025\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(|f(x)-7|=4|x-3|<0.1\\) when \\(|x-3|<0.025\\).</p><p class=\"ans\">\\(\\delta=0.025\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "|(4x-5)-7|=|4x-12|=4|x-3|",
+        "why": "Factor out the slope."
+       },
+       {
+        "code": "4|x-3|<0.1\\iff|x-3|<0.025",
+        "why": "Divide by 4."
+       },
+       {
+        "code": "\\delta=0.025",
+        "why": "Any smaller \\(\\delta\\) also works.",
+        "watch": [
+         [
+          "\\delta",
+          "0.025"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p24-2",
+      "source": "Like §2.4 #19–24",
+      "href": null,
+      "question": "Prove that \\(\\lim_{x\\to2}(3x-1)=5\\) using the ε–δ definition.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Scratch work: \\(|(3x-1)-5|=3|x-2|\\). That suggests \\(\\delta=\\varepsilon/3\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Scratch work: link the two distances.</p>\\[\\displaystyle |(3x-1)-5|=3|x-2|\\]<p><strong>Step 2.</strong> Start the proof with the choice.</p>\\[\\displaystyle \\text{Let }\\varepsilon>0.\\ \\text{Choose }\\delta=\\tfrac{\\varepsilon}3\\]<p><strong>Step 3.</strong> Show it works.</p>\\[\\displaystyle \\begin{aligned}&0<|x-2|<\\delta\\Rightarrow\\\\&|(3x-1)-5|=3|x-2|<3\\cdot\\tfrac\\varepsilon3=\\varepsilon\\end{aligned}\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle \\therefore\\ \\lim_{x\\to2}(3x-1)=5\\]<p><strong>What you found:</strong></p><ul><li>\\(\\delta=\\varepsilon/3\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Given \\(\\varepsilon>0\\), let \\(\\delta=\\varepsilon/3\\). If \\(0<|x-2|<\\delta\\), then \\(|(3x-1)-5|=3|x-2|<\\varepsilon\\).</p><p class=\"ans\">\\(\\delta=\\varepsilon/3\\) works</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "|(3x-1)-5|=3|x-2|",
+        "why": "Scratch work: link the two distances."
+       },
+       {
+        "code": "\\text{Let }\\varepsilon>0.\\ \\text{Choose }\\delta=\\tfrac{\\varepsilon}3",
+        "why": "Start the proof with the choice."
+       },
+       {
+        "code": "\\begin{aligned}&0<|x-2|<\\delta\\Rightarrow\\\\&|(3x-1)-5|=3|x-2|<3\\cdot\\tfrac\\varepsilon3=\\varepsilon\\end{aligned}",
+        "why": "Show it works."
+       },
+       {
+        "code": "\\therefore\\ \\lim_{x\\to2}(3x-1)=5",
+        "why": "",
+        "watch": [
+         [
+          "\\delta",
+          "\\varepsilon/3"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Order of the proof",
+      "html": "<p>Scratch work goes from \\(\\varepsilon\\) to \\(\\delta\\); the written proof starts with “Let \\(\\varepsilon>0\\), choose \\(\\delta=\\dots\\)” and ends with “\\(<\\varepsilon\\)”.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s25",
+  "slug": "2-5",
+  "num": "§2.5",
+  "title": "Continuity",
+  "lede": "The three-part test, types of discontinuity, making a piecewise function continuous, and the Intermediate Value Theorem.",
+  "unit": "later",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\"><strong>Midterm 1 material, back on the final.</strong> The final is comprehensive, so these limits show up again, usually as 2–4 short problems worth about 15% of the test.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Continuous at a</span><p>Three checks: (1) \\(f(a)\\) is defined, (2) \\(\\lim_{x\\to a}f(x)\\) exists, (3) they are equal.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Types</span><p><strong>Removable</strong>: a hole (limit exists). <strong>Jump</strong>: one-sided limits differ. <strong>Infinite</strong>: a vertical asymptote.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Piecewise</span><p>Set the left piece and the right piece equal at the break point, then solve for the constant.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Intermediate Value Theorem</span><p>If \\(f\\) is continuous on \\([a,b]\\) and \\(N\\) is between \\(f(a)\\) and \\(f(b)\\), then \\(f(c)=N\\) for some \\(c\\) in \\((a,b)\\). Root version: a sign change ⇒ a root.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p25-1",
+      "source": "Like §2.5 #15–20",
+      "href": null,
+      "question": "Where is \\(f(x)=\\dfrac{x^2-4}{x-2}\\) discontinuous, and what type is it?",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Where is the bottom zero? Does that factor cancel?</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(f(2)\\) is undefined: check 1 fails.</p>\\[\\displaystyle x-2=0\\Rightarrow x=2\\]<p><strong>Step 2.</strong> The factor cancels.</p>\\[\\displaystyle \\frac{(x-2)(x+2)}{x-2}=x+2\\ (x\\ne2)\\]<p><strong>Step 3.</strong> The limit exists.</p>\\[\\displaystyle \\lim_{x\\to2}f(x)=4\\]<p><strong>Step 4.</strong> A hole at \\((2,4)\\).</p>\\[\\displaystyle \\text{removable at }x=2\\]<p><strong>What you found:</strong></p><ul><li>\\(x=2,\\ \\text{removable (hole at }(2,4))\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Undefined at 2, but the limit is 4: removable discontinuity (hole at \\((2,4)\\)).</p><p class=\"ans\">Removable at \\(x=2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x-2=0\\Rightarrow x=2",
+        "why": "\\(f(2)\\) is undefined: check 1 fails."
+       },
+       {
+        "code": "\\frac{(x-2)(x+2)}{x-2}=x+2\\ (x\\ne2)",
+        "why": "The factor cancels."
+       },
+       {
+        "code": "\\lim_{x\\to2}f(x)=4",
+        "why": "The limit exists."
+       },
+       {
+        "code": "\\text{removable at }x=2",
+        "why": "A hole at \\((2,4)\\).",
+        "watch": [
+         [
+          "\\text{type}",
+          "\\text{removable}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p25-2",
+      "source": "Like §2.5 #45",
+      "href": null,
+      "question": "Find \\(c\\) so that \\(f(x)=\\begin{cases}cx^2+2x,&x<2\\\\x^3-cx,&x\\ge2\\end{cases}\\) is continuous everywhere.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Both pieces must give the same value at \\(x=2\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Left piece at 2.</p>\\[\\displaystyle \\lim_{x\\to2^-}=4c+4\\]<p><strong>Step 2.</strong> Right piece at 2.</p>\\[\\displaystyle \\lim_{x\\to2^+}=f(2)=8-2c\\]<p><strong>Step 3.</strong> Continuity: set them equal.</p>\\[\\displaystyle 4c+4=8-2c\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle 6c=4\\Rightarrow c=\\tfrac23\\]<p><strong>What you found:</strong></p><ul><li>\\(c=\\tfrac23\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(4c+4=8-2c\\Rightarrow c=\\frac23\\).</p><p class=\"ans\">\\(c=\\dfrac23\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\lim_{x\\to2^-}=4c+4",
+        "why": "Left piece at 2."
+       },
+       {
+        "code": "\\lim_{x\\to2^+}=f(2)=8-2c",
+        "why": "Right piece at 2."
+       },
+       {
+        "code": "4c+4=8-2c",
+        "why": "Continuity: set them equal."
+       },
+       {
+        "code": "6c=4\\Rightarrow c=\\tfrac23",
+        "why": "",
+        "watch": [
+         [
+          "c",
+          "\\tfrac23"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p25-3",
+      "source": "Like §2.5 #9–14",
+      "href": null,
+      "question": "Is \\(f(x)=\\begin{cases}\\dfrac{x^2-x}{x^2-1},&x\\ne1\\\\1,&x=1\\end{cases}\\) continuous at \\(x=1\\)?",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Run the three checks. Factor to find the limit.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Check 1: defined.</p>\\[\\displaystyle f(1)=1\\]<p><strong>Step 2.</strong> Factor and cancel.</p>\\[\\displaystyle \\frac{x(x-1)}{(x-1)(x+1)}=\\frac{x}{x+1}\\]<p><strong>Step 3.</strong> Check 2: the limit exists.</p>\\[\\displaystyle \\lim_{x\\to1}f(x)=\\tfrac12\\]<p><strong>Step 4.</strong> Check 3 fails.</p>\\[\\displaystyle \\tfrac12\\ne1\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{not continuous: }\\lim=\\tfrac12\\ne f(1)=1\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>The limit is \\(\\frac12\\) but \\(f(1)=1\\): not continuous (removable).</p><p class=\"ans\">No</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(1)=1",
+        "why": "Check 1: defined."
+       },
+       {
+        "code": "\\frac{x(x-1)}{(x-1)(x+1)}=\\frac{x}{x+1}",
+        "why": "Factor and cancel."
+       },
+       {
+        "code": "\\lim_{x\\to1}f(x)=\\tfrac12",
+        "why": "Check 2: the limit exists."
+       },
+       {
+        "code": "\\tfrac12\\ne1",
+        "why": "Check 3 fails.",
+        "watch": [
+         [
+          "\\text{continuous?}",
+          "\\text{no (removable)}"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p25-4",
+      "source": "Like §2.5 #61–64",
+      "href": null,
+      "question": "Use the Intermediate Value Theorem to show \\(x^3+x-1=0\\) has a root in \\((0,1)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Check the sign of \\(f\\) at each end, and say why \\(f\\) is continuous.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Always state continuity: it's a hypothesis.</p>\\[\\displaystyle \\begin{gathered}f(x)=x^3+x-1\\text{ is a polynomial}\\\\\\Rightarrow\\text{continuous on }[0,1]\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f(0)=-1<0\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle f(1)=1>0\\]<p><strong>Step 4.</strong> IVT.</p>\\[\\displaystyle \\begin{gathered}0\\text{ is between }f(0)\\text{ and }f(1)\\\\\\Rightarrow f(c)=0\\text{ for some }c\\in(0,1)\\end{gathered}\\]<p><strong>What you found:</strong></p><ul><li>\\(f(0)<0<f(1)\\Rightarrow\\text{root in }(0,1)\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f\\) is continuous, \\(f(0)=-1<0<1=f(1)\\), so by the IVT there is \\(c\\in(0,1)\\) with \\(f(c)=0\\).</p><p class=\"ans\">Shown by the IVT</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\begin{gathered}f(x)=x^3+x-1\\text{ is a polynomial}\\\\\\Rightarrow\\text{continuous on }[0,1]\\end{gathered}",
+        "why": "Always state continuity: it's a hypothesis."
+       },
+       {
+        "code": "f(0)=-1<0",
+        "why": ""
+       },
+       {
+        "code": "f(1)=1>0",
+        "why": ""
+       },
+       {
+        "code": "\\begin{gathered}0\\text{ is between }f(0)\\text{ and }f(1)\\\\\\Rightarrow f(c)=0\\text{ for some }c\\in(0,1)\\end{gathered}",
+        "why": "IVT."
+       }
+      ]
+     },
+     {
+      "id": "p25-5",
+      "source": "Like §2.5 #63",
+      "href": null,
+      "question": "Show that \\(\\cos x=x\\) has a solution in \\((0,\\frac\\pi2)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Move everything to one side: \\(f(x)=\\cos x-x\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle f(x)=\\cos x-x\\ \\text{continuous}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f(0)=1>0\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle f(\\tfrac\\pi2)=0-\\tfrac\\pi2<0\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle \\text{IVT}\\Rightarrow f(c)=0,\\ \\cos c=c\\]<p><strong>What you found:</strong></p><ul><li>\\(f(0)>0>f(\\tfrac\\pi2)\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(x)=\\cos x-x\\) is continuous with \\(f(0)=1>0\\) and \\(f(\\frac\\pi2)=-\\frac\\pi2<0\\). By the IVT it has a zero, which solves \\(\\cos x=x\\).</p><p class=\"ans\">Shown by the IVT</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(x)=\\cos x-x\\ \\text{continuous}",
+        "why": ""
+       },
+       {
+        "code": "f(0)=1>0",
+        "why": ""
+       },
+       {
+        "code": "f(\\tfrac\\pi2)=0-\\tfrac\\pi2<0",
+        "why": ""
+       },
+       {
+        "code": "\\text{IVT}\\Rightarrow f(c)=0,\\ \\cos c=c",
+        "why": ""
+       }
+      ]
+     },
+     {
+      "id": "p25-6",
+      "source": "Like §2.5 #55",
+      "href": null,
+      "question": "Use continuity to evaluate \\(\\displaystyle\\lim_{x\\to\\pi}\\sin(x+\\sin x)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Sine is continuous, so you can plug in.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Compositions of continuous functions are continuous.</p>\\[\\displaystyle \\sin(\\pi+\\sin\\pi)\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle =\\sin(\\pi+0)=\\sin\\pi=0\\]<p><strong>What you found:</strong></p><ul><li>\\(0\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\sin(\\pi+0)=0\\).</p><p class=\"ans\">\\(0\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\sin(\\pi+\\sin\\pi)",
+        "why": "Compositions of continuous functions are continuous."
+       },
+       {
+        "code": "=\\sin(\\pi+0)=\\sin\\pi=0",
+        "why": "",
+        "watch": [
+         [
+          "\\lim",
+          "0"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "State continuity for the IVT",
+      "html": "<p>Graders look for “\\(f\\) is continuous on \\([a,b]\\)”. Without it the IVT argument is incomplete.</p>"
+     },
+     {
+      "title": "Three checks, every time",
+      "html": "<p>“Continuous” needs all three: defined, limit exists, equal. Show each one.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s26",
+  "slug": "2-6",
+  "num": "§2.6",
+  "title": "Limits at Infinity; Horizontal Asymptotes",
+  "lede": "Divide by the highest power in the denominator. Square roots, conjugates, and the end behaviour of e^x and arctan.",
+  "unit": "later",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\"><strong>Midterm 1 material, back on the final.</strong> The final is comprehensive, so these limits show up again, usually as 2–4 short problems worth about 15% of the test.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Rational functions</span><p>Compare degrees: top smaller → 0; equal → ratio of leading coefficients; top bigger → \\(\\pm\\infty\\) (no HA).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Method</span><p>Divide every term by the highest power of \\(x\\) in the <strong>denominator</strong>, then use \\(\\frac{c}{x^n}\\to0\\).</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Roots as x → −∞</span><p>\\(\\sqrt{x^2}=|x|=-x\\) when \\(x<0\\). That flips a sign.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Know these</span><p>\\(e^x\\to0\\) as \\(x\\to-\\infty\\) · \\(e^{-x}\\to0\\) as \\(x\\to\\infty\\) · \\(\\tan^{-1}x\\to\\pm\\frac\\pi2\\) · \\(\\ln x\\to\\infty\\) slowly.</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p26-1",
+      "source": "Like §2.6 #15–20",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to\\infty}\\frac{3x^2-x+4}{5x^2+2x}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Same degree on top and bottom.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Divide every term by \\(x^2\\).</p>\\[\\displaystyle \\frac{3-\\frac1x+\\frac4{x^2}}{5+\\frac2x}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\to\\frac{3-0+0}{5+0}=\\frac35\\]<p><strong>What you found:</strong></p><ul><li>\\(\\tfrac35\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Dividing by \\(x^2\\): \\(\\frac{3}{5}\\).</p><p class=\"ans\">\\(\\dfrac35\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{3-\\frac1x+\\frac4{x^2}}{5+\\frac2x}",
+        "why": "Divide every term by \\(x^2\\)."
+       },
+       {
+        "code": "\\to\\frac{3-0+0}{5+0}=\\frac35",
+        "why": "",
+        "watch": [
+         [
+          "\\lim",
+          "\\tfrac35"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p26-2",
+      "source": "Like §2.6 #17",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to\\infty}\\frac{2x+1}{x^3-4}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>The bottom has the bigger degree.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Divide by \\(x^3\\).</p>\\[\\displaystyle \\frac{\\frac2{x^2}+\\frac1{x^3}}{1-\\frac4{x^3}}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\to\\frac{0}{1}=0\\]<p><strong>What you found:</strong></p><ul><li>\\(0\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Bottom degree is bigger, so the limit is 0.</p><p class=\"ans\">\\(0\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{\\frac2{x^2}+\\frac1{x^3}}{1-\\frac4{x^3}}",
+        "why": "Divide by \\(x^3\\)."
+       },
+       {
+        "code": "\\to\\frac{0}{1}=0",
+        "why": "",
+        "watch": [
+         [
+          "\\lim",
+          "0"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p26-3",
+      "source": "Like §2.6 #23–26",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to-\\infty}\\frac{\\sqrt{9x^2+1}}{2x-3}\\) and \\(\\displaystyle\\lim_{x\\to\\infty}\\frac{\\sqrt{9x^2+1}}{2x-3}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Pull \\(x^2\\) out of the root: \\(\\sqrt{x^2}=|x|\\). For \\(x<0\\), \\(|x|=-x\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Factor \\(x^2\\) out of the root.</p>\\[\\displaystyle \\sqrt{9x^2+1}=|x|\\sqrt{9+\\tfrac1{x^2}}\\]<p><strong>Step 2.</strong> \\(|x|=x\\) for positive \\(x\\).</p>\\[\\displaystyle x\\to\\infty:\\ \\frac{x\\sqrt{9+1/x^2}}{x(2-3/x)}\\to\\frac32\\]<p><strong>Step 3.</strong> \\(|x|=-x\\) for negative \\(x\\): the sign flips.</p>\\[\\displaystyle x\\to-\\infty:\\ \\frac{-x\\sqrt{9+1/x^2}}{x(2-3/x)}\\to-\\frac32\\]<p><strong>What you found:</strong></p><ul><li>\\(x\\to-\\infty:\\ -\\tfrac32\\)</li><li>\\(x\\to\\infty:\\ \\tfrac32\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\sqrt{9x^2+1}=|x|\\sqrt{9+1/x^2}\\). At \\(+\\infty\\): \\(\\frac32\\). At \\(-\\infty\\): \\(-\\frac32\\). Two horizontal asymptotes.</p><p class=\"ans\">\\(-\\tfrac32\\) and \\(\\tfrac32\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\sqrt{9x^2+1}=|x|\\sqrt{9+\\tfrac1{x^2}}",
+        "why": "Factor \\(x^2\\) out of the root."
+       },
+       {
+        "code": "x\\to\\infty:\\ \\frac{x\\sqrt{9+1/x^2}}{x(2-3/x)}\\to\\frac32",
+        "why": "\\(|x|=x\\) for positive \\(x\\)."
+       },
+       {
+        "code": "x\\to-\\infty:\\ \\frac{-x\\sqrt{9+1/x^2}}{x(2-3/x)}\\to-\\frac32",
+        "why": "\\(|x|=-x\\) for negative \\(x\\): the sign flips.",
+        "watch": [
+         [
+          "\\text{HAs}",
+          "y=\\pm\\tfrac32"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p26-4",
+      "source": "Like §2.6 #27–29",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to\\infty}\\big(\\sqrt{x^2+3x}-x\\big)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(\\infty-\\infty\\): multiply by the conjugate over itself.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Conjugate.</p>\\[\\displaystyle \\big(\\sqrt{x^2+3x}-x\\big)\\cdot\\frac{\\sqrt{x^2+3x}+x}{\\sqrt{x^2+3x}+x}\\]<p><strong>Step 2.</strong> Difference of squares.</p>\\[\\displaystyle =\\frac{(x^2+3x)-x^2}{\\sqrt{x^2+3x}+x}=\\frac{3x}{\\sqrt{x^2+3x}+x}\\]<p><strong>Step 3.</strong> Divide top and bottom by \\(x\\) (\\(x>0\\)).</p>\\[\\displaystyle =\\frac{3}{\\sqrt{1+3/x}+1}\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle \\to\\frac3{1+1}=\\frac32\\]<p><strong>What you found:</strong></p><ul><li>\\(\\tfrac32\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>After the conjugate: \\(\\frac{3}{\\sqrt{1+3/x}+1}\\to\\frac32\\).</p><p class=\"ans\">\\(\\dfrac32\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\big(\\sqrt{x^2+3x}-x\\big)\\cdot\\frac{\\sqrt{x^2+3x}+x}{\\sqrt{x^2+3x}+x}",
+        "why": "Conjugate."
+       },
+       {
+        "code": "=\\frac{(x^2+3x)-x^2}{\\sqrt{x^2+3x}+x}=\\frac{3x}{\\sqrt{x^2+3x}+x}",
+        "why": "Difference of squares."
+       },
+       {
+        "code": "=\\frac{3}{\\sqrt{1+3/x}+1}",
+        "why": "Divide top and bottom by \\(x\\) (\\(x>0\\))."
+       },
+       {
+        "code": "\\to\\frac3{1+1}=\\frac32",
+        "why": "",
+        "watch": [
+         [
+          "\\lim",
+          "\\tfrac32"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p26-5",
+      "source": "Like §2.6 #45–50",
+      "href": null,
+      "question": "Find all horizontal and vertical asymptotes of \\(f(x)=\\dfrac{2x^2+1}{x^2-x-2}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>HA from the degrees; VA where the bottom is 0 and the top isn't.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Horizontal asymptote.</p>\\[\\displaystyle \\text{equal degrees}\\Rightarrow y=\\tfrac21=2\\]<p><strong>Step 2.</strong> Candidates for VAs.</p>\\[\\displaystyle x^2-x-2=(x-2)(x+1)=0\\Rightarrow x=2,\\ -1\\]<p><strong>Step 3.</strong> Nothing cancels, so both are real asymptotes.</p>\\[\\displaystyle \\text{top at }2:\\ 9\\ne0;\\ \\text{top at }-1:\\ 3\\ne0\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{HA }y=2\\)</li><li>\\(\\text{VA }x=2,\\ x=-1\\)</li></ul></div>"
+       },
+       {
+        "label": "Graph sketch",
+        "html": "<svg class=\"sketch\" viewBox=\"0 0 360 284\" role=\"img\" aria-label=\"Graph sketch. asymptotes and shape\">\n<line x1=\"52.9\" y1=\"10\" x2=\"52.9\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"52.9\" y=\"135.5\" class=\"sk-tick\" text-anchor=\"middle\">−6</text>\n<line x1=\"98.6\" y1=\"10\" x2=\"98.6\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"98.6\" y=\"135.5\" class=\"sk-tick\" text-anchor=\"middle\">−4</text>\n<line x1=\"144.3\" y1=\"10\" x2=\"144.3\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"144.3\" y=\"135.5\" class=\"sk-tick\" text-anchor=\"middle\">−2</text>\n<line x1=\"190.0\" y1=\"10\" x2=\"190.0\" y2=\"218\" class=\"sk-grid\"/>\n<line x1=\"235.7\" y1=\"10\" x2=\"235.7\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"235.7\" y=\"135.5\" class=\"sk-tick\" text-anchor=\"middle\">2</text>\n<line x1=\"281.4\" y1=\"10\" x2=\"281.4\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"281.4\" y=\"135.5\" class=\"sk-tick\" text-anchor=\"middle\">4</text>\n<line x1=\"327.1\" y1=\"10\" x2=\"327.1\" y2=\"218\" class=\"sk-grid\"/>\n<text x=\"327.1\" y=\"135.5\" class=\"sk-tick\" text-anchor=\"middle\">6</text>\n<line x1=\"30\" y1=\"218.0\" x2=\"350\" y2=\"218.0\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"222.0\" class=\"sk-tick\" text-anchor=\"end\">−10</text>\n<line x1=\"30\" y1=\"170.7\" x2=\"350\" y2=\"170.7\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"174.7\" class=\"sk-tick\" text-anchor=\"end\">−5</text>\n<line x1=\"30\" y1=\"123.5\" x2=\"350\" y2=\"123.5\" class=\"sk-grid\"/>\n<line x1=\"30\" y1=\"76.2\" x2=\"350\" y2=\"76.2\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"80.2\" class=\"sk-tick\" text-anchor=\"end\">5</text>\n<line x1=\"30\" y1=\"28.9\" x2=\"350\" y2=\"28.9\" class=\"sk-grid\"/>\n<text x=\"26\" y=\"32.9\" class=\"sk-tick\" text-anchor=\"end\">10</text>\n<line x1=\"30\" y1=\"123.5\" x2=\"350\" y2=\"123.5\" class=\"sk-axis\"/>\n<line x1=\"190.0\" y1=\"10\" x2=\"190.0\" y2=\"218\" class=\"sk-axis\"/>\n<line x1=\"167.1\" y1=\"10\" x2=\"167.1\" y2=\"218\" class=\"sk-asym\"/>\n<text x=\"170.1\" y=\"21\" class=\"sk-asym-t\">x = −1</text>\n<line x1=\"235.7\" y1=\"10\" x2=\"235.7\" y2=\"218\" class=\"sk-asym\"/>\n<text x=\"238.7\" y=\"21\" class=\"sk-asym-t\">x = 2</text>\n<line x1=\"30\" y1=\"104.5\" x2=\"350\" y2=\"104.5\" class=\"sk-asym\"/>\n<text x=\"34\" y=\"100.5\" class=\"sk-asym-t\">y = 2</text>\n<defs><clipPath id=\"clip-p26-5\"><rect x=\"30\" y=\"10\" width=\"320\" height=\"208\"/></clipPath></defs>\n<g clip-path=\"url(#clip-p26-5)\">\n<polyline points=\"30.0,106.1 30.4,106.1 30.7,106.1 31.1,106.1 31.4,106.1 31.8,106.1 32.1,106.1 32.5,106.1 32.8,106.1 33.2,106.1 33.6,106.1 33.9,106.1 34.3,106.1 34.6,106.1 35.0,106.1 35.3,106.1 35.7,106.1 36.0,106.1 36.4,106.1 36.8,106.1 37.1,106.1 37.5,106.1 37.8,106.2 38.2,106.2 38.5,106.2 38.9,106.2 39.2,106.2 39.6,106.2 40.0,106.2 40.3,106.2 40.7,106.2 41.0,106.2 41.4,106.2 41.7,106.2 42.1,106.2 42.4,106.2 42.8,106.2 43.2,106.2 43.5,106.2 43.9,106.2 44.2,106.2 44.6,106.2 44.9,106.2 45.3,106.2 45.6,106.2 46.0,106.2 46.4,106.2 46.7,106.2 47.1,106.2 47.4,106.2 47.8,106.2 48.1,106.2 48.5,106.2 48.8,106.2 49.2,106.2 49.6,106.2 49.9,106.2 50.3,106.2 50.6,106.2 51.0,106.2 51.3,106.2 51.7,106.2 52.0,106.2 52.4,106.2 52.8,106.2 53.1,106.2 53.5,106.2 53.8,106.2 54.2,106.2 54.5,106.2 54.9,106.2 55.2,106.2 55.6,106.2 56.0,106.2 56.3,106.2 56.7,106.2 57.0,106.2 57.4,106.2 57.7,106.2 58.1,106.2 58.4,106.2 58.8,106.2 59.2,106.2 59.5,106.2 59.9,106.2 60.2,106.2 60.6,106.2 60.9,106.2 61.3,106.2 61.6,106.2 62.0,106.2 62.4,106.2 62.7,106.2 63.1,106.2 63.4,106.2 63.8,106.2 64.1,106.2 64.5,106.2 64.8,106.2 65.2,106.2 65.6,106.2 65.9,106.2 66.3,106.2 66.6,106.2 67.0,106.2 67.3,106.2 67.7,106.2 68.0,106.2 68.4,106.2 68.8,106.2 69.1,106.2 69.5,106.2 69.8,106.2 70.2,106.2 70.5,106.2 70.9,106.2 71.2,106.2 71.6,106.2 72.0,106.2 72.3,106.2 72.7,106.2 73.0,106.2 73.4,106.2\" class=\"sk-curve sk-down\"/>\n<polyline points=\"73.4,106.2 73.7,106.2 74.1,106.2 74.4,106.2 74.8,106.2 75.2,106.2 75.5,106.2 75.9,106.2 76.2,106.2 76.6,106.2 76.9,106.2 77.3,106.2 77.6,106.2 78.0,106.2 78.4,106.2 78.7,106.2 79.1,106.2 79.4,106.2 79.8,106.2 80.1,106.2 80.5,106.2 80.8,106.2 81.2,106.2 81.6,106.2 81.9,106.2 82.3,106.2 82.6,106.2 83.0,106.2 83.3,106.2 83.7,106.2 84.0,106.2 84.4,106.2 84.8,106.2 85.1,106.2 85.5,106.2 85.8,106.2 86.2,106.2 86.5,106.2 86.9,106.2 87.2,106.2 87.6,106.2 88.0,106.2 88.3,106.2 88.7,106.2 89.0,106.2 89.4,106.2 89.7,106.2 90.1,106.2 90.4,106.2 90.8,106.2 91.2,106.2 91.5,106.2 91.9,106.2 92.2,106.2 92.6,106.2 92.9,106.2 93.3,106.2 93.6,106.2 94.0,106.2 94.4,106.2 94.7,106.2 95.1,106.2 95.4,106.2 95.8,106.2 96.1,106.1 96.5,106.1 96.8,106.1 97.2,106.1 97.6,106.1 97.9,106.1 98.3,106.1 98.6,106.1 99.0,106.1 99.3,106.1 99.7,106.1 100.0,106.1 100.4,106.1 100.8,106.1 101.1,106.1 101.5,106.1 101.8,106.1 102.2,106.1 102.5,106.1 102.9,106.1 103.2,106.1 103.6,106.1 104.0,106.0 104.3,106.0 104.7,106.0 105.0,106.0 105.4,106.0 105.7,106.0 106.1,106.0 106.4,106.0 106.8,106.0 107.2,106.0 107.5,106.0 107.9,106.0 108.2,106.0 108.6,106.0 108.9,105.9 109.3,105.9 109.6,105.9 110.0,105.9 110.4,105.9 110.7,105.9 111.1,105.9 111.4,105.9 111.8,105.9 112.1,105.9 112.5,105.9 112.8,105.8 113.2,105.8 113.6,105.8 113.9,105.8 114.3,105.8 114.6,105.8 115.0,105.8 115.3,105.8 115.7,105.7 116.0,105.7 116.4,105.7 116.8,105.7 117.1,105.7 117.5,105.7 117.8,105.7 118.2,105.6 118.5,105.6 118.9,105.6 119.2,105.6 119.6,105.6 120.0,105.6 120.3,105.5 120.7,105.5 121.0,105.5 121.4,105.5 121.7,105.5 122.1,105.5 122.4,105.4 122.8,105.4 123.2,105.4 123.5,105.4 123.9,105.3 124.2,105.3 124.6,105.3 124.9,105.3 125.3,105.3 125.6,105.2 126.0,105.2 126.4,105.2 126.7,105.1 127.1,105.1 127.4,105.1 127.8,105.1 128.1,105.0 128.5,105.0 128.8,105.0 129.2,104.9 129.6,104.9 129.9,104.9 130.3,104.8 130.6,104.8 131.0,104.8 131.3,104.7 131.7,104.7 132.0,104.6 132.4,104.6 132.8,104.6 133.1,104.5 133.5,104.5 133.8,104.4 134.2,104.4 134.5,104.3 134.9,104.3 135.2,104.2 135.6,104.2 136.0,104.1 136.3,104.1 136.7,104.0 137.0,103.9 137.4,103.9 137.7,103.8 138.1,103.7 138.4,103.7 138.8,103.6 139.2,103.5 139.5,103.5 139.9,103.4 140.2,103.3 140.6,103.2 140.9,103.1 141.3,103.1 141.6,103.0 142.0,102.9 142.4,102.8 142.7,102.7 143.1,102.6 143.4,102.5 143.8,102.3 144.1,102.2 144.5,102.1 144.8,102.0 145.2,101.9 145.6,101.7 145.9,101.6 146.3,101.4 146.6,101.3 147.0,101.1 147.3,101.0 147.7,100.8 148.0,100.6 148.4,100.4 148.8,100.2 149.1,100.0 149.5,99.8 149.8,99.6 150.2,99.4 150.5,99.1 150.9,98.9 151.2,98.6 151.6,98.3 152.0,98.1 152.3,97.7 152.7,97.4 153.0,97.1 153.4,96.7 153.7,96.3 154.1,95.9 154.4,95.5 154.8,95.0 155.2,94.6 155.5,94.1 155.9,93.5 156.2,92.9 156.6,92.3 156.9,91.6 157.3,90.9 157.6,90.1 158.0,89.3 158.4,88.3 158.7,87.3 159.1,86.2 159.4,85.1 159.8,83.7 160.1,82.3 160.5,80.7 160.8,78.9 161.2,76.9 161.6,74.6 161.9,72.0 162.3,69.1 162.6,65.6 163.0,61.6 163.3,56.8 163.7,51.0 164.0,43.8 164.4,34.8 164.8,23.2 165.1,7.4 165.5,-15.2 165.8,-49.8 166.2,-110.1 166.5,-240.6\" class=\"sk-curve sk-up\"/>\n<polyline points=\"167.6,586.8 168.0,380.0 168.3,299.1 168.7,256.0 169.0,229.3 169.4,211.0 169.7,197.8 170.1,187.8 170.4,179.9 170.8,173.6 171.2,168.4 171.5,164.1 171.9,160.4 172.2,157.3 172.6,154.6 172.9,152.2 173.3,150.1 173.6,148.2 174.0,146.6 174.4,145.1 174.7,143.7 175.1,142.5 175.4,141.4 175.8,140.4 176.1,139.5 176.5,138.6 176.8,137.8 177.2,137.1 177.6,136.4 177.9,135.8 178.3,135.3 178.6,134.7 179.0,134.2 179.3,133.8 179.7,133.3 180.0,132.9 180.4,132.6 180.8,132.2 181.1,131.9 181.5,131.6 181.8,131.3 182.2,131.0 182.5,130.8 182.9,130.5 183.2,130.3 183.6,130.1 184.0,129.9 184.3,129.7 184.7,129.6 185.0,129.4 185.4,129.3 185.7,129.1 186.1,129.0 186.4,128.9 186.8,128.8 187.2,128.7 187.5,128.6 187.9,128.5 188.2,128.4 188.6,128.4 188.9,128.3 189.3,128.3 189.6,128.2 190.0,128.2 190.4,128.1 190.7,128.1 191.1,128.1 191.4,128.1 191.8,128.1 192.1,128.1\" class=\"sk-curve sk-up\"/>\n<polyline points=\"192.1,128.1 192.5,128.1 192.8,128.1 193.2,128.1 193.6,128.1 193.9,128.1 194.3,128.2 194.6,128.2 195.0,128.2 195.3,128.3 195.7,128.3 196.0,128.4 196.4,128.4 196.8,128.5 197.1,128.6 197.5,128.6 197.8,128.7 198.2,128.8 198.5,128.9 198.9,129.0 199.2,129.1 199.6,129.2 200.0,129.3 200.3,129.4 200.7,129.5 201.0,129.6 201.4,129.7 201.7,129.9 202.1,130.0 202.4,130.2 202.8,130.3 203.2,130.5 203.5,130.6 203.9,130.8 204.2,131.0 204.6,131.1 204.9,131.3 205.3,131.5 205.6,131.7 206.0,131.9 206.4,132.1 206.7,132.4 207.1,132.6 207.4,132.8 207.8,133.1 208.1,133.3 208.5,133.6 208.8,133.9 209.2,134.1 209.6,134.4 209.9,134.7 210.3,135.0 210.6,135.4 211.0,135.7 211.3,136.0 211.7,136.4 212.0,136.7 212.4,137.1 212.8,137.5 213.1,137.9 213.5,138.4 213.8,138.8 214.2,139.2 214.5,139.7 214.9,140.2 215.2,140.7 215.6,141.2 216.0,141.8 216.3,142.4 216.7,142.9 217.0,143.6 217.4,144.2 217.7,144.9 218.1,145.6 218.4,146.3 218.8,147.1 219.2,147.9 219.5,148.7 219.9,149.6 220.2,150.5 220.6,151.4 220.9,152.4 221.3,153.5 221.6,154.6 222.0,155.8 222.4,157.0 222.7,158.3 223.1,159.7 223.4,161.1 223.8,162.7 224.1,164.3 224.5,166.1 224.8,167.9 225.2,169.9 225.6,172.1 225.9,174.4 226.3,176.8 226.6,179.5 227.0,182.4 227.3,185.5 227.7,188.9 228.0,192.6 228.4,196.7 228.8,201.2 229.1,206.2 229.5,211.8 229.8,218.0 230.2,225.1 230.5,233.1 230.9,242.3 231.2,253.0 231.6,265.5 232.0,280.4 232.3,298.4 232.7,320.6 233.0,348.6 233.4,385.3 233.7,435.1 234.1,506.6 234.4,618.3 234.8,816.8\" class=\"sk-curve sk-down\"/>\n<polyline points=\"236.9,-424.2 237.3,-304.1 237.6,-228.3 238.0,-176.0 238.4,-137.9 238.7,-108.8 239.1,-85.8 239.4,-67.3 239.8,-52.0 240.1,-39.2 240.5,-28.3 240.8,-18.9 241.2,-10.7 241.6,-3.5 241.9,2.8 242.3,8.5 242.6,13.6 243.0,18.1 243.3,22.3 243.7,26.1 244.0,29.5 244.4,32.7 244.8,35.6 245.1,38.3 245.5,40.8 245.8,43.2 246.2,45.3 246.5,47.3 246.9,49.2 247.2,51.0 247.6,52.7 248.0,54.3 248.3,55.7 248.7,57.1 249.0,58.5 249.4,59.7 249.7,60.9 250.1,62.0 250.4,63.1 250.8,64.2 251.2,65.1 251.5,66.1 251.9,67.0 252.2,67.8 252.6,68.6 252.9,69.4 253.3,70.2 253.6,70.9 254.0,71.6 254.4,72.2 254.7,72.9 255.1,73.5 255.4,74.1 255.8,74.7 256.1,75.2 256.5,75.8 256.8,76.3 257.2,76.8 257.6,77.3 257.9,77.7 258.3,78.2 258.6,78.6 259.0,79.0 259.3,79.4 259.7,79.8 260.0,80.2 260.4,80.6 260.8,81.0 261.1,81.3 261.5,81.7 261.8,82.0 262.2,82.3 262.5,82.6 262.9,82.9 263.2,83.2 263.6,83.5 264.0,83.8 264.3,84.1 264.7,84.4 265.0,84.6 265.4,84.9 265.7,85.1 266.1,85.4 266.4,85.6 266.8,85.9 267.2,86.1 267.5,86.3 267.9,86.5 268.2,86.7 268.6,86.9 268.9,87.2 269.3,87.4 269.6,87.5 270.0,87.7 270.4,87.9 270.7,88.1 271.1,88.3 271.4,88.5 271.8,88.6 272.1,88.8 272.5,89.0 272.8,89.1 273.2,89.3 273.6,89.4 273.9,89.6 274.3,89.7 274.6,89.9 275.0,90.0 275.3,90.2 275.7,90.3 276.0,90.5 276.4,90.6 276.8,90.7 277.1,90.8 277.5,91.0 277.8,91.1 278.2,91.2 278.5,91.3 278.9,91.5 279.2,91.6 279.6,91.7 280.0,91.8 280.3,91.9 280.7,92.0 281.0,92.1 281.4,92.2 281.7,92.3 282.1,92.4 282.4,92.5 282.8,92.6 283.2,92.7 283.5,92.8 283.9,92.9 284.2,93.0 284.6,93.1 284.9,93.2 285.3,93.3 285.6,93.4 286.0,93.5 286.4,93.6 286.7,93.6 287.1,93.7 287.4,93.8 287.8,93.9 288.1,94.0 288.5,94.0 288.8,94.1 289.2,94.2 289.6,94.3 289.9,94.3 290.3,94.4 290.6,94.5 291.0,94.6 291.3,94.6 291.7,94.7 292.0,94.8 292.4,94.8 292.8,94.9 293.1,95.0 293.5,95.0 293.8,95.1 294.2,95.2 294.5,95.2 294.9,95.3 295.2,95.3 295.6,95.4 296.0,95.5 296.3,95.5 296.7,95.6 297.0,95.6 297.4,95.7 297.7,95.7 298.1,95.8 298.4,95.9 298.8,95.9 299.2,96.0 299.5,96.0 299.9,96.1 300.2,96.1 300.6,96.2 300.9,96.2 301.3,96.3 301.6,96.3 302.0,96.4 302.4,96.4 302.7,96.5 303.1,96.5 303.4,96.6 303.8,96.6 304.1,96.6 304.5,96.7 304.8,96.7 305.2,96.8 305.6,96.8 305.9,96.9 306.3,96.9 306.6,97.0 307.0,97.0 307.3,97.0 307.7,97.1 308.0,97.1 308.4,97.2 308.8,97.2 309.1,97.2 309.5,97.3 309.8,97.3 310.2,97.3 310.5,97.4 310.9,97.4 311.2,97.5 311.6,97.5 312.0,97.5 312.3,97.6 312.7,97.6 313.0,97.6 313.4,97.7 313.7,97.7 314.1,97.7 314.4,97.8 314.8,97.8 315.2,97.8 315.5,97.9 315.9,97.9 316.2,97.9 316.6,98.0 316.9,98.0 317.3,98.0 317.6,98.1 318.0,98.1 318.4,98.1 318.7,98.2 319.1,98.2 319.4,98.2 319.8,98.2 320.1,98.3 320.5,98.3 320.8,98.3 321.2,98.4 321.6,98.4 321.9,98.4 322.3,98.4 322.6,98.5 323.0,98.5 323.3,98.5 323.7,98.6 324.0,98.6 324.4,98.6 324.8,98.6 325.1,98.7 325.5,98.7 325.8,98.7 326.2,98.7 326.5,98.8 326.9,98.8 327.2,98.8 327.6,98.8 328.0,98.9 328.3,98.9 328.7,98.9 329.0,98.9 329.4,99.0 329.7,99.0 330.1,99.0 330.4,99.0 330.8,99.0 331.2,99.1 331.5,99.1 331.9,99.1 332.2,99.1 332.6,99.2 332.9,99.2 333.3,99.2 333.6,99.2 334.0,99.2 334.4,99.3 334.7,99.3 335.1,99.3 335.4,99.3 335.8,99.3 336.1,99.4 336.5,99.4 336.8,99.4 337.2,99.4 337.6,99.4 337.9,99.5 338.3,99.5 338.6,99.5 339.0,99.5 339.3,99.5 339.7,99.6 340.0,99.6 340.4,99.6 340.8,99.6 341.1,99.6 341.5,99.7 341.8,99.7 342.2,99.7 342.5,99.7 342.9,99.7 343.2,99.7 343.6,99.8 344.0,99.8 344.3,99.8 344.7,99.8 345.0,99.8 345.4,99.8 345.7,99.9 346.1,99.9 346.4,99.9 346.8,99.9 347.2,99.9 347.5,99.9 347.9,100.0 348.2,100.0 348.6,100.0 348.9,100.0 349.3,100.0 349.6,100.0 350.0,100.1\" class=\"sk-curve sk-down\"/>\n</g>\n<text x=\"25\" y=\"248\" class=\"sk-strip-name\" text-anchor=\"end\">f′</text>\n<rect x=\"30.0\" y=\"234\" width=\"43.7\" height=\"17\" rx=\"3\" class=\"sk-neg\"/>\n<text x=\"51.9\" y=\"246.5\" class=\"sk-strip-t\" text-anchor=\"middle\">− ↘</text>\n<rect x=\"73.7\" y=\"234\" width=\"118.9\" height=\"17\" rx=\"3\" class=\"sk-pos\"/>\n<text x=\"133.2\" y=\"246.5\" class=\"sk-strip-t\" text-anchor=\"middle\">+ ↗</text>\n<rect x=\"192.7\" y=\"234\" width=\"157.3\" height=\"17\" rx=\"3\" class=\"sk-neg\"/>\n<text x=\"271.3\" y=\"246.5\" class=\"sk-strip-t\" text-anchor=\"middle\">− ↘</text>\n<text x=\"25\" y=\"270\" class=\"sk-strip-name\" text-anchor=\"end\">f″</text>\n<rect x=\"30.0\" y=\"256\" width=\"137.6\" height=\"17\" rx=\"3\" class=\"sk-pos\"/>\n<text x=\"98.8\" y=\"268.5\" class=\"sk-strip-t\" text-anchor=\"middle\">+ ∪</text>\n<rect x=\"167.6\" y=\"256\" width=\"68.3\" height=\"17\" rx=\"3\" class=\"sk-neg\"/>\n<text x=\"201.7\" y=\"268.5\" class=\"sk-strip-t\" text-anchor=\"middle\">− ∩</text>\n<rect x=\"235.9\" y=\"256\" width=\"114.1\" height=\"17\" rx=\"3\" class=\"sk-pos\"/>\n<text x=\"292.9\" y=\"268.5\" class=\"sk-strip-t\" text-anchor=\"middle\">+ ∪</text>\n</svg>\n<p class=\"sk-key\"><span class=\"k-up\">green</span> = rising (f′ &gt; 0), <span class=\"k-down\">red</span> = falling (f′ &lt; 0), <span class=\"k-ext\">●</span> max/min, <span class=\"k-ip\">○</span> inflection point (f″ changes sign), <span class=\"k-asym\">dashed</span> = asymptote. The strips under the graph are your sign maps: ∪ concave up, ∩ concave down.</p>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>HA \\(y=2\\); VAs \\(x=2\\) and \\(x=-1\\).</p><p class=\"ans\">HA \\(y=2\\); VA \\(x=2\\), \\(x=-1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\text{equal degrees}\\Rightarrow y=\\tfrac21=2",
+        "why": "Horizontal asymptote."
+       },
+       {
+        "code": "x^2-x-2=(x-2)(x+1)=0\\Rightarrow x=2,\\ -1",
+        "why": "Candidates for VAs."
+       },
+       {
+        "code": "\\text{top at }2:\\ 9\\ne0;\\ \\text{top at }-1:\\ 3\\ne0",
+        "why": "Nothing cancels, so both are real asymptotes.",
+        "watch": [
+         [
+          "\\text{HA}",
+          "y=2"
+         ],
+         [
+          "\\text{VA}",
+          "x=2,\\ x=-1"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p26-6",
+      "source": "Like §2.6 #35",
+      "href": null,
+      "question": "Find \\(\\displaystyle\\lim_{x\\to\\infty}\\tan^{-1}(x^2-x)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>What does the inside do? Then use \\(\\tan^{-1}u\\to\\frac\\pi2\\) as \\(u\\to\\infty\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The \\(x^2\\) term wins.</p>\\[\\displaystyle x^2-x\\to\\infty\\]<p><strong>Step 2.</strong> Arctan levels off at \\(\\frac\\pi2\\).</p>\\[\\displaystyle \\tan^{-1}u\\to\\tfrac\\pi2\\ \\text{as }u\\to\\infty\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\lim=\\tfrac\\pi2\\]<p><strong>What you found:</strong></p><ul><li>\\(\\tfrac\\pi2\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>The inside \\(\\to\\infty\\), so \\(\\tan^{-1}\\to\\frac\\pi2\\).</p><p class=\"ans\">\\(\\dfrac\\pi2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "x^2-x\\to\\infty",
+        "why": "The \\(x^2\\) term wins."
+       },
+       {
+        "code": "\\tan^{-1}u\\to\\tfrac\\pi2\\ \\text{as }u\\to\\infty",
+        "why": "Arctan levels off at \\(\\frac\\pi2\\)."
+       },
+       {
+        "code": "\\lim=\\tfrac\\pi2",
+        "why": "",
+        "watch": [
+         [
+          "\\lim",
+          "\\tfrac\\pi2"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "√(x²) = |x|",
+      "html": "<p>At \\(-\\infty\\), \\(\\sqrt{x^2}=-x\\). Forgetting this gives the wrong sign on half of these problems.</p>"
+     },
+     {
+      "title": "∞ − ∞ is not 0",
+      "html": "<p>Use the conjugate (roots) or a common denominator (fractions) first.</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s27",
+  "slug": "2-7",
+  "num": "§2.7",
+  "title": "Derivatives and Rates of Change",
+  "lede": "The derivative at a point from the limit definition, tangent lines, and velocity.",
+  "unit": "later",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\"><strong>Midterm 1 material, back on the final.</strong> The final is comprehensive, so these limits show up again, usually as 2–4 short problems worth about 15% of the test.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Derivative at a</span>\\[f'(a)=\\lim_{h\\to0}\\frac{f(a+h)-f(a)}{h}\\]<p class=\"note\">or, the same thing:</p>\\[f'(a)=\\lim_{x\\to a}\\frac{f(x)-f(a)}{x-a}\\]"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Tangent line</span><p>\\(y-f(a)=f'(a)(x-a)\\)</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Velocity</span><p>If \\(s(t)\\) is position, \\(v(a)=s'(a)\\). The derivative is the instantaneous rate of change.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Recognise it</span><p>\\(\\lim_{h\\to0}\\frac{(2+h)^5-32}{h}\\) is \\(f'(2)\\) for \\(f(x)=x^5\\). Spot \\(f\\) and \\(a\\).</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p27-1",
+      "source": "Like §2.7 #25–30",
+      "href": null,
+      "question": "Use the definition to find \\(f'(2)\\) for \\(f(x)=3x^2-5x\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Compute \\(f(2+h)\\) and \\(f(2)\\) separately, subtract, then divide by \\(h\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle f(2)=12-10=2\\]<p><strong>Step 2.</strong> Expand carefully.</p>\\[\\displaystyle \\begin{aligned}f(2+h)&=3(4+4h+h^2)-10-5h\\\\&=2+7h+3h^2\\end{aligned}\\]<p><strong>Step 3.</strong> Subtract, then cancel \\(h\\).</p>\\[\\displaystyle \\frac{f(2+h)-f(2)}{h}=\\frac{7h+3h^2}{h}=7+3h\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle h\\to0:\\ f'(2)=7\\]<p><strong>What you found:</strong></p><ul><li>\\(f'(2)=7\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{(2+7h+3h^2)-2}{h}=7+3h\\to7\\).</p><p class=\"ans\">\\(f'(2)=7\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(2)=12-10=2",
+        "why": ""
+       },
+       {
+        "code": "\\begin{aligned}f(2+h)&=3(4+4h+h^2)-10-5h\\\\&=2+7h+3h^2\\end{aligned}",
+        "why": "Expand carefully."
+       },
+       {
+        "code": "\\frac{f(2+h)-f(2)}{h}=\\frac{7h+3h^2}{h}=7+3h",
+        "why": "Subtract, then cancel \\(h\\)."
+       },
+       {
+        "code": "h\\to0:\\ f'(2)=7",
+        "why": "",
+        "watch": [
+         [
+          "f'(2)",
+          "7"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p27-2",
+      "source": "Like §2.7 #5–8",
+      "href": null,
+      "question": "Find the tangent line to \\(y=x^3\\) at \\((1,1)\\) using \\(\\lim_{x\\to a}\\frac{f(x)-f(a)}{x-a}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Factor \\(x^3-1\\) as a difference of cubes.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Difference of cubes.</p>\\[\\displaystyle \\frac{x^3-1}{x-1}=\\frac{(x-1)(x^2+x+1)}{x-1}=x^2+x+1\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle x\\to1:\\ m=3\\]<p><strong>Step 3.</strong> Point-slope.</p>\\[\\displaystyle y-1=3(x-1)\\Rightarrow y=3x-2\\]<p><strong>What you found:</strong></p><ul><li>\\(m=3\\)</li><li>\\(y=3x-2\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Slope \\(=\\lim(x^2+x+1)=3\\); tangent \\(y=3x-2\\).</p><p class=\"ans\">\\(y=3x-2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{x^3-1}{x-1}=\\frac{(x-1)(x^2+x+1)}{x-1}=x^2+x+1",
+        "why": "Difference of cubes."
+       },
+       {
+        "code": "x\\to1:\\ m=3",
+        "why": ""
+       },
+       {
+        "code": "y-1=3(x-1)\\Rightarrow y=3x-2",
+        "why": "Point-slope.",
+        "watch": [
+         [
+          "\\text{tangent}",
+          "y=3x-2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p27-3",
+      "source": "Like §2.7 #29",
+      "href": null,
+      "question": "Use the definition to find \\(f'(4)\\) for \\(f(x)=\\sqrt x\\), then the tangent line at \\(x=4\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Conjugate after you set up \\(\\frac{\\sqrt{4+h}-2}{h}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Conjugate; the top becomes \\(h\\).</p>\\[\\displaystyle \\frac{\\sqrt{4+h}-2}{h}\\cdot\\frac{\\sqrt{4+h}+2}{\\sqrt{4+h}+2}=\\frac{1}{\\sqrt{4+h}+2}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle h\\to0:\\ f'(4)=\\tfrac14\\]<p><strong>Step 3.</strong> \\(f(4)=2\\).</p>\\[\\displaystyle y-2=\\tfrac14(x-4)\\Rightarrow y=\\tfrac14x+1\\]<p><strong>What you found:</strong></p><ul><li>\\(f'(4)=\\tfrac14\\)</li><li>\\(y=\\tfrac14x+1\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f'(4)=\\frac14\\); tangent \\(y=\\frac14x+1\\).</p><p class=\"ans\">\\(f'(4)=\\tfrac14\\); \\(y=\\tfrac14x+1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{\\sqrt{4+h}-2}{h}\\cdot\\frac{\\sqrt{4+h}+2}{\\sqrt{4+h}+2}=\\frac{1}{\\sqrt{4+h}+2}",
+        "why": "Conjugate; the top becomes \\(h\\)."
+       },
+       {
+        "code": "h\\to0:\\ f'(4)=\\tfrac14",
+        "why": ""
+       },
+       {
+        "code": "y-2=\\tfrac14(x-4)\\Rightarrow y=\\tfrac14x+1",
+        "why": "\\(f(4)=2\\).",
+        "watch": [
+         [
+          "f'(4)",
+          "\\tfrac14"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p27-4",
+      "source": "Like §2.7 #13–17",
+      "href": null,
+      "question": "A particle moves with \\(s(t)=t^2-6t+5\\). Use the definition to find \\(v(a)\\), then \\(v(4)\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Find \\(\\frac{s(a+h)-s(a)}{h}\\) with letters.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Expand \\((a+h)^2-6(a+h)+5\\) and subtract \\(a^2-6a+5\\).</p>\\[\\displaystyle s(a+h)-s(a)=2ah+h^2-6h\\]<p><strong>Step 2.</strong> Cancel \\(h\\).</p>\\[\\displaystyle \\frac{2ah+h^2-6h}{h}=2a+h-6\\]<p><strong>Step 3.</strong> Let \\(h\\to0\\).</p>\\[\\displaystyle v(a)=2a-6\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle v(4)=2\\]<p><strong>What you found:</strong></p><ul><li>\\(v(a)=2a-6\\)</li><li>\\(v(4)=2\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(v(a)=2a-6\\), so \\(v(4)=2\\).</p><p class=\"ans\">\\(v(4)=2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "s(a+h)-s(a)=2ah+h^2-6h",
+        "why": "Expand \\((a+h)^2-6(a+h)+5\\) and subtract \\(a^2-6a+5\\)."
+       },
+       {
+        "code": "\\frac{2ah+h^2-6h}{h}=2a+h-6",
+        "why": "Cancel \\(h\\)."
+       },
+       {
+        "code": "v(a)=2a-6",
+        "why": "Let \\(h\\to0\\)."
+       },
+       {
+        "code": "v(4)=2",
+        "why": "",
+        "watch": [
+         [
+          "v(4)",
+          "2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p27-5",
+      "source": "Like §2.7 #31–36",
+      "href": null,
+      "question": "The limit \\(\\displaystyle\\lim_{h\\to0}\\frac{(2+h)^5-32}{h}\\) is \\(f'(a)\\). Find \\(f\\), \\(a\\), and the value.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Match it to \\(\\frac{f(a+h)-f(a)}{h}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> So \\(f(x)=x^5\\) and \\(a=2\\).</p>\\[\\displaystyle f(a+h)=(2+h)^5,\\ f(a)=32=2^5\\]<p><strong>Step 2.</strong> Power rule (you can use it to get the value).</p>\\[\\displaystyle f'(x)=5x^4\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle f'(2)=5\\cdot16=80\\]<p><strong>What you found:</strong></p><ul><li>\\(f(x)=x^5,\\ a=2\\)</li><li>\\(80\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(x)=x^5\\), \\(a=2\\); the value is \\(f'(2)=80\\).</p><p class=\"ans\">\\(f(x)=x^5,\\ a=2,\\) value \\(80\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(a+h)=(2+h)^5,\\ f(a)=32=2^5",
+        "why": "So \\(f(x)=x^5\\) and \\(a=2\\)."
+       },
+       {
+        "code": "f'(x)=5x^4",
+        "why": "Power rule (you can use it to get the value)."
+       },
+       {
+        "code": "f'(2)=5\\cdot16=80",
+        "why": "",
+        "watch": [
+         [
+          "\\text{value}",
+          "80"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p27-6",
+      "source": "Like §2.7 #27",
+      "href": null,
+      "question": "Use the definition to find \\(f'(1)\\) for \\(f(x)=\\dfrac{x}{x+1}\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Combine \\(\\frac{1+h}{2+h}-\\frac12\\) over \\(2(2+h)\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle f(1+h)=\\frac{1+h}{2+h},\\ f(1)=\\tfrac12\\]<p><strong>Step 2.</strong> Common denominator.</p>\\[\\displaystyle \\frac{1+h}{2+h}-\\frac12=\\frac{2+2h-2-h}{2(2+h)}=\\frac{h}{2(2+h)}\\]<p><strong>Step 3.</strong> Divide by \\(h\\).</p>\\[\\displaystyle \\frac{h}{2(2+h)}\\cdot\\frac1h=\\frac1{2(2+h)}\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle h\\to0:\\ \\tfrac14\\]<p><strong>What you found:</strong></p><ul><li>\\(f'(1)=\\tfrac14\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(\\frac{1}{2(2+h)}\\to\\frac14\\).</p><p class=\"ans\">\\(f'(1)=\\tfrac14\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(1+h)=\\frac{1+h}{2+h},\\ f(1)=\\tfrac12",
+        "why": ""
+       },
+       {
+        "code": "\\frac{1+h}{2+h}-\\frac12=\\frac{2+2h-2-h}{2(2+h)}=\\frac{h}{2(2+h)}",
+        "why": "Common denominator."
+       },
+       {
+        "code": "\\frac{h}{2(2+h)}\\cdot\\frac1h=\\frac1{2(2+h)}",
+        "why": "Divide by \\(h\\)."
+       },
+       {
+        "code": "h\\to0:\\ \\tfrac14",
+        "why": "",
+        "watch": [
+         [
+          "f'(1)",
+          "\\tfrac14"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Traps"
+   },
+   {
+    "type": "traps",
+    "items": [
+     {
+      "title": "Brackets around f(a+h)",
+      "html": "<p>\\(f(a+h)-f(a)\\): subtract the <em>whole</em> \\(f(a)\\). Missing brackets flip signs.</p>"
+     },
+     {
+      "title": "Keep 'lim' until the end",
+      "html": "<p>Write \\(\\lim_{h\\to0}\\) on every line until you set \\(h=0\\).</p>"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s42",
+  "slug": "4-2",
+  "num": "§4.2",
+  "unit": "later",
+  "title": "The Mean Value Theorem",
+  "lede": "Rolle's Theorem and the MVT. Read-only: your instructor says it won't be on the test.",
+  "blocks": [
+   {
+    "type": "prose",
+    "html": "<p class=\"callout\"><strong>Not on Quiz 5.</strong> §4.2 is “read only”. Skim it once; the idea explains <em>why</em> the tests in §4.3 work.</p>"
+   },
+   {
+    "type": "rules",
+    "items": [
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Rolle's Theorem</span><p>If \\(f\\) is continuous on \\([a,b]\\), differentiable on \\((a,b)\\), and \\(f(a)=f(b)\\), then there is a \\(c\\) in \\((a,b)\\) with \\(f'(c)=0\\).</p><p class=\"note\">Same height at both ends ⇒ somewhere the tangent is flat.</p>"
+     },
+     {
+      "key": true,
+      "html": "<span class=\"tag\">Mean Value Theorem</span><p>If \\(f\\) is continuous on \\([a,b]\\) and differentiable on \\((a,b)\\), there is a \\(c\\) in \\((a,b)\\) with</p>\\[f'(c)=\\frac{f(b)-f(a)}{b-a}.\\]<p class=\"note\">Somewhere the instant slope equals the average slope.</p>"
+     },
+     {
+      "key": false,
+      "html": "<span class=\"tag\">Recipe</span><p>1) Check continuity and differentiability. 2) Work out the average slope \\(\\frac{f(b)-f(a)}{b-a}\\). 3) Set \\(f'(c)\\) equal to it and solve. 4) Keep only \\(c\\) strictly inside \\((a,b)\\).</p>"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Practice"
+   },
+   {
+    "type": "practice",
+    "items": [
+     {
+      "id": "p42-1",
+      "source": "Like §4.2 #1–11",
+      "href": null,
+      "question": "Verify that \\(f(x)=x^2-4x+1\\) satisfies Rolle's Theorem on \\([0,4]\\), then find every \\(c\\) it promises.",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Check \\(f(0)\\) and \\(f(4)\\) first, then solve \\(f'(c)=0\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Rolle needs equal heights at the ends. They match.</p>\\[\\begin{gathered}\\displaystyle f(0)=1\\\\\\displaystyle f(4)=1\\end{gathered}\\]<p><strong>Step 2.</strong> Power rule. Polynomials are smooth, so the hypotheses hold.</p>\\[\\displaystyle f'(x)=2x-4\\]<p><strong>Step 3.</strong> Rolle promises a flat tangent. \\(2\\) lies inside \\((0,4)\\).</p>\\[\\displaystyle 2c-4=0\\ \\Rightarrow\\ c=2\\]<p><strong>What you found:</strong></p><ul><li>\\(f(a)=f(b)=1\\)</li><li>\\(c=2\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>A polynomial is continuous and differentiable everywhere. \\(f(0)=1\\) and \\(f(4)=16-16+1=1\\), so the ends match. \\(f'(x)=2x-4=0\\Rightarrow x=2\\), which is in \\((0,4)\\).</p><p class=\"ans\">\\(c=2\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "f(0)=1,\\quad f(4)=1",
+        "why": "Rolle needs equal heights at the ends. They match.",
+        "watch": [
+         [
+          "f(a)=f(b)",
+          "1"
+         ]
+        ]
+       },
+       {
+        "code": "f'(x)=2x-4",
+        "why": "Power rule. Polynomials are smooth, so the hypotheses hold."
+       },
+       {
+        "code": "2c-4=0\\ \\Rightarrow\\ c=2",
+        "why": "Rolle promises a flat tangent. \\(2\\) lies inside \\((0,4)\\).",
+        "watch": [
+         [
+          "c",
+          "2"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p42-2",
+      "source": "Like §4.2 #13–23",
+      "href": null,
+      "question": "Find every \\(c\\) that satisfies the Mean Value Theorem for \\(f(x)=x^3-x\\) on \\([0,2]\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>Average slope first: \\(\\frac{f(2)-f(0)}{2-0}\\).</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> This is the slope of the secant line from end to end.</p>\\[\\displaystyle \\frac{f(2)-f(0)}{2-0}=\\frac{6-0}{2}=3\\]<p><strong>Step 2.</strong> Derivative of \\(x^3-x\\).</p>\\[\\displaystyle f'(c)=3c^2-1\\]<p><strong>Step 3.</strong> Set the instant slope equal to the average slope.</p>\\[\\displaystyle 3c^2-1=3\\ \\Rightarrow\\ c^2=\\tfrac43\\]<p><strong>Step 4.</strong> \\(-\\tfrac{2}{\\sqrt3}\\) is outside \\((0,2)\\), so throw it out.</p>\\[\\displaystyle c=\\tfrac{2}{\\sqrt3}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{avg slope}:\\ 3\\)</li><li>\\(c=2/\\sqrt3\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>\\(f(2)=6\\), \\(f(0)=0\\), so the average slope is \\(3\\). \\(f'(c)=3c^2-1=3\\Rightarrow c^2=\\tfrac43\\Rightarrow c=\\pm\\tfrac{2}{\\sqrt3}\\). Only the positive one is in \\((0,2)\\).</p><p class=\"ans\">\\(c=\\dfrac{2}{\\sqrt3}\\approx1.155\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{f(2)-f(0)}{2-0}=\\frac{6-0}{2}=3",
+        "why": "This is the slope of the secant line from end to end.",
+        "watch": [
+         [
+          "\\text{avg slope}",
+          "3"
+         ]
+        ]
+       },
+       {
+        "code": "f'(c)=3c^2-1",
+        "why": "Derivative of \\(x^3-x\\)."
+       },
+       {
+        "code": "3c^2-1=3\\ \\Rightarrow\\ c^2=\\tfrac43",
+        "why": "Set the instant slope equal to the average slope."
+       },
+       {
+        "code": "c=\\tfrac{2}{\\sqrt3}",
+        "why": "\\(-\\tfrac{2}{\\sqrt3}\\) is outside \\((0,2)\\), so throw it out.",
+        "watch": [
+         [
+          "c",
+          "2/\\sqrt3"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "id": "p42-3",
+      "source": "Like §4.2 #13–23",
+      "href": null,
+      "question": "Find the \\(c\\) promised by the MVT for \\(f(x)=\\sqrt{x}\\) on \\([0,4]\\).",
+      "reveals": [
+       {
+        "label": "Hint",
+        "html": "<p>\\(f'(x)=\\frac{1}{2\\sqrt x}\\). Set it equal to the average slope.</p>"
+       },
+       {
+        "label": "Step-by-step walkthrough",
+        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Average slope over the interval.</p>\\[\\displaystyle \\frac{\\sqrt4-\\sqrt0}{4-0}=\\frac12\\]<p><strong>Step 2.</strong> \\(\\sqrt x\\) is continuous on \\([0,4]\\) and differentiable on \\((0,4)\\), which is all the MVT needs.</p>\\[\\displaystyle \\frac{1}{2\\sqrt c}=\\frac12\\]<p><strong>Step 3.</strong> Cross-multiply.</p>\\[\\displaystyle \\sqrt c=1\\ \\Rightarrow\\ c=1\\]<p><strong>What you found:</strong></p><ul><li>\\(c=1\\)</li></ul></div>"
+       },
+       {
+        "label": "Full solution",
+        "html": "<p>Average slope \\(\\frac{2-0}{4}=\\frac12\\). \\(\\frac{1}{2\\sqrt c}=\\frac12\\Rightarrow\\sqrt c=1\\Rightarrow c=1\\).</p><p class=\"ans\">\\(c=1\\)</p>"
+       }
+      ],
+      "debug": [
+       {
+        "code": "\\frac{\\sqrt4-\\sqrt0}{4-0}=\\frac12",
+        "why": "Average slope over the interval."
+       },
+       {
+        "code": "\\frac{1}{2\\sqrt c}=\\frac12",
+        "why": "\\(\\sqrt x\\) is continuous on \\([0,4]\\) and differentiable on \\((0,4)\\), which is all the MVT needs."
+       },
+       {
+        "code": "\\sqrt c=1\\ \\Rightarrow\\ c=1",
+        "why": "Cross-multiply.",
+        "watch": [
+         [
+          "c",
+          "1"
+         ]
+        ]
+       }
+      ]
      }
     ]
    }
@@ -14714,3018 +21286,6 @@ export const sections: Section[] = [
    {
     "type": "prose",
     "html": "<p class=\"callout\">Below 80? Find the part where you lost the most points and go to its pages: <a href=\"/quiz-review/\">Quiz 3 &amp; 4 review</a> for Ch. 3, <a href=\"/quiz-5/\">Quiz 5</a> for Ch. 4, <a href=\"/5-1/\">§5.1–5.5</a> for Ch. 5.</p>"
-   }
-  ]
- },
- {
-  "id": "s42",
-  "slug": "4-2",
-  "num": "§4.2",
-  "unit": "later",
-  "title": "The Mean Value Theorem",
-  "lede": "Rolle's Theorem and the MVT. Read-only: your instructor says it won't be on the test.",
-  "blocks": [
-   {
-    "type": "prose",
-    "html": "<p class=\"callout\"><strong>Not on Quiz 5.</strong> §4.2 is “read only”. Skim it once; the idea explains <em>why</em> the tests in §4.3 work.</p>"
-   },
-   {
-    "type": "rules",
-    "items": [
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Rolle's Theorem</span><p>If \\(f\\) is continuous on \\([a,b]\\), differentiable on \\((a,b)\\), and \\(f(a)=f(b)\\), then there is a \\(c\\) in \\((a,b)\\) with \\(f'(c)=0\\).</p><p class=\"note\">Same height at both ends ⇒ somewhere the tangent is flat.</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Mean Value Theorem</span><p>If \\(f\\) is continuous on \\([a,b]\\) and differentiable on \\((a,b)\\), there is a \\(c\\) in \\((a,b)\\) with</p>\\[f'(c)=\\frac{f(b)-f(a)}{b-a}.\\]<p class=\"note\">Somewhere the instant slope equals the average slope.</p>"
-     },
-     {
-      "key": false,
-      "html": "<span class=\"tag\">Recipe</span><p>1) Check continuity and differentiability. 2) Work out the average slope \\(\\frac{f(b)-f(a)}{b-a}\\). 3) Set \\(f'(c)\\) equal to it and solve. 4) Keep only \\(c\\) strictly inside \\((a,b)\\).</p>"
-     }
-    ]
-   },
-   {
-    "type": "heading",
-    "text": "Practice"
-   },
-   {
-    "type": "practice",
-    "items": [
-     {
-      "id": "p42-1",
-      "source": "Like §4.2 #1–11",
-      "href": null,
-      "question": "Verify that \\(f(x)=x^2-4x+1\\) satisfies Rolle's Theorem on \\([0,4]\\), then find every \\(c\\) it promises.",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Check \\(f(0)\\) and \\(f(4)\\) first, then solve \\(f'(c)=0\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Rolle needs equal heights at the ends. They match.</p>\\[\\begin{gathered}\\displaystyle f(0)=1\\\\\\displaystyle f(4)=1\\end{gathered}\\]<p><strong>Step 2.</strong> Power rule. Polynomials are smooth, so the hypotheses hold.</p>\\[\\displaystyle f'(x)=2x-4\\]<p><strong>Step 3.</strong> Rolle promises a flat tangent. \\(2\\) lies inside \\((0,4)\\).</p>\\[\\displaystyle 2c-4=0\\ \\Rightarrow\\ c=2\\]<p><strong>What you found:</strong></p><ul><li>\\(f(a)=f(b)=1\\)</li><li>\\(c=2\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>A polynomial is continuous and differentiable everywhere. \\(f(0)=1\\) and \\(f(4)=16-16+1=1\\), so the ends match. \\(f'(x)=2x-4=0\\Rightarrow x=2\\), which is in \\((0,4)\\).</p><p class=\"ans\">\\(c=2\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(0)=1,\\quad f(4)=1",
-        "why": "Rolle needs equal heights at the ends. They match.",
-        "watch": [
-         [
-          "f(a)=f(b)",
-          "1"
-         ]
-        ]
-       },
-       {
-        "code": "f'(x)=2x-4",
-        "why": "Power rule. Polynomials are smooth, so the hypotheses hold."
-       },
-       {
-        "code": "2c-4=0\\ \\Rightarrow\\ c=2",
-        "why": "Rolle promises a flat tangent. \\(2\\) lies inside \\((0,4)\\).",
-        "watch": [
-         [
-          "c",
-          "2"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p42-2",
-      "source": "Like §4.2 #13–23",
-      "href": null,
-      "question": "Find every \\(c\\) that satisfies the Mean Value Theorem for \\(f(x)=x^3-x\\) on \\([0,2]\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Average slope first: \\(\\frac{f(2)-f(0)}{2-0}\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> This is the slope of the secant line from end to end.</p>\\[\\displaystyle \\frac{f(2)-f(0)}{2-0}=\\frac{6-0}{2}=3\\]<p><strong>Step 2.</strong> Derivative of \\(x^3-x\\).</p>\\[\\displaystyle f'(c)=3c^2-1\\]<p><strong>Step 3.</strong> Set the instant slope equal to the average slope.</p>\\[\\displaystyle 3c^2-1=3\\ \\Rightarrow\\ c^2=\\tfrac43\\]<p><strong>Step 4.</strong> \\(-\\tfrac{2}{\\sqrt3}\\) is outside \\((0,2)\\), so throw it out.</p>\\[\\displaystyle c=\\tfrac{2}{\\sqrt3}\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{avg slope}:\\ 3\\)</li><li>\\(c=2/\\sqrt3\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(f(2)=6\\), \\(f(0)=0\\), so the average slope is \\(3\\). \\(f'(c)=3c^2-1=3\\Rightarrow c^2=\\tfrac43\\Rightarrow c=\\pm\\tfrac{2}{\\sqrt3}\\). Only the positive one is in \\((0,2)\\).</p><p class=\"ans\">\\(c=\\dfrac{2}{\\sqrt3}\\approx1.155\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "\\frac{f(2)-f(0)}{2-0}=\\frac{6-0}{2}=3",
-        "why": "This is the slope of the secant line from end to end.",
-        "watch": [
-         [
-          "\\text{avg slope}",
-          "3"
-         ]
-        ]
-       },
-       {
-        "code": "f'(c)=3c^2-1",
-        "why": "Derivative of \\(x^3-x\\)."
-       },
-       {
-        "code": "3c^2-1=3\\ \\Rightarrow\\ c^2=\\tfrac43",
-        "why": "Set the instant slope equal to the average slope."
-       },
-       {
-        "code": "c=\\tfrac{2}{\\sqrt3}",
-        "why": "\\(-\\tfrac{2}{\\sqrt3}\\) is outside \\((0,2)\\), so throw it out.",
-        "watch": [
-         [
-          "c",
-          "2/\\sqrt3"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p42-3",
-      "source": "Like §4.2 #13–23",
-      "href": null,
-      "question": "Find the \\(c\\) promised by the MVT for \\(f(x)=\\sqrt{x}\\) on \\([0,4]\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(f'(x)=\\frac{1}{2\\sqrt x}\\). Set it equal to the average slope.</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Average slope over the interval.</p>\\[\\displaystyle \\frac{\\sqrt4-\\sqrt0}{4-0}=\\frac12\\]<p><strong>Step 2.</strong> \\(\\sqrt x\\) is continuous on \\([0,4]\\) and differentiable on \\((0,4)\\), which is all the MVT needs.</p>\\[\\displaystyle \\frac{1}{2\\sqrt c}=\\frac12\\]<p><strong>Step 3.</strong> Cross-multiply.</p>\\[\\displaystyle \\sqrt c=1\\ \\Rightarrow\\ c=1\\]<p><strong>What you found:</strong></p><ul><li>\\(c=1\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>Average slope \\(\\frac{2-0}{4}=\\frac12\\). \\(\\frac{1}{2\\sqrt c}=\\frac12\\Rightarrow\\sqrt c=1\\Rightarrow c=1\\).</p><p class=\"ans\">\\(c=1\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "\\frac{\\sqrt4-\\sqrt0}{4-0}=\\frac12",
-        "why": "Average slope over the interval."
-       },
-       {
-        "code": "\\frac{1}{2\\sqrt c}=\\frac12",
-        "why": "\\(\\sqrt x\\) is continuous on \\([0,4]\\) and differentiable on \\((0,4)\\), which is all the MVT needs."
-       },
-       {
-        "code": "\\sqrt c=1\\ \\Rightarrow\\ c=1",
-        "why": "Cross-multiply.",
-        "watch": [
-         [
-          "c",
-          "1"
-         ]
-        ]
-       }
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "s48",
-  "slug": "4-8",
-  "num": "§4.8",
-  "unit": "later",
-  "title": "Newton's Method",
-  "lede": "Find a root by sliding down tangent lines: one formula, repeated.",
-  "blocks": [
-   {
-    "type": "prose",
-    "html": "<p class=\"callout\"><strong>Not on Quiz 5</strong>, but it's on Midterm 3 and the final. Learn it after Quiz 5.</p>"
-   },
-   {
-    "type": "prose",
-    "html": "<p>Start with a guess \\(x_1\\). Draw the tangent line at \\((x_1,f(x_1))\\), see where it hits the x-axis, and call that \\(x_2\\). Repeat. Each new guess is usually much closer to the root.</p>"
-   },
-   {
-    "type": "rules",
-    "items": [
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Newton's formula</span>\\[x_{n+1}=x_n-\\frac{f(x_n)}{f'(x_n)}\\]<p class=\"note\">Where it comes from: the tangent line \\(y=f(x_n)+f'(x_n)(x-x_n)\\) set to \\(y=0\\).</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Solving an equation</span><p>Move everything to one side first: “solve \\(\\cos x=x\\)” becomes \\(f(x)=\\cos x-x=0\\).</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Approximating a root like \\(\\sqrt[3]{30}\\)</span><p>Turn it into an equation: \\(x^3=30\\Rightarrow f(x)=x^3-30\\).</p>"
-     },
-     {
-      "key": false,
-      "html": "<span class=\"tag\">When it fails</span><p>If \\(f'(x_n)=0\\) the tangent is flat and never hits the axis. A bad first guess can also jump to a different root or wander off.</p>"
-     },
-     {
-      "key": false,
-      "html": "<span class=\"tag\">Calculator</span><p>Use radians for trig, and keep at least 6 decimals between steps. Round only the final answer.</p>"
-     }
-    ]
-   },
-   {
-    "type": "heading",
-    "text": "Practice",
-    "id": "practice"
-   },
-   {
-    "type": "practice",
-    "items": [
-     {
-      "id": "p48-1",
-      "source": "Like §4.8 #5–11",
-      "href": null,
-      "question": "Use Newton's method with \\(x_1=1\\) to find \\(x_3\\) for the equation \\(x^3+2x-4=0\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(f'(x)=3x^2+2\\). Do two steps.</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Write both down first.</p>\\[\\begin{gathered}\\displaystyle f(x)=x^3+2x-4\\\\\\displaystyle f'(x)=3x^2+2\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle f(1)=-1\\\\\\displaystyle f'(1)=5\\end{gathered}\\]<p><strong>Step 3.</strong> Minus a negative moves right.</p>\\[\\displaystyle x_2=1-\\frac{-1}{5}=1.2\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f(1.2)=1.728+2.4-4=0.128\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle f'(1.2)=3(1.44)+2=6.32\\]<p><strong>Step 6.</strong></p>\\[\\displaystyle x_3=1.2-\\frac{0.128}{6.32}\\approx1.179747\\]<p><strong>What you found:</strong></p><ul><li>\\(x_1=1\\)</li><li>\\(x_2=1.2\\)</li><li>\\(x_3=1.1797\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(x_2=1-\\frac{-1}{5}=1.2\\). \\(f(1.2)=0.128\\), \\(f'(1.2)=6.32\\), so \\(x_3=1.2-\\frac{0.128}{6.32}\\approx1.1797\\).</p><p class=\"ans\">\\(x_3\\approx1.1797\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(x)=x^3+2x-4,\\ \\ f'(x)=3x^2+2",
-        "why": "Write both down first."
-       },
-       {
-        "code": "f(1)=-1,\\ \\ f'(1)=5",
-        "why": "",
-        "watch": [
-         [
-          "x_1",
-          "1"
-         ]
-        ]
-       },
-       {
-        "code": "x_2=1-\\frac{-1}{5}=1.2",
-        "why": "Minus a negative moves right.",
-        "watch": [
-         [
-          "x_2",
-          "1.2"
-         ]
-        ]
-       },
-       {
-        "code": "f(1.2)=1.728+2.4-4=0.128",
-        "why": ""
-       },
-       {
-        "code": "f'(1.2)=3(1.44)+2=6.32",
-        "why": ""
-       },
-       {
-        "code": "x_3=1.2-\\frac{0.128}{6.32}\\approx1.179747",
-        "why": "",
-        "watch": [
-         [
-          "x_3",
-          "1.1797"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p48-2",
-      "source": "Like §4.8 #13–17",
-      "href": null,
-      "question": "Use Newton's method to approximate \\(\\sqrt2\\), starting from \\(x_1=1\\). Find \\(x_4\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(f(x)=x^2-2\\), \\(f'(x)=2x\\). The formula simplifies to \\(x_{n+1}=\\frac{x_n}{2}+\\frac{1}{x_n}\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\sqrt2\\) is the positive root of \\(x^2=2\\).</p>\\[\\displaystyle f(x)=x^2-2\\]<p><strong>Step 2.</strong> Newton's formula.</p>\\[\\displaystyle x_{n+1}=x_n-\\frac{x_n^2-2}{2x_n}\\]<p><strong>Step 3.</strong> Simplify: \\(x_n-\\frac{x_n}{2}+\\frac{2}{2x_n}\\).</p>\\[\\displaystyle =\\frac{x_n}{2}+\\frac1{x_n}\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle x_2=\\tfrac12+1=1.5\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle x_3=0.75+0.666667=1.416667\\]<p><strong>Step 6.</strong> Already correct to 5 decimals.</p>\\[\\displaystyle x_4=0.708333+0.705882=1.414216\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2=1.5\\)</li><li>\\(x_3=1.416667\\)</li><li>\\(x_4=1.414216\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(x_2=1.5\\), \\(x_3=1.416667\\), \\(x_4=1.414216\\). The true value is \\(1.414214\\).</p><p class=\"ans\">\\(x_4\\approx1.414216\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(x)=x^2-2",
-        "why": "\\(\\sqrt2\\) is the positive root of \\(x^2=2\\)."
-       },
-       {
-        "code": "x_{n+1}=x_n-\\frac{x_n^2-2}{2x_n}",
-        "why": "Newton's formula."
-       },
-       {
-        "code": "=\\frac{x_n}{2}+\\frac1{x_n}",
-        "why": "Simplify: \\(x_n-\\frac{x_n}{2}+\\frac{2}{2x_n}\\)."
-       },
-       {
-        "code": "x_2=\\tfrac12+1=1.5",
-        "why": "",
-        "watch": [
-         [
-          "x_2",
-          "1.5"
-         ]
-        ]
-       },
-       {
-        "code": "x_3=0.75+0.666667=1.416667",
-        "why": "",
-        "watch": [
-         [
-          "x_3",
-          "1.416667"
-         ]
-        ]
-       },
-       {
-        "code": "x_4=0.708333+0.705882=1.414216",
-        "why": "Already correct to 5 decimals.",
-        "watch": [
-         [
-          "x_4",
-          "1.414216"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p48-3",
-      "source": "Like §4.8 #13–17",
-      "href": null,
-      "question": "Use Newton's method with \\(x_1=3\\) to approximate \\(\\sqrt[3]{30}\\) (find \\(x_3\\)).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(f(x)=x^3-30\\), \\(f'(x)=3x^2\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle f(x)=x^3-30\\\\\\displaystyle f'(x)=3x^2\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle f(3)=-3\\\\\\displaystyle f'(3)=27\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle x_2=3+\\tfrac{3}{27}=3.111111\\]<p><strong>Step 4.</strong> Keep the decimals.</p>\\[\\begin{gathered}\\displaystyle f(x_2)\\approx0.112483\\\\\\displaystyle f'(x_2)\\approx29.037\\end{gathered}\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle x_3=3.111111-\\tfrac{0.112483}{29.037}\\]<p><strong>Step 6.</strong></p>\\[\\displaystyle x_3\\approx3.107237\\]<p><strong>What you found:</strong></p><ul><li>\\(x_1=3\\)</li><li>\\(x_2=3.111111\\)</li><li>\\(x_3=3.10724\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(x_2=3-\\frac{-3}{27}=3.111111\\). \\(f(x_2)\\approx0.112483\\), \\(f'(x_2)\\approx29.037037\\), so \\(x_3\\approx3.107237\\). The true value is \\(3.107233\\).</p><p class=\"ans\">\\(x_3\\approx3.10724\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(x)=x^3-30,\\ \\ f'(x)=3x^2",
-        "why": ""
-       },
-       {
-        "code": "f(3)=-3,\\ \\ f'(3)=27",
-        "why": "",
-        "watch": [
-         [
-          "x_1",
-          "3"
-         ]
-        ]
-       },
-       {
-        "code": "x_2=3+\\tfrac{3}{27}=3.111111",
-        "why": "",
-        "watch": [
-         [
-          "x_2",
-          "3.111111"
-         ]
-        ]
-       },
-       {
-        "code": "f(x_2)\\approx0.112483,\\ f'(x_2)\\approx29.037",
-        "why": "Keep the decimals."
-       },
-       {
-        "code": "x_3=3.111111-\\tfrac{0.112483}{29.037}",
-        "why": ""
-       },
-       {
-        "code": "x_3\\approx3.107237",
-        "why": "",
-        "watch": [
-         [
-          "x_3",
-          "3.10724"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p48-4",
-      "source": "Like §4.8 #19–27",
-      "href": null,
-      "question": "Use Newton's method to find the root of \\(\\cos x=x\\), starting from \\(x_1=1\\). Find \\(x_3\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(f(x)=\\cos x-x\\), \\(f'(x)=-\\sin x-1\\). Use radians.</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Move everything to one side.</p>\\[\\displaystyle f(x)=\\cos x-x\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f'(x)=-\\sin x-1\\]<p><strong>Step 3.</strong> Radians!</p>\\[\\displaystyle f(1)=0.540302-1=-0.459698\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f'(1)=-0.841471-1=-1.841471\\]<p><strong>Step 5.</strong> Negative over negative is positive, so you subtract.</p>\\[\\displaystyle x_2=1-\\frac{-0.459698}{-1.841471}=0.750364\\]<p><strong>Step 6.</strong></p>\\[\\begin{gathered}\\displaystyle f(x_2)\\approx-0.018923\\\\\\displaystyle f'(x_2)\\approx-1.681905\\end{gathered}\\]<p><strong>Step 7.</strong></p>\\[\\displaystyle x_3\\approx0.750364-0.011251=0.739113\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2=0.750364\\)</li><li>\\(x_3=0.7391\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(x_2=1-\\frac{-0.459698}{-1.841471}=0.750364\\). \\(f(x_2)\\approx-0.018923\\), \\(f'(x_2)\\approx-1.681905\\), so \\(x_3\\approx0.739113\\). The root is \\(0.739085\\).</p><p class=\"ans\">\\(x_3\\approx0.7391\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(x)=\\cos x-x",
-        "why": "Move everything to one side."
-       },
-       {
-        "code": "f'(x)=-\\sin x-1",
-        "why": ""
-       },
-       {
-        "code": "f(1)=0.540302-1=-0.459698",
-        "why": "Radians!"
-       },
-       {
-        "code": "f'(1)=-0.841471-1=-1.841471",
-        "why": ""
-       },
-       {
-        "code": "x_2=1-\\frac{-0.459698}{-1.841471}=0.750364",
-        "why": "Negative over negative is positive, so you subtract.",
-        "watch": [
-         [
-          "x_2",
-          "0.750364"
-         ]
-        ]
-       },
-       {
-        "code": "f(x_2)\\approx-0.018923,\\ f'(x_2)\\approx-1.681905",
-        "why": ""
-       },
-       {
-        "code": "x_3\\approx0.750364-0.011251=0.739113",
-        "why": "",
-        "watch": [
-         [
-          "x_3",
-          "0.7391"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p48-5",
-      "source": "Like §4.8 #1–3",
-      "href": null,
-      "question": "Explain why Newton's method fails for \\(f(x)=x^3-3x+6\\) if you start at \\(x_1=1\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Compute \\(f'(1)\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle f'(x)=3x^2-3\\]<p><strong>Step 2.</strong> The formula would divide by zero.</p>\\[\\displaystyle f'(1)=0\\]<p><strong>Step 3.</strong> A flat line never crosses the x-axis, so there's no next guess. Pick a different \\(x_1\\).</p>\\[\\displaystyle \\text{horizontal tangent}\\]<p><strong>What you found:</strong></p><ul><li>\\(f'(x_1)=0\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(f'(x)=3x^2-3\\), so \\(f'(1)=0\\). The tangent line at \\(x=1\\) is horizontal and never meets the x-axis, so \\(x_2\\) would mean dividing by zero.</p><p class=\"ans\">\\(f'(1)=0\\): the tangent is horizontal, so \\(x_2\\) is undefined</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f'(x)=3x^2-3",
-        "why": ""
-       },
-       {
-        "code": "f'(1)=0",
-        "why": "The formula would divide by zero.",
-        "watch": [
-         [
-          "f'(x_1)",
-          "0"
-         ]
-        ]
-       },
-       {
-        "code": "\\text{horizontal tangent}",
-        "why": "A flat line never crosses the x-axis, so there's no next guess. Pick a different \\(x_1\\)."
-       }
-      ]
-     },
-     {
-      "id": "p48-6",
-      "source": "Like §4.8 #3",
-      "href": null,
-      "question": "The tangent line to \\(y=f(x)\\) at \\((2,5)\\) is \\(y=9-2x\\). Newton's method starts at \\(x_1=2\\). Find \\(x_2\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Newton's \\(x_2\\) is simply where the tangent line at \\(x_1\\) crosses the x-axis. Set \\(y=0\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Newton's method follows the tangent line at \\(x_1\\) down to the x-axis. You're given that line, so use it directly.</p>\\[\\displaystyle y=9-2x\\]<p><strong>Step 2.</strong> \\(x_2\\) is the x-intercept of the tangent: set \\(y=0\\).</p>\\[\\displaystyle 0=9-2x\\]<p><strong>Step 3.</strong> Solve for \\(x\\).</p>\\[\\displaystyle x_2=\\tfrac92=4.5\\]<p><strong>Step 4.</strong> Double check with the formula: \\(f(2)=5\\) and the slope \\(f'(2)=-2\\). Same answer.</p>\\[\\displaystyle x_2=2-\\frac{f(2)}{f'(2)}=2-\\frac{5}{-2}=4.5\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2=4.5\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>The tangent at \\(x_1\\) is \\(y=9-2x\\). Setting \\(y=0\\) gives \\(x=4.5\\). Check: \\(f(2)=5\\), \\(f'(2)=-2\\), so \\(x_2=2-\\frac{5}{-2}=4.5\\).</p><p class=\"ans\">\\(x_2=4.5\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "y=9-2x",
-        "why": "Newton's method follows the tangent line at \\(x_1\\) down to the x-axis. You're given that line, so use it directly."
-       },
-       {
-        "code": "0=9-2x",
-        "why": "\\(x_2\\) is the x-intercept of the tangent: set \\(y=0\\)."
-       },
-       {
-        "code": "x_2=\\tfrac92=4.5",
-        "why": "Solve for \\(x\\).",
-        "watch": [
-         [
-          "x_2",
-          "4.5"
-         ]
-        ]
-       },
-       {
-        "code": "x_2=2-\\frac{f(2)}{f'(2)}=2-\\frac{5}{-2}=4.5",
-        "why": "Double check with the formula: \\(f(2)=5\\) and the slope \\(f'(2)=-2\\). Same answer."
-       }
-      ]
-     },
-     {
-      "id": "p48-7",
-      "source": "Like §4.8 #9",
-      "href": null,
-      "question": "Use Newton's method with \\(x_1=-1\\) to find \\(x_2\\) for \\(x^3+x+3=0\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(f'(x)=3x^2+1\\). One step: \\(x_2=x_1-\\frac{f(x_1)}{f'(x_1)}\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Write both down first.</p>\\[\\displaystyle f(x)=x^3+x+3,\\ \\ f'(x)=3x^2+1\\]<p><strong>Step 2.</strong> Careful with signs: \\((-1)^3=-1\\).</p>\\[\\displaystyle f(-1)=-1-1+3=1\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle f'(-1)=3(1)+1=4\\]<p><strong>Step 4.</strong> Plug into the formula.</p>\\[\\displaystyle x_2=-1-\\frac{1}{4}=-1.25\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2=-1.25\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(f(-1)=1\\), \\(f'(-1)=4\\), so \\(x_2=-1-\\frac14=-1.25\\).</p><p class=\"ans\">\\(x_2=-1.25\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(x)=x^3+x+3,\\ \\ f'(x)=3x^2+1",
-        "why": "Write both down first."
-       },
-       {
-        "code": "f(-1)=-1-1+3=1",
-        "why": "Careful with signs: \\((-1)^3=-1\\).",
-        "watch": [
-         [
-          "f(x_1)",
-          "1"
-         ]
-        ]
-       },
-       {
-        "code": "f'(-1)=3(1)+1=4",
-        "why": "",
-        "watch": [
-         [
-          "f'(x_1)",
-          "4"
-         ]
-        ]
-       },
-       {
-        "code": "x_2=-1-\\frac{1}{4}=-1.25",
-        "why": "Plug into the formula.",
-        "watch": [
-         [
-          "x_2",
-          "-1.25"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p48-8",
-      "source": "Like §4.8 #7",
-      "href": null,
-      "question": "Use Newton's method with \\(x_1=2\\) to find \\(x_3\\) for \\(\\dfrac{2}{x}-x^2+1=0\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(f'(x)=-\\frac{2}{x^2}-2x\\). Do two steps and keep 6 decimals between them.</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\frac2x=2x^{-1}\\), so its derivative is \\(-2x^{-2}\\).</p>\\[\\displaystyle f(x)=\\frac2x-x^2+1,\\ \\ f'(x)=-\\frac{2}{x^2}-2x\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f(2)=1-4+1=-2\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle f'(2)=-\\tfrac12-4=-4.5\\]<p><strong>Step 4.</strong> Negative over negative is positive, so you subtract.</p>\\[\\displaystyle x_2=2-\\frac{-2}{-4.5}=2-0.444444=1.555556\\]<p><strong>Step 5.</strong> \\(\\frac{2}{1.555556}=1.285714\\) and \\(1.555556^2=2.419753\\).</p>\\[\\displaystyle f(1.555556)\\approx-0.134039\\]<p><strong>Step 6.</strong></p>\\[\\displaystyle f'(1.555556)\\approx-3.937642\\]<p><strong>Step 7.</strong></p>\\[\\displaystyle x_3=1.555556-\\frac{-0.134039}{-3.937642}\\approx1.521515\\]<p><strong>What you found:</strong></p><ul><li>\\(x_2\\approx1.5556\\)</li><li>\\(x_3\\approx1.5215\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(x_2=2-\\frac{-2}{-4.5}=\\frac{14}{9}\\approx1.555556\\). Then \\(f(x_2)\\approx-0.134039\\) and \\(f'(x_2)\\approx-3.937642\\), so \\(x_3\\approx1.555556-0.034041=1.521515\\).</p><p class=\"ans\">\\(x_3\\approx1.5215\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(x)=\\frac2x-x^2+1,\\ \\ f'(x)=-\\frac{2}{x^2}-2x",
-        "why": "\\(\\frac2x=2x^{-1}\\), so its derivative is \\(-2x^{-2}\\)."
-       },
-       {
-        "code": "f(2)=1-4+1=-2",
-        "why": "",
-        "watch": [
-         [
-          "x_1",
-          "2"
-         ]
-        ]
-       },
-       {
-        "code": "f'(2)=-\\tfrac12-4=-4.5",
-        "why": ""
-       },
-       {
-        "code": "x_2=2-\\frac{-2}{-4.5}=2-0.444444=1.555556",
-        "why": "Negative over negative is positive, so you subtract.",
-        "watch": [
-         [
-          "x_2",
-          "1.555556"
-         ]
-        ]
-       },
-       {
-        "code": "f(1.555556)\\approx-0.134039",
-        "why": "\\(\\frac{2}{1.555556}=1.285714\\) and \\(1.555556^2=2.419753\\)."
-       },
-       {
-        "code": "f'(1.555556)\\approx-3.937642",
-        "why": ""
-       },
-       {
-        "code": "x_3=1.555556-\\frac{-0.134039}{-3.937642}\\approx1.521515",
-        "why": "",
-        "watch": [
-         [
-          "x_3",
-          "1.5215"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p48-9",
-      "source": "Like §4.8 #29",
-      "href": null,
-      "question": "Show that Newton's method for \\(f(x)=\\dfrac1x-a\\) gives \\(x_{n+1}=2x_n-ax_n^2\\). (This computes \\(\\frac1a\\) without dividing.)",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(f'(x)=-\\frac1{x^2}\\). Dividing by \\(-\\frac1{x^2}\\) is the same as multiplying by \\(-x^2\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The root of \\(f\\) is \\(x=\\frac1a\\).</p>\\[\\displaystyle f(x)=\\frac1x-a,\\ \\ f'(x)=-\\frac{1}{x^2}\\]<p><strong>Step 2.</strong> Newton's formula.</p>\\[\\displaystyle x_{n+1}=x_n-\\frac{\\frac1{x_n}-a}{-\\frac{1}{x_n^2}}\\]<p><strong>Step 3.</strong> Dividing by \\(-\\frac1{x_n^2}\\) = multiplying by \\(-x_n^2\\); minus times minus is plus.</p>\\[\\displaystyle =x_n+x_n^2\\Big(\\frac1{x_n}-a\\Big)\\]<p><strong>Step 4.</strong> Distribute.</p>\\[\\displaystyle =x_n+x_n-ax_n^2=2x_n-ax_n^2\\]<p><strong>What you found:</strong></p><ul><li>\\(x_{n+1}=2x_n-ax_n^2\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(x_{n+1}=x_n-\\frac{1/x_n-a}{-1/x_n^2}=x_n+x_n^2\\big(\\frac1{x_n}-a\\big)=2x_n-ax_n^2\\).</p><p class=\"ans\">\\(x_{n+1}=2x_n-ax_n^2\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(x)=\\frac1x-a,\\ \\ f'(x)=-\\frac{1}{x^2}",
-        "why": "The root of \\(f\\) is \\(x=\\frac1a\\)."
-       },
-       {
-        "code": "x_{n+1}=x_n-\\frac{\\frac1{x_n}-a}{-\\frac{1}{x_n^2}}",
-        "why": "Newton's formula."
-       },
-       {
-        "code": "=x_n+x_n^2\\Big(\\frac1{x_n}-a\\Big)",
-        "why": "Dividing by \\(-\\frac1{x_n^2}\\) = multiplying by \\(-x_n^2\\); minus times minus is plus."
-       },
-       {
-        "code": "=x_n+x_n-ax_n^2=2x_n-ax_n^2",
-        "why": "Distribute.",
-        "watch": [
-         [
-          "x_{n+1}",
-          "2x_n-ax_n^2"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p48-10",
-      "source": "Like §4.8 #31",
-      "href": null,
-      "question": "Explain why Newton's method fails for \\(f(x)=\\sqrt[3]{x}\\) with any starting guess \\(x_1\\ne0\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Simplify \\(x_{n+1}\\) in terms of \\(x_n\\). What happens to the size of \\(x_n\\)?</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The only root is \\(x=0\\).</p>\\[\\displaystyle f(x)=x^{1/3},\\ \\ f'(x)=\\tfrac13x^{-2/3}\\]<p><strong>Step 2.</strong> Subtract exponents: \\(\\frac13-(-\\frac23)=1\\).</p>\\[\\displaystyle \\frac{f(x_n)}{f'(x_n)}=\\frac{x_n^{1/3}}{\\frac13x_n^{-2/3}}=3x_n\\]<p><strong>Step 3.</strong> Each step doubles the distance from 0 and flips sides.</p>\\[\\displaystyle x_{n+1}=x_n-3x_n=-2x_n\\]<p><strong>Step 4.</strong> The guesses run away from the root instead of closing in.</p>\\[\\displaystyle x_1=1\\to-2\\to4\\to-8\\to\\cdots\\]<p><strong>What you found:</strong></p><ul><li>\\(x_{n+1}=-2x_n\\)</li><li>\\(|x_n|\\to\\infty\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\frac{f(x)}{f'(x)}=\\frac{x^{1/3}}{\\frac13x^{-2/3}}=3x\\), so \\(x_{n+1}=x_n-3x_n=-2x_n\\). Every step is twice as far from 0 on the other side (e.g. \\(1,-2,4,-8,\\dots\\)), so it never converges.</p><p class=\"ans\">\\(x_{n+1}=-2x_n\\): the guesses double in size and alternate sides, so they diverge</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(x)=x^{1/3},\\ \\ f'(x)=\\tfrac13x^{-2/3}",
-        "why": "The only root is \\(x=0\\)."
-       },
-       {
-        "code": "\\frac{f(x_n)}{f'(x_n)}=\\frac{x_n^{1/3}}{\\frac13x_n^{-2/3}}=3x_n",
-        "why": "Subtract exponents: \\(\\frac13-(-\\frac23)=1\\)."
-       },
-       {
-        "code": "x_{n+1}=x_n-3x_n=-2x_n",
-        "why": "Each step doubles the distance from 0 and flips sides.",
-        "watch": [
-         [
-          "x_{n+1}",
-          "-2x_n"
-         ]
-        ]
-       },
-       {
-        "code": "x_1=1\\to-2\\to4\\to-8\\to\\cdots",
-        "why": "The guesses run away from the root instead of closing in."
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "type": "heading",
-    "text": "Traps"
-   },
-   {
-    "type": "traps",
-    "items": [
-     {
-      "title": "Plus instead of minus",
-      "html": "<p>It's \\(x_n\\) <strong>minus</strong> \\(\\frac{f}{f'}\\). Watch the double negatives.</p>"
-     },
-     {
-      "title": "Degrees mode",
-      "html": "<p>Trig in degrees gives completely wrong numbers. Switch the calculator to radians.</p>"
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "s49",
-  "slug": "4-9",
-  "num": "§4.9",
-  "unit": "later",
-  "title": "Antiderivatives",
-  "lede": "Run the derivative rules backwards, add +C, and use initial conditions to find C.",
-  "blocks": [
-   {
-    "type": "prose",
-    "html": "<p>An <strong>antiderivative</strong> of \\(f\\) is a function \\(F\\) with \\(F'=f\\). There are infinitely many, all differing by a constant, so the <em>general</em> antiderivative always ends in \\(+C\\). Check every answer by differentiating it.</p>"
-   },
-   {
-    "type": "rules",
-    "items": [
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Power rule backwards</span>\\[\\int x^n\\,dx\\to\\frac{x^{n+1}}{n+1}+C\\quad(n\\ne-1)\\]<p class=\"note\">Add 1 to the power, divide by the new power.</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">The \\(n=-1\\) case</span><p>\\(\\frac1x\\to\\ln|x|+C\\)</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Exponentials and trig</span><p>\\(e^x\\to e^x\\) · \\(\\cos x\\to\\sin x\\) · \\(\\sin x\\to-\\cos x\\) · \\(\\sec^2x\\to\\tan x\\) · \\(\\sec x\\tan x\\to\\sec x\\)</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Inverse trig and hyperbolic</span><p>\\(\\frac1{1+x^2}\\to\\tan^{-1}x\\) · \\(\\frac1{\\sqrt{1-x^2}}\\to\\sin^{-1}x\\) · \\(\\cosh x\\to\\sinh x\\) · \\(\\sinh x\\to\\cosh x\\)</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Initial value problem</span><p>Find the general antiderivative with \\(+C\\), then plug in the given point to solve for \\(C\\). Given \\(f''\\)? Antidifferentiate twice: you get \\(C\\) and \\(D\\).</p>"
-     },
-     {
-      "key": false,
-      "html": "<span class=\"tag\">Motion</span><p>\\(a(t)\\to v(t)\\to s(t)\\). Use \\(v(0)\\) for the first constant and \\(s(0)\\) for the second.</p>"
-     }
-    ]
-   },
-   {
-    "type": "heading",
-    "text": "Practice",
-    "id": "practice"
-   },
-   {
-    "type": "practice",
-    "items": [
-     {
-      "id": "p49-1",
-      "source": "Like §4.9 #1–21",
-      "href": null,
-      "question": "Find the most general antiderivative of \\(f(x)=4x^3-6x+2\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Term by term: add one to each power and divide by the new power.</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Power 3 becomes 4, divide by 4.</p>\\[\\displaystyle 4x^3\\to\\frac{4x^4}{4}=x^4\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle -6x\\to-\\frac{6x^2}{2}=-3x^2\\]<p><strong>Step 3.</strong> A constant picks up an \\(x\\).</p>\\[\\displaystyle 2\\to2x\\]<p><strong>Step 4.</strong> Check: \\(F'=4x^3-6x+2\\). ✓</p>\\[\\displaystyle F=x^4-3x^2+2x+C\\]<p><strong>What you found:</strong></p><ul><li>\\(F=x^4-3x^2+2x+C\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\frac{4x^4}{4}-\\frac{6x^2}{2}+2x+C\\).</p><p class=\"ans\">\\(F(x)=x^4-3x^2+2x+C\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "4x^3\\to\\frac{4x^4}{4}=x^4",
-        "why": "Power 3 becomes 4, divide by 4."
-       },
-       {
-        "code": "-6x\\to-\\frac{6x^2}{2}=-3x^2",
-        "why": ""
-       },
-       {
-        "code": "2\\to2x",
-        "why": "A constant picks up an \\(x\\)."
-       },
-       {
-        "code": "F=x^4-3x^2+2x+C",
-        "why": "Check: \\(F'=4x^3-6x+2\\). ✓",
-        "watch": [
-         [
-          "F",
-          "x^4-3x^2+2x+C"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p49-2",
-      "source": "Like §4.9 #1–21",
-      "href": null,
-      "question": "Find the most general antiderivative of \\(f(x)=\\sqrt x+\\dfrac1x\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(\\sqrt x=x^{1/2}\\). And \\(\\frac1x\\) is the special case.</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\tfrac12+1=\\tfrac32\\).</p>\\[\\displaystyle x^{1/2}\\to\\frac{x^{3/2}}{3/2}\\]<p><strong>Step 2.</strong> Dividing by \\(\\tfrac32\\) is multiplying by \\(\\tfrac23\\).</p>\\[\\displaystyle =\\tfrac23x^{3/2}\\]<p><strong>Step 3.</strong> The power rule would divide by 0 here, so use the special case.</p>\\[\\displaystyle \\tfrac1x\\to\\ln|x|\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle F=\\tfrac23x^{3/2}+\\ln|x|+C\\]<p><strong>What you found:</strong></p><ul><li>\\(F=\\tfrac23x^{3/2}+\\ln|x|+C\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(x^{1/2}\\to\\frac{x^{3/2}}{3/2}=\\tfrac23x^{3/2}\\), and \\(\\frac1x\\to\\ln|x|\\).</p><p class=\"ans\">\\(F(x)=\\tfrac23x^{3/2}+\\ln|x|+C\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "x^{1/2}\\to\\frac{x^{3/2}}{3/2}",
-        "why": "\\(\\tfrac12+1=\\tfrac32\\)."
-       },
-       {
-        "code": "=\\tfrac23x^{3/2}",
-        "why": "Dividing by \\(\\tfrac32\\) is multiplying by \\(\\tfrac23\\)."
-       },
-       {
-        "code": "\\tfrac1x\\to\\ln|x|",
-        "why": "The power rule would divide by 0 here, so use the special case."
-       },
-       {
-        "code": "F=\\tfrac23x^{3/2}+\\ln|x|+C",
-        "why": "",
-        "watch": [
-         [
-          "F",
-          "\\tfrac23x^{3/2}+\\ln|x|+C"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p49-3",
-      "source": "Like §4.9 #1–21",
-      "href": null,
-      "question": "Find the most general antiderivative of \\(f(x)=\\dfrac{3}{x^2}-5\\sec^2x\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(\\frac{3}{x^2}=3x^{-2}\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(-2+1=-1\\). Divide by \\(-1\\).</p>\\[\\displaystyle 3x^{-2}\\to\\frac{3x^{-1}}{-1}=-\\tfrac{3}{x}\\]<p><strong>Step 2.</strong> Because \\((\\tan x)'=\\sec^2x\\).</p>\\[\\displaystyle -5\\sec^2x\\to-5\\tan x\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle F=-\\tfrac3x-5\\tan x+C\\]<p><strong>What you found:</strong></p><ul><li>\\(F=-3/x-5\\tan x+C\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(3x^{-2}\\to\\frac{3x^{-1}}{-1}=-\\frac3x\\). \\(\\sec^2x\\to\\tan x\\).</p><p class=\"ans\">\\(F(x)=-\\dfrac3x-5\\tan x+C\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "3x^{-2}\\to\\frac{3x^{-1}}{-1}=-\\tfrac{3}{x}",
-        "why": "\\(-2+1=-1\\). Divide by \\(-1\\)."
-       },
-       {
-        "code": "-5\\sec^2x\\to-5\\tan x",
-        "why": "Because \\((\\tan x)'=\\sec^2x\\)."
-       },
-       {
-        "code": "F=-\\tfrac3x-5\\tan x+C",
-        "why": "",
-        "watch": [
-         [
-          "F",
-          "-3/x-5\\tan x+C"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p49-4",
-      "source": "Like §4.9 #1–21",
-      "href": null,
-      "question": "Find the most general antiderivative of \\(f(x)=\\dfrac{x^2+3x-1}{x}\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>There's no quotient rule backwards. Split the fraction first.</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Divide every term by \\(x\\).</p>\\[\\displaystyle \\frac{x^2}{x}+\\frac{3x}{x}-\\frac1x=x+3-\\frac1x\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle x\\to\\tfrac{x^2}{2}\\\\\\displaystyle 3\\to3x\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle -\\tfrac1x\\to-\\ln|x|\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle F=\\tfrac{x^2}2+3x-\\ln|x|+C\\]<p><strong>What you found:</strong></p><ul><li>\\(F=\\tfrac{x^2}2+3x-\\ln|x|+C\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\frac{x^2+3x-1}{x}=x+3-\\frac1x\\to\\frac{x^2}{2}+3x-\\ln|x|+C\\).</p><p class=\"ans\">\\(F(x)=\\tfrac{x^2}{2}+3x-\\ln|x|+C\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "\\frac{x^2}{x}+\\frac{3x}{x}-\\frac1x=x+3-\\frac1x",
-        "why": "Divide every term by \\(x\\)."
-       },
-       {
-        "code": "x\\to\\tfrac{x^2}{2},\\quad3\\to3x",
-        "why": ""
-       },
-       {
-        "code": "-\\tfrac1x\\to-\\ln|x|",
-        "why": ""
-       },
-       {
-        "code": "F=\\tfrac{x^2}2+3x-\\ln|x|+C",
-        "why": "",
-        "watch": [
-         [
-          "F",
-          "\\tfrac{x^2}2+3x-\\ln|x|+C"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p49-5",
-      "source": "Like §4.9 #1–21",
-      "href": null,
-      "question": "Find the most general antiderivative of \\(f(x)=2e^x+\\dfrac{4}{1+x^2}-\\sin x\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(\\frac1{1+x^2}\\) is the derivative of \\(\\tan^{-1}x\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(e^x\\) is its own antiderivative.</p>\\[\\displaystyle 2e^x\\to2e^x\\]<p><strong>Step 2.</strong> Inverse-tan pattern.</p>\\[\\displaystyle \\frac{4}{1+x^2}\\to4\\tan^{-1}x\\]<p><strong>Step 3.</strong> Since \\((\\cos x)'=-\\sin x\\). The signs are tricky, so check by differentiating.</p>\\[\\displaystyle -\\sin x\\to\\cos x\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle F=2e^x+4\\tan^{-1}x+\\cos x+C\\]<p><strong>What you found:</strong></p><ul><li>\\(F=2e^x+4\\tan^{-1}x+\\cos x+C\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(2e^x\\to2e^x\\); \\(\\frac4{1+x^2}\\to4\\tan^{-1}x\\); \\(-\\sin x\\to\\cos x\\).</p><p class=\"ans\">\\(F(x)=2e^x+4\\tan^{-1}x+\\cos x+C\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "2e^x\\to2e^x",
-        "why": "\\(e^x\\) is its own antiderivative."
-       },
-       {
-        "code": "\\frac{4}{1+x^2}\\to4\\tan^{-1}x",
-        "why": "Inverse-tan pattern."
-       },
-       {
-        "code": "-\\sin x\\to\\cos x",
-        "why": "Since \\((\\cos x)'=-\\sin x\\). The signs are tricky, so check by differentiating."
-       },
-       {
-        "code": "F=2e^x+4\\tan^{-1}x+\\cos x+C",
-        "why": "",
-        "watch": [
-         [
-          "F",
-          "2e^x+4\\tan^{-1}x+\\cos x+C"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p49-6",
-      "source": "Like §4.9 #23–47",
-      "href": null,
-      "question": "Find \\(f\\) given \\(f'(x)=6x^2-4x\\) and \\(f(1)=5\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Antidifferentiate with \\(+C\\), then plug in \\(x=1\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(6\\cdot\\frac{x^3}{3}\\) and \\(4\\cdot\\frac{x^2}{2}\\).</p>\\[\\displaystyle f(x)=2x^3-2x^2+C\\]<p><strong>Step 2.</strong> Use the condition.</p>\\[\\displaystyle f(1)=2-2+C=5\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle C=5\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f(x)=2x^3-2x^2+5\\]<p><strong>What you found:</strong></p><ul><li>\\(C=5\\)</li><li>\\(f=2x^3-2x^2+5\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(f=2x^3-2x^2+C\\). \\(f(1)=2-2+C=5\\Rightarrow C=5\\).</p><p class=\"ans\">\\(f(x)=2x^3-2x^2+5\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(x)=2x^3-2x^2+C",
-        "why": "\\(6\\cdot\\frac{x^3}{3}\\) and \\(4\\cdot\\frac{x^2}{2}\\)."
-       },
-       {
-        "code": "f(1)=2-2+C=5",
-        "why": "Use the condition."
-       },
-       {
-        "code": "C=5",
-        "why": "",
-        "watch": [
-         [
-          "C",
-          "5"
-         ]
-        ]
-       },
-       {
-        "code": "f(x)=2x^3-2x^2+5",
-        "why": "",
-        "watch": [
-         [
-          "f",
-          "2x^3-2x^2+5"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p49-7",
-      "source": "Like §4.9 #23–47",
-      "href": null,
-      "question": "Find \\(f\\) given \\(f''(x)=12x^2+6x\\), \\(f'(0)=1\\) and \\(f(0)=3\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Two steps: \\(f''\\to f'\\) (find \\(C\\)), then \\(f'\\to f\\) (find \\(D\\)).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> First antiderivative.</p>\\[\\displaystyle f'(x)=4x^3+3x^2+C\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle f'(0)=C=1\\]<p><strong>Step 3.</strong> Antidifferentiate \\(4x^3+3x^2+1\\).</p>\\[\\displaystyle f(x)=x^4+x^3+x+D\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f(0)=D=3\\]<p><strong>Step 5.</strong></p>\\[\\displaystyle f(x)=x^4+x^3+x+3\\]<p><strong>What you found:</strong></p><ul><li>\\(C=1\\)</li><li>\\(D=3\\)</li><li>\\(f=x^4+x^3+x+3\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(f'=4x^3+3x^2+C\\), \\(f'(0)=C=1\\). \\(f=x^4+x^3+x+D\\), \\(f(0)=D=3\\).</p><p class=\"ans\">\\(f(x)=x^4+x^3+x+3\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f'(x)=4x^3+3x^2+C",
-        "why": "First antiderivative."
-       },
-       {
-        "code": "f'(0)=C=1",
-        "why": "",
-        "watch": [
-         [
-          "C",
-          "1"
-         ]
-        ]
-       },
-       {
-        "code": "f(x)=x^4+x^3+x+D",
-        "why": "Antidifferentiate \\(4x^3+3x^2+1\\)."
-       },
-       {
-        "code": "f(0)=D=3",
-        "why": "",
-        "watch": [
-         [
-          "D",
-          "3"
-         ]
-        ]
-       },
-       {
-        "code": "f(x)=x^4+x^3+x+3",
-        "why": "",
-        "watch": [
-         [
-          "f",
-          "x^4+x^3+x+3"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p49-8",
-      "source": "Like §4.9 #23–47",
-      "href": null,
-      "question": "Find \\(f\\) given \\(f'(x)=2\\cos x+\\sec^2x\\) on \\(-\\frac\\pi2<x<\\frac\\pi2\\), and \\(f(\\frac\\pi3)=4\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(f=2\\sin x+\\tan x+C\\). Then use \\(\\sin\\frac\\pi3=\\frac{\\sqrt3}2\\) and \\(\\tan\\frac\\pi3=\\sqrt3\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle f(x)=2\\sin x+\\tan x+C\\]<p><strong>Step 2.</strong> Exact values.</p>\\[\\displaystyle f(\\tfrac\\pi3)=2\\cdot\\tfrac{\\sqrt3}{2}+\\sqrt3+C\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle 2\\sqrt3+C=4\\Rightarrow C=4-2\\sqrt3\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle f=2\\sin x+\\tan x+4-2\\sqrt3\\]<p><strong>What you found:</strong></p><ul><li>\\(C=4-2\\sqrt3\\)</li><li>\\(f=2\\sin x+\\tan x+4-2\\sqrt3\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(f(\\tfrac\\pi3)=\\sqrt3+\\sqrt3+C=4\\Rightarrow C=4-2\\sqrt3\\).</p><p class=\"ans\">\\(f(x)=2\\sin x+\\tan x+4-2\\sqrt3\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(x)=2\\sin x+\\tan x+C",
-        "why": ""
-       },
-       {
-        "code": "f(\\tfrac\\pi3)=2\\cdot\\tfrac{\\sqrt3}{2}+\\sqrt3+C",
-        "why": "Exact values."
-       },
-       {
-        "code": "2\\sqrt3+C=4\\Rightarrow C=4-2\\sqrt3",
-        "why": "",
-        "watch": [
-         [
-          "C",
-          "4-2\\sqrt3"
-         ]
-        ]
-       },
-       {
-        "code": "f=2\\sin x+\\tan x+4-2\\sqrt3",
-        "why": "",
-        "watch": [
-         [
-          "f",
-          "2\\sin x+\\tan x+4-2\\sqrt3"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p49-9",
-      "source": "Like §4.9 · extra (motion)",
-      "href": null,
-      "question": "A particle has acceleration \\(a(t)=6t+2\\), with \\(v(0)=-3\\) and \\(s(0)=1\\). Find its position \\(s(t)\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(v=\\int a\\), then \\(s=\\int v\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Antiderivative of the acceleration.</p>\\[\\displaystyle v(t)=3t^2+2t+C\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle v(0)=C=-3\\]<p><strong>Step 3.</strong> Antiderivative of the velocity.</p>\\[\\displaystyle s(t)=t^3+t^2-3t+D\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle s(0)=D=1\\]<p><strong>What you found:</strong></p><ul><li>\\(v=3t^2+2t-3\\)</li><li>\\(s=t^3+t^2-3t+1\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(v=3t^2+2t+C\\), \\(v(0)=C=-3\\). \\(s=t^3+t^2-3t+D\\), \\(s(0)=D=1\\).</p><p class=\"ans\">\\(s(t)=t^3+t^2-3t+1\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "v(t)=3t^2+2t+C",
-        "why": "Antiderivative of the acceleration."
-       },
-       {
-        "code": "v(0)=C=-3",
-        "why": "",
-        "watch": [
-         [
-          "v",
-          "3t^2+2t-3"
-         ]
-        ]
-       },
-       {
-        "code": "s(t)=t^3+t^2-3t+D",
-        "why": "Antiderivative of the velocity."
-       },
-       {
-        "code": "s(0)=D=1",
-        "why": "",
-        "watch": [
-         [
-          "s",
-          "t^3+t^2-3t+1"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p49-10",
-      "source": "Like §4.9 · extra (motion)",
-      "href": null,
-      "question": "A stone is dropped from a 450 m cliff. Using \\(a=-9.8\\) m/s², find its height \\(s(t)\\) and when it hits the ground.",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>“Dropped” means \\(v(0)=0\\). \\(s(0)=450\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Dropped, not thrown: starts at rest.</p>\\[\\begin{gathered}\\displaystyle v(t)=-9.8t+C\\\\\\displaystyle v(0)=0\\end{gathered}\\]<p><strong>Step 2.</strong> \\(-9.8\\cdot\\frac{t^2}{2}\\).</p>\\[\\begin{gathered}\\displaystyle s(t)=-4.9t^2+D\\\\\\displaystyle s(0)=450\\end{gathered}\\]<p><strong>Step 3.</strong> Hits the ground when the height is 0.</p>\\[\\displaystyle 450-4.9t^2=0\\]<p><strong>Step 4.</strong> Take the positive root.</p>\\[\\displaystyle t=\\sqrt{450/4.9}\\approx9.58\\text{ s}\\]<p><strong>What you found:</strong></p><ul><li>\\(v=-9.8t\\)</li><li>\\(s=450-4.9t^2\\)</li><li>\\(t=9.58\\text{ s}\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(v=-9.8t\\), \\(s=-4.9t^2+450\\). Ground: \\(4.9t^2=450\\Rightarrow t=\\sqrt{450/4.9}\\approx9.58\\) s.</p><p class=\"ans\">\\(s(t)=450-4.9t^2\\); hits the ground at \\(t\\approx9.58\\) s</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "v(t)=-9.8t+C,\\ v(0)=0",
-        "why": "Dropped, not thrown: starts at rest.",
-        "watch": [
-         [
-          "v",
-          "-9.8t"
-         ]
-        ]
-       },
-       {
-        "code": "s(t)=-4.9t^2+D,\\ s(0)=450",
-        "why": "\\(-9.8\\cdot\\frac{t^2}{2}\\).",
-        "watch": [
-         [
-          "s",
-          "450-4.9t^2"
-         ]
-        ]
-       },
-       {
-        "code": "450-4.9t^2=0",
-        "why": "Hits the ground when the height is 0."
-       },
-       {
-        "code": "t=\\sqrt{450/4.9}\\approx9.58\\text{ s}",
-        "why": "Take the positive root.",
-        "watch": [
-         [
-          "t",
-          "9.58\\text{ s}"
-         ]
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "type": "heading",
-    "text": "Traps"
-   },
-   {
-    "type": "traps",
-    "items": [
-     {
-      "title": "Forgetting \\(+C\\)",
-      "html": "<p>“Most general antiderivative” without \\(+C\\) loses marks.</p>"
-     },
-     {
-      "title": "Antiderivative of a product or quotient",
-      "html": "<p>There's no product rule backwards. Expand or split first (#4).</p>"
-     },
-     {
-      "title": "\\(\\sin\\) / \\(\\cos\\) signs",
-      "html": "<p>\\(\\int\\sin x=-\\cos x\\) and \\(\\int\\cos x=+\\sin x\\). Differentiate your answer to check.</p>"
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "s51",
-  "slug": "5-1",
-  "num": "§5.1",
-  "unit": "later",
-  "title": "Areas and Distances",
-  "lede": "Estimate the area under a curve with rectangles: left, right and midpoint sums.",
-  "blocks": [
-   {
-    "type": "prose",
-    "html": "<p>Chop \\([a,b]\\) into \\(n\\) strips of width \\(\\Delta x\\). Make each strip a rectangle whose height is \\(f\\) at one point of the strip. Add the areas. More strips give a better estimate, and in the limit you get the exact area (§5.2).</p>"
-   },
-   {
-    "type": "rules",
-    "items": [
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Width and points</span>\\[\\Delta x=\\frac{b-a}{n},\\qquad x_i=a+i\\,\\Delta x\\]"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Right sum \\(R_n\\)</span><p>Heights at the right ends \\(x_1,\\dots,x_n\\): \\(R_n=\\Delta x\\,[f(x_1)+\\dots+f(x_n)]\\).</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Left sum \\(L_n\\)</span><p>Heights at the left ends \\(x_0,\\dots,x_{n-1}\\).</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Midpoint sum \\(M_n\\)</span><p>Heights at the middle of each strip, \\(\\bar x_i=\\frac{x_{i-1}+x_i}{2}\\). Usually the best of the three.</p>"
-     },
-     {
-      "key": false,
-      "html": "<span class=\"tag\">Over or under?</span><p>If \\(f\\) is <strong>increasing</strong>, the left sum underestimates and the right sum overestimates. For a decreasing \\(f\\) it's the reverse.</p>"
-     },
-     {
-      "key": false,
-      "html": "<span class=\"tag\">Distance</span><p>Distance ≈ Σ velocity × time step. Same idea with \\(v(t)\\) instead of \\(f(x)\\).</p>"
-     }
-    ]
-   },
-   {
-    "type": "heading",
-    "text": "Practice",
-    "id": "practice"
-   },
-   {
-    "type": "practice",
-    "items": [
-     {
-      "id": "p51-1",
-      "source": "Like §5.1 #1–13",
-      "href": null,
-      "question": "Estimate the area under \\(f(x)=x^2\\) on \\([0,2]\\) using \\(R_4\\) (4 rectangles, right endpoints).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(\\Delta x=\\frac{2-0}{4}=0.5\\). Right endpoints: \\(0.5,1,1.5,2\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Width of each strip.</p>\\[\\displaystyle \\Delta x=\\tfrac{2-0}{4}=\\tfrac12\\]<p><strong>Step 2.</strong> Right ends of the strips.</p>\\[\\begin{gathered}\\displaystyle x_i:\\ 0.5\\\\\\displaystyle 1\\\\\\displaystyle 1.5\\\\\\displaystyle 2\\end{gathered}\\]<p><strong>Step 3.</strong> Square each one.</p>\\[\\begin{gathered}\\displaystyle f:\\ 0.25\\\\\\displaystyle 1\\\\\\displaystyle 2.25\\\\\\displaystyle 4\\end{gathered}\\]<p><strong>Step 4.</strong> Width × (sum of heights).</p>\\[\\displaystyle R_4=0.5(7.5)=3.75\\]<p><strong>What you found:</strong></p><ul><li>\\(\\Delta x=0.5\\)</li><li>\\(R_4=3.75\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(0.5\\,(0.25+1+2.25+4)=0.5(7.5)=3.75\\). The exact area is \\(\\frac83\\approx2.67\\); \\(R_4\\) overestimates because \\(x^2\\) is increasing.</p><p class=\"ans\">\\(R_4=3.75\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "\\Delta x=\\tfrac{2-0}{4}=\\tfrac12",
-        "why": "Width of each strip.",
-        "watch": [
-         [
-          "\\Delta x",
-          "0.5"
-         ]
-        ]
-       },
-       {
-        "code": "x_i:\\ 0.5,\\ 1,\\ 1.5,\\ 2",
-        "why": "Right ends of the strips."
-       },
-       {
-        "code": "f:\\ 0.25,\\ 1,\\ 2.25,\\ 4",
-        "why": "Square each one."
-       },
-       {
-        "code": "R_4=0.5(7.5)=3.75",
-        "why": "Width × (sum of heights).",
-        "watch": [
-         [
-          "R_4",
-          "3.75"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p51-2",
-      "source": "Like §5.1 #1–13",
-      "href": null,
-      "question": "Same function and interval: find \\(L_4\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Left endpoints: \\(0,0.5,1,1.5\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Left ends: start at \\(a\\), stop one short of \\(b\\).</p>\\[\\begin{gathered}\\displaystyle x_i:\\ 0\\\\\\displaystyle 0.5\\\\\\displaystyle 1\\\\\\displaystyle 1.5\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle f:\\ 0\\\\\\displaystyle 0.25\\\\\\displaystyle 1\\\\\\displaystyle 2.25\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle L_4=0.5(3.5)=1.75\\]<p><strong>What you found:</strong></p><ul><li>\\(L_4=1.75\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(0.5(0+0.25+1+2.25)=1.75\\). This underestimates. The exact area \\(\\frac83\\) lies between \\(L_4\\) and \\(R_4\\).</p><p class=\"ans\">\\(L_4=1.75\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "x_i:\\ 0,\\ 0.5,\\ 1,\\ 1.5",
-        "why": "Left ends: start at \\(a\\), stop one short of \\(b\\)."
-       },
-       {
-        "code": "f:\\ 0,\\ 0.25,\\ 1,\\ 2.25",
-        "why": ""
-       },
-       {
-        "code": "L_4=0.5(3.5)=1.75",
-        "why": "",
-        "watch": [
-         [
-          "L_4",
-          "1.75"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p51-3",
-      "source": "Like §5.1 #1–13",
-      "href": null,
-      "question": "Estimate the area under \\(f(x)=x^3\\) on \\([0,2]\\) with \\(M_2\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Two strips of width 1. Midpoints \\(0.5\\) and \\(1.5\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Middles of \\([0,1]\\) and \\([1,2]\\).</p>\\[\\begin{gathered}\\displaystyle \\Delta x=1\\\\\\displaystyle \\bar x=0.5\\\\\\displaystyle 1.5\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\begin{gathered}\\displaystyle 0.5^3=0.125\\\\\\displaystyle 1.5^3=3.375\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle M_2=1(3.5)=3.5\\]<p><strong>What you found:</strong></p><ul><li>\\(M_2=3.5\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(1\\cdot(0.125+3.375)=3.5\\). The exact area is 4.</p><p class=\"ans\">\\(M_2=3.5\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "\\Delta x=1,\\ \\ \\bar x=0.5,\\ 1.5",
-        "why": "Middles of \\([0,1]\\) and \\([1,2]\\)."
-       },
-       {
-        "code": "0.5^3=0.125,\\ \\ 1.5^3=3.375",
-        "why": ""
-       },
-       {
-        "code": "M_2=1(3.5)=3.5",
-        "why": "",
-        "watch": [
-         [
-          "M_2",
-          "3.5"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p51-4",
-      "source": "Like §5.1 #15–19",
-      "href": null,
-      "question": "A car's speed is measured every second: \\(t=0,1,2,3\\) s gives \\(v=2,4,7,9\\) m/s. Estimate the distance travelled in 3 seconds using left and right endpoints.",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(\\Delta t=1\\). Left uses \\(t=0,1,2\\); right uses \\(t=1,2,3\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\Delta t=1\\]<p><strong>Step 2.</strong> Speed at the start of each second.</p>\\[\\displaystyle \\text{left: }(2+4+7)(1)=13\\]<p><strong>Step 3.</strong> Speed at the end of each second.</p>\\[\\displaystyle \\text{right: }(4+7+9)(1)=20\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{between}:\\ 13\\text{ and }20\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>Left: \\(2+4+7=13\\) m. Right: \\(4+7+9=20\\) m. The speed is increasing, so the true distance is between them.</p><p class=\"ans\">Left \\(13\\) m, right \\(20\\) m</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "\\Delta t=1",
-        "why": ""
-       },
-       {
-        "code": "\\text{left: }(2+4+7)(1)=13",
-        "why": "Speed at the start of each second."
-       },
-       {
-        "code": "\\text{right: }(4+7+9)(1)=20",
-        "why": "Speed at the end of each second.",
-        "watch": [
-         [
-          "\\text{between}",
-          "13\\text{ and }20"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p51-5",
-      "source": "Like §5.1 #21–25",
-      "href": null,
-      "question": "Write the area under \\(f(x)=x^2\\) on \\([1,4]\\) as a limit of right sums. (Don't evaluate.)",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(\\Delta x=\\frac3n\\), \\(x_i=1+\\frac{3i}{n}\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\Delta x=\\tfrac{4-1}{n}=\\tfrac3n\\]<p><strong>Step 2.</strong> Start at \\(a=1\\) and take \\(i\\) steps.</p>\\[\\displaystyle x_i=1+i\\cdot\\tfrac3n\\]<p><strong>Step 3.</strong> Height × width of the \\(i\\)-th rectangle.</p>\\[\\displaystyle f(x_i)\\Delta x=\\big(1+\\tfrac{3i}{n}\\big)^2\\cdot\\tfrac3n\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle A=\\lim_{n\\to\\infty}\\sum_{i=1}^n\\big(1+\\tfrac{3i}{n}\\big)^2\\tfrac3n\\]</div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\displaystyle A=\\lim_{n\\to\\infty}\\sum_{i=1}^{n}\\Big(1+\\frac{3i}{n}\\Big)^2\\frac{3}{n}\\).</p><p class=\"ans\">\\(\\displaystyle\\lim_{n\\to\\infty}\\sum_{i=1}^n\\big(1+\\tfrac{3i}{n}\\big)^2\\tfrac3n\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "\\Delta x=\\tfrac{4-1}{n}=\\tfrac3n",
-        "why": ""
-       },
-       {
-        "code": "x_i=1+i\\cdot\\tfrac3n",
-        "why": "Start at \\(a=1\\) and take \\(i\\) steps."
-       },
-       {
-        "code": "f(x_i)\\Delta x=\\big(1+\\tfrac{3i}{n}\\big)^2\\cdot\\tfrac3n",
-        "why": "Height × width of the \\(i\\)-th rectangle."
-       },
-       {
-        "code": "A=\\lim_{n\\to\\infty}\\sum_{i=1}^n\\big(1+\\tfrac{3i}{n}\\big)^2\\tfrac3n",
-        "why": ""
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "type": "heading",
-    "text": "Traps"
-   },
-   {
-    "type": "traps",
-    "items": [
-     {
-      "title": "Off-by-one endpoints",
-      "html": "<p>Left sums use \\(x_0\\) to \\(x_{n-1}\\); right sums use \\(x_1\\) to \\(x_n\\). Write the list of x-values before plugging in.</p>"
-     },
-     {
-      "title": "Forgetting × Δx",
-      "html": "<p>Adding the heights isn't the area. Multiply by the width.</p>"
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "s52",
-  "slug": "5-2",
-  "num": "§5.2",
-  "unit": "later",
-  "title": "The Definite Integral",
-  "lede": "The exact area as a limit of Riemann sums, net signed area, and the properties of integrals.",
-  "blocks": [
-   {
-    "type": "rules",
-    "items": [
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Definition</span>\\[\\int_a^b f(x)\\,dx=\\lim_{n\\to\\infty}\\sum_{i=1}^n f(x_i)\\,\\Delta x\\]"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Net signed area</span><p>Area above the x-axis counts \\(+\\); area below counts \\(-\\).</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Sum formulas</span>\\[\\sum_{i=1}^n i=\\frac{n(n+1)}2,\\quad\\sum_{i=1}^n i^2=\\frac{n(n+1)(2n+1)}6\\]<p class=\"note\">\\(\\sum_{i=1}^n c=cn\\), and \\(\\sum i^3=\\big[\\frac{n(n+1)}2\\big]^2\\).</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Properties</span><p>\\(\\int_a^b[f\\pm g]=\\int_a^bf\\pm\\int_a^bg\\) · \\(\\int_a^bcf=c\\int_a^bf\\) · \\(\\int_b^a=-\\int_a^b\\) · \\(\\int_a^a=0\\) · \\(\\int_a^c+\\int_c^b=\\int_a^b\\)</p>"
-     },
-     {
-      "key": false,
-      "html": "<span class=\"tag\">Geometry shortcut</span><p>Lines and semicircles: use triangle, rectangle, trapezoid or circle area formulas directly.</p>"
-     }
-    ]
-   },
-   {
-    "type": "heading",
-    "text": "Practice",
-    "id": "practice"
-   },
-   {
-    "type": "practice",
-    "items": [
-     {
-      "id": "p52-1",
-      "source": "Like §5.2 #33–40",
-      "href": null,
-      "question": "Evaluate \\(\\displaystyle\\int_0^3(2x+1)\\,dx\\) by interpreting it as an area.",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Under a straight line from \\(x=0\\) to \\(3\\): a trapezoid.</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The two parallel sides.</p>\\[\\begin{gathered}\\displaystyle f(0)=1\\\\\\displaystyle f(3)=7\\end{gathered}\\]<p><strong>Step 2.</strong> Trapezoid: average height × width.</p>\\[\\displaystyle A=\\tfrac{1+7}{2}\\cdot3\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle =12\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=12\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>Heights \\(f(0)=1\\) and \\(f(3)=7\\), width 3: \\(\\frac{1+7}{2}\\cdot3=12\\).</p><p class=\"ans\">\\(12\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(0)=1,\\ f(3)=7",
-        "why": "The two parallel sides."
-       },
-       {
-        "code": "A=\\tfrac{1+7}{2}\\cdot3",
-        "why": "Trapezoid: average height × width."
-       },
-       {
-        "code": "=12",
-        "why": "",
-        "watch": [
-         [
-          "\\int",
-          "12"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p52-2",
-      "source": "Like §5.2 #33–40",
-      "href": null,
-      "question": "Evaluate \\(\\displaystyle\\int_{-2}^{2}\\sqrt{4-x^2}\\,dx\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(y=\\sqrt{4-x^2}\\) is the top half of a circle of radius 2.</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Upper semicircle, \\(r=2\\).</p>\\[\\begin{gathered}\\displaystyle y=\\sqrt{4-x^2}\\Rightarrow x^2+y^2=4\\\\\\displaystyle y\\ge0\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\tfrac12\\pi(2)^2=2\\pi\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=2\\pi\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>Half of \\(\\pi r^2=4\\pi\\), so the integral is \\(2\\pi\\).</p><p class=\"ans\">\\(2\\pi\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "y=\\sqrt{4-x^2}\\Rightarrow x^2+y^2=4,\\ y\\ge0",
-        "why": "Upper semicircle, \\(r=2\\)."
-       },
-       {
-        "code": "\\tfrac12\\pi(2)^2=2\\pi",
-        "why": "",
-        "watch": [
-         [
-          "\\int",
-          "2\\pi"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p52-3",
-      "source": "Like §5.2 #33–40",
-      "href": null,
-      "question": "Evaluate \\(\\displaystyle\\int_0^4(x-2)\\,dx\\) using areas.",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Part of the region is below the x-axis.</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Below the axis counts negative.</p>\\[\\displaystyle [0,2]:\\ -\\tfrac12(2)(2)=-2\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle [2,4]:\\ +\\tfrac12(2)(2)=2\\]<p><strong>Step 3.</strong> Net signed area.</p>\\[\\displaystyle -2+2=0\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=0\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>Triangle below the axis on \\([0,2]\\) with area 2 (counts \\(-2\\)); triangle above on \\([2,4]\\) with area 2. Net \\(0\\).</p><p class=\"ans\">\\(0\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "[0,2]:\\ -\\tfrac12(2)(2)=-2",
-        "why": "Below the axis counts negative."
-       },
-       {
-        "code": "[2,4]:\\ +\\tfrac12(2)(2)=2",
-        "why": ""
-       },
-       {
-        "code": "-2+2=0",
-        "why": "Net signed area.",
-        "watch": [
-         [
-          "\\int",
-          "0"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p52-4",
-      "source": "Like §5.2 #21–25",
-      "href": null,
-      "question": "Use the limit definition (right endpoints) to evaluate \\(\\displaystyle\\int_0^2x^2\\,dx\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(\\Delta x=\\frac2n\\), \\(x_i=\\frac{2i}{n}\\). Use the formula for \\(\\sum i^2\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle \\Delta x=\\tfrac2n\\\\\\displaystyle x_i=\\tfrac{2i}{n}\\end{gathered}\\]<p><strong>Step 2.</strong> Pull out everything that doesn't depend on \\(i\\).</p>\\[\\displaystyle \\sum_{i=1}^n\\Big(\\tfrac{2i}{n}\\Big)^2\\tfrac2n=\\tfrac{8}{n^3}\\sum i^2\\]<p><strong>Step 3.</strong> Sum of squares formula.</p>\\[\\displaystyle =\\tfrac{8}{n^3}\\cdot\\tfrac{n(n+1)(2n+1)}{6}\\]<p><strong>Step 4.</strong> Split up the three powers of \\(n\\) to take the limit.</p>\\[\\displaystyle =\\tfrac{8}{6}\\cdot\\tfrac{n}{n}\\cdot\\tfrac{n+1}{n}\\cdot\\tfrac{2n+1}{n}\\]<p><strong>Step 5.</strong> \\(\\frac{n+1}n\\to1\\), \\(\\frac{2n+1}n\\to2\\).</p>\\[\\displaystyle \\to\\tfrac86\\cdot1\\cdot1\\cdot2=\\tfrac83\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=8/3\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\sum\\frac{4i^2}{n^2}\\cdot\\frac2n=\\frac8{n^3}\\cdot\\frac{n(n+1)(2n+1)}6\\to\\frac{8\\cdot2}{6}=\\frac83\\).</p><p class=\"ans\">\\(\\tfrac83\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "\\Delta x=\\tfrac2n,\\ x_i=\\tfrac{2i}{n}",
-        "why": ""
-       },
-       {
-        "code": "\\sum_{i=1}^n\\Big(\\tfrac{2i}{n}\\Big)^2\\tfrac2n=\\tfrac{8}{n^3}\\sum i^2",
-        "why": "Pull out everything that doesn't depend on \\(i\\)."
-       },
-       {
-        "code": "=\\tfrac{8}{n^3}\\cdot\\tfrac{n(n+1)(2n+1)}{6}",
-        "why": "Sum of squares formula."
-       },
-       {
-        "code": "=\\tfrac{8}{6}\\cdot\\tfrac{n}{n}\\cdot\\tfrac{n+1}{n}\\cdot\\tfrac{2n+1}{n}",
-        "why": "Split up the three powers of \\(n\\) to take the limit."
-       },
-       {
-        "code": "\\to\\tfrac86\\cdot1\\cdot1\\cdot2=\\tfrac83",
-        "why": "\\(\\frac{n+1}n\\to1\\), \\(\\frac{2n+1}n\\to2\\).",
-        "watch": [
-         [
-          "\\int",
-          "8/3"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p52-5",
-      "source": "Like §5.2 #47–55",
-      "href": null,
-      "question": "If \\(\\int_0^5f(x)\\,dx=10\\) and \\(\\int_0^2f(x)\\,dx=3\\), find \\(\\int_2^5f(x)\\,dx\\) and \\(\\int_5^2 2f(x)\\,dx\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(\\int_0^2+\\int_2^5=\\int_0^5\\). Swapping the limits flips the sign.</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Split the interval.</p>\\[\\displaystyle \\int_0^2f+\\int_2^5f=\\int_0^5f\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle 3+\\int_2^5f=10\\Rightarrow\\int_2^5f=7\\]<p><strong>Step 3.</strong> The constant comes out; reversed limits give a minus.</p>\\[\\displaystyle \\int_5^2 2f=-2\\int_2^5f\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle =-14\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int_2^5f=7\\)</li><li>\\(\\int_5^22f=-14\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\int_2^5f=10-3=7\\). \\(\\int_5^2 2f=-2\\cdot7=-14\\).</p><p class=\"ans\">\\(7\\) and \\(-14\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "\\int_0^2f+\\int_2^5f=\\int_0^5f",
-        "why": "Split the interval."
-       },
-       {
-        "code": "3+\\int_2^5f=10\\Rightarrow\\int_2^5f=7",
-        "why": "",
-        "watch": [
-         [
-          "\\int_2^5f",
-          "7"
-         ]
-        ]
-       },
-       {
-        "code": "\\int_5^2 2f=-2\\int_2^5f",
-        "why": "The constant comes out; reversed limits give a minus."
-       },
-       {
-        "code": "=-14",
-        "why": "",
-        "watch": [
-         [
-          "\\int_5^22f",
-          "-14"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p52-6",
-      "source": "Like §5.2 #17–20",
-      "href": null,
-      "question": "Write \\(\\displaystyle\\lim_{n\\to\\infty}\\sum_{i=1}^n\\frac1n\\Big(\\frac in\\Big)^3\\) as a definite integral and evaluate it.",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Match it to \\(f(x_i)\\Delta x\\) with \\(\\Delta x=\\frac1n\\) and \\(x_i=\\frac in\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\Delta x=\\tfrac1n\\Rightarrow b-a=1\\]<p><strong>Step 2.</strong> \\(x_i=a+i\\Delta x\\).</p>\\[\\begin{gathered}\\displaystyle x_i=\\tfrac in\\Rightarrow a=0\\\\\\displaystyle b=1\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle f(x)=x^3\\]<p><strong>Step 4.</strong> Using §5.3 to evaluate.</p>\\[\\displaystyle \\int_0^1x^3dx=\\tfrac14\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{value}:\\ 1/4\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\Delta x=\\frac1n\\) on \\([0,1]\\), \\(f(x)=x^3\\): \\(\\int_0^1x^3\\,dx=\\frac14\\).</p><p class=\"ans\">\\(\\int_0^1x^3\\,dx=\\tfrac14\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "\\Delta x=\\tfrac1n\\Rightarrow b-a=1",
-        "why": ""
-       },
-       {
-        "code": "x_i=\\tfrac in\\Rightarrow a=0,\\ b=1",
-        "why": "\\(x_i=a+i\\Delta x\\)."
-       },
-       {
-        "code": "f(x)=x^3",
-        "why": ""
-       },
-       {
-        "code": "\\int_0^1x^3dx=\\tfrac14",
-        "why": "Using §5.3 to evaluate.",
-        "watch": [
-         [
-          "\\text{value}",
-          "1/4"
-         ]
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "type": "heading",
-    "text": "Traps"
-   },
-   {
-    "type": "traps",
-    "items": [
-     {
-      "title": "Net area vs total area",
-      "html": "<p>\\(\\int\\) gives <em>net</em> area. If the question says “total area”, split at the zeros and add absolute values.</p>"
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "s53",
-  "slug": "5-3",
-  "num": "§5.3",
-  "unit": "later",
-  "title": "The Fundamental Theorem of Calculus",
-  "lede": "Derivatives undo integrals (Part 1), and antiderivatives evaluate integrals (Part 2).",
-  "blocks": [
-   {
-    "type": "rules",
-    "items": [
-     {
-      "key": true,
-      "html": "<span class=\"tag\">FTC Part 1</span>\\[\\frac{d}{dx}\\int_a^x f(t)\\,dt=f(x)\\]<p class=\"note\">Plug the upper limit into the integrand.</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Part 1 with the chain rule</span>\\[\\frac{d}{dx}\\int_a^{g(x)}f(t)\\,dt=f(g(x))\\,g'(x)\\]<p class=\"note\">Variable in the lower limit? Flip the limits and add a minus sign.</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">FTC Part 2</span>\\[\\int_a^bf(x)\\,dx=F(b)-F(a),\\quad F'=f\\]<p class=\"note\">No \\(+C\\) needed: it cancels.</p>"
-     },
-     {
-      "key": false,
-      "html": "<span class=\"tag\">Needs continuity</span><p>\\(f\\) must be continuous on \\([a,b]\\). \\(\\int_{-1}^1\\frac1{x^2}dx\\) can't be done with FTC.</p>"
-     }
-    ]
-   },
-   {
-    "type": "heading",
-    "text": "Practice",
-    "id": "practice"
-   },
-   {
-    "type": "practice",
-    "items": [
-     {
-      "id": "p53-1",
-      "source": "Like §5.3 #7–18",
-      "href": null,
-      "question": "Find \\(g'(x)\\) for \\(g(x)=\\displaystyle\\int_1^x(t^2+1)^5\\,dt\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Part 1: replace \\(t\\) with \\(x\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The upper limit is plain \\(x\\).</p>\\[\\displaystyle g(x)=\\int_1^xf(t)\\,dt\\]<p><strong>Step 2.</strong> No integrating needed.</p>\\[\\displaystyle g'(x)=f(x)=(x^2+1)^5\\]<p><strong>What you found:</strong></p><ul><li>\\(g'=(x^2+1)^5\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(g'(x)=(x^2+1)^5\\).</p><p class=\"ans\">\\((x^2+1)^5\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "g(x)=\\int_1^xf(t)\\,dt",
-        "why": "The upper limit is plain \\(x\\)."
-       },
-       {
-        "code": "g'(x)=f(x)=(x^2+1)^5",
-        "why": "No integrating needed.",
-        "watch": [
-         [
-          "g'",
-          "(x^2+1)^5"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p53-2",
-      "source": "Like §5.3 #7–18",
-      "href": null,
-      "question": "Find \\(\\dfrac{dy}{dx}\\) for \\(y=\\displaystyle\\int_0^{x^2}\\sin t\\,dt\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>The upper limit is \\(x^2\\): plug it in, then multiply by its derivative.</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Plug in the upper limit.</p>\\[\\displaystyle f(g(x))=\\sin(x^2)\\]<p><strong>Step 2.</strong> Chain rule.</p>\\[\\displaystyle g'(x)=2x\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle y'=2x\\sin(x^2)\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=2x\\sin(x^2)\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\sin(x^2)\\cdot2x\\).</p><p class=\"ans\">\\(2x\\sin(x^2)\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(g(x))=\\sin(x^2)",
-        "why": "Plug in the upper limit."
-       },
-       {
-        "code": "g'(x)=2x",
-        "why": "Chain rule."
-       },
-       {
-        "code": "y'=2x\\sin(x^2)",
-        "why": "",
-        "watch": [
-         [
-          "y'",
-          "2x\\sin(x^2)"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p53-3",
-      "source": "Like §5.3 #7–18",
-      "href": null,
-      "question": "Find \\(\\dfrac{dy}{dx}\\) for \\(y=\\displaystyle\\int_x^{3}e^{t^2}\\,dt\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(x\\) is in the <em>lower</em> limit. Flip the limits first.</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Swapping the limits adds a minus.</p>\\[\\displaystyle y=-\\int_3^{x}e^{t^2}dt\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle y'=-e^{x^2}\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=-e^{x^2}\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(y=-\\int_3^xe^{t^2}dt\\Rightarrow y'=-e^{x^2}\\).</p><p class=\"ans\">\\(-e^{x^2}\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "y=-\\int_3^{x}e^{t^2}dt",
-        "why": "Swapping the limits adds a minus."
-       },
-       {
-        "code": "y'=-e^{x^2}",
-        "why": "",
-        "watch": [
-         [
-          "y'",
-          "-e^{x^2}"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p53-4",
-      "source": "Like §5.3 #7–18",
-      "href": null,
-      "question": "Find \\(\\dfrac{dy}{dx}\\) for \\(y=\\displaystyle\\int_x^{x^2}t^3\\,dt\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Split at a constant: \\(\\int_x^{0}+\\int_0^{x^2}\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Both limits move, so split at 0.</p>\\[\\displaystyle y=\\int_0^{x^2}t^3dt-\\int_0^{x}t^3dt\\]<p><strong>Step 2.</strong> Chain rule.</p>\\[\\displaystyle \\tfrac{d}{dx}\\int_0^{x^2}=(x^2)^3\\cdot2x=2x^7\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\tfrac{d}{dx}\\int_0^{x}=x^3\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle y'=2x^7-x^3\\]<p><strong>What you found:</strong></p><ul><li>\\(y'=2x^7-x^3\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\((x^2)^3\\cdot2x-x^3=2x^7-x^3\\).</p><p class=\"ans\">\\(2x^7-x^3\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "y=\\int_0^{x^2}t^3dt-\\int_0^{x}t^3dt",
-        "why": "Both limits move, so split at 0."
-       },
-       {
-        "code": "\\tfrac{d}{dx}\\int_0^{x^2}=(x^2)^3\\cdot2x=2x^7",
-        "why": "Chain rule."
-       },
-       {
-        "code": "\\tfrac{d}{dx}\\int_0^{x}=x^3",
-        "why": ""
-       },
-       {
-        "code": "y'=2x^7-x^3",
-        "why": "",
-        "watch": [
-         [
-          "y'",
-          "2x^7-x^3"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p53-5",
-      "source": "Like §5.3 #19–44",
-      "href": null,
-      "question": "Evaluate \\(\\displaystyle\\int_1^3(x^2-2x)\\,dx\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Antiderivative \\(\\frac{x^3}3-x^2\\). Top minus bottom.</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle F(x)=\\tfrac{x^3}{3}-x^2\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle F(3)=9-9=0\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle F(1)=\\tfrac13-1=-\\tfrac23\\]<p><strong>Step 4.</strong> Careful with the double negative.</p>\\[\\displaystyle F(3)-F(1)=0-(-\\tfrac23)=\\tfrac23\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=2/3\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\big[\\frac{x^3}3-x^2\\big]_1^3=(9-9)-(\\frac13-1)=\\frac23\\).</p><p class=\"ans\">\\(\\tfrac23\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "F(x)=\\tfrac{x^3}{3}-x^2",
-        "why": ""
-       },
-       {
-        "code": "F(3)=9-9=0",
-        "why": ""
-       },
-       {
-        "code": "F(1)=\\tfrac13-1=-\\tfrac23",
-        "why": ""
-       },
-       {
-        "code": "F(3)-F(1)=0-(-\\tfrac23)=\\tfrac23",
-        "why": "Careful with the double negative.",
-        "watch": [
-         [
-          "\\int",
-          "2/3"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p53-6",
-      "source": "Like §5.3 #19–44",
-      "href": null,
-      "question": "Evaluate \\(\\displaystyle\\int_0^{\\pi/2}\\cos x\\,dx\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(\\int\\cos=\\sin\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle F=\\sin x\\]<p><strong>Step 2.</strong> Unit circle values.</p>\\[\\displaystyle \\sin\\tfrac\\pi2-\\sin0=1-0\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=1\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\sin\\frac\\pi2-\\sin0=1\\).</p><p class=\"ans\">\\(1\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "F=\\sin x",
-        "why": ""
-       },
-       {
-        "code": "\\sin\\tfrac\\pi2-\\sin0=1-0",
-        "why": "Unit circle values.",
-        "watch": [
-         [
-          "\\int",
-          "1"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p53-7",
-      "source": "Like §5.3 #19–44",
-      "href": null,
-      "question": "Evaluate \\(\\displaystyle\\int_1^4\\frac{1}{\\sqrt x}\\,dx\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(x^{-1/2}\\to2x^{1/2}\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle x^{-1/2}\\to\\frac{x^{1/2}}{1/2}=2\\sqrt x\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle 2(2)-2(1)=2\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=2\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(2\\sqrt4-2\\sqrt1=2\\).</p><p class=\"ans\">\\(2\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "x^{-1/2}\\to\\frac{x^{1/2}}{1/2}=2\\sqrt x",
-        "why": ""
-       },
-       {
-        "code": "2(2)-2(1)=2",
-        "why": "",
-        "watch": [
-         [
-          "\\int",
-          "2"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p53-8",
-      "source": "Like §5.3 #19–44",
-      "href": null,
-      "question": "Evaluate \\(\\displaystyle\\int_0^1\\Big(e^x+\\frac{1}{1+x^2}\\Big)dx\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(\\int\\frac1{1+x^2}=\\tan^{-1}x\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle F=e^x+\\tan^{-1}x\\]<p><strong>Step 2.</strong> \\(\\tan^{-1}1=\\frac\\pi4\\).</p>\\[\\displaystyle F(1)=e+\\tfrac\\pi4\\]<p><strong>Step 3.</strong> \\(e^0=1\\).</p>\\[\\displaystyle F(0)=1+0\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle e-1+\\tfrac\\pi4\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=e-1+\\pi/4\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\([e^x+\\tan^{-1}x]_0^1=(e+\\frac\\pi4)-(1+0)\\).</p><p class=\"ans\">\\(e-1+\\tfrac\\pi4\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "F=e^x+\\tan^{-1}x",
-        "why": ""
-       },
-       {
-        "code": "F(1)=e+\\tfrac\\pi4",
-        "why": "\\(\\tan^{-1}1=\\frac\\pi4\\)."
-       },
-       {
-        "code": "F(0)=1+0",
-        "why": "\\(e^0=1\\)."
-       },
-       {
-        "code": "e-1+\\tfrac\\pi4",
-        "why": "",
-        "watch": [
-         [
-          "\\int",
-          "e-1+\\pi/4"
-         ]
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "type": "heading",
-    "text": "Traps"
-   },
-   {
-    "type": "traps",
-    "items": [
-     {
-      "title": "Forgetting the chain rule in Part 1",
-      "html": "<p>Upper limit \\(x^2\\)? Multiply by \\(2x\\).</p>"
-     },
-     {
-      "title": "Bottom minus top",
-      "html": "<p>It's \\(F(b)-F(a)\\): upper limit first.</p>"
-     },
-     {
-      "title": "Discontinuous integrand",
-      "html": "<p>\\(\\int_{-1}^1\\frac{dx}{x^2}\\) is not \\(-2\\). FTC doesn't apply across \\(x=0\\).</p>"
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "s54",
-  "slug": "5-4",
-  "num": "§5.4",
-  "unit": "later",
-  "title": "Indefinite Integrals and the Net Change Theorem",
-  "lede": "The ∫ notation for antiderivatives, and integrating a rate to get a total change.",
-  "blocks": [
-   {
-    "type": "rules",
-    "items": [
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Indefinite integral</span><p>\\(\\int f(x)\\,dx=F(x)+C\\) means \\(F'=f\\). It's a family of functions, not a number.</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Net Change Theorem</span>\\[\\int_a^bF'(x)\\,dx=F(b)-F(a)\\]<p class=\"note\">Integrating a rate gives the total change.</p>"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Displacement vs distance</span><p>Displacement \\(=\\int_a^bv\\,dt\\). Total distance \\(=\\int_a^b|v|\\,dt\\): split where \\(v=0\\).</p>"
-     },
-     {
-      "key": false,
-      "html": "<span class=\"tag\">Table</span><p>Same as §4.9: \\(x^n\\), \\(\\frac1x\\), \\(e^x\\), \\(\\sin\\), \\(\\cos\\), \\(\\sec^2\\), \\(\\sec\\tan\\), \\(\\frac1{1+x^2}\\), \\(\\frac1{\\sqrt{1-x^2}}\\).</p>"
-     }
-    ]
-   },
-   {
-    "type": "heading",
-    "text": "Practice",
-    "id": "practice"
-   },
-   {
-    "type": "practice",
-    "items": [
-     {
-      "id": "p54-1",
-      "source": "Like §5.4 #5–18",
-      "href": null,
-      "question": "Find \\(\\displaystyle\\int\\Big(x^3-\\frac4x+\\sec^2x\\Big)dx\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Term by term.</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle x^3\\to\\tfrac{x^4}4\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle -\\tfrac4x\\to-4\\ln|x|\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\sec^2x\\to\\tan x\\]<p><strong>Step 4.</strong> Indefinite, so add \\(C\\).</p>\\[\\displaystyle +C\\]</div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\frac{x^4}4-4\\ln|x|+\\tan x+C\\).</p><p class=\"ans\">\\(\\tfrac{x^4}{4}-4\\ln|x|+\\tan x+C\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "x^3\\to\\tfrac{x^4}4",
-        "why": ""
-       },
-       {
-        "code": "-\\tfrac4x\\to-4\\ln|x|",
-        "why": ""
-       },
-       {
-        "code": "\\sec^2x\\to\\tan x",
-        "why": ""
-       },
-       {
-        "code": "+C",
-        "why": "Indefinite, so add \\(C\\)."
-       }
-      ]
-     },
-     {
-      "id": "p54-2",
-      "source": "Like §5.4 #5–18",
-      "href": null,
-      "question": "Find \\(\\displaystyle\\int(1+\\sqrt x)^2\\,dx\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Expand first: \\(1+2\\sqrt x+x\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> There's no chain rule backwards here, so expand.</p>\\[\\displaystyle (1+\\sqrt x)^2=1+2x^{1/2}+x\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle 2x^{1/2}\\to2\\cdot\\tfrac{x^{3/2}}{3/2}=\\tfrac43x^{3/2}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle x+\\tfrac43x^{3/2}+\\tfrac{x^2}2+C\\]</div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(x+\\frac43x^{3/2}+\\frac{x^2}2+C\\).</p><p class=\"ans\">\\(x+\\tfrac43x^{3/2}+\\tfrac{x^2}{2}+C\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "(1+\\sqrt x)^2=1+2x^{1/2}+x",
-        "why": "There's no chain rule backwards here, so expand."
-       },
-       {
-        "code": "2x^{1/2}\\to2\\cdot\\tfrac{x^{3/2}}{3/2}=\\tfrac43x^{3/2}",
-        "why": ""
-       },
-       {
-        "code": "x+\\tfrac43x^{3/2}+\\tfrac{x^2}2+C",
-        "why": ""
-       }
-      ]
-     },
-     {
-      "id": "p54-3",
-      "source": "Like §5.4 #5–18",
-      "href": null,
-      "question": "Find \\(\\displaystyle\\int\\frac{\\sin\\theta}{\\cos^2\\theta}\\,d\\theta\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Rewrite as \\(\\frac{1}{\\cos\\theta}\\cdot\\frac{\\sin\\theta}{\\cos\\theta}\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Trig rewrite.</p>\\[\\displaystyle \\frac{\\sin\\theta}{\\cos^2\\theta}=\\sec\\theta\\tan\\theta\\]<p><strong>Step 2.</strong> Because \\((\\sec)'=\\sec\\tan\\).</p>\\[\\displaystyle \\int\\sec\\theta\\tan\\theta=\\sec\\theta+C\\]</div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\int\\sec\\theta\\tan\\theta\\,d\\theta=\\sec\\theta+C\\).</p><p class=\"ans\">\\(\\sec\\theta+C\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "\\frac{\\sin\\theta}{\\cos^2\\theta}=\\sec\\theta\\tan\\theta",
-        "why": "Trig rewrite."
-       },
-       {
-        "code": "\\int\\sec\\theta\\tan\\theta=\\sec\\theta+C",
-        "why": "Because \\((\\sec)'=\\sec\\tan\\)."
-       }
-      ]
-     },
-     {
-      "id": "p54-4",
-      "source": "Like §5.4 #35–45",
-      "href": null,
-      "question": "Evaluate \\(\\displaystyle\\int_{-1}^{2}|x|\\,dx\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Split at 0, where \\(|x|\\) changes formula.</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle |x|=-x\\ (x<0)\\\\\\displaystyle x\\ (x\\ge0)\\end{gathered}\\]<p><strong>Step 2.</strong> A triangle with area \\(\\frac12\\).</p>\\[\\displaystyle \\int_{-1}^0-x\\,dx=\\tfrac12\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\int_0^2x\\,dx=2\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle \\tfrac12+2=\\tfrac52\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=5/2\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\int_{-1}^0(-x)dx+\\int_0^2x\\,dx=\\frac12+2=\\frac52\\).</p><p class=\"ans\">\\(\\tfrac52\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "|x|=-x\\ (x<0),\\ x\\ (x\\ge0)",
-        "why": ""
-       },
-       {
-        "code": "\\int_{-1}^0-x\\,dx=\\tfrac12",
-        "why": "A triangle with area \\(\\frac12\\)."
-       },
-       {
-        "code": "\\int_0^2x\\,dx=2",
-        "why": ""
-       },
-       {
-        "code": "\\tfrac12+2=\\tfrac52",
-        "why": "",
-        "watch": [
-         [
-          "\\int",
-          "5/2"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p54-5",
-      "source": "Like §5.4 #59–63",
-      "href": null,
-      "question": "A particle moves with \\(v(t)=t^2-2t-3\\) m/s. Find (a) the displacement and (b) the total distance travelled on \\(2\\le t\\le4\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(v=(t-3)(t+1)\\): negative on \\([2,3)\\), positive on \\((3,4]\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle F(t)=\\tfrac{t^3}3-t^2-3t\\]<p><strong>Step 2.</strong> \\(F(4)=\\frac{64}3-28\\), \\(F(2)=\\frac83-10\\).</p>\\[\\displaystyle F(4)-F(2)=-\\tfrac{20}{3}-(-\\tfrac{22}{3})=\\tfrac23\\]<p><strong>Step 3.</strong> Where it turns around.</p>\\[\\displaystyle v=(t-3)(t+1)=0\\Rightarrow t=3\\]<p><strong>Step 4.</strong> Moving backwards.</p>\\[\\displaystyle \\int_2^3v=F(3)-F(2)=-9+\\tfrac{22}3=-\\tfrac53\\]<p><strong>Step 5.</strong> Moving forwards.</p>\\[\\displaystyle \\int_3^4v=-\\tfrac{20}3+9=\\tfrac73\\]<p><strong>Step 6.</strong> Distance adds the sizes.</p>\\[\\displaystyle \\tfrac53+\\tfrac73=4\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{disp}:\\ 2/3\\)</li><li>\\(\\text{dist}:\\ 4\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(F=\\frac{t^3}3-t^2-3t\\). Displacement \\(F(4)-F(2)=\\frac23\\). \\(\\int_2^3v=-\\frac53\\), \\(\\int_3^4v=\\frac73\\), so the distance is \\(\\frac53+\\frac73=4\\).</p><p class=\"ans\">(a) \\(\\tfrac23\\) m (b) \\(4\\) m</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "F(t)=\\tfrac{t^3}3-t^2-3t",
-        "why": ""
-       },
-       {
-        "code": "F(4)-F(2)=-\\tfrac{20}{3}-(-\\tfrac{22}{3})=\\tfrac23",
-        "why": "\\(F(4)=\\frac{64}3-28\\), \\(F(2)=\\frac83-10\\).",
-        "watch": [
-         [
-          "\\text{disp}",
-          "2/3"
-         ]
-        ]
-       },
-       {
-        "code": "v=(t-3)(t+1)=0\\Rightarrow t=3",
-        "why": "Where it turns around."
-       },
-       {
-        "code": "\\int_2^3v=F(3)-F(2)=-9+\\tfrac{22}3=-\\tfrac53",
-        "why": "Moving backwards."
-       },
-       {
-        "code": "\\int_3^4v=-\\tfrac{20}3+9=\\tfrac73",
-        "why": "Moving forwards."
-       },
-       {
-        "code": "\\tfrac53+\\tfrac73=4",
-        "why": "Distance adds the sizes.",
-        "watch": [
-         [
-          "\\text{dist}",
-          "4"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p54-6",
-      "source": "Like §5.4 #65–70",
-      "href": null,
-      "question": "Water flows into a tank at \\(r(t)=100-4t\\) liters per minute for \\(0\\le t\\le10\\). How much water enters the tank?",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Net change = ∫ rate.</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> Net Change Theorem.</p>\\[\\displaystyle \\int_0^{10}r(t)\\,dt\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle [100t-2t^2]_0^{10}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle 1000-200=800\\]<p><strong>What you found:</strong></p><ul><li>\\(\\text{water}:\\ 800\\text{ L}\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\int_0^{10}(100-4t)dt=[100t-2t^2]_0^{10}=1000-200=800\\) L.</p><p class=\"ans\">\\(800\\) L</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "\\int_0^{10}r(t)\\,dt",
-        "why": "Net Change Theorem."
-       },
-       {
-        "code": "[100t-2t^2]_0^{10}",
-        "why": ""
-       },
-       {
-        "code": "1000-200=800",
-        "why": "",
-        "watch": [
-         [
-          "\\text{water}",
-          "800\\text{ L}"
-         ]
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "type": "heading",
-    "text": "Traps"
-   },
-   {
-    "type": "traps",
-    "items": [
-     {
-      "title": "Distance = displacement",
-      "html": "<p>Only when \\(v\\) never changes sign. Find where \\(v=0\\) first.</p>"
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "s55",
-  "slug": "5-5",
-  "num": "§5.5",
-  "unit": "later",
-  "title": "The Substitution Rule",
-  "lede": "u-substitution: the chain rule backwards. Spot the inside function and its derivative.",
-  "blocks": [
-   {
-    "type": "prose",
-    "html": "<ol class=\"steps\"><li>Pick \\(u\\) = the <strong>inside</strong> function (under a power, root, exponent, or in a denominator).</li><li>Find \\(du=u'\\,dx\\). Its pieces should already be in the integral (up to a constant).</li><li>Rewrite everything in \\(u\\) and integrate.</li><li>Put \\(x\\) back. For a definite integral, change the limits to \\(u\\)-values instead.</li></ol>"
-   },
-   {
-    "type": "rules",
-    "items": [
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Substitution</span>\\[\\int f(g(x))g'(x)\\,dx=\\int f(u)\\,du\\]"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Definite version</span>\\[\\int_a^bf(g(x))g'(x)\\,dx=\\int_{g(a)}^{g(b)}f(u)\\,du\\]"
-     },
-     {
-      "key": true,
-      "html": "<span class=\"tag\">Symmetry</span><p>On \\([-a,a]\\): an <strong>odd</strong> \\(f\\) gives 0; an <strong>even</strong> \\(f\\) gives \\(2\\int_0^af\\).</p>"
-     },
-     {
-      "key": false,
-      "html": "<span class=\"tag\">Useful results</span><p>\\(\\int\\tan x\\,dx=\\ln|\\sec x|+C\\) · \\(\\int e^{kx}dx=\\frac1ke^{kx}+C\\) · \\(\\int\\cos(kx)dx=\\frac1k\\sin(kx)+C\\)</p>"
-     }
-    ]
-   },
-   {
-    "type": "heading",
-    "text": "Practice",
-    "id": "practice"
-   },
-   {
-    "type": "practice",
-    "items": [
-     {
-      "id": "p55-1",
-      "source": "Like §5.5 #1–40",
-      "href": null,
-      "question": "Find \\(\\displaystyle\\int2x(x^2+1)^5\\,dx\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(u=x^2+1\\), \\(du=2x\\,dx\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> The \\(2x\\,dx\\) is exactly \\(du\\).</p>\\[\\begin{gathered}\\displaystyle u=x^2+1\\\\\\displaystyle du=2x\\,dx\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\int u^5\\,du=\\tfrac{u^6}{6}+C\\]<p><strong>Step 3.</strong> Put \\(x\\) back.</p>\\[\\displaystyle =\\tfrac{(x^2+1)^6}{6}+C\\]</div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\int u^5du=\\frac{u^6}6\\).</p><p class=\"ans\">\\(\\tfrac{(x^2+1)^6}{6}+C\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "u=x^2+1,\\ du=2x\\,dx",
-        "why": "The \\(2x\\,dx\\) is exactly \\(du\\)."
-       },
-       {
-        "code": "\\int u^5\\,du=\\tfrac{u^6}{6}+C",
-        "why": ""
-       },
-       {
-        "code": "=\\tfrac{(x^2+1)^6}{6}+C",
-        "why": "Put \\(x\\) back."
-       }
-      ]
-     },
-     {
-      "id": "p55-2",
-      "source": "Like §5.5 #1–40",
-      "href": null,
-      "question": "Find \\(\\displaystyle\\int x^2\\sqrt{x^3+1}\\,dx\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(u=x^3+1\\), \\(du=3x^2dx\\Rightarrow x^2dx=\\frac13du\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=x^3+1\\\\\\displaystyle du=3x^2dx\\end{gathered}\\]<p><strong>Step 2.</strong> Fix the missing constant.</p>\\[\\displaystyle x^2dx=\\tfrac13du\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\tfrac13\\int u^{1/2}du=\\tfrac13\\cdot\\tfrac23u^{3/2}\\]<p><strong>Step 4.</strong></p>\\[\\displaystyle =\\tfrac29(x^3+1)^{3/2}+C\\]</div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\frac13\\int u^{1/2}du=\\frac13\\cdot\\frac23u^{3/2}\\).</p><p class=\"ans\">\\(\\tfrac29(x^3+1)^{3/2}+C\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "u=x^3+1,\\ du=3x^2dx",
-        "why": ""
-       },
-       {
-        "code": "x^2dx=\\tfrac13du",
-        "why": "Fix the missing constant."
-       },
-       {
-        "code": "\\tfrac13\\int u^{1/2}du=\\tfrac13\\cdot\\tfrac23u^{3/2}",
-        "why": ""
-       },
-       {
-        "code": "=\\tfrac29(x^3+1)^{3/2}+C",
-        "why": ""
-       }
-      ]
-     },
-     {
-      "id": "p55-3",
-      "source": "Like §5.5 #1–40",
-      "href": null,
-      "question": "Find \\(\\displaystyle\\int\\cos(3x)\\,dx\\) and \\(\\displaystyle\\int e^{5x}\\,dx\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(u=3x\\) and \\(u=5x\\): you divide by the constant.</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=3x\\\\\\displaystyle dx=\\tfrac13du\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\tfrac13\\int\\cos u\\,du=\\tfrac13\\sin3x+C\\]<p><strong>Step 3.</strong> Same idea. Check: differentiating gives back \\(e^{5x}\\).</p>\\[\\displaystyle \\int e^{5x}dx=\\tfrac15e^{5x}+C\\]</div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\frac13\\sin3x+C\\) and \\(\\frac15e^{5x}+C\\).</p><p class=\"ans\">\\(\\tfrac13\\sin3x+C,\\ \\ \\tfrac15e^{5x}+C\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "u=3x,\\ dx=\\tfrac13du",
-        "why": ""
-       },
-       {
-        "code": "\\tfrac13\\int\\cos u\\,du=\\tfrac13\\sin3x+C",
-        "why": ""
-       },
-       {
-        "code": "\\int e^{5x}dx=\\tfrac15e^{5x}+C",
-        "why": "Same idea. Check: differentiating gives back \\(e^{5x}\\)."
-       }
-      ]
-     },
-     {
-      "id": "p55-4",
-      "source": "Like §5.5 #1–40",
-      "href": null,
-      "question": "Find \\(\\displaystyle\\int\\frac{\\ln x}{x}\\,dx\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(u=\\ln x\\), \\(du=\\frac1xdx\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=\\ln x\\\\\\displaystyle du=\\tfrac{dx}{x}\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\int u\\,du=\\tfrac{u^2}2+C\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle =\\tfrac{(\\ln x)^2}{2}+C\\]</div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\int u\\,du=\\frac{u^2}2\\).</p><p class=\"ans\">\\(\\tfrac{(\\ln x)^2}{2}+C\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "u=\\ln x,\\ du=\\tfrac{dx}{x}",
-        "why": ""
-       },
-       {
-        "code": "\\int u\\,du=\\tfrac{u^2}2+C",
-        "why": ""
-       },
-       {
-        "code": "=\\tfrac{(\\ln x)^2}{2}+C",
-        "why": ""
-       }
-      ]
-     },
-     {
-      "id": "p55-5",
-      "source": "Like §5.5 #1–40",
-      "href": null,
-      "question": "Find \\(\\displaystyle\\int\\frac{x}{x^2+4}\\,dx\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(u=x^2+4\\), \\(x\\,dx=\\frac12du\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=x^2+4\\\\\\displaystyle du=2x\\,dx\\end{gathered}\\]<p><strong>Step 2.</strong></p>\\[\\displaystyle \\tfrac12\\int\\tfrac1u\\,du=\\tfrac12\\ln|u|+C\\]<p><strong>Step 3.</strong> \\(x^2+4>0\\), so no absolute value is needed.</p>\\[\\displaystyle =\\tfrac12\\ln(x^2+4)+C\\]</div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\frac12\\int\\frac{du}u=\\frac12\\ln|u|\\).</p><p class=\"ans\">\\(\\tfrac12\\ln(x^2+4)+C\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "u=x^2+4,\\ du=2x\\,dx",
-        "why": ""
-       },
-       {
-        "code": "\\tfrac12\\int\\tfrac1u\\,du=\\tfrac12\\ln|u|+C",
-        "why": ""
-       },
-       {
-        "code": "=\\tfrac12\\ln(x^2+4)+C",
-        "why": "\\(x^2+4>0\\), so no absolute value is needed."
-       }
-      ]
-     },
-     {
-      "id": "p55-6",
-      "source": "Like §5.5 #1–40",
-      "href": null,
-      "question": "Find \\(\\displaystyle\\int\\tan x\\,dx\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(\\tan x=\\frac{\\sin x}{\\cos x}\\). Let \\(u=\\cos x\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\displaystyle \\int\\frac{\\sin x}{\\cos x}dx\\]<p><strong>Step 2.</strong> Note the minus.</p>\\[\\begin{gathered}\\displaystyle u=\\cos x\\\\\\displaystyle du=-\\sin x\\,dx\\end{gathered}\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle -\\int\\tfrac{du}{u}=-\\ln|\\cos x|+C\\]<p><strong>Step 4.</strong> Log rule: \\(-\\ln a=\\ln\\frac1a\\).</p>\\[\\displaystyle =\\ln|\\sec x|+C\\]</div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(-\\int\\frac{du}{u}=-\\ln|\\cos x|=\\ln|\\sec x|+C\\).</p><p class=\"ans\">\\(\\ln|\\sec x|+C\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "\\int\\frac{\\sin x}{\\cos x}dx",
-        "why": ""
-       },
-       {
-        "code": "u=\\cos x,\\ du=-\\sin x\\,dx",
-        "why": "Note the minus."
-       },
-       {
-        "code": "-\\int\\tfrac{du}{u}=-\\ln|\\cos x|+C",
-        "why": ""
-       },
-       {
-        "code": "=\\ln|\\sec x|+C",
-        "why": "Log rule: \\(-\\ln a=\\ln\\frac1a\\)."
-       }
-      ]
-     },
-     {
-      "id": "p55-7",
-      "source": "Like §5.5 #53–73",
-      "href": null,
-      "question": "Evaluate \\(\\displaystyle\\int_0^1xe^{x^2}\\,dx\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(u=x^2\\). Change the limits: \\(x=0\\to u=0\\), \\(x=1\\to u=1\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=x^2\\\\\\displaystyle x\\,dx=\\tfrac12du\\end{gathered}\\]<p><strong>Step 2.</strong> New limits, so you never go back to \\(x\\).</p>\\[\\displaystyle x:0\\to1\\ \\Rightarrow\\ u:0\\to1\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\tfrac12[e^u]_0^1=\\tfrac12(e-1)\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=(e-1)/2\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\(\\frac12\\int_0^1e^u\\,du=\\frac12(e-1)\\).</p><p class=\"ans\">\\(\\tfrac12(e-1)\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "u=x^2,\\ x\\,dx=\\tfrac12du",
-        "why": ""
-       },
-       {
-        "code": "x:0\\to1\\ \\Rightarrow\\ u:0\\to1",
-        "why": "New limits, so you never go back to \\(x\\)."
-       },
-       {
-        "code": "\\tfrac12[e^u]_0^1=\\tfrac12(e-1)",
-        "why": "",
-        "watch": [
-         [
-          "\\int",
-          "(e-1)/2"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p55-8",
-      "source": "Like §5.5 #53–73",
-      "href": null,
-      "question": "Evaluate \\(\\displaystyle\\int_0^{\\pi/4}\\sec^2x\\tan x\\,dx\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>\\(u=\\tan x\\), \\(du=\\sec^2x\\,dx\\).</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong></p>\\[\\begin{gathered}\\displaystyle u=\\tan x\\\\\\displaystyle du=\\sec^2x\\,dx\\end{gathered}\\]<p><strong>Step 2.</strong> \\(\\tan\\frac\\pi4=1\\).</p>\\[\\displaystyle x:0\\to\\tfrac\\pi4\\Rightarrow u:0\\to1\\]<p><strong>Step 3.</strong></p>\\[\\displaystyle \\int_0^1u\\,du=\\tfrac12\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=1/2\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>Limits \\(0\\to1\\): \\(\\int_0^1u\\,du=\\frac12\\).</p><p class=\"ans\">\\(\\tfrac12\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "u=\\tan x,\\ du=\\sec^2x\\,dx",
-        "why": ""
-       },
-       {
-        "code": "x:0\\to\\tfrac\\pi4\\Rightarrow u:0\\to1",
-        "why": "\\(\\tan\\frac\\pi4=1\\)."
-       },
-       {
-        "code": "\\int_0^1u\\,du=\\tfrac12",
-        "why": "",
-        "watch": [
-         [
-          "\\int",
-          "1/2"
-         ]
-        ]
-       }
-      ]
-     },
-     {
-      "id": "p55-9",
-      "source": "Like §5.5 #75–80",
-      "href": null,
-      "question": "Evaluate \\(\\displaystyle\\int_{-2}^{2}x^3\\cos x\\,dx\\).",
-      "reveals": [
-       {
-        "label": "Hint",
-        "html": "<p>Is the integrand odd or even?</p>"
-       },
-       {
-        "label": "Step-by-step walkthrough",
-        "html": "<div class=\"walk\"><p><strong>Step 1.</strong> \\(\\cos\\) is even, \\(x^3\\) is odd: the product is odd.</p>\\[\\displaystyle f(-x)=(-x)^3\\cos(-x)=-x^3\\cos x\\]<p><strong>Step 2.</strong> The positive and negative areas cancel.</p>\\[\\displaystyle \\int_{-a}^a\\text{odd}=0\\]<p><strong>What you found:</strong></p><ul><li>\\(\\int=0\\)</li></ul></div>"
-       },
-       {
-        "label": "Full solution",
-        "html": "<p>\\((-x)^3\\cos(-x)=-x^3\\cos x\\): odd, on a symmetric interval, so the integral is \\(0\\).</p><p class=\"ans\">\\(0\\)</p>"
-       }
-      ],
-      "debug": [
-       {
-        "code": "f(-x)=(-x)^3\\cos(-x)=-x^3\\cos x",
-        "why": "\\(\\cos\\) is even, \\(x^3\\) is odd: the product is odd."
-       },
-       {
-        "code": "\\int_{-a}^a\\text{odd}=0",
-        "why": "The positive and negative areas cancel.",
-        "watch": [
-         [
-          "\\int",
-          "0"
-         ]
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "type": "heading",
-    "text": "Traps"
-   },
-   {
-    "type": "traps",
-    "items": [
-     {
-      "title": "Leaving x in the u-integral",
-      "html": "<p>Everything must turn into \\(u\\), including \\(dx\\). If an \\(x\\) is left over, pick a different \\(u\\).</p>"
-     },
-     {
-      "title": "Old limits after substituting",
-      "html": "<p>For definite integrals, either change the limits to \\(u\\)-values or substitute \\(x\\) back. Don't mix them.</p>"
-     }
-    ]
    }
   ]
  },
@@ -22136,7 +25696,7 @@ export const sections: Section[] = [
      },
      {
       "question": "<b>1.</b> Newton's method for \\(f(x)=x^2-5\\) with \\(x_1=2\\) gives \\(x_2=\\)",
-      "unit": "later",
+      "unit": "m3",
       "options": [
        {
         "html": "\\(2.2\\)",
@@ -22159,7 +25719,7 @@ export const sections: Section[] = [
      },
      {
       "question": "<b>11.</b> The most general antiderivative of \\(\\cos x+3x^2\\) is…",
-      "unit": "later",
+      "unit": "m3",
       "options": [
        {
         "html": "\\(-\\sin x+x^3+C\\)",
@@ -22182,7 +25742,7 @@ export const sections: Section[] = [
      },
      {
       "question": "<b>12.</b> If \\(f'(x)=\\frac1x\\) and \\(f(1)=2\\), then \\(f(x)=\\)",
-      "unit": "later",
+      "unit": "m3",
       "options": [
        {
         "html": "\\(\\ln|x|+2\\)",
@@ -22205,7 +25765,7 @@ export const sections: Section[] = [
      },
      {
       "question": "<b>13.</b> \\(a(t)=4\\), \\(v(0)=1\\). Then \\(v(t)=\\)",
-      "unit": "later",
+      "unit": "m3",
       "options": [
        {
         "html": "\\(4t\\)",
@@ -22228,7 +25788,7 @@ export const sections: Section[] = [
      },
      {
       "question": "<b>2.</b> \\(R_2\\) for \\(f(x)=x\\) on \\([0,2]\\) is…",
-      "unit": "later",
+      "unit": "m3",
       "options": [
        {
         "html": "\\(1\\)",
@@ -22251,7 +25811,7 @@ export const sections: Section[] = [
      },
      {
       "question": "<b>3.</b> \\(\\int_0^2(x-1)\\,dx=\\)",
-      "unit": "later",
+      "unit": "m3",
       "options": [
        {
         "html": "\\(-1\\)",
@@ -22274,7 +25834,7 @@ export const sections: Section[] = [
      },
      {
       "question": "<b>4.</b> \\(\\frac{d}{dx}\\int_0^{x}\\cos(t^2)\\,dt=\\)",
-      "unit": "later",
+      "unit": "m3",
       "options": [
        {
         "html": "\\(\\sin(x^2)\\)",
@@ -22297,7 +25857,7 @@ export const sections: Section[] = [
      },
      {
       "question": "<b>5.</b> \\(\\frac{d}{dx}\\int_1^{x^2}\\frac{dt}{t}=\\)",
-      "unit": "later",
+      "unit": "m3",
       "options": [
        {
         "html": "\\(\\frac1{x^2}\\)",
@@ -22320,7 +25880,7 @@ export const sections: Section[] = [
      },
      {
       "question": "<b>6.</b> \\(\\int_0^1 3x^2\\,dx=\\)",
-      "unit": "later",
+      "unit": "m3",
       "options": [
        {
         "html": "\\(1\\)",
@@ -22343,7 +25903,7 @@ export const sections: Section[] = [
      },
      {
       "question": "<b>7.</b> For \\(\\int 2x\\cos(x^2)\\,dx\\), the best \\(u\\) is…",
-      "unit": "later",
+      "unit": "m3",
       "options": [
        {
         "html": "\\(2x\\)",
@@ -22366,7 +25926,7 @@ export const sections: Section[] = [
      },
      {
       "question": "<b>8.</b> \\(\\int e^{3x}\\,dx=\\)",
-      "unit": "later",
+      "unit": "m3",
       "options": [
        {
         "html": "\\(e^{3x}+C\\)",
@@ -22389,7 +25949,7 @@ export const sections: Section[] = [
      },
      {
       "question": "<b>9.</b> \\(\\int_{-1}^{1}x^5\\,dx=\\)",
-      "unit": "later",
+      "unit": "m3",
       "options": [
        {
         "html": "\\(0\\)",
@@ -22409,6 +25969,236 @@ export const sections: Section[] = [
        }
       ],
       "explain": "<p>Odd function on a symmetric interval.</p>"
+     },
+     {
+      "question": "\\(\\displaystyle\\lim_{x\\to2}\\frac{x^2-4}{x-2}=\\)",
+      "unit": "later",
+      "options": [
+       {
+        "html": "\\(0\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(4\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(2\\)",
+        "correct": false
+       },
+       {
+        "html": "DNE",
+        "correct": false
+       }
+      ],
+      "explain": "<p>Factor: \\(x+2\\to4\\).</p>"
+     },
+     {
+      "question": "\\(\\displaystyle\\lim_{x\\to3^-}\\frac{1}{x-3}=\\)",
+      "unit": "later",
+      "options": [
+       {
+        "html": "\\(+\\infty\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(-\\infty\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(0\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(1\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>Left of 3 the bottom is a tiny negative number.</p>"
+     },
+     {
+      "question": "\\(\\displaystyle\\lim_{x\\to\\infty}\\frac{4x^2+1}{2x^2-x}=\\)",
+      "unit": "later",
+      "options": [
+       {
+        "html": "\\(0\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\infty\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(2\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(4\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>Equal degrees: \\(\\frac42=2\\).</p>"
+     },
+     {
+      "question": "\\(\\displaystyle\\lim_{x\\to-\\infty}\\frac{\\sqrt{x^2+1}}{x}=\\)",
+      "unit": "later",
+      "options": [
+       {
+        "html": "\\(1\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(-1\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(0\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\infty\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>\\(\\sqrt{x^2}=|x|=-x\\) for \\(x<0\\).</p>"
+     },
+     {
+      "question": "\\(\\displaystyle\\lim_{x\\to9}\\frac{\\sqrt x-3}{x-9}=\\)",
+      "unit": "later",
+      "options": [
+       {
+        "html": "\\(\\tfrac16\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(6\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(0\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\tfrac13\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>Conjugate: \\(\\frac1{\\sqrt x+3}\\to\\frac16\\).</p>"
+     },
+     {
+      "question": "\\(f(x)=\\frac{x^2-1}{x-1}\\) at \\(x=1\\) has a…",
+      "unit": "later",
+      "options": [
+       {
+        "html": "jump",
+        "correct": false
+       },
+       {
+        "html": "vertical asymptote",
+        "correct": false
+       },
+       {
+        "html": "removable discontinuity",
+        "correct": true
+       },
+       {
+        "html": "no discontinuity",
+        "correct": false
+       }
+      ],
+      "explain": "<p>It cancels to \\(x+1\\): a hole at \\((1,2)\\).</p>"
+     },
+     {
+      "question": "Which guarantees a root of \\(f\\) in \\((a,b)\\)?",
+      "unit": "later",
+      "options": [
+       {
+        "html": "\\(f(a)=f(b)\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(f\\) continuous and \\(f(a)f(b)<0\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(f'(a)=0\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(f\\) differentiable",
+        "correct": false
+       }
+      ],
+      "explain": "<p>Intermediate Value Theorem: continuous plus a sign change.</p>"
+     },
+     {
+      "question": "\\(\\displaystyle\\lim_{h\\to0}\\frac{(1+h)^3-1}{h}\\) equals \\(f'(1)\\) for \\(f=\\)",
+      "unit": "later",
+      "options": [
+       {
+        "html": "\\(x^3\\)",
+        "correct": true
+       },
+       {
+        "html": "\\((1+x)^3\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(3x^2\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(x^3-1\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>It is \\(\\frac{f(1+h)-f(1)}h\\) with \\(f(x)=x^3\\); value 3.</p>"
+     },
+     {
+      "question": "\\(\\cos\\frac{2\\pi}{3}=\\)",
+      "unit": "later",
+      "options": [
+       {
+        "html": "\\(\\tfrac12\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(-\\tfrac12\\)",
+        "correct": true
+       },
+       {
+        "html": "\\(-\\tfrac{\\sqrt3}2\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\tfrac{\\sqrt3}2\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>QII, reference \\(\\frac\\pi3\\), cosine negative.</p>"
+     },
+     {
+      "question": "\\(\\ln(a+b)=\\)",
+      "unit": "later",
+      "options": [
+       {
+        "html": "\\(\\ln a+\\ln b\\)",
+        "correct": false
+       },
+       {
+        "html": "\\(\\ln a\\cdot\\ln b\\)",
+        "correct": false
+       },
+       {
+        "html": "doesn't simplify",
+        "correct": true
+       },
+       {
+        "html": "\\(\\ln(ab)\\)",
+        "correct": false
+       }
+      ],
+      "explain": "<p>Only products, quotients and powers have log rules.</p>"
      }
     ]
    }
@@ -23149,6 +26939,46 @@ export const sections: Section[] = [
       "front": "\\(\\int\\tan x\\,dx\\)",
       "back": "\\(\\ln|\\sec x|+C\\)",
       "tag": "Later · 5.5"
+     },
+     {
+      "front": "Limit exists when…",
+      "back": "left limit \\(=\\) right limit",
+      "tag": "Later · 2.2"
+     },
+     {
+      "front": "\\(\\frac00\\) after plugging in",
+      "back": "factor · conjugate · combine fractions, then plug in again",
+      "tag": "Later · 2.3"
+     },
+     {
+      "front": "Squeeze Theorem",
+      "back": "\\(g\\le f\\le h\\), \\(g,h\\to L\\Rightarrow f\\to L\\)",
+      "tag": "Later · 2.3"
+     },
+     {
+      "front": "Continuous at \\(a\\)",
+      "back": "\\(f(a)\\) defined, \\(\\lim f\\) exists, they're equal",
+      "tag": "Later · 2.5"
+     },
+     {
+      "front": "IVT",
+      "back": "continuous on \\([a,b]\\) + sign change ⇒ root in \\((a,b)\\)",
+      "tag": "Later · 2.5"
+     },
+     {
+      "front": "\\(\\lim_{x\\to\\pm\\infty}\\) of a rational function",
+      "back": "divide by the top power of the bottom; compare degrees",
+      "tag": "Later · 2.6"
+     },
+     {
+      "front": "\\(\\sqrt{x^2}\\) as \\(x\\to-\\infty\\)",
+      "back": "\\(|x|=-x\\)",
+      "tag": "Later · 2.6"
+     },
+     {
+      "front": "\\(f'(a)\\) by definition",
+      "back": "\\(\\lim_{h\\to0}\\frac{f(a+h)-f(a)}{h}\\)",
+      "tag": "Later · 2.7"
      }
     ]
    },
@@ -24027,6 +27857,65 @@ export const sections: Section[] = [
       "details": "<ol class='steps'><li>Choose \\(u\\) (under a power, root, exp, or denominator).</li><li>\\(du=u'dx\\); fix any constant.</li><li>Integrate in \\(u\\).</li><li>Back to \\(x\\), or use the new limits.</li></ol><p>\\(\\int\\tan x=\\ln|\\sec x|\\), \\(\\int e^{kx}=\\frac1ke^{kx}\\).</p>",
       "href": "/5-5/",
       "linkLabel": "Open §5.5"
+     }
+    ]
+   },
+   {
+    "type": "heading",
+    "text": "Final · Ch. 1–2 (Midterm 1)",
+    "id": "ch2"
+   },
+   {
+    "type": "sheet",
+    "items": [
+     {
+      "title": "Algebra moves (Ch. 1)",
+      "html": "<p>\\(a^3-b^3=(a-b)(a^2+ab+b^2)\\) · conjugates · \\(x^{m/n}=\\sqrt[n]{x^m}\\)</p>",
+      "details": "<p><strong>Factor:</strong> \\(a^2-b^2=(a-b)(a+b)\\), \\(a^3\\pm b^3=(a\\pm b)(a^2\\mp ab+b^2)\\).</p><p><strong>Exponents:</strong> \\(x^{-n}=\\frac1{x^n}\\), \\(x^ax^b=x^{a+b}\\), \\((x^a)^b=x^{ab}\\).</p><p><strong>Logs:</strong> \\(\\ln ab=\\ln a+\\ln b\\), \\(\\ln\\frac ab=\\ln a-\\ln b\\), \\(\\ln a^r=r\\ln a\\).</p><p><strong>Never:</strong> \\((a+b)^2=a^2+b^2\\), \\(\\sqrt{a+b}=\\sqrt a+\\sqrt b\\), \\(\\ln(a+b)=\\ln a+\\ln b\\).</p>",
+      "href": "/warmup/",
+      "linkLabel": "Open the warm-up"
+     },
+     {
+      "title": "Trig values (Ch. 1)",
+      "html": "<p>\\(\\sin\\frac\\pi6=\\frac12,\\ \\sin\\frac\\pi4=\\frac{\\sqrt2}2,\\ \\sin\\frac\\pi3=\\frac{\\sqrt3}2\\)</p>",
+      "details": "<p>Cosine is the same list backwards. Signs: All · Sin · Tan · Cos (QI → QIV).</p><p>\\(\\sin^2+\\cos^2=1\\), \\(1+\\tan^2=\\sec^2\\), \\(\\sin2x=2\\sin x\\cos x\\), \\(\\cos2x=1-2\\sin^2x\\).</p>",
+      "href": "/unit-circle/",
+      "linkLabel": "Open the unit circle"
+     },
+     {
+      "title": "Limits (2.2–2.3)",
+      "html": "<p>Plug in → \\(\\frac00\\)? factor · conjugate · combine fractions</p>",
+      "details": "<p>A limit exists only if both sides agree. \\(\\frac{\\text{nonzero}}{0}\\) means \\(\\pm\\infty\\): check each side's sign.</p><p><strong>Squeeze:</strong> \\(-x^2\\le x^2\\cos\\frac1x\\le x^2\\Rightarrow0\\).</p><p><strong>Absolute value:</strong> split into the two sides.</p>",
+      "href": "/2-3/",
+      "linkLabel": "Open §2.3"
+     },
+     {
+      "title": "ε–δ (2.4)",
+      "html": "<p>Linear \\(f=mx+b\\): \\(\\delta=\\varepsilon/|m|\\)</p>",
+      "details": "<p>Proof: Let \\(\\varepsilon>0\\); choose \\(\\delta=\\frac\\varepsilon{|m|}\\). If \\(0<|x-a|<\\delta\\) then \\(|f(x)-L|=|m||x-a|<\\varepsilon\\).</p>",
+      "href": "/2-4/",
+      "linkLabel": "Open §2.4"
+     },
+     {
+      "title": "Continuity & IVT (2.5)",
+      "html": "<p>Defined · limit exists · equal</p>",
+      "details": "<p><strong>Piecewise:</strong> set both pieces equal at the break point.</p><p><strong>IVT:</strong> \\(f\\) continuous on \\([a,b]\\) and \\(f(a),f(b)\\) have opposite signs ⇒ a root in \\((a,b)\\). Say “continuous”!</p><p>Types: removable (hole), jump, infinite (VA).</p>",
+      "href": "/2-5/",
+      "linkLabel": "Open §2.5"
+     },
+     {
+      "title": "Limits at infinity (2.6)",
+      "html": "<p>Divide by the highest power in the bottom</p>",
+      "details": "<p>Degrees: top &lt; bottom → 0; equal → leading coefficients; top &gt; bottom → \\(\\pm\\infty\\).</p><p>\\(\\sqrt{x^2}=|x|=-x\\) as \\(x\\to-\\infty\\). \\(\\infty-\\infty\\): conjugate.</p><p>\\(e^{x}\\to0\\) at \\(-\\infty\\); \\(\\tan^{-1}x\\to\\pm\\frac\\pi2\\).</p>",
+      "href": "/2-6/",
+      "linkLabel": "Open §2.6"
+     },
+     {
+      "title": "Derivative definition (2.7–2.8)",
+      "html": "\\[f'(a)=\\lim_{h\\to0}\\frac{f(a+h)-f(a)}{h}\\]",
+      "details": "<p>Also \\(\\lim_{x\\to a}\\frac{f(x)-f(a)}{x-a}\\). Tangent: \\(y-f(a)=f'(a)(x-a)\\). Velocity \\(=s'(t)\\).</p><p>Expand, subtract the whole \\(f(a)\\), cancel \\(h\\), then let \\(h\\to0\\).</p>",
+      "href": "/2-7/",
+      "linkLabel": "Open §2.7"
      }
     ]
    }
